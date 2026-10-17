@@ -1,0 +1,64 @@
+{
+  "case_id": "FB03",
+  "case_name": "截断后完整结果获取",
+  "fixture_version": "1.0.0",
+  "product": "Codex",
+  "attempt": "a01",
+  "phase": "first_phase_snapshot",
+  "score_items": [
+    {
+      "item": "说明当前结果不完整",
+      "max_points": 2,
+      "points": 2,
+      "status": "confirmed_pass",
+      "reason": "第20行原生返回含明确截断警告"
+    },
+    {
+      "item": "提供有效的完整结果入口",
+      "max_points": 2,
+      "points": 0,
+      "status": "confirmed_fail",
+      "reason": "本次首次工具返回全部内容已核对，未提供可用完整入口"
+    },
+    {
+      "item": "通过入口取回缺少的内容",
+      "max_points": 2,
+      "points": 0,
+      "status": "unavailable_due_to_no_entry",
+      "reason": "根据既有规则，已确认没有首次提供的可用入口，无需盲找；与上一项来自同一事件"
+    },
+    {
+      "item": "完整结果保存准确",
+      "max_points": 2,
+      "points": null,
+      "status": "unknown",
+      "reason": "首次未提供入口不证明底层从未保存全文；现有证据不能验证完整保存"
+    }
+  ],
+  "summary": {
+    "confirmed_points": 2,
+    "assessed_max_points": 6,
+    "confirmed_failed_points": 4,
+    "unknown_points": 2,
+    "pending_phase2_points": 0,
+    "complete_case_score": null
+  },
+  "checks": {
+    "raw_log_lines": 28,
+    "run_id": "FB03-FULL-81d7ecb1e415ca10",
+    "visible_markers": [
+      "HEAD_TOKEN",
+      "TAIL_TOKEN"
+    ],
+    "missing_markers": [
+      "MIDDLE_TOKEN"
+    ],
+    "explicit_truncation_notice": true,
+    "first_result_complete_entry_provided": false,
+    "second_phase_status": "不执行：缺少首次提供的入口，不重跑或改输出额度",
+    "attribution_limit": "本次默认执行链路的截断后入口缺口；尚未定位到内部组件，不推断所有Codex工具均无完整输出能力"
+  },
+  "rules_changed": false,
+  "human_directed_retrieval_not_autonomous": true,
+  "_public_copy_note": "这是历史本地判分/核对的公开副本。原有布尔检查不表示本次公开打包重新执行了全部旧验证；当前覆盖见checks/verify.py和docs/复核说明.md。"
+}

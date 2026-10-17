@@ -1,0 +1,580 @@
+{
+  "date": "2026-10-17",
+  "description": "原始来源哈希用于记录来源关系，不代表完整原文件已公开或外部可认证。public文件的实际字节指纹另见MANIFEST.json。",
+  "exports": [
+    {
+      "path": "cases/FB01/input/feedback_probe.py",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/输入/feedback_probe.py",
+      "original_sha256": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/FB02/input/long_feedback_probe.py",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/输入/long_feedback_probe.py",
+      "original_sha256": "604d9462b3b0c5df83661726479c5b36f40237873166bce890faee54503d9625",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/FB03/input/full_output_probe.py",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/输入/full_output_probe.py",
+      "original_sha256": "2096711631d287c9229aad63100127e7f1c32a9551316fa9b3910ffc56615ee6",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/CTX01/evaluator/expected.json",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/评测方材料/预期记录.json",
+      "original_sha256": "2871e20bd3acce2b85c3ec2b1f4a10f0e8c8c32dbe3f77465e0a5dbbf22e2ff2",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/核对与评分.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/核对与评分.json",
+      "original_sha256": "525be3c46d2856df67269c92c14a2b8231073fa5eac2fc78f4fdaa482e32bfdb",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/原生会话.excerpt.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/原生会话.jsonl",
+      "original_sha256": "74a03153f327a27ff37fefea944f2f80e1bfe865842c47db668baa2d29cb48be",
+      "transformation": "选择相关事件，保留原始行号；删除推理/重放字段，替换本机路径；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/回执/FB01-NORMAL-76de54b51e988f94.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/回执/FB01-NORMAL-76de54b51e988f94.json",
+      "original_sha256": "79d74ab211fd72e5eb92930aab7e68f8f4bc776e72400b013e8c735f1af6b14d",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/回执/FB01-ERROR-37548d7083f476b9.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/回执/FB01-ERROR-37548d7083f476b9.json",
+      "original_sha256": "1eb13c4785f0e698fe663a6be41f13e6da0a04b80fae596634b8dc939c5aa913",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/核对与评分.json",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/核对与评分.json",
+      "original_sha256": "c0fff4c0aba804259cac7a10269ea00df5153b566f11e6fe036eabd49c93ea12",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/原始材料/原生会话.excerpt.json",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/原始材料/原生会话.jsonl",
+      "original_sha256": "59f83dfb7e183c64a884c6c049c47fe76f2c3da7e8be8f12ca1e983eac89e7c3",
+      "transformation": "选择相关事件，保留原始行号；删除推理/重放字段，替换本机路径；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/原始材料/回执/FB02-LONG-16566128a84e048c.json",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/原始材料/回执/FB02-LONG-16566128a84e048c.json",
+      "original_sha256": "b686c875c98f6fbe527e05b6884ace86b463d839fc75e7c361e99484cde05ab5",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/第一阶段核对与评分.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/第一阶段核对与评分.json",
+      "original_sha256": "4572fcfdf3ea7b30cf7de19a4a305ed1c4d3a717e7aa1e1ed77d074af0ed3636",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/原始材料/第一阶段原生会话.excerpt.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/原始材料/第一阶段原生会话.jsonl",
+      "original_sha256": "52063a13ca56a3a558731f631b0a71533bc14fd7c578e917762985be65b8489a",
+      "transformation": "选择相关事件，保留原始行号；删除推理/重放字段，替换本机路径；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/第一阶段实际返回.txt",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/第一阶段实际返回.txt",
+      "original_sha256": "5c11d555238aa031f4267e015621995e2da86ac11a22a094ec53310427b66da3",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json",
+      "original_sha256": "397d984a0a27b1b9d01a620d919f3f249372be37d03d148870dddb842f2035f9",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/原生会话.excerpt.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/原生会话.jsonl",
+      "original_sha256": "844ac7872fdd71d4a2d8ceada18bf38705dcd7407ea0e7adacea42a2270d8bce",
+      "transformation": "选择相关事件，保留原始行号；删除推理/重放字段，替换本机路径；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/回执/FB01-NORMAL-02a899b711dd7446.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/回执/FB01-NORMAL-02a899b711dd7446.json",
+      "original_sha256": "9b1a95d66d2ec27d6434da7981dbc02de160f34d1feed2d4ba6b302416a85375",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/feedback_probe.py",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/feedback_probe.py",
+      "original_sha256": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/核对与评分.json",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/核对与评分.json",
+      "original_sha256": "440a9e2c147d1c5511b882c3a1e709b39b525b282a266e9a6dadd7d27a369eb8",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/原生会话.excerpt.json",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/原生会话.jsonl",
+      "original_sha256": "31dae4bd6b1f41ad3d9e98df42f970b8b1c9cb11cd2e839c18e4307f01bfa160",
+      "transformation": "选择相关事件，保留原始行号；删除推理/重放字段，替换本机路径；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/回执/FB02-LONG-0d284571207560f0.json",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/回执/FB02-LONG-0d284571207560f0.json",
+      "original_sha256": "4cf962e5c3d6db6f4ec9274a12c3641ce519a2ddc54653b0aa1e780c48e3228b",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/工具结果保存文件.json",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/工具结果保存文件.json",
+      "original_sha256": "a28810b10dadd320fd22f7cccaf2f9f32726e3a9ff116e1f12f3e1ea49509d0c",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/完整核对与评分.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/完整核对与评分.json",
+      "original_sha256": "5d33d3c8d5eed22a5cc5e3c4459f27f8ec27b56b5be16c3829e441ff0edb35bd",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/第一阶段原生会话.excerpt.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/第一阶段原生会话.jsonl",
+      "original_sha256": "90fc86fe35dbad2541841864c48d0faace3c41bd15f9a027f7cc6c16ccb2dea3",
+      "transformation": "选择相关事件，保留原始行号；删除推理/重放字段，替换本机路径；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/回执/FB03-FULL-f4cfccd6511b9a44.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/回执/FB03-FULL-f4cfccd6511b9a44.json",
+      "original_sha256": "ac0c1eee5002ce1f89316cba3beecb727d1783bafb3ec662e8b4fa075b96a334",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/第二阶段后完整会话.excerpt.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/第二阶段后完整会话.jsonl",
+      "original_sha256": "e82aa2904b5644e4dba68417a0e6dc33a10fa20f0ebeebed0d999d225d7887c0",
+      "transformation": "选择相关事件，保留原始行号；删除推理/重放字段，替换本机路径；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/完整入口文件-第二阶段取证.txt",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/完整入口文件-第二阶段取证.txt",
+      "original_sha256": "59ad90008cee7459a0a11bdb88fd3b4e2fd9f6a994a2dbe52ec0b64bd9767680",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/核对与评分.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/核对与评分.json",
+      "original_sha256": "697891f7844b8b21c371d8dd397747a6f22fd70362530e114d3c557bd3c4c62c",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/session.v4.excerpt.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/session.v4.jsonl",
+      "original_sha256": "6dbb90c55e1f085116d48fda28b956cf2069678adfcfb441380de70b54a0df94",
+      "transformation": "选择相关事件，保留原始行号；删除推理/重放字段，替换本机路径；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/回执/FB01-NORMAL-7c969357f569f4bc.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/回执/FB01-NORMAL-7c969357f569f4bc.json",
+      "original_sha256": "debfc7d315334484b12f62da6d09f42d8f262c4ef7b608b2e8f72dd236d421ea",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/回执/FB01-ERROR-3bff009e276cf2e7.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/回执/FB01-ERROR-3bff009e276cf2e7.json",
+      "original_sha256": "5d4bc9f7c225981a7843c4753706134cbcdc68e31f2bb1394eb99ba77ac03b21",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/核对与评分.json",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/核对与评分.json",
+      "original_sha256": "b8869c6ea24df404c549c34ca9f3a3380c7244ae8fa88167f87e35ba5b562dae",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/原始材料/session.v4.excerpt.json",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/原始材料/session.v4.jsonl",
+      "original_sha256": "081195adcf430042f2d6cccf8ad8296eea7cfe848ac298bc3978d9febb4e51f1",
+      "transformation": "选择相关事件，保留原始行号；删除推理/重放字段，替换本机路径；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/原始材料/FB02-LONG-e75663bb56f2dceb.json",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/原始材料/FB02-LONG-e75663bb56f2dceb.json",
+      "original_sha256": "f7ee009106e793c30595fc2f08ccf207303b2bead827484ad6bbef2eaf6e15a1",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/完整核对与评分.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/完整核对与评分.json",
+      "original_sha256": "13828a73f0911f8db9f31a04c53bd2799c51c936aeea0546b69e767e1f4fd717",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/原始材料/session-两阶段.v4.excerpt.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/原始材料/session-两阶段.v4.jsonl",
+      "original_sha256": "2ae70caf32645dd40b8c9d416f89a767cf0265fc43ee4ee4fe5a523b0e0e62e0",
+      "transformation": "选择相关事件，保留原始行号；删除推理/重放字段，替换本机路径；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/原始材料/FB03-FULL-3653133d715e89a0.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/原始材料/FB03-FULL-3653133d715e89a0.json",
+      "original_sha256": "9054577733b22d823f1e7ad41c1868c57657c7243ef8b6344e5549cf445e8368",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/产品完整输出/FB03-原始stdout.log",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/产品完整输出/FB03-原始stdout.log",
+      "original_sha256": "5fd69d93d5bcb52d7bb01a4474f2e4c611d21c2e56e6d392bd260d825eeb754d",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json",
+      "original_sha256": "aaa0369a18ed4c67d3333bf2e03dbaf15cd6bb3090a2e7c3eedd7319ff92da0f",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/元宝-a01/核对与评分状态.json",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/运行记录/元宝-a01/核对与评分状态.json",
+      "original_sha256": "c548c7a58deb73c2f1eb19ca71f42a6cb927b18867ebdc804e0d5190f25e714c",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/元宝-a01/evidence/过程展开-DOM.txt",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/运行记录/元宝-a01/evidence/过程展开-DOM.txt",
+      "original_sha256": "7fc5704d178d38569db9a42aa090679b10c1ea602aaf497b1208091f34fa0fde",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/元宝-a01/第一阶段核对与评分状态.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/元宝-a01/第一阶段核对与评分状态.json",
+      "original_sha256": "a7d8594520e80ff12a49de1681a754de3c53c17e940977f39b659bb83d114814",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/元宝-a01/evidence/首次回复观察摘录.snapshot.txt",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/元宝-a01/evidence/首次回复观察摘录.md",
+      "original_sha256": "db8cb3903e0007d1815b5136bdc512b359f1f4b25783b04eaaa9a52b43296834",
+      "transformation": "文本副本：替换本机路径/分享入口；不统一换行；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB01-基础回传/README.snapshot.txt",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/README.md",
+      "original_sha256": "e11e9aab34d086f4a0f93c3f161e8705fd46f458e72fa24419434b4ba62832b9",
+      "transformation": "文本副本：替换本机路径/分享入口；不统一换行；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/核对与评分状态.json",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/核对与评分状态.json",
+      "original_sha256": "db8b61484db1d78dfafd6311b39551803fefc9a8ca0d91c6b298a5e041de1f06",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/网页观察摘录.snapshot.txt",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/网页观察摘录.md",
+      "original_sha256": "d8edb8cd3cf364e79c31908186dba7b3db250c3b981f3509086a04f6fa4719b0",
+      "transformation": "文本副本：替换本机路径/分享入口；不统一换行；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/原始材料/FB02-LONG-532fc2445424e2d1.json",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/原始材料/FB02-LONG-532fc2445424e2d1.json",
+      "original_sha256": "f00f08de1770a30814541d196e4194b4fbaab9c1d91435f865ff1f737be66e9f",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/补充核查与评分.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/补充核查与评分.json",
+      "original_sha256": "05b442ef6bed2b6c0f28da4c65fd2c4eaefc20f20215934db1f3bad7307d1655",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/第一阶段核对与评分状态.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/第一阶段核对与评分状态.json",
+      "original_sha256": "dd548cd736e484e2180994b8e8b372752c8934f95b8c61d006dbffa35dee7611",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/补充核查证据/搜索结果展开-DOM.txt",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/补充核查证据/搜索结果展开-DOM.txt",
+      "original_sha256": "7c34123708f065b7dd0dc208083c79ccc103f1767b9511df9c27c9826827bcfd",
+      "transformation": "文本副本：替换本机路径/分享入口；不统一换行；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/原始材料/FB03-FULL-e85552a0749e0f32.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/原始材料/FB03-FULL-e85552a0749e0f32.json",
+      "original_sha256": "370e6bf7bcd2a67666cd82cc59783f5179d3165f07e12ece615f3bdcd7e5ea57",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/产品完整输出/入口源文件.txt",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/产品完整输出/入口源文件.txt",
+      "original_sha256": "c70c41838df5fcfe147c738d281d8238a8058c96e84a410d33857179187b0aee",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/产品完整输出/FB03-完整输出.txt",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/产品完整输出/FB03-完整输出.txt",
+      "original_sha256": "c70c41838df5fcfe147c738d281d8238a8058c96e84a410d33857179187b0aee",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/配置与证据范围.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/配置与证据范围.json",
+      "original_sha256": "3631c03b93c110e5a64caafdc64d9f49deafe633e6c9df4facbb6a8d63468a9b",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a01/原始材料/回执/FB01-NORMAL-faf691fead97f233.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a01/原始材料/回执/FB01-NORMAL-faf691fead97f233.json",
+      "original_sha256": "7f92d0228603dfc74c8093a67e2a6485dea0849817edb163879eb016e1686389",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a01/配置与证据范围.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a01/配置与证据范围.json",
+      "original_sha256": "14e249f3575d6cb4ff5754159604eb3bbc1fcde95238aef8b953a9de02b57194",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a01/核对与评分.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a01/核对与评分.json",
+      "original_sha256": "fc1924c48536ad948e2b766263a16d5db428f3a1aa8a0d9000dd2828a35901a9",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/配置与证据范围.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/配置与证据范围.json",
+      "original_sha256": "723aa594cb69faaebd94de58b3006fe7a4d9c7ba729e99f0404d0c0ff21e9c87",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/配置与证据范围.json",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/配置与证据范围.json",
+      "original_sha256": "2b962f4f8c31cbffc02da0a4559593190d47a634d0d275575e2ed9b811646a53",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/配置与证据范围.json",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/配置与证据范围.json",
+      "original_sha256": "74090fb94a0c1ca6b5f12f94ff491e9a8eb22da8ba2611e491512b7098959c2d",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/原始材料/回执/FB03-FULL-81d7ecb1e415ca10.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/原始材料/回执/FB03-FULL-81d7ecb1e415ca10.json",
+      "original_sha256": "41100600c2aa0910cc65b337f2a57fbb64d257409ab8c749e87663fc3e2aaffe",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/配置与证据范围.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/配置与证据范围.json",
+      "original_sha256": "ef123c00b668356d26ad7559424ed43158305373a1e31eb0835a38f595f94d9b",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/完整入口文件-第一阶段取证.txt",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/完整入口文件-第一阶段取证.txt",
+      "original_sha256": "59ad90008cee7459a0a11bdb88fd3b4e2fd9f6a994a2dbe52ec0b64bd9767680",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/配置与证据范围.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/配置与证据范围.json",
+      "original_sha256": "4018e2db1c096ee1bb131192f5880dc2400086f1b228df6f8a885900fc4850ba",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/第一阶段核对与评分.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/第一阶段核对与评分.json",
+      "original_sha256": "58f014c3862f566f0848213f261ea9ebdf1d8c7980c2bc40db47dd9546784dd8",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/产品完整输出/FB03-格式化结果.txt",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/产品完整输出/FB03-格式化结果.txt",
+      "original_sha256": "b467241769521ab70b939a6ced45135f1c9b4b74149ec901c795b885969b793b",
+      "transformation": "文本副本：替换本机路径/分享入口；不统一换行；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/第一阶段核对与评分.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/第一阶段核对与评分.json",
+      "original_sha256": "b787d22224bc6ec4e2b084a24c712ce5df3b048242841f436f584a21e5f14b8e",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/Codex-a01/原始材料/原生会话.excerpt.json",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/Codex-a01/原始材料/原生会话.jsonl",
+      "original_sha256": "59593ae6a11ad0201a73277e885ad178cf177f422d87888d9b75bc2c39d4a744",
+      "transformation": "选择相关事件，保留原始行号；删除推理/重放字段，替换本机路径；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/Codex-a01/配置与证据范围.json",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/Codex-a01/配置与证据范围.json",
+      "original_sha256": "ff6168c449fc45ec2c0d4d2586525bb27b702aa53b61024889a9392b6f9eb136",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/Codex-a01/核对与评分.json",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/Codex-a01/核对与评分.json",
+      "original_sha256": "9bc8cd3fb3dfdefc51681f63b0ea575f44ed0382399a725b28440450fac7246b",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/WorkBuddy-a01/原始材料/原生会话.excerpt.json",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/WorkBuddy-a01/原始材料/原生会话.jsonl",
+      "original_sha256": "3ef4fafdc1f51949e915d912fdc27e97036b778e93d6c0b9639ca2717da84356",
+      "transformation": "选择相关事件，保留原始行号；删除推理/重放字段，替换本机路径；必要时替换用户名，历史Markdown作为文本快照；用户消息仅保留user_query任务正文",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/WorkBuddy-a01/配置与证据范围.json",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/WorkBuddy-a01/配置与证据范围.json",
+      "original_sha256": "5e3841764ab9c8378e058090a2f0af7550cbf701f20c2e0381caf72a97d8a7f4",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/WorkBuddy-a01/核对与评分.json",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/WorkBuddy-a01/核对与评分.json",
+      "original_sha256": "563faaa7628c8a594b87eb9bcab7c7eaa1b7261c799203ba1042232259058ace",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/DSH-a01/原始材料/session.v4.excerpt.json",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/DSH-a01/原始材料/session.v4.jsonl",
+      "original_sha256": "bd1e135ab400c1faa4e3943727b2e58edb7304affabe836f3f40d567bf162bf9",
+      "transformation": "选择相关事件，保留原始行号；删除推理/重放字段，替换本机路径；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/DSH-a01/配置与证据范围.json",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/DSH-a01/配置与证据范围.json",
+      "original_sha256": "574fa47def4581aa903bada2c516ba6e60fdda62945b27468200b8cf7aedefb0",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/DSH-a01/核对与评分.json",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/DSH-a01/核对与评分.json",
+      "original_sha256": "194b751dd50c798ce2a3e3c703bdb8b6c77f19f139b63c7ca8bcf8c56d15532c",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/豆包-a01/原始材料/分享页可访问文本.txt",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/豆包-a01/原始材料/分享页可访问文本.txt",
+      "original_sha256": "eb6bd155a9f4254d58c5a1fca83935eb0879689a8b11fc105122c6b9efb01d97",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/豆包-a01/配置与证据范围.json",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/豆包-a01/配置与证据范围.json",
+      "original_sha256": "6632ad63b35f8919f032be086a6ecdbf404ddb0c9cff9cc2caa090352d93572b",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/豆包-a01/核对与评分.json",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/豆包-a01/核对与评分.json",
+      "original_sha256": "9ed4ec42953888066140fb0641fa10258d9b40ff59e3bdab88e4fea033629303",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/元宝-a01/原始材料/分享页可访问文本.txt",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/元宝-a01/原始材料/分享页可访问文本.txt",
+      "original_sha256": "5af7350c0e0540813e3a0bc539b4f9cfca3d49ae82a2b02c0fd4c18d97061eb0",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/元宝-a01/配置与证据范围.json",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/元宝-a01/配置与证据范围.json",
+      "original_sha256": "576b11607cafa00e00919d76e7c7ee1fc25d48ada9b58857cde5005f2b363ee3",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/元宝-a01/核对与评分.json",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/元宝-a01/核对与评分.json",
+      "original_sha256": "34eb6efad2f177c7c8c52ce16daea5e304600b5d4d7fa1255e9ea571671a5462",
+      "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
+      "byte_identical_to_original": false
+    }
+  ]
+}

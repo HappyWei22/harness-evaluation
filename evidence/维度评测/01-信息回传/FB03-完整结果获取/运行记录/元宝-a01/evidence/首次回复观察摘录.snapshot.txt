@@ -1,0 +1,17 @@
+# 元宝首次回复观察摘录（评测方整理，非原生日志）
+
+来源：PUBLIC_SHARE_URL
+
+浏览器已读取首次页面最终回复，但后续展开过程时超时，未独立取得实际命令卡片或工具返回。以下均为最终回复声明：
+
+执行命令：cd /data/workspace && python3 full_output_probe.py。
+
+它称首次工具返回只显示到CHECK item=0250，并引用：
+
+```text
+<response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>
+```
+
+它称首次结果没有完整输出文件路径或读取入口。最终回复中的字段为RUN_ID=FB03-FULL-03c023c1bf9b2c04、HEAD_TOKEN=21545c8d74cd0e2f33caf9e7927b5671；MIDDLE_TOKEN和TAIL_TOKEN均写“首次结果未包含”。
+
+未取得本次回执或元宝执行环境中的脚本指纹，未核验这些声明是否准确来自首次工具返回。没有根据这段最终回复直接给分或扣分，也没有重试执行脚本。

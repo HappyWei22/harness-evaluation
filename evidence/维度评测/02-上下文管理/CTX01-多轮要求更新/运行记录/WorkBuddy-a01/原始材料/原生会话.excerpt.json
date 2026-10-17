@@ -1,0 +1,353 @@
+{
+  "format": "native-event-excerpt-v1",
+  "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/WorkBuddy-a01/原始材料/原生会话.jsonl",
+  "original_sha256": "3ef4fafdc1f51949e915d912fdc27e97036b778e93d6c0b9639ca2717da84356",
+  "original_line_count": 15,
+  "scope": "仅导出相关工具事件或指定可见问答；删除推理块、重放元数据并替换本机路径。不是完整原生日志或完整模型请求。 WorkBuddy用户消息仅保留user_query中的任务正文；其余上下文包装省略。",
+  "records": [
+    {
+      "source_line": 3,
+      "event": {
+        "id": "01a1483d-9359-7ca0-ae5b-89de3f290b98",
+        "timestamp": 1792213355686,
+        "type": "message",
+        "role": "user",
+        "content": [
+          {
+            "type": "input_text",
+            "text": "<user_query>我们分三轮登记一项校园活动。本题只需在对话中登记和更新活动信息。\n请先记录以下初始信息：\n活动编号：ACT-27\n地点：A教学楼\n预算：3000\n币种：CNY\n本轮只确认收到，暂不输出最终活动记录，等待后续修改。</user_query>"
+          }
+        ],
+        "providerData": {
+          "startsNewUserRequest": true,
+          "agent": "cli"
+        },
+        "__codebuddyLocal": {
+          "sensitiveUserInputReviewed": true
+        },
+        "sessionId": "2b902466-0336-49c5-8dee-e7431d922231",
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/CTX01-a01",
+        "_meta": {
+          "traceparent": "00-0d5e38da11e44c51b4bf921b13c2ebc1-740b7d56aeb6d236-01",
+          "baggage": "buddyId=,buddyName=,codebuddy.session_id=2b902466-0336-49c5-8dee-e7431d922231,codebuddy.conversation_request_id=01a1483d8c967bf7b99be3451f7a0b96"
+        }
+      }
+    },
+    {
+      "source_line": 7,
+      "event": {
+        "id": "01a1483d-9993-7e80-ae16-dbd3e71b80e5",
+        "parentId": "01a1483d-9993-7e80-ae16-dbd4e8ee86e4",
+        "timestamp": 1792213365366,
+        "type": "message",
+        "role": "assistant",
+        "providerData": {
+          "messageId": "01a1483d99937e80ae16dbd28812db7d",
+          "stepSeq": 1,
+          "model": "hy4-preview",
+          "requestModelId": "hy4-preview",
+          "requestModelName": "Hy4 preview",
+          "traceId": "0d5e38da11e44c51b4bf921b13c2ebc1",
+          "rawUsage": {
+            "prompt_tokens": 32339,
+            "completion_tokens": 253,
+            "total_tokens": 32592,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 189,
+              "rejected_prediction_tokens": 0,
+              "cached_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0,
+              "cached_tokens": 12096
+            },
+            "prompt_cache_hit_tokens": 12096,
+            "prompt_cache_miss_tokens": 20243,
+            "cache_read_input_tokens": 0,
+            "cache_creation_input_tokens": 0,
+            "prompt_cache_write_tokens": 0,
+            "completion_thinking_tokens": 189,
+            "credit": 3.03,
+            "cached_tokens": 0
+          },
+          "agent": "cli",
+          "usage": {
+            "requests": 1,
+            "inputTokens": 32339,
+            "outputTokens": 253,
+            "totalTokens": 32592,
+            "inputTokensDetails": [
+              {
+                "cached_tokens": 12096
+              }
+            ],
+            "outputTokensDetails": [
+              {
+                "reasoning_tokens": 189
+              }
+            ]
+          }
+        },
+        "status": "completed",
+        "content": [
+          {
+            "providerData": {
+              "annotations": []
+            },
+            "type": "output_text",
+            "text": "已收到，本轮仅登记，暂不输出最终活动记录。\n\n当前记录（第 1 轮）：\n\n- 活动编号：ACT-27\n- 地点：A教学楼\n- 预算：3000\n- 币种：CNY\n\n等待你后续的修改指令。"
+          }
+        ],
+        "sessionId": "2b902466-0336-49c5-8dee-e7431d922231",
+        "message": {
+          "usage": {
+            "input_tokens": 32339,
+            "output_tokens": 253,
+            "total_tokens": 32592,
+            "cache_read_input_tokens": 12096
+          }
+        },
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/CTX01-a01",
+        "_meta": {
+          "traceparent": "00-0d5e38da11e44c51b4bf921b13c2ebc1-740b7d56aeb6d236-01",
+          "baggage": "buddyId=,buddyName=,codebuddy.session_id=2b902466-0336-49c5-8dee-e7431d922231,codebuddy.conversation_request_id=01a1483d8c967bf7b99be3451f7a0b96"
+        }
+      }
+    },
+    {
+      "source_line": 8,
+      "event": {
+        "id": "01a1483d-b887-7775-8a15-b29fa38ed846",
+        "parentId": "01a1483d-9993-7e80-ae16-dbd3e71b80e5",
+        "timestamp": 1792213366837,
+        "type": "message",
+        "role": "user",
+        "content": [
+          {
+            "type": "input_text",
+            "text": "<user_query>```text\n更新刚才的活动信息：\n地点改为图书馆，预算改为4500。\n其他信息保持不变。\n本轮只确认收到，暂不输出最终活动记录。</user_query>"
+          }
+        ],
+        "providerData": {
+          "startsNewUserRequest": true,
+          "agent": "cli"
+        },
+        "__codebuddyLocal": {
+          "sensitiveUserInputReviewed": true
+        },
+        "sessionId": "2b902466-0336-49c5-8dee-e7431d922231",
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/CTX01-a01",
+        "_meta": {
+          "traceparent": "00-6ac77400e205459a8d96424f2f12af4c-fdc140f2df254792-01",
+          "baggage": "buddyId=,buddyName=,codebuddy.session_id=2b902466-0336-49c5-8dee-e7431d922231,codebuddy.conversation_request_id=01a1483db83573ff846425c9155f138e"
+        }
+      }
+    },
+    {
+      "source_line": 11,
+      "event": {
+        "id": "01a1483d-bb49-71a9-bbb9-d86a5da2822b",
+        "parentId": "01a1483d-bb49-71a9-bbb9-d86be95dc402",
+        "timestamp": 1792213374030,
+        "type": "message",
+        "role": "assistant",
+        "providerData": {
+          "messageId": "01a1483dbb4971a9bbb9d8690286ac02",
+          "stepSeq": 2,
+          "model": "hy4-preview",
+          "requestModelId": "hy4-preview",
+          "requestModelName": "Hy4 preview",
+          "traceId": "6ac77400e205459a8d96424f2f12af4c",
+          "rawUsage": {
+            "prompt_tokens": 33050,
+            "completion_tokens": 219,
+            "total_tokens": 33269,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 138,
+              "rejected_prediction_tokens": 0,
+              "cached_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0,
+              "cached_tokens": 32256
+            },
+            "prompt_cache_hit_tokens": 32256,
+            "prompt_cache_miss_tokens": 794,
+            "cache_read_input_tokens": 0,
+            "cache_creation_input_tokens": 0,
+            "prompt_cache_write_tokens": 0,
+            "completion_thinking_tokens": 138,
+            "credit": 0.36,
+            "cached_tokens": 0
+          },
+          "agent": "cli",
+          "usage": {
+            "requests": 1,
+            "inputTokens": 33050,
+            "outputTokens": 219,
+            "totalTokens": 33269,
+            "inputTokensDetails": [
+              {
+                "cached_tokens": 32256
+              }
+            ],
+            "outputTokensDetails": [
+              {
+                "reasoning_tokens": 138
+              }
+            ]
+          }
+        },
+        "status": "completed",
+        "content": [
+          {
+            "providerData": {
+              "annotations": []
+            },
+            "type": "output_text",
+            "text": "已收到第 2 轮更新，暂不输出最终活动记录。\n\n当前记录状态：\n\n- 活动编号：ACT-27（未变）\n- 地点：A教学楼 → **图书馆**（本轮修改）\n- 预算：3000 → **4500**（本轮修改）\n- 币种：CNY（未变）\n\n等待第 3 轮指令。"
+          }
+        ],
+        "sessionId": "2b902466-0336-49c5-8dee-e7431d922231",
+        "message": {
+          "usage": {
+            "input_tokens": 33050,
+            "output_tokens": 219,
+            "total_tokens": 33269,
+            "cache_read_input_tokens": 32256
+          }
+        },
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/CTX01-a01",
+        "_meta": {
+          "traceparent": "00-6ac77400e205459a8d96424f2f12af4c-fdc140f2df254792-01",
+          "baggage": "buddyId=,buddyName=,codebuddy.session_id=2b902466-0336-49c5-8dee-e7431d922231,codebuddy.conversation_request_id=01a1483db83573ff846425c9155f138e"
+        }
+      }
+    },
+    {
+      "source_line": 12,
+      "event": {
+        "id": "01a1483d-de65-7bf4-9ce0-705f6dc588e6",
+        "parentId": "01a1483d-bb49-71a9-bbb9-d86a5da2822b",
+        "timestamp": 1792213376544,
+        "type": "message",
+        "role": "user",
+        "content": [
+          {
+            "type": "input_text",
+            "text": "<user_query>请根据本会话目前有效的信息，输出最终活动记录。\n只输出一个JSON对象，字段名固定为“活动编号”“地点”“预算”“币种”。预算使用数字，其他字段使用字符串。保留编号、地点和币种的有效写法，不新增条件。\n```</user_query>"
+          }
+        ],
+        "providerData": {
+          "startsNewUserRequest": true,
+          "agent": "cli"
+        },
+        "__codebuddyLocal": {
+          "sensitiveUserInputReviewed": true
+        },
+        "sessionId": "2b902466-0336-49c5-8dee-e7431d922231",
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/CTX01-a01",
+        "_meta": {
+          "traceparent": "00-dc10d8d26bcb417d95008bf2453fc8a4-ff9af422a7678460-01",
+          "baggage": "buddyId=,buddyName=,codebuddy.session_id=2b902466-0336-49c5-8dee-e7431d922231,codebuddy.conversation_request_id=01a1483dde20766d8fe4419e4b754607"
+        }
+      }
+    },
+    {
+      "source_line": 15,
+      "event": {
+        "id": "01a1483d-e111-7c70-be28-30e3d3e3f45c",
+        "parentId": "01a1483d-e111-7c70-be28-30e4b57be9d8",
+        "timestamp": 1792213382980,
+        "type": "message",
+        "role": "assistant",
+        "providerData": {
+          "messageId": "01a1483de1117c70be2830e2f1c736e7",
+          "stepSeq": 3,
+          "model": "hy4-preview",
+          "requestModelId": "hy4-preview",
+          "requestModelName": "Hy4 preview",
+          "traceId": "dc10d8d26bcb417d95008bf2453fc8a4",
+          "rawUsage": {
+            "prompt_tokens": 33751,
+            "completion_tokens": 203,
+            "total_tokens": 33954,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 179,
+              "rejected_prediction_tokens": 0,
+              "cached_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0,
+              "cached_tokens": 32960
+            },
+            "prompt_cache_hit_tokens": 32960,
+            "prompt_cache_miss_tokens": 791,
+            "cache_read_input_tokens": 0,
+            "cache_creation_input_tokens": 0,
+            "prompt_cache_write_tokens": 0,
+            "completion_thinking_tokens": 179,
+            "credit": 0.36,
+            "cached_tokens": 0
+          },
+          "agent": "cli",
+          "usage": {
+            "requests": 1,
+            "inputTokens": 33751,
+            "outputTokens": 203,
+            "totalTokens": 33954,
+            "inputTokensDetails": [
+              {
+                "cached_tokens": 32960
+              }
+            ],
+            "outputTokensDetails": [
+              {
+                "reasoning_tokens": 179
+              }
+            ]
+          }
+        },
+        "status": "completed",
+        "content": [
+          {
+            "providerData": {
+              "annotations": []
+            },
+            "type": "output_text",
+            "text": "{\"活动编号\":\"ACT-27\",\"地点\":\"图书馆\",\"预算\":4500,\"币种\":\"CNY\"}"
+          }
+        ],
+        "sessionId": "2b902466-0336-49c5-8dee-e7431d922231",
+        "message": {
+          "usage": {
+            "input_tokens": 33751,
+            "output_tokens": 203,
+            "total_tokens": 33954,
+            "cache_read_input_tokens": 32960
+          }
+        },
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/CTX01-a01",
+        "_meta": {
+          "traceparent": "00-dc10d8d26bcb417d95008bf2453fc8a4-ff9af422a7678460-01",
+          "baggage": "buddyId=,buddyName=,codebuddy.session_id=2b902466-0336-49c5-8dee-e7431d922231,codebuddy.conversation_request_id=01a1483dde20766d8fe4419e4b754607"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "phase": "first_completed_second_pending",
+  "case_id": "FB03",
+  "case_name": "截断后完整结果获取",
+  "fixture_version": "1.0.0",
+  "observation_layer": "native tool result, not independently verified full model request",
+  "source_zip_sha256": "93590c038ad24075ef343e1f2b8d92b6480924703c419300d5f6f1e7501d69f6",
+  "source_native_lines": 28,
+  "call_line": 21,
+  "result_line": 22,
+  "final_reply_line": 26,
+  "run_id": "FB03-FULL-3653133d715e89a0",
+  "tool_calls": 1,
+  "call_id_matches": true,
+  "actual_command": {
+    "command": "python3 full_output_probe.py",
+    "description": "Run the output probe script once",
+    "workdir": "/PUBLIC_PROJECT/独立测试工作区/DSH/FB03-a01"
+  },
+  "script_sha256": "2096711631d287c9229aad63100127e7f1c32a9551316fa9b3910ffc56615ee6",
+  "script_matches_prepared_manifest": true,
+  "first_result_bytes": 49931,
+  "first_result_sha256": "560c1bb48ef618f556a25d93ca3f8dd4eb1f1f8f3d3c8c37b2a2c3b56b8282c5",
+  "expected_report_bytes": 262144,
+  "expected_report_sha256": "5fd69d93d5bcb52d7bb01a4474f2e4c611d21c2e56e6d392bd260d825eeb754d",
+  "marker_visible_in_first_result": {
+    "HEAD_TOKEN": false,
+    "MIDDLE_TOKEN": false,
+    "TAIL_TOKEN": true
+  },
+  "explicit_truncation": true,
+  "first_return_entrypoints": [
+    "/PUBLIC_TMP/dsh-subprocess-MW3MiM/dsh-subprocess-1614-1-137e3ef7f92a-stdout.log",
+    "/PUBLIC_TMP/dsh-spill-cmOjiH/session-3376918ee365/f656fe81ffe9-bash.txt"
+  ],
+  "entrypoints_read_by_evaluator": false,
+  "config": {
+    "provider": "deepseek-account",
+    "model": "deepseek-flash",
+    "reasoningEffort": "high",
+    "maxTokens": 256000
+  },
+  "scores": [
+    {
+      "item": "说明当前结果不完整",
+      "max": 2,
+      "score": 2,
+      "status": "confirmed"
+    },
+    {
+      "item": "提供有效的完整结果入口",
+      "max": 2,
+      "score": null,
+      "status": "path_present_validity_pending"
+    },
+    {
+      "item": "通过入口取回缺少的内容",
+      "max": 2,
+      "score": null,
+      "status": "not_tested"
+    },
+    {
+      "item": "完整结果保存准确",
+      "max": 2,
+      "score": null,
+      "status": "not_tested"
+    }
+  ],
+  "confirmed_points": 2,
+  "assessed_max": 2,
+  "remaining_pending": 6,
+  "confirmed_failed_points": 0,
+  "_public_copy_note": "这是历史本地判分/核对的公开副本。原有布尔检查不表示本次公开打包重新执行了全部旧验证；当前覆盖见checks/verify.py和docs/复核说明.md。"
+}

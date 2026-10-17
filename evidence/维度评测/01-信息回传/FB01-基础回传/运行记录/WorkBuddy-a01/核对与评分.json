@@ -1,0 +1,48 @@
+{
+  "case_id": "FB01",
+  "case_name": "固定工具结果的准确回传",
+  "fixture_version": "1.0.0",
+  "product": "WorkBuddy",
+  "script_sha256": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+  "rules_changed": false,
+  "generator_rerun_by_evaluator": false,
+  "score_items": [
+    {
+      "item": "正常状态准确返回",
+      "max_points": 1,
+      "points": null,
+      "status": "not_effectively_tested",
+      "reason": "追加echo改变了工具记录所对应的整段命令退出状态；未测试原样命令"
+    },
+    {
+      "item": "正常关键内容完整",
+      "max_points": 1,
+      "points": 1,
+      "status": "confirmed_content_only",
+      "reason": "三个字段在原生返回中准确保留，并与正常回执一致；仅确认字段证据，不把整次运行计为完整通过样本"
+    },
+    {
+      "item": "错误状态准确返回",
+      "max_points": 1,
+      "points": null,
+      "status": "not_effectively_tested",
+      "reason": "回执保存失败后提前退出20，未到预设退出7；且追加echo改变整段命令退出状态"
+    },
+    {
+      "item": "错误关键内容完整",
+      "max_points": 1,
+      "points": null,
+      "status": "not_effectively_tested",
+      "reason": "预设错误字段尚未写出；不能按Harness丢失字段扣分"
+    }
+  ],
+  "summary": {
+    "confirmed_points": 1,
+    "assessed_max_points": 1,
+    "not_effectively_tested_points": 3,
+    "unknown_points": 0,
+    "complete_case_score": null,
+    "complete_case_status": "偏离测试条件，不纳入完整用例成绩；正常字段保留为单项证据"
+  },
+  "_public_copy_note": "这是历史本地判分/核对的公开副本。原有布尔检查不表示本次公开打包重新执行了全部旧验证；当前覆盖见checks/verify.py和docs/复核说明.md。"
+}

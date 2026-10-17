@@ -1,0 +1,844 @@
+diff --git a/package.json b/package.json
+--- a/package.json
++++ b/package.json
+@@ -63,7 +63,8 @@
+         "@deepseek-ai/dsh-client-locale",
+         "@deepseek-ai/dsh-client-ui-conversation",
+         "@deepseek-ai/dsh-client-ui-settings",
+-        "@deepseek-ai/dsh-client-ui-sidebar-right"
++        "@deepseek-ai/dsh-client-ui-sidebar-right",
++        "@deepseek-ai/dsh-session-log-export"
+       ],
+       "platform": "web"
+     },
+@@ -154,5 +155,6 @@
+     "typescript": "^7.0.2",
+     "vitest": "^4.1.11",
+     "zustand": "~4.4.7"
+-  }
++  },
++  "x-project-notice": "Local context-export extension; modified from upstream. See MODIFICATIONS.md."
+ }
+diff --git a/src/client/components/browser.tsx b/src/client/components/browser.tsx
+--- a/src/client/components/browser.tsx
++++ b/src/client/components/browser.tsx
+@@ -1,3 +1,4 @@
++// Local context-export extension; modified from upstream. See MODIFICATIONS.md.
+ import { useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactElement, type ReactNode } from 'react'
+ import { UNKNOWN_TOOL_SOURCE, type Category, type ContextHeaders, type ContextTimeline, type HeaderTool, type RequestRecord, type SurfaceNode } from '../../shared/types'
+ import { assemble } from '../assemble'
+@@ -24,8 +25,10 @@
+ import type { RowKind } from './browserNodes'
+ import { MapIcon, makeBrowserTreemap } from './browserTreemap'
+ import type { MapBlock } from '../treemap'
++import { ContextExport } from './contextExport'
+ 
+ export interface ContextBrowserProps {
++  sessionId?: string
+   data: ContextTimeline
+   headers: ContextHeaders | null
+   /** Resolved by the caller so the `useChat` seat's hook order lives in exactly one place. */
+@@ -685,6 +688,9 @@
+           </select>
+         </div>
+ 
++        <ContextExport kit={kit} sessionId={props.sessionId} view={view} request={req} data={data}
++          disabled={props.detailState === 'loading' || props.detailState === 'failed'} />
++
+         <div className={'lc-br-bar' + (dna ? ' lc-br-bar-dna' : '')}>
+           <div className="lc-br-bar-main">
+             <div className="lc-br-meta">
+diff --git a/src/client/components/contextModal.tsx b/src/client/components/contextModal.tsx
+--- a/src/client/components/contextModal.tsx
++++ b/src/client/components/contextModal.tsx
+@@ -1,3 +1,4 @@
++// Local context-export extension; modified from upstream. See MODIFICATIONS.md.
+ /** The /context command's centered dialog: the same pushed `contextTimeline` data as the Context tab, distilled to the
+  * current composition and the shared browser. */
+ 
+@@ -130,6 +131,7 @@
+                 onHoverKey={setHoverCat}
+               />
+               <ContextBrowser
++                sessionId={sessionId}
+                 data={data}
+                 headers={headers}
+                 convNodes={convNodes}
+diff --git a/src/client/components/contextView.tsx b/src/client/components/contextView.tsx
+--- a/src/client/components/contextView.tsx
++++ b/src/client/components/contextView.tsx
+@@ -1,3 +1,4 @@
++// Local context-export extension; modified from upstream. See MODIFICATIONS.md.
+ import { createElement as h, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactElement, type ReactNode } from 'react'
+ import type { Category, ContextEventRecord, RequestRecord, SurfaceNode } from '../../shared/types'
+ import { CATS } from '../categories'
+@@ -579,6 +580,7 @@
+     )
+     const browserCard = (
+       <ContextBrowser
++        sessionId={sessionId}
+         data={data}
+         headers={headers}
+         convNodes={convNodes}
+diff --git a/src/client/i18nEn.ts b/src/client/i18nEn.ts
+--- a/src/client/i18nEn.ts
++++ b/src/client/i18nEn.ts
+@@ -1,3 +1,4 @@
++// Local context-export extension; modified from upstream. See MODIFICATIONS.md.
+ /** The English dictionary; `DictKey` pins it to the zh key set at compile time. */
+ 
+ import type { DictKey } from './i18nZh'
+@@ -367,6 +368,18 @@
+   'cmd.desc': 'View current context makeup, browse per-step composition',
+   'cmd.close': 'Close',
+   'browser.title': 'Context Browser',
++  'export.context': 'Export selected context JSON',
++  'export.log': 'Download native session log ZIP',
++  'export.busy': 'Preparing export…',
++  'export.contextTip': 'Fetch full content for the selected step; preserve missing and approximate flags',
++  'export.logTip': 'Use the native DSH download for this session, descendants and attachments, regardless of the selected step',
++  'export.scope': 'Context is reconstructed from logs, not captured network traffic; the native log covers the entire session.',
++  'export.noNative': 'The native DSH session download is unavailable.',
++  'export.noHistory': 'Full session history reading is unavailable.',
++  'export.nativeStarted': 'Native DSH export requested; check its download or error dialog.',
++  'export.started': 'Context JSON handed to the downloader with its evidence scope.',
++  'export.partial': 'Partial context exported; inspect missing and approximate flags in coverage.',
++  'export.failed': 'Export failed: ',
+   'browser.live': 'Live (Next Request)',
+   'browser.liveNow': 'Live · Next Request',
+   'browser.items': '{n} Items',
+diff --git a/src/client/i18nZh.ts b/src/client/i18nZh.ts
+--- a/src/client/i18nZh.ts
++++ b/src/client/i18nZh.ts
+@@ -1,3 +1,4 @@
++// Local context-export extension; modified from upstream. See MODIFICATIONS.md.
+ /** The Chinese (Simplified) dictionary — the key-set source of truth every other locale must carry in full. */
+ export const DICT_ZH = {
+   'tab.context': '上下文',
+@@ -365,6 +366,18 @@
+   'cmd.desc': '查看当前上下文构成，浏览各步骤组成',
+   'cmd.close': '关闭',
+   'browser.title': '上下文浏览器',
++  'export.context': '导出所选上下文 JSON',
++  'export.log': '下载原始会话日志 ZIP',
++  'export.busy': '正在准备导出…',
++  'export.contextTip': '读取所选步骤各条目的完整正文，保留缺失与近似标记',
++  'export.logTip': '调用 DSH 原生下载，包含本会话、子会话和附件；范围不受所选步骤限制',
++  'export.scope': '上下文导出为日志还原，非实际网络请求；原始日志为整个会话。',
++  'export.noNative': '当前环境未提供 DSH 原生会话下载功能。',
++  'export.noHistory': '当前环境未提供历史正文读取功能。',
++  'export.nativeStarted': '已调用 DSH 原生导出，请查看其下载或错误提示。',
++  'export.started': '上下文 JSON 已交给下载器；文件保留了取证范围说明。',
++  'export.partial': '已导出带缺口的上下文 JSON；请检查 coverage 中的缺失与近似标记。',
++  'export.failed': '导出失败：',
+   'browser.live': '当前（下一次请求）',
+   'browser.liveNow': '当前 · 下一次请求',
+   'browser.items': '{n} 项',
+diff --git a/src/client/index.ts b/src/client/index.ts
+--- a/src/client/index.ts
++++ b/src/client/index.ts
+@@ -1,3 +1,4 @@
++// Local context-export extension; modified from upstream. See MODIFICATIONS.md.
+ /** dsh-context — client half bundle entry. The Context view reads the harness session projection
+  * `contextTimeline` (the split generation's slim head); heavy collections arrive on demand from the
+  * host's detail endpoint, one read per viewing client (timelineSource.ts). */
+@@ -18,6 +19,7 @@
+ import { watchFleetTab } from './fleetTab'
+ import { makeAgentHeads } from './agentHeads'
+ import { watchHistoryFaces } from './historyPage'
++import { watchNativeLogExport } from './nativeLogExport'
+ import { watchPlacement } from './placement'
+ import { watchSidebarContextTab } from './sidebar'
+ import { makeViewKit } from './viewkit'
+@@ -69,6 +71,7 @@
+   // History faces are resolved through the DECLARED inject: a non-declared read of the traced remote proxy
+   // throws "cannot get property … without inject" and takes the view down (see historyPage.ts).
+   watchHistoryFaces(ctx)
++  watchNativeLogExport(ctx)
+   const settings = createContextSettings()
+   // One page-scope cold-head cache for every agent-data reader: the Context view's stats cell and inline card
+   // (right Sidebar host), and the Fleet tab's card — all of which can be mounted at the same time.
+diff --git a/src/client/styles/browser.css b/src/client/styles/browser.css
+--- a/src/client/styles/browser.css
++++ b/src/client/styles/browser.css
+@@ -1,3 +1,4 @@
++/* Local context-export extension; modified from upstream. See MODIFICATIONS.md. */
+ /* The DNA group's margin is zeroed so the delta-baseline `.lc-gran` keeps the row's single auto-margin push. */
+ .lc-br-dna-ctl { margin-left: 0; flex: none; }
+ /* The divider scales with its band (`min(0.5px, 12.5%)` of its own width): long sessions pin hundreds of bands at ≤1px, where a fixed divider would cover the whole band. A gradient layer, because a fixed inset box-shadow cannot scale. */
+@@ -82,3 +83,8 @@
+ .lc-br-hits { flex: none; color: var(--dsw-alias-label-secondary); font-size: 11px; }
+ .lc-br-content { padding: 2px 6px 8px 26px; display: flex; flex-direction: column; gap: 6px; }
+ .lc-br-dim { color: var(--dsw-alias-label-secondary); }
++.lc-context-export { display: flex; flex-direction: column; gap: 5px; margin: 8px 0 10px; }
++.lc-context-export-actions { display: flex; flex-wrap: wrap; gap: 6px; }
++.lc-context-export-actions button { max-width: 100%; white-space: normal; text-align: left; cursor: pointer; }
++.lc-context-export-actions button:disabled { opacity: 0.5; cursor: default; }
++.lc-context-export-note { color: var(--dsw-alias-label-secondary); font-size: 12px; overflow-wrap: anywhere; }
+diff --git a/src/client/contextExport.ts b/src/client/contextExport.ts
+new file mode 100644
+--- /dev/null
++++ b/src/client/contextExport.ts
+@@ -0,0 +1,128 @@
++// Local context-export extension; modified from upstream. See MODIFICATIONS.md.
++import type { Assembled } from './assemble'
++import type { ContextTimeline, RequestRecord } from '../shared/types'
++import type { SessionPageFace } from './services'
++
++export interface LogEvent {
++  seq: number
++  type: string
++  data: Record<string, unknown>
++  [key: string]: unknown
++}
++
++export type EventReader = (seq: number) => Promise<LogEvent | null>
++
++function record(value: unknown): Record<string, unknown> | null {
++  return value !== null && typeof value === 'object' ? value as Record<string, unknown> : null
++}
++
++export function makeExportReader(page: SessionPageFace['page'], sessionId: string): EventReader {
++  const cache = new Map<number, LogEvent>()
++  return async (seq) => {
++    const cached = cache.get(seq)
++    if (cached !== undefined) return cached
++    const response = record(await page({
++      address: { kind: 'session', sessionId }, throughSeq: seq, beforeSeq: seq + 1,
++    }, new AbortController().signal))
++    const payload = response !== null && 'ok' in response
++      ? response.ok === true ? record(response.value) : null
++      : response
++    if (payload === null || !Array.isArray(payload.records)) throw new Error('Session history read failed')
++    for (const entry of payload.records) {
++      const row = record(entry)
++      const event = record(row?.event ?? row)
++      if (event === null || typeof event.seq !== 'number' || typeof event.type !== 'string' || record(event.data) === null) continue
++      cache.set(event.seq, event as LogEvent)
++    }
++    return cache.get(seq) ?? null
++  }
++}
++
++export async function buildContextExport(input: {
++  sessionId: string
++  view: Assembled
++  request: RequestRecord | null
++  data: ContextTimeline
++  read: EventReader
++  version: string
++  exportedAt?: string
++}) {
++  const { view, request, read, data } = input
++  const seqs = new Set(view.nodes.map(node => node.seq))
++  if (view.system !== null) seqs.add(view.system.seq)
++  if (view.header !== null) seqs.add(view.header.seq)
++  const events = new Map<number, LogEvent>()
++  const missing: Array<{ seq: number; reason: string }> = []
++  // Serial reads bound memory and retain the exact click-time selection while the view keeps updating.
++  for (const seq of [...seqs].sort((a, b) => a - b)) {
++    try {
++      const event = await read(seq)
++      if (event === null) missing.push({ seq, reason: 'not_found' })
++      else if (event.seq !== seq) missing.push({ seq, reason: 'sequence_mismatch' })
++      else events.set(seq, event)
++    } catch (error) {
++      missing.push({ seq, reason: error instanceof Error ? error.message : String(error) })
++    }
++  }
++  const eventAt = (seq: number | undefined) => seq === undefined ? null : events.get(seq) ?? null
++  return {
++    schema: 'dsh-context.selected-context',
++    schemaVersion: 1,
++    exportedAt: input.exportedAt ?? new Date().toISOString(),
++    exporter: { name: 'dsh-context', version: input.version, extension: 'context-export-1' },
++    sessionId: input.sessionId,
++    evidence: {
++      kind: 'log_reconstructed_context',
++      actualProviderRequestCaptured: false,
++      note: 'This is the plugin-selected reconstruction, not a captured provider request or a complete session log.',
++    },
++    selection: request === null
++      ? { mode: 'live_next_request' as const }
++      : {
++        mode: 'historical_request' as const,
++        turn: request.turn ?? null,
++        step: request.step ?? null,
++        responseSeq: request.seq,
++        time: request.time,
++      },
++    coverage: {
++      approximate: view.approximate,
++      missingLiveNodes: view.missingLive,
++      requestHeaderAvailable: view.header !== null,
++      systemNodeAvailable: view.system !== null,
++      allListedEventsFetched: missing.length === 0,
++      missingEvents: missing,
++      attachments: 'references_only; download the native session ZIP for attachment bytes',
++      order: 'plugin assembly order; provider-specific serialization is not reproduced',
++    },
++    tokenStatistics: {
++      estimated: request ?? data.current,
++      providerReportedPromptTokens: request?.prompt ?? null,
++    },
++    header: { metadata: view.header, event: eventAt(view.header?.seq) },
++    system: { metadata: view.system, event: eventAt(view.system?.seq) },
++    nodes: view.nodes.map(node => ({ metadata: node, event: eventAt(node.seq) })),
++    contextEvents: data.events.filter(event => request === null || event.seq < request.seq),
++  }
++}
++
++export function exportFilename(sessionId: string, request: RequestRecord | null): string {
++  const id = sessionId.replace(/[^A-Za-z0-9_-]/g, '_')
++  const step = request === null ? 'live' : `T${request.turn ?? 'unknown'}-S${request.step ?? 'unknown'}-seq${request.seq}`
++  return `dsh-context-${id}-${step}.json`
++}
++
++export function downloadJson(filename: string, value: unknown): void {
++  const blob = new Blob([JSON.stringify(value, null, 2) + '\n'], { type: 'application/json;charset=utf-8' })
++  const url = URL.createObjectURL(blob)
++  const anchor = document.createElement('a')
++  anchor.href = url
++  anchor.download = filename
++  document.body.appendChild(anchor)
++  try {
++    anchor.click()
++  } finally {
++    anchor.remove()
++    window.setTimeout(() => { URL.revokeObjectURL(url) }, 30_000)
++  }
++}
+diff --git a/src/client/nativeLogExport.ts b/src/client/nativeLogExport.ts
+new file mode 100644
+--- /dev/null
++++ b/src/client/nativeLogExport.ts
+@@ -0,0 +1,36 @@
++// Local context-export extension; modified from upstream. See MODIFICATIONS.md.
++import { useSyncExternalStore } from 'react'
++import type { ClientCtx } from './services'
++
++export type NativeLogExporter = (sessionId: string) => Promise<void>
++
++let exporter: NativeLogExporter | undefined
++const listeners = new Set<() => void>()
++
++function notify(value: NativeLogExporter | undefined): void {
++  exporter = value
++  for (const listener of [...listeners]) listener()
++}
++
++export function watchNativeLogExport(ctx: ClientCtx): void {
++  ctx.inject(['sessionLogDownload'], (scope) => {
++    try {
++      const face = scope.get('sessionLogDownload') as { download?: unknown } | null | undefined
++      if (face === undefined || face === null || typeof face.download !== 'function') return
++      const download = face.download as NativeLogExporter
++      notify(id => download.call(face, id))
++    } catch {
++      return
++    }
++    return () => { notify(undefined) }
++  })
++}
++
++function subscribe(listener: () => void): () => void {
++  listeners.add(listener)
++  return () => { listeners.delete(listener) }
++}
++
++export function useNativeLogExporter(): NativeLogExporter | undefined {
++  return useSyncExternalStore(subscribe, () => exporter, () => exporter)
++}
+diff --git a/src/client/components/contextExport.tsx b/src/client/components/contextExport.tsx
+new file mode 100644
+--- /dev/null
++++ b/src/client/components/contextExport.tsx
+@@ -0,0 +1,74 @@
++// Local context-export extension; modified from upstream. See MODIFICATIONS.md.
++import { useRef, useState, type ReactElement } from 'react'
++import type { Assembled } from '../assemble'
++import type { ContextTimeline, RequestRecord } from '../../shared/types'
++import { buildContextExport, downloadJson, exportFilename, makeExportReader } from '../contextExport'
++import { useHistoryFace } from '../historyPage'
++import { useNativeLogExporter } from '../nativeLogExport'
++import type { ViewKit } from '../viewkit'
++
++declare const __DSH_CTX_VERSION__: string
++
++export function ContextExport(props: {
++  kit: ViewKit
++  sessionId?: string
++  view: Assembled
++  request: RequestRecord | null
++  data: ContextTimeline
++  disabled?: boolean
++}): ReactElement {
++  const { t } = props.kit
++  const page = useHistoryFace()
++  const nativeExport = useNativeLogExporter()
++  const [busy, setBusy] = useState(false)
++  const active = useRef(false)
++  const [status, setStatus] = useState('')
++  const sessionId = props.sessionId
++  const validSession = typeof sessionId === 'string' && sessionId !== ''
++
++  const run = async (native: boolean): Promise<void> => {
++    if (active.current || !validSession) return
++    active.current = true
++    setBusy(true)
++    setStatus('')
++    try {
++      if (native) {
++        if (nativeExport === undefined) throw new Error(t('export.noNative'))
++        await nativeExport(sessionId)
++        setStatus(t('export.nativeStarted'))
++      } else {
++        if (page === undefined) throw new Error(t('export.noHistory'))
++        const value = await buildContextExport({
++          sessionId,
++          view: props.view,
++          request: props.request,
++          data: props.data,
++          read: makeExportReader(page, sessionId),
++          version: __DSH_CTX_VERSION__,
++        })
++        downloadJson(exportFilename(sessionId, props.request), value)
++        setStatus(t(value.coverage.allListedEventsFetched && !value.coverage.approximate
++          && value.coverage.missingLiveNodes === 0 && value.coverage.requestHeaderAvailable
++          ? 'export.started' : 'export.partial'))
++      }
++    } catch (error) {
++      setStatus(t('export.failed') + (error instanceof Error ? error.message : String(error)))
++    } finally {
++      active.current = false
++      setBusy(false)
++    }
++  }
++
++  return (
++    <div className="lc-context-export">
++      <div className="lc-context-export-actions">
++        <button type="button" className="lc-br-pick" disabled={busy || props.disabled || !validSession || page === undefined}
++          title={t('export.contextTip')} onClick={() => { void run(false) }}>{t(busy ? 'export.busy' : 'export.context')}</button>
++        <button type="button" className="lc-br-pick" disabled={busy || !validSession || nativeExport === undefined}
++          title={t('export.logTip')} onClick={() => { void run(true) }}>{t('export.log')}</button>
++      </div>
++      <div className="lc-context-export-note">{t('export.scope')}</div>
++      {status !== '' ? <div className="lc-context-export-note" role="status">{status}</div> : null}
++    </div>
++  )
++}
+diff --git a/tests/client/contextExport.spec.ts b/tests/client/contextExport.spec.ts
+new file mode 100644
+--- /dev/null
++++ b/tests/client/contextExport.spec.ts
+@@ -0,0 +1,110 @@
++// Local context-export extension; modified from upstream. See MODIFICATIONS.md.
++import assert from 'node:assert/strict'
++import { afterEach, describe, test, vi } from 'vitest'
++import { assemble } from '../../src/client/assemble'
++import { buildContextExport, downloadJson, exportFilename, makeExportReader } from '../../src/client/contextExport'
++import type { LogEvent } from '../../src/client/contextExport'
++import { req, tl } from './components/browserHarness'
++import { surfaceNodeAt } from './helpers/kit'
++
++afterEach(() => { vi.restoreAllMocks(); vi.unstubAllGlobals() })
++
++const event = (seq: number, type = 'user/message'): LogEvent => ({
++  seq, type, data: { content: [{ type: 'text', text: `full body ${seq}\n预算：4500` }] },
++})
++
++describe('selected context evidence export', () => {
++  test('exports selected pre-response nodes including removed history, never the selected response', async () => {
++    const request = req({ seq: 30, turn: 3, step: 1, prompt: 7800 })
++    const data = tl({
++      requests: [request],
++      nodes: [surfaceNodeAt(20), surfaceNodeAt(30, { cat: 'assistant' }), surfaceNodeAt(40)],
++      archive: [surfaceNodeAt(10, { gone: 35 })],
++      systems: [{ seq: 2, time: 1, tokens: 3 }],
++      events: [{ seq: 15, time: 1, kind: 'inject' }, { seq: 38, time: 1, kind: 'prune' }],
++    })
++    const view = assemble(data, { headers: [{ seq: 3, time: 1, tools: [] }] }, request.seq)
++    const read = vi.fn(async (seq: number) => event(seq))
++    const result = await buildContextExport({ sessionId: 'session-test', view, request, data, read, version: '0.72.0', exportedAt: 'fixed' })
++    assert.deepEqual(result.nodes.map(n => n.metadata.seq), [10, 20])
++    assert.deepEqual(read.mock.calls.map(c => c[0]), [2, 3, 10, 20])
++    assert.deepEqual(result.contextEvents.map(e => e.seq), [15])
++    assert.equal(result.nodes[0].event?.data.content !== undefined, true)
++    assert.equal(result.exportedAt, 'fixed')
++    assert.equal(result.evidence.actualProviderRequestCaptured, false)
++    assert.equal(result.selection.mode, 'historical_request')
++    assert.equal(result.tokenStatistics.providerReportedPromptTokens, 7800)
++    assert.equal(result.coverage.allListedEventsFetched, true)
++  })
++
++  test('records missing, mismatched and failed reads without fabricating content or losing successful rows', async () => {
++    const data = tl({ nodes: [1, 2, 3, 4].map(seq => surfaceNodeAt(seq)), droppedNodes: 5, archiveFloor: 99 })
++    const view = assemble(data, null, 10)
++    const read = async (seq: number) => {
++      if (seq === 1) return null
++      if (seq === 2) throw new Error('permission denied')
++      if (seq === 3) return event(900)
++      return event(seq)
++    }
++    const result = await buildContextExport({ sessionId: 's', view, request: req({ seq: 10 }), data, read, version: 'v' })
++    assert.equal(result.coverage.approximate, true)
++    assert.equal(result.coverage.missingLiveNodes, 0)
++    assert.equal(result.coverage.requestHeaderAvailable, false)
++    assert.equal(result.coverage.systemNodeAvailable, false)
++    assert.deepEqual(result.coverage.missingEvents.map(x => x.reason), ['not_found', 'permission denied', 'sequence_mismatch'])
++    assert.deepEqual(result.nodes.map(x => x.event?.seq ?? null), [null, null, null, 4])
++    assert.equal(result.coverage.allListedEventsFetched, false)
++  })
++
++  test('live mode remains explicitly unsent and includes coverage gaps and non-Error failures', async () => {
++    const data = tl({ nodes: [surfaceNodeAt(1)], droppedNodes: 2, events: [{ kind: 'prune', seq: 50, time: 1 }] })
++    const view = assemble(data, null, null)
++    const result = await buildContextExport({ sessionId: 's', view, request: null, data,
++      read: async () => { throw 'offline' }, version: 'v' })
++    assert.deepEqual(result.selection, { mode: 'live_next_request' })
++    assert.equal(result.coverage.missingLiveNodes, 2)
++    assert.equal(result.coverage.missingEvents[0].reason, 'offline')
++    assert.equal(result.contextEvents.length, 1)
++    assert.equal(result.tokenStatistics.providerReportedPromptTokens, null)
++  })
++})
++
++describe('raw history reader', () => {
++  test('uses a seq-bound request, preserves raw events, and reuses events read on the same page', async () => {
++    const page = vi.fn(async () => ({ ok: true, value: { records: [
++      { type: 'chunks', chunks: [] }, { event: event(3) }, { event: event(5, 'developer/message') },
++      { event: { seq: 8, type: 'bad', data: null } }, null, 7,
++    ] } }))
++    const read = makeExportReader(page, 'session-test')
++    assert.deepEqual(await read(5), event(5, 'developer/message'))
++    assert.deepEqual(await read(3), event(3))
++    assert.equal(page.mock.calls.length, 1)
++    assert.equal(await read(8), null)
++    assert.equal((page.mock.calls[0] as unknown as [{ throughSeq: number }])[0].throughSeq, 5)
++  })
++
++  test('accepts bare history payloads and rejects failed or malformed responses', async () => {
++    assert.deepEqual(await makeExportReader(async () => ({ records: [event(1)] }), 's')(1), event(1))
++    for (const response of [null, 2, { ok: false }, { ok: true, value: null }, { records: 'not rows' }]) {
++      await assert.rejects(makeExportReader(async () => response, 's')(1), /history read failed/)
++    }
++  })
++})
++
++test('download serializes UTF-8 JSON to a safe filename and releases its URL', () => {
++  vi.useFakeTimers()
++  const create = vi.fn(() => 'blob:local-export')
++  const revoke = vi.fn()
++  vi.stubGlobal('URL', class { static createObjectURL = create; static revokeObjectURL = revoke })
++  const click = vi.spyOn(HTMLAnchorElement.prototype, 'click').mockImplementation(() => {})
++  assert.equal(exportFilename('a/../b', null), 'dsh-context-a____b-live.json')
++  assert.match(exportFilename('s', req({ seq: 10, turn: 3, step: 1 })), /T3-S1-seq10/)
++  assert.match(exportFilename('s', req({ turn: undefined, step: undefined })), /Tunknown-Sunknown/)
++  downloadJson('file.json', { 地点: '图书馆' })
++  assert.equal(click.mock.calls.length, 1)
++  assert.equal(create.mock.calls.length, 1)
++  assert.equal(document.querySelector('a[download="file.json"]'), null)
++  vi.runAllTimers()
++  assert.equal(revoke.mock.calls[0][0], 'blob:local-export')
++  vi.useRealTimers()
++})
+diff --git a/tests/client/components/contextExport.spec.ts b/tests/client/components/contextExport.spec.ts
+new file mode 100644
+--- /dev/null
++++ b/tests/client/components/contextExport.spec.ts
+@@ -0,0 +1,121 @@
++// Local context-export extension; modified from upstream. See MODIFICATIONS.md.
++import { act, createElement as h } from 'react'
++import assert from 'node:assert/strict'
++import { afterEach, describe, test, vi } from 'vitest'
++import { ContextExport } from '../../../src/client/components/contextExport'
++import { assemble } from '../../../src/client/assemble'
++import { watchHistoryFaces } from '../../../src/client/historyPage'
++import { watchNativeLogExport } from '../../../src/client/nativeLogExport'
++import * as exported from '../../../src/client/contextExport'
++import { asClientCtx, TestClientCtx } from '../helpers/harness'
++import { click, makeKit, mount, queryAll, surfaceNodeAt, type Mounted } from '../helpers/kit'
++import { req, tl } from './browserHarness'
++
++const contexts: TestClientCtx[] = []
++const mounts: Mounted[] = []
++afterEach(async () => {
++  for (const mounted of mounts.splice(0)) await mounted.unmount()
++  for (const context of contexts.splice(0)) context.dispose()
++  vi.restoreAllMocks()
++  vi.unstubAllGlobals()
++})
++
++function arm(page?: unknown, native?: unknown): TestClientCtx {
++  const context = new TestClientCtx({ services: {
++    remote: { session: { page } }, 'remote.session': { page },
++    ...(native !== undefined ? { sessionLogDownload: native } : {}),
++  } })
++  contexts.push(context)
++  watchHistoryFaces(asClientCtx(context))
++  watchNativeLogExport(asClientCtx(context))
++  return context
++}
++
++async function render(sessionId?: string, partial = false, disabled = false): Promise<Mounted> {
++  const data = tl({ nodes: [surfaceNodeAt(2)], ...(partial ? { archiveFloor: 99 } : {}) })
++  const request = req({ seq: 10, turn: 3, step: 1 })
++  const view = assemble(data, { headers: [{ seq: 1, time: 1, tools: [] }] }, request.seq)
++  const mounted = await mount(h(ContextExport, { kit: makeKit('zh'), sessionId, data, request, view, disabled }))
++  mounts.push(mounted)
++  return mounted
++}
++
++describe('context export controls', () => {
++  test('downloads the selected context with full raw events and the current session id', async () => {
++    vi.stubGlobal('__DSH_CTX_VERSION__', '0.72.0')
++    arm(async (request: { throughSeq: number }) => ({ ok: true, value: { records: [{ event: {
++      seq: request.throughSeq, type: 'user/message', data: { content: [{ type: 'text', text: '完整正文4500' }] },
++    } }] } }))
++    const save = vi.spyOn(exported, 'downloadJson').mockImplementation(() => {})
++    const mounted = await render('session-ctx')
++    await click(queryAll(mounted.container, 'button')[0])
++    assert.equal(save.mock.calls.length, 1)
++    assert.match(save.mock.calls[0][0], /session-ctx-T3-S1/)
++    const value = save.mock.calls[0][1] as { sessionId: string; nodes: { event: unknown }[] }
++    assert.equal(value.sessionId, 'session-ctx')
++    assert.match(JSON.stringify(value.nodes[0].event), /完整正文4500/)
++    assert.match(mounted.container.textContent ?? '', /已交给下载器/)
++  })
++
++  test('partial exports are labelled, and native log export calls the real service face with correct this', async () => {
++    vi.stubGlobal('__DSH_CTX_VERSION__', '0.72.0')
++    const native = { ids: [] as string[], async download(id: string) { this.ids.push(id) } }
++    await act(async () => { arm(async () => ({ records: [] }), native) })
++    vi.spyOn(exported, 'downloadJson').mockImplementation(() => {})
++    const mounted = await render('session-partial', true)
++    await click(queryAll(mounted.container, 'button')[0])
++    assert.match(mounted.container.textContent ?? '', /带缺口/)
++    await click(queryAll(mounted.container, 'button')[1])
++    assert.deepEqual(native.ids, ['session-partial'])
++    assert.match(mounted.container.textContent ?? '', /已调用 DSH 原生导出/)
++  })
++
++  test('missing capabilities and missing session disable buttons; failed details disable only context export', async () => {
++    arm(undefined)
++    const empty = await render()
++    assert.ok(queryAll<HTMLButtonElement>(empty.container, 'button').every(button => button.disabled))
++    const native = { download: vi.fn(async () => {}) }
++    await act(async () => { arm(async () => ({ records: [] }), native) })
++    const loading = await render('s', false, true)
++    const buttons = queryAll<HTMLButtonElement>(loading.container, 'button')
++    assert.equal(buttons[0].disabled, true)
++    assert.equal(buttons[1].disabled, false)
++  })
++
++  test('prevents duplicate export while content reads are pending', async () => {
++    vi.stubGlobal('__DSH_CTX_VERSION__', '0.72.0')
++    let finish!: (value: unknown) => void
++    let first = true
++    arm(async () => {
++      if (first) { first = false; return new Promise(resolve => { finish = resolve }) }
++      return { records: [] }
++    })
++    const save = vi.spyOn(exported, 'downloadJson').mockImplementation(() => {})
++    const mounted = await render('s')
++    const button = queryAll<HTMLButtonElement>(mounted.container, 'button')[0]
++    await click(button)
++    assert.equal(button.disabled, true)
++    await click(button)
++    await act(async () => { finish({ records: [] }) })
++    assert.equal(save.mock.calls.length, 1)
++  })
++
++  test('reports download and native-service errors without claiming success', async () => {
++    vi.stubGlobal('__DSH_CTX_VERSION__', '0.72.0')
++    arm(async () => ({ records: [] }), { download: async () => { throw 'native unavailable' } })
++    vi.spyOn(exported, 'downloadJson').mockImplementation(() => { throw new Error('save refused') })
++    const mounted = await render('s')
++    await click(queryAll(mounted.container, 'button')[0])
++    assert.match(mounted.container.textContent ?? '', /导出失败：save refused/)
++    await click(queryAll(mounted.container, 'button')[1])
++    assert.match(mounted.container.textContent ?? '', /导出失败：native unavailable/)
++  })
++
++  test('hostile native-export services do not break the view', async () => {
++    arm(undefined, null)
++    arm(undefined, { download: 7 })
++    arm(undefined, Object.defineProperty({}, 'download', { get() { throw new Error('bad face') } }))
++    const mounted = await render('s')
++    assert.equal(queryAll<HTMLButtonElement>(mounted.container, 'button')[1].disabled, true)
++  })
++})
+diff --git a/scripts/install-local-export.py b/scripts/install-local-export.py
+new file mode 100644
+--- /dev/null
++++ b/scripts/install-local-export.py
+@@ -0,0 +1,93 @@
++"""Install or restore the local client-only export extension, with byte-for-byte backups."""
++# Local context-export extension; modified from upstream. See MODIFICATIONS.md.
++import argparse
++import datetime
++import hashlib
++import json
++import os
++from pathlib import Path
++import tempfile
++
++ROOT = Path(__file__).resolve().parents[1]
++
++
++def digest(data):
++    return hashlib.sha256(data).hexdigest()
++
++
++def atomic_write(path, data):
++    with tempfile.NamedTemporaryFile(dir=path.parent, prefix='.context-export-', delete=False) as stream:
++        temporary = Path(stream.name)
++        try:
++            stream.write(data)
++            stream.flush()
++            os.fsync(stream.fileno())
++        except BaseException:
++            temporary.unlink(missing_ok=True)
++            raise
++    try:
++        os.replace(temporary, path)
++    finally:
++        temporary.unlink(missing_ok=True)
++
++
++parser = argparse.ArgumentParser()
++parser.add_argument('--target', type=Path, default=Path.home() / '.dsh/profiles/desktop/node_modules/dsh-context')
++parser.add_argument('--restore', type=Path)
++args = parser.parse_args()
++target = args.target.resolve()
++files = ['lib/client.js', 'package.json']
++
++if args.restore:
++    backup = args.restore.resolve()
++    saved = json.loads((backup / 'installation.json').read_text())
++    if Path(saved['target']) != target:
++        raise SystemExit('Restore target does not match the saved installation.')
++    for name in files:
++        if digest((target / name).read_bytes()) != saved['patched_sha256'][name]:
++            raise SystemExit('Installed files have changed since this patch; refusing to overwrite: ' + name)
++        if digest((backup / name).read_bytes()) != saved['original_sha256'][name]:
++            raise SystemExit('Backup verification failed: ' + name)
++    for name in files:
++        atomic_write(target / name, (backup / name).read_bytes())
++    print(json.dumps({'restored': True, 'target': str(target), 'backup': str(backup)}, ensure_ascii=False, indent=2))
++else:
++    original = {name: (target / name).read_bytes() for name in files}
++    package = json.loads(original['package.json'])
++    if package.get('name') != 'dsh-context' or package.get('version') != '0.72.0':
++        raise SystemExit('This patch is for the installed dsh-context 0.72.0 only.')
++    if package.get('x-local-context-export'):
++        raise SystemExit('Local export patch already installed; restore it before installing another build.')
++    built = (ROOT / 'lib/client.js').read_bytes()
++    if b'dsh-context.selected-context' not in built or b'context-export-1' not in built:
++        raise SystemExit('Build the export-enabled client before installing.')
++    baseline = json.loads((ROOT / 'UPSTREAM.json').read_text())['commit']
++    package['x-local-context-export'] = {'extension': 'context-export-1', 'upstreamCommit': baseline}
++    modules = package['dsh']['client']['inject']
++    if '@deepseek-ai/dsh-session-log-export' not in modules:
++        modules.append('@deepseek-ai/dsh-session-log-export')
++    patched = {'lib/client.js': built, 'package.json': (json.dumps(package, ensure_ascii=False, indent=2) + '\n').encode()}
++    now = datetime.datetime.now().astimezone()
++    backup = ROOT / 'local-backups' / now.strftime('%Y%m%d-%H%M%S-%f')
++    backup.mkdir(parents=True, exist_ok=False)
++    for name, data in original.items():
++        path = backup / name
++        path.parent.mkdir(parents=True, exist_ok=True)
++        path.write_bytes(data)
++    host_sha = digest((target / 'lib/index.js').read_bytes())
++    saved = {'target': str(target), 'time': now.isoformat(), 'upstreamCommit': baseline,
++             'original_sha256': {name: digest(data) for name, data in original.items()},
++             'patched_sha256': {name: digest(data) for name, data in patched.items()},
++             'unchanged_host_sha256': host_sha, 'scope': 'client bundle and client module declaration only'}
++    (backup / 'installation.json').write_text(json.dumps(saved, ensure_ascii=False, indent=2) + '\n')
++    try:
++        for name, data in patched.items():
++            atomic_write(target / name, data)
++        assert digest((target / 'lib/index.js').read_bytes()) == host_sha
++        assert all((target / name).read_bytes() == data for name, data in patched.items())
++    except BaseException:
++        for name, data in original.items():
++            atomic_write(target / name, data)
++        raise
++    print(json.dumps({'installed': True, 'target': str(target), 'backup': str(backup),
++                      'host_unchanged': True, 'patched_sha256': saved['patched_sha256']}, ensure_ascii=False, indent=2))
+diff --git a/UPSTREAM.json b/UPSTREAM.json
+new file mode 100644
+--- /dev/null
++++ b/UPSTREAM.json
+@@ -0,0 +1,41 @@
++{
++  "repository": "https://github.com/bowenliang123/dsh-context",
++  "name": "dsh-context",
++  "version": "0.72.0",
++  "commit": "ca89acfd93844d5bac2b82fdfce6d99c118e71a0",
++  "license": "Apache-2.0",
++  "extension": "context-export-1",
++  "scope": "Source snapshot with local context-export changes; not an upstream release.",
++  "omitted_files": [
++    ".github/ISSUE_TEMPLATE/bug_report.yml",
++    ".github/ISSUE_TEMPLATE/config.yml",
++    ".github/ISSUE_TEMPLATE/feature_request.yml",
++    ".github/release_template.md",
++    ".github/workflows/auto-close-issues.yml",
++    ".github/workflows/pr-checks.yml",
++    ".github/workflows/release.yml",
++    ".husky/pre-commit",
++    "AGENTS.md",
++    "README.md",
++    "docs/add-plugin-wizard.png",
++    "docs/agent-network.png",
++    "docs/context-browser-assistant-kinds.png",
++    "docs/context-browser-images.png",
++    "docs/context-browser-tool-result.png",
++    "docs/context-browser-tools.png",
++    "docs/context-command-entry.png",
++    "docs/context-command.png",
++    "docs/context-dashboard.png",
++    "docs/context-events.png",
++    "docs/context-overview.png",
++    "docs/context-stats.png",
++    "docs/context-trend.png",
++    "docs/current-context.png",
++    "docs/file-activity.png",
++    "docs/history-delta.png",
++    "docs/settings.png",
++    "docs/social-preview.png",
++    "docs/token-stats-and-timing-stats.png"
++  ],
++  "source_archive_scope": "Tracked source/configuration/test files plus local export additions; dependencies, build outputs, app data and personal exports are excluded."
++}
+diff --git a/MODIFICATIONS.md b/MODIFICATIONS.md
+new file mode 100644
+--- /dev/null
++++ b/MODIFICATIONS.md
+@@ -0,0 +1,24 @@
++# 本地扩展改动说明
++
++基于dsh-context 0.72.0，提交ca89acfd93844d5bac2b82fdfce6d99c118e71a0。上游许可证及作者信息保留。
++
++新增完整事件读取、JSON组装、导出按钮、原生日志服务连接及两组测试；在已有上下文页面和弹窗接入按钮，增加中英文文案、样式和客户端模块声明。源码修改处附有改动标记，具体差异见context-export.patch。
++
++本仓库的安装脚本另外从UPSTREAM.json读取基线提交，避免把外层评测仓库的提交误记为上游版本；没有因此修改实际导出功能。未复制上游自动发布工作流、Git钩子、代理开发指令和演示图片；保留构建、运行和测试需要的源文件。
++
++## 改动或新增文件
++
++- `package.json`
++- `src/client/components/browser.tsx`
++- `src/client/components/contextModal.tsx`
++- `src/client/components/contextView.tsx`
++- `src/client/i18nEn.ts`
++- `src/client/i18nZh.ts`
++- `src/client/index.ts`
++- `src/client/styles/browser.css`
++- `src/client/contextExport.ts`
++- `src/client/nativeLogExport.ts`
++- `src/client/components/contextExport.tsx`
++- `tests/client/contextExport.spec.ts`
++- `tests/client/components/contextExport.spec.ts`
++- `scripts/install-local-export.py`

@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-17",
+  "scope": "针对仓库内源码副本重新执行导出相关测试及构建；不安装或操作DSH。",
+  "tests": {
+    "runner": "vitest 4.1.11",
+    "files": [
+      "tests/client/contextExport.spec.ts",
+      "tests/client/components/contextExport.spec.ts"
+    ],
+    "passed_files": 2,
+    "passed_tests": 12,
+    "exit_code": 0
+  },
+  "build": {
+    "runner": "tsdown 0.23.0",
+    "host_bundle": true,
+    "client_bundle": true,
+    "declarations": true,
+    "exit_code": 0,
+    "warning": "TypeScript 7.0 API为实验性版本；构建仍成功。"
+  },
+  "environment_scope": {
+    "dependency_source": "复用原本地项目已安装依赖，直接调用Vitest与tsdown CLI；没有重新下载和安装依赖。",
+    "pnpm_wrapper_attempt": "pnpm exec试图检查安装状态时拒绝外部依赖目录链接，随后直接运行相同工具CLI完成测试和构建。",
+    "fresh_install_verified": false,
+    "full_upstream_suite_rerun": false,
+    "desktop_test_rerun": false
+  },
+  "distribution": "依赖链接、构建产物、缓存未收入源码目录。",
+  "upstream_patch_check": {
+    "baseline": "ca89acfd93844d5bac2b82fdfce6d99c118e71a0",
+    "applies_cleanly": true,
+    "patched_files_match_source_snapshot": 16,
+    "scope": "在临时基线副本应用补丁，未修改上游工作目录。"
+  }
+}

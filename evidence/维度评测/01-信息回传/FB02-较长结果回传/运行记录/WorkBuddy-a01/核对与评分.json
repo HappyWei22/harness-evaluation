@@ -1,0 +1,101 @@
+{
+  "case_id": "FB02",
+  "case_name": "较长检查报告中的关键信息回传",
+  "fixture_version": "1.0.0",
+  "product": "WorkBuddy",
+  "attempt": "a01",
+  "scoring_layer": "原生function_call_result.output.text中的完整正文",
+  "score_items": [
+    {
+      "item": "本次运行编号",
+      "max_points": 2,
+      "points": 2,
+      "status": "confirmed_pass",
+      "line": 1,
+      "text": "RUN_ID=FB02-LONG-0d284571207560f0"
+    },
+    {
+      "item": "错误数量",
+      "max_points": 2,
+      "points": 2,
+      "status": "confirmed_pass",
+      "line": 60,
+      "text": "ERROR_COUNT=3"
+    },
+    {
+      "item": "错误文件路径",
+      "max_points": 2,
+      "points": 2,
+      "status": "confirmed_pass",
+      "line": 120,
+      "text": "ERROR_PATH=inputs/sales_2026.csv"
+    },
+    {
+      "item": "完整生成标记",
+      "max_points": 2,
+      "points": 2,
+      "status": "confirmed_pass",
+      "line": 200,
+      "text": "REPORT_COMPLETE=YES"
+    }
+  ],
+  "summary": {
+    "confirmed_points": 8,
+    "assessed_max_points": 8,
+    "unknown_points": 0,
+    "not_effectively_tested_points": 0,
+    "confirmed_failed_points": 0,
+    "complete_case_score": "8/8"
+  },
+  "scoring_rules_changed": false,
+  "checks": {
+    "raw_log_lines": 17,
+    "call_result_lines": [
+      7,
+      8
+    ],
+    "run_id": "FB02-LONG-0d284571207560f0",
+    "script_sha256": "604d9462b3b0c5df83661726479c5b36f40237873166bce890faee54503d9625",
+    "scoring_layer": "原生function_call_result.output.text中的完整正文",
+    "native_stdout_bytes": 18129,
+    "native_stdout_lines": 200,
+    "native_stdout_sha256": "301852624d2e9d21cf62f4410c39271c87b89e73f04732797a5568efb956a146",
+    "normalized_stdout_bytes": 17929,
+    "normalized_stdout_lines": 200,
+    "normalized_stdout_sha256": "6f60a78c3e37249f7efb90cb503e80f33869e355bce95e6481358834931020ed",
+    "normalized_stdout_matches_receipt": true,
+    "native_stdout_bytes_match_receipt": false,
+    "normalization": "去除返回格式中的Command前缀及Stderr/退出码页尾；正文仅将CRLF换行转为LF，不删行、不筛选字段。",
+    "checkpoint_rows": [
+      {
+        "line": 1,
+        "text": "RUN_ID=FB02-LONG-0d284571207560f0"
+      },
+      {
+        "line": 60,
+        "text": "ERROR_COUNT=3"
+      },
+      {
+        "line": 120,
+        "text": "ERROR_PATH=inputs/sales_2026.csv"
+      },
+      {
+        "line": 200,
+        "text": "REPORT_COMPLETE=YES"
+      }
+    ],
+    "check_rows": 196,
+    "explicit_truncation_notice_in_output_text": false,
+    "saved_output_notice_in_provider_toolResult_content": "<persisted-output>\nOutput too large (36.4KB). Full output saved to: /PUBLIC_HOME/.workbuddy/projects/PUBLIC-PROJECT-独立测试工作区-WorkBuddy-FB02-a01/3e823a08-92dd-487e-a22c-3e0645b052a1/tool-results/chatcmpl-tool-974f320458c85d84-render.txt\n</persisted-output>",
+    "saved_file_content_matches_output_text": true,
+    "persisted_file_read_by": "评测方事后核查，不是产品额外读取；不计完整结果获取题分数",
+    "actual_model_request_verified": false
+  },
+  "limitations": [
+    "8分仅属于原生日志完整output.text层，不自动等于模型首次实际输入完整。",
+    "同条记录providerData.toolResult.content及renderer.value均为输出过大/已保存文件提示；其生成时机及是否进入模型请求未核验。",
+    "不能沿用最终回复的“没有任何保存入口提示”作为整条日志事实。",
+    "单次运行，不推断稳定性；回执不计产品原生保存能力。"
+  ],
+  "_public_copy_note": "这是历史本地判分/核对的公开副本。原有布尔检查不表示本次公开打包重新执行了全部旧验证；当前覆盖见checks/verify.py和docs/复核说明.md。"
+}

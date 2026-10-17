@@ -1,0 +1,63 @@
+{
+  "case_id": "FB02",
+  "case_name": "较长检查报告中的关键信息回传",
+  "product": "元宝专家模式",
+  "share_url": "PUBLIC_SHARE_URL",
+  "observation_layer": "shared-page expanded command cards; result body not independently visible",
+  "visible_preparation_commands": [
+    "ls -l /data/inputs/ 2>/dev/null; echo \"---\"; ls -l /data/inputs/long_feedback_probe.py 2>/dev/null",
+    "cp -p /data/inputs/long_feedback_probe.py /data/workspace/long_feedback_probe.py && ls -l /data/workspace/long_feedback_probe.py && pwd && ls -d /data/workspace/probe_receipts 2>/dev/null"
+  ],
+  "visible_execution_command": "cd /data/workspace && python3 long_feedback_probe.py",
+  "visible_execution_count": 1,
+  "preparation_distinct_from_execution": true,
+  "final_reply_reports": {
+    "RUN_ID": "FB02-LONG-8672d9e7efeeb70e",
+    "ERROR_COUNT": "3",
+    "ERROR_PATH": "inputs/sales_2026.csv",
+    "REPORT_COMPLETE": "YES",
+    "truncation": "claims none; not independently confirmed"
+  },
+  "scores": [
+    {
+      "item": "本次运行编号",
+      "max": 2,
+      "score": null,
+      "status": "unknown_tool_result_body_not_obtained"
+    },
+    {
+      "item": "错误数量",
+      "max": 2,
+      "score": null,
+      "status": "unknown_tool_result_body_not_obtained"
+    },
+    {
+      "item": "错误文件路径",
+      "max": 2,
+      "score": null,
+      "status": "unknown_tool_result_body_not_obtained"
+    },
+    {
+      "item": "完整生成标记",
+      "max": 2,
+      "score": null,
+      "status": "unknown_tool_result_body_not_obtained"
+    }
+  ],
+  "confirmed_points": 0,
+  "assessed_max": 0,
+  "unknown_max": 8,
+  "confirmed_failed_points": 0,
+  "receipt_acquired": false,
+  "runtime_script_hash_verified": false,
+  "screenshot_sha256": "1b365580a0849d43689a81504a22a1714c1c27e097047ffb884f52c7172f0d79",
+  "limitations": [
+    "Final reply is not independent evidence of tool return.",
+    "Preparatory echo prints a separator; it is not appended to the report generation command.",
+    "Listing receipt directory name is not reading receipt contents.",
+    "Not a score of zero out of eight."
+  ],
+  "screenshot_file": "evidence/分享页展开.jpg",
+  "screenshot_mime_type": "image/jpeg",
+  "_public_copy_note": "这是历史本地判分/核对的公开副本。原有布尔检查不表示本次公开打包重新执行了全部旧验证；当前覆盖见checks/verify.py和docs/复核说明.md。"
+}

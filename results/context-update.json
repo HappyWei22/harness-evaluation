@@ -1,0 +1,166 @@
+{
+  "case_id": "CTX01",
+  "date": "2026-10-17",
+  "products": [
+    {
+      "case_id": "CTX01",
+      "product": "Codex",
+      "label": "Codex",
+      "run_label": "Codex-CTX01-a01",
+      "points": 4,
+      "maximum": 4,
+      "configuration": {
+        "product": "Codex",
+        "session_or_share": "01a1483e-8a65-7370-bce7-6fa9bd591dd7",
+        "native_models_observed": [
+          "gpt-6.1-sol"
+        ],
+        "config_observed": {
+          "cwd": "/PUBLIC_PROJECT/独立测试工作区/Codex/CTX01-a01",
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "approval_policy": "on-request",
+          "sandbox_policy": {
+            "type": "workspace-write",
+            "writable_roots": [
+              "/PUBLIC_HOME/.codex/visualizations/2026/10/17/01a1483e-8a65-7370-bce7-6fa9bd591dd7"
+            ],
+            "network_access": false,
+            "exclude_tmpdir_env_var": false,
+            "exclude_slash_tmp": false
+          },
+          "cli_version": "0.163.0-alpha.10.2"
+        },
+        "protocol_verified_in_visible_evidence": true,
+        "deviations_and_limits": [],
+        "second_reply_summarizes_all_current_values": false,
+        "complete_main_model_request_verified": false,
+        "native_skill_influence_controlled": false,
+        "evaluator_reran_product": false,
+        "rules_changed": false,
+        "evidence_method": "原生JSONL"
+      },
+      "source_score": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/Codex-a01/核对与评分.json",
+      "limits": "三轮短对话；没有验证压缩或复杂16分；完整模型请求未核验。"
+    },
+    {
+      "case_id": "CTX01",
+      "product": "WorkBuddy",
+      "label": "WorkBuddy",
+      "run_label": "WorkBuddy-CTX01-a01",
+      "points": 4,
+      "maximum": 4,
+      "configuration": {
+        "product": "WorkBuddy",
+        "session_or_share": "2b902466-0336-49c5-8dee-e7431d922231",
+        "native_models_observed": [
+          "hy4-preview"
+        ],
+        "config_observed": {
+          "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/CTX01-a01"
+        },
+        "protocol_verified_in_visible_evidence": true,
+        "deviations_and_limits": [
+          "第二轮开头额外含```text，第三轮末尾含```；三轮空行与原提示不同。逐句检查任务内容、值和顺序未改变，第三轮未补答案，按内容等价接受；不声称逐字一致。"
+        ],
+        "second_reply_summarizes_all_current_values": true,
+        "complete_main_model_request_verified": false,
+        "native_skill_influence_controlled": false,
+        "evaluator_reran_product": false,
+        "rules_changed": false,
+        "evidence_method": "原生JSONL"
+      },
+      "source_score": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/WorkBuddy-a01/核对与评分.json",
+      "limits": "三轮短对话；没有验证压缩或复杂16分；完整模型请求未核验。"
+    },
+    {
+      "case_id": "CTX01",
+      "product": "DSH",
+      "label": "DSH",
+      "run_label": "DSH-CTX01-a01",
+      "points": 4,
+      "maximum": 4,
+      "configuration": {
+        "session_id": "session-f79f8400-2e0c-490f-befd-3d09f2b0c49a",
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/DSH/CTX01-a01",
+        "log_format_version": 4,
+        "product_version": "未独立取得，不能把日志格式版本4当客户端版本",
+        "provider": "deepseek-account",
+        "model": "deepseek-flash",
+        "reasoning_effort": "high",
+        "max_tokens_config": 256000,
+        "context_window_metadata": 1000000,
+        "permission_preset": "workspace-write",
+        "sandbox_mode": "workspace-write",
+        "approval_policy": "ask",
+        "skill_catalog_line": 12,
+        "explicit_skill_tool_calls": 0,
+        "complete_main_model_request_verified": false,
+        "compression_observed": false,
+        "scope": "主任务完整请求未取得；没有压缩事件不证明所有内部处理都不存在。"
+      },
+      "source_score": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/DSH-a01/核对与评分.json",
+      "limits": "三轮短对话；没有验证压缩或复杂16分；完整模型请求未核验。"
+    },
+    {
+      "case_id": "CTX01",
+      "product": "豆包办公",
+      "label": "豆包",
+      "run_label": "豆包-CTX01-a01",
+      "points": 4,
+      "maximum": 4,
+      "configuration": {
+        "product": "豆包办公",
+        "session_or_share": "PUBLIC_SHARE_URL",
+        "native_models_observed": [],
+        "config_observed": {
+          "model": "未知：分享页未显示",
+          "client_mode": "用户报告为原生客户端；分享页不能独立确认模式和版本。"
+        },
+        "protocol_verified_in_visible_evidence": true,
+        "deviations_and_limits": [
+          "以同一分享页连续六条消息核对；网页显示的空白不作为逐字输入证据。未获得后台导出，分享页不能证明未展示的分支或完整内部请求。"
+        ],
+        "second_reply_summarizes_all_current_values": true,
+        "complete_main_model_request_verified": false,
+        "native_skill_influence_controlled": false,
+        "evaluator_reran_product": false,
+        "rules_changed": false,
+        "evidence_method": "Safari系统可访问性树提取网页可见内容；内置浏览器连续超时、网页抓取失败后改用Safari。不是后台日志。"
+      },
+      "source_score": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/豆包-a01/核对与评分.json",
+      "limits": "三轮短对话；没有验证压缩或复杂16分；完整模型请求未核验。"
+    },
+    {
+      "case_id": "CTX01",
+      "product": "元宝专家模式",
+      "label": "元宝",
+      "run_label": "元宝-CTX01-a01",
+      "points": 4,
+      "maximum": 4,
+      "configuration": {
+        "product": "元宝专家模式",
+        "session_or_share": "PUBLIC_SHARE_URL",
+        "native_models_observed": [],
+        "config_observed": {
+          "model": "未知：分享页未显示",
+          "client_mode": "用户报告为原生客户端；分享页不能独立确认模式和版本。"
+        },
+        "protocol_verified_in_visible_evidence": true,
+        "deviations_and_limits": [
+          "以同一分享页连续六条消息核对；网页显示的空白不作为逐字输入证据。未获得后台导出，分享页不能证明未展示的分支或完整内部请求。"
+        ],
+        "second_reply_summarizes_all_current_values": true,
+        "complete_main_model_request_verified": false,
+        "native_skill_influence_controlled": false,
+        "evaluator_reran_product": false,
+        "rules_changed": false,
+        "evidence_method": "Safari系统可访问性树提取网页可见内容；内置浏览器连续超时、网页抓取失败后改用Safari。不是后台日志。"
+      },
+      "source_score": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/元宝-a01/核对与评分.json",
+      "limits": "三轮短对话；没有验证压缩或复杂16分；完整模型请求未核验。"
+    }
+  ],
+  "complex_16_points_tested": false,
+  "harness_independent_contribution_verified": false
+}

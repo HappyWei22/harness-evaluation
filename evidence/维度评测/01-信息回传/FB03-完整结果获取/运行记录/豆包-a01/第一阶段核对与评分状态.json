@@ -1,0 +1,64 @@
+{
+  "case_id": "FB03",
+  "case_name": "截断后完整结果获取",
+  "product": "豆包办公",
+  "phase": "first_completed_evidence_incomplete",
+  "share_url": "PUBLIC_SHARE_URL",
+  "observed_command": "cd \"/PUBLIC_PROJECT/独立测试工作区/豆包办公/FB03-a01\" && python3 full_output_probe.py",
+  "independent_tool_result_body_obtained": false,
+  "final_reply_reports": {
+    "truncation": true,
+    "notice": "Output too large (262144 bytes) from tool \"Bash\". Full output saved to: /PUBLIC_HOME/Library/Application Support/DoubaoWork/Default/.doubaowork/agent_mode/workspace/.sessions/38447554843460098/agents/m_0cwRFu9UlT2/system/tool-results/bash_C70C41838DF5.txt",
+    "entrypoint": "/PUBLIC_HOME/Library/Application Support/DoubaoWork/Default/.doubaowork/agent_mode/workspace/.sessions/38447554843460098/agents/m_0cwRFu9UlT2/system/tool-results/bash_C70C41838DF5.txt",
+    "RUN_ID": "FB03-FULL-e85552a0749e0f32",
+    "HEAD_TOKEN": "49e01643d04bf820e3aa5ae2cf9aea3c",
+    "MIDDLE_TOKEN": "首次结果未包含",
+    "TAIL_TOKEN": "f8cd2ae4b25bb33b7a038cdd59520ee7"
+  },
+  "final_reply_visible_markers_match_receipt": true,
+  "receipt_expected_stdout_bytes": 262144,
+  "receipt_expected_stdout_sha256": "c70c41838df5fcfe147c738d281d8238a8058c96e84a410d33857179187b0aee",
+  "entrypoint_file_read_by_evaluator": false,
+  "next_action": "Supplementary candidate-entrypoint verification; does not retroactively establish first tool result evidence.",
+  "evidence_files": [
+    "evidence/首次打开-DOM.txt",
+    "evidence/过程入口-DOM.txt",
+    "evidence/工具卡片展开-DOM.txt",
+    "evidence/分享页展开.jpg"
+  ],
+  "scores": [
+    {
+      "item": "说明当前结果不完整",
+      "max": 2,
+      "score": null,
+      "status": "unknown_or_pending",
+      "reason": "Independent first tool-return evidence missing; entry retrieval and full output validation not done."
+    },
+    {
+      "item": "提供有效的完整结果入口",
+      "max": 2,
+      "score": null,
+      "status": "unknown_or_pending",
+      "reason": "Independent first tool-return evidence missing; entry retrieval and full output validation not done."
+    },
+    {
+      "item": "通过入口取回缺少的内容",
+      "max": 2,
+      "score": null,
+      "status": "unknown_or_pending",
+      "reason": "Independent first tool-return evidence missing; entry retrieval and full output validation not done."
+    },
+    {
+      "item": "完整结果保存准确",
+      "max": 2,
+      "score": null,
+      "status": "unknown_or_pending",
+      "reason": "Independent first tool-return evidence missing; entry retrieval and full output validation not done."
+    }
+  ],
+  "confirmed_points": 0,
+  "assessed_max": 0,
+  "unknown_or_pending_max": 8,
+  "confirmed_failed_points": 0,
+  "_public_copy_note": "这是历史本地判分/核对的公开副本。原有布尔检查不表示本次公开打包重新执行了全部旧验证；当前覆盖见checks/verify.py和docs/复核说明.md。"
+}

@@ -1,0 +1,116 @@
+{
+  "case_id": "FB01",
+  "case_name": "固定工具结果的准确回传",
+  "fixture_version": "1.0.0",
+  "run_id": "DSH-a01",
+  "phase": "先行试测",
+  "product": "DSH",
+  "product_version": "未提供",
+  "native_session_id": "session-9d66fbfb-4e6b-4005-b035-964150e46067",
+  "workspace": "/PUBLIC_PROJECT/独立测试工作区/DSH/FB01-a01",
+  "config": {
+    "provider": "deepseek-account",
+    "model": "deepseek-flash",
+    "reasoning_effort": "high",
+    "permission_preset": "workspace-write",
+    "sandbox_mode": "workspace-write",
+    "approval_policy": "ask"
+  },
+  "observation_layer": "原生日志中的工具返回；未独立核验完整实际模型请求",
+  "input_script_sha256": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+  "source": {
+    "provided_archive": "/PUBLIC_HOME/Downloads/dsh-session-session-9d66fbfb-4e6b-4005-b035-964150e46067.zip",
+    "archived_copy": "原始材料/原生会话.zip",
+    "archive_sha256": "f753eff9b1b19e9b3237230af877b38c7d91679b43600048157a70413a9d00d7",
+    "log": "原始材料/session.v4.jsonl",
+    "log_sha256": "6dbb90c55e1f085116d48fda28b956cf2069678adfcfb441380de70b54a0df94",
+    "line_count": 34
+  },
+  "validations": [
+    {
+      "mode": "normal",
+      "input_and_command_match": true,
+      "run_id_matches_receipt": true,
+      "output_fields_match": true,
+      "call_result_paired": true
+    },
+    {
+      "mode": "error",
+      "input_and_command_match": true,
+      "run_id_matches_receipt": true,
+      "output_fields_match": true,
+      "call_result_paired": true
+    }
+  ],
+  "native_tool_call_count": 2,
+  "native_tool_result_count": 2,
+  "items": [
+    {
+      "name": "正常状态准确返回",
+      "max_score": 1,
+      "score": null,
+      "decision": "无法判断",
+      "evidence": [
+        "session.v4.jsonl:22",
+        "session.v4.jsonl:28"
+      ],
+      "reason": "正常返回无显式程序退出码；isError=false同时出现在正常和退出码7的错误结果中，不能单独代表程序成功。工具描述没有明确保证省略非零标记必然等价于退出码0。"
+    },
+    {
+      "name": "正常关键内容完整",
+      "max_score": 1,
+      "score": 1,
+      "decision": "通过",
+      "evidence": [
+        "session.v4.jsonl:21",
+        "session.v4.jsonl:22",
+        "正常模式回执"
+      ],
+      "reason": "RUN_ID、ROW_COUNT和TOTAL_AMOUNT与回执一致。"
+    },
+    {
+      "name": "错误状态准确返回",
+      "max_score": 1,
+      "score": 1,
+      "decision": "通过",
+      "evidence": [
+        "session.v4.jsonl:27",
+        "session.v4.jsonl:28"
+      ],
+      "reason": "工具返回明确包含[exit code: 7]；外层isError=false不掩盖内容中保留的非零退出状态。"
+    },
+    {
+      "name": "错误关键内容完整",
+      "max_score": 1,
+      "score": 1,
+      "decision": "通过",
+      "evidence": [
+        "session.v4.jsonl:28",
+        "错误模式回执"
+      ],
+      "reason": "RUN_ID、ERROR_CODE和PATH与回执一致。"
+    }
+  ],
+  "totals": {
+    "confirmed_score": 3,
+    "assessed_max_score": 3,
+    "unknown_max_score": 1,
+    "case_max_score": 4,
+    "dimension_complex_points_not_tested": 16,
+    "not_a_complete_dimension_score": true
+  },
+  "limits": [
+    "一次短输出试测，不代表稳定性或长输出表现。",
+    "回执记录脚本预期输出，不是独立的进程退出状态捕获。",
+    "原生工具返回事件不是经独立核验的完整模型请求。",
+    "未查看工具实现，未确认成功退出码的省略约定。",
+    "模型与原生Skill差异未被完全控制。"
+  ],
+  "additional_notes": [
+    "本轮两次调用均按指定命令执行，未见额外读取回执、修改脚本、安装依赖或重试的工具调用。",
+    "首次试测没有发现预设字段丢失或错误模式被误报为成功的证据。",
+    "正常状态项未知不等于程序实际失败，也不等于已证实Harness故障。"
+  ],
+  "checked_at": "2026-10-16T19:41:24+08:00",
+  "_public_copy_note": "这是历史本地判分/核对的公开副本。原有布尔检查不表示本次公开打包重新执行了全部旧验证；当前覆盖见checks/verify.py和docs/复核说明.md。"
+}

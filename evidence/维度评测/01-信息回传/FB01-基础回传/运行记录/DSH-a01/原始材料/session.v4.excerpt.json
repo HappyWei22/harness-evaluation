@@ -1,0 +1,103 @@
+{
+  "format": "native-event-excerpt-v1",
+  "original_source": "维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/session.v4.jsonl",
+  "original_sha256": "6dbb90c55e1f085116d48fda28b956cf2069678adfcfb441380de70b54a0df94",
+  "original_line_count": 34,
+  "scope": "仅导出相关工具事件或指定可见问答；删除推理块、重放元数据并替换本机路径。不是完整原生日志或完整模型请求。",
+  "records": [
+    {
+      "source_line": 21,
+      "event": {
+        "type": "tool/call",
+        "seq": 19,
+        "time": 1792150565378,
+        "data": {
+          "turn": 1,
+          "step": 1,
+          "callId": "call_00_MmLU4XyJGeFHnGRwYVha0487",
+          "name": "bash",
+          "arguments": "{\"command\": \"python3 feedback_probe.py normal\", \"description\": \"Run feedback probe in normal mode\", \"workdir\": \"/PUBLIC_PROJECT/独立测试工作区/DSH/FB01-a01\"}"
+        }
+      }
+    },
+    {
+      "source_line": 22,
+      "event": {
+        "type": "tool/result",
+        "seq": 20,
+        "time": 1792150565566,
+        "data": {
+          "turn": 1,
+          "step": 1,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_MmLU4XyJGeFHnGRwYVha0487"
+            },
+            "toolCallId": "call_00_MmLU4XyJGeFHnGRwYVha0487",
+            "content": [
+              {
+                "type": "text",
+                "text": "RUN_ID=FB01-NORMAL-7c969357f569f4bc\nROW_COUNT=37\nTOTAL_AMOUNT=12840.50\n"
+              }
+            ],
+            "isError": false,
+            "id": "0ac5d399-cde3-4abe-9101-810c71e7de2d"
+          }
+        },
+        "sourceEventSeqs": [
+          19
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 27,
+      "event": {
+        "type": "tool/call",
+        "seq": 25,
+        "time": 1792150566944,
+        "data": {
+          "turn": 1,
+          "step": 2,
+          "callId": "call_00_twNt5AgabBpjVCkl1qbC3777",
+          "name": "bash",
+          "arguments": "{\"command\": \"python3 feedback_probe.py error\", \"description\": \"Run feedback probe in error mode\", \"workdir\": \"/PUBLIC_PROJECT/独立测试工作区/DSH/FB01-a01\"}"
+        }
+      }
+    },
+    {
+      "source_line": 28,
+      "event": {
+        "type": "tool/result",
+        "seq": 26,
+        "time": 1792150567178,
+        "data": {
+          "turn": 1,
+          "step": 2,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_twNt5AgabBpjVCkl1qbC3777"
+            },
+            "toolCallId": "call_00_twNt5AgabBpjVCkl1qbC3777",
+            "content": [
+              {
+                "type": "text",
+                "text": "[stderr]\nRUN_ID=FB01-ERROR-3bff009e276cf2e7\nERROR_CODE=E_INPUT_MISSING\nPATH=inputs/source_data.csv\n[exit code: 7]"
+              }
+            ],
+            "isError": false,
+            "id": "37df1d4f-ec6a-46e8-996e-362020a3a139"
+          }
+        },
+        "sourceEventSeqs": [
+          25
+        ],
+        "surfaceOp": "append"
+      }
+    }
+  ]
+}

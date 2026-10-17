@@ -1,0 +1,14 @@
+{
+  "case_id": "FB01",
+  "case_name": "固定工具结果的准确回传",
+  "fixture_version": "1.0.0",
+  "run_id": "FB01-ERROR-37548d7083f476b9",
+  "mode": "error",
+  "created_at_utc": "2026-10-16T15:11:52.666524+00:00",
+  "working_directory": "/PUBLIC_PROJECT/独立测试工作区/Codex/FB01-a01",
+  "script_sha256": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+  "expected_stdout": "",
+  "expected_stderr": "RUN_ID=FB01-ERROR-37548d7083f476b9\nERROR_CODE=E_INPUT_MISSING\nPATH=inputs/source_data.csv\n",
+  "expected_exit_code": 7,
+  "evidence_scope": "Fixture expectations only; compare with native tool records. Not proof of model receipt."
+}

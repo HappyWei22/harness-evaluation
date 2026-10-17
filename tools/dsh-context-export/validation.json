@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-17",
+  "scope": "对已保存桌面导出文件再次做只读核对；本次未重新点击按钮、安装插件或发送模型请求。",
+  "historical_desktop_validation": {
+    "product": "DSH 0.2.0-rc.2",
+    "plugin_base": "dsh-context 0.72.0",
+    "selection": "CTX01 多轮要求更新，第3轮第1步",
+    "buttons_used": [
+      "导出所选上下文JSON",
+      "下载原始会话日志ZIP"
+    ],
+    "new_model_turns": 0
+  },
+  "archive_recheck": {
+    "selected_raw_events_match_session_log": 9,
+    "session_records": 40,
+    "selection_precedes_third_assistant_response": true,
+    "actual_provider_request_captured": false
+  },
+  "not_covered": [
+    "压缩后的长会话",
+    "子会话",
+    "附件下载与还原",
+    "服务端实际模型请求"
+  ],
+  "source_record_sha256": "2bab6b9bce4f786f6b3cd9d012340d8b4100812ea76e96a0757153fddd0cb5e7",
+  "public_artifacts": "仅保存核对摘要；包含完整系统上下文的原JSON、ZIP和原桌面截图未纳入仓库。"
+}

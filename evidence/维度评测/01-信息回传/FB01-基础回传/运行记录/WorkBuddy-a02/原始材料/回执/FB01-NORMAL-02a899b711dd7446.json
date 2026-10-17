@@ -1,0 +1,14 @@
+{
+  "case_id": "FB01",
+  "case_name": "固定工具结果的准确回传",
+  "fixture_version": "1.0.0",
+  "run_id": "FB01-NORMAL-02a899b711dd7446",
+  "mode": "normal",
+  "created_at_utc": "2026-10-16T15:42:14.503212+00:00",
+  "working_directory": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02",
+  "script_sha256": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+  "expected_stdout": "RUN_ID=FB01-NORMAL-02a899b711dd7446\nROW_COUNT=37\nTOTAL_AMOUNT=12840.50\n",
+  "expected_stderr": "",
+  "expected_exit_code": 0,
+  "evidence_scope": "Fixture expectations only; compare with native tool records. Not proof of model receipt."
+}

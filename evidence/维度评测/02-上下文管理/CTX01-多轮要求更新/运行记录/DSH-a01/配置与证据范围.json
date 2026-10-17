@@ -1,0 +1,19 @@
+{
+  "session_id": "session-f79f8400-2e0c-490f-befd-3d09f2b0c49a",
+  "cwd": "/PUBLIC_PROJECT/独立测试工作区/DSH/CTX01-a01",
+  "log_format_version": 4,
+  "product_version": "未独立取得，不能把日志格式版本4当客户端版本",
+  "provider": "deepseek-account",
+  "model": "deepseek-flash",
+  "reasoning_effort": "high",
+  "max_tokens_config": 256000,
+  "context_window_metadata": 1000000,
+  "permission_preset": "workspace-write",
+  "sandbox_mode": "workspace-write",
+  "approval_policy": "ask",
+  "skill_catalog_line": 12,
+  "explicit_skill_tool_calls": 0,
+  "complete_main_model_request_verified": false,
+  "compression_observed": false,
+  "scope": "主任务完整请求未取得；没有压缩事件不证明所有内部处理都不存在。"
+}

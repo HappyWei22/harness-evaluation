@@ -1,0 +1,86 @@
+{
+  "case_id": "CTX01",
+  "product": "WorkBuddy",
+  "label": "WorkBuddy",
+  "run_label": "WorkBuddy-CTX01-a01",
+  "points": 4,
+  "maximum": 4,
+  "messages": [
+    {
+      "role": "user",
+      "text": "我们分三轮登记一项校园活动。本题只需在对话中登记和更新活动信息。\n请先记录以下初始信息：\n活动编号：ACT-27\n地点：A教学楼\n预算：3000\n币种：CNY\n本轮只确认收到，暂不输出最终活动记录，等待后续修改。",
+      "source_lines": [
+        3
+      ],
+      "message_id": "01a1483d-9359-7ca0-ae5b-89de3f290b98",
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/WorkBuddy-a01/原始材料/原生会话.excerpt.json"
+    },
+    {
+      "role": "assistant",
+      "text": "已收到，本轮仅登记，暂不输出最终活动记录。\n\n当前记录（第 1 轮）：\n\n- 活动编号：ACT-27\n- 地点：A教学楼\n- 预算：3000\n- 币种：CNY\n\n等待你后续的修改指令。",
+      "source_lines": [
+        7
+      ],
+      "message_id": "01a1483d-9993-7e80-ae16-dbd3e71b80e5",
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/WorkBuddy-a01/原始材料/原生会话.excerpt.json"
+    },
+    {
+      "role": "user",
+      "text": "```text\n更新刚才的活动信息：\n地点改为图书馆，预算改为4500。\n其他信息保持不变。\n本轮只确认收到，暂不输出最终活动记录。",
+      "source_lines": [
+        8
+      ],
+      "message_id": "01a1483d-b887-7775-8a15-b29fa38ed846",
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/WorkBuddy-a01/原始材料/原生会话.excerpt.json"
+    },
+    {
+      "role": "assistant",
+      "text": "已收到第 2 轮更新，暂不输出最终活动记录。\n\n当前记录状态：\n\n- 活动编号：ACT-27（未变）\n- 地点：A教学楼 → **图书馆**（本轮修改）\n- 预算：3000 → **4500**（本轮修改）\n- 币种：CNY（未变）\n\n等待第 3 轮指令。",
+      "source_lines": [
+        11
+      ],
+      "message_id": "01a1483d-bb49-71a9-bbb9-d86a5da2822b",
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/WorkBuddy-a01/原始材料/原生会话.excerpt.json"
+    },
+    {
+      "role": "user",
+      "text": "请根据本会话目前有效的信息，输出最终活动记录。\n只输出一个JSON对象，字段名固定为“活动编号”“地点”“预算”“币种”。预算使用数字，其他字段使用字符串。保留编号、地点和币种的有效写法，不新增条件。\n```",
+      "source_lines": [
+        12
+      ],
+      "message_id": "01a1483d-de65-7bf4-9ce0-705f6dc588e6",
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/WorkBuddy-a01/原始材料/原生会话.excerpt.json"
+    },
+    {
+      "role": "assistant",
+      "text": "{\"活动编号\":\"ACT-27\",\"地点\":\"图书馆\",\"预算\":4500,\"币种\":\"CNY\"}",
+      "source_lines": [
+        15
+      ],
+      "message_id": "01a1483d-e111-7c70-be28-30e3d3e3f45c",
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/WorkBuddy-a01/原始材料/原生会话.excerpt.json"
+    }
+  ],
+  "configuration": {
+    "product": "WorkBuddy",
+    "session_or_share": "2b902466-0336-49c5-8dee-e7431d922231",
+    "native_models_observed": [
+      "hy4-preview"
+    ],
+    "config_observed": {
+      "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/CTX01-a01"
+    },
+    "protocol_verified_in_visible_evidence": true,
+    "deviations_and_limits": [
+      "第二轮开头额外含```text，第三轮末尾含```；三轮空行与原提示不同。逐句检查任务内容、值和顺序未改变，第三轮未补答案，按内容等价接受；不声称逐字一致。"
+    ],
+    "second_reply_summarizes_all_current_values": true,
+    "complete_main_model_request_verified": false,
+    "native_skill_influence_controlled": false,
+    "evaluator_reran_product": false,
+    "rules_changed": false,
+    "evidence_method": "原生JSONL"
+  },
+  "source_score": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/WorkBuddy-a01/核对与评分.json",
+  "limits": "三轮短对话；没有验证压缩或复杂16分；完整模型请求未核验。"
+}

@@ -1,0 +1,2847 @@
+{
+  "date": "2026-10-17",
+  "scope": "60项已有判断；保留历史分值与当前证据状态。不是新的产品运行、纯Harness总分或完整排名。",
+  "review_totals": [
+    {
+      "product": "Codex",
+      "judgments": 12,
+      "historical_confirmed_points": 14,
+      "archived_evidence_supported_positive_points": 14,
+      "historical_positive_points_waiting_for_raw_evidence": 0,
+      "confirmed_failed_points": 4,
+      "unrated_points": 2,
+      "component_cause_confirmed": false
+    },
+    {
+      "product": "WorkBuddy",
+      "judgments": 12,
+      "historical_confirmed_points": 16,
+      "archived_evidence_supported_positive_points": 16,
+      "historical_positive_points_waiting_for_raw_evidence": 0,
+      "confirmed_failed_points": 2,
+      "unrated_points": 2,
+      "component_cause_confirmed": false
+    },
+    {
+      "product": "DSH",
+      "judgments": 12,
+      "historical_confirmed_points": 19,
+      "archived_evidence_supported_positive_points": 19,
+      "historical_positive_points_waiting_for_raw_evidence": 0,
+      "confirmed_failed_points": 0,
+      "unrated_points": 1,
+      "component_cause_confirmed": false
+    },
+    {
+      "product": "元宝专家模式",
+      "judgments": 12,
+      "historical_confirmed_points": 0,
+      "archived_evidence_supported_positive_points": 0,
+      "historical_positive_points_waiting_for_raw_evidence": 0,
+      "confirmed_failed_points": 0,
+      "unrated_points": 20,
+      "component_cause_confirmed": false
+    },
+    {
+      "product": "豆包办公",
+      "judgments": 12,
+      "historical_confirmed_points": 9,
+      "archived_evidence_supported_positive_points": 4,
+      "historical_positive_points_waiting_for_raw_evidence": 5,
+      "confirmed_failed_points": 0,
+      "unrated_points": 11,
+      "component_cause_confirmed": false
+    }
+  ],
+  "judgments": [
+    {
+      "id": "COD-FB01-01",
+      "product": "Codex",
+      "case_id": "FB01",
+      "case_name": "基础回传",
+      "item": "正常状态准确返回",
+      "maximum": 1,
+      "historical_points": 1,
+      "review_state": "supported_positive",
+      "conclusion": "首次正常结果明确记录退出码0，得1分。",
+      "observation_layer": "原生日志中的exec_command结果",
+      "source": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/核对与评分.json",
+      "source_pointer": "/score_items/0/points",
+      "evidence": [
+        {
+          "locator": "/score_items/0/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB01-基础回传/运行记录/Codex-a01/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第17、20行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB01-基础回传/运行记录/Codex-a01/原始材料/原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB01-基础回传/运行记录/Codex-a01/原始材料/回执/FB01-NORMAL-76de54b51e988f94.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/回执/FB01-NORMAL-76de54b51e988f94.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "读取对应调用与返回；状态项核对exit_code，字段项逐项与对应模式回执比较，不用最终回复代替。",
+      "confidence_basis": "调用编号配对，原生命令未追加echo，两份回执与原版脚本指纹一致；判断依据来自实际结果与独立预期的对照。",
+      "limitations": "只确认本次日志记录的状态或字段，未独立核验完整模型请求；单次通过不证明稳定性。",
+      "attribution_scope": "未发现本项不符；不能据通过分离模型、原生Skill与Harness各自贡献。",
+      "verification_group": "FB01:Codex",
+      "verification_command": "python3 checks/verify.py --item COD-FB01-01",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "COD-FB01-02",
+      "product": "Codex",
+      "case_id": "FB01",
+      "case_name": "基础回传",
+      "item": "正常关键内容完整",
+      "maximum": 1,
+      "historical_points": 1,
+      "review_state": "supported_positive",
+      "conclusion": "正常返回的RUN_ID、37、12840.50与正常回执一致，得1分。",
+      "observation_layer": "原生日志中的exec_command结果",
+      "source": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/核对与评分.json",
+      "source_pointer": "/score_items/1/points",
+      "evidence": [
+        {
+          "locator": "/score_items/1/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB01-基础回传/运行记录/Codex-a01/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第17、20行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB01-基础回传/运行记录/Codex-a01/原始材料/原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB01-基础回传/运行记录/Codex-a01/原始材料/回执/FB01-NORMAL-76de54b51e988f94.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/回执/FB01-NORMAL-76de54b51e988f94.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "读取对应调用与返回；状态项核对exit_code，字段项逐项与对应模式回执比较，不用最终回复代替。",
+      "confidence_basis": "调用编号配对，原生命令未追加echo，两份回执与原版脚本指纹一致；判断依据来自实际结果与独立预期的对照。",
+      "limitations": "只确认本次日志记录的状态或字段，未独立核验完整模型请求；单次通过不证明稳定性。",
+      "attribution_scope": "未发现本项不符；不能据通过分离模型、原生Skill与Harness各自贡献。",
+      "verification_group": "FB01:Codex",
+      "verification_command": "python3 checks/verify.py --item COD-FB01-02",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "COD-FB01-03",
+      "product": "Codex",
+      "case_id": "FB01",
+      "case_name": "基础回传",
+      "item": "错误状态准确返回",
+      "maximum": 1,
+      "historical_points": 1,
+      "review_state": "supported_positive",
+      "conclusion": "首次错误结果明确记录退出码7，得1分。",
+      "observation_layer": "原生日志中的exec_command结果",
+      "source": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/核对与评分.json",
+      "source_pointer": "/score_items/2/points",
+      "evidence": [
+        {
+          "locator": "/score_items/2/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB01-基础回传/运行记录/Codex-a01/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第22、25行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB01-基础回传/运行记录/Codex-a01/原始材料/原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB01-基础回传/运行记录/Codex-a01/原始材料/回执/FB01-ERROR-37548d7083f476b9.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/回执/FB01-ERROR-37548d7083f476b9.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "读取对应调用与返回；状态项核对exit_code，字段项逐项与对应模式回执比较，不用最终回复代替。",
+      "confidence_basis": "调用编号配对，原生命令未追加echo，两份回执与原版脚本指纹一致；判断依据来自实际结果与独立预期的对照。",
+      "limitations": "只确认本次日志记录的状态或字段，未独立核验完整模型请求；单次通过不证明稳定性。",
+      "attribution_scope": "未发现本项不符；不能据通过分离模型、原生Skill与Harness各自贡献。",
+      "verification_group": "FB01:Codex",
+      "verification_command": "python3 checks/verify.py --item COD-FB01-03",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "COD-FB01-04",
+      "product": "Codex",
+      "case_id": "FB01",
+      "case_name": "基础回传",
+      "item": "错误关键内容完整",
+      "maximum": 1,
+      "historical_points": 1,
+      "review_state": "supported_positive",
+      "conclusion": "错误返回的RUN_ID、E_INPUT_MISSING、inputs/source_data.csv与错误回执一致，得1分。",
+      "observation_layer": "原生日志中的exec_command结果",
+      "source": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/核对与评分.json",
+      "source_pointer": "/score_items/3/points",
+      "evidence": [
+        {
+          "locator": "/score_items/3/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB01-基础回传/运行记录/Codex-a01/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第22、25行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB01-基础回传/运行记录/Codex-a01/原始材料/原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB01-基础回传/运行记录/Codex-a01/原始材料/回执/FB01-ERROR-37548d7083f476b9.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/回执/FB01-ERROR-37548d7083f476b9.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "读取对应调用与返回；状态项核对exit_code，字段项逐项与对应模式回执比较，不用最终回复代替。",
+      "confidence_basis": "调用编号配对，原生命令未追加echo，两份回执与原版脚本指纹一致；判断依据来自实际结果与独立预期的对照。",
+      "limitations": "只确认本次日志记录的状态或字段，未独立核验完整模型请求；单次通过不证明稳定性。",
+      "attribution_scope": "未发现本项不符；不能据通过分离模型、原生Skill与Harness各自贡献。",
+      "verification_group": "FB01:Codex",
+      "verification_command": "python3 checks/verify.py --item COD-FB01-04",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "COD-FB02-01",
+      "product": "Codex",
+      "case_id": "FB02",
+      "case_name": "较长结果回传",
+      "item": "本次运行编号",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "supported_positive",
+      "conclusion": "第1行的本次随机RUN_ID与本次回执一致，得2分。",
+      "observation_layer": "原生日志首次结果的完整正文",
+      "source": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/核对与评分.json",
+      "source_pointer": "/score_items/0/points",
+      "evidence": [
+        {
+          "locator": "/score_items/0/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB02-较长结果回传/运行记录/Codex-a01/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第17、20行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB02-较长结果回传/运行记录/Codex-a01/原始材料/原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/原始材料/原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB02-较长结果回传/运行记录/Codex-a01/原始材料/回执/FB02-LONG-16566128a84e048c.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/原始材料/回执/FB02-LONG-16566128a84e048c.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "读取首次结果正文的第1行，逐项与回执对应checkpoint比较；同时比对全文，防止混用别次运行。",
+      "confidence_basis": "本次随机编号、指定字段位置和200行全文均有原生返回及回执可对照；输入脚本指纹一致。",
+      "limitations": "日志正文不等于已核验的完整模型请求；只确认这一次200行样本。",
+      "attribution_scope": "未发现本项字段不符，不推断模型/Skill/Harness贡献比例。",
+      "verification_group": "FB02:Codex",
+      "verification_command": "python3 checks/verify.py --item COD-FB02-01",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "COD-FB02-02",
+      "product": "Codex",
+      "case_id": "FB02",
+      "case_name": "较长结果回传",
+      "item": "错误数量",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "supported_positive",
+      "conclusion": "第60行的ERROR_COUNT=3与本次回执一致，得2分。",
+      "observation_layer": "原生日志首次结果的完整正文",
+      "source": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/核对与评分.json",
+      "source_pointer": "/score_items/1/points",
+      "evidence": [
+        {
+          "locator": "/score_items/1/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB02-较长结果回传/运行记录/Codex-a01/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第17、20行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB02-较长结果回传/运行记录/Codex-a01/原始材料/原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/原始材料/原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB02-较长结果回传/运行记录/Codex-a01/原始材料/回执/FB02-LONG-16566128a84e048c.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/原始材料/回执/FB02-LONG-16566128a84e048c.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "读取首次结果正文的第60行，逐项与回执对应checkpoint比较；同时比对全文，防止混用别次运行。",
+      "confidence_basis": "本次随机编号、指定字段位置和200行全文均有原生返回及回执可对照；输入脚本指纹一致。",
+      "limitations": "日志正文不等于已核验的完整模型请求；只确认这一次200行样本。",
+      "attribution_scope": "未发现本项字段不符，不推断模型/Skill/Harness贡献比例。",
+      "verification_group": "FB02:Codex",
+      "verification_command": "python3 checks/verify.py --item COD-FB02-02",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "COD-FB02-03",
+      "product": "Codex",
+      "case_id": "FB02",
+      "case_name": "较长结果回传",
+      "item": "错误文件路径",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "supported_positive",
+      "conclusion": "第120行的ERROR_PATH=inputs/sales_2026.csv与本次回执一致，得2分。",
+      "observation_layer": "原生日志首次结果的完整正文",
+      "source": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/核对与评分.json",
+      "source_pointer": "/score_items/2/points",
+      "evidence": [
+        {
+          "locator": "/score_items/2/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB02-较长结果回传/运行记录/Codex-a01/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第17、20行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB02-较长结果回传/运行记录/Codex-a01/原始材料/原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/原始材料/原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB02-较长结果回传/运行记录/Codex-a01/原始材料/回执/FB02-LONG-16566128a84e048c.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/原始材料/回执/FB02-LONG-16566128a84e048c.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "读取首次结果正文的第120行，逐项与回执对应checkpoint比较；同时比对全文，防止混用别次运行。",
+      "confidence_basis": "本次随机编号、指定字段位置和200行全文均有原生返回及回执可对照；输入脚本指纹一致。",
+      "limitations": "日志正文不等于已核验的完整模型请求；只确认这一次200行样本。",
+      "attribution_scope": "未发现本项字段不符，不推断模型/Skill/Harness贡献比例。",
+      "verification_group": "FB02:Codex",
+      "verification_command": "python3 checks/verify.py --item COD-FB02-03",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "COD-FB02-04",
+      "product": "Codex",
+      "case_id": "FB02",
+      "case_name": "较长结果回传",
+      "item": "完整生成标记",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "supported_positive",
+      "conclusion": "第200行的REPORT_COMPLETE=YES与本次回执一致，得2分。",
+      "observation_layer": "原生日志首次结果的完整正文",
+      "source": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/核对与评分.json",
+      "source_pointer": "/score_items/3/points",
+      "evidence": [
+        {
+          "locator": "/score_items/3/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB02-较长结果回传/运行记录/Codex-a01/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第17、20行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB02-较长结果回传/运行记录/Codex-a01/原始材料/原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/原始材料/原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB02-较长结果回传/运行记录/Codex-a01/原始材料/回执/FB02-LONG-16566128a84e048c.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/原始材料/回执/FB02-LONG-16566128a84e048c.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "读取首次结果正文的第200行，逐项与回执对应checkpoint比较；同时比对全文，防止混用别次运行。",
+      "confidence_basis": "本次随机编号、指定字段位置和200行全文均有原生返回及回执可对照；输入脚本指纹一致。",
+      "limitations": "日志正文不等于已核验的完整模型请求；只确认这一次200行样本。",
+      "attribution_scope": "未发现本项字段不符，不推断模型/Skill/Harness贡献比例。",
+      "verification_group": "FB02:Codex",
+      "verification_command": "python3 checks/verify.py --item COD-FB02-04",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "COD-FB03-01",
+      "product": "Codex",
+      "case_id": "FB03",
+      "case_name": "完整结果获取",
+      "item": "说明当前结果不完整",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "supported_positive",
+      "conclusion": "首次明确说明结果截断，得2分。",
+      "observation_layer": "本轮exec → exec_command首次原生返回",
+      "source": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/第一阶段核对与评分.json",
+      "source_pointer": "/score_items/0/points",
+      "evidence": [
+        {
+          "locator": "/score_items/0/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB03-完整结果获取/运行记录/Codex-a01/第一阶段核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/第一阶段核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第17、20行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB03-完整结果获取/运行记录/Codex-a01/原始材料/第一阶段原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/原始材料/第一阶段原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "整条首次实际返回，含66075/56075 token截断提示",
+          "role": "直接证据",
+          "original_source": "FB03-完整结果获取/运行记录/Codex-a01/第一阶段实际返回.txt",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/第一阶段实际返回.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "核对调用编号及完整原生返回，确认截断警告和可见标记；检查是否有完整文件路径或可用读取入口，不把界面预览缩略当作产品截断。",
+      "confidence_basis": "截断提示和未提供入口均能在同一条完整首次返回中检查；中间标记不可见，与最终回复一致，但判断不只依赖回复。",
+      "limitations": "入口缺口仅针对本次执行链路；第二、三项来自同一事件；底层是否有其他保存、哪个内部层负责仍未知。",
+      "attribution_scope": "已定位首次返回的入口缺口，没有定位到具体内部组件；不称为模型抄错，也不推断所有Codex工具均无完整输出能力。",
+      "verification_group": "FB03:Codex",
+      "verification_command": "python3 checks/verify.py --item COD-FB03-01",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "COD-FB03-02",
+      "product": "Codex",
+      "case_id": "FB03",
+      "case_name": "完整结果获取",
+      "item": "提供有效的完整结果入口",
+      "maximum": 2,
+      "historical_points": 0,
+      "review_state": "supported_negative",
+      "conclusion": "核对整条首次返回，没有提供可用的完整结果入口，得0分。",
+      "observation_layer": "本轮exec → exec_command首次原生返回",
+      "source": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/第一阶段核对与评分.json",
+      "source_pointer": "/score_items/1/points",
+      "evidence": [
+        {
+          "locator": "/score_items/1/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB03-完整结果获取/运行记录/Codex-a01/第一阶段核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/第一阶段核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第17、20行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB03-完整结果获取/运行记录/Codex-a01/原始材料/第一阶段原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/原始材料/第一阶段原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "整条首次实际返回，含66075/56075 token截断提示",
+          "role": "直接证据",
+          "original_source": "FB03-完整结果获取/运行记录/Codex-a01/第一阶段实际返回.txt",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/第一阶段实际返回.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "核对调用编号及完整原生返回，确认截断警告和可见标记；检查是否有完整文件路径或可用读取入口，不把界面预览缩略当作产品截断。",
+      "confidence_basis": "截断提示和未提供入口均能在同一条完整首次返回中检查；中间标记不可见，与最终回复一致，但判断不只依赖回复。",
+      "limitations": "入口缺口仅针对本次执行链路；第二、三项来自同一事件；底层是否有其他保存、哪个内部层负责仍未知。",
+      "attribution_scope": "已定位首次返回的入口缺口，没有定位到具体内部组件；不称为模型抄错，也不推断所有Codex工具均无完整输出能力。",
+      "verification_group": "FB03:Codex",
+      "verification_command": "python3 checks/verify.py --item COD-FB03-02",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "COD-FB03-03",
+      "product": "Codex",
+      "case_id": "FB03",
+      "case_name": "完整结果获取",
+      "item": "通过入口取回缺少的内容",
+      "maximum": 2,
+      "historical_points": 0,
+      "review_state": "supported_negative",
+      "conclusion": "因首次没有提供可用入口，按原规则无需盲找；本项0分。",
+      "observation_layer": "本轮exec → exec_command首次原生返回",
+      "source": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/第一阶段核对与评分.json",
+      "source_pointer": "/score_items/2/points",
+      "evidence": [
+        {
+          "locator": "/score_items/2/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB03-完整结果获取/运行记录/Codex-a01/第一阶段核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/第一阶段核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第17、20行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB03-完整结果获取/运行记录/Codex-a01/原始材料/第一阶段原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/原始材料/第一阶段原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "整条首次实际返回，含66075/56075 token截断提示",
+          "role": "直接证据",
+          "original_source": "FB03-完整结果获取/运行记录/Codex-a01/第一阶段实际返回.txt",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/第一阶段实际返回.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "核对调用编号及完整原生返回，确认截断警告和可见标记；检查是否有完整文件路径或可用读取入口，不把界面预览缩略当作产品截断。",
+      "confidence_basis": "截断提示和未提供入口均能在同一条完整首次返回中检查；中间标记不可见，与最终回复一致，但判断不只依赖回复。",
+      "limitations": "入口缺口仅针对本次执行链路；第二、三项来自同一事件；底层是否有其他保存、哪个内部层负责仍未知。",
+      "attribution_scope": "已定位首次返回的入口缺口，没有定位到具体内部组件；不称为模型抄错，也不推断所有Codex工具均无完整输出能力。",
+      "verification_group": "FB03:Codex",
+      "verification_command": "python3 checks/verify.py --item COD-FB03-03",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "COD-FB03-04",
+      "product": "Codex",
+      "case_id": "FB03",
+      "case_name": "完整结果获取",
+      "item": "完整结果保存准确",
+      "maximum": 2,
+      "historical_points": null,
+      "review_state": "insufficient_evidence",
+      "conclusion": "没有入口不证明底层未存全文；无法验证完整保存，留空。",
+      "observation_layer": "本轮exec → exec_command首次原生返回",
+      "source": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/第一阶段核对与评分.json",
+      "source_pointer": "/score_items/3/points",
+      "evidence": [
+        {
+          "locator": "/score_items/3/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB03-完整结果获取/运行记录/Codex-a01/第一阶段核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/第一阶段核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第17、20行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB03-完整结果获取/运行记录/Codex-a01/原始材料/第一阶段原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/原始材料/第一阶段原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "整条首次实际返回，含66075/56075 token截断提示",
+          "role": "直接证据",
+          "original_source": "FB03-完整结果获取/运行记录/Codex-a01/第一阶段实际返回.txt",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/第一阶段实际返回.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "核对调用编号及完整原生返回，确认截断警告和可见标记；检查是否有完整文件路径或可用读取入口，不把界面预览缩略当作产品截断。",
+      "confidence_basis": "截断提示和未提供入口均能在同一条完整首次返回中检查；中间标记不可见，与最终回复一致，但判断不只依赖回复。",
+      "limitations": "入口缺口仅针对本次执行链路；第二、三项来自同一事件；底层是否有其他保存、哪个内部层负责仍未知。",
+      "attribution_scope": "已定位首次返回的入口缺口，没有定位到具体内部组件；不称为模型抄错，也不推断所有Codex工具均无完整输出能力。",
+      "verification_group": "FB03:Codex",
+      "verification_command": "python3 checks/verify.py --item COD-FB03-04",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "WB-FB01-01",
+      "product": "WorkBuddy",
+      "case_id": "FB01",
+      "case_name": "基础回传",
+      "item": "正常状态准确返回",
+      "maximum": 1,
+      "historical_points": 1,
+      "review_state": "supported_positive",
+      "conclusion": "原样执行正常模式，工具元数据及正文均明确退出0，得1分。",
+      "observation_layer": "第二轮原生日志中的Bash结果",
+      "source": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json",
+      "source_pointer": "/score_items/0/points",
+      "evidence": [
+        {
+          "locator": "/score_items/0/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第7、8行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/回执/FB01-NORMAL-02a899b711dd7446.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/回执/FB01-NORMAL-02a899b711dd7446.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "核对第7/8或10/11行的命令与结果；正常字段对照回执。错误项同时阅读脚本的异常分支，区分提前退出20与预设退出7。",
+      "confidence_basis": "原始记录确认没有追加echo；正常回执存在。错误结果明确报保存失败，脚本对应分支返回20并跳过后续字段输出。",
+      "limitations": "错误模式无回执，具体文件异常没有保存；只能定位到保存阶段，不能确定为何失败。",
+      "attribution_scope": "正常项通过；错误项为测试条件受阻，不能归为Harness丢失预设字段，也不能仅据返回20定位权限或Skill责任。",
+      "verification_group": "FB01:WorkBuddy",
+      "verification_command": "python3 checks/verify.py --item WB-FB01-01",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "WB-FB01-02",
+      "product": "WorkBuddy",
+      "case_id": "FB01",
+      "case_name": "基础回传",
+      "item": "正常关键内容完整",
+      "maximum": 1,
+      "historical_points": 1,
+      "review_state": "supported_positive",
+      "conclusion": "正常返回三个字段与本轮正常回执一致，得1分。",
+      "observation_layer": "第二轮原生日志中的Bash结果",
+      "source": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json",
+      "source_pointer": "/score_items/1/points",
+      "evidence": [
+        {
+          "locator": "/score_items/1/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第7、8行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/回执/FB01-NORMAL-02a899b711dd7446.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/回执/FB01-NORMAL-02a899b711dd7446.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "核对第7/8或10/11行的命令与结果；正常字段对照回执。错误项同时阅读脚本的异常分支，区分提前退出20与预设退出7。",
+      "confidence_basis": "原始记录确认没有追加echo；正常回执存在。错误结果明确报保存失败，脚本对应分支返回20并跳过后续字段输出。",
+      "limitations": "错误模式无回执，具体文件异常没有保存；只能定位到保存阶段，不能确定为何失败。",
+      "attribution_scope": "正常项通过；错误项为测试条件受阻，不能归为Harness丢失预设字段，也不能仅据返回20定位权限或Skill责任。",
+      "verification_group": "FB01:WorkBuddy",
+      "verification_command": "python3 checks/verify.py --item WB-FB01-02",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "WB-FB01-03",
+      "product": "WorkBuddy",
+      "case_id": "FB01",
+      "case_name": "基础回传",
+      "item": "错误状态准确返回",
+      "maximum": 1,
+      "historical_points": null,
+      "review_state": "not_effectively_tested",
+      "conclusion": "实际退出20，未到预设退出7的场景；本项未有效测试，留空。",
+      "observation_layer": "第二轮原生日志中的Bash结果",
+      "source": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json",
+      "source_pointer": "/score_items/2/points",
+      "evidence": [
+        {
+          "locator": "/score_items/2/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第10、11行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第43—57行：保存回执失败分支早于预设字段输出",
+          "role": "直接证据",
+          "original_source": "FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/feedback_probe.py",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/feedback_probe.py",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "核对第7/8或10/11行的命令与结果；正常字段对照回执。错误项同时阅读脚本的异常分支，区分提前退出20与预设退出7。",
+      "confidence_basis": "原始记录确认没有追加echo；正常回执存在。错误结果明确报保存失败，脚本对应分支返回20并跳过后续字段输出。",
+      "limitations": "错误模式无回执，具体文件异常没有保存；只能定位到保存阶段，不能确定为何失败。",
+      "attribution_scope": "正常项通过；错误项为测试条件受阻，不能归为Harness丢失预设字段，也不能仅据返回20定位权限或Skill责任。",
+      "verification_group": "FB01:WorkBuddy",
+      "verification_command": "python3 checks/verify.py --item WB-FB01-03",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "WB-FB01-04",
+      "product": "WorkBuddy",
+      "case_id": "FB01",
+      "case_name": "基础回传",
+      "item": "错误关键内容完整",
+      "maximum": 1,
+      "historical_points": null,
+      "review_state": "not_effectively_tested",
+      "conclusion": "保存回执失败后，预设错误字段尚未输出；本项未有效测试，留空。",
+      "observation_layer": "第二轮原生日志中的Bash结果",
+      "source": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json",
+      "source_pointer": "/score_items/3/points",
+      "evidence": [
+        {
+          "locator": "/score_items/3/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第10、11行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第43—57行：保存回执失败分支早于预设字段输出",
+          "role": "直接证据",
+          "original_source": "FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/feedback_probe.py",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/feedback_probe.py",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "核对第7/8或10/11行的命令与结果；正常字段对照回执。错误项同时阅读脚本的异常分支，区分提前退出20与预设退出7。",
+      "confidence_basis": "原始记录确认没有追加echo；正常回执存在。错误结果明确报保存失败，脚本对应分支返回20并跳过后续字段输出。",
+      "limitations": "错误模式无回执，具体文件异常没有保存；只能定位到保存阶段，不能确定为何失败。",
+      "attribution_scope": "正常项通过；错误项为测试条件受阻，不能归为Harness丢失预设字段，也不能仅据返回20定位权限或Skill责任。",
+      "verification_group": "FB01:WorkBuddy",
+      "verification_command": "python3 checks/verify.py --item WB-FB01-04",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "WB-FB02-01",
+      "product": "WorkBuddy",
+      "case_id": "FB02",
+      "case_name": "较长结果回传",
+      "item": "本次运行编号",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "supported_positive",
+      "conclusion": "第1行的本次随机RUN_ID与本次回执一致，得2分。",
+      "observation_layer": "原生日志首次结果的完整正文output.text",
+      "source": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/核对与评分.json",
+      "source_pointer": "/score_items/0/points",
+      "evidence": [
+        {
+          "locator": "/score_items/0/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB02-较长结果回传/运行记录/WorkBuddy-a01/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第7、8行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/回执/FB02-LONG-0d284571207560f0.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/回执/FB02-LONG-0d284571207560f0.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "content及renderer；与同条记录的完整output.text对照",
+          "role": "另一种结果表示",
+          "original_source": "FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/工具结果保存文件.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/工具结果保存文件.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "读取首次结果正文的第1行，逐项与回执对应checkpoint比较；同时比对全文，防止混用别次运行。 WorkBuddy仅统一CRLF/LF换行形式，未删除或补写报告行。",
+      "confidence_basis": "本次随机编号、指定字段位置和200行全文均有原生返回及回执可对照；输入脚本指纹一致。",
+      "limitations": "日志正文不等于已核验的完整模型请求；只确认这一次200行样本。 同条日志另有输出过大与保存文件提示，两种表示的生成时机及实际模型输入未确认。",
+      "attribution_scope": "未发现本项字段不符，不推断模型/Skill/Harness贡献比例。",
+      "verification_group": "FB02:WorkBuddy",
+      "verification_command": "python3 checks/verify.py --item WB-FB02-01",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "WB-FB02-02",
+      "product": "WorkBuddy",
+      "case_id": "FB02",
+      "case_name": "较长结果回传",
+      "item": "错误数量",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "supported_positive",
+      "conclusion": "第60行的ERROR_COUNT=3与本次回执一致，得2分。",
+      "observation_layer": "原生日志首次结果的完整正文output.text",
+      "source": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/核对与评分.json",
+      "source_pointer": "/score_items/1/points",
+      "evidence": [
+        {
+          "locator": "/score_items/1/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB02-较长结果回传/运行记录/WorkBuddy-a01/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第7、8行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/回执/FB02-LONG-0d284571207560f0.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/回执/FB02-LONG-0d284571207560f0.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "content及renderer；与同条记录的完整output.text对照",
+          "role": "另一种结果表示",
+          "original_source": "FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/工具结果保存文件.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/工具结果保存文件.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "读取首次结果正文的第60行，逐项与回执对应checkpoint比较；同时比对全文，防止混用别次运行。 WorkBuddy仅统一CRLF/LF换行形式，未删除或补写报告行。",
+      "confidence_basis": "本次随机编号、指定字段位置和200行全文均有原生返回及回执可对照；输入脚本指纹一致。",
+      "limitations": "日志正文不等于已核验的完整模型请求；只确认这一次200行样本。 同条日志另有输出过大与保存文件提示，两种表示的生成时机及实际模型输入未确认。",
+      "attribution_scope": "未发现本项字段不符，不推断模型/Skill/Harness贡献比例。",
+      "verification_group": "FB02:WorkBuddy",
+      "verification_command": "python3 checks/verify.py --item WB-FB02-02",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "WB-FB02-03",
+      "product": "WorkBuddy",
+      "case_id": "FB02",
+      "case_name": "较长结果回传",
+      "item": "错误文件路径",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "supported_positive",
+      "conclusion": "第120行的ERROR_PATH=inputs/sales_2026.csv与本次回执一致，得2分。",
+      "observation_layer": "原生日志首次结果的完整正文output.text",
+      "source": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/核对与评分.json",
+      "source_pointer": "/score_items/2/points",
+      "evidence": [
+        {
+          "locator": "/score_items/2/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB02-较长结果回传/运行记录/WorkBuddy-a01/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第7、8行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/回执/FB02-LONG-0d284571207560f0.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/回执/FB02-LONG-0d284571207560f0.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "content及renderer；与同条记录的完整output.text对照",
+          "role": "另一种结果表示",
+          "original_source": "FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/工具结果保存文件.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/工具结果保存文件.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "读取首次结果正文的第120行，逐项与回执对应checkpoint比较；同时比对全文，防止混用别次运行。 WorkBuddy仅统一CRLF/LF换行形式，未删除或补写报告行。",
+      "confidence_basis": "本次随机编号、指定字段位置和200行全文均有原生返回及回执可对照；输入脚本指纹一致。",
+      "limitations": "日志正文不等于已核验的完整模型请求；只确认这一次200行样本。 同条日志另有输出过大与保存文件提示，两种表示的生成时机及实际模型输入未确认。",
+      "attribution_scope": "未发现本项字段不符，不推断模型/Skill/Harness贡献比例。",
+      "verification_group": "FB02:WorkBuddy",
+      "verification_command": "python3 checks/verify.py --item WB-FB02-03",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "WB-FB02-04",
+      "product": "WorkBuddy",
+      "case_id": "FB02",
+      "case_name": "较长结果回传",
+      "item": "完整生成标记",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "supported_positive",
+      "conclusion": "第200行的REPORT_COMPLETE=YES与本次回执一致，得2分。",
+      "observation_layer": "原生日志首次结果的完整正文output.text",
+      "source": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/核对与评分.json",
+      "source_pointer": "/score_items/3/points",
+      "evidence": [
+        {
+          "locator": "/score_items/3/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB02-较长结果回传/运行记录/WorkBuddy-a01/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第7、8行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/回执/FB02-LONG-0d284571207560f0.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/回执/FB02-LONG-0d284571207560f0.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "content及renderer；与同条记录的完整output.text对照",
+          "role": "另一种结果表示",
+          "original_source": "FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/工具结果保存文件.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/工具结果保存文件.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "读取首次结果正文的第200行，逐项与回执对应checkpoint比较；同时比对全文，防止混用别次运行。 WorkBuddy仅统一CRLF/LF换行形式，未删除或补写报告行。",
+      "confidence_basis": "本次随机编号、指定字段位置和200行全文均有原生返回及回执可对照；输入脚本指纹一致。",
+      "limitations": "日志正文不等于已核验的完整模型请求；只确认这一次200行样本。 同条日志另有输出过大与保存文件提示，两种表示的生成时机及实际模型输入未确认。",
+      "attribution_scope": "未发现本项字段不符，不推断模型/Skill/Harness贡献比例。",
+      "verification_group": "FB02:WorkBuddy",
+      "verification_command": "python3 checks/verify.py --item WB-FB02-04",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "WB-FB03-01",
+      "product": "WorkBuddy",
+      "case_id": "FB03",
+      "case_name": "完整结果获取",
+      "item": "说明当前结果不完整",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "supported_positive",
+      "conclusion": "首次明确提示输出过大，仅返回2048字节预览，得2分。",
+      "observation_layer": "首次返回、第二阶段实际读取及原入口文件",
+      "source": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/完整核对与评分.json",
+      "source_pointer": "/score_items/0/points",
+      "evidence": [
+        {
+          "locator": "/score_items/0/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB03-完整结果获取/运行记录/WorkBuddy-a01/完整核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/完整核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第7、8行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/第一阶段原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/第一阶段原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/回执/FB03-FULL-f4cfccd6511b9a44.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/回执/FB03-FULL-f4cfccd6511b9a44.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "首次提示按第8行核对；入口与读取按第17、21行及回执核对。保存准确性比较原文件与expected_stdout的字节数、指纹，并统计回车字节。",
+      "confidence_basis": "首次提示、后续调用、随机标记、回执和前后相同文件副本相互印证。2058个额外CR解释全部字节差异，移除后全文相同。",
+      "limitations": "第二阶段由人工指令触发，不代表自主恢复。文件文本完整可恢复，最后0分不是丢行；CR来源及Grep/Read拒绝原因未知。",
+      "attribution_scope": "可确认执行链路保存字节变化，未定位具体生成CR的组件；不能据Grep/Read拒绝而Bash成功认定权限绕过。",
+      "verification_group": "FB03:WorkBuddy",
+      "verification_command": "python3 checks/verify.py --item WB-FB03-01",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "WB-FB03-02",
+      "product": "WorkBuddy",
+      "case_id": "FB03",
+      "case_name": "完整结果获取",
+      "item": "提供有效的完整结果入口",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "supported_positive",
+      "conclusion": "首次提供真实入口，第二阶段同路径能读到本次结果，得2分。",
+      "observation_layer": "首次返回、第二阶段实际读取及原入口文件",
+      "source": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/完整核对与评分.json",
+      "source_pointer": "/score_items/1/points",
+      "evidence": [
+        {
+          "locator": "/score_items/1/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB03-完整结果获取/运行记录/WorkBuddy-a01/完整核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/完整核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第7、8行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/第一阶段原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/第一阶段原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/回执/FB03-FULL-f4cfccd6511b9a44.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/回执/FB03-FULL-f4cfccd6511b9a44.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第15、17、19、21行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/第二阶段后完整会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/第二阶段后完整会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "首次提示按第8行核对；入口与读取按第17、21行及回执核对。保存准确性比较原文件与expected_stdout的字节数、指纹，并统计回车字节。",
+      "confidence_basis": "首次提示、后续调用、随机标记、回执和前后相同文件副本相互印证。2058个额外CR解释全部字节差异，移除后全文相同。",
+      "limitations": "第二阶段由人工指令触发，不代表自主恢复。文件文本完整可恢复，最后0分不是丢行；CR来源及Grep/Read拒绝原因未知。",
+      "attribution_scope": "可确认执行链路保存字节变化，未定位具体生成CR的组件；不能据Grep/Read拒绝而Bash成功认定权限绕过。",
+      "verification_group": "FB03:WorkBuddy",
+      "verification_command": "python3 checks/verify.py --item WB-FB03-02",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "WB-FB03-03",
+      "product": "WorkBuddy",
+      "case_id": "FB03",
+      "case_name": "完整结果获取",
+      "item": "通过入口取回缺少的内容",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "supported_positive",
+      "conclusion": "第二阶段Bash grep实际返回缺失标记及匹配RUN_ID，得2分。",
+      "observation_layer": "首次返回、第二阶段实际读取及原入口文件",
+      "source": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/完整核对与评分.json",
+      "source_pointer": "/score_items/2/points",
+      "evidence": [
+        {
+          "locator": "/score_items/2/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB03-完整结果获取/运行记录/WorkBuddy-a01/完整核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/完整核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第7、8行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/第一阶段原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/第一阶段原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/回执/FB03-FULL-f4cfccd6511b9a44.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/回执/FB03-FULL-f4cfccd6511b9a44.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第15、17、19、21行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/第二阶段后完整会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/第二阶段后完整会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "首次提示按第8行核对；入口与读取按第17、21行及回执核对。保存准确性比较原文件与expected_stdout的字节数、指纹，并统计回车字节。",
+      "confidence_basis": "首次提示、后续调用、随机标记、回执和前后相同文件副本相互印证。2058个额外CR解释全部字节差异，移除后全文相同。",
+      "limitations": "第二阶段由人工指令触发，不代表自主恢复。文件文本完整可恢复，最后0分不是丢行；CR来源及Grep/Read拒绝原因未知。",
+      "attribution_scope": "可确认执行链路保存字节变化，未定位具体生成CR的组件；不能据Grep/Read拒绝而Bash成功认定权限绕过。",
+      "verification_group": "FB03:WorkBuddy",
+      "verification_command": "python3 checks/verify.py --item WB-FB03-03",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "WB-FB03-04",
+      "product": "WorkBuddy",
+      "case_id": "FB03",
+      "case_name": "完整结果获取",
+      "item": "完整结果保存准确",
+      "maximum": 2,
+      "historical_points": 0,
+      "review_state": "supported_negative",
+      "conclusion": "原文件264202字节，预期262144，指纹不一致；按严格原样保存规则得0分。",
+      "observation_layer": "首次返回、第二阶段实际读取及原入口文件",
+      "source": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/完整核对与评分.json",
+      "source_pointer": "/score_items/3/points",
+      "evidence": [
+        {
+          "locator": "/score_items/3/points",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB03-完整结果获取/运行记录/WorkBuddy-a01/完整核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/完整核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第7、8行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/第一阶段原生会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/第一阶段原生会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/回执/FB03-FULL-f4cfccd6511b9a44.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/回执/FB03-FULL-f4cfccd6511b9a44.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第15、17、19、21行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/第二阶段后完整会话.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/第二阶段后完整会话.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "整个文件的原始字节、CR/LF计数与SHA256",
+          "role": "产品保存文件的取证副本",
+          "original_source": "FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/完整入口文件-第二阶段取证.txt",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/完整入口文件-第二阶段取证.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "首次提示按第8行核对；入口与读取按第17、21行及回执核对。保存准确性比较原文件与expected_stdout的字节数、指纹，并统计回车字节。",
+      "confidence_basis": "首次提示、后续调用、随机标记、回执和前后相同文件副本相互印证。2058个额外CR解释全部字节差异，移除后全文相同。",
+      "limitations": "第二阶段由人工指令触发，不代表自主恢复。文件文本完整可恢复，最后0分不是丢行；CR来源及Grep/Read拒绝原因未知。",
+      "attribution_scope": "可确认执行链路保存字节变化，未定位具体生成CR的组件；不能据Grep/Read拒绝而Bash成功认定权限绕过。",
+      "verification_group": "FB03:WorkBuddy",
+      "verification_command": "python3 checks/verify.py --item WB-FB03-04",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DSH-FB01-01",
+      "product": "DSH",
+      "case_id": "FB01",
+      "case_name": "基础回传",
+      "item": "正常状态准确返回",
+      "maximum": 1,
+      "historical_points": null,
+      "review_state": "insufficient_evidence",
+      "conclusion": "正常结果未明确给出退出0，正常和错误结果均为isError=false；成功约定未核实，留空。",
+      "observation_layer": "DSH原生日志tool/result",
+      "source": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/核对与评分.json",
+      "source_pointer": "/items/0/score",
+      "evidence": [
+        {
+          "locator": "/items/0/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB01-基础回传/运行记录/DSH-a01/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第21、22、28行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB01-基础回传/运行记录/DSH-a01/原始材料/session.v4.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/session.v4.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB01-基础回传/运行记录/DSH-a01/原始材料/回执/FB01-NORMAL-7c969357f569f4bc.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/回执/FB01-NORMAL-7c969357f569f4bc.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "按callId配对原样命令和返回，字段与回执比较；正常状态同时对照第22、28行的isError，不能把回执预期退出0当作实际退出0。",
+      "confidence_basis": "正常与错误工具正文均可直接读取，错误正文显式包含7；正常正文缺明确状态且isError不能区分两次程序状态。",
+      "limitations": "正常成功状态可能存在隐式约定，但当前未验证；不把缺状态依据当作执行失败。",
+      "attribution_scope": "字段与失败状态可确认；正常状态项为证据不足，不定位成Harness故障。",
+      "verification_group": "FB01:DSH",
+      "verification_command": "python3 checks/verify.py --item DSH-FB01-01",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DSH-FB01-02",
+      "product": "DSH",
+      "case_id": "FB01",
+      "case_name": "基础回传",
+      "item": "正常关键内容完整",
+      "maximum": 1,
+      "historical_points": 1,
+      "review_state": "supported_positive",
+      "conclusion": "正常RUN_ID、37、12840.50与回执一致，得1分。",
+      "observation_layer": "DSH原生日志tool/result",
+      "source": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/核对与评分.json",
+      "source_pointer": "/items/1/score",
+      "evidence": [
+        {
+          "locator": "/items/1/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB01-基础回传/运行记录/DSH-a01/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第21、22行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB01-基础回传/运行记录/DSH-a01/原始材料/session.v4.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/session.v4.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB01-基础回传/运行记录/DSH-a01/原始材料/回执/FB01-NORMAL-7c969357f569f4bc.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/回执/FB01-NORMAL-7c969357f569f4bc.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "按callId配对原样命令和返回，字段与回执比较；正常状态同时对照第22、28行的isError，不能把回执预期退出0当作实际退出0。",
+      "confidence_basis": "正常与错误工具正文均可直接读取，错误正文显式包含7；正常正文缺明确状态且isError不能区分两次程序状态。",
+      "limitations": "正常成功状态可能存在隐式约定，但当前未验证；不把缺状态依据当作执行失败。",
+      "attribution_scope": "字段与失败状态可确认；正常状态项为证据不足，不定位成Harness故障。",
+      "verification_group": "FB01:DSH",
+      "verification_command": "python3 checks/verify.py --item DSH-FB01-02",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DSH-FB01-03",
+      "product": "DSH",
+      "case_id": "FB01",
+      "case_name": "基础回传",
+      "item": "错误状态准确返回",
+      "maximum": 1,
+      "historical_points": 1,
+      "review_state": "supported_positive",
+      "conclusion": "错误结果正文明确保留[exit code: 7]，得1分。",
+      "observation_layer": "DSH原生日志tool/result",
+      "source": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/核对与评分.json",
+      "source_pointer": "/items/2/score",
+      "evidence": [
+        {
+          "locator": "/items/2/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB01-基础回传/运行记录/DSH-a01/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第27、28行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB01-基础回传/运行记录/DSH-a01/原始材料/session.v4.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/session.v4.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB01-基础回传/运行记录/DSH-a01/原始材料/回执/FB01-ERROR-3bff009e276cf2e7.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/回执/FB01-ERROR-3bff009e276cf2e7.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "按callId配对原样命令和返回，字段与回执比较；正常状态同时对照第22、28行的isError，不能把回执预期退出0当作实际退出0。",
+      "confidence_basis": "正常与错误工具正文均可直接读取，错误正文显式包含7；正常正文缺明确状态且isError不能区分两次程序状态。",
+      "limitations": "正常成功状态可能存在隐式约定，但当前未验证；不把缺状态依据当作执行失败。",
+      "attribution_scope": "字段与失败状态可确认；正常状态项为证据不足，不定位成Harness故障。",
+      "verification_group": "FB01:DSH",
+      "verification_command": "python3 checks/verify.py --item DSH-FB01-03",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DSH-FB01-04",
+      "product": "DSH",
+      "case_id": "FB01",
+      "case_name": "基础回传",
+      "item": "错误关键内容完整",
+      "maximum": 1,
+      "historical_points": 1,
+      "review_state": "supported_positive",
+      "conclusion": "错误RUN_ID、E_INPUT_MISSING及路径与回执一致，得1分。",
+      "observation_layer": "DSH原生日志tool/result",
+      "source": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/核对与评分.json",
+      "source_pointer": "/items/3/score",
+      "evidence": [
+        {
+          "locator": "/items/3/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB01-基础回传/运行记录/DSH-a01/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第27、28行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB01-基础回传/运行记录/DSH-a01/原始材料/session.v4.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/session.v4.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB01-基础回传/运行记录/DSH-a01/原始材料/回执/FB01-ERROR-3bff009e276cf2e7.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/回执/FB01-ERROR-3bff009e276cf2e7.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "按callId配对原样命令和返回，字段与回执比较；正常状态同时对照第22、28行的isError，不能把回执预期退出0当作实际退出0。",
+      "confidence_basis": "正常与错误工具正文均可直接读取，错误正文显式包含7；正常正文缺明确状态且isError不能区分两次程序状态。",
+      "limitations": "正常成功状态可能存在隐式约定，但当前未验证；不把缺状态依据当作执行失败。",
+      "attribution_scope": "字段与失败状态可确认；正常状态项为证据不足，不定位成Harness故障。",
+      "verification_group": "FB01:DSH",
+      "verification_command": "python3 checks/verify.py --item DSH-FB01-04",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DSH-FB02-01",
+      "product": "DSH",
+      "case_id": "FB02",
+      "case_name": "较长结果回传",
+      "item": "本次运行编号",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "supported_positive",
+      "conclusion": "第1行的本次随机RUN_ID与本次回执一致，得2分。",
+      "observation_layer": "原生日志首次结果的完整正文",
+      "source": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/核对与评分.json",
+      "source_pointer": "/items/0/score",
+      "evidence": [
+        {
+          "locator": "/items/0/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB02-较长结果回传/运行记录/DSH-a01/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第21、22行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB02-较长结果回传/运行记录/DSH-a01/原始材料/session.v4.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/原始材料/session.v4.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB02-较长结果回传/运行记录/DSH-a01/原始材料/FB02-LONG-e75663bb56f2dceb.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/原始材料/FB02-LONG-e75663bb56f2dceb.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "读取首次结果正文的第1行，逐项与回执对应checkpoint比较；同时比对全文，防止混用别次运行。",
+      "confidence_basis": "本次随机编号、指定字段位置和200行全文均有原生返回及回执可对照；输入脚本指纹一致。",
+      "limitations": "日志正文不等于已核验的完整模型请求；只确认这一次200行样本。",
+      "attribution_scope": "未发现本项字段不符，不推断模型/Skill/Harness贡献比例。",
+      "verification_group": "FB02:DSH",
+      "verification_command": "python3 checks/verify.py --item DSH-FB02-01",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DSH-FB02-02",
+      "product": "DSH",
+      "case_id": "FB02",
+      "case_name": "较长结果回传",
+      "item": "错误数量",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "supported_positive",
+      "conclusion": "第60行的ERROR_COUNT=3与本次回执一致，得2分。",
+      "observation_layer": "原生日志首次结果的完整正文",
+      "source": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/核对与评分.json",
+      "source_pointer": "/items/1/score",
+      "evidence": [
+        {
+          "locator": "/items/1/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB02-较长结果回传/运行记录/DSH-a01/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第21、22行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB02-较长结果回传/运行记录/DSH-a01/原始材料/session.v4.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/原始材料/session.v4.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB02-较长结果回传/运行记录/DSH-a01/原始材料/FB02-LONG-e75663bb56f2dceb.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/原始材料/FB02-LONG-e75663bb56f2dceb.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "读取首次结果正文的第60行，逐项与回执对应checkpoint比较；同时比对全文，防止混用别次运行。",
+      "confidence_basis": "本次随机编号、指定字段位置和200行全文均有原生返回及回执可对照；输入脚本指纹一致。",
+      "limitations": "日志正文不等于已核验的完整模型请求；只确认这一次200行样本。",
+      "attribution_scope": "未发现本项字段不符，不推断模型/Skill/Harness贡献比例。",
+      "verification_group": "FB02:DSH",
+      "verification_command": "python3 checks/verify.py --item DSH-FB02-02",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DSH-FB02-03",
+      "product": "DSH",
+      "case_id": "FB02",
+      "case_name": "较长结果回传",
+      "item": "错误文件路径",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "supported_positive",
+      "conclusion": "第120行的ERROR_PATH=inputs/sales_2026.csv与本次回执一致，得2分。",
+      "observation_layer": "原生日志首次结果的完整正文",
+      "source": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/核对与评分.json",
+      "source_pointer": "/items/2/score",
+      "evidence": [
+        {
+          "locator": "/items/2/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB02-较长结果回传/运行记录/DSH-a01/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第21、22行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB02-较长结果回传/运行记录/DSH-a01/原始材料/session.v4.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/原始材料/session.v4.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB02-较长结果回传/运行记录/DSH-a01/原始材料/FB02-LONG-e75663bb56f2dceb.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/原始材料/FB02-LONG-e75663bb56f2dceb.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "读取首次结果正文的第120行，逐项与回执对应checkpoint比较；同时比对全文，防止混用别次运行。",
+      "confidence_basis": "本次随机编号、指定字段位置和200行全文均有原生返回及回执可对照；输入脚本指纹一致。",
+      "limitations": "日志正文不等于已核验的完整模型请求；只确认这一次200行样本。",
+      "attribution_scope": "未发现本项字段不符，不推断模型/Skill/Harness贡献比例。",
+      "verification_group": "FB02:DSH",
+      "verification_command": "python3 checks/verify.py --item DSH-FB02-03",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DSH-FB02-04",
+      "product": "DSH",
+      "case_id": "FB02",
+      "case_name": "较长结果回传",
+      "item": "完整生成标记",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "supported_positive",
+      "conclusion": "第200行的REPORT_COMPLETE=YES与本次回执一致，得2分。",
+      "observation_layer": "原生日志首次结果的完整正文",
+      "source": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/核对与评分.json",
+      "source_pointer": "/items/3/score",
+      "evidence": [
+        {
+          "locator": "/items/3/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB02-较长结果回传/运行记录/DSH-a01/核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第21、22行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB02-较长结果回传/运行记录/DSH-a01/原始材料/session.v4.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/原始材料/session.v4.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB02-较长结果回传/运行记录/DSH-a01/原始材料/FB02-LONG-e75663bb56f2dceb.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/原始材料/FB02-LONG-e75663bb56f2dceb.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "读取首次结果正文的第200行，逐项与回执对应checkpoint比较；同时比对全文，防止混用别次运行。",
+      "confidence_basis": "本次随机编号、指定字段位置和200行全文均有原生返回及回执可对照；输入脚本指纹一致。",
+      "limitations": "日志正文不等于已核验的完整模型请求；只确认这一次200行样本。",
+      "attribution_scope": "未发现本项字段不符，不推断模型/Skill/Harness贡献比例。",
+      "verification_group": "FB02:DSH",
+      "verification_command": "python3 checks/verify.py --item DSH-FB02-04",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DSH-FB03-01",
+      "product": "DSH",
+      "case_id": "FB03",
+      "case_name": "完整结果获取",
+      "item": "说明当前结果不完整",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "supported_positive",
+      "conclusion": "首次结果明确说明截断，得2分。",
+      "observation_layer": "原生日志首次/后续工具结果与产品完整文件",
+      "source": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/完整核对与评分.json",
+      "source_pointer": "/scores/0/score",
+      "evidence": [
+        {
+          "locator": "/scores/0/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB03-完整结果获取/运行记录/DSH-a01/完整核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/完整核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第21、22行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB03-完整结果获取/运行记录/DSH-a01/原始材料/session-两阶段.v4.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/原始材料/session-两阶段.v4.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB03-完整结果获取/运行记录/DSH-a01/原始材料/FB03-FULL-3653133d715e89a0.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/原始材料/FB03-FULL-3653133d715e89a0.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "从首次结果提取入口A，将其与后续grep路径配对；标记对照回执；完整副本按字节和SHA256比较，保留行末空格。",
+      "confidence_basis": "原生导出、调用配对、同一运行编号、原文件与产品副本、回执能相互核对；不是仅有最终回复或三个标记。",
+      "limitations": "入口B只保存末尾500行及指向A的提示，完整保存判断仅针对A；人工第二阶段不评价自主性，单次通过不证明稳定性。",
+      "attribution_scope": "本次四项符合要求，不据此分离模型/Skill贡献或推断其他场景。",
+      "verification_group": "FB03:DSH",
+      "verification_command": "python3 checks/verify.py --item DSH-FB03-01",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DSH-FB03-02",
+      "product": "DSH",
+      "case_id": "FB03",
+      "case_name": "完整结果获取",
+      "item": "提供有效的完整结果入口",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "supported_positive",
+      "conclusion": "首次提供的入口A真实有效，能定位本次完整报告，得2分。",
+      "observation_layer": "原生日志首次/后续工具结果与产品完整文件",
+      "source": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/完整核对与评分.json",
+      "source_pointer": "/scores/1/score",
+      "evidence": [
+        {
+          "locator": "/scores/1/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB03-完整结果获取/运行记录/DSH-a01/完整核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/完整核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第22、37、38、39行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB03-完整结果获取/运行记录/DSH-a01/原始材料/session-两阶段.v4.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/原始材料/session-两阶段.v4.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB03-完整结果获取/运行记录/DSH-a01/原始材料/FB03-FULL-3653133d715e89a0.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/原始材料/FB03-FULL-3653133d715e89a0.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "从首次结果提取入口A，将其与后续grep路径配对；标记对照回执；完整副本按字节和SHA256比较，保留行末空格。",
+      "confidence_basis": "原生导出、调用配对、同一运行编号、原文件与产品副本、回执能相互核对；不是仅有最终回复或三个标记。",
+      "limitations": "入口B只保存末尾500行及指向A的提示，完整保存判断仅针对A；人工第二阶段不评价自主性，单次通过不证明稳定性。",
+      "attribution_scope": "本次四项符合要求，不据此分离模型/Skill贡献或推断其他场景。",
+      "verification_group": "FB03:DSH",
+      "verification_command": "python3 checks/verify.py --item DSH-FB03-02",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DSH-FB03-03",
+      "product": "DSH",
+      "case_id": "FB03",
+      "case_name": "完整结果获取",
+      "item": "通过入口取回缺少的内容",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "supported_positive",
+      "conclusion": "后续原生grep实际返回全部指定标记，与回执一致，得2分。",
+      "observation_layer": "原生日志首次/后续工具结果与产品完整文件",
+      "source": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/完整核对与评分.json",
+      "source_pointer": "/scores/2/score",
+      "evidence": [
+        {
+          "locator": "/scores/2/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB03-完整结果获取/运行记录/DSH-a01/完整核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/完整核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第38、39行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB03-完整结果获取/运行记录/DSH-a01/原始材料/session-两阶段.v4.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/原始材料/session-两阶段.v4.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB03-完整结果获取/运行记录/DSH-a01/原始材料/FB03-FULL-3653133d715e89a0.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/原始材料/FB03-FULL-3653133d715e89a0.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "从首次结果提取入口A，将其与后续grep路径配对；标记对照回执；完整副本按字节和SHA256比较，保留行末空格。",
+      "confidence_basis": "原生导出、调用配对、同一运行编号、原文件与产品副本、回执能相互核对；不是仅有最终回复或三个标记。",
+      "limitations": "入口B只保存末尾500行及指向A的提示，完整保存判断仅针对A；人工第二阶段不评价自主性，单次通过不证明稳定性。",
+      "attribution_scope": "本次四项符合要求，不据此分离模型/Skill贡献或推断其他场景。",
+      "verification_group": "FB03:DSH",
+      "verification_command": "python3 checks/verify.py --item DSH-FB03-03",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DSH-FB03-04",
+      "product": "DSH",
+      "case_id": "FB03",
+      "case_name": "完整结果获取",
+      "item": "完整结果保存准确",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "supported_positive",
+      "conclusion": "入口A的完整文件262144字节，全文和SHA256与预期一致，得2分。",
+      "observation_layer": "原生日志首次/后续工具结果与产品完整文件",
+      "source": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/完整核对与评分.json",
+      "source_pointer": "/scores/3/score",
+      "evidence": [
+        {
+          "locator": "/scores/3/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB03-完整结果获取/运行记录/DSH-a01/完整核对与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/完整核对与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第72、73行；按调用编号配对",
+          "role": "直接证据",
+          "original_source": "FB03-完整结果获取/运行记录/DSH-a01/原始材料/session-两阶段.v4.jsonl",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/原始材料/session-两阶段.v4.excerpt.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB03-完整结果获取/运行记录/DSH-a01/原始材料/FB03-FULL-3653133d715e89a0.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/原始材料/FB03-FULL-3653133d715e89a0.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "262144字节全文与回执逐字节比较",
+          "role": "原生入口A的取证副本",
+          "original_source": "FB03-完整结果获取/运行记录/DSH-a01/产品完整输出/FB03-原始stdout.log",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/产品完整输出/FB03-原始stdout.log",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "从首次结果提取入口A，将其与后续grep路径配对；标记对照回执；完整副本按字节和SHA256比较，保留行末空格。",
+      "confidence_basis": "原生导出、调用配对、同一运行编号、原文件与产品副本、回执能相互核对；不是仅有最终回复或三个标记。",
+      "limitations": "入口B只保存末尾500行及指向A的提示，完整保存判断仅针对A；人工第二阶段不评价自主性，单次通过不证明稳定性。",
+      "attribution_scope": "本次四项符合要求，不据此分离模型/Skill贡献或推断其他场景。",
+      "verification_group": "FB03:DSH",
+      "verification_command": "python3 checks/verify.py --item DSH-FB03-04",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "YB-FB01-01",
+      "product": "元宝专家模式",
+      "case_id": "FB01",
+      "case_name": "基础回传",
+      "item": "正常状态准确返回",
+      "maximum": 1,
+      "historical_points": null,
+      "review_state": "insufficient_evidence",
+      "conclusion": "本项1分无法判断，保持留空；不是0分或满分。",
+      "observation_layer": "已保存截图/分享页观察及模型最终回复，缺少独立工具结果正文",
+      "source": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json",
+      "source_pointer": "/scores/0/score",
+      "evidence": [
+        {
+          "locator": "/scores/0/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "三条bash卡片：一条准备、两条执行；没有独立返回正文",
+          "role": "仅证明部分执行过程",
+          "original_source": "FB01-基础回传/运行记录/元宝-a02/evidence/用户提供-网页展开截图.png",
+          "public_path": null,
+          "public_available": false,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。",
+          "publication_note": "本版不收入原始截图；该项原本已因证据不足留空，不能据缺图判断通过或失败。"
+        }
+      ],
+      "comparison_method": "查看已归档现场能否给出本项所需的原生返回、字段或完整文件；现有材料不满足时，只复核“证据不足”的状态，不用最终回复补齐。",
+      "confidence_basis": "当前归档能支持命令或回复声明，但不能对实际状态、关键字段、首次入口或全文作独立核对。",
+      "limitations": "无法判断针对当前证据范围，不证明产品不具备相应能力，也不证明所有位置都没有日志。",
+      "attribution_scope": "没有充分证据给模型、原生Skill或Harness定责。",
+      "verification_group": "FB01:元宝专家模式",
+      "verification_command": "python3 checks/verify.py --item YB-FB01-01",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "YB-FB01-02",
+      "product": "元宝专家模式",
+      "case_id": "FB01",
+      "case_name": "基础回传",
+      "item": "正常关键内容完整",
+      "maximum": 1,
+      "historical_points": null,
+      "review_state": "insufficient_evidence",
+      "conclusion": "本项1分无法判断，保持留空；不是0分或满分。",
+      "observation_layer": "已保存截图/分享页观察及模型最终回复，缺少独立工具结果正文",
+      "source": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json",
+      "source_pointer": "/scores/1/score",
+      "evidence": [
+        {
+          "locator": "/scores/1/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "三条bash卡片：一条准备、两条执行；没有独立返回正文",
+          "role": "仅证明部分执行过程",
+          "original_source": "FB01-基础回传/运行记录/元宝-a02/evidence/用户提供-网页展开截图.png",
+          "public_path": null,
+          "public_available": false,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。",
+          "publication_note": "本版不收入原始截图；该项原本已因证据不足留空，不能据缺图判断通过或失败。"
+        }
+      ],
+      "comparison_method": "查看已归档现场能否给出本项所需的原生返回、字段或完整文件；现有材料不满足时，只复核“证据不足”的状态，不用最终回复补齐。",
+      "confidence_basis": "当前归档能支持命令或回复声明，但不能对实际状态、关键字段、首次入口或全文作独立核对。",
+      "limitations": "无法判断针对当前证据范围，不证明产品不具备相应能力，也不证明所有位置都没有日志。",
+      "attribution_scope": "没有充分证据给模型、原生Skill或Harness定责。",
+      "verification_group": "FB01:元宝专家模式",
+      "verification_command": "python3 checks/verify.py --item YB-FB01-02",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "YB-FB01-03",
+      "product": "元宝专家模式",
+      "case_id": "FB01",
+      "case_name": "基础回传",
+      "item": "错误状态准确返回",
+      "maximum": 1,
+      "historical_points": null,
+      "review_state": "insufficient_evidence",
+      "conclusion": "本项1分无法判断，保持留空；不是0分或满分。",
+      "observation_layer": "已保存截图/分享页观察及模型最终回复，缺少独立工具结果正文",
+      "source": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json",
+      "source_pointer": "/scores/2/score",
+      "evidence": [
+        {
+          "locator": "/scores/2/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "三条bash卡片：一条准备、两条执行；没有独立返回正文",
+          "role": "仅证明部分执行过程",
+          "original_source": "FB01-基础回传/运行记录/元宝-a02/evidence/用户提供-网页展开截图.png",
+          "public_path": null,
+          "public_available": false,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。",
+          "publication_note": "本版不收入原始截图；该项原本已因证据不足留空，不能据缺图判断通过或失败。"
+        }
+      ],
+      "comparison_method": "查看已归档现场能否给出本项所需的原生返回、字段或完整文件；现有材料不满足时，只复核“证据不足”的状态，不用最终回复补齐。",
+      "confidence_basis": "当前归档能支持命令或回复声明，但不能对实际状态、关键字段、首次入口或全文作独立核对。",
+      "limitations": "无法判断针对当前证据范围，不证明产品不具备相应能力，也不证明所有位置都没有日志。",
+      "attribution_scope": "没有充分证据给模型、原生Skill或Harness定责。",
+      "verification_group": "FB01:元宝专家模式",
+      "verification_command": "python3 checks/verify.py --item YB-FB01-03",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "YB-FB01-04",
+      "product": "元宝专家模式",
+      "case_id": "FB01",
+      "case_name": "基础回传",
+      "item": "错误关键内容完整",
+      "maximum": 1,
+      "historical_points": null,
+      "review_state": "insufficient_evidence",
+      "conclusion": "本项1分无法判断，保持留空；不是0分或满分。",
+      "observation_layer": "已保存截图/分享页观察及模型最终回复，缺少独立工具结果正文",
+      "source": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json",
+      "source_pointer": "/scores/3/score",
+      "evidence": [
+        {
+          "locator": "/scores/3/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "三条bash卡片：一条准备、两条执行；没有独立返回正文",
+          "role": "仅证明部分执行过程",
+          "original_source": "FB01-基础回传/运行记录/元宝-a02/evidence/用户提供-网页展开截图.png",
+          "public_path": null,
+          "public_available": false,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。",
+          "publication_note": "本版不收入原始截图；该项原本已因证据不足留空，不能据缺图判断通过或失败。"
+        }
+      ],
+      "comparison_method": "查看已归档现场能否给出本项所需的原生返回、字段或完整文件；现有材料不满足时，只复核“证据不足”的状态，不用最终回复补齐。",
+      "confidence_basis": "当前归档能支持命令或回复声明，但不能对实际状态、关键字段、首次入口或全文作独立核对。",
+      "limitations": "无法判断针对当前证据范围，不证明产品不具备相应能力，也不证明所有位置都没有日志。",
+      "attribution_scope": "没有充分证据给模型、原生Skill或Harness定责。",
+      "verification_group": "FB01:元宝专家模式",
+      "verification_command": "python3 checks/verify.py --item YB-FB01-04",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "YB-FB02-01",
+      "product": "元宝专家模式",
+      "case_id": "FB02",
+      "case_name": "较长结果回传",
+      "item": "本次运行编号",
+      "maximum": 2,
+      "historical_points": null,
+      "review_state": "insufficient_evidence",
+      "conclusion": "本项2分无法判断，保持留空；不是0分或满分。",
+      "observation_layer": "已保存截图/分享页观察及模型最终回复，缺少独立工具结果正文",
+      "source": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/元宝-a01/核对与评分状态.json",
+      "source_pointer": "/scores/0/score",
+      "evidence": [
+        {
+          "locator": "/scores/0/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB02-较长结果回传/运行记录/元宝-a01/核对与评分状态.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/元宝-a01/核对与评分状态.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "过程区命令卡片；不把最终回答字段当工具结果",
+          "role": "网页现场",
+          "original_source": "FB02-较长结果回传/运行记录/元宝-a01/evidence/过程展开-DOM.txt",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/元宝-a01/evidence/过程展开-DOM.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "执行过程截图，未独立取得完整工具结果正文",
+          "role": "网页现场",
+          "original_source": "FB02-较长结果回传/运行记录/元宝-a01/evidence/分享页展开.jpg",
+          "public_path": null,
+          "public_available": false,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。",
+          "publication_note": "本版不收入原始截图；该项原本已因证据不足留空，不能据缺图判断通过或失败。"
+        }
+      ],
+      "comparison_method": "查看已归档现场能否给出本项所需的原生返回、字段或完整文件；现有材料不满足时，只复核“证据不足”的状态，不用最终回复补齐。",
+      "confidence_basis": "当前归档能支持命令或回复声明，但不能对实际状态、关键字段、首次入口或全文作独立核对。",
+      "limitations": "无法判断针对当前证据范围，不证明产品不具备相应能力，也不证明所有位置都没有日志。",
+      "attribution_scope": "没有充分证据给模型、原生Skill或Harness定责。",
+      "verification_group": "FB02:元宝专家模式",
+      "verification_command": "python3 checks/verify.py --item YB-FB02-01",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "YB-FB02-02",
+      "product": "元宝专家模式",
+      "case_id": "FB02",
+      "case_name": "较长结果回传",
+      "item": "错误数量",
+      "maximum": 2,
+      "historical_points": null,
+      "review_state": "insufficient_evidence",
+      "conclusion": "本项2分无法判断，保持留空；不是0分或满分。",
+      "observation_layer": "已保存截图/分享页观察及模型最终回复，缺少独立工具结果正文",
+      "source": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/元宝-a01/核对与评分状态.json",
+      "source_pointer": "/scores/1/score",
+      "evidence": [
+        {
+          "locator": "/scores/1/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB02-较长结果回传/运行记录/元宝-a01/核对与评分状态.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/元宝-a01/核对与评分状态.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "过程区命令卡片；不把最终回答字段当工具结果",
+          "role": "网页现场",
+          "original_source": "FB02-较长结果回传/运行记录/元宝-a01/evidence/过程展开-DOM.txt",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/元宝-a01/evidence/过程展开-DOM.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "执行过程截图，未独立取得完整工具结果正文",
+          "role": "网页现场",
+          "original_source": "FB02-较长结果回传/运行记录/元宝-a01/evidence/分享页展开.jpg",
+          "public_path": null,
+          "public_available": false,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。",
+          "publication_note": "本版不收入原始截图；该项原本已因证据不足留空，不能据缺图判断通过或失败。"
+        }
+      ],
+      "comparison_method": "查看已归档现场能否给出本项所需的原生返回、字段或完整文件；现有材料不满足时，只复核“证据不足”的状态，不用最终回复补齐。",
+      "confidence_basis": "当前归档能支持命令或回复声明，但不能对实际状态、关键字段、首次入口或全文作独立核对。",
+      "limitations": "无法判断针对当前证据范围，不证明产品不具备相应能力，也不证明所有位置都没有日志。",
+      "attribution_scope": "没有充分证据给模型、原生Skill或Harness定责。",
+      "verification_group": "FB02:元宝专家模式",
+      "verification_command": "python3 checks/verify.py --item YB-FB02-02",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "YB-FB02-03",
+      "product": "元宝专家模式",
+      "case_id": "FB02",
+      "case_name": "较长结果回传",
+      "item": "错误文件路径",
+      "maximum": 2,
+      "historical_points": null,
+      "review_state": "insufficient_evidence",
+      "conclusion": "本项2分无法判断，保持留空；不是0分或满分。",
+      "observation_layer": "已保存截图/分享页观察及模型最终回复，缺少独立工具结果正文",
+      "source": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/元宝-a01/核对与评分状态.json",
+      "source_pointer": "/scores/2/score",
+      "evidence": [
+        {
+          "locator": "/scores/2/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB02-较长结果回传/运行记录/元宝-a01/核对与评分状态.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/元宝-a01/核对与评分状态.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "过程区命令卡片；不把最终回答字段当工具结果",
+          "role": "网页现场",
+          "original_source": "FB02-较长结果回传/运行记录/元宝-a01/evidence/过程展开-DOM.txt",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/元宝-a01/evidence/过程展开-DOM.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "执行过程截图，未独立取得完整工具结果正文",
+          "role": "网页现场",
+          "original_source": "FB02-较长结果回传/运行记录/元宝-a01/evidence/分享页展开.jpg",
+          "public_path": null,
+          "public_available": false,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。",
+          "publication_note": "本版不收入原始截图；该项原本已因证据不足留空，不能据缺图判断通过或失败。"
+        }
+      ],
+      "comparison_method": "查看已归档现场能否给出本项所需的原生返回、字段或完整文件；现有材料不满足时，只复核“证据不足”的状态，不用最终回复补齐。",
+      "confidence_basis": "当前归档能支持命令或回复声明，但不能对实际状态、关键字段、首次入口或全文作独立核对。",
+      "limitations": "无法判断针对当前证据范围，不证明产品不具备相应能力，也不证明所有位置都没有日志。",
+      "attribution_scope": "没有充分证据给模型、原生Skill或Harness定责。",
+      "verification_group": "FB02:元宝专家模式",
+      "verification_command": "python3 checks/verify.py --item YB-FB02-03",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "YB-FB02-04",
+      "product": "元宝专家模式",
+      "case_id": "FB02",
+      "case_name": "较长结果回传",
+      "item": "完整生成标记",
+      "maximum": 2,
+      "historical_points": null,
+      "review_state": "insufficient_evidence",
+      "conclusion": "本项2分无法判断，保持留空；不是0分或满分。",
+      "observation_layer": "已保存截图/分享页观察及模型最终回复，缺少独立工具结果正文",
+      "source": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/元宝-a01/核对与评分状态.json",
+      "source_pointer": "/scores/3/score",
+      "evidence": [
+        {
+          "locator": "/scores/3/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB02-较长结果回传/运行记录/元宝-a01/核对与评分状态.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/元宝-a01/核对与评分状态.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "过程区命令卡片；不把最终回答字段当工具结果",
+          "role": "网页现场",
+          "original_source": "FB02-较长结果回传/运行记录/元宝-a01/evidence/过程展开-DOM.txt",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/元宝-a01/evidence/过程展开-DOM.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "执行过程截图，未独立取得完整工具结果正文",
+          "role": "网页现场",
+          "original_source": "FB02-较长结果回传/运行记录/元宝-a01/evidence/分享页展开.jpg",
+          "public_path": null,
+          "public_available": false,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。",
+          "publication_note": "本版不收入原始截图；该项原本已因证据不足留空，不能据缺图判断通过或失败。"
+        }
+      ],
+      "comparison_method": "查看已归档现场能否给出本项所需的原生返回、字段或完整文件；现有材料不满足时，只复核“证据不足”的状态，不用最终回复补齐。",
+      "confidence_basis": "当前归档能支持命令或回复声明，但不能对实际状态、关键字段、首次入口或全文作独立核对。",
+      "limitations": "无法判断针对当前证据范围，不证明产品不具备相应能力，也不证明所有位置都没有日志。",
+      "attribution_scope": "没有充分证据给模型、原生Skill或Harness定责。",
+      "verification_group": "FB02:元宝专家模式",
+      "verification_command": "python3 checks/verify.py --item YB-FB02-04",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "YB-FB03-01",
+      "product": "元宝专家模式",
+      "case_id": "FB03",
+      "case_name": "完整结果获取",
+      "item": "说明当前结果不完整",
+      "maximum": 2,
+      "historical_points": null,
+      "review_state": "insufficient_evidence",
+      "conclusion": "本项2分无法判断，保持留空；不是0分或满分。",
+      "observation_layer": "已保存截图/分享页观察及模型最终回复，缺少独立工具结果正文",
+      "source": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/元宝-a01/第一阶段核对与评分状态.json",
+      "source_pointer": "/scores/0/score",
+      "evidence": [
+        {
+          "locator": "/scores/0/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB03-完整结果获取/运行记录/元宝-a01/第一阶段核对与评分状态.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/元宝-a01/第一阶段核对与评分状态.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "首次回复的观察摘录；原生工具返回仍未取得",
+          "role": "辅助记录，非原生日志",
+          "original_source": "FB03-完整结果获取/运行记录/元宝-a01/evidence/首次回复观察摘录.md",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/元宝-a01/evidence/首次回复观察摘录.snapshot.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "查看已归档现场能否给出本项所需的原生返回、字段或完整文件；现有材料不满足时，只复核“证据不足”的状态，不用最终回复补齐。",
+      "confidence_basis": "当前归档能支持命令或回复声明，但不能对实际状态、关键字段、首次入口或全文作独立核对。",
+      "limitations": "无法判断针对当前证据范围，不证明产品不具备相应能力，也不证明所有位置都没有日志。",
+      "attribution_scope": "没有充分证据给模型、原生Skill或Harness定责。",
+      "verification_group": "FB03:元宝专家模式",
+      "verification_command": "python3 checks/verify.py --item YB-FB03-01",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "YB-FB03-02",
+      "product": "元宝专家模式",
+      "case_id": "FB03",
+      "case_name": "完整结果获取",
+      "item": "提供有效的完整结果入口",
+      "maximum": 2,
+      "historical_points": null,
+      "review_state": "insufficient_evidence",
+      "conclusion": "本项2分无法判断，保持留空；不是0分或满分。",
+      "observation_layer": "已保存截图/分享页观察及模型最终回复，缺少独立工具结果正文",
+      "source": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/元宝-a01/第一阶段核对与评分状态.json",
+      "source_pointer": "/scores/1/score",
+      "evidence": [
+        {
+          "locator": "/scores/1/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB03-完整结果获取/运行记录/元宝-a01/第一阶段核对与评分状态.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/元宝-a01/第一阶段核对与评分状态.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "首次回复的观察摘录；原生工具返回仍未取得",
+          "role": "辅助记录，非原生日志",
+          "original_source": "FB03-完整结果获取/运行记录/元宝-a01/evidence/首次回复观察摘录.md",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/元宝-a01/evidence/首次回复观察摘录.snapshot.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "查看已归档现场能否给出本项所需的原生返回、字段或完整文件；现有材料不满足时，只复核“证据不足”的状态，不用最终回复补齐。",
+      "confidence_basis": "当前归档能支持命令或回复声明，但不能对实际状态、关键字段、首次入口或全文作独立核对。",
+      "limitations": "无法判断针对当前证据范围，不证明产品不具备相应能力，也不证明所有位置都没有日志。",
+      "attribution_scope": "没有充分证据给模型、原生Skill或Harness定责。",
+      "verification_group": "FB03:元宝专家模式",
+      "verification_command": "python3 checks/verify.py --item YB-FB03-02",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "YB-FB03-03",
+      "product": "元宝专家模式",
+      "case_id": "FB03",
+      "case_name": "完整结果获取",
+      "item": "通过入口取回缺少的内容",
+      "maximum": 2,
+      "historical_points": null,
+      "review_state": "insufficient_evidence",
+      "conclusion": "本项2分无法判断，保持留空；不是0分或满分。",
+      "observation_layer": "已保存截图/分享页观察及模型最终回复，缺少独立工具结果正文",
+      "source": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/元宝-a01/第一阶段核对与评分状态.json",
+      "source_pointer": "/scores/2/score",
+      "evidence": [
+        {
+          "locator": "/scores/2/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB03-完整结果获取/运行记录/元宝-a01/第一阶段核对与评分状态.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/元宝-a01/第一阶段核对与评分状态.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "首次回复的观察摘录；原生工具返回仍未取得",
+          "role": "辅助记录，非原生日志",
+          "original_source": "FB03-完整结果获取/运行记录/元宝-a01/evidence/首次回复观察摘录.md",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/元宝-a01/evidence/首次回复观察摘录.snapshot.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "查看已归档现场能否给出本项所需的原生返回、字段或完整文件；现有材料不满足时，只复核“证据不足”的状态，不用最终回复补齐。",
+      "confidence_basis": "当前归档能支持命令或回复声明，但不能对实际状态、关键字段、首次入口或全文作独立核对。",
+      "limitations": "无法判断针对当前证据范围，不证明产品不具备相应能力，也不证明所有位置都没有日志。",
+      "attribution_scope": "没有充分证据给模型、原生Skill或Harness定责。",
+      "verification_group": "FB03:元宝专家模式",
+      "verification_command": "python3 checks/verify.py --item YB-FB03-03",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "YB-FB03-04",
+      "product": "元宝专家模式",
+      "case_id": "FB03",
+      "case_name": "完整结果获取",
+      "item": "完整结果保存准确",
+      "maximum": 2,
+      "historical_points": null,
+      "review_state": "insufficient_evidence",
+      "conclusion": "本项2分无法判断，保持留空；不是0分或满分。",
+      "observation_layer": "已保存截图/分享页观察及模型最终回复，缺少独立工具结果正文",
+      "source": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/元宝-a01/第一阶段核对与评分状态.json",
+      "source_pointer": "/scores/3/score",
+      "evidence": [
+        {
+          "locator": "/scores/3/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB03-完整结果获取/运行记录/元宝-a01/第一阶段核对与评分状态.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/元宝-a01/第一阶段核对与评分状态.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "首次回复的观察摘录；原生工具返回仍未取得",
+          "role": "辅助记录，非原生日志",
+          "original_source": "FB03-完整结果获取/运行记录/元宝-a01/evidence/首次回复观察摘录.md",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/元宝-a01/evidence/首次回复观察摘录.snapshot.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "查看已归档现场能否给出本项所需的原生返回、字段或完整文件；现有材料不满足时，只复核“证据不足”的状态，不用最终回复补齐。",
+      "confidence_basis": "当前归档能支持命令或回复声明，但不能对实际状态、关键字段、首次入口或全文作独立核对。",
+      "limitations": "无法判断针对当前证据范围，不证明产品不具备相应能力，也不证明所有位置都没有日志。",
+      "attribution_scope": "没有充分证据给模型、原生Skill或Harness定责。",
+      "verification_group": "FB03:元宝专家模式",
+      "verification_command": "python3 checks/verify.py --item YB-FB03-04",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DB-FB01-01",
+      "product": "豆包办公",
+      "case_id": "FB01",
+      "case_name": "基础回传",
+      "item": "正常状态准确返回",
+      "maximum": 1,
+      "historical_points": null,
+      "review_state": "insufficient_evidence",
+      "conclusion": "正常状态1分原先留空，继续无法判断。",
+      "observation_layer": "早先界面现场的阶段说明；本轮无完整归档现场",
+      "source": "evidence/维度评测/01-信息回传/FB01-基础回传/README.snapshot.txt",
+      "source_pointer": null,
+      "evidence": [
+        {
+          "locator": "段落“豆包目前确认3分、正常状态1分待核实”",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB01-基础回传/README.md",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/README.snapshot.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "目前只能核对既有阶段说明中的3分与正常状态1分缺口；要复核通过判断，还需对应工具正文及本轮回执，不能只读回执。",
+      "confidence_basis": "保留的是早先现场观察的汇总说明，没有本轮可独立检查的原始工具返回；所以不能给这三条正向判断写“证据充分”。",
+      "limitations": "不新开浏览器、不重跑来补齐数字；历史3分保留，但正向结论的证据归档未完成。",
+      "attribution_scope": "不能据现有汇总定位模型、Skill或Harness责任。",
+      "verification_group": "FB01:豆包办公",
+      "verification_command": "python3 checks/verify.py --item DB-FB01-01",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DB-FB01-02",
+      "product": "豆包办公",
+      "case_id": "FB01",
+      "case_name": "基础回传",
+      "item": "正常关键内容完整",
+      "maximum": 1,
+      "historical_points": 1,
+      "review_state": "positive_evidence_pending",
+      "conclusion": "历史阶段记录将正常字段项记为1分，原始工具正文待补，暂不能独立复核这项正向结论。",
+      "observation_layer": "早先界面现场的阶段说明；本轮无完整归档现场",
+      "source": "evidence/维度评测/01-信息回传/FB01-基础回传/README.snapshot.txt",
+      "source_pointer": null,
+      "evidence": [
+        {
+          "locator": "段落“豆包目前确认3分、正常状态1分待核实”",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB01-基础回传/README.md",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/README.snapshot.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "目前只能核对既有阶段说明中的3分与正常状态1分缺口；要复核通过判断，还需对应工具正文及本轮回执，不能只读回执。",
+      "confidence_basis": "保留的是早先现场观察的汇总说明，没有本轮可独立检查的原始工具返回；所以不能给这三条正向判断写“证据充分”。",
+      "limitations": "不新开浏览器、不重跑来补齐数字；历史3分保留，但正向结论的证据归档未完成。",
+      "attribution_scope": "不能据现有汇总定位模型、Skill或Harness责任。",
+      "verification_group": "FB01:豆包办公",
+      "verification_command": "python3 checks/verify.py --item DB-FB01-02",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DB-FB01-03",
+      "product": "豆包办公",
+      "case_id": "FB01",
+      "case_name": "基础回传",
+      "item": "错误状态准确返回",
+      "maximum": 1,
+      "historical_points": 1,
+      "review_state": "positive_evidence_pending",
+      "conclusion": "历史阶段记录将错误状态项记为1分，原始工具正文待补，暂不能独立复核这项正向结论。",
+      "observation_layer": "早先界面现场的阶段说明；本轮无完整归档现场",
+      "source": "evidence/维度评测/01-信息回传/FB01-基础回传/README.snapshot.txt",
+      "source_pointer": null,
+      "evidence": [
+        {
+          "locator": "段落“豆包目前确认3分、正常状态1分待核实”",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB01-基础回传/README.md",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/README.snapshot.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "目前只能核对既有阶段说明中的3分与正常状态1分缺口；要复核通过判断，还需对应工具正文及本轮回执，不能只读回执。",
+      "confidence_basis": "保留的是早先现场观察的汇总说明，没有本轮可独立检查的原始工具返回；所以不能给这三条正向判断写“证据充分”。",
+      "limitations": "不新开浏览器、不重跑来补齐数字；历史3分保留，但正向结论的证据归档未完成。",
+      "attribution_scope": "不能据现有汇总定位模型、Skill或Harness责任。",
+      "verification_group": "FB01:豆包办公",
+      "verification_command": "python3 checks/verify.py --item DB-FB01-03",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DB-FB01-04",
+      "product": "豆包办公",
+      "case_id": "FB01",
+      "case_name": "基础回传",
+      "item": "错误关键内容完整",
+      "maximum": 1,
+      "historical_points": 1,
+      "review_state": "positive_evidence_pending",
+      "conclusion": "历史阶段记录将错误字段项记为1分，原始工具正文待补，暂不能独立复核这项正向结论。",
+      "observation_layer": "早先界面现场的阶段说明；本轮无完整归档现场",
+      "source": "evidence/维度评测/01-信息回传/FB01-基础回传/README.snapshot.txt",
+      "source_pointer": null,
+      "evidence": [
+        {
+          "locator": "段落“豆包目前确认3分、正常状态1分待核实”",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB01-基础回传/README.md",
+          "public_path": "evidence/维度评测/01-信息回传/FB01-基础回传/README.snapshot.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "目前只能核对既有阶段说明中的3分与正常状态1分缺口；要复核通过判断，还需对应工具正文及本轮回执，不能只读回执。",
+      "confidence_basis": "保留的是早先现场观察的汇总说明，没有本轮可独立检查的原始工具返回；所以不能给这三条正向判断写“证据充分”。",
+      "limitations": "不新开浏览器、不重跑来补齐数字；历史3分保留，但正向结论的证据归档未完成。",
+      "attribution_scope": "不能据现有汇总定位模型、Skill或Harness责任。",
+      "verification_group": "FB01:豆包办公",
+      "verification_command": "python3 checks/verify.py --item DB-FB01-04",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DB-FB02-01",
+      "product": "豆包办公",
+      "case_id": "FB02",
+      "case_name": "较长结果回传",
+      "item": "本次运行编号",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "positive_evidence_pending",
+      "conclusion": "历史阶段记录确认RUN_ID项2分，但实际工具现场未完整归档，正向结论待补证。",
+      "observation_layer": "分享页工具卡片的早期部分观察，完整现场未归档",
+      "source": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/核对与评分状态.json",
+      "source_pointer": "/scores/0/score",
+      "evidence": [
+        {
+          "locator": "/scores/0/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB02-较长结果回传/运行记录/豆包-a01/核对与评分状态.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/核对与评分状态.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "工具卡片观察范围为RUN_ID及CHECK item=002—034；后部未完成核验",
+          "role": "评测方观察记录，非原生日志",
+          "original_source": "FB02-较长结果回传/运行记录/豆包-a01/网页观察摘录.md",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/网页观察摘录.snapshot.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB02-较长结果回传/运行记录/豆包-a01/原始材料/FB02-LONG-532fc2445424e2d1.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/原始材料/FB02-LONG-532fc2445424e2d1.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "当前可以比对已有回执与观察摘录；确认首次实际返回仍需原始工具现场，不能用最终回复或回执自身替代。",
+      "confidence_basis": "已有记录写明浏览器只读到前部；后部受评测方操作故障影响。没有充分原始现场可以重新验证通过或丢失。",
+      "limitations": "后部未核验不是产品截断、字段丢失或不支持展示的证据。",
+      "attribution_scope": "取证缺口，不归责产品；正向2分保留历史记录但未达到独立复核条件。",
+      "verification_group": "FB02:豆包办公",
+      "verification_command": "python3 checks/verify.py --item DB-FB02-01",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DB-FB02-02",
+      "product": "豆包办公",
+      "case_id": "FB02",
+      "case_name": "较长结果回传",
+      "item": "错误数量",
+      "maximum": 2,
+      "historical_points": null,
+      "review_state": "verification_pending",
+      "conclusion": "ERROR_COUNT=3所在的后部未完成独立核验，本项2分留空。",
+      "observation_layer": "分享页工具卡片的早期部分观察，完整现场未归档",
+      "source": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/核对与评分状态.json",
+      "source_pointer": "/scores/1/score",
+      "evidence": [
+        {
+          "locator": "/scores/1/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB02-较长结果回传/运行记录/豆包-a01/核对与评分状态.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/核对与评分状态.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "工具卡片观察范围为RUN_ID及CHECK item=002—034；后部未完成核验",
+          "role": "评测方观察记录，非原生日志",
+          "original_source": "FB02-较长结果回传/运行记录/豆包-a01/网页观察摘录.md",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/网页观察摘录.snapshot.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB02-较长结果回传/运行记录/豆包-a01/原始材料/FB02-LONG-532fc2445424e2d1.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/原始材料/FB02-LONG-532fc2445424e2d1.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "当前可以比对已有回执与观察摘录；确认首次实际返回仍需原始工具现场，不能用最终回复或回执自身替代。",
+      "confidence_basis": "已有记录写明浏览器只读到前部；后部受评测方操作故障影响。没有充分原始现场可以重新验证通过或丢失。",
+      "limitations": "后部未核验不是产品截断、字段丢失或不支持展示的证据。",
+      "attribution_scope": "取证缺口，不归责产品；正向2分保留历史记录但未达到独立复核条件。",
+      "verification_group": "FB02:豆包办公",
+      "verification_command": "python3 checks/verify.py --item DB-FB02-02",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DB-FB02-03",
+      "product": "豆包办公",
+      "case_id": "FB02",
+      "case_name": "较长结果回传",
+      "item": "错误文件路径",
+      "maximum": 2,
+      "historical_points": null,
+      "review_state": "verification_pending",
+      "conclusion": "ERROR_PATH=inputs/sales_2026.csv所在的后部未完成独立核验，本项2分留空。",
+      "observation_layer": "分享页工具卡片的早期部分观察，完整现场未归档",
+      "source": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/核对与评分状态.json",
+      "source_pointer": "/scores/2/score",
+      "evidence": [
+        {
+          "locator": "/scores/2/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB02-较长结果回传/运行记录/豆包-a01/核对与评分状态.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/核对与评分状态.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "工具卡片观察范围为RUN_ID及CHECK item=002—034；后部未完成核验",
+          "role": "评测方观察记录，非原生日志",
+          "original_source": "FB02-较长结果回传/运行记录/豆包-a01/网页观察摘录.md",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/网页观察摘录.snapshot.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB02-较长结果回传/运行记录/豆包-a01/原始材料/FB02-LONG-532fc2445424e2d1.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/原始材料/FB02-LONG-532fc2445424e2d1.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "当前可以比对已有回执与观察摘录；确认首次实际返回仍需原始工具现场，不能用最终回复或回执自身替代。",
+      "confidence_basis": "已有记录写明浏览器只读到前部；后部受评测方操作故障影响。没有充分原始现场可以重新验证通过或丢失。",
+      "limitations": "后部未核验不是产品截断、字段丢失或不支持展示的证据。",
+      "attribution_scope": "取证缺口，不归责产品；正向2分保留历史记录但未达到独立复核条件。",
+      "verification_group": "FB02:豆包办公",
+      "verification_command": "python3 checks/verify.py --item DB-FB02-03",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DB-FB02-04",
+      "product": "豆包办公",
+      "case_id": "FB02",
+      "case_name": "较长结果回传",
+      "item": "完整生成标记",
+      "maximum": 2,
+      "historical_points": null,
+      "review_state": "verification_pending",
+      "conclusion": "REPORT_COMPLETE=YES所在的后部未完成独立核验，本项2分留空。",
+      "observation_layer": "分享页工具卡片的早期部分观察，完整现场未归档",
+      "source": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/核对与评分状态.json",
+      "source_pointer": "/scores/3/score",
+      "evidence": [
+        {
+          "locator": "/scores/3/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB02-较长结果回传/运行记录/豆包-a01/核对与评分状态.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/核对与评分状态.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "工具卡片观察范围为RUN_ID及CHECK item=002—034；后部未完成核验",
+          "role": "评测方观察记录，非原生日志",
+          "original_source": "FB02-较长结果回传/运行记录/豆包-a01/网页观察摘录.md",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/网页观察摘录.snapshot.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB02-较长结果回传/运行记录/豆包-a01/原始材料/FB02-LONG-532fc2445424e2d1.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/原始材料/FB02-LONG-532fc2445424e2d1.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "当前可以比对已有回执与观察摘录；确认首次实际返回仍需原始工具现场，不能用最终回复或回执自身替代。",
+      "confidence_basis": "已有记录写明浏览器只读到前部；后部受评测方操作故障影响。没有充分原始现场可以重新验证通过或丢失。",
+      "limitations": "后部未核验不是产品截断、字段丢失或不支持展示的证据。",
+      "attribution_scope": "取证缺口，不归责产品；正向2分保留历史记录但未达到独立复核条件。",
+      "verification_group": "FB02:豆包办公",
+      "verification_command": "python3 checks/verify.py --item DB-FB02-04",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DB-FB03-01",
+      "product": "豆包办公",
+      "case_id": "FB03",
+      "case_name": "完整结果获取",
+      "item": "说明当前结果不完整",
+      "maximum": 2,
+      "historical_points": null,
+      "review_state": "insufficient_evidence",
+      "conclusion": "首次原生截断说明未独立取得，2分无法判断。",
+      "observation_layer": "分享页工具卡片、补充读取和产品完整文件，首次返回有缺口",
+      "source": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/补充核查与评分.json",
+      "source_pointer": "/scores/0/score",
+      "evidence": [
+        {
+          "locator": "/scores/0/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB03-完整结果获取/运行记录/豆包-a01/补充核查与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/补充核查与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "首次实际工具返回未独立取得，保留当时状态",
+          "role": "缺口记录",
+          "original_source": "FB03-完整结果获取/运行记录/豆包-a01/第一阶段核对与评分状态.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/第一阶段核对与评分状态.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "首次两项只核对缺口，不由后续成功倒推；第三项仅查看DOM的工具卡片文本并与回执比较；第四项直接比较两份产品文件与回执全文。",
+      "confidence_basis": "后两项有实际搜索卡片、随机标记、源文件及副本可复核；前两项缺首次工具返回，只能留空。",
+      "limitations": "补充路径和读取由人工指定；没有完整原生日志或独立首次截断证据，不把后两项通过写成全程恢复已验证。",
+      "attribution_scope": "可确认按路径取内容与完整保存；首次处理机制未知，未定位内部组件。",
+      "verification_group": "FB03:豆包办公",
+      "verification_command": "python3 checks/verify.py --item DB-FB03-01",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DB-FB03-02",
+      "product": "豆包办公",
+      "case_id": "FB03",
+      "case_name": "完整结果获取",
+      "item": "提供有效的完整结果入口",
+      "maximum": 2,
+      "historical_points": null,
+      "review_state": "insufficient_evidence",
+      "conclusion": "候选路径有效，但是否由首次工具返回提供未证实，2分无法判断。",
+      "observation_layer": "分享页工具卡片、补充读取和产品完整文件，首次返回有缺口",
+      "source": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/补充核查与评分.json",
+      "source_pointer": "/scores/1/score",
+      "evidence": [
+        {
+          "locator": "/scores/1/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB03-完整结果获取/运行记录/豆包-a01/补充核查与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/补充核查与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "首次实际工具返回未独立取得，保留当时状态",
+          "role": "缺口记录",
+          "original_source": "FB03-完整结果获取/运行记录/豆包-a01/第一阶段核对与评分状态.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/第一阶段核对与评分状态.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "首次两项只核对缺口，不由后续成功倒推；第三项仅查看DOM的工具卡片文本并与回执比较；第四项直接比较两份产品文件与回执全文。",
+      "confidence_basis": "后两项有实际搜索卡片、随机标记、源文件及副本可复核；前两项缺首次工具返回，只能留空。",
+      "limitations": "补充路径和读取由人工指定；没有完整原生日志或独立首次截断证据，不把后两项通过写成全程恢复已验证。",
+      "attribution_scope": "可确认按路径取内容与完整保存；首次处理机制未知，未定位内部组件。",
+      "verification_group": "FB03:豆包办公",
+      "verification_command": "python3 checks/verify.py --item DB-FB03-02",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DB-FB03-03",
+      "product": "豆包办公",
+      "case_id": "FB03",
+      "case_name": "完整结果获取",
+      "item": "通过入口取回缺少的内容",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "supported_positive",
+      "conclusion": "补充指令下实际工具结果取到指定中间标记，得2分；不声称首次缺失已独立验证。",
+      "observation_layer": "分享页工具卡片、补充读取和产品完整文件，首次返回有缺口",
+      "source": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/补充核查与评分.json",
+      "source_pointer": "/scores/2/score",
+      "evidence": [
+        {
+          "locator": "/scores/2/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB03-完整结果获取/运行记录/豆包-a01/补充核查与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/补充核查与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "首次实际工具返回未独立取得，保留当时状态",
+          "role": "缺口记录",
+          "original_source": "FB03-完整结果获取/运行记录/豆包-a01/第一阶段核对与评分状态.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/第一阶段核对与评分状态.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第22—27行工具卡片textbox，排除第28行起的后续说明/最终回复",
+          "role": "实际界面工具结果快照",
+          "original_source": "FB03-完整结果获取/运行记录/豆包-a01/补充核查证据/搜索结果展开-DOM.txt",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/补充核查证据/搜索结果展开-DOM.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB03-完整结果获取/运行记录/豆包-a01/原始材料/FB03-FULL-e85552a0749e0f32.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/原始材料/FB03-FULL-e85552a0749e0f32.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "首次两项只核对缺口，不由后续成功倒推；第三项仅查看DOM的工具卡片文本并与回执比较；第四项直接比较两份产品文件与回执全文。",
+      "confidence_basis": "后两项有实际搜索卡片、随机标记、源文件及副本可复核；前两项缺首次工具返回，只能留空。",
+      "limitations": "补充路径和读取由人工指定；没有完整原生日志或独立首次截断证据，不把后两项通过写成全程恢复已验证。",
+      "attribution_scope": "可确认按路径取内容与完整保存；首次处理机制未知，未定位内部组件。",
+      "verification_group": "FB03:豆包办公",
+      "verification_command": "python3 checks/verify.py --item DB-FB03-03",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    },
+    {
+      "id": "DB-FB03-04",
+      "product": "豆包办公",
+      "case_id": "FB03",
+      "case_name": "完整结果获取",
+      "item": "完整结果保存准确",
+      "maximum": 2,
+      "historical_points": 2,
+      "review_state": "supported_positive",
+      "conclusion": "源文件及交付副本与262144字节预期报告逐字节相同，得2分。",
+      "observation_layer": "分享页工具卡片、补充读取和产品完整文件，首次返回有缺口",
+      "source": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/补充核查与评分.json",
+      "source_pointer": "/scores/3/score",
+      "evidence": [
+        {
+          "locator": "/scores/3/score",
+          "role": "历史判分来源，不替代原始现场",
+          "original_source": "FB03-完整结果获取/运行记录/豆包-a01/补充核查与评分.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/补充核查与评分.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "首次实际工具返回未独立取得，保留当时状态",
+          "role": "缺口记录",
+          "original_source": "FB03-完整结果获取/运行记录/豆包-a01/第一阶段核对与评分状态.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/第一阶段核对与评分状态.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "第22—27行工具卡片textbox，排除第28行起的后续说明/最终回复",
+          "role": "实际界面工具结果快照",
+          "original_source": "FB03-完整结果获取/运行记录/豆包-a01/补充核查证据/搜索结果展开-DOM.txt",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/补充核查证据/搜索结果展开-DOM.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+          "role": "预期基准；不能单独证明回传",
+          "original_source": "FB03-完整结果获取/运行记录/豆包-a01/原始材料/FB03-FULL-e85552a0749e0f32.json",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/原始材料/FB03-FULL-e85552a0749e0f32.json",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "完整262144字节，与预期逐字节比较",
+          "role": "产品原文件或交付副本",
+          "original_source": "FB03-完整结果获取/运行记录/豆包-a01/产品完整输出/入口源文件.txt",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/产品完整输出/入口源文件.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        },
+        {
+          "locator": "完整262144字节，与预期逐字节比较",
+          "role": "产品原文件或交付副本",
+          "original_source": "FB03-完整结果获取/运行记录/豆包-a01/产品完整输出/FB03-完整输出.txt",
+          "public_path": "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/产品完整输出/FB03-完整输出.txt",
+          "public_available": true,
+          "locator_note": "原生日志行号对应excerpt.json中的source_line；JSON路径对应导出的JSON；原始文件行号不等于格式化JSON物理行号。"
+        }
+      ],
+      "comparison_method": "首次两项只核对缺口，不由后续成功倒推；第三项仅查看DOM的工具卡片文本并与回执比较；第四项直接比较两份产品文件与回执全文。",
+      "confidence_basis": "后两项有实际搜索卡片、随机标记、源文件及副本可复核；前两项缺首次工具返回，只能留空。",
+      "limitations": "补充路径和读取由人工指定；没有完整原生日志或独立首次截断证据，不把后两项通过写成全程恢复已验证。",
+      "attribution_scope": "可确认按路径取内容与完整保存；首次处理机制未知，未定位内部组件。",
+      "verification_group": "FB03:豆包办公",
+      "verification_command": "python3 checks/verify.py --item DB-FB03-04",
+      "source_locator_scope": "来源JSON/Markdown为经路径替换的公开副本；历史得分保持不变。"
+    }
+  ],
+  "all_harness_component_causes_verified": false
+}

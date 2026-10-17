@@ -1,0 +1,67 @@
+{
+  "case_id": "FB01",
+  "case_name": "固定工具结果的准确回传",
+  "run_label": "元宝-a02",
+  "product": "元宝专家模式",
+  "share_url": "PUBLIC_SHARE_URL",
+  "evidence_date": "2026-10-16",
+  "screenshot_sha256": "f96a04944d663e82dc1a680eb021346b382589c49a1848933aa676b74d38228c",
+  "preparation_command": {
+    "text": "ls -l /data/inputs/feedback_probe.py && cp /data/inputs/feedback_probe.py /data/workspace/feedback_probe.py && ls -l /data/workspace/feedback_probe.py",
+    "source": "User manually supplied full command; screenshot shows partially clipped preparation command."
+  },
+  "execution_commands": [
+    {
+      "mode": "normal",
+      "command": "cd /data/workspace && python3 feedback_probe.py normal",
+      "source": "user screenshot"
+    },
+    {
+      "mode": "error",
+      "command": "cd /data/workspace && python3 feedback_probe.py error",
+      "source": "user screenshot"
+    }
+  ],
+  "observations": {
+    "three_visible_bash_cards": true,
+    "one_preparation_two_execution_cards": true,
+    "no_echo_suffix_on_two_execution_commands": true,
+    "tool_result_body_visible_in_screenshot": false,
+    "runtime_attachment_hash_independently_verified": false,
+    "receipt_acquired": false
+  },
+  "scores": [
+    {
+      "item": "正常状态准确返回",
+      "max": 1,
+      "score": null,
+      "status": "unknown",
+      "reason": "No independently visible native tool return; run-specific receipt unavailable for field checks."
+    },
+    {
+      "item": "正常关键内容完整",
+      "max": 1,
+      "score": null,
+      "status": "unknown",
+      "reason": "No independently visible native tool return; run-specific receipt unavailable for field checks."
+    },
+    {
+      "item": "错误状态准确返回",
+      "max": 1,
+      "score": null,
+      "status": "unknown",
+      "reason": "No independently visible native tool return; run-specific receipt unavailable for field checks."
+    },
+    {
+      "item": "错误关键内容完整",
+      "max": 1,
+      "score": null,
+      "status": "unknown",
+      "reason": "No independently visible native tool return; run-specific receipt unavailable for field checks."
+    }
+  ],
+  "unknown_max": 4,
+  "confirmed_failed_points": 0,
+  "scope": "Command compliance evidence only. No product rerun or browser inspection in this verification step.",
+  "_public_copy_note": "这是历史本地判分/核对的公开副本。原有布尔检查不表示本次公开打包重新执行了全部旧验证；当前覆盖见checks/verify.py和docs/复核说明.md。"
+}

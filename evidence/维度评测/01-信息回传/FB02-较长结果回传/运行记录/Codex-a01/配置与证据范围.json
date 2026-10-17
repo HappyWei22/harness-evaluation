@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.1-sol",
+  "cwd": "/PUBLIC_PROJECT/独立测试工作区/Codex/FB02-a01",
+  "effort": "high",
+  "approval_policy": "on-request",
+  "sandbox_policy": {
+    "type": "workspace-write",
+    "writable_roots": [
+      "/PUBLIC_HOME/.codex/visualizations/2026/10/17/01a147ea-a733-72b1-a97f-0e65e891f090"
+    ],
+    "network_access": false,
+    "exclude_tmpdir_env_var": false,
+    "exclude_slash_tmp": false
+  },
+  "session_id": "01a147ea-a733-72b1-a97f-0e65e891f090",
+  "product_version": "本次未独立确认",
+  "observation_layer": "原生会话日志中的首次工具返回；没有独立核验完整模型请求",
+  "skills": "按项目约定不新增用户Skill；不宣称已排除原生Skill差异",
+  "generator_run_by_evaluator": false
+}

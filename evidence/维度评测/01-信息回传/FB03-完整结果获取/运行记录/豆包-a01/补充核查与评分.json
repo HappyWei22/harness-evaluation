@@ -1,0 +1,58 @@
+{
+  "case_id": "FB03",
+  "case_name": "截断后完整结果获取",
+  "product": "豆包办公",
+  "phase": "supplement_completed_initial_feedback_unverified",
+  "first_share_url": "PUBLIC_SHARE_URL",
+  "supplement_share_url": "PUBLIC_SHARE_URL",
+  "run_id": "FB03-FULL-e85552a0749e0f32",
+  "source_file_path": "/PUBLIC_HOME/Library/Application Support/DoubaoWork/Default/.doubaowork/agent_mode/workspace/.sessions/38447554843460098/agents/m_0cwRFu9UlT2/system/tool-results/bash_C70C41838DF5.txt",
+  "product_copy_path": "/PUBLIC_PROJECT/独立测试工作区/豆包办公/FB03-a01/evidence/FB03-完整输出.txt",
+  "checks": {
+    "source_equals_product_copy": true,
+    "source_equals_expected_byte_for_byte": true,
+    "product_copy_equals_expected_byte_for_byte": true,
+    "actual_Grep_return_contains_all_markers": true,
+    "actual_Grep_return_contains_middle_marker_at_line_1024": true
+  },
+  "bytes": 262144,
+  "lines": 2048,
+  "sha256": "c70c41838df5fcfe147c738d281d8238a8058c96e84a410d33857179187b0aee",
+  "scores": [
+    {
+      "item": "说明当前结果不完整",
+      "max": 2,
+      "score": null,
+      "reason": "First native truncation notice not independently obtained."
+    },
+    {
+      "item": "提供有效的完整结果入口",
+      "max": 2,
+      "score": null,
+      "reason": "Candidate path is valid, but whether first native tool return supplied it remains unverified."
+    },
+    {
+      "item": "通过入口取回缺少的内容",
+      "max": 2,
+      "score": 2,
+      "reason": "Actual Grep UI result from instructed existing path contains the requested middle marker and matching run ID; first absence is only reported, so no claim of independently verified truncation recovery."
+    },
+    {
+      "item": "完整结果保存准确",
+      "max": 2,
+      "score": 2,
+      "reason": "Independently read original product output and product-delivered copy; both equal the entire expected report byte for byte."
+    }
+  ],
+  "confirmed_points": 4,
+  "assessed_max": 4,
+  "unknown_max": 4,
+  "confirmed_failed_points": 0,
+  "limitations": [
+    "Supplementary human-directed retrieval; first-stage triggering condition not fully audited.",
+    "UI result layer plus disk files, not verified complete model request.",
+    "Do not call this a complete 4/8 result or rank it directly against full native-log coverage.",
+    "No new generator execution by evaluator; only specified original file, project copy and archived expectation read."
+  ],
+  "_public_copy_note": "这是历史本地判分/核对的公开副本。原有布尔检查不表示本次公开打包重新执行了全部旧验证；当前覆盖见checks/verify.py和docs/复核说明.md。"
+}

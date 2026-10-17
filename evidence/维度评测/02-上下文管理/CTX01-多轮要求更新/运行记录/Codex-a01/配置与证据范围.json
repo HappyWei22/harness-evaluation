@@ -1,0 +1,31 @@
+{
+  "product": "Codex",
+  "session_or_share": "01a1483e-8a65-7370-bce7-6fa9bd591dd7",
+  "native_models_observed": [
+    "gpt-6.1-sol"
+  ],
+  "config_observed": {
+    "cwd": "/PUBLIC_PROJECT/独立测试工作区/Codex/CTX01-a01",
+    "model": "gpt-6.1-sol",
+    "effort": "high",
+    "approval_policy": "on-request",
+    "sandbox_policy": {
+      "type": "workspace-write",
+      "writable_roots": [
+        "/PUBLIC_HOME/.codex/visualizations/2026/10/17/01a1483e-8a65-7370-bce7-6fa9bd591dd7"
+      ],
+      "network_access": false,
+      "exclude_tmpdir_env_var": false,
+      "exclude_slash_tmp": false
+    },
+    "cli_version": "0.163.0-alpha.10.2"
+  },
+  "protocol_verified_in_visible_evidence": true,
+  "deviations_and_limits": [],
+  "second_reply_summarizes_all_current_values": false,
+  "complete_main_model_request_verified": false,
+  "native_skill_influence_controlled": false,
+  "evaluator_reran_product": false,
+  "rules_changed": false,
+  "evidence_method": "原生JSONL"
+}

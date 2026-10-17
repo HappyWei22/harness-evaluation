@@ -1,0 +1,12 @@
+{
+  "session_id": "3d0e2fd5-b213-455b-9b00-bd6a40ee4f39",
+  "trace_id": "5d559452f29b49f4939b07c53c884b0a",
+  "conversation_request_id": "01a14560827b7fd997aebc2e0276a0b2",
+  "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02",
+  "model": "hy4-preview",
+  "version": "未独立确认",
+  "permission_settings": "未独立核对a02设置，不从a01复制为本轮事实",
+  "observation_layer": "原生会话日志中的工具调用和返回；未独立核对完整模型请求",
+  "skills": "项目约定不添加用户Skill，未证明原生Skill影响已排除",
+  "scope": "用户发起测试；评测助手只读核对并归档，未重跑、试写或修改环境"
+}

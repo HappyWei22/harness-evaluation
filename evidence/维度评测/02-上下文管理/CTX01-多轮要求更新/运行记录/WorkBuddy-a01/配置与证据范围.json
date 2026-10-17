@@ -1,0 +1,20 @@
+{
+  "product": "WorkBuddy",
+  "session_or_share": "2b902466-0336-49c5-8dee-e7431d922231",
+  "native_models_observed": [
+    "hy4-preview"
+  ],
+  "config_observed": {
+    "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/CTX01-a01"
+  },
+  "protocol_verified_in_visible_evidence": true,
+  "deviations_and_limits": [
+    "第二轮开头额外含```text，第三轮末尾含```；三轮空行与原提示不同。逐句检查任务内容、值和顺序未改变，第三轮未补答案，按内容等价接受；不声称逐字一致。"
+  ],
+  "second_reply_summarizes_all_current_values": true,
+  "complete_main_model_request_verified": false,
+  "native_skill_influence_controlled": false,
+  "evaluator_reran_product": false,
+  "rules_changed": false,
+  "evidence_method": "原生JSONL"
+}

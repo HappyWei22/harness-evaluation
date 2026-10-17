@@ -1,0 +1,96 @@
+{
+  "case_id": "FB02",
+  "case_name": "较长检查报告中的关键信息回传",
+  "fixture_version": "1.0.0",
+  "product": "Codex",
+  "attempt": "a01",
+  "score_items": [
+    {
+      "item": "本次运行编号",
+      "max_points": 2,
+      "points": 2,
+      "status": "confirmed_pass",
+      "line": 1,
+      "text": "RUN_ID=FB02-LONG-16566128a84e048c"
+    },
+    {
+      "item": "错误数量",
+      "max_points": 2,
+      "points": 2,
+      "status": "confirmed_pass",
+      "line": 60,
+      "text": "ERROR_COUNT=3"
+    },
+    {
+      "item": "错误文件路径",
+      "max_points": 2,
+      "points": 2,
+      "status": "confirmed_pass",
+      "line": 120,
+      "text": "ERROR_PATH=inputs/sales_2026.csv"
+    },
+    {
+      "item": "完整生成标记",
+      "max_points": 2,
+      "points": 2,
+      "status": "confirmed_pass",
+      "line": 200,
+      "text": "REPORT_COMPLETE=YES"
+    }
+  ],
+  "summary": {
+    "confirmed_points": 8,
+    "assessed_max_points": 8,
+    "unknown_points": 0,
+    "not_effectively_tested_points": 0,
+    "confirmed_failed_points": 0,
+    "complete_case_score": "8/8"
+  },
+  "scoring_rules_changed": false,
+  "checks": {
+    "raw_log_lines": 26,
+    "call_result_lines": [
+      17,
+      20
+    ],
+    "run_id": "FB02-LONG-16566128a84e048c",
+    "script_sha256": "604d9462b3b0c5df83661726479c5b36f40237873166bce890faee54503d9625",
+    "native_stdout_bytes": 17929,
+    "native_stdout_lines": 200,
+    "native_stdout_sha256": "5b524d36109043a1dbf6975caa0be72100e96bf2b412c379679778a6c908a79f",
+    "normalized_stdout_bytes": 17929,
+    "normalized_stdout_lines": 200,
+    "normalized_stdout_sha256": "5b524d36109043a1dbf6975caa0be72100e96bf2b412c379679778a6c908a79f",
+    "normalized_stdout_matches_receipt": true,
+    "native_stdout_bytes_match_receipt": true,
+    "extraction_and_normalization": "原生结果output正文与回执预期逐字节一致，无换行归一化。",
+    "check_rows": 196,
+    "checkpoint_rows": [
+      {
+        "line": 1,
+        "text": "RUN_ID=FB02-LONG-16566128a84e048c"
+      },
+      {
+        "line": 60,
+        "text": "ERROR_COUNT=3"
+      },
+      {
+        "line": 120,
+        "text": "ERROR_PATH=inputs/sales_2026.csv"
+      },
+      {
+        "line": 200,
+        "text": "REPORT_COMPLETE=YES"
+      }
+    ],
+    "explicit_truncation_notice_observed": false,
+    "full_output_entry_observed": false
+  },
+  "limitations": [
+    "单次试测，不推断稳定性或其他输出长度表现。",
+    "原生工具日志层判断，不等同于完整实际模型请求验证。",
+    "回执只用于比对，不计为产品原生完整输出保存能力。"
+  ],
+  "scoring_layer": "原生custom_tool_call_output中exec_command结果的output正文",
+  "_public_copy_note": "这是历史本地判分/核对的公开副本。原有布尔检查不表示本次公开打包重新执行了全部旧验证；当前覆盖见checks/verify.py和docs/复核说明.md。"
+}

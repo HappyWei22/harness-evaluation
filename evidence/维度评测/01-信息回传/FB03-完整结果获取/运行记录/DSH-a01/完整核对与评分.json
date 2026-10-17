@@ -1,0 +1,86 @@
+{
+  "scope": "Independent check of archived evidence, not a new product run or automatic failure attribution.",
+  "case_id": "FB03",
+  "case_name": "截断后完整结果获取",
+  "version": "1.0.0",
+  "run_id": "FB03-FULL-3653133d715e89a0",
+  "phase": "both_completed",
+  "source_zip_sha256": "8f4152a598f9ddda81daecf568dea6b9b824ddeed91c180dea60b3702e8a951d",
+  "native_records": 79,
+  "second_phase_tool_calls": 9,
+  "a_bytes": 262144,
+  "a_lines": 2048,
+  "a_sha256": "5fd69d93d5bcb52d7bb01a4474f2e4c611d21c2e56e6d392bd260d825eeb754d",
+  "b_bytes": 64150,
+  "b_sha256": "b467241769521ab70b939a6ced45135f1c9b4b74149ec901c795b885969b793b",
+  "first_visible_markers": {
+    "HEAD_TOKEN": false,
+    "MIDDLE_TOKEN": false,
+    "TAIL_TOKEN": true
+  },
+  "markers_retrieved_via_a": {
+    "HEAD_TOKEN": true,
+    "MIDDLE_TOKEN": true,
+    "TAIL_TOKEN": true
+  },
+  "validations": {
+    "archived_zip_matches_native": true,
+    "initial_stage_records_preserved": true,
+    "first_tool_result_unchanged": true,
+    "all_calls_have_paired_results": true,
+    "only_one_report_generation_call": true,
+    "explicit_truncation_notice": true,
+    "original_entrypoint_used_for_retrieval": true,
+    "all_markers_retrieved_in_actual_tool_result": true,
+    "a_equals_expected_report_byte_for_byte": true,
+    "a_bytes_and_hash_match_receipt": true,
+    "b_equals_expected_tail_500_rows_plus_notice": true,
+    "a_and_b_hashes_present_in_copy_tool_results": true,
+    "fixture_source_hash_matches_receipt": true
+  },
+  "all_validations_passed": true,
+  "scores": [
+    {
+      "item": "说明当前结果不完整",
+      "max": 2,
+      "score": 2,
+      "evidence_lines": [
+        21,
+        22
+      ]
+    },
+    {
+      "item": "提供有效的完整结果入口",
+      "max": 2,
+      "score": 2,
+      "evidence_lines": [
+        22,
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "item": "通过入口取回缺少的内容",
+      "max": 2,
+      "score": 2,
+      "evidence_lines": [
+        38,
+        39
+      ]
+    },
+    {
+      "item": "完整结果保存准确",
+      "max": 2,
+      "score": 2,
+      "evidence_lines": [
+        72,
+        73
+      ]
+    }
+  ],
+  "confirmed_points": 8,
+  "assessed_max": 8,
+  "interpretation": "Human-directed retrieval worked in this one native-tool-result-layer run. Not proof of autonomous recovery, full model request delivery, or general reliability.",
+  "_public_copy_note": "这是历史本地判分/核对的公开副本。原有布尔检查不表示本次公开打包重新执行了全部旧验证；当前覆盖见checks/verify.py和docs/复核说明.md。"
+}

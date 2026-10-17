@@ -1,0 +1,142 @@
+{
+  "case_id": "CTX01",
+  "product": "豆包办公",
+  "label": "豆包",
+  "run_label": "豆包-CTX01-a01",
+  "points": 4,
+  "maximum": 4,
+  "messages": [
+    {
+      "role": "user",
+      "text": "我们分三轮登记一项校园活动。本题只需在对话中登记和更新活动信息。\n请先记录以下初始信息：\n活动编号：ACT-27\n地点：A 教学楼\n预算：3000\n币种：CNY\n本轮只确认收到，暂不输出最终活动记录，等待后续修改。",
+      "source_lines": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "accessibility_node_ids": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/豆包-a01/原始材料/分享页可访问文本.txt"
+    },
+    {
+      "role": "assistant",
+      "text": "已收到第一轮登记信息，暂存如下：\n活动编号：ACT-27\n地点：A 教学楼\n预算：3000\n币种：CNY\n本轮不输出最终活动记录，等待你后续两轮的修改与补充。",
+      "source_lines": [
+        20,
+        24,
+        27,
+        30,
+        33,
+        34
+      ],
+      "accessibility_node_ids": [
+        18,
+        22,
+        25,
+        28,
+        31,
+        32
+      ],
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/豆包-a01/原始材料/分享页可访问文本.txt"
+    },
+    {
+      "role": "user",
+      "text": "更新刚才的活动信息：\n地点改为图书馆，预算改为 4500。\n其他信息保持不变。\n本轮只确认收到，暂不输出最终活动记录。",
+      "source_lines": [
+        36,
+        37,
+        38,
+        39
+      ],
+      "accessibility_node_ids": [
+        34,
+        35,
+        36,
+        37
+      ],
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/豆包-a01/原始材料/分享页可访问文本.txt"
+    },
+    {
+      "role": "assistant",
+      "text": "已收到第二轮更新，暂存信息已修改为：\n活动编号：ACT-27\n地点：图书馆（由 A 教学楼 更新）\n预算：4500（由 3000 更新）\n币种：CNY（保持不变）\n本轮仍不输出最终活动记录，等待第三轮。",
+      "source_lines": [
+        41,
+        45,
+        48,
+        51,
+        54,
+        55
+      ],
+      "accessibility_node_ids": [
+        39,
+        43,
+        46,
+        49,
+        52,
+        53
+      ],
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/豆包-a01/原始材料/分享页可访问文本.txt"
+    },
+    {
+      "role": "user",
+      "text": "请根据本会话目前有效的信息，输出最终活动记录。\n只输出一个 JSON 对象，字段名固定为 “活动编号”“地点”“预算”“币种”。预算使用数字，其他字段使用字符串。保留编号、地点和币种的有效写法，不新增条件。",
+      "source_lines": [
+        57,
+        58
+      ],
+      "accessibility_node_ids": [
+        55,
+        56
+      ],
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/豆包-a01/原始材料/分享页可访问文本.txt"
+    },
+    {
+      "role": "assistant",
+      "text": "{\n  \"活动编号\": \"ACT-27\",\n  \"地点\": \"图书馆\",\n  \"预算\": 4500,\n  \"币种\": \"CNY\"\n}",
+      "source_lines": [
+        61,
+        62,
+        63,
+        64,
+        65,
+        66
+      ],
+      "accessibility_node_ids": [
+        59
+      ],
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/豆包-a01/原始材料/分享页可访问文本.txt"
+    }
+  ],
+  "configuration": {
+    "product": "豆包办公",
+    "session_or_share": "PUBLIC_SHARE_URL",
+    "native_models_observed": [],
+    "config_observed": {
+      "model": "未知：分享页未显示",
+      "client_mode": "用户报告为原生客户端；分享页不能独立确认模式和版本。"
+    },
+    "protocol_verified_in_visible_evidence": true,
+    "deviations_and_limits": [
+      "以同一分享页连续六条消息核对；网页显示的空白不作为逐字输入证据。未获得后台导出，分享页不能证明未展示的分支或完整内部请求。"
+    ],
+    "second_reply_summarizes_all_current_values": true,
+    "complete_main_model_request_verified": false,
+    "native_skill_influence_controlled": false,
+    "evaluator_reran_product": false,
+    "rules_changed": false,
+    "evidence_method": "Safari系统可访问性树提取网页可见内容；内置浏览器连续超时、网页抓取失败后改用Safari。不是后台日志。"
+  },
+  "source_score": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/豆包-a01/核对与评分.json",
+  "limits": "三轮短对话；没有验证压缩或复杂16分；完整模型请求未核验。"
+}

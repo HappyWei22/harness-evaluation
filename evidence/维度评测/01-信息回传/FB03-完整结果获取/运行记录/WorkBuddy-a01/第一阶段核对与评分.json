@@ -1,0 +1,74 @@
+{
+  "case_id": "FB03",
+  "case_name": "截断后完整结果获取",
+  "fixture_version": "1.0.0",
+  "product": "WorkBuddy",
+  "attempt": "a01",
+  "phase": "first_phase_snapshot",
+  "score_items": [
+    {
+      "item": "说明当前结果不完整",
+      "max_points": 2,
+      "points": 2,
+      "status": "confirmed_pass",
+      "reason": "第8行原生返回明确说明输出过大及2048字节预览"
+    },
+    {
+      "item": "提供有效的完整结果入口",
+      "max_points": 2,
+      "points": 2,
+      "status": "confirmed_pass",
+      "reason": "首次原生返回提供路径，评测方已验证文件存在且对应本次RUN_ID，报告文本去除额外回车后与预期一致；准确保存另记第四项"
+    },
+    {
+      "item": "通过入口取回缺少的内容",
+      "max_points": 2,
+      "points": null,
+      "status": "pending_phase2",
+      "reason": "尚无产品第二阶段实际读取结果；评测方预先取证不计此项"
+    },
+    {
+      "item": "完整结果保存准确",
+      "max_points": 2,
+      "points": null,
+      "status": "pending_review",
+      "reason": "入口文件含额外回车字节，与预期指纹不一致；先保留差异，不以文本可恢复代替严格字节一致"
+    }
+  ],
+  "summary": {
+    "confirmed_points": 4,
+    "assessed_max_points": 4,
+    "confirmed_failed_points": 0,
+    "unknown_points": 0,
+    "pending_phase2_points": 4,
+    "complete_case_score": null
+  },
+  "checks": {
+    "raw_log_lines": 10,
+    "run_id": "FB03-FULL-f4cfccd6511b9a44",
+    "visible_markers": [
+      "HEAD_TOKEN"
+    ],
+    "missing_markers": [
+      "MIDDLE_TOKEN",
+      "TAIL_TOKEN"
+    ],
+    "explicit_truncation_notice": true,
+    "native_entry": "/PUBLIC_HOME/.workbuddy/projects/PUBLIC-PROJECT-独立测试工作区-WorkBuddy-FB03-a01/9cfa5e5b-6a09-4a8d-bd53-f0e006e65998/tool-results/chatcmpl-tool-a05bc1f2228525bc.txt",
+    "native_entry_exists": true,
+    "entry_bytes": 264202,
+    "entry_sha256": "59ad90008cee7459a0a11bdb88fd3b4e2fd9f6a994a2dbe52ec0b64bd9767680",
+    "entry_LF_count": 2048,
+    "entry_CR_count": 2058,
+    "entry_CRCRLF_count": 10,
+    "entry_raw_bytes_match_expected": false,
+    "CR_removed_text_matches_expected": true,
+    "first_result_to_expected_fields_verified": true,
+    "phase2_status": "待用户在原会话按首次入口读取，不重跑",
+    "full_file_accuracy_score": "暂留空：保存文件与预期字节不一致；附额外回车差异证据，待第二阶段后按原规则解释，不提前给满分",
+    "evaluator_read_scope": "评测方事后只读取证及保全；不冒充产品第二阶段调用"
+  },
+  "rules_changed": false,
+  "human_directed_retrieval_not_autonomous": true,
+  "_public_copy_note": "这是历史本地判分/核对的公开副本。原有布尔检查不表示本次公开打包重新执行了全部旧验证；当前覆盖见checks/verify.py和docs/复核说明.md。"
+}

@@ -1,0 +1,19 @@
+{
+  "product": "元宝专家模式",
+  "session_or_share": "PUBLIC_SHARE_URL",
+  "native_models_observed": [],
+  "config_observed": {
+    "model": "未知：分享页未显示",
+    "client_mode": "用户报告为原生客户端；分享页不能独立确认模式和版本。"
+  },
+  "protocol_verified_in_visible_evidence": true,
+  "deviations_and_limits": [
+    "以同一分享页连续六条消息核对；网页显示的空白不作为逐字输入证据。未获得后台导出，分享页不能证明未展示的分支或完整内部请求。"
+  ],
+  "second_reply_summarizes_all_current_values": true,
+  "complete_main_model_request_verified": false,
+  "native_skill_influence_controlled": false,
+  "evaluator_reran_product": false,
+  "rules_changed": false,
+  "evidence_method": "Safari系统可访问性树提取网页可见内容；内置浏览器连续超时、网页抓取失败后改用Safari。不是后台日志。"
+}

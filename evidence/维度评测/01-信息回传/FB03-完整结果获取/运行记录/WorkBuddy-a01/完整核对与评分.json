@@ -1,0 +1,98 @@
+{
+  "case_id": "FB03",
+  "case_name": "截断后完整结果获取",
+  "product": "WorkBuddy",
+  "attempt": "a01",
+  "fixture_version": "1.0.0",
+  "phase": "both_phases_reviewed",
+  "scoring_layer": "原生首次返回、第二阶段工具返回及产品保存文件的原始字节",
+  "score_items": [
+    {
+      "item": "说明当前结果不完整",
+      "max_points": 2,
+      "points": 2,
+      "status": "confirmed_pass",
+      "evidence": "第一阶段原生日志第8行，明确输出过大及部分预览"
+    },
+    {
+      "item": "提供有效的完整结果入口",
+      "max_points": 2,
+      "points": 2,
+      "status": "confirmed_pass",
+      "evidence": "第一阶段提供的真实入口对应本轮报告，第二阶段同一路径可读"
+    },
+    {
+      "item": "通过入口取回缺少的内容",
+      "max_points": 2,
+      "points": 2,
+      "status": "confirmed_pass",
+      "evidence": "第二阶段原生日志第19/21行，Bash grep实际返回MIDDLE_TOKEN、TAIL_TOKEN和同一RUN_ID，与回执一致"
+    },
+    {
+      "item": "完整结果保存准确",
+      "max_points": 2,
+      "points": 0,
+      "status": "confirmed_fail_byte_fidelity",
+      "evidence": "入口原文件264202字节，预期262144；原文件与预期SHA256不一致。差异为2058个额外CR，去掉CR可恢复全文，未把该恢复操作当作原样保存通过。"
+    }
+  ],
+  "summary": {
+    "confirmed_points": 6,
+    "assessed_max_points": 8,
+    "confirmed_failed_points": 2,
+    "unknown_points": 0,
+    "pending_points": 0,
+    "complete_case_score": "6/8"
+  },
+  "checks": {
+    "phase1_snapshot_preserved": true,
+    "phase1_log_is_prefix_of_phase2_log": true,
+    "phase2_call_lines": [
+      [
+        14,
+        16
+      ],
+      [
+        15,
+        17
+      ],
+      [
+        19,
+        21
+      ],
+      [
+        20,
+        22
+      ]
+    ],
+    "requested_markers_match_receipt": true,
+    "no_report_regeneration": true,
+    "no_script_or_receipt_read_in_phase2_calls": true,
+    "native_entry": "/PUBLIC_HOME/.workbuddy/projects/PUBLIC-PROJECT-独立测试工作区-WorkBuddy-FB03-a01/9cfa5e5b-6a09-4a8d-bd53-f0e006e65998/tool-results/chatcmpl-tool-a05bc1f2228525bc.txt",
+    "native_file_unchanged_between_reviews": true,
+    "native_bytes": 264202,
+    "native_sha256": "59ad90008cee7459a0a11bdb88fd3b4e2fd9f6a994a2dbe52ec0b64bd9767680",
+    "expected_bytes": 262144,
+    "expected_sha256": "6e531992b3a3e2b4e960180a2e97288947554994e8632851dc417cdfd361934d",
+    "byte_difference": 2058,
+    "LF_count": 2048,
+    "CR_count": 2058,
+    "CRCRLF_count": 10,
+    "raw_file_matches_expected": false,
+    "CR_removed_bytes_match_expected": true,
+    "normalization_for_evaluator_comparison_only": "仅在内存对照时移除CR；没有修改或用处理后版本替换产品保存文件。",
+    "permission_observation": "原生Grep与Read返回拒绝；Bash同路径读取成功。拒绝的触发来源和策略范围未独立确认，不据此判为权限绕过。"
+  },
+  "rules_changed": false,
+  "human_directed_retrieval_not_autonomous": true,
+  "attribution": {
+    "observed": "通过原生Bash能按入口取回字段；保存文件未保持报告原始字节，完整文本可恢复",
+    "unverified": "额外CR产生的具体组件；Grep/Read拒绝原因及权限范围；完整实际模型请求",
+    "not_claimed": [
+      "没有据字节不一致声称缺行或业务内容丢失",
+      "没有据工具通道差异判定权限防护失效",
+      "没有把人工第二阶段指令当作产品自主恢复能力"
+    ]
+  },
+  "_public_copy_note": "这是历史本地判分/核对的公开副本。原有布尔检查不表示本次公开打包重新执行了全部旧验证；当前覆盖见checks/verify.py和docs/复核说明.md。"
+}

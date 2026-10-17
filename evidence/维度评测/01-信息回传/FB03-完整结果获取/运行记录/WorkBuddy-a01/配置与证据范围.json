@@ -1,0 +1,12 @@
+{
+  "model": "hy4-preview",
+  "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB03-a01",
+  "session_id": "9cfa5e5b-6a09-4a8d-bd53-f0e006e65998",
+  "trace_id": "b4c5f711b2974720a3a7d8c82e96d99f",
+  "conversation_request_id": "01a147f11ead70ecaedc4dd714560024",
+  "permission_settings": "本次未独立核对，不从旧轮次复制",
+  "product_version": "本次未独立确认",
+  "observation_layer": "原生会话首次工具返回；没有独立核验完整模型请求",
+  "skills": "按项目约定不新增用户Skill，不宣称已排除原生Skill差异",
+  "generator_run_by_evaluator": false
+}

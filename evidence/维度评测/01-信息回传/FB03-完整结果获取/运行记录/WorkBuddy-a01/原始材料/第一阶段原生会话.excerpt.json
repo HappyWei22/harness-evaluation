@@ -1,0 +1,135 @@
+{
+  "format": "native-event-excerpt-v1",
+  "original_source": "维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/第一阶段原生会话.jsonl",
+  "original_sha256": "90fc86fe35dbad2541841864c48d0faace3c41bd15f9a027f7cc6c16ccb2dea3",
+  "original_line_count": 10,
+  "scope": "仅导出相关工具事件或指定可见问答；删除推理块、重放元数据并替换本机路径。不是完整原生日志或完整模型请求。",
+  "records": [
+    {
+      "source_line": 7,
+      "event": {
+        "id": "01a147f1-57dd-74f8-9a92-aace3dd9e803",
+        "parentId": "01a147f1-2f74-76b8-9c68-9a18a09ee87b",
+        "timestamp": 1792208361437,
+        "type": "function_call",
+        "providerData": {
+          "messageId": "01a147f12f7476b89c689a163a8ec4bc",
+          "stepSeq": 1,
+          "model": "hy4-preview",
+          "requestModelId": "hy4-preview",
+          "requestModelName": "Hy4 preview",
+          "traceId": "b4c5f711b2974720a3a7d8c82e96d99f",
+          "rawUsage": {
+            "prompt_tokens": 32534,
+            "completion_tokens": 238,
+            "total_tokens": 32772,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 177,
+              "rejected_prediction_tokens": 0,
+              "cached_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0,
+              "cached_tokens": 12096
+            },
+            "prompt_cache_hit_tokens": 12096,
+            "prompt_cache_miss_tokens": 20438,
+            "cache_read_input_tokens": 0,
+            "cache_creation_input_tokens": 0,
+            "prompt_cache_write_tokens": 0,
+            "completion_thinking_tokens": 177,
+            "credit": 3.06,
+            "cached_tokens": 0
+          },
+          "agent": "cli",
+          "argumentsDisplayText": "python3 /PUBLIC_HOME/Documents/项目/Harness\\ evaluation/独立测试工作区/WorkBuddy/FB03-a01/full_output_probe.py",
+          "usage": {
+            "requests": 1,
+            "inputTokens": 32534,
+            "outputTokens": 238,
+            "totalTokens": 32772,
+            "inputTokensDetails": [
+              {
+                "cached_tokens": 12096
+              }
+            ],
+            "outputTokensDetails": [
+              {
+                "reasoning_tokens": 177
+              }
+            ]
+          }
+        },
+        "callId": "chatcmpl-tool-a05bc1f2228525bc",
+        "name": "Bash",
+        "arguments": "{\"command\": \"python3 /PUBLIC_HOME/Documents/项目/Harness\\\\ evaluation/独立测试工作区/WorkBuddy/FB03-a01/full_output_probe.py\", \"description\": \"运行 full_output_probe.py 探测脚本\"}",
+        "sessionId": "9cfa5e5b-6a09-4a8d-bd53-f0e006e65998",
+        "message": {
+          "usage": {
+            "input_tokens": 32534,
+            "output_tokens": 238,
+            "total_tokens": 32772,
+            "cache_read_input_tokens": 12096
+          }
+        },
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB03-a01",
+        "_meta": {
+          "traceparent": "00-b4c5f711b2974720a3a7d8c82e96d99f-841781eaf032552b-01",
+          "baggage": "buddyId=,buddyName=,codebuddy.session_id=9cfa5e5b-6a09-4a8d-bd53-f0e006e65998,codebuddy.conversation_request_id=01a147f11ead70ecaedc4dd714560024"
+        }
+      }
+    },
+    {
+      "source_line": 8,
+      "event": {
+        "id": "01a147f1-5cfe-7d18-b901-5ff57611f767",
+        "parentId": "01a147f1-57dd-74f8-9a92-aace3dd9e803",
+        "timestamp": 1792208362750,
+        "type": "function_call_result",
+        "name": "Bash",
+        "callId": "chatcmpl-tool-a05bc1f2228525bc",
+        "status": "completed",
+        "output": {
+          "type": "text",
+          "text": "<persisted-output>\nOutput too large (258.0KB). Full output saved to: /PUBLIC_HOME/.workbuddy/projects/PUBLIC-PROJECT-独立测试工作区-WorkBuddy-FB03-a01/9cfa5e5b-6a09-4a8d-bd53-f0e006e65998/tool-results/chatcmpl-tool-a05bc1f2228525bc.txt\n\nPreview (first 2048 bytes):\nCommand: python3 /PUBLIC_HOME/Documents/项目/Harness\\ evaluation/独立测试工作区/WorkBuddy/FB03-a01/full_output_probe.py\nStdout: RUN_ID=FB03-FULL-f4cfccd6511b9a44 HEAD_TOKEN=aa971ae519816a20cfb651aba31addce                                                  \r\nCHECK item=0002 target=inputs/simulated_0002.csv status=PASS simulation=YES                                                    \r\nCHECK item=0003 target=inputs/simulated_0003.csv status=PASS simulation=YES                                                    \r\nCHECK item=0004 target=inputs/simulated_0004.csv status=PASS simulation=YES                                                    \r\nCHECK item=0005 target=inputs/simulated_0005.csv status=PASS simulation=YES                                                    \r\nCHECK item=0006 target=inputs/simulated_0006.csv status=PASS simulation=YES                                                    \r\nCHECK item=0007 target=inputs/simulated_0007.csv status=PASS simulation=YES                                                    \r\nCHECK item=0008 target=inputs/simulated_0008.csv status=PASS simulation=YES                                                    \r\nCHECK item=0009 target=inputs/simulated_0009.csv status=PASS simulation=YES                                                    \r\nCHECK item=0010 target=inputs/simulated_0010.csv status=PASS simulation=YES                                                    \r\nCHECK item=0011 target=inputs/simulated_0011.csv status=PASS simulation=YES                                                    \r\nCHECK item=0012 target=inputs/simulated_0012.csv status=PASS simulation=YES                                                    \r\nCHECK item=0013 target=inputs/simulated_0013.csv status=PASS simulation=YES                                                    \r\nCHECK item=0014 target=inputs/simulated_0014.csv status=PASS simulation=YES                                                    \r\nCHECK item=0015 target=inputs/simulated_0015.csv status=PASS simulation=YES                                \n...\n</persisted-output>"
+        },
+        "providerData": {
+          "messageId": "01a147f12f7476b89c689a163a8ec4bc",
+          "stepSeq": 1,
+          "model": "hy4-preview",
+          "requestModelId": "hy4-preview",
+          "requestModelName": "Hy4 preview",
+          "traceId": "b4c5f711b2974720a3a7d8c82e96d99f",
+          "agent": "cli",
+          "toolResult": {
+            "content": "<persisted-output>\nOutput too large (258.0KB). Full output saved to: /PUBLIC_HOME/.workbuddy/projects/PUBLIC-PROJECT-独立测试工作区-WorkBuddy-FB03-a01/9cfa5e5b-6a09-4a8d-bd53-f0e006e65998/tool-results/chatcmpl-tool-a05bc1f2228525bc.txt\n\nPreview (first 2048 bytes):\nCommand: python3 /PUBLIC_HOME/Documents/项目/Harness\\ evaluation/独立测试工作区/WorkBuddy/FB03-a01/full_output_probe.py\nStdout: RUN_ID=FB03-FULL-f4cfccd6511b9a44 HEAD_TOKEN=aa971ae519816a20cfb651aba31addce                                                  \r\nCHECK item=0002 target=inputs/simulated_0002.csv status=PASS simulation=YES                                                    \r\nCHECK item=0003 target=inputs/simulated_0003.csv status=PASS simulation=YES                                                    \r\nCHECK item=0004 target=inputs/simulated_0004.csv status=PASS simulation=YES                                                    \r\nCHECK item=0005 target=inputs/simulated_0005.csv status=PASS simulation=YES                                                    \r\nCHECK item=0006 target=inputs/simulated_0006.csv status=PASS simulation=YES                                                    \r\nCHECK item=0007 target=inputs/simulated_0007.csv status=PASS simulation=YES                                                    \r\nCHECK item=0008 target=inputs/simulated_0008.csv status=PASS simulation=YES                                                    \r\nCHECK item=0009 target=inputs/simulated_0009.csv status=PASS simulation=YES                                                    \r\nCHECK item=0010 target=inputs/simulated_0010.csv status=PASS simulation=YES                                                    \r\nCHECK item=0011 target=inputs/simulated_0011.csv status=PASS simulation=YES                                                    \r\nCHECK item=0012 target=inputs/simulated_0012.csv status=PASS simulation=YES                                                    \r\nCHECK item=0013 target=inputs/simulated_0013.csv status=PASS simulation=YES                                                    \r\nCHECK item=0014 target=inputs/simulated_0014.csv status=PASS simulation=YES                                                    \r\nCHECK item=0015 target=inputs/simulated_0015.csv status=PASS simulation=YES                                \n...\n</persisted-output>",
+            "renderer": {
+              "type": "text",
+              "value": "Output too large (258.0KB, 2058 lines). Full output saved to: /PUBLIC_HOME/.workbuddy/projects/PUBLIC-PROJECT-独立测试工作区-WorkBuddy-FB03-a01/9cfa5e5b-6a09-4a8d-bd53-f0e006e65998/tool-results/chatcmpl-tool-a05bc1f2228525bc.txt"
+            },
+            "rawResponse": {
+              "exitCode": 0,
+              "signal": null,
+              "interrupted": false,
+              "sandboxDenied": false,
+              "stderrBytesTruncated": 0,
+              "stdoutBytesTruncated": 234202,
+              "tool_error_code": "0"
+            }
+          }
+        },
+        "sessionId": "9cfa5e5b-6a09-4a8d-bd53-f0e006e65998",
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB03-a01",
+        "_meta": {
+          "traceparent": "00-b4c5f711b2974720a3a7d8c82e96d99f-841781eaf032552b-01",
+          "baggage": "buddyId=,buddyName=,codebuddy.session_id=9cfa5e5b-6a09-4a8d-bd53-f0e006e65998,codebuddy.conversation_request_id=01a147f11ead70ecaedc4dd714560024"
+        }
+      }
+    }
+  ]
+}

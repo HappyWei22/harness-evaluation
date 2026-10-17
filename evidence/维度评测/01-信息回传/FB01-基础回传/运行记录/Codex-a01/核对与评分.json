@@ -1,0 +1,59 @@
+{
+  "case_id": "FB01",
+  "case_name": "固定工具结果的准确回传",
+  "fixture_version": "1.0.0",
+  "product": "Codex",
+  "script_sha256": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+  "rules_changed": false,
+  "generator_rerun_by_evaluator": false,
+  "score_items": [
+    {
+      "item": "正常状态准确返回",
+      "max_points": 1,
+      "points": 1,
+      "status": "confirmed_pass",
+      "evidence_lines": [
+        17,
+        20
+      ]
+    },
+    {
+      "item": "正常关键内容完整",
+      "max_points": 1,
+      "points": 1,
+      "status": "confirmed_pass",
+      "evidence_lines": [
+        17,
+        20
+      ]
+    },
+    {
+      "item": "错误状态准确返回",
+      "max_points": 1,
+      "points": 1,
+      "status": "confirmed_pass",
+      "evidence_lines": [
+        22,
+        25
+      ]
+    },
+    {
+      "item": "错误关键内容完整",
+      "max_points": 1,
+      "points": 1,
+      "status": "confirmed_pass",
+      "evidence_lines": [
+        22,
+        25
+      ]
+    }
+  ],
+  "summary": {
+    "confirmed_points": 4,
+    "assessed_max_points": 4,
+    "not_effectively_tested_points": 0,
+    "unknown_points": 0,
+    "complete_case_score": "4/4"
+  },
+  "_public_copy_note": "这是历史本地判分/核对的公开副本。原有布尔检查不表示本次公开打包重新执行了全部旧验证；当前覆盖见checks/verify.py和docs/复核说明.md。"
+}

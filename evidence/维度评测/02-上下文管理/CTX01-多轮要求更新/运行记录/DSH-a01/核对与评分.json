@@ -1,0 +1,174 @@
+{
+  "case_id": "CTX01",
+  "case_name": "多轮要求更新",
+  "case_version": "1.0.0",
+  "product": "DSH",
+  "run_label": "DSH-CTX01-a01",
+  "session_id": "session-f79f8400-2e0c-490f-befd-3d09f2b0c49a",
+  "date": "2026-10-17",
+  "scoring_subject": "原生产品上下文表现",
+  "observation_layer": "原生日志的三轮真实用户消息与第三轮首次最终回复",
+  "score_items": [
+    {
+      "id": "CTX01-01",
+      "name": "保留未修改的编号",
+      "max_points": 1,
+      "points": 1,
+      "status": "confirmed_product_performance_pass",
+      "expected": "ACT-27",
+      "actual": "ACT-27",
+      "evidence": [
+        {
+          "path": "原始材料/session.v4.jsonl",
+          "lines": [
+            10,
+            27,
+            36,
+            38
+          ],
+          "locator": "输入取source.kind=user；输出仅取content.type=text，不用reasoning块补答案"
+        },
+        {
+          "path": "原始材料/预期记录.json",
+          "field": "活动编号"
+        }
+      ],
+      "comparison_method": "核对三轮原始用户正文及先后顺序，读取第38行第三轮首次assistant文本并解析JSON，比较活动编号。",
+      "confidence_basis": "原生导出保留初始条件、更新要求及首次最终回复；活动编号实际值与预先保存的预期一致，第三轮未给答案。",
+      "attribution_scope": "确认本次产品上下文表现，不能单凭正确值确定模型、原生Skill与Harness各自贡献。",
+      "limits": "完整主任务请求未独立核验；第二轮回复自身已汇总全部有效值；只有三轮短对话，未验证长上下文或压缩。"
+    },
+    {
+      "id": "CTX01-02",
+      "name": "保留未修改的币种",
+      "max_points": 1,
+      "points": 1,
+      "status": "confirmed_product_performance_pass",
+      "expected": "CNY",
+      "actual": "CNY",
+      "evidence": [
+        {
+          "path": "原始材料/session.v4.jsonl",
+          "lines": [
+            10,
+            27,
+            36,
+            38
+          ],
+          "locator": "输入取source.kind=user；输出仅取content.type=text，不用reasoning块补答案"
+        },
+        {
+          "path": "原始材料/预期记录.json",
+          "field": "币种"
+        }
+      ],
+      "comparison_method": "核对三轮原始用户正文及先后顺序，读取第38行第三轮首次assistant文本并解析JSON，比较币种。",
+      "confidence_basis": "原生导出保留初始条件、更新要求及首次最终回复；币种实际值与预先保存的预期一致，第三轮未给答案。",
+      "attribution_scope": "确认本次产品上下文表现，不能单凭正确值确定模型、原生Skill与Harness各自贡献。",
+      "limits": "完整主任务请求未独立核验；第二轮回复自身已汇总全部有效值；只有三轮短对话，未验证长上下文或压缩。"
+    },
+    {
+      "id": "CTX01-03",
+      "name": "采用更新后的地点",
+      "max_points": 1,
+      "points": 1,
+      "status": "confirmed_product_performance_pass",
+      "expected": "图书馆",
+      "actual": "图书馆",
+      "evidence": [
+        {
+          "path": "原始材料/session.v4.jsonl",
+          "lines": [
+            10,
+            27,
+            36,
+            38
+          ],
+          "locator": "输入取source.kind=user；输出仅取content.type=text，不用reasoning块补答案"
+        },
+        {
+          "path": "原始材料/预期记录.json",
+          "field": "地点"
+        }
+      ],
+      "comparison_method": "核对三轮原始用户正文及先后顺序，读取第38行第三轮首次assistant文本并解析JSON，比较地点。",
+      "confidence_basis": "原生导出保留初始条件、更新要求及首次最终回复；地点实际值与预先保存的预期一致，第三轮未给答案。",
+      "attribution_scope": "确认本次产品上下文表现，不能单凭正确值确定模型、原生Skill与Harness各自贡献。",
+      "limits": "完整主任务请求未独立核验；第二轮回复自身已汇总全部有效值；只有三轮短对话，未验证长上下文或压缩。"
+    },
+    {
+      "id": "CTX01-04",
+      "name": "采用更新后的预算",
+      "max_points": 1,
+      "points": 1,
+      "status": "confirmed_product_performance_pass",
+      "expected": 4500,
+      "actual": 4500,
+      "evidence": [
+        {
+          "path": "原始材料/session.v4.jsonl",
+          "lines": [
+            10,
+            27,
+            36,
+            38
+          ],
+          "locator": "输入取source.kind=user；输出仅取content.type=text，不用reasoning块补答案"
+        },
+        {
+          "path": "原始材料/预期记录.json",
+          "field": "预算"
+        }
+      ],
+      "comparison_method": "核对三轮原始用户正文及先后顺序，读取第38行第三轮首次assistant文本并解析JSON，比较预算。",
+      "confidence_basis": "原生导出保留初始条件、更新要求及首次最终回复；预算实际值与预先保存的预期一致，第三轮未给答案。",
+      "attribution_scope": "确认本次产品上下文表现，不能单凭正确值确定模型、原生Skill与Harness各自贡献。",
+      "limits": "完整主任务请求未独立核验；第二轮回复自身已汇总全部有效值；只有三轮短对话，未验证长上下文或压缩。"
+    }
+  ],
+  "summary": {
+    "confirmed_points": 4,
+    "assessed_maximum": 4,
+    "failed_points": 0,
+    "unknown_points": 0,
+    "not_effectively_tested_points": 0,
+    "case_score": "4/4",
+    "context_dimension_maximum": 20,
+    "complex_points_not_tested": 16,
+    "not_a_complete_dimension_score": true
+  },
+  "checks": {
+    "three_real_user_messages": true,
+    "message_lines": [
+      10,
+      27,
+      36
+    ],
+    "assistant_reply_lines": [
+      20,
+      29,
+      38
+    ],
+    "prompt_bodies_match_after_trailing_newline_normalization": true,
+    "turn_order_verified": true,
+    "third_prompt_contains_no_expected_values": true,
+    "final_values_match_expected": true,
+    "native_tool_call_count": 0,
+    "native_tool_result_count": 0,
+    "context_injected_user_message_lines": [
+      11,
+      12
+    ],
+    "injected_messages_are_not_human_extra_rounds": true,
+    "intermediate_repetition_observed": true,
+    "first_reply_repeats_initial_fields": true,
+    "second_reply_summarizes_all_updated_fields": true,
+    "format_note": "最终回复为JSON代码块，规则允许，不扣字段表现分。",
+    "no_compression_event_observed": true,
+    "complete_main_model_request_verified": false,
+    "evaluator_reran_product": false
+  },
+  "harness_causal_attribution": "未确定独立贡献；没有完整主任务模型请求或单因素对照",
+  "rules_changed": false,
+  "_public_copy_note": "这是历史本地判分/核对的公开副本。原有布尔检查不表示本次公开打包重新执行了全部旧验证；当前覆盖见checks/verify.py和docs/复核说明.md。"
+}

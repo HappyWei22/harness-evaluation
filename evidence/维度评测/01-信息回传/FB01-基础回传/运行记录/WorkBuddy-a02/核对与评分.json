@@ -1,0 +1,75 @@
+{
+  "case_id": "FB01",
+  "case_name": "固定工具结果的准确回传",
+  "product": "WorkBuddy",
+  "attempt": "a02",
+  "fixture_version": "1.0.0",
+  "rules_changed": false,
+  "prompt_clarified_vs_a01": true,
+  "score_items": [
+    {
+      "item": "正常状态准确返回",
+      "max_points": 1,
+      "points": 1,
+      "status": "confirmed_pass",
+      "evidence_lines": [
+        7,
+        8
+      ]
+    },
+    {
+      "item": "正常关键内容完整",
+      "max_points": 1,
+      "points": 1,
+      "status": "confirmed_pass",
+      "evidence_lines": [
+        7,
+        8
+      ],
+      "receipt_run_id": "FB01-NORMAL-02a899b711dd7446"
+    },
+    {
+      "item": "错误状态准确返回",
+      "max_points": 1,
+      "points": null,
+      "status": "not_effectively_tested",
+      "reason": "保存回执失败，提前退出20；原定错误场景未执行，按既有规则留空。实际退出20得到保留，作为补充观察。"
+    },
+    {
+      "item": "错误关键内容完整",
+      "max_points": 1,
+      "points": null,
+      "status": "not_effectively_tested",
+      "reason": "脚本在写出预设错误字段前提前退出；没有证据证明Harness丢失这些字段。"
+    }
+  ],
+  "summary": {
+    "confirmed_points": 2,
+    "assessed_max_points": 2,
+    "not_effectively_tested_points": 2,
+    "unknown_points": 0,
+    "confirmed_failed_points": 0,
+    "complete_case_score": null
+  },
+  "supplementary_observation": {
+    "actual_failure_code": 20,
+    "native_failure_retained": true,
+    "counted_in_preset_error_score": false
+  },
+  "attribution": {
+    "known": "保存回执阶段发生文件操作异常，预设错误输出未执行",
+    "unknown": "具体文件异常及责任组件；未获得errno或异常堆栈",
+    "unsupported_claim": "不能把预设字段未输出解释为Harness反馈丢失"
+  },
+  "checks": {
+    "script_matches_original": true,
+    "two_exact_python_calls_once_each": true,
+    "calls_and_results_paired": true,
+    "normal_exit_code_matches_receipt": true,
+    "normal_fields_match_receipt": true,
+    "error_returns_fixture_setup_failure_and_20": true,
+    "error_receipt_absent_at_review": true,
+    "generator_run_by_evaluator": false
+  },
+  "_public_copy_note": "这是历史本地判分/核对的公开副本。原有布尔检查不表示本次公开打包重新执行了全部旧验证；当前覆盖见checks/verify.py和docs/复核说明.md。"
+}

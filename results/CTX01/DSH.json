@@ -1,0 +1,79 @@
+{
+  "case_id": "CTX01",
+  "product": "DSH",
+  "label": "DSH",
+  "run_label": "DSH-CTX01-a01",
+  "points": 4,
+  "maximum": 4,
+  "messages": [
+    {
+      "role": "user",
+      "text": "我们分三轮登记一项校园活动。本题只需在对话中登记和更新活动信息。\n\n请先记录以下初始信息：\n活动编号：ACT-27\n地点：A教学楼\n预算：3000\n币种：CNY\n\n本轮只确认收到，暂不输出最终活动记录，等待后续修改。",
+      "source_lines": [
+        10
+      ],
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/DSH-a01/原始材料/session.v4.excerpt.json"
+    },
+    {
+      "role": "assistant",
+      "text": "已收到初始信息，本轮仅作登记确认：\n\n| 字段 | 登记值 |\n|---|---|\n| 活动编号 | ACT-27 |\n| 地点 | A教学楼 |\n| 预算 | 3000 |\n| 币种 | CNY |\n\n以上四项已记录为当前活动信息，本轮不输出最终活动记录。\n\n请提供下一轮需要修改的内容；收到后我会更新对应字段并再次确认，待三轮登记全部完成后，再整理并输出最终活动记录。",
+      "source_lines": [
+        20
+      ],
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/DSH-a01/原始材料/session.v4.excerpt.json"
+    },
+    {
+      "role": "user",
+      "text": "更新刚才的活动信息：\n地点改为图书馆，预算改为4500。\n其他信息保持不变。\n\n本轮只确认收到，暂不输出最终活动记录。",
+      "source_lines": [
+        27
+      ],
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/DSH-a01/原始材料/session.v4.excerpt.json"
+    },
+    {
+      "role": "assistant",
+      "text": "已收到更新，本轮仅作变更确认：\n\n**更新后的当前活动信息**\n\n| 字段 | 更新后登记值 | 说明 |\n|---|---|---|\n| 活动编号 | ACT-27 | 保持不变 |\n| 地点 | 图书馆 | 已变更（原 A教学楼） |\n| 预算 | 4500 | 已变更（原 3000） |\n| 币种 | CNY | 保持不变 |\n\n以上变更已记录，本轮不输出最终活动记录。\n\n请提供第三轮的修改内容；完成后我将整理并输出最终活动记录。",
+      "source_lines": [
+        29
+      ],
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/DSH-a01/原始材料/session.v4.excerpt.json"
+    },
+    {
+      "role": "user",
+      "text": "请根据本会话目前有效的信息，输出最终活动记录。\n\n只输出一个JSON对象，字段名固定为“活动编号”“地点”“预算”“币种”。预算使用数字，其他字段使用字符串。保留编号、地点和币种的有效写法，不新增条件。",
+      "source_lines": [
+        36
+      ],
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/DSH-a01/原始材料/session.v4.excerpt.json"
+    },
+    {
+      "role": "assistant",
+      "text": "```json\n{\n  \"活动编号\": \"ACT-27\",\n  \"地点\": \"图书馆\",\n  \"预算\": 4500,\n  \"币种\": \"CNY\"\n}\n```",
+      "source_lines": [
+        38
+      ],
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/DSH-a01/原始材料/session.v4.excerpt.json"
+    }
+  ],
+  "configuration": {
+    "session_id": "session-f79f8400-2e0c-490f-befd-3d09f2b0c49a",
+    "cwd": "/PUBLIC_PROJECT/独立测试工作区/DSH/CTX01-a01",
+    "log_format_version": 4,
+    "product_version": "未独立取得，不能把日志格式版本4当客户端版本",
+    "provider": "deepseek-account",
+    "model": "deepseek-flash",
+    "reasoning_effort": "high",
+    "max_tokens_config": 256000,
+    "context_window_metadata": 1000000,
+    "permission_preset": "workspace-write",
+    "sandbox_mode": "workspace-write",
+    "approval_policy": "ask",
+    "skill_catalog_line": 12,
+    "explicit_skill_tool_calls": 0,
+    "complete_main_model_request_verified": false,
+    "compression_observed": false,
+    "scope": "主任务完整请求未取得；没有压缩事件不证明所有内部处理都不存在。"
+  },
+  "source_score": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/DSH-a01/核对与评分.json",
+  "limits": "三轮短对话；没有验证压缩或复杂16分；完整模型请求未核验。"
+}

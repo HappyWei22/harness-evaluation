@@ -1,0 +1,232 @@
+{
+  "case_id": "CTX01",
+  "case_name": "多轮要求更新",
+  "product": "WorkBuddy",
+  "run_label": "WorkBuddy-CTX01-a01",
+  "session_or_share": "2b902466-0336-49c5-8dee-e7431d922231",
+  "date": "2026-10-17",
+  "case_version": "1.0.0",
+  "score_items": [
+    {
+      "id": "CTX01-01",
+      "name": "保留未修改的编号",
+      "field": "活动编号",
+      "points": 1,
+      "max_points": 1,
+      "expected": "ACT-27",
+      "actual": "ACT-27",
+      "status": "confirmed_product_performance_pass",
+      "evidence": [
+        {
+          "path": "原始材料/原生会话.jsonl",
+          "lines": [
+            3
+          ],
+          "role": "user",
+          "round": 1
+        },
+        {
+          "path": "原始材料/原生会话.jsonl",
+          "lines": [
+            8
+          ],
+          "role": "user",
+          "round": 2
+        },
+        {
+          "path": "原始材料/原生会话.jsonl",
+          "lines": [
+            12
+          ],
+          "role": "user",
+          "round": 3
+        },
+        {
+          "path": "原始材料/原生会话.jsonl",
+          "lines": [
+            15
+          ],
+          "role": "assistant",
+          "round": 3
+        }
+      ],
+      "comparison_method": "先核对三轮顺序和提示词内容，再比较第三轮所示最终记录的活动编号。",
+      "confidence": "较高：本次可见产品表现；内部责任未知",
+      "confidence_basis": "原生会话记录覆盖初始条件、更新要求、第三轮要求和最终值；第三轮未追加答案；实际活动编号与预期相同。",
+      "attribution_scope": "只确认本次产品上下文表现；模型、原生Skill与Harness的独立贡献未知。",
+      "limits": "仅一次三轮短对话，未验证历史压缩和长上下文；完整主任务模型请求未独立核验，模型和原生Skill未统一。第二轮回复已汇总四个有效值，第三轮可直接利用。"
+    },
+    {
+      "id": "CTX01-02",
+      "name": "保留未修改的币种",
+      "field": "币种",
+      "points": 1,
+      "max_points": 1,
+      "expected": "CNY",
+      "actual": "CNY",
+      "status": "confirmed_product_performance_pass",
+      "evidence": [
+        {
+          "path": "原始材料/原生会话.jsonl",
+          "lines": [
+            3
+          ],
+          "role": "user",
+          "round": 1
+        },
+        {
+          "path": "原始材料/原生会话.jsonl",
+          "lines": [
+            8
+          ],
+          "role": "user",
+          "round": 2
+        },
+        {
+          "path": "原始材料/原生会话.jsonl",
+          "lines": [
+            12
+          ],
+          "role": "user",
+          "round": 3
+        },
+        {
+          "path": "原始材料/原生会话.jsonl",
+          "lines": [
+            15
+          ],
+          "role": "assistant",
+          "round": 3
+        }
+      ],
+      "comparison_method": "先核对三轮顺序和提示词内容，再比较第三轮所示最终记录的币种。",
+      "confidence": "较高：本次可见产品表现；内部责任未知",
+      "confidence_basis": "原生会话记录覆盖初始条件、更新要求、第三轮要求和最终值；第三轮未追加答案；实际币种与预期相同。",
+      "attribution_scope": "只确认本次产品上下文表现；模型、原生Skill与Harness的独立贡献未知。",
+      "limits": "仅一次三轮短对话，未验证历史压缩和长上下文；完整主任务模型请求未独立核验，模型和原生Skill未统一。第二轮回复已汇总四个有效值，第三轮可直接利用。"
+    },
+    {
+      "id": "CTX01-03",
+      "name": "采用更新后的地点",
+      "field": "地点",
+      "points": 1,
+      "max_points": 1,
+      "expected": "图书馆",
+      "actual": "图书馆",
+      "status": "confirmed_product_performance_pass",
+      "evidence": [
+        {
+          "path": "原始材料/原生会话.jsonl",
+          "lines": [
+            3
+          ],
+          "role": "user",
+          "round": 1
+        },
+        {
+          "path": "原始材料/原生会话.jsonl",
+          "lines": [
+            8
+          ],
+          "role": "user",
+          "round": 2
+        },
+        {
+          "path": "原始材料/原生会话.jsonl",
+          "lines": [
+            12
+          ],
+          "role": "user",
+          "round": 3
+        },
+        {
+          "path": "原始材料/原生会话.jsonl",
+          "lines": [
+            15
+          ],
+          "role": "assistant",
+          "round": 3
+        }
+      ],
+      "comparison_method": "先核对三轮顺序和提示词内容，再比较第三轮所示最终记录的地点。",
+      "confidence": "较高：本次可见产品表现；内部责任未知",
+      "confidence_basis": "原生会话记录覆盖初始条件、更新要求、第三轮要求和最终值；第三轮未追加答案；实际地点与预期相同。",
+      "attribution_scope": "只确认本次产品上下文表现；模型、原生Skill与Harness的独立贡献未知。",
+      "limits": "仅一次三轮短对话，未验证历史压缩和长上下文；完整主任务模型请求未独立核验，模型和原生Skill未统一。第二轮回复已汇总四个有效值，第三轮可直接利用。"
+    },
+    {
+      "id": "CTX01-04",
+      "name": "采用更新后的预算",
+      "field": "预算",
+      "points": 1,
+      "max_points": 1,
+      "expected": 4500,
+      "actual": 4500,
+      "status": "confirmed_product_performance_pass",
+      "evidence": [
+        {
+          "path": "原始材料/原生会话.jsonl",
+          "lines": [
+            3
+          ],
+          "role": "user",
+          "round": 1
+        },
+        {
+          "path": "原始材料/原生会话.jsonl",
+          "lines": [
+            8
+          ],
+          "role": "user",
+          "round": 2
+        },
+        {
+          "path": "原始材料/原生会话.jsonl",
+          "lines": [
+            12
+          ],
+          "role": "user",
+          "round": 3
+        },
+        {
+          "path": "原始材料/原生会话.jsonl",
+          "lines": [
+            15
+          ],
+          "role": "assistant",
+          "round": 3
+        }
+      ],
+      "comparison_method": "先核对三轮顺序和提示词内容，再比较第三轮所示最终记录的预算。",
+      "confidence": "较高：本次可见产品表现；内部责任未知",
+      "confidence_basis": "原生会话记录覆盖初始条件、更新要求、第三轮要求和最终值；第三轮未追加答案；实际预算与预期相同。",
+      "attribution_scope": "只确认本次产品上下文表现；模型、原生Skill与Harness的独立贡献未知。",
+      "limits": "仅一次三轮短对话，未验证历史压缩和长上下文；完整主任务模型请求未独立核验，模型和原生Skill未统一。第二轮回复已汇总四个有效值，第三轮可直接利用。"
+    }
+  ],
+  "summary": {
+    "case_score": "4/4",
+    "confirmed_points": 4,
+    "unknown_points": 0,
+    "context_dimension_maximum": 20,
+    "complex_points_not_tested": 16,
+    "not_a_complete_dimension_score": true
+  },
+  "protocol_checks": {
+    "three_round_order": true,
+    "prompt_equivalence_under_documented_normalization": [
+      true,
+      true,
+      true
+    ],
+    "third_prompt_contains_no_expected_values": true,
+    "four_values_match": true,
+    "exact_byte_identical_prompts_claimed": false
+  },
+  "deviations": [
+    "第二轮开头额外含```text，第三轮末尾含```；三轮空行与原提示不同。逐句检查任务内容、值和顺序未改变，第三轮未补答案，按内容等价接受；不声称逐字一致。"
+  ],
+  "harness_causal_attribution": "未知：未排除模型、原生Skill影响，未做组件对照。",
+  "rules_changed": false,
+  "_public_copy_note": "这是历史本地判分/核对的公开副本。原有布尔检查不表示本次公开打包重新执行了全部旧验证；当前覆盖见checks/verify.py和docs/复核说明.md。"
+}

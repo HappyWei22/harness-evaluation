@@ -1,0 +1,502 @@
+{
+  "format": "native-event-excerpt-v1",
+  "original_source": "维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/原生会话.jsonl",
+  "original_sha256": "844ac7872fdd71d4a2d8ceada18bf38705dcd7407ea0e7adacea42a2270d8bce",
+  "original_line_count": 20,
+  "scope": "仅导出相关工具事件或指定可见问答；删除推理块、重放元数据并替换本机路径。不是完整原生日志或完整模型请求。",
+  "records": [
+    {
+      "source_line": 7,
+      "event": {
+        "id": "01a14560-cbc8-79a8-a689-57b823aebdfe",
+        "parentId": "01a14560-8f82-705c-a748-2689ea11a189",
+        "timestamp": 1792165333960,
+        "type": "function_call",
+        "providerData": {
+          "messageId": "01a145608f82705ca7482687c168ed90",
+          "stepSeq": 1,
+          "model": "hy4-preview",
+          "requestModelId": "hy4-preview",
+          "requestModelName": "Hy4 preview",
+          "traceId": "5d559452f29b49f4939b07c53c884b0a",
+          "rawUsage": {
+            "prompt_tokens": 32598,
+            "completion_tokens": 295,
+            "total_tokens": 32893,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 234,
+              "rejected_prediction_tokens": 0,
+              "cached_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0,
+              "cached_tokens": 11264
+            },
+            "prompt_cache_hit_tokens": 11264,
+            "prompt_cache_miss_tokens": 21334,
+            "cache_read_input_tokens": 0,
+            "cache_creation_input_tokens": 0,
+            "prompt_cache_write_tokens": 0,
+            "completion_thinking_tokens": 234,
+            "credit": 0,
+            "cached_tokens": 0
+          },
+          "agent": "cli",
+          "argumentsDisplayText": "python3 feedback_probe.py normal",
+          "usage": {
+            "requests": 1,
+            "inputTokens": 32598,
+            "outputTokens": 295,
+            "totalTokens": 32893,
+            "inputTokensDetails": [
+              {
+                "cached_tokens": 11264
+              }
+            ],
+            "outputTokensDetails": [
+              {
+                "reasoning_tokens": 234
+              }
+            ]
+          }
+        },
+        "callId": "chatcmpl-tool-bb8fb7d9d9c65a9c",
+        "name": "Bash",
+        "arguments": "{\"command\": \"python3 feedback_probe.py normal\", \"description\": \"运行正常模式探针脚本\", \"cwd\": \"/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02\"}",
+        "sessionId": "3d0e2fd5-b213-455b-9b00-bd6a40ee4f39",
+        "message": {
+          "usage": {
+            "input_tokens": 32598,
+            "output_tokens": 295,
+            "total_tokens": 32893,
+            "cache_read_input_tokens": 11264
+          }
+        },
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02",
+        "_meta": {
+          "traceparent": "00-5d559452f29b49f4939b07c53c884b0a-521bfeb3ef7fac1f-01",
+          "baggage": "buddyId=,buddyName=,codebuddy.session_id=3d0e2fd5-b213-455b-9b00-bd6a40ee4f39,codebuddy.conversation_request_id=01a14560827b7fd997aebc2e0276a0b2"
+        }
+      }
+    },
+    {
+      "source_line": 8,
+      "event": {
+        "id": "01a14560-cf83-7574-865e-0ebc9b6944fb",
+        "parentId": "01a14560-cbc8-79a8-a689-57b823aebdfe",
+        "timestamp": 1792165334915,
+        "type": "function_call_result",
+        "name": "Bash",
+        "callId": "chatcmpl-tool-bb8fb7d9d9c65a9c",
+        "status": "completed",
+        "output": {
+          "type": "text",
+          "text": "Command: python3 feedback_probe.py normal\nStdout: RUN_ID=FB01-NORMAL-02a899b711dd7446\r\nROW_COUNT=37\r\nTOTAL_AMOUNT=12840.50\r\n\nStderr: (empty)\nExit Code: 0\nSignal: (none)"
+        },
+        "providerData": {
+          "messageId": "01a145608f82705ca7482687c168ed90",
+          "stepSeq": 1,
+          "model": "hy4-preview",
+          "requestModelId": "hy4-preview",
+          "requestModelName": "Hy4 preview",
+          "traceId": "5d559452f29b49f4939b07c53c884b0a",
+          "agent": "cli",
+          "toolResult": {
+            "content": "Command: python3 feedback_probe.py normal\nStdout: RUN_ID=FB01-NORMAL-02a899b711dd7446\r\nROW_COUNT=37\r\nTOTAL_AMOUNT=12840.50\r\n\nStderr: (empty)\nExit Code: 0\nSignal: (none)",
+            "renderer": {
+              "type": "text",
+              "value": "RUN_ID=FB01-NORMAL-02a899b711dd7446\r\nROW_COUNT=37\r\nTOTAL_AMOUNT=12840.50"
+            },
+            "rawResponse": {
+              "exitCode": 0,
+              "signal": null,
+              "interrupted": false,
+              "sandboxDenied": false,
+              "stderrBytesTruncated": 0,
+              "stdoutBytesTruncated": 0,
+              "tool_error_code": "0"
+            }
+          }
+        },
+        "sessionId": "3d0e2fd5-b213-455b-9b00-bd6a40ee4f39",
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02",
+        "_meta": {
+          "traceparent": "00-5d559452f29b49f4939b07c53c884b0a-521bfeb3ef7fac1f-01",
+          "baggage": "buddyId=,buddyName=,codebuddy.session_id=3d0e2fd5-b213-455b-9b00-bd6a40ee4f39,codebuddy.conversation_request_id=01a14560827b7fd997aebc2e0276a0b2"
+        }
+      }
+    },
+    {
+      "source_line": 10,
+      "event": {
+        "id": "01a14560-e710-71d2-9d79-1accdba255f8",
+        "parentId": "01a14560-d172-7b6b-b5ab-95fad1e06459",
+        "timestamp": 1792165340944,
+        "type": "function_call",
+        "providerData": {
+          "messageId": "01a14560d1727b6bb5ab95f8204ea7f8",
+          "stepSeq": 2,
+          "model": "hy4-preview",
+          "requestModelId": "hy4-preview",
+          "requestModelName": "Hy4 preview",
+          "traceId": "5d559452f29b49f4939b07c53c884b0a",
+          "rawUsage": {
+            "prompt_tokens": 32965,
+            "completion_tokens": 66,
+            "total_tokens": 33031,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 5,
+              "rejected_prediction_tokens": 0,
+              "cached_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0,
+              "cached_tokens": 31744
+            },
+            "prompt_cache_hit_tokens": 31744,
+            "prompt_cache_miss_tokens": 1221,
+            "cache_read_input_tokens": 0,
+            "cache_creation_input_tokens": 0,
+            "prompt_cache_write_tokens": 0,
+            "completion_thinking_tokens": 5,
+            "credit": 0,
+            "cached_tokens": 0
+          },
+          "agent": "cli",
+          "argumentsDisplayText": "python3 feedback_probe.py error",
+          "usage": {
+            "requests": 1,
+            "inputTokens": 32965,
+            "outputTokens": 66,
+            "totalTokens": 33031,
+            "inputTokensDetails": [
+              {
+                "cached_tokens": 31744
+              }
+            ],
+            "outputTokensDetails": [
+              {
+                "reasoning_tokens": 5
+              }
+            ]
+          }
+        },
+        "callId": "chatcmpl-tool-b1f9466970b2386f",
+        "name": "Bash",
+        "arguments": "{\"command\": \"python3 feedback_probe.py error\", \"description\": \"运行错误模式探针脚本\", \"cwd\": \"/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02\"}",
+        "sessionId": "3d0e2fd5-b213-455b-9b00-bd6a40ee4f39",
+        "message": {
+          "usage": {
+            "input_tokens": 32965,
+            "output_tokens": 66,
+            "total_tokens": 33031,
+            "cache_read_input_tokens": 31744
+          }
+        },
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02",
+        "_meta": {
+          "traceparent": "00-5d559452f29b49f4939b07c53c884b0a-521bfeb3ef7fac1f-01",
+          "baggage": "buddyId=,buddyName=,codebuddy.session_id=3d0e2fd5-b213-455b-9b00-bd6a40ee4f39,codebuddy.conversation_request_id=01a14560827b7fd997aebc2e0276a0b2"
+        }
+      }
+    },
+    {
+      "source_line": 11,
+      "event": {
+        "id": "01a14560-ea57-7be5-ac0d-76816e0e7375",
+        "parentId": "01a14560-e710-71d2-9d79-1accdba255f8",
+        "timestamp": 1792165341783,
+        "type": "function_call_result",
+        "name": "Bash",
+        "callId": "chatcmpl-tool-b1f9466970b2386f",
+        "status": "completed",
+        "output": {
+          "type": "text",
+          "text": "Command: python3 feedback_probe.py error\nStdout: FIXTURE_SETUP_ERROR: cannot save fixture receipt\r\n\nStderr: (empty)\nExit Code: 20\nSignal: (none)"
+        },
+        "providerData": {
+          "messageId": "01a14560d1727b6bb5ab95f8204ea7f8",
+          "stepSeq": 2,
+          "model": "hy4-preview",
+          "requestModelId": "hy4-preview",
+          "requestModelName": "Hy4 preview",
+          "traceId": "5d559452f29b49f4939b07c53c884b0a",
+          "agent": "cli",
+          "toolResult": {
+            "content": "Command: python3 feedback_probe.py error\nStdout: FIXTURE_SETUP_ERROR: cannot save fixture receipt\r\n\nStderr: (empty)\nExit Code: 20\nSignal: (none)",
+            "renderer": {
+              "type": "text",
+              "value": "FIXTURE_SETUP_ERROR: cannot save fixture receipt"
+            },
+            "rawResponse": {
+              "exitCode": 20,
+              "signal": null,
+              "interrupted": false,
+              "sandboxDenied": false,
+              "stderrBytesTruncated": 0,
+              "stdoutBytesTruncated": 0,
+              "tool_error_code": "8002",
+              "is_error": true,
+              "error": "Command: python3 feedback_probe.py error\nStdout: FIXTURE_SETUP_ERROR: cannot save fixture receipt\r\n\nStderr: (empty)\nExit Code: 20\nSignal: (none)"
+            }
+          }
+        },
+        "sessionId": "3d0e2fd5-b213-455b-9b00-bd6a40ee4f39",
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02",
+        "_meta": {
+          "traceparent": "00-5d559452f29b49f4939b07c53c884b0a-521bfeb3ef7fac1f-01",
+          "baggage": "buddyId=,buddyName=,codebuddy.session_id=3d0e2fd5-b213-455b-9b00-bd6a40ee4f39,codebuddy.conversation_request_id=01a14560827b7fd997aebc2e0276a0b2"
+        }
+      }
+    },
+    {
+      "source_line": 13,
+      "event": {
+        "id": "01a14561-332e-7d7c-b915-820e0e6cc071",
+        "parentId": "01a14560-ec3d-7560-95cb-777d53c219b5",
+        "timestamp": 1792165360430,
+        "type": "function_call",
+        "providerData": {
+          "messageId": "01a14560ec3d756095cb777b86767a13",
+          "stepSeq": 3,
+          "model": "hy4-preview",
+          "requestModelId": "hy4-preview",
+          "requestModelName": "Hy4 preview",
+          "traceId": "5d559452f29b49f4939b07c53c884b0a",
+          "rawUsage": {
+            "prompt_tokens": 33084,
+            "completion_tokens": 531,
+            "total_tokens": 33615,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 479,
+              "rejected_prediction_tokens": 0,
+              "cached_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0,
+              "cached_tokens": 32768
+            },
+            "prompt_cache_hit_tokens": 32768,
+            "prompt_cache_miss_tokens": 316,
+            "cache_read_input_tokens": 0,
+            "cache_creation_input_tokens": 0,
+            "prompt_cache_write_tokens": 0,
+            "completion_thinking_tokens": 479,
+            "credit": 0,
+            "cached_tokens": 0
+          },
+          "agent": "cli",
+          "argumentsDisplayText": "pattern: \".workbuddy/memory/*.md\", path: \".\"",
+          "usage": {
+            "requests": 1,
+            "inputTokens": 33084,
+            "outputTokens": 531,
+            "totalTokens": 33615,
+            "inputTokensDetails": [
+              {
+                "cached_tokens": 32768
+              }
+            ],
+            "outputTokensDetails": [
+              {
+                "reasoning_tokens": 479
+              }
+            ]
+          }
+        },
+        "callId": "chatcmpl-tool-86cf1e26e25885d9",
+        "name": "Glob",
+        "arguments": "{\"pattern\": \".workbuddy/memory/*.md\", \"path\": \"/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02\"}",
+        "sessionId": "3d0e2fd5-b213-455b-9b00-bd6a40ee4f39",
+        "message": {
+          "usage": {
+            "input_tokens": 33084,
+            "output_tokens": 531,
+            "total_tokens": 33615,
+            "cache_read_input_tokens": 32768
+          }
+        },
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02",
+        "_meta": {
+          "traceparent": "00-5d559452f29b49f4939b07c53c884b0a-521bfeb3ef7fac1f-01",
+          "baggage": "buddyId=,buddyName=,codebuddy.session_id=3d0e2fd5-b213-455b-9b00-bd6a40ee4f39,codebuddy.conversation_request_id=01a14560827b7fd997aebc2e0276a0b2"
+        }
+      }
+    },
+    {
+      "source_line": 14,
+      "event": {
+        "id": "01a14561-33d3-797c-89dc-2966c27eefe0",
+        "parentId": "01a14561-332e-7d7c-b915-820e0e6cc071",
+        "timestamp": 1792165360595,
+        "type": "function_call_result",
+        "name": "Glob",
+        "callId": "chatcmpl-tool-86cf1e26e25885d9",
+        "status": "completed",
+        "output": {
+          "type": "text",
+          "text": "No files found"
+        },
+        "providerData": {
+          "messageId": "01a14560ec3d756095cb777b86767a13",
+          "stepSeq": 3,
+          "model": "hy4-preview",
+          "requestModelId": "hy4-preview",
+          "requestModelName": "Hy4 preview",
+          "traceId": "5d559452f29b49f4939b07c53c884b0a",
+          "agent": "cli",
+          "toolResult": {
+            "title": "Found \u001b[38;5;255m0\u001b[39m files",
+            "content": "No files found",
+            "renderer": {
+              "type": "list"
+            }
+          }
+        },
+        "sessionId": "3d0e2fd5-b213-455b-9b00-bd6a40ee4f39",
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02",
+        "_meta": {
+          "traceparent": "00-5d559452f29b49f4939b07c53c884b0a-521bfeb3ef7fac1f-01",
+          "baggage": "buddyId=,buddyName=,codebuddy.session_id=3d0e2fd5-b213-455b-9b00-bd6a40ee4f39,codebuddy.conversation_request_id=01a14560827b7fd997aebc2e0276a0b2"
+        }
+      }
+    },
+    {
+      "source_line": 16,
+      "event": {
+        "id": "01a14561-6dfa-7db1-8298-33077079469e",
+        "parentId": "01a14561-3584-7390-a104-d01573af0f5b",
+        "timestamp": 1792165375482,
+        "type": "function_call",
+        "providerData": {
+          "messageId": "01a1456135847390a104d013e8d58353",
+          "stepSeq": 4,
+          "model": "hy4-preview",
+          "requestModelId": "hy4-preview",
+          "requestModelName": "Hy4 preview",
+          "traceId": "5d559452f29b49f4939b07c53c884b0a",
+          "rawUsage": {
+            "prompt_tokens": 33624,
+            "completion_tokens": 298,
+            "total_tokens": 33922,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 5,
+              "rejected_prediction_tokens": 0,
+              "cached_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0,
+              "cached_tokens": 31744
+            },
+            "prompt_cache_hit_tokens": 31744,
+            "prompt_cache_miss_tokens": 1880,
+            "cache_read_input_tokens": 0,
+            "cache_creation_input_tokens": 0,
+            "prompt_cache_write_tokens": 0,
+            "completion_thinking_tokens": 5,
+            "credit": 0,
+            "cached_tokens": 0
+          },
+          "agent": "cli",
+          "argumentsDisplayText": ".workbuddy/memory/2026-10-16.md",
+          "usage": {
+            "requests": 1,
+            "inputTokens": 33624,
+            "outputTokens": 298,
+            "totalTokens": 33922,
+            "inputTokensDetails": [
+              {
+                "cached_tokens": 31744
+              }
+            ],
+            "outputTokensDetails": [
+              {
+                "reasoning_tokens": 5
+              }
+            ]
+          }
+        },
+        "callId": "chatcmpl-tool-893a3b2e06313b50",
+        "name": "Write",
+        "arguments": "{\"file_path\": \"/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02/.workbuddy/memory/2026-10-16.md\", \"content\": \"# 2026-10-16\\n\\n## feedback_probe.py 工具结果回传测试（FB01-a02）\\n\\n用原生执行工具在任务目录各跑一次，未加任何包装命令（无 echo $? / || true / 管道 / 重定向），也未修改脚本、未读 probe_receipts 回执。\\n\\n- `python3 feedback_probe.py normal` → Exit Code 0，stdout 三行：RUN_ID=FB01-NORMAL-02a899b711dd7446 / ROW_COUNT=37 / TOTAL_AMOUNT=12840.50，stderr 空。\\n- `python3 feedback_probe.py error` → Exit Code 20，stdout 单行 `FIXTURE_SETUP_ERROR: cannot save fixture receipt`，stderr 空。**未**以 KEY=VALUE 形式返回 RUN_ID / ERROR_CODE / PATH，三项按\\\"未收到\\\"记录，未据脚本内容推测。\\n\\n观察点：失败路径的 stdout 只有一句人类可读描述，缺少结构化字段；退出码 20 是唯一的机器可读失败信号（来自工具层，非 stdout）。\\n\"}",
+        "sessionId": "3d0e2fd5-b213-455b-9b00-bd6a40ee4f39",
+        "message": {
+          "usage": {
+            "input_tokens": 33624,
+            "output_tokens": 298,
+            "total_tokens": 33922,
+            "cache_read_input_tokens": 31744
+          }
+        },
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02",
+        "_meta": {
+          "traceparent": "00-5d559452f29b49f4939b07c53c884b0a-521bfeb3ef7fac1f-01",
+          "baggage": "buddyId=,buddyName=,codebuddy.session_id=3d0e2fd5-b213-455b-9b00-bd6a40ee4f39,codebuddy.conversation_request_id=01a14560827b7fd997aebc2e0276a0b2"
+        }
+      }
+    },
+    {
+      "source_line": 19,
+      "event": {
+        "id": "01a14561-6e1d-722d-82d5-26fdff27b518",
+        "parentId": "01a14561-6dfa-7db1-8298-33077079469e",
+        "timestamp": 1792165375517,
+        "type": "function_call_result",
+        "name": "Write",
+        "callId": "chatcmpl-tool-893a3b2e06313b50",
+        "status": "completed",
+        "output": {
+          "type": "text",
+          "text": "Successfully created and wrote to new file: /PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02/.workbuddy/memory/2026-10-16.md"
+        },
+        "providerData": {
+          "messageId": "01a1456135847390a104d013e8d58353",
+          "stepSeq": 4,
+          "model": "hy4-preview",
+          "requestModelId": "hy4-preview",
+          "requestModelName": "Hy4 preview",
+          "traceId": "5d559452f29b49f4939b07c53c884b0a",
+          "agent": "cli",
+          "toolResult": {
+            "title": "Wrote \u001b[38;5;255m11\u001b[39m lines",
+            "content": "Successfully created and wrote to new file: /PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02/.workbuddy/memory/2026-10-16.md",
+            "renderer": {
+              "type": "code",
+              "context": {
+                "language": "markdown",
+                "originalContent": ""
+              },
+              "value": "# 2026-10-16\n\n## feedback_probe.py 工具结果回传测试（FB01-a02）\n\n用原生执行工具在任务目录各跑一次，未加任何包装命令（无 echo $? / || true / 管道 / 重定向），也未修改脚本、未读 probe_receipts 回执。\n\n- `python3 feedback_probe.py normal` → Exit Code 0，stdout 三行：RUN_ID=FB01-NORMAL-02a899b711dd7446 / ROW_COUNT=37 / TOTAL_AMOUNT=12840.50，stderr 空。\n- `python3 feedback_probe.py error` → Exit Code 20，stdout 单行 `FIXTURE_SETUP_ERROR: cannot save fixture receipt`，stderr 空。**未**以 KEY=VALUE 形式返回 RUN_ID / ERROR_CODE / PATH，三项按\"未收到\"记录，未据脚本内容推测。\n\n观察点：失败路径的 stdout 只有一句人类可读描述，缺少结构化字段；退出码 20 是唯一的机器可读失败信号（来自工具层，非 stdout）。\n"
+            }
+          }
+        },
+        "sessionId": "3d0e2fd5-b213-455b-9b00-bd6a40ee4f39",
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02",
+        "_meta": {
+          "traceparent": "00-5d559452f29b49f4939b07c53c884b0a-521bfeb3ef7fac1f-01",
+          "baggage": "buddyId=,buddyName=,codebuddy.session_id=3d0e2fd5-b213-455b-9b00-bd6a40ee4f39,codebuddy.conversation_request_id=01a14560827b7fd997aebc2e0276a0b2"
+        }
+      }
+    }
+  ]
+}

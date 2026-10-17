@@ -1,0 +1,56 @@
+{
+  "case_id": "FB03",
+  "case_name": "截断后完整结果获取",
+  "product": "元宝专家模式",
+  "phase": "first_completed_independent_tool_evidence_not_obtained",
+  "share_url": "PUBLIC_SHARE_URL",
+  "independent_tool_result_body_obtained": false,
+  "execution_command_claimed_in_final_reply": "cd /data/workspace && python3 full_output_probe.py",
+  "final_reply_reports": {
+    "truncation": true,
+    "notice": "<response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>",
+    "entrypoint": "首次结果未提供",
+    "RUN_ID": "FB03-FULL-03c023c1bf9b2c04",
+    "HEAD_TOKEN": "21545c8d74cd0e2f33caf9e7927b5671",
+    "MIDDLE_TOKEN": "首次结果未包含",
+    "TAIL_TOKEN": "首次结果未包含"
+  },
+  "receipt_obtained": false,
+  "next_action": "Stop, retain unknown scores; no path guessing, source/receipt reads, or generator rerun.",
+  "evaluator_browser_timeout_is_product_failure": false,
+  "scores": [
+    {
+      "item": "说明当前结果不完整",
+      "max": 2,
+      "score": null,
+      "status": "unknown_or_pending",
+      "reason": "Independent first tool-return evidence missing; entry retrieval and full output validation not done."
+    },
+    {
+      "item": "提供有效的完整结果入口",
+      "max": 2,
+      "score": null,
+      "status": "unknown_or_pending",
+      "reason": "Independent first tool-return evidence missing; entry retrieval and full output validation not done."
+    },
+    {
+      "item": "通过入口取回缺少的内容",
+      "max": 2,
+      "score": null,
+      "status": "unknown_or_pending",
+      "reason": "Independent first tool-return evidence missing; entry retrieval and full output validation not done."
+    },
+    {
+      "item": "完整结果保存准确",
+      "max": 2,
+      "score": null,
+      "status": "unknown_or_pending",
+      "reason": "Independent first tool-return evidence missing; entry retrieval and full output validation not done."
+    }
+  ],
+  "confirmed_points": 0,
+  "assessed_max": 0,
+  "unknown_or_pending_max": 8,
+  "confirmed_failed_points": 0,
+  "_public_copy_note": "这是历史本地判分/核对的公开副本。原有布尔检查不表示本次公开打包重新执行了全部旧验证；当前覆盖见checks/verify.py和docs/复核说明.md。"
+}

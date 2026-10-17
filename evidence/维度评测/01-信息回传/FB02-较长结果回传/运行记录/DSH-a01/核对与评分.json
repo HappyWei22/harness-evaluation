@@ -1,0 +1,135 @@
+{
+  "case_id": "FB02",
+  "case_name": "较长检查报告中的关键信息回传",
+  "fixture_version": "1.0.0",
+  "run_id": "DSH-a01",
+  "phase": "先行试测",
+  "product": "DSH",
+  "product_version": "未提供",
+  "native_session_id": "session-63d3778b-20e1-45b8-84ec-70570664079a",
+  "workspace": "/PUBLIC_PROJECT/独立测试工作区/DSH/FB02-a01",
+  "observation_layer": "原生日志中的第一次工具返回；不自动等于完整实际模型请求",
+  "config": {
+    "provider": "deepseek-account",
+    "model": "deepseek-flash",
+    "reasoning_effort": "high",
+    "permission_preset": "workspace-write",
+    "sandbox_mode": "workspace-write",
+    "approval_policy": "ask"
+  },
+  "source": {
+    "provided_archive": "/PUBLIC_HOME/Downloads/dsh-session-session-63d3778b-20e1-45b8-84ec-70570664079a.zip",
+    "archive_copy": "原始材料/原生会话.zip",
+    "archive_sha256": "02ebc4c94bc8e6a9ae42cf6388eb04251f6e5ff65d34afc3b988cd5ab4334d8f",
+    "native_log_sha256": "081195adcf430042f2d6cccf8ad8296eea7cfe848ac298bc3978d9febb4e51f1",
+    "log_lines": 28,
+    "tool_call_line": 21,
+    "tool_result_line": 22,
+    "final_reply_line": 26
+  },
+  "input_script_sha256": "604d9462b3b0c5df83661726479c5b36f40237873166bce890faee54503d9625",
+  "native_tool_calls": 1,
+  "native_tool_results": 1,
+  "checks": {
+    "exact_command": true,
+    "script_sha256_matches_manifest_and_receipt": true,
+    "run_id_matches_receipt": true,
+    "all_stdout_bytes_match_receipt": true,
+    "output_lines": 200,
+    "output_bytes": 17929,
+    "output_sha256": "c6cd64f57f5df5537919c852465c2c0cf395cc7d3a11ced4c6d0b0a483872b0b",
+    "truncation_observed_in_native_result": false,
+    "full_output_entrypoint_needed_this_time": false,
+    "full_output_retrieval_tested": false
+  },
+  "items": [
+    {
+      "name": "第1行运行编号",
+      "expected_line": 1,
+      "expected_text": "RUN_ID=FB02-LONG-e75663bb56f2dceb",
+      "observed_text": "RUN_ID=FB02-LONG-e75663bb56f2dceb",
+      "max_score": 2,
+      "score": 2,
+      "decision": "通过",
+      "evidence": [
+        "原始材料/session.v4.jsonl:22",
+        "首次工具返回.txt:1",
+        "原始材料/FB02-LONG-e75663bb56f2dceb.json"
+      ]
+    },
+    {
+      "name": "第60行错误数量",
+      "expected_line": 60,
+      "expected_text": "ERROR_COUNT=3",
+      "observed_text": "ERROR_COUNT=3",
+      "max_score": 2,
+      "score": 2,
+      "decision": "通过",
+      "evidence": [
+        "原始材料/session.v4.jsonl:22",
+        "首次工具返回.txt:60",
+        "原始材料/FB02-LONG-e75663bb56f2dceb.json"
+      ]
+    },
+    {
+      "name": "第120行错误路径",
+      "expected_line": 120,
+      "expected_text": "ERROR_PATH=inputs/sales_2026.csv",
+      "observed_text": "ERROR_PATH=inputs/sales_2026.csv",
+      "max_score": 2,
+      "score": 2,
+      "decision": "通过",
+      "evidence": [
+        "原始材料/session.v4.jsonl:22",
+        "首次工具返回.txt:120",
+        "原始材料/FB02-LONG-e75663bb56f2dceb.json"
+      ]
+    },
+    {
+      "name": "第200行完整标记",
+      "expected_line": 200,
+      "expected_text": "REPORT_COMPLETE=YES",
+      "observed_text": "REPORT_COMPLETE=YES",
+      "max_score": 2,
+      "score": 2,
+      "decision": "通过",
+      "evidence": [
+        "原始材料/session.v4.jsonl:22",
+        "首次工具返回.txt:200",
+        "原始材料/FB02-LONG-e75663bb56f2dceb.json"
+      ]
+    }
+  ],
+  "totals": {
+    "confirmed_score": 8,
+    "assessed_max_score": 8,
+    "unknown_max_score": 0,
+    "case_max_score": 8
+  },
+  "report_structure_explanation": {
+    "line_1": "RUN_ID replaces a CHECK row; item=001 CHECK was never expected.",
+    "failure_rows": [
+      {
+        "line": 40,
+        "text": "CHECK item=040 target=inputs/sales_2026.csv reason=missing_required_column status=FAIL"
+      },
+      {
+        "line": 100,
+        "text": "CHECK item=100 target=inputs/inventory_2026.csv reason=invalid_numeric_value status=FAIL"
+      },
+      {
+        "line": 160,
+        "text": "CHECK item=160 target=inputs/customers_2026.csv reason=duplicate_customer_id status=FAIL"
+      }
+    ],
+    "error_path_marker_count": 1
+  },
+  "limits": [
+    "一次200行17929字节试测，不能推断任意更长输出都不截断。",
+    "未触发截断，不能据此给完整结果获取的另8分。",
+    "未独立核验完整实际模型请求，不把日志层结论扩大到全部模型输入。",
+    "模型和原生Skill的影响未被完全控制。"
+  ],
+  "checked_at": "2026-10-16T19:57:21+08:00",
+  "_public_copy_note": "这是历史本地判分/核对的公开副本。原有布尔检查不表示本次公开打包重新执行了全部旧验证；当前覆盖见checks/verify.py和docs/复核说明.md。"
+}

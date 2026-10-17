@@ -1,0 +1,97 @@
+{
+  "case_id": "CTX01",
+  "product": "Codex",
+  "label": "Codex",
+  "run_label": "Codex-CTX01-a01",
+  "points": 4,
+  "maximum": 4,
+  "messages": [
+    {
+      "role": "user",
+      "text": "我们分三轮登记一项校园活动。本题只需在对话中登记和更新活动信息。\n\n请先记录以下初始信息：\n活动编号：ACT-27\n地点：A教学楼\n预算：3000\n币种：CNY\n\n本轮只确认收到，暂不输出最终活动记录，等待后续修改。",
+      "source_lines": [
+        13
+      ],
+      "message_id": "msg_01a1483e-949b-7733-adec-3faca91cbee5",
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/Codex-a01/原始材料/原生会话.excerpt.json"
+    },
+    {
+      "role": "assistant",
+      "text": "已收到并记录 ACT-27 的初始信息，等待后续修改。",
+      "source_lines": [
+        16
+      ],
+      "message_id": "msg_013ef5d5fa15816c016ad301b0f7088191aa560b96e23fa3d9",
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/Codex-a01/原始材料/原生会话.excerpt.json"
+    },
+    {
+      "role": "user",
+      "text": "更新刚才的活动信息：\n地点改为图书馆，预算改为4500。\n其他信息保持不变。\n\n本轮只确认收到，暂不输出最终活动记录。",
+      "source_lines": [
+        23
+      ],
+      "message_id": "msg_01a1483e-a873-72b1-a656-c433d716904e",
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/Codex-a01/原始材料/原生会话.excerpt.json"
+    },
+    {
+      "role": "assistant",
+      "text": "已收到，地点已改为图书馆，预算已改为4500，其他信息保持不变。",
+      "source_lines": [
+        26
+      ],
+      "message_id": "msg_013ef5d5fa15816c016ad301b5efb08191aac5d531017b6e03",
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/Codex-a01/原始材料/原生会话.excerpt.json"
+    },
+    {
+      "role": "user",
+      "text": "请根据本会话目前有效的信息，输出最终活动记录。\n\n只输出一个JSON对象，字段名固定为“活动编号”“地点”“预算”“币种”。预算使用数字，其他字段使用字符串。保留编号、地点和币种的有效写法，不新增条件。",
+      "source_lines": [
+        33
+      ],
+      "message_id": "msg_01a1483e-be2a-7690-b050-dc08a6a4ed49",
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/Codex-a01/原始材料/原生会话.excerpt.json"
+    },
+    {
+      "role": "assistant",
+      "text": "{\"活动编号\":\"ACT-27\",\"地点\":\"图书馆\",\"预算\":4500,\"币种\":\"CNY\"}",
+      "source_lines": [
+        36
+      ],
+      "message_id": "msg_013ef5d5fa15816c016ad301bb62c881919bcc327f5188be24",
+      "public_source": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/Codex-a01/原始材料/原生会话.excerpt.json"
+    }
+  ],
+  "configuration": {
+    "product": "Codex",
+    "session_or_share": "01a1483e-8a65-7370-bce7-6fa9bd591dd7",
+    "native_models_observed": [
+      "gpt-6.1-sol"
+    ],
+    "config_observed": {
+      "cwd": "/PUBLIC_PROJECT/独立测试工作区/Codex/CTX01-a01",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "approval_policy": "on-request",
+      "sandbox_policy": {
+        "type": "workspace-write",
+        "writable_roots": [
+          "/PUBLIC_HOME/.codex/visualizations/2026/10/17/01a1483e-8a65-7370-bce7-6fa9bd591dd7"
+        ],
+        "network_access": false,
+        "exclude_tmpdir_env_var": false,
+        "exclude_slash_tmp": false
+      },
+      "cli_version": "0.163.0-alpha.10.2"
+    },
+    "protocol_verified_in_visible_evidence": true,
+    "deviations_and_limits": [],
+    "second_reply_summarizes_all_current_values": false,
+    "complete_main_model_request_verified": false,
+    "native_skill_influence_controlled": false,
+    "evaluator_reran_product": false,
+    "rules_changed": false,
+    "evidence_method": "原生JSONL"
+  },
+  "source_score": "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/Codex-a01/核对与评分.json",
+  "limits": "三轮短对话；没有验证压缩或复杂16分；完整模型请求未核验。"
+}

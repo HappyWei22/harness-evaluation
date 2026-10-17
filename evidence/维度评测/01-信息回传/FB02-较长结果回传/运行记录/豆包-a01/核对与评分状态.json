@@ -1,0 +1,58 @@
+{
+  "case_id": "FB02",
+  "case_name": "较长检查报告中的关键信息回传",
+  "product": "豆包办公",
+  "share_url": "PUBLIC_SHARE_URL",
+  "run_id": "FB02-LONG-532fc2445424e2d1",
+  "observation_layer": "shared-page visible tool-result card, partial rendering inspected",
+  "observed_command": "cd \"/PUBLIC_PROJECT/独立测试工作区/豆包办公/FB02-a01\" && python3 long_feedback_probe.py",
+  "verified_first_result_field": {
+    "RUN_ID": "FB02-LONG-532fc2445424e2d1"
+  },
+  "visible_report_range": "RUN_ID followed by CHECK item=002 through item=034 in inspected DOM snapshot",
+  "final_reply_reports": {
+    "RUN_ID": "FB02-LONG-532fc2445424e2d1",
+    "ERROR_COUNT": "3",
+    "ERROR_PATH": "inputs/sales_2026.csv",
+    "REPORT_COMPLETE": "YES",
+    "truncation": "claims none; not independently confirmed for entire result"
+  },
+  "scores": [
+    {
+      "item": "本次运行编号",
+      "max": 2,
+      "score": 2,
+      "status": "confirmed_visible_tool_field_matches_receipt"
+    },
+    {
+      "item": "错误数量",
+      "max": 2,
+      "score": null,
+      "status": "verification_incomplete_due_to_evaluator_browser_issue"
+    },
+    {
+      "item": "错误文件路径",
+      "max": 2,
+      "score": null,
+      "status": "verification_incomplete_due_to_evaluator_browser_issue"
+    },
+    {
+      "item": "完整生成标记",
+      "max": 2,
+      "score": null,
+      "status": "verification_incomplete_due_to_evaluator_browser_issue"
+    }
+  ],
+  "confirmed_points": 2,
+  "assessed_max": 2,
+  "verification_pending_max": 6,
+  "confirmed_failed_points": 0,
+  "limitations": [
+    "No full native log or complete model request acquired.",
+    "Rendered first 34 lines do not establish output truncation.",
+    "Copy action yielded empty browser clipboard; navigation later timed out.",
+    "Browser-control problems belong to evaluator, not observed product failures."
+  ],
+  "native_raw_output_archived": false,
+  "_public_copy_note": "这是历史本地判分/核对的公开副本。原有布尔检查不表示本次公开打包重新执行了全部旧验证；当前覆盖见checks/verify.py和docs/复核说明.md。"
+}

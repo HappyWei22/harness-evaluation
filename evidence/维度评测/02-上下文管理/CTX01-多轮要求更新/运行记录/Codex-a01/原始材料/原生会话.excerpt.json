@@ -1,0 +1,222 @@
+{
+  "format": "native-event-excerpt-v1",
+  "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/Codex-a01/原始材料/原生会话.jsonl",
+  "original_sha256": "59593ae6a11ad0201a73277e885ad178cf177f422d87888d9b75bc2c39d4a744",
+  "original_line_count": 39,
+  "scope": "仅导出相关工具事件或指定可见问答；删除推理块、重放元数据并替换本机路径。不是完整原生日志或完整模型请求。",
+  "records": [
+    {
+      "source_line": 13,
+      "event": {
+        "timestamp": "2026-10-17T05:03:43.259Z",
+        "ordinal": 12,
+        "type": "response_item",
+        "payload": {
+          "type": "message",
+          "id": "msg_01a1483e-949b-7733-adec-3faca91cbee5",
+          "role": "user",
+          "content": [
+            {
+              "type": "input_text",
+              "text": "我们分三轮登记一项校园活动。本题只需在对话中登记和更新活动信息。\n\n请先记录以下初始信息：\n活动编号：ACT-27\n地点：A教学楼\n预算：3000\n币种：CNY\n\n本轮只确认收到，暂不输出最终活动记录，等待后续修改。\n"
+            }
+          ]
+        },
+        "metadata": {
+          "retained_source": {
+            "id": {
+              "message_id": "msg_01a1483e-949b-7733-adec-3faca91cbee5",
+              "turn_id": "01a1483e-8cb4-70b0-9e65-9363c653b65a",
+              "role": "user"
+            },
+            "revision": "retained_01a1483e-949b-7733-adec-3fcc9a241f1a",
+            "complete": true
+          },
+          "client_authored": false,
+          "user_input_order": 0,
+          "mcp_attribution": {
+            "status": "none"
+          }
+        }
+      }
+    },
+    {
+      "source_line": 16,
+      "event": {
+        "timestamp": "2026-10-17T05:03:45.284Z",
+        "ordinal": 15,
+        "type": "response_item",
+        "payload": {
+          "type": "message",
+          "status": "completed",
+          "id": "msg_013ef5d5fa15816c016ad301b0f7088191aa560b96e23fa3d9",
+          "role": "assistant",
+          "content": [
+            {
+              "type": "output_text",
+              "text": "已收到并记录 ACT-27 的初始信息，等待后续修改。",
+              "annotations": [],
+              "logprobs": []
+            }
+          ],
+          "phase": "final_answer"
+        },
+        "metadata": {
+          "retained_source": {
+            "id": {
+              "message_id": "msg_013ef5d5fa15816c016ad301b0f7088191aa560b96e23fa3d9",
+              "turn_id": "01a1483e-8cb4-70b0-9e65-9363c653b65a",
+              "role": "assistant"
+            },
+            "revision": "retained_01a1483e-9c84-72b1-af80-12cf9119a97f",
+            "complete": true
+          },
+          "client_authored": false,
+          "user_input_order": 1
+        }
+      }
+    },
+    {
+      "source_line": 23,
+      "event": {
+        "timestamp": "2026-10-17T05:03:48.339Z",
+        "ordinal": 22,
+        "type": "response_item",
+        "payload": {
+          "type": "message",
+          "id": "msg_01a1483e-a873-72b1-a656-c433d716904e",
+          "role": "user",
+          "content": [
+            {
+              "type": "input_text",
+              "text": "更新刚才的活动信息：\n地点改为图书馆，预算改为4500。\n其他信息保持不变。\n\n本轮只确认收到，暂不输出最终活动记录。\n"
+            }
+          ]
+        },
+        "metadata": {
+          "retained_source": {
+            "id": {
+              "message_id": "msg_01a1483e-a873-72b1-a656-c433d716904e",
+              "turn_id": "01a1483e-a847-7cf0-9462-f3dea4874cb6",
+              "role": "user"
+            },
+            "revision": "retained_01a1483e-a873-72b1-a656-c4516f37f3f0",
+            "complete": true
+          },
+          "client_authored": false,
+          "user_input_order": 2,
+          "mcp_attribution": {
+            "status": "none"
+          }
+        }
+      }
+    },
+    {
+      "source_line": 26,
+      "event": {
+        "timestamp": "2026-10-17T05:03:50.371Z",
+        "ordinal": 25,
+        "type": "response_item",
+        "payload": {
+          "type": "message",
+          "status": "completed",
+          "id": "msg_013ef5d5fa15816c016ad301b5efb08191aac5d531017b6e03",
+          "role": "assistant",
+          "content": [
+            {
+              "type": "output_text",
+              "text": "已收到，地点已改为图书馆，预算已改为4500，其他信息保持不变。",
+              "annotations": [],
+              "logprobs": []
+            }
+          ],
+          "phase": "final_answer"
+        },
+        "metadata": {
+          "retained_source": {
+            "id": {
+              "message_id": "msg_013ef5d5fa15816c016ad301b5efb08191aac5d531017b6e03",
+              "turn_id": "01a1483e-a847-7cf0-9462-f3dea4874cb6",
+              "role": "assistant"
+            },
+            "revision": "retained_01a1483e-b063-7793-922e-1604dde8a562",
+            "complete": true
+          },
+          "client_authored": false,
+          "user_input_order": 3
+        }
+      }
+    },
+    {
+      "source_line": 33,
+      "event": {
+        "timestamp": "2026-10-17T05:03:53.898Z",
+        "ordinal": 32,
+        "type": "response_item",
+        "payload": {
+          "type": "message",
+          "id": "msg_01a1483e-be2a-7690-b050-dc08a6a4ed49",
+          "role": "user",
+          "content": [
+            {
+              "type": "input_text",
+              "text": "请根据本会话目前有效的信息，输出最终活动记录。\n\n只输出一个JSON对象，字段名固定为“活动编号”“地点”“预算”“币种”。预算使用数字，其他字段使用字符串。保留编号、地点和币种的有效写法，不新增条件。\n"
+            }
+          ]
+        },
+        "metadata": {
+          "retained_source": {
+            "id": {
+              "message_id": "msg_01a1483e-be2a-7690-b050-dc08a6a4ed49",
+              "turn_id": "01a1483e-be11-73d1-951c-0999448edfe9",
+              "role": "user"
+            },
+            "revision": "retained_01a1483e-be2a-7690-b050-dc27e4ede6d3",
+            "complete": true
+          },
+          "client_authored": false,
+          "user_input_order": 4,
+          "mcp_attribution": {
+            "status": "none"
+          }
+        }
+      }
+    },
+    {
+      "source_line": 36,
+      "event": {
+        "timestamp": "2026-10-17T05:03:55.746Z",
+        "ordinal": 35,
+        "type": "response_item",
+        "payload": {
+          "type": "message",
+          "status": "completed",
+          "id": "msg_013ef5d5fa15816c016ad301bb62c881919bcc327f5188be24",
+          "role": "assistant",
+          "content": [
+            {
+              "type": "output_text",
+              "text": "{\"活动编号\":\"ACT-27\",\"地点\":\"图书馆\",\"预算\":4500,\"币种\":\"CNY\"}",
+              "annotations": [],
+              "logprobs": []
+            }
+          ],
+          "phase": "final_answer"
+        },
+        "metadata": {
+          "retained_source": {
+            "id": {
+              "message_id": "msg_013ef5d5fa15816c016ad301bb62c881919bcc327f5188be24",
+              "turn_id": "01a1483e-be11-73d1-951c-0999448edfe9",
+              "role": "assistant"
+            },
+            "revision": "retained_01a1483e-c562-7582-9927-b756a90482f6",
+            "complete": true
+          },
+          "client_authored": false,
+          "user_input_order": 5
+        }
+      }
+    }
+  ]
+}

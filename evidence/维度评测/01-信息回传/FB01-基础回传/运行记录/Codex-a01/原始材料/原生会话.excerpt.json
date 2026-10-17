@@ -1,0 +1,95 @@
+{
+  "format": "native-event-excerpt-v1",
+  "original_source": "维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/原生会话.jsonl",
+  "original_sha256": "74a03153f327a27ff37fefea944f2f80e1bfe865842c47db668baa2d29cb48be",
+  "original_line_count": 31,
+  "scope": "仅导出相关工具事件或指定可见问答；删除推理块、重放元数据并替换本机路径。不是完整原生日志或完整模型请求。",
+  "records": [
+    {
+      "source_line": 17,
+      "event": {
+        "timestamp": "2026-10-16T15:11:50.049Z",
+        "ordinal": 16,
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_0ed5dd37d1388ac8016ad23eb4f7d08191803a319b3832d430",
+          "status": "completed",
+          "call_id": "call_a41fc225ca594882b878c1475070f5a0",
+          "name": "exec",
+          "input": "const result = await tools.exec_command({cmd:\"python3 feedback_probe.py normal\",workdir:\"/PUBLIC_PROJECT/独立测试工作区/Codex/FB01-a01\",max_output_tokens:2000});text(result);\n"
+        }
+      }
+    },
+    {
+      "source_line": 20,
+      "event": {
+        "timestamp": "2026-10-16T15:11:50.239Z",
+        "ordinal": 19,
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a14544-f7df-7571-b2a2-edb78e61045f",
+          "call_id": "call_a41fc225ca594882b878c1475070f5a0",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.2 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"chunk_id\":\"3bedbb\",\"wall_time_seconds\":0.000005792,\"exit_code\":0,\"original_token_count\":18,\"output\":\"RUN_ID=FB01-NORMAL-76de54b51e988f94\\nROW_COUNT=37\\nTOTAL_AMOUNT=12840.50\\n\"}"
+            }
+          ]
+        },
+        "metadata": {
+          "client_authored": false,
+          "fallback_token_limit_override": 12000
+        }
+      }
+    },
+    {
+      "source_line": 22,
+      "event": {
+        "timestamp": "2026-10-16T15:11:52.584Z",
+        "ordinal": 21,
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_0ed5dd37d1388ac8016ad23eb7a81c81918411c5908baeb131",
+          "status": "completed",
+          "call_id": "call_efbf2aceaa074174bd40a6d8ecd5da0c",
+          "name": "exec",
+          "input": "const result = await tools.exec_command({cmd:\"python3 feedback_probe.py error\",workdir:\"/PUBLIC_PROJECT/独立测试工作区/Codex/FB01-a01\",max_output_tokens:2000});text(result);\n"
+        }
+      }
+    },
+    {
+      "source_line": 25,
+      "event": {
+        "timestamp": "2026-10-16T15:11:52.707Z",
+        "ordinal": 24,
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a14545-0183-7652-9713-dc1115f865e0",
+          "call_id": "call_efbf2aceaa074174bd40a6d8ecd5da0c",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"chunk_id\":\"c5ff9f\",\"wall_time_seconds\":0.000009958,\"exit_code\":7,\"original_token_count\":23,\"output\":\"RUN_ID=FB01-ERROR-37548d7083f476b9\\nERROR_CODE=E_INPUT_MISSING\\nPATH=inputs/source_data.csv\\n\"}"
+            }
+          ]
+        },
+        "metadata": {
+          "client_authored": false,
+          "fallback_token_limit_override": 12000
+        }
+      }
+    }
+  ]
+}

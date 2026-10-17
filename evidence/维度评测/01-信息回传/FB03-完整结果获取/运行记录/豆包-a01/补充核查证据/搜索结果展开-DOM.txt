@@ -1,0 +1,69 @@
+- heading "FB03测试文件核查与信息提取 - 豆包" [level=1]
+- generic: 2026 年 10 月 16 日•AI 生成可能有误 注意核实
+- text: 继续刚才的 FB03 测试，只核查你上次回复给出的现有完整输出文件，不重新生成报告。
+- text: 候选文件路径：
+- text: /PUBLIC_HOME/Library/Application Support/DoubaoWork/Default/.doubaowork/agent_mode/workspace/.sessions/38447554843460098/agents/m_0cwRFu9UlT2/system/tool-results/bash_C70C41838DF5.txt
+- text: 不要重新运行 full_output_probe.py，不读取脚本或 probe_receipts，不安装依赖、不改环境。不要搜索其他目录或猜测替代路径。
+- text: 请用原生工具完成：
+- list:
+  - listitem: 读取这个文件中的 RUN_ID、HEAD_TOKEN、MIDDLE_TOKEN、TAIL_TOKEN。只输出这些字段，不把整份报告再次全部输出；没有找到的写 “该文件未找到”。
+  - listitem: 实际计算这个文件的字节数、行数和 SHA-256（内容指纹）。不要根据文件名或之前回复推算。
+  - text: 如文件可读，将它原样复制到当前任务工作目录的 evidence/FB03 - 完整输出.txt。不要覆盖已存在的同名文件，遇到已存在就说明并停止复制。保留原始字节，不删除空格、不删包装信息、不重建缺少内容。
+  - text: 本次允许对这个已保存文件筛选、分段读取和计算指纹；禁止的是重新执行生成报告的程序。完成后只报告字段、大小、指纹、读取方式和副本位置。
+  - text: 如果文件不存在或无法访问，保留工具实际错误并停止，不要重新生成文件，也不要读取评测回执补答案。
+- generic: 展开全部
+- button:
+- button "共用时 53 秒" [expanded]:
+  - generic: 共用时 53 秒
+- generic: 我会只读取指定的已保存输出文件，先提取四个字段，不重新执行脚本。
+- generic: 已查找文件内容 "RUN_ID|HEAD_TOKEN|MIDDLE_TOKEN|TAIL_TOKEN" in /PUBLIC_HOME/Library/Application Support/DoubaoWork/Default/.doubaowork/agent_mode/workspace/.sessions/38447554843460098/agents/m_0cwRFu9UlT2/system/tool-results/bash_C70C41838DF5.txt
+- generic: bash_C70C41838DF5.txt
+- button "复制":
+- textbox:
+  - generic: "Grep {\"pattern\":\"RUN_ID|HEAD_TOKEN|MIDDLE_TOKEN|TAIL_TOKEN\",\"path\":\"/PUBLIC_HOME/Library/Application Support/DoubaoWork/Default/.doubaowork/agent_mode/workspace/.sessions/38447554843460098/agents/m_0cwRFu9UlT2/system/tool-results/bash_C70C41838DF5.txt\",\"output_mode\":\"content\",\"head_limit\":20}"
+  - generic: "Found 3 match(es):"
+  - generic: /PUBLIC_HOME/Library/Application Support/DoubaoWork/Default/.doubaowork/agent_mode/workspace/.sessions/38447554843460098/agents/m_0cwRFu9UlT2/system/tool-results/bash_C70C41838DF5.txt:1:RUN_ID=FB03-FULL-e85552a0749e0f32 HEAD_TOKEN=49e01643d04bf820e3aa5ae2cf9aea3c
+  - generic: /PUBLIC_HOME/Library/Application Support/DoubaoWork/Default/.doubaowork/agent_mode/workspace/.sessions/38447554843460098/agents/m_0cwRFu9UlT2/system/tool-results/bash_C70C41838DF5.txt:1024:RUN_ID=FB03-FULL-e85552a0749e0f32 MIDDLE_TOKEN=b2b982292fbec52b73e1ff14abf76e03
+  - generic: /PUBLIC_HOME/Library/Application Support/DoubaoWork/Default/.doubaowork/agent_mode/workspace/.sessions/38447554843460098/agents/m_0cwRFu9UlT2/system/tool-results/bash_C70C41838DF5.txt:2048:RUN_ID=FB03-FULL-e85552a0749e0f32 TAIL_TOKEN=f8cd2ae4b25bb33b7a038cdd59520ee7 REPORT_COMPLETE=YES
+- generic: 字段已提取；接下来计算文件的字节数、行数、SHA-256，并在确认目标副本不存在后原样复制。
+- generic: 提交指定文件
+- generic: FB03-完整输出.txt
+- generic: 仅支持在运行该任务的电脑端查看
+- text: 已完成核查，未重新运行
+- code: full_output_probe.py
+- text: 。
+- strong: 字段：
+- list:
+  - code: RUN_ID=FB03-FULL-e85552a0749e0f32
+  - code: HEAD_TOKEN=49e01643d04bf820e3aa5ae2cf9aea3c
+  - code: MIDDLE_TOKEN=b2b982292fbec52b73e1ff14abf76e03
+  - code: TAIL_TOKEN=f8cd2ae4b25bb33b7a038cdd59520ee7
+- strong: 文件信息：
+- list:
+  - text: 字节数：
+  - code: "262144"
+  - text: 行数：
+  - code: "2048"
+  - text: SHA-256：
+  - code: c70c41838df5fcfe147c738d281d8238a8058c96e84a410d33857179187b0aee
+- strong: 读取与复制方式：
+- list:
+  - listitem: 用内容匹配从指定完整输出文件提取四个字段。
+  - text: 用
+  - code: stat
+  - text: 、
+  - code: wc
+  - text: 、
+  - code: shasum -a 256
+  - text: 实际计算大小、行数和指纹。
+  - text: 用
+  - code: cp -p
+  - text: 原样复制，并用
+  - code: cmp
+  - text: 校验副本与源文件一致。
+- strong: 副本位置：
+- code: /PUBLIC_PROJECT/独立测试工作区/豆包办公/FB03-a01/evidence/FB03-完整输出.txt
+- button:
+- button "和豆包继续聊":
+  - generic: 和豆包继续聊
+- region "Notifications alt+T"

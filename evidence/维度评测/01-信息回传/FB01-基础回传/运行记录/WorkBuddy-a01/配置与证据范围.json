@@ -1,0 +1,11 @@
+{
+  "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a01",
+  "model": "hy4-preview",
+  "model_display": "Hy4 preview",
+  "product_version": "未从本次材料独立确认",
+  "session_id": "ee226501-4fbd-4d89-9832-b8b03f98057d",
+  "permission_mode_from_daemon": "bypassPermissions",
+  "observation_layer": "原生会话日志中的工具返回；未独立核对完整模型请求",
+  "human_intervention": "用户发起；日志内无额外人工操作消息",
+  "skills": "按项目约定未添加用户Skill；未验证原生指令、Skill对追加echo或保存项目记忆的具体影响"
+}
