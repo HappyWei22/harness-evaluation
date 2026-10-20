@@ -9,8 +9,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1227,
-      "sha256": "e1d5204f7159a6c21d93ffeff032702d6369c7def2ee13110c15818d090fbdef"
+      "bytes": 1359,
+      "sha256": "2caa8362545f5439db582a7b66866a1e0de70d5eea4413aebeed933708f87a29"
     },
     {
       "path": "PROVENANCE.json",
@@ -174,8 +174,8 @@
     },
     {
       "path": "docs/周报/第1周周报.md",
-      "bytes": 9235,
-      "sha256": "c95acaadaa502731c6ce7861adde0d8feacf74d9327b6269dda846387e4b1b15"
+      "bytes": 9097,
+      "sha256": "ce214103fa0e01e1e1122321732ef041b6cf904e5b553087ef821874ae5621da"
     },
     {
       "path": "evidence/维度评测/01-信息回传/FB01-基础回传/README.snapshot.txt",
