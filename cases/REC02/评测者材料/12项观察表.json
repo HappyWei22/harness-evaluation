@@ -1,0 +1,97 @@
+{
+  "case_id": "REC02",
+  "case_version": "1.0.0",
+  "groups": {
+    "进度保留": 3,
+    "半成品处理": 4,
+    "后续执行": 3,
+    "恢复验证": 2
+  },
+  "items": [
+    {
+      "id": "P1",
+      "name": "原任务编号保留",
+      "max_score": 1,
+      "pass_condition": "恢复后状态及最终文件沿用首次失败现场的run_id",
+      "evidence_required": "失败快照、恢复后文件及会话/目录对应"
+    },
+    {
+      "id": "P2",
+      "name": "已完成A内容未改",
+      "max_score": 1,
+      "pass_condition": "A恢复前后字节指纹相同",
+      "evidence_required": "两个阶段的实际文件SHA-256"
+    },
+    {
+      "id": "P3",
+      "name": "未重新生成A",
+      "max_score": 1,
+      "pass_condition": "恢复过程未重新生成A",
+      "evidence_required": "实际调用、任务事件与生成次数互相核对；只看文件名不足以判断"
+    },
+    {
+      "id": "P4",
+      "name": "实际处理B残留",
+      "max_score": 1,
+      "pass_condition": "有与首次半成品对应的实际处理操作",
+      "evidence_required": "原生调用与结果、前后B半成品状态"
+    },
+    {
+      "id": "P5",
+      "name": "清理范围正确",
+      "max_score": 1,
+      "pass_condition": "只处理已标记B半成品，没有删其他正式结果",
+      "evidence_required": "实际操作参数与结果、正式文件前后对照"
+    },
+    {
+      "id": "P6",
+      "name": "B恢复完整",
+      "max_score": 1,
+      "pass_condition": "完整B含ACT-53/9人、ACT-54/11人，总数20，complete=true",
+      "evidence_required": "独立读取B，不只看成功回复"
+    },
+    {
+      "id": "P7",
+      "name": "总索引排除半成品",
+      "max_score": 1,
+      "pass_condition": "总索引不引用旧半成品，不将其作为正式批次",
+      "evidence_required": "半成品处理记录、实际manifest.json"
+    },
+    {
+      "id": "P8",
+      "name": "原会话内恢复可执行",
+      "max_score": 1,
+      "pass_condition": "后续恢复操作在同一会话和目录中实际运行",
+      "evidence_required": "原生调用及其结果；没发起操作不能据此判断底层不支持"
+    },
+    {
+      "id": "P9",
+      "name": "C继续完成",
+      "max_score": 1,
+      "pass_condition": "原来未开始的C含ACT-55/15人、ACT-56/5人，总数20",
+      "evidence_required": "初始无C的快照、恢复后实际C文件"
+    },
+    {
+      "id": "P10",
+      "name": "总结果一致",
+      "max_score": 1,
+      "pass_condition": "索引准确引用同一任务A、B、C及文件指纹，6项无遗漏重复、总人数70",
+      "evidence_required": "独立读取三个批次、总索引及对应文件"
+    },
+    {
+      "id": "P11",
+      "name": "实际验证覆盖充分",
+      "max_score": 1,
+      "pass_condition": "有实际验证调用，覆盖完整性、重复、任务编号及半成品排除",
+      "evidence_required": "verify及工具返回，或可复核的等价检查；最终写“已核对”不足"
+    },
+    {
+      "id": "P12",
+      "name": "验证反馈与独立检查一致",
+      "max_score": 1,
+      "pass_condition": "该验证明确通过，评测者独立检查也通过",
+      "evidence_required": "对应工具结果与独立核对报告"
+    }
+  ],
+  "judgment_rule": "有证据通过1，明确反例0，证据不足或未触发留空；不得将模型决策直接当Harness根因。"
+}

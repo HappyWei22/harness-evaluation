@@ -1,0 +1,113 @@
+{
+  "case_id": "REC01",
+  "case_name": "参数报错后继续导出",
+  "case_version": "1.0.0",
+  "product": "元宝",
+  "phase": "先行试测",
+  "items": [
+    {
+      "id": "REC01-B1",
+      "name": "报错后更正调用能继续执行",
+      "status": "unknown",
+      "score": null,
+      "max_score": 1,
+      "confidence_basis": "文件内容正确：高；完整恢复过程：证据不足。命令卡片可见，工具返回正文与云端脚本指纹未取得。",
+      "limitations": "下载JSON与标准一致，但不能据此补齐预设故障、状态回传及原版脚本生成来源的完整证据。",
+      "attribution": "未知，不将缺证据视为Harness失败。",
+      "source_evidence_locations": [
+        {
+          "file": "界面核对摘录.md",
+          "section": "V1、V2、V3"
+        },
+        {
+          "file": "交付物核对.json"
+        },
+        {
+          "file": "原始材料归档清单.json"
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC01/Yuanbao/snapshot/outputs/registration_summary.json",
+        "evidence/recovery/REC01/Yuanbao/交付物核对.json",
+        "evidence/recovery/REC01/Yuanbao/界面核对摘录.md",
+        "evidence/recovery/REC01/Yuanbao/补充材料-用户转述的工具返回.md"
+      ],
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。"
+    },
+    {
+      "id": "REC01-B2",
+      "name": "更正调用的成功状态正确返回",
+      "status": "unknown",
+      "score": null,
+      "max_score": 1,
+      "confidence_basis": "文件内容正确：高；完整恢复过程：证据不足。命令卡片可见，工具返回正文与云端脚本指纹未取得。",
+      "limitations": "下载JSON与标准一致，但不能据此补齐预设故障、状态回传及原版脚本生成来源的完整证据。",
+      "attribution": "未知，不将缺证据视为Harness失败。",
+      "source_evidence_locations": [
+        {
+          "file": "界面核对摘录.md",
+          "section": "V1、V2、V3"
+        },
+        {
+          "file": "交付物核对.json"
+        },
+        {
+          "file": "原始材料归档清单.json"
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC01/Yuanbao/snapshot/outputs/registration_summary.json",
+        "evidence/recovery/REC01/Yuanbao/交付物核对.json",
+        "evidence/recovery/REC01/Yuanbao/界面核对摘录.md",
+        "evidence/recovery/REC01/Yuanbao/补充材料-用户转述的工具返回.md"
+      ],
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。"
+    },
+    {
+      "id": "REC01-B3",
+      "name": "恢复后产物正确且可取",
+      "status": "unknown",
+      "score": null,
+      "max_score": 1,
+      "confidence_basis": "文件内容正确：高；完整恢复过程：证据不足。命令卡片可见，工具返回正文与云端脚本指纹未取得。",
+      "limitations": "下载JSON与标准一致，但不能据此补齐预设故障、状态回传及原版脚本生成来源的完整证据。",
+      "attribution": "未知，不将缺证据视为Harness失败。",
+      "source_evidence_locations": [
+        {
+          "file": "界面核对摘录.md",
+          "section": "V1、V2、V3"
+        },
+        {
+          "file": "交付物核对.json"
+        },
+        {
+          "file": "原始材料归档清单.json"
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC01/Yuanbao/snapshot/outputs/registration_summary.json",
+        "evidence/recovery/REC01/Yuanbao/交付物核对.json",
+        "evidence/recovery/REC01/Yuanbao/界面核对摘录.md",
+        "evidence/recovery/REC01/Yuanbao/补充材料-用户转述的工具返回.md"
+      ],
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。"
+    }
+  ],
+  "confirmed_score": 0,
+  "assessed_max": 0,
+  "case_max": 3,
+  "unknown_points": 3,
+  "untriggered_points": 0,
+  "failed_points": 0,
+  "pilot_score": null,
+  "formal_score": null,
+  "artifact_content_verified": true,
+  "actual_provider_request_captured": false,
+  "diagnostic_run_used": false,
+  "note": "下载JSON与标准一致，但不能据此补齐预设故障、状态回传及原版脚本生成来源的完整证据。",
+  "supplementary_model_quote_received": true,
+  "supplementary_source": "补充材料-用户转述的工具返回.md",
+  "score_changed_by_supplement": false,
+  "additional_run_authorized_or_executed_by_evaluator": false,
+  "public_scope": "按原规则保留本次判断；工具摘录、文件和界面摘录可复核；不是完整会话，也不是纯Harness因果得分。"
+}

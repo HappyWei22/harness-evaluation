@@ -1,0 +1,680 @@
+{
+  "case_id": "REC02",
+  "case_name": "批量导出中断后续做",
+  "case_version": "1.0.0",
+  "product": "元宝",
+  "phase": "先行试测",
+  "run_id": "REC02-82123ab235e14e78",
+  "items": [
+    {
+      "id": "P1",
+      "name": "原任务编号保留",
+      "max_score": 1,
+      "pass_condition": "恢复后状态及最终文件沿用首次失败现场的run_id",
+      "evidence_required": "失败快照、恢复后文件及会话/目录对应",
+      "status": "pass",
+      "score": 1,
+      "observation": "恢复前后state及四个最终文件都使用REC02-82123ab235e14e78；原会话命令均指向/data/workspace/REC02。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "attribution_level": "固定任务及原生配置下的本次表现；没有隔离模型、Skill和Harness各自的因果贡献",
+      "limitations": "人工先暂停取证、再发送继续提示词；单次模拟故障，恢复接口与验证器由题目提供。模型和原生Skill仍影响操作选择，未隔离纯Harness贡献。",
+      "confidence_basis": "高：两阶段实际状态、文件及会话命令相互核对；云端来源为人工要求导出的ZIP。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/交付文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/客户端过程核对.json"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/快照补证复核.json"
+        },
+        {
+          "file": "阶段02-恢复完成/工作目录/.recovery/state.json"
+        },
+        {
+          "file": "阶段02-恢复完成/工作目录/.recovery/events.jsonl"
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/failure/过程核对摘录.md",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/complete/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/客户端过程核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/快照补证复核.json"
+      ]
+    },
+    {
+      "id": "P2",
+      "name": "已完成A内容未改",
+      "max_score": 1,
+      "pass_condition": "A恢复前后字节指纹相同",
+      "evidence_required": "两个阶段的实际文件SHA-256",
+      "status": "pass",
+      "score": 1,
+      "observation": "失败快照、恢复后快照和先前下载的A文件字节指纹均完全一致；未重生成另由P3判断。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "attribution_level": "固定任务及原生配置下的本次表现；没有隔离模型、Skill和Harness各自的因果贡献",
+      "limitations": "人工先暂停取证、再发送继续提示词；单次模拟故障，恢复接口与验证器由题目提供。模型和原生Skill仍影响操作选择，未隔离纯Harness贡献。",
+      "confidence_basis": "对收到的文件内容及前后指纹置信高；云端交付来源沿用用户下载链路，未独立读取远端目录。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/交付文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/客户端过程核对.json"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/快照补证复核.json"
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/failure/过程核对摘录.md",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/complete/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/客户端过程核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/快照补证复核.json"
+      ]
+    },
+    {
+      "id": "P3",
+      "name": "未重新生成A",
+      "max_score": 1,
+      "pass_condition": "恢复过程未重新生成A",
+      "evidence_required": "实际调用、任务事件与生成次数互相核对；只看文件名不足以判断",
+      "status": "pass",
+      "score": 1,
+      "observation": "原会话可见恢复命令没有start或run-batch A；完整事件保留首次前缀，仅一次A完成，生成计数A=1，A字节指纹未变。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "attribution_level": "固定任务及原生配置下的本次表现；没有隔离模型、Skill和Harness各自的因果贡献",
+      "limitations": "人工先暂停取证、再发送继续提示词；单次模拟故障，恢复接口与验证器由题目提供。模型和原生Skill仍影响操作选择，未隔离纯Harness贡献。",
+      "confidence_basis": "中：可见命令、事件、计数与字节对照相互印证，证据不再只有相同哈希；没有完整后台调用日志，不声称排除所有外部进程。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/交付文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/客户端过程核对.json"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/快照补证复核.json"
+        },
+        {
+          "file": "阶段02-恢复完成/工作目录/.recovery/state.json"
+        },
+        {
+          "file": "阶段02-恢复完成/工作目录/.recovery/events.jsonl"
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/failure/过程核对摘录.md",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/complete/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/客户端过程核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/快照补证复核.json"
+      ]
+    },
+    {
+      "id": "P4",
+      "name": "实际处理B残留",
+      "max_score": 1,
+      "pass_condition": "有与首次半成品对应的实际处理操作",
+      "evidence_required": "原生调用与结果、前后B半成品状态",
+      "status": "unknown",
+      "score": null,
+      "observation": "快照中已无B半成品，事件记录partial_discarded且路径/指纹对应原半成品，界面也有处理命令；原规则要求的原生调用结果正文仍缺。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "attribution_level": "固定任务及原生配置下的本次表现；没有隔离模型、Skill和Harness各自的因果贡献",
+      "limitations": "人工先暂停取证、再发送继续提示词；单次模拟故障，恢复接口与验证器由题目提供。模型和原生Skill仍影响操作选择，未隔离纯Harness贡献。",
+      "confidence_basis": "对收到快照中的删除效果置信高；过程要求包含原生结果，不能用脚本事件替代。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/交付文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/客户端过程核对.json"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/快照补证复核.json"
+        },
+        {
+          "file": "阶段02-恢复完成/工作目录/.recovery/state.json"
+        },
+        {
+          "file": "阶段02-恢复完成/工作目录/.recovery/events.jsonl"
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/failure/过程核对摘录.md",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/complete/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/客户端过程核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/快照补证复核.json"
+      ]
+    },
+    {
+      "id": "P5",
+      "name": "清理范围正确",
+      "max_score": 1,
+      "pass_condition": "只处理已标记B半成品，没有删其他正式结果",
+      "evidence_required": "实际操作参数与结果、正式文件前后对照",
+      "status": "unknown",
+      "score": null,
+      "observation": "可见清理参数仅为B，A原样，最终输出完整；尚缺对应原生调用结果，不能完整复核运行时清理反馈。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "attribution_level": "固定任务及原生配置下的本次表现；没有隔离模型、Skill和Harness各自的因果贡献",
+      "limitations": "人工先暂停取证、再发送继续提示词；单次模拟故障，恢复接口与验证器由题目提供。模型和原生Skill仍影响操作选择，未隔离纯Harness贡献。",
+      "confidence_basis": "已有参数和文件对照，但严格按预定证据要求保留未知；不是已发现越界删除。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/交付文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/客户端过程核对.json"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/快照补证复核.json"
+        },
+        {
+          "file": "阶段02-恢复完成/工作目录/.recovery/state.json"
+        },
+        {
+          "file": "阶段02-恢复完成/工作目录/.recovery/events.jsonl"
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/failure/过程核对摘录.md",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/complete/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/客户端过程核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/快照补证复核.json"
+      ]
+    },
+    {
+      "id": "P6",
+      "name": "B恢复完整",
+      "max_score": 1,
+      "pass_condition": "完整B含ACT-53/9人、ACT-54/11人，总数20，complete=true",
+      "evidence_required": "独立读取B，不只看成功回复",
+      "status": "pass",
+      "score": 1,
+      "observation": "独立读取B：ACT-53/9人、ACT-54/11人，complete=true，共20人。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "attribution_level": "固定任务及原生配置下的本次表现；没有隔离模型、Skill和Harness各自的因果贡献",
+      "limitations": "人工先暂停取证、再发送继续提示词；单次模拟故障，恢复接口与验证器由题目提供。模型和原生Skill仍影响操作选择，未隔离纯Harness贡献。",
+      "confidence_basis": "对收到的文件内容及前后指纹置信高；云端交付来源沿用用户下载链路，未独立读取远端目录。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/交付文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/客户端过程核对.json"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/快照补证复核.json"
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/failure/过程核对摘录.md",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/complete/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/客户端过程核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/快照补证复核.json"
+      ]
+    },
+    {
+      "id": "P7",
+      "name": "总索引排除半成品",
+      "max_score": 1,
+      "pass_condition": "总索引不引用旧半成品，不将其作为正式批次",
+      "evidence_required": "半成品处理记录、实际manifest.json",
+      "status": "pass",
+      "score": 1,
+      "observation": "实际索引仅引用A/B/C正式文件；恢复后快照也已无B半成品，任务事件记有对应处理动作。文件与事件不替代P4所需原生工具结果。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "attribution_level": "固定任务及原生配置下的本次表现；没有隔离模型、Skill和Harness各自的因果贡献",
+      "limitations": "人工先暂停取证、再发送继续提示词；单次模拟故障，恢复接口与验证器由题目提供。模型和原生Skill仍影响操作选择，未隔离纯Harness贡献。",
+      "confidence_basis": "对收到的文件内容及前后指纹置信高；云端交付来源沿用用户下载链路，未独立读取远端目录。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/交付文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/客户端过程核对.json"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/快照补证复核.json"
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/failure/过程核对摘录.md",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/complete/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/客户端过程核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/快照补证复核.json"
+      ]
+    },
+    {
+      "id": "P8",
+      "name": "原会话内恢复可执行",
+      "max_score": 1,
+      "pass_condition": "后续恢复操作在同一会话和目录中实际运行",
+      "evidence_required": "原生调用及其结果；没发起操作不能据此判断底层不支持",
+      "status": "unknown",
+      "score": null,
+      "observation": "原会话卡片中的恢复命令指向同一目录，快照状态和事件表明任务完成；原生调用的对应结果正文未取得。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "attribution_level": "固定任务及原生配置下的本次表现；没有隔离模型、Skill和Harness各自的因果贡献",
+      "limitations": "人工先暂停取证、再发送继续提示词；单次模拟故障，恢复接口与验证器由题目提供。模型和原生Skill仍影响操作选择，未隔离纯Harness贡献。",
+      "confidence_basis": "任务完成状态已经确认；该过程评分项要求原生调用及其结果，目前证据仍不齐。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/交付文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/客户端过程核对.json"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/快照补证复核.json"
+        },
+        {
+          "file": "阶段02-恢复完成/工作目录/.recovery/state.json"
+        },
+        {
+          "file": "阶段02-恢复完成/工作目录/.recovery/events.jsonl"
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/failure/过程核对摘录.md",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/complete/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/客户端过程核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/快照补证复核.json"
+      ]
+    },
+    {
+      "id": "P9",
+      "name": "C继续完成",
+      "max_score": 1,
+      "pass_condition": "原来未开始的C含ACT-55/15人、ACT-56/5人，总数20",
+      "evidence_required": "初始无C的快照、恢复后实际C文件",
+      "status": "pass",
+      "score": 1,
+      "observation": "失败快照无C，最终C含ACT-55/15人、ACT-56/5人，共20人。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "attribution_level": "固定任务及原生配置下的本次表现；没有隔离模型、Skill和Harness各自的因果贡献",
+      "limitations": "人工先暂停取证、再发送继续提示词；单次模拟故障，恢复接口与验证器由题目提供。模型和原生Skill仍影响操作选择，未隔离纯Harness贡献。",
+      "confidence_basis": "对收到的文件内容及前后指纹置信高；云端交付来源沿用用户下载链路，未独立读取远端目录。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/交付文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/客户端过程核对.json"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/快照补证复核.json"
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/failure/过程核对摘录.md",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/complete/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/客户端过程核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/快照补证复核.json"
+      ]
+    },
+    {
+      "id": "P10",
+      "name": "总结果一致",
+      "max_score": 1,
+      "pass_condition": "索引准确引用同一任务A、B、C及文件指纹，6项无遗漏重复、总人数70",
+      "evidence_required": "独立读取三个批次、总索引及对应文件",
+      "status": "pass",
+      "score": 1,
+      "observation": "三批内容符合独立标准，索引指纹与实际文件一致，6项无重复、共70人。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "attribution_level": "固定任务及原生配置下的本次表现；没有隔离模型、Skill和Harness各自的因果贡献",
+      "limitations": "人工先暂停取证、再发送继续提示词；单次模拟故障，恢复接口与验证器由题目提供。模型和原生Skill仍影响操作选择，未隔离纯Harness贡献。",
+      "confidence_basis": "对收到的文件内容及前后指纹置信高；云端交付来源沿用用户下载链路，未独立读取远端目录。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/交付文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/客户端过程核对.json"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/快照补证复核.json"
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/failure/过程核对摘录.md",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/complete/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/客户端过程核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/快照补证复核.json"
+      ]
+    },
+    {
+      "id": "P11",
+      "name": "实际验证覆盖充分",
+      "max_score": 1,
+      "pass_condition": "有实际验证调用，覆盖完整性、重复、任务编号及半成品排除",
+      "evidence_required": "verify及工具返回，或可复核的等价检查；最终写“已核对”不足",
+      "status": "unknown",
+      "score": null,
+      "observation": "界面已见verify命令，原版验证器检查范围可查；但实际工具结果正文未取得，不能用最终回复所称10/10替代。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "attribution_level": "固定任务及原生配置下的本次表现；没有隔离模型、Skill和Harness各自的因果贡献",
+      "limitations": "人工先暂停取证、再发送继续提示词；单次模拟故障，恢复接口与验证器由题目提供。模型和原生Skill仍影响操作选择，未隔离纯Harness贡献。",
+      "confidence_basis": "没有足以判失败的反例；缺少本次实际验证返回，继续留空。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/交付文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/客户端过程核对.json"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/快照补证复核.json"
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/failure/过程核对摘录.md",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/complete/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/客户端过程核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/快照补证复核.json"
+      ]
+    },
+    {
+      "id": "P12",
+      "name": "验证反馈与独立检查一致",
+      "max_score": 1,
+      "pass_condition": "该验证明确通过，评测者独立检查也通过",
+      "evidence_required": "对应工具结果与独立核对报告",
+      "status": "unknown",
+      "score": null,
+      "observation": "评测者对恢复后完整快照13项检查通过；产品的verify PASS仍只有最终回复转述，缺对应工具结果。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "attribution_level": "固定任务及原生配置下的本次表现；没有隔离模型、Skill和Harness各自的因果贡献",
+      "limitations": "人工先暂停取证、再发送继续提示词；单次模拟故障，恢复接口与验证器由题目提供。模型和原生Skill仍影响操作选择，未隔离纯Harness贡献。",
+      "confidence_basis": "独立文件检查置信高；工具验证反馈未独立取得，无法比较两者是否一致。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/交付文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/客户端过程核对.json"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/快照补证复核.json"
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Yuanbao/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/failure/过程核对摘录.md",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Yuanbao/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Yuanbao/complete/阶段文件核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/客户端过程核对.json",
+        "evidence/recovery/REC02/Yuanbao/complete/快照补证复核.json"
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "name": "进度保留",
+      "confirmed_score": 3,
+      "assessed_max": 3,
+      "unknown_points": 0
+    },
+    {
+      "name": "半成品处理",
+      "confirmed_score": 2,
+      "assessed_max": 2,
+      "unknown_points": 2
+    },
+    {
+      "name": "后续执行",
+      "confirmed_score": 2,
+      "assessed_max": 2,
+      "unknown_points": 1
+    },
+    {
+      "name": "恢复验证",
+      "confirmed_score": 0,
+      "assessed_max": 0,
+      "unknown_points": 2
+    }
+  ],
+  "confirmed_score": 7,
+  "assessed_max": 7,
+  "case_max": 12,
+  "unknown_points": 5,
+  "untriggered_points": 0,
+  "failed_points": 0,
+  "pilot_score": null,
+  "formal_score": null,
+  "native_causal_harness_score": null,
+  "manual_stop_and_continue_protocol": true,
+  "actual_provider_request_captured": false,
+  "notes": "已按同一12项规则利用恢复后完整快照补证，新增P1与P3。原生工具结果正文仍缺，P4/P5/P8/P11/P12未知；不记0，不按比例换算，不要求重新运行补造历史反馈。",
+  "independent_file_checks_passed": 13,
+  "public_scope": "按原规则保留本次判断；工具摘录、文件和界面摘录可复核；不是完整会话，也不是纯Harness因果得分。"
+}

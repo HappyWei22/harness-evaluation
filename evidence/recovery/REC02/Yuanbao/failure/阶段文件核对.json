@@ -1,0 +1,44 @@
+{
+  "scope": "评测者独立文件检查；状态和事件来自自编脚本，不是Harness原生轨迹，不自动判12分",
+  "phase": "failure",
+  "workspace": "/PUBLIC_PROJECT/维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/元宝-a01/阶段01-首次失败/工作目录",
+  "baseline": null,
+  "run_id": "REC02-82123ab235e14e78",
+  "checks": {
+    "run_id_valid": true,
+    "script_matches_original": true,
+    "a_correct": true,
+    "state_matches_a_fingerprint": true,
+    "partial_is_valid_but_incomplete_json": true,
+    "b_final_absent": true,
+    "c_absent": true,
+    "manifest_absent": true,
+    "state_at_expected_failure": true
+  },
+  "errors": {},
+  "files": {
+    ".recovery/events.jsonl": {
+      "sha256": "99439e3bc4c0be92b9b90cc7ffc39f0346bb814d23548779fbe144135ad9d8cc",
+      "bytes": 427
+    },
+    ".recovery/state.json": {
+      "sha256": "4e9be68c6dfe23dc33d9de2b831f18efb35d358e67df38fd39d9078ccd9b36a5",
+      "bytes": 375
+    },
+    "outputs/batch_A.json": {
+      "sha256": "52292a483d4ccbbb7d4144d76b3f854f757b8a5521c501ff775b4609d67a7360",
+      "bytes": 340
+    },
+    "outputs/batch_B.partial.json": {
+      "sha256": "73b23345759d022a70e5f34ebb817ece0410d5b35fea0c3f987fca168dab4021",
+      "bytes": 270
+    },
+    "recovery_batch.py": {
+      "sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+      "bytes": 10599
+    }
+  },
+  "all_available_checks_passed": true,
+  "unknown_checks": [],
+  "formal_score": null
+}

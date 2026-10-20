@@ -1,0 +1,3 @@
+# 两份冻结提示词原本含末尾空行；保留原字节，仅关闭这两份材料的EOF空行提示。
+cases/CTX02/提示词/04-执行背景1.md whitespace=-blank-at-eof
+cases/CTX02/提示词/05-执行背景2.md whitespace=-blank-at-eof

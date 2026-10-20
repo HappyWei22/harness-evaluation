@@ -1,0 +1,19 @@
+{
+  "case_id": "REC02",
+  "case_version": "1.0.0",
+  "run_id": "REC02-a08b41f10ee24bce",
+  "batch_id": "B",
+  "complete": true,
+  "activities": [
+    {
+      "activity_id": "ACT-53",
+      "participants": 9
+    },
+    {
+      "activity_id": "ACT-54",
+      "participants": 11
+    }
+  ],
+  "activity_count": 2,
+  "total_participants": 20
+}

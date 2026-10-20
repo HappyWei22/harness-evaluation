@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-21",
+  "experiment_dates": "2026-10-20",
+  "scope": "两道任务各五款，75个评分条目；不是75次独立运行。confirmed与unknown分列，不排名。",
+  "runs": [
+    {
+      "case_id": "REC01",
+      "product": "Codex",
+      "label": "Codex",
+      "score_path": "evidence/recovery/REC01/Codex/score.json",
+      "confirmed_score": 3,
+      "unknown_points": 0,
+      "case_max": 3,
+      "failed_points": 0
+    },
+    {
+      "case_id": "REC01",
+      "product": "WorkBuddy",
+      "label": "WorkBuddy",
+      "score_path": "evidence/recovery/REC01/WorkBuddy/score.json",
+      "confirmed_score": 3,
+      "unknown_points": 0,
+      "case_max": 3,
+      "failed_points": 0
+    },
+    {
+      "case_id": "REC01",
+      "product": "DSH",
+      "label": "DSH",
+      "score_path": "evidence/recovery/REC01/DSH/score.json",
+      "confirmed_score": 3,
+      "unknown_points": 0,
+      "case_max": 3,
+      "failed_points": 0
+    },
+    {
+      "case_id": "REC01",
+      "product": "豆包工作",
+      "label": "Doubao",
+      "score_path": "evidence/recovery/REC01/Doubao/score.json",
+      "confirmed_score": 3,
+      "unknown_points": 0,
+      "case_max": 3,
+      "failed_points": 0
+    },
+    {
+      "case_id": "REC01",
+      "product": "元宝",
+      "label": "Yuanbao",
+      "score_path": "evidence/recovery/REC01/Yuanbao/score.json",
+      "confirmed_score": 0,
+      "unknown_points": 3,
+      "case_max": 3,
+      "failed_points": 0
+    },
+    {
+      "case_id": "REC02",
+      "product": "Codex",
+      "label": "Codex",
+      "score_path": "evidence/recovery/REC02/Codex/score.json",
+      "confirmed_score": 12,
+      "unknown_points": 0,
+      "case_max": 12,
+      "failed_points": 0
+    },
+    {
+      "case_id": "REC02",
+      "product": "WorkBuddy",
+      "label": "WorkBuddy",
+      "score_path": "evidence/recovery/REC02/WorkBuddy/score.json",
+      "confirmed_score": 12,
+      "unknown_points": 0,
+      "case_max": 12,
+      "failed_points": 0
+    },
+    {
+      "case_id": "REC02",
+      "product": "DSH",
+      "label": "DSH",
+      "score_path": "evidence/recovery/REC02/DSH/score.json",
+      "confirmed_score": 12,
+      "unknown_points": 0,
+      "case_max": 12,
+      "failed_points": 0
+    },
+    {
+      "case_id": "REC02",
+      "product": "豆包工作",
+      "label": "Doubao",
+      "score_path": "evidence/recovery/REC02/Doubao/score.json",
+      "confirmed_score": 12,
+      "unknown_points": 0,
+      "case_max": 12,
+      "failed_points": 0
+    },
+    {
+      "case_id": "REC02",
+      "product": "元宝",
+      "label": "Yuanbao",
+      "score_path": "evidence/recovery/REC02/Yuanbao/score.json",
+      "confirmed_score": 7,
+      "unknown_points": 5,
+      "case_max": 12,
+      "failed_points": 0
+    }
+  ]
+}

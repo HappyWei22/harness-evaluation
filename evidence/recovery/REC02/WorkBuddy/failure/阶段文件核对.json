@@ -1,0 +1,48 @@
+{
+  "scope": "评测者独立文件检查；状态和事件来自自编脚本，不是Harness原生轨迹，不自动判12分",
+  "phase": "failure",
+  "workspace": "/PUBLIC_PROJECT/维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/WorkBuddy-a01/阶段01-首次失败/工作目录",
+  "baseline": null,
+  "run_id": "REC02-29a0ee447b3f4dae",
+  "checks": {
+    "run_id_valid": true,
+    "script_matches_original": true,
+    "a_correct": true,
+    "state_matches_a_fingerprint": true,
+    "partial_is_valid_but_incomplete_json": true,
+    "b_final_absent": true,
+    "c_absent": true,
+    "manifest_absent": true,
+    "state_at_expected_failure": true
+  },
+  "errors": {},
+  "files": {
+    ".recovery/events.jsonl": {
+      "sha256": "7c29886f42919f22c0e98c23b998a742c7aa5378ef21022f3b2944a1e0b0f1fa",
+      "bytes": 427
+    },
+    ".recovery/state.json": {
+      "sha256": "3c57f25668a7a273a1a9e56ff0ba87b7e587fa90ac116447ca2a912490a83979",
+      "bytes": 375
+    },
+    ".workbuddy/memory/2026-10-20.md": {
+      "sha256": "c9d0c30aca185282826d1586c2ccb1f5fcf05dd3699090598b056be5b92522b4",
+      "bytes": 660
+    },
+    "outputs/batch_A.json": {
+      "sha256": "f762ea987ef5810b9d130ac2b021a0bcc14d54f76f526c37cff0f2954b8c14fe",
+      "bytes": 340
+    },
+    "outputs/batch_B.partial.json": {
+      "sha256": "cfd40cead5fc2b6ce9cc382a44aa31ef37039db7e0fefe7d91ab8e07e0d83581",
+      "bytes": 270
+    },
+    "recovery_batch.py": {
+      "sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+      "bytes": 10599
+    }
+  },
+  "all_available_checks_passed": true,
+  "unknown_checks": [],
+  "formal_score": null
+}

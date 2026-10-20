@@ -1,7 +1,12 @@
 {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "scope": "本公开包实际文件指纹，排除本清单自身。",
   "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 245,
+      "sha256": "21db7f24a373ebd68646e6905a6922ce109d9395016c9bc4a55227b494800235"
+    },
     {
       "path": ".gitignore",
       "bytes": 139,
@@ -9,18 +14,18 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1359,
-      "sha256": "2caa8362545f5439db582a7b66866a1e0de70d5eea4413aebeed933708f87a29"
+      "bytes": 2750,
+      "sha256": "53724bfa7d447ba93e0f40be8ad5d13ec84fd8da786601877229d7c5f48579f7"
     },
     {
       "path": "PROVENANCE.json",
-      "bytes": 46016,
-      "sha256": "abfec08375aba9c2add8949048365ffe750179824e8c4f905e2d7f8e0404688a"
+      "bytes": 124467,
+      "sha256": "7b40c779cf0a8fe1386cac9509ce5e38e6931ea8ebebca3f8731e6b8a5c2312f"
     },
     {
       "path": "README.md",
-      "bytes": 7589,
-      "sha256": "7a2f85645de4066d119722dbe8c4828b6d934bb1ef88579f2b39012010119aa5"
+      "bytes": 9221,
+      "sha256": "73fd24336a9ad8ef4ec01106af6da6ab2f53bfd310dcc7aaa68356495571a4dd"
     },
     {
       "path": "cases/CTX01/README.md",
@@ -51,6 +56,66 @@
       "path": "cases/CTX01/rules.md",
       "bytes": 5967,
       "sha256": "6da1b94801f700c7504e10f94ac12b38dd6717bf3d4243da084d7aebc0cdd4ef"
+    },
+    {
+      "path": "cases/CTX02/README.md",
+      "bytes": 1722,
+      "sha256": "af58f509c887572e80e482940475d40537be69fa7b1a5a4af7fffba6dce38451"
+    },
+    {
+      "path": "cases/CTX02/checks/核对最终状态.py",
+      "bytes": 3966,
+      "sha256": "1154d10c4dd8f2fea49a33d8ea47742573429876b8cece2057baa3a295341099"
+    },
+    {
+      "path": "cases/CTX02/提示词/01-初始登记.md",
+      "bytes": 1655,
+      "sha256": "06e7ecb18a246d258f7b98543d5179dfdf07e473f1db6627ea0d649dbcd3754f"
+    },
+    {
+      "path": "cases/CTX02/提示词/02-第一批更正.md",
+      "bytes": 406,
+      "sha256": "1c1d4c17de9a0b3dd1f8f6df7f304dc113acd57510963090895c0e5acc93f160"
+    },
+    {
+      "path": "cases/CTX02/提示词/03-第二批更正.md",
+      "bytes": 435,
+      "sha256": "4257f46fb9ce08e0f33902bbff745f187d10fdd2131f6b573908a9b8d54719a1"
+    },
+    {
+      "path": "cases/CTX02/提示词/04-执行背景1.md",
+      "bytes": 6272,
+      "sha256": "133f9be52cdefa67df10933cc59ce151a6f2a4d942134ebc97fcda133ad16db9"
+    },
+    {
+      "path": "cases/CTX02/提示词/05-执行背景2.md",
+      "bytes": 6416,
+      "sha256": "f93d0ba7adb549bf4b3c8de2b7737977778ac44c555f455204eac44276558590"
+    },
+    {
+      "path": "cases/CTX02/提示词/06-压缩后输出.md",
+      "bytes": 352,
+      "sha256": "e98560800f7c7cbfd9fa5263aa7b669da87abed56b1ab4af3f97c60a9f7ff7d3"
+    },
+    {
+      "path": "cases/CTX02/用例与判分规则.md",
+      "bytes": 5497,
+      "sha256": "f60afa5bf7f73f4b4679e7d5e0596c74a339498c07d95311c2f9b57a4c68d081"
+    },
+    {
+      "path": "cases/CTX02/触发与归因检查.md",
+      "bytes": 4604,
+      "sha256": "2146afa4a2ad666869b09967287bed5da3096d41d99adb24df3cc45a3444dd5d"
+    },
+    {
+      "path": "cases/CTX02/评测者材料/16项检查表.json",
+      "bytes": 2821,
+      "sha256": "4bc877c3929d95d77a38ef99c51efb00ab8ccceebcecabf4be5b06ca056a93c3"
+    },
+    {
+      "path": "cases/CTX02/评测者材料/预期状态.json",
+      "bytes": 639,
+      "sha256": "cbd3e09e4e1df104b1188690ef0042370adbd1e5b868960f595974c6b094eb04"
     },
     {
       "path": "cases/FB01/README.md",
@@ -118,14 +183,109 @@
       "sha256": "187e4cc68abf6f4c875109ede1bacd1500c5af16a8c35a3a2c9814e87616ae82"
     },
     {
+      "path": "cases/REC01/README.md",
+      "bytes": 1862,
+      "sha256": "865e1130cef09d9524c04d49a955fc1427c10b9d41f259543fa5c1e99cd90330"
+    },
+    {
+      "path": "cases/REC01/checks/核对交付物.py",
+      "bytes": 2968,
+      "sha256": "23b43d607017997695c8acbb24397514617ab52c5ac37a1b33760e6d1e5029d4"
+    },
+    {
+      "path": "cases/REC01/提示词/01-开始任务.md",
+      "bytes": 1584,
+      "sha256": "87ed143159cf677c72ec17f3893a504c1df428ac449be92689cda5b00b89e4bf"
+    },
+    {
+      "path": "cases/REC01/提示词/02-可选诊断-仅在未继续时使用.md",
+      "bytes": 744,
+      "sha256": "62bfd50ab3787d0ffe6860dff2b403561f1ab616b41826370d45335227d8ef04"
+    },
+    {
+      "path": "cases/REC01/用例与判分规则.md",
+      "bytes": 6168,
+      "sha256": "63ba45b7a6a77bb30541e2598a38039b03369485525da5a90004f29dccedeee2"
+    },
+    {
+      "path": "cases/REC01/评测者材料/标准结果.json",
+      "bytes": 331,
+      "sha256": "b41dd0070a7b20e1bfc831e6b49f70acf33577e96d9538a3808c26fb5b632705"
+    },
+    {
+      "path": "cases/REC01/输入/recovery_export.py",
+      "bytes": 2387,
+      "sha256": "0294151d1f04e129f4e07764c2f7028375a56d11525f0efbea4bd9dadb4fdbe3"
+    },
+    {
+      "path": "cases/REC01/运行记录/单次记录模板.md",
+      "bytes": 1736,
+      "sha256": "f84c39bc25b69044f2112eb43de461bcc7476454a3192f1553185a084a09bdb2"
+    },
+    {
+      "path": "cases/REC02/README.md",
+      "bytes": 2375,
+      "sha256": "8fdde4385fc0c77c06e24712ea86838c18496156db10cb5df5d688b5e22cef6b"
+    },
+    {
+      "path": "cases/REC02/checks/核对阶段文件.py",
+      "bytes": 6803,
+      "sha256": "be5a3726367f5739bb275e186f36c9661eacac60c4eac81220ad1de044a7a20c"
+    },
+    {
+      "path": "cases/REC02/提示词/01-首次运行后停止.md",
+      "bytes": 977,
+      "sha256": "5ea6cdac2803e4cabd4f67a6a13824338eefa9b44d57db8caef9872ae91bc98d"
+    },
+    {
+      "path": "cases/REC02/提示词/02-继续完成原任务.md",
+      "bytes": 1729,
+      "sha256": "0637a6caf739d4c8651dfb7b80aa2141c30563cd3985a4dfa2707c189d66b516"
+    },
+    {
+      "path": "cases/REC02/用例与判分规则.md",
+      "bytes": 6815,
+      "sha256": "145d85f0100a4987a5d45265e02ebb66d8bd329e4411cd6fff62bb9d5bfd0243"
+    },
+    {
+      "path": "cases/REC02/设计草案.md",
+      "bytes": 9850,
+      "sha256": "f96823ef5c36bf72239eac17277b198e15739a286b3cb7b4cdd7a50bc8351e5e"
+    },
+    {
+      "path": "cases/REC02/评测者材料/12项观察表.json",
+      "bytes": 3453,
+      "sha256": "e906064d6f2e8d05ba1e360ac11357d69d0d306cb969fbb2a2000069dde25fb6"
+    },
+    {
+      "path": "cases/REC02/评测者材料/标准数据.json",
+      "bytes": 904,
+      "sha256": "8d658da28bed921d1bda49247efbf4857c58a595bf6910de0da50eebb224a302"
+    },
+    {
+      "path": "cases/REC02/输入/recovery_batch.py",
+      "bytes": 10599,
+      "sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405"
+    },
+    {
       "path": "checks/check_package.py",
       "bytes": 4129,
       "sha256": "430aacc578f07447d4e1529669a615814cb3c6078294aedf5ca1fc9b6890bf05"
     },
     {
       "path": "checks/verify.py",
-      "bytes": 19907,
-      "sha256": "4e61d923baac3826c13f36b284786f75bcd083519b5f37561df730a90fc3e59c"
+      "bytes": 20070,
+      "sha256": "600db6c269bb2df314af8b2ea075a0074aa1d4973b148f41e8bc064bb458a218"
+    },
+    {
+      "path": "checks/verify_recent.py",
+      "bytes": 12000,
+      "sha256": "2d9e251bab2c61ae199f701e1262f0c3c288f6fa06a71073132c63560e704c6b"
+    },
+    {
+      "path": "checks/整理检查结果-2026-10-21.md",
+      "bytes": 1788,
+      "sha256": "6344b7c3fdc56a6edaef124624e114f2f8d68262b3f817a11d04570b04b9cb3d"
     },
     {
       "path": "checks/整理检查结果.md",
@@ -139,18 +299,23 @@
     },
     {
       "path": "docs/公开材料与来源说明.md",
-      "bytes": 4234,
-      "sha256": "b1dc9c0bd16e2bf310877aa6f536d9ef7a14a6084973e87447ba0c45137428d2"
+      "bytes": 6230,
+      "sha256": "cc8a7aa0b42ebfa36c7015d870d14a582986b524b84064c9b3a0df7ba39f2be5"
+    },
+    {
+      "path": "docs/周报/第1周周报.md",
+      "bytes": 9097,
+      "sha256": "ce214103fa0e01e1e1122321732ef041b6cf904e5b553087ef821874ae5621da"
     },
     {
       "path": "docs/复核说明.md",
-      "bytes": 5914,
-      "sha256": "c067598b3c6d566f5d4b9eaf973220005fed051e805cdc25d3d567508e127e83"
+      "bytes": 6792,
+      "sha256": "aa2ca53c227a8dd5437affb50f72853b165e6349d38770464d6f96eb45ba5f1c"
     },
     {
       "path": "docs/待完成事项.md",
-      "bytes": 2048,
-      "sha256": "57d3234204ee324b34b62011618d3c328431aa64e99b54385bab039fb0bc3468"
+      "bytes": 2211,
+      "sha256": "d36da8c8a7ae5d8ff1e196031350b583d35978a7bf2c78d71841e0e5a4b693a6"
     },
     {
       "path": "docs/打分与证据规则.md",
@@ -164,8 +329,8 @@
     },
     {
       "path": "docs/表现现场导读.md",
-      "bytes": 3325,
-      "sha256": "4da3315ac4f640621e70e7c901049ebe1eb0784b545b82036bd85451bfbc0a37"
+      "bytes": 4031,
+      "sha256": "62046d3b45170efa911fb9b9f3447298b68f37b5a5540434b24572188c75c7cd"
     },
     {
       "path": "docs/评测方案.md",
@@ -173,9 +338,654 @@
       "sha256": "eb7b53aa57e25e324c5c58453739e5f056dfb6248f3d062765df9fc4e78daad4"
     },
     {
-      "path": "docs/周报/第1周周报.md",
-      "bytes": 9097,
-      "sha256": "ce214103fa0e01e1e1122321732ef041b6cf904e5b553087ef821874ae5621da"
+      "path": "docs/阶段进展/2026-10-19至20日.md",
+      "bytes": 4831,
+      "sha256": "1ef799b4d75c33d09bf38db00b866b2a17313cb92b287ccdea8756527dfb313a"
+    },
+    {
+      "path": "evidence/context-compression/Codex/compaction-check.json",
+      "bytes": 2121,
+      "sha256": "932bdc8801e083deeab6ca63443ca54285eca855b5ea370ca374beb8c7cb2dce"
+    },
+    {
+      "path": "evidence/context-compression/Codex/final.json",
+      "bytes": 639,
+      "sha256": "cbd3e09e4e1df104b1188690ef0042370adbd1e5b868960f595974c6b094eb04"
+    },
+    {
+      "path": "evidence/context-compression/Codex/observation.json",
+      "bytes": 342,
+      "sha256": "934b4c0f5d06883ede6100cacff3b6211b5cf05f2f0d801445227d9f46ee2639"
+    },
+    {
+      "path": "evidence/context-compression/Codex/replacement-history-excerpt.json",
+      "bytes": 15860,
+      "sha256": "daf052278395d554163df090ba55bab1202c42bb045ff2e1ae602eac0774a308"
+    },
+    {
+      "path": "evidence/context-compression/DSH/compaction-summary.json",
+      "bytes": 3675,
+      "sha256": "fdfa28f6928f482d4ea5accac06f34532000b22bd58697f6c202b5bf159343ad"
+    },
+    {
+      "path": "evidence/context-compression/DSH/final.json",
+      "bytes": 639,
+      "sha256": "cbd3e09e4e1df104b1188690ef0042370adbd1e5b868960f595974c6b094eb04"
+    },
+    {
+      "path": "evidence/context-compression/DSH/observation.json",
+      "bytes": 334,
+      "sha256": "a275d63ebce7dd3239b957cdb219110da7b75eaf7f5c8485a041da4259bbd35d"
+    },
+    {
+      "path": "evidence/context-compression/DSH/post-request-summary-block.json",
+      "bytes": 3691,
+      "sha256": "e58441f969bd8dc7ba6df3e71c02840b9ec682d0412361a95427528af42c3606"
+    },
+    {
+      "path": "evidence/context-compression/Doubao/final.json",
+      "bytes": 639,
+      "sha256": "cbd3e09e4e1df104b1188690ef0042370adbd1e5b868960f595974c6b094eb04"
+    },
+    {
+      "path": "evidence/context-compression/Doubao/observation.json",
+      "bytes": 404,
+      "sha256": "7ccd8704b3b5165e520b019fb4e6ad54480b3395032a5d431eb3349d53e78228"
+    },
+    {
+      "path": "evidence/context-compression/WorkBuddy/compaction-content-excerpt.json",
+      "bytes": 15461,
+      "sha256": "47f277abfb1a18f93a88d84024a6367cdc8d0f002768ec0c9c75c98ffd238a9a"
+    },
+    {
+      "path": "evidence/context-compression/WorkBuddy/final.json",
+      "bytes": 639,
+      "sha256": "cbd3e09e4e1df104b1188690ef0042370adbd1e5b868960f595974c6b094eb04"
+    },
+    {
+      "path": "evidence/context-compression/WorkBuddy/observation.json",
+      "bytes": 343,
+      "sha256": "78a3e90e5928aa686716b9764621c3f44e31bfbafd05eae907cd155dd838b214"
+    },
+    {
+      "path": "evidence/context-compression/Yuanbao/final.json",
+      "bytes": 639,
+      "sha256": "cbd3e09e4e1df104b1188690ef0042370adbd1e5b868960f595974c6b094eb04"
+    },
+    {
+      "path": "evidence/context-compression/Yuanbao/observation.json",
+      "bytes": 308,
+      "sha256": "58986476f611f2188ae01c1eb6b9547d75568a4bf8085c0d01ddee77d3ef26f8"
+    },
+    {
+      "path": "evidence/recovery/REC01/Codex/native.excerpt.json",
+      "bytes": 5592,
+      "sha256": "4a7fbbcef24439aab1bb1930d0c8f1f4a36ac1e933dc3348f33941cd57ca55cb"
+    },
+    {
+      "path": "evidence/recovery/REC01/Codex/score.json",
+      "bytes": 4911,
+      "sha256": "66406d27c0f10bdc8363c776368e9e4ca053c7bd6cfccdc073b29c8c7aa91b23"
+    },
+    {
+      "path": "evidence/recovery/REC01/Codex/snapshot/outputs/registration_summary.json",
+      "bytes": 331,
+      "sha256": "b41dd0070a7b20e1bfc831e6b49f70acf33577e96d9538a3808c26fb5b632705"
+    },
+    {
+      "path": "evidence/recovery/REC01/Codex/snapshot/recovery_export.py",
+      "bytes": 2387,
+      "sha256": "0294151d1f04e129f4e07764c2f7028375a56d11525f0efbea4bd9dadb4fdbe3"
+    },
+    {
+      "path": "evidence/recovery/REC01/Codex/交付物核对.json",
+      "bytes": 770,
+      "sha256": "6e455eb160f88265c3da068885d157d58518e309c1e0fe26b13c5fec9e53314f"
+    },
+    {
+      "path": "evidence/recovery/REC01/DSH/native.excerpt.json",
+      "bytes": 11126,
+      "sha256": "4be8a5bf963c9caeb19cffd82beffeacdb5cea2ed14926fc1fd58f26763db7ad"
+    },
+    {
+      "path": "evidence/recovery/REC01/DSH/score.json",
+      "bytes": 5520,
+      "sha256": "6030cb84c023af05809530941162e9edbb1c41554e8b1a3fea5dcc4bf99cd581"
+    },
+    {
+      "path": "evidence/recovery/REC01/DSH/snapshot/outputs/registration_summary.json",
+      "bytes": 331,
+      "sha256": "b41dd0070a7b20e1bfc831e6b49f70acf33577e96d9538a3808c26fb5b632705"
+    },
+    {
+      "path": "evidence/recovery/REC01/DSH/snapshot/recovery_export.py",
+      "bytes": 2387,
+      "sha256": "0294151d1f04e129f4e07764c2f7028375a56d11525f0efbea4bd9dadb4fdbe3"
+    },
+    {
+      "path": "evidence/recovery/REC01/DSH/交付物核对.json",
+      "bytes": 766,
+      "sha256": "52a15b6f82e65b527aecab3c573de8a97b080e1de8f03ef8fb5cc8990a8f7c97"
+    },
+    {
+      "path": "evidence/recovery/REC01/Doubao/score.json",
+      "bytes": 4861,
+      "sha256": "87e772c0b95e85ff9ccc012e592b96178ea8eb3d0791c062afd35578fe083394"
+    },
+    {
+      "path": "evidence/recovery/REC01/Doubao/snapshot/outputs/registration_summary.json",
+      "bytes": 331,
+      "sha256": "b41dd0070a7b20e1bfc831e6b49f70acf33577e96d9538a3808c26fb5b632705"
+    },
+    {
+      "path": "evidence/recovery/REC01/Doubao/snapshot/recovery_export.py",
+      "bytes": 2387,
+      "sha256": "0294151d1f04e129f4e07764c2f7028375a56d11525f0efbea4bd9dadb4fdbe3"
+    },
+    {
+      "path": "evidence/recovery/REC01/Doubao/交付物核对.json",
+      "bytes": 784,
+      "sha256": "23034d6f3f88cc5419cc3af37f07b9905fd4714fb0aaf14e35c61c40de1d4afc"
+    },
+    {
+      "path": "evidence/recovery/REC01/Doubao/界面核对摘录.md",
+      "bytes": 3224,
+      "sha256": "701fc78355e9a56bbf08232eae41b415ddbe83ec3d4b38a0a393dab8271fbae9"
+    },
+    {
+      "path": "evidence/recovery/REC01/WorkBuddy/native.excerpt.json",
+      "bytes": 8584,
+      "sha256": "e868c9121f21b559ba5e7a0d9ef6246c458e5b1ca2decc4548393c1d387e6af4"
+    },
+    {
+      "path": "evidence/recovery/REC01/WorkBuddy/score.json",
+      "bytes": 5975,
+      "sha256": "2a78515b77e31d577c0b6d73614c14405e58603ce786dd5b80c7be7cb8b67cc6"
+    },
+    {
+      "path": "evidence/recovery/REC01/WorkBuddy/snapshot/outputs/registration_summary.json",
+      "bytes": 331,
+      "sha256": "b41dd0070a7b20e1bfc831e6b49f70acf33577e96d9538a3808c26fb5b632705"
+    },
+    {
+      "path": "evidence/recovery/REC01/WorkBuddy/snapshot/recovery_export.py",
+      "bytes": 2387,
+      "sha256": "0294151d1f04e129f4e07764c2f7028375a56d11525f0efbea4bd9dadb4fdbe3"
+    },
+    {
+      "path": "evidence/recovery/REC01/WorkBuddy/交付物核对.json",
+      "bytes": 778,
+      "sha256": "d8ceda274a1c63d5aa8542b27e26d774abba8d205866888589358cb69d32b7e8"
+    },
+    {
+      "path": "evidence/recovery/REC01/Yuanbao/score.json",
+      "bytes": 4992,
+      "sha256": "65dfc26a6fb72c432c79cb5b7d904f8dc3874639daf00d21cdd3d10bb0f282d3"
+    },
+    {
+      "path": "evidence/recovery/REC01/Yuanbao/snapshot/outputs/registration_summary.json",
+      "bytes": 331,
+      "sha256": "b41dd0070a7b20e1bfc831e6b49f70acf33577e96d9538a3808c26fb5b632705"
+    },
+    {
+      "path": "evidence/recovery/REC01/Yuanbao/交付物核对.json",
+      "bytes": 526,
+      "sha256": "fb75d6f613af6cbde36924497ee5b6962ce4e4d334eed4ebd160850a270b102e"
+    },
+    {
+      "path": "evidence/recovery/REC01/Yuanbao/界面核对摘录.md",
+      "bytes": 2955,
+      "sha256": "26033eb48110cdfd97e7afc3c112e089a061aff22325f9bd6db50ac295d10ac7"
+    },
+    {
+      "path": "evidence/recovery/REC01/Yuanbao/补充材料-用户转述的工具返回.md",
+      "bytes": 2399,
+      "sha256": "b8a25c8a53b177c0e84d8feb706c02d89fa0b737466cbf9de19f72af797a5604"
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/complete/native.excerpt.json",
+      "bytes": 29122,
+      "sha256": "2ecdd572d6ed148237888a157115e09d1a27e60b82c591f55caf3b2bf9f5f5f6"
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/complete/workspace/.recovery/events.jsonl",
+      "bytes": 1123,
+      "sha256": "3869c0a9bb410749add2646573484b2e2d5c3fbef5e8ff68d51957cf21687776"
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/complete/workspace/.recovery/state.json",
+      "bytes": 376,
+      "sha256": "411972ffbe6266bb7b038c6e9dd273a23aa0072e7cccafd6b3e72f662a0a30a6"
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_A.json",
+      "bytes": 340,
+      "sha256": "b9a214858358f635c7c2b265d22ddfb9e881a438465c08435386c049402503fa"
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_B.json",
+      "bytes": 339,
+      "sha256": "4b37f373f227d718595a8c0a6b53e7f99e91471960e9867c135a87ebd005d40e"
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_C.json",
+      "bytes": 339,
+      "sha256": "9ad8a5ff8ad9046997d67ccdafced4d5b2171cc35b63350a68185d8788b3e1e4"
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/complete/workspace/outputs/manifest.json",
+      "bytes": 808,
+      "sha256": "9c17928e84777c55f09e067cef202fd853ce77761e76a6dc12c279da3da4a596"
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/complete/workspace/recovery_batch.py",
+      "bytes": 10599,
+      "sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405"
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/complete/阶段文件核对.json",
+      "bytes": 2052,
+      "sha256": "6057a8e2c709ff505c0bac91d64b2b5a5cb737d71a8afd3aa26f6a8dd34ed968"
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/failure/native.excerpt.json",
+      "bytes": 3436,
+      "sha256": "cba0384d3fec226fd2d99fcd02392bdfb07d63cc9bb3314f60b6af95cce50ef4"
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/failure/workspace/.recovery/events.jsonl",
+      "bytes": 427,
+      "sha256": "109c2aaa9ce1a193d2df8b7e73b37ebb5469b0e9816eaf15745760633cdd196c"
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/failure/workspace/.recovery/state.json",
+      "bytes": 375,
+      "sha256": "5a47bd74d19c3706bda95b95104802556c580ec6f674aad4e85c9a4544cbdd0d"
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_A.json",
+      "bytes": 340,
+      "sha256": "b9a214858358f635c7c2b265d22ddfb9e881a438465c08435386c049402503fa"
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_B.partial.json",
+      "bytes": 270,
+      "sha256": "21138aad05967b69a50a76415a6c21c118b2cc85672478a55059e95d7706920e"
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/failure/workspace/recovery_batch.py",
+      "bytes": 10599,
+      "sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405"
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/failure/原生过程核对.json",
+      "bytes": 1797,
+      "sha256": "3e42b628ef4d9795123fff37103919ffa96785b409017c9160bfa46989635752"
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/failure/阶段文件核对.json",
+      "bytes": 1506,
+      "sha256": "cd61ce213d35d3127c1280a61e92a483511f5559d093d4f93efd6dfcb8071823"
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/score.json",
+      "bytes": 39484,
+      "sha256": "2fca1de3eb46a19eabce8af124eee1e4909d953583338f4aeceb845a32fa9250"
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/complete/native.excerpt.json",
+      "bytes": 46322,
+      "sha256": "89510978ac6322393af63dd40d8882f49f6584925470188c37dc54fb2bdc4427"
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/complete/workspace/.recovery/events.jsonl",
+      "bytes": 1123,
+      "sha256": "0570d73cd505f69932091230b826366eced25a4048aa97d76d026d98948950f4"
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/complete/workspace/.recovery/state.json",
+      "bytes": 376,
+      "sha256": "62493b2156573da754ec74dfdb9905ef3ca535169b7df5d0f4b96fadeae9eb97"
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_A.json",
+      "bytes": 340,
+      "sha256": "f2467394b85f50a7d04ee61f4a4813e134cd25a3a7ac32de542ef45d299efa88"
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_B.json",
+      "bytes": 339,
+      "sha256": "2d47c59042c625fa70d81e315259593aec955a8e86e09307826ccda92fb0d24f"
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_C.json",
+      "bytes": 339,
+      "sha256": "d153ac18f623da03ca5ced2a0e599d3338d08aa9c2399b6b4d04711e9047f22b"
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/complete/workspace/outputs/manifest.json",
+      "bytes": 808,
+      "sha256": "c756c4415834f856b5a512e11f64b2ae6154d58dc4c2ab0b538642239f50fb19"
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/complete/workspace/recovery_batch.py",
+      "bytes": 10599,
+      "sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405"
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/complete/阶段文件核对.json",
+      "bytes": 2048,
+      "sha256": "fcaf8ed6027a7f5c90856b5a8dd3fa64d95364912655a9c9e2f82c48c54f18ee"
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/failure/native.excerpt.json",
+      "bytes": 2650,
+      "sha256": "3a5e4ebe72e608c9392bebd817d12d1954787561c3a71573b37cf4c3974eb28f"
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/failure/workspace/.recovery/events.jsonl",
+      "bytes": 427,
+      "sha256": "4cf3374dfebf1f577e702858eeb810b20b595502c9903f9f4aca7c18e58d59cb"
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/failure/workspace/.recovery/state.json",
+      "bytes": 375,
+      "sha256": "1b11d4c9f0f2b20d4d98aa9cfbd31da18b3821e82d87dde4e004d2c4cc674971"
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_A.json",
+      "bytes": 340,
+      "sha256": "f2467394b85f50a7d04ee61f4a4813e134cd25a3a7ac32de542ef45d299efa88"
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_B.partial.json",
+      "bytes": 270,
+      "sha256": "85db91e2a971a22a0b41afc79d6725360811e235e231d13ff5fde90521210b9c"
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/failure/workspace/recovery_batch.py",
+      "bytes": 10599,
+      "sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405"
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/failure/原生过程核对.json",
+      "bytes": 1435,
+      "sha256": "ec374a4ef33b73c3e98b9e598f4b96839a537aa27fcfd5ee0df79338f161e9e6"
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/failure/阶段文件核对.json",
+      "bytes": 1504,
+      "sha256": "16261e04b612c3276a360187a4b4e7ea37165dbf0745bb709b1bd35c90179098"
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/score.json",
+      "bytes": 35187,
+      "sha256": "9b39cba1aae7bf52b7155077cb1730003efb57a8208bbafcd3224dce6b1229f7"
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/complete/workspace/.recovery/events.jsonl",
+      "bytes": 1123,
+      "sha256": "6fbd57aa75889105e96dd9f72fbf6d21e253f869650d14fe1522a32d7c0db964"
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/complete/workspace/.recovery/state.json",
+      "bytes": 376,
+      "sha256": "b5f1f909a114a16658cc3a7037bc78a2ccfc308e8402b457dfd604bd28aeabf9"
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/complete/workspace/outputs/batch_A.json",
+      "bytes": 340,
+      "sha256": "61357c7c595ade72f5c12f294402878853838a1ee9e1a875d3d9eba9bd5c7815"
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/complete/workspace/outputs/batch_B.json",
+      "bytes": 339,
+      "sha256": "bd76de2ddc43a2c6917577894b38d2bf1b309564e8a5937ac2066ea9a3e26b3b"
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/complete/workspace/outputs/batch_C.json",
+      "bytes": 339,
+      "sha256": "e1b37fa7d316fa2d92cbb3e2706e3f0c0eb5d8d081da0f25aced469a62701f53"
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/complete/workspace/outputs/manifest.json",
+      "bytes": 808,
+      "sha256": "f697093d0dce538145bfc4fe9025c4c683f3e4e701bd87806f1f6aeebe56e201"
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/complete/workspace/recovery_batch.py",
+      "bytes": 10599,
+      "sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405"
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/complete/客户端过程核对.json",
+      "bytes": 3442,
+      "sha256": "36642751c8c54799a42efd162bc27b79ef5c94cd8919858d25d670d4d7d37c64"
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/complete/阶段文件核对.json",
+      "bytes": 2066,
+      "sha256": "95b4d9d002088f494ea3f1862e403d469f97158df290137b09e1c79805de0524"
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/failure/workspace/.recovery/events.jsonl",
+      "bytes": 427,
+      "sha256": "8e2366f796094d1eb0e4f07702d4ad1e8751ac5ea362a15adf11cdf45078c8d8"
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/failure/workspace/.recovery/state.json",
+      "bytes": 375,
+      "sha256": "9a96bfa9fc63f6ed55e6a554e9707de762b29cef60268584d79f1910c6f62981"
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/failure/workspace/outputs/batch_A.json",
+      "bytes": 340,
+      "sha256": "61357c7c595ade72f5c12f294402878853838a1ee9e1a875d3d9eba9bd5c7815"
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/failure/workspace/outputs/batch_B.partial.json",
+      "bytes": 270,
+      "sha256": "35aebb6e7b8b3530db1177a11cf5498387bac2b4d3158695675c592dce23587f"
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/failure/workspace/recovery_batch.py",
+      "bytes": 10599,
+      "sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405"
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/failure/过程核对摘录.md",
+      "bytes": 784,
+      "sha256": "3f823e3f75b630a3acd32bd1e9917fe43d3600e3e1dcaa6159174096d1af93b5"
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/failure/阶段文件核对.json",
+      "bytes": 1513,
+      "sha256": "ccb01ec184d13104aa0e889c39a1d8d2ce5b19ca4a7e0b9c81775a1366b6b19a"
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/score.json",
+      "bytes": 35920,
+      "sha256": "92833b61dc25826e5d7063a29c317297eb86b77140625f317ec78046cedd9157"
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/complete/native.excerpt.json",
+      "bytes": 25445,
+      "sha256": "b12fcae53a6e8470302c84086755c30b2bcd5e920ff2351d2f1dc84abf43f894"
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/complete/workspace/.recovery/events.jsonl",
+      "bytes": 1123,
+      "sha256": "82d692659bf34669a8804b751383bc961fde2ecdb7c6d7e89aec850420c99b28"
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/complete/workspace/.recovery/state.json",
+      "bytes": 376,
+      "sha256": "9d891fe0d2411f9ce1ce827c6bc9fd533a754bc47386b4ebb283dbd9173f560a"
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/complete/workspace/outputs/batch_A.json",
+      "bytes": 340,
+      "sha256": "f762ea987ef5810b9d130ac2b021a0bcc14d54f76f526c37cff0f2954b8c14fe"
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/complete/workspace/outputs/batch_B.json",
+      "bytes": 339,
+      "sha256": "70e548c424b44d1fbd471cb2425481af3ba168f2ea6ce0f571bfdae16027f8da"
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/complete/workspace/outputs/batch_C.json",
+      "bytes": 339,
+      "sha256": "90c656af101a7a835fd9a72ed555228e113f21f0a5b61ee5d93facf84b29d848"
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/complete/workspace/outputs/manifest.json",
+      "bytes": 808,
+      "sha256": "0178155994806a52d18072fcf63a4da78de0f77c0e88f2bb815a59e41b4c7f89"
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/complete/workspace/recovery_batch.py",
+      "bytes": 10599,
+      "sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405"
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/complete/阶段文件核对.json",
+      "bytes": 2212,
+      "sha256": "b80cdf618182014ac94e7172a0a4cd70028bdaa1dc47a20ad23e4df404d3d209"
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/failure/native.excerpt.json",
+      "bytes": 4212,
+      "sha256": "ddfefa980f55284afd2e6ed362d4dbfb18f883ca3dd55d7a7c319ab2e38079e0"
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/failure/workspace/.recovery/events.jsonl",
+      "bytes": 427,
+      "sha256": "7c29886f42919f22c0e98c23b998a742c7aa5378ef21022f3b2944a1e0b0f1fa"
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/failure/workspace/.recovery/state.json",
+      "bytes": 375,
+      "sha256": "3c57f25668a7a273a1a9e56ff0ba87b7e587fa90ac116447ca2a912490a83979"
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/failure/workspace/outputs/batch_A.json",
+      "bytes": 340,
+      "sha256": "f762ea987ef5810b9d130ac2b021a0bcc14d54f76f526c37cff0f2954b8c14fe"
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/failure/workspace/outputs/batch_B.partial.json",
+      "bytes": 270,
+      "sha256": "cfd40cead5fc2b6ce9cc382a44aa31ef37039db7e0fefe7d91ab8e07e0d83581"
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/failure/workspace/recovery_batch.py",
+      "bytes": 10599,
+      "sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405"
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/failure/过程核对摘录.md",
+      "bytes": 513,
+      "sha256": "6e120b95c6cf4428995a376b1d7dce273a6e1e793d7cbbb52aa4958f54cf3cbf"
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/failure/阶段文件核对.json",
+      "bytes": 1661,
+      "sha256": "3ffa484f149b407cab227b152b993c631ef52ec414052598931957e9b1ff6dda"
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/score.json",
+      "bytes": 38921,
+      "sha256": "7c9a622168c5dff624b78444631d6422d989307856cd121b91c2bfe64f50e644"
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/events.jsonl",
+      "bytes": 1123,
+      "sha256": "e332c1b14826ea7b2d123d647ee83174f37e20bee62822f36b5de084d8dfb89c"
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/state.json",
+      "bytes": 376,
+      "sha256": "e808f6a7559933b38272a4b3103c7585622de48222a8436838ba5f6cd6bba9c9"
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_A.json",
+      "bytes": 340,
+      "sha256": "52292a483d4ccbbb7d4144d76b3f854f757b8a5521c501ff775b4609d67a7360"
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_B.json",
+      "bytes": 339,
+      "sha256": "e5d0b86577b49190caf9fa3da5f2c245c001d244cee67d66331c3c8cb788085c"
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_C.json",
+      "bytes": 339,
+      "sha256": "3217ce1fb76030f6d2315b9e5643a92fa12567e77dff3a51ea3e10c44ebed08f"
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/manifest.json",
+      "bytes": 808,
+      "sha256": "07154d9702e26dd984fd340d76c7cda5bb187cd09de733b731e43f86f39ecbca"
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/complete/workspace/recovery_batch.py",
+      "bytes": 10599,
+      "sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405"
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/complete/客户端过程核对.json",
+      "bytes": 1359,
+      "sha256": "9eedf95d441835836e166ab7fc0117fba22945b5ec8f41f8dd8da65ce237ae4b"
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/complete/快照补证复核.json",
+      "bytes": 917,
+      "sha256": "148b2a075f63cb60a68f0274ae1cff76f929c3104dd922a5670969f8b617520e"
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/complete/阶段文件核对.json",
+      "bytes": 2054,
+      "sha256": "07bd1ceefe45f495dff8469b3caffaa7d59c88d4dbe0c73444df70875a54a158"
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/events.jsonl",
+      "bytes": 427,
+      "sha256": "99439e3bc4c0be92b9b90cc7ffc39f0346bb814d23548779fbe144135ad9d8cc"
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/state.json",
+      "bytes": 375,
+      "sha256": "4e9be68c6dfe23dc33d9de2b831f18efb35d358e67df38fd39d9078ccd9b36a5"
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_A.json",
+      "bytes": 340,
+      "sha256": "52292a483d4ccbbb7d4144d76b3f854f757b8a5521c501ff775b4609d67a7360"
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_B.partial.json",
+      "bytes": 270,
+      "sha256": "73b23345759d022a70e5f34ebb817ece0410d5b35fea0c3f987fca168dab4021"
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/failure/workspace/recovery_batch.py",
+      "bytes": 10599,
+      "sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405"
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/failure/过程核对摘录.md",
+      "bytes": 656,
+      "sha256": "29430f9eb52dd58427a2465f70a5fd52e527fddd01f2f12f8dedc368dfe9d0a6"
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/failure/阶段文件核对.json",
+      "bytes": 1507,
+      "sha256": "f98f0d0dcbc9cad4b6de7ce7d370b83bcdaa31132bae0d013dfca38fc40c4716"
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/score.json",
+      "bytes": 38762,
+      "sha256": "6c333471f1125d2e577debe6b30544a37c886fc0916e09fb23dd3634eabf98c8"
     },
     {
       "path": "evidence/维度评测/01-信息回传/FB01-基础回传/README.snapshot.txt",
@@ -593,6 +1403,16 @@
       "sha256": "95e3a328da42dda952bf72306a66010d4bbad6220d663ae4448f492eaaddf9cc"
     },
     {
+      "path": "results/context-compression.json",
+      "bytes": 1426,
+      "sha256": "77121be6fdf0d06c28594df5577a182b49b63ecb4aa76bd6b886912b9c017dc2"
+    },
+    {
+      "path": "results/context-compression.md",
+      "bytes": 2498,
+      "sha256": "cb7b47e7dbb768c9dd2117303eae9194588af877173e9051b5cc539c86a94b89"
+    },
+    {
       "path": "results/context-update.json",
       "bytes": 7357,
       "sha256": "19c46fd496608c4c931a81eaa24dca054846242aca0b9399d7ae64e40d62a47b"
@@ -601,6 +1421,16 @@
       "path": "results/context-update.md",
       "bytes": 14998,
       "sha256": "7f349cd2a5939da1e73623beb3bab9987207dade83dae048361bd7772ee88f5c"
+    },
+    {
+      "path": "results/failure-recovery.json",
+      "bytes": 2793,
+      "sha256": "feb70e10d20af32c00ce753dc1edca940d5e3891db6e5049f301b46403853c08"
+    },
+    {
+      "path": "results/failure-recovery.md",
+      "bytes": 4001,
+      "sha256": "a86d52b3e7064c21c760c302da3fc78c1937c01308efb031963e31b5cf47e75e"
     },
     {
       "path": "results/information-feedback.json",

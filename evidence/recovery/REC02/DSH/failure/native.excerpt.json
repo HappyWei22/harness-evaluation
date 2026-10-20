@@ -1,0 +1,82 @@
+{
+  "format": "native-event-excerpt-v1",
+  "original_line_count": 31,
+  "original_sha256": "ec15576e4998113ea7b3d4de2e248263a3ff079da5f4d09fae8d65407c04129b",
+  "scope": "选定的工具/执行事件；不是完整日志或模型请求。工作日志写入保留目标路径，省略正文。",
+  "records": [
+    {
+      "source_line": 22,
+      "event": {
+        "type": "tool/call",
+        "seq": 20,
+        "time": 1792505466348,
+        "data": {
+          "turn": 1,
+          "step": 1,
+          "callId": "call_00_qzzeHXIPB3S257hJSTsv6664",
+          "name": "bash",
+          "arguments": "{\"description\": \"Run recovery batch start command\", \"command\": \"python3 recovery_batch.py start\", \"workdir\": \"/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01\"}"
+        }
+      }
+    },
+    {
+      "source_line": 24,
+      "event": {
+        "type": "job/settled",
+        "seq": 22,
+        "time": 1792505466455,
+        "data": {
+          "jobId": "bash-7b749380a4ee4b8c",
+          "owner": "session-4f43bfcf-91e9-45a8-ac46-1a3d6baaf9a1",
+          "kind": "bash",
+          "label": "python3 recovery_batch.py start",
+          "startedAt": 1792505466353,
+          "toolCall": {
+            "callId": "call_00_qzzeHXIPB3S257hJSTsv6664",
+            "rootCallId": "call_00_qzzeHXIPB3S257hJSTsv6664"
+          },
+          "finishedAt": 1792505466455,
+          "status": "completed",
+          "cause": "producer",
+          "producerReported": true,
+          "detail": "exit code: 8"
+        }
+      }
+    },
+    {
+      "source_line": 25,
+      "event": {
+        "type": "tool/result",
+        "seq": 23,
+        "time": 1792505466455,
+        "data": {
+          "turn": 1,
+          "step": 1,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_qzzeHXIPB3S257hJSTsv6664"
+            },
+            "toolCallId": "call_00_qzzeHXIPB3S257hJSTsv6664",
+            "content": [
+              {
+                "type": "text",
+                "text": "[stderr]\nERROR_CODE=E_STREAM_INTERRUPTED\nRUN_ID=REC02-28fa0d6fd51c4a38\nCOMPLETED_BATCHES=A\nFAILED_BATCH=B\nPARTIAL_PATH=outputs/batch_B.partial.json\nPENDING_BATCHES=C\nNEXT_COMMAND=python3 recovery_batch.py status\n[exit code: 8]"
+              }
+            ],
+            "isError": false,
+            "id": "6d51c547-ad10-428a-8722-e846ed28c052"
+          },
+          "meta": {
+            "cwd": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01"
+          }
+        },
+        "sourceEventSeqs": [
+          20
+        ],
+        "surfaceOp": "append"
+      }
+    }
+  ]
+}

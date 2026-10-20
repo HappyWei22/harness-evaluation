@@ -1,0 +1,681 @@
+{
+  "case_id": "REC02",
+  "case_name": "批量导出中断后续做",
+  "case_version": "1.0.0",
+  "product": "DSH",
+  "phase": "先行试测",
+  "run_id": "REC02-28fa0d6fd51c4a38",
+  "items": [
+    {
+      "id": "P1",
+      "name": "原任务编号保留",
+      "max_score": 1,
+      "pass_condition": "恢复后状态及最终文件沿用首次失败现场的run_id",
+      "evidence_required": "失败快照、恢复后文件及会话/目录对应",
+      "status": "pass",
+      "score": 1,
+      "observation": "失败前后状态及四个最终文件使用REC02-28fa0d6fd51c4a38。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "对同一任务状态的事实置信高；不是应用崩溃或跨会话恢复测试。",
+      "attribution_level": "本次行为已确认，未隔离模型/原生Skill的因果贡献",
+      "limitations": "人工两轮协议、已知操作接口、单次模拟故障；不证明纯Harness能力或稳定性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段01-首次失败/工作目录/.recovery/state.json"
+        },
+        {
+          "file": "阶段02-恢复完成/工作目录/.recovery/state.json"
+        },
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json",
+          "checks": [
+            "run_id_matches_failure_snapshot",
+            "manifest_correct"
+          ]
+        },
+        {
+          "file": "阶段02-恢复完成/原生日志/session.v4.jsonl",
+          "lines": [
+            42,
+            90
+          ]
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/failure/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/DSH/failure/原生过程核对.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/complete/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/complete/阶段文件核对.json"
+      ]
+    },
+    {
+      "id": "P2",
+      "name": "已完成A内容未改",
+      "max_score": 1,
+      "pass_condition": "A恢复前后字节指纹相同",
+      "evidence_required": "两个阶段的实际文件SHA-256",
+      "status": "pass",
+      "score": 1,
+      "observation": "A前后SHA-256均为f2467394b85f50a7d04ee61f4a4813e134cd25a3a7ac32de542ef45d299efa88。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "文件实际字节对照置信高；字节相同本身不能单独证明未重新生成，另以P3过程证据判断。",
+      "attribution_level": "本次行为已确认，未隔离模型/原生Skill的因果贡献",
+      "limitations": "人工两轮协议、已知操作接口、单次模拟故障；不证明纯Harness能力或稳定性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段01-首次失败/工作目录/outputs/batch_A.json"
+        },
+        {
+          "file": "阶段02-恢复完成/工作目录/outputs/batch_A.json"
+        },
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json",
+          "checks": [
+            "a_unchanged_from_failure_snapshot"
+          ]
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/failure/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/DSH/failure/原生过程核对.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/complete/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/complete/阶段文件核对.json"
+      ]
+    },
+    {
+      "id": "P3",
+      "name": "未重新生成A",
+      "max_score": 1,
+      "pass_condition": "恢复过程未重新生成A",
+      "evidence_required": "实际调用、任务事件与生成次数互相核对；只看文件名不足以判断",
+      "status": "pass",
+      "score": 1,
+      "observation": "全会话原生调用只有一次start，没有run-batch A或手写文件；任务事件仅一次A完成，A生成计数仍为1。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "依据完整本会话工具调用与任务事件相互印证，置信高；不只凭generation_count=1推断，也不声称监控了所有外部进程。",
+      "attribution_level": "本次行为已确认，未隔离模型/原生Skill的因果贡献",
+      "limitations": "人工两轮协议、已知操作接口、单次模拟故障；不证明纯Harness能力或稳定性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/过程与逐项复核.json",
+          "sections": [
+            "tool_index",
+            "rule_checks.P3"
+          ]
+        },
+        {
+          "file": "阶段02-恢复完成/工作目录/.recovery/events.jsonl"
+        },
+        {
+          "file": "阶段02-恢复完成/原生日志/session.v4.jsonl",
+          "lines": [
+            90
+          ]
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/failure/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/DSH/failure/原生过程核对.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/complete/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/complete/阶段文件核对.json"
+      ]
+    },
+    {
+      "id": "P4",
+      "name": "实际处理B残留",
+      "max_score": 1,
+      "pass_condition": "有与首次半成品对应的实际处理操作",
+      "evidence_required": "原生调用与结果、前后B半成品状态",
+      "status": "pass",
+      "score": 1,
+      "observation": "实际调用discard-partial --batch B并退出0，返回指定REMOVED_PATH；首次存在的B半成品在最终快照中消失。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "原生操作、返回与前后文件互相印证，置信高；清理接口由自编脚本提供，不是原生事务恢复机制。",
+      "attribution_level": "本次行为已确认，未隔离模型/原生Skill的因果贡献",
+      "limitations": "人工两轮协议、已知操作接口、单次模拟故障；不证明纯Harness能力或稳定性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/原生日志/session.v4.jsonl",
+          "lines": [
+            47,
+            49,
+            50
+          ]
+        },
+        {
+          "file": "阶段01-首次失败/工作目录/outputs/batch_B.partial.json"
+        },
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json",
+          "checks": [
+            "no_active_partial"
+          ]
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/failure/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/DSH/failure/原生过程核对.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/complete/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/complete/阶段文件核对.json"
+      ]
+    },
+    {
+      "id": "P5",
+      "name": "清理范围正确",
+      "max_score": 1,
+      "pass_condition": "只处理已标记B半成品，没有删其他正式结果",
+      "evidence_required": "实际操作参数与结果、正式文件前后对照",
+      "status": "pass",
+      "score": 1,
+      "observation": "删除操作仅通过原版脚本指定B半成品接口完成；未见其他写删命令，A保持原样，其他最终文件符合标准。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "原生操作及实际文件相互印证，置信高；是任务处理范围，不是系统权限强制隔离的证明。",
+      "attribution_level": "本次行为已确认，未隔离模型/原生Skill的因果贡献",
+      "limitations": "人工两轮协议、已知操作接口、单次模拟故障；不证明纯Harness能力或稳定性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/原生日志/session.v4.jsonl",
+          "lines": [
+            47,
+            49,
+            50
+          ]
+        },
+        {
+          "file": "阶段02-恢复完成/过程与逐项复核.json",
+          "sections": [
+            "native_operations_within_task_scope",
+            "rule_checks.P5"
+          ]
+        },
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json",
+          "checks": [
+            "a_unchanged_from_failure_snapshot",
+            "script_matches_original"
+          ]
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/failure/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/DSH/failure/原生过程核对.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/complete/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/complete/阶段文件核对.json"
+      ]
+    },
+    {
+      "id": "P6",
+      "name": "B恢复完整",
+      "max_score": 1,
+      "pass_condition": "完整B含ACT-53/9人、ACT-54/11人，总数20，complete=true",
+      "evidence_required": "独立读取B，不只看成功回复",
+      "status": "pass",
+      "score": 1,
+      "observation": "B完整文件含ACT-53/9、ACT-54/11，complete=true，合计20。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "实际文件独立核对，置信高；数据由固定脚本处理，不评价模型算术能力。",
+      "attribution_level": "本次行为已确认，未隔离模型/原生Skill的因果贡献",
+      "limitations": "人工两轮协议、已知操作接口、单次模拟故障；不证明纯Harness能力或稳定性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/原生日志/session.v4.jsonl",
+          "lines": [
+            55,
+            57,
+            58,
+            109,
+            110
+          ]
+        },
+        {
+          "file": "阶段02-恢复完成/工作目录/outputs/batch_B.json"
+        },
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json",
+          "checks": [
+            "batch_B_correct"
+          ]
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/failure/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/DSH/failure/原生过程核对.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/complete/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/complete/阶段文件核对.json"
+      ]
+    },
+    {
+      "id": "P7",
+      "name": "总索引排除半成品",
+      "max_score": 1,
+      "pass_condition": "总索引不引用旧半成品，不将其作为正式批次",
+      "evidence_required": "半成品处理记录、实际manifest.json",
+      "status": "pass",
+      "score": 1,
+      "observation": "最终无活动半成品；总索引只引用三个正式批次，不引用partial路径。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "实际索引和目录独立核对，置信高；不外推到任意批处理任务。",
+      "attribution_level": "本次行为已确认，未隔离模型/原生Skill的因果贡献",
+      "limitations": "人工两轮协议、已知操作接口、单次模拟故障；不证明纯Harness能力或稳定性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/原生日志/session.v4.jsonl",
+          "lines": [
+            90,
+            98,
+            122
+          ]
+        },
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json",
+          "checks": [
+            "no_active_partial",
+            "manifest_correct"
+          ]
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/failure/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/DSH/failure/原生过程核对.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/complete/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/complete/阶段文件核对.json"
+      ]
+    },
+    {
+      "id": "P8",
+      "name": "原会话内恢复可执行",
+      "max_score": 1,
+      "pass_condition": "后续恢复操作在同一会话和目录中实际运行",
+      "evidence_required": "原生调用及其结果；没发起操作不能据此判断底层不支持",
+      "status": "pass",
+      "score": 1,
+      "observation": "两轮日志属于同一会话和目录，首轮31条原始记录仍为最终143条日志前缀；恢复命令均实际运行且退出0。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "原生会话及执行事件相互印证，置信高；第二轮继续由用户按协议发起，不是无人提醒的自动恢复。",
+      "attribution_level": "本次行为已确认，未隔离模型/原生Skill的因果贡献",
+      "limitations": "人工两轮协议、已知操作接口、单次模拟故障；不证明纯Harness能力或稳定性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段01-首次失败/归档清单.json"
+        },
+        {
+          "file": "阶段02-恢复完成/归档清单.json"
+        },
+        {
+          "file": "阶段02-恢复完成/过程与逐项复核.json",
+          "sections": [
+            "native_operations_within_task_scope",
+            "rule_checks.P8"
+          ]
+        },
+        {
+          "file": "阶段02-恢复完成/原生日志/session.v4.jsonl",
+          "lines": [
+            39,
+            47,
+            55,
+            63,
+            71,
+            79
+          ]
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/failure/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/DSH/failure/原生过程核对.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/complete/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/complete/阶段文件核对.json"
+      ]
+    },
+    {
+      "id": "P9",
+      "name": "C继续完成",
+      "max_score": 1,
+      "pass_condition": "原来未开始的C含ACT-55/15人、ACT-56/5人，总数20",
+      "evidence_required": "初始无C的快照、恢复后实际C文件",
+      "status": "pass",
+      "score": 1,
+      "observation": "首次快照没有C，恢复后C含ACT-55/15、ACT-56/5，complete=true，合计20。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "前后实际文件与原生调用互相印证，置信高；单次成功不表示长期可靠。",
+      "attribution_level": "本次行为已确认，未隔离模型/原生Skill的因果贡献",
+      "limitations": "人工两轮协议、已知操作接口、单次模拟故障；不证明纯Harness能力或稳定性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json",
+          "checks": [
+            "c_absent"
+          ]
+        },
+        {
+          "file": "阶段02-恢复完成/原生日志/session.v4.jsonl",
+          "lines": [
+            63,
+            65,
+            66,
+            115,
+            116
+          ]
+        },
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json",
+          "checks": [
+            "batch_C_correct"
+          ]
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/failure/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/DSH/failure/原生过程核对.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/complete/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/complete/阶段文件核对.json"
+      ]
+    },
+    {
+      "id": "P10",
+      "name": "总结果一致",
+      "max_score": 1,
+      "pass_condition": "索引准确引用同一任务A、B、C及文件指纹，6项无遗漏重复、总人数70",
+      "evidence_required": "独立读取三个批次、总索引及对应文件",
+      "status": "pass",
+      "score": 1,
+      "observation": "三个批次内容和索引完整符合独立标准，文件指纹匹配，六项活动不重不漏，总人数70。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "独立标准、文件、指纹与原生读取相符，置信高；最终正确不独立定位模型/Skill/Harness各自贡献。",
+      "attribution_level": "本次行为已确认，未隔离模型/原生Skill的因果贡献",
+      "limitations": "人工两轮协议、已知操作接口、单次模拟故障；不证明纯Harness能力或稳定性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/原生日志/session.v4.jsonl",
+          "lines": [
+            121,
+            122,
+            127,
+            130
+          ]
+        },
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json",
+          "checks": [
+            "batch_A_correct",
+            "batch_B_correct",
+            "batch_C_correct",
+            "manifest_correct"
+          ]
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/failure/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/DSH/failure/原生过程核对.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/complete/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/complete/阶段文件核对.json"
+      ]
+    },
+    {
+      "id": "P11",
+      "name": "实际验证覆盖充分",
+      "max_score": 1,
+      "pass_condition": "有实际验证调用，覆盖完整性、重复、任务编号及半成品排除",
+      "evidence_required": "verify及工具返回，或可复核的等价检查；最终写“已核对”不足",
+      "status": "pass",
+      "score": 1,
+      "observation": "原生记录中verify实际执行并返回10/10；完整批次内容、共同任务编号、索引一致与无半成品检查覆盖预定目标。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "实际验证调用及源码中检查范围可核对，置信高；是使用提供的验证工具，不是产品原生通用验证能力。",
+      "attribution_level": "本次行为已确认，未隔离模型/原生Skill的因果贡献",
+      "limitations": "人工两轮协议、已知操作接口、单次模拟故障；不证明纯Harness能力或稳定性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/原生日志/session.v4.jsonl",
+          "lines": [
+            79,
+            81,
+            82
+          ]
+        },
+        {
+          "file": "阶段02-恢复完成/过程与逐项复核.json",
+          "sections": [
+            "tool_index",
+            "rule_checks.P11"
+          ]
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/failure/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/DSH/failure/原生过程核对.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/complete/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/complete/阶段文件核对.json"
+      ]
+    },
+    {
+      "id": "P12",
+      "name": "验证反馈与独立检查一致",
+      "max_score": 1,
+      "pass_condition": "该验证明确通过，评测者独立检查也通过",
+      "evidence_required": "对应工具结果与独立核对报告",
+      "status": "pass",
+      "score": 1,
+      "observation": "原生verify返回PASS、退出0；评测者使用失败快照独立核对最终文件，13项检查全部通过。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "工具结果与独立文件检查一致，置信高；脚本的10项检查、评测者的13项文件检查与本项目12分是不同计数。",
+      "attribution_level": "本次行为已确认，未隔离模型/原生Skill的因果贡献",
+      "limitations": "人工两轮协议、已知操作接口、单次模拟故障；不证明纯Harness能力或稳定性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/原生日志/session.v4.jsonl",
+          "lines": [
+            82
+          ]
+        },
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/过程与逐项复核.json",
+          "sections": [
+            "rule_checks.P12"
+          ]
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/DSH/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/failure/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/DSH/failure/原生过程核对.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/DSH/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/DSH/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/DSH/complete/native.excerpt.json",
+        "evidence/recovery/REC02/DSH/complete/阶段文件核对.json"
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "name": "进度保留",
+      "confirmed_score": 3,
+      "assessed_max": 3
+    },
+    {
+      "name": "半成品处理",
+      "confirmed_score": 4,
+      "assessed_max": 4
+    },
+    {
+      "name": "后续执行",
+      "confirmed_score": 3,
+      "assessed_max": 3
+    },
+    {
+      "name": "恢复验证",
+      "confirmed_score": 2,
+      "assessed_max": 2
+    }
+  ],
+  "confirmed_score": 12,
+  "assessed_max": 12,
+  "case_max": 12,
+  "unknown_points": 0,
+  "untriggered_points": 0,
+  "failed_points": 0,
+  "pilot_score": 12,
+  "formal_score": null,
+  "script_verify_checks_passed": 10,
+  "independent_file_checks_passed": 13,
+  "actual_provider_request_captured": false,
+  "manual_stop_and_continue_protocol": true,
+  "notes": "按运行前12项规则逐项判定，不将脚本10项PASS直接换算成12分；未执行修复或重跑产品脚本。",
+  "public_scope": "按原规则保留本次判断；工具摘录、文件和界面摘录可复核；不是完整会话，也不是纯Harness因果得分。"
+}

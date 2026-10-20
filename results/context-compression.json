@@ -1,0 +1,43 @@
+{
+  "case_id": "CTX02",
+  "case_version": "0.1.0-draft",
+  "formal_score": null,
+  "runs": [
+    {
+      "product": "DSH",
+      "label": "DSH",
+      "observation_path": "evidence/context-compression/DSH/observation.json",
+      "final_path": "evidence/context-compression/DSH/final.json",
+      "formal_score": null
+    },
+    {
+      "product": "WorkBuddy",
+      "label": "WorkBuddy",
+      "observation_path": "evidence/context-compression/WorkBuddy/observation.json",
+      "final_path": "evidence/context-compression/WorkBuddy/final.json",
+      "formal_score": null
+    },
+    {
+      "product": "Codex",
+      "label": "Codex",
+      "observation_path": "evidence/context-compression/Codex/observation.json",
+      "final_path": "evidence/context-compression/Codex/final.json",
+      "formal_score": null
+    },
+    {
+      "product": "豆包",
+      "label": "Doubao",
+      "observation_path": "evidence/context-compression/Doubao/observation.json",
+      "final_path": "evidence/context-compression/Doubao/final.json",
+      "formal_score": null
+    },
+    {
+      "product": "元宝",
+      "label": "Yuanbao",
+      "observation_path": "evidence/context-compression/Yuanbao/observation.json",
+      "final_path": "evidence/context-compression/Yuanbao/final.json",
+      "formal_score": null
+    }
+  ],
+  "scope": "五款各16项候选内容检查，不是已获得正式16分；共同压缩条件未固定。"
+}

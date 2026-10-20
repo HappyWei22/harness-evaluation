@@ -1,0 +1,92 @@
+{
+  "format": "native-event-excerpt-v1",
+  "original_line_count": 17,
+  "original_sha256": "b8864a763be16ab30edee0cb4d5b6694fe5fa1b4a5c36237d86c7a972e5db00c",
+  "scope": "选定的工具/执行事件；不是完整日志或模型请求。工作日志写入保留目标路径，省略正文。",
+  "records": [
+    {
+      "source_line": 7,
+      "event": {
+        "type": "function_call",
+        "id": "01a159ba-95fe-725f-8c8c-6db83d9d2f93",
+        "parentId": "01a159ba-64c1-7dce-b810-72ccd04c3938",
+        "name": "Bash",
+        "callId": "chatcmpl-tool-8694ca9dd362a48b",
+        "arguments": "{\"command\": \"cd \\\"/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/REC02-a01\\\" && python3 recovery_batch.py start\", \"description\": \"运行报名汇总导出任务首次执行\"}",
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/REC02-a01"
+      }
+    },
+    {
+      "source_line": 8,
+      "event": {
+        "type": "function_call_result",
+        "id": "01a159ba-9ab9-771b-939d-e53b383fa0f7",
+        "parentId": "01a159ba-95fe-725f-8c8c-6db83d9d2f93",
+        "name": "Bash",
+        "callId": "chatcmpl-tool-8694ca9dd362a48b",
+        "status": "completed",
+        "output": {
+          "type": "text",
+          "text": "Command: cd \"/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/REC02-a01\" && python3 recovery_batch.py start\nStdout: ERROR_CODE=E_STREAM_INTERRUPTED\r\nRUN_ID=REC02-29a0ee447b3f4dae\r\nCOMPLETED_BATCHES=A\r\nFAILED_BATCH=B\r\nPARTIAL_PATH=outputs/batch_B.partial.json\r\nPENDING_BATCHES=C\r\nNEXT_COMMAND=python3 recovery_batch.py status\r\n\nStderr: (empty)\nExit Code: 8\nSignal: (none)"
+        },
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/REC02-a01"
+      }
+    },
+    {
+      "source_line": 10,
+      "event": {
+        "type": "function_call",
+        "id": "01a159ba-b3a9-77ef-8c3e-7fbd434c3da4",
+        "parentId": "01a159ba-9d68-70dc-8727-a85bdc51bc36",
+        "name": "Bash",
+        "callId": "chatcmpl-tool-8caaf44d65fa0aca",
+        "arguments": "{\"command\": \"ls -la \\\"/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/REC02-a01/.workbuddy/memory/\\\" 2>/dev/null || echo \\\"NO_MEMORY_DIR\\\"\", \"description\": \"检查记忆目录是否存在\"}",
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/REC02-a01"
+      }
+    },
+    {
+      "source_line": 11,
+      "event": {
+        "type": "function_call_result",
+        "id": "01a159ba-b7e2-7628-9789-f255083d3d0b",
+        "parentId": "01a159ba-b3a9-77ef-8c3e-7fbd434c3da4",
+        "name": "Bash",
+        "callId": "chatcmpl-tool-8caaf44d65fa0aca",
+        "status": "completed",
+        "output": {
+          "type": "text",
+          "text": "Command: ls -la \"/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/REC02-a01/.workbuddy/memory/\" 2>/dev/null || echo \"NO_MEMORY_DIR\"\nStdout: NO_MEMORY_DIR\r\n\nStderr: (empty)\nExit Code: 0\nSignal: (none)"
+        },
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/REC02-a01"
+      }
+    },
+    {
+      "source_line": 13,
+      "event": {
+        "type": "function_call",
+        "id": "01a159ba-d8cc-7607-888d-b96f80e0e712",
+        "parentId": "01a159ba-bae5-74a1-84be-d160c7fe53b0",
+        "name": "Write",
+        "callId": "chatcmpl-tool-b60e62f9663d5cbf",
+        "arguments": "{\"file_path\": \"/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/REC02-a01/.workbuddy/memory/2026-10-20.md\", \"omitted\": \"工作日志正文不公开，不影响操作对象核对\"}",
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/REC02-a01"
+      }
+    },
+    {
+      "source_line": 16,
+      "event": {
+        "type": "function_call_result",
+        "id": "01a159ba-d90d-7481-bb97-602a6822e199",
+        "parentId": "01a159ba-d8cc-7607-888d-b96f80e0e712",
+        "name": "Write",
+        "callId": "chatcmpl-tool-b60e62f9663d5cbf",
+        "status": "completed",
+        "output": {
+          "type": "text",
+          "text": "Successfully created and wrote to new file: /PUBLIC_PROJECT/独立测试工作区/WorkBuddy/REC02-a01/.workbuddy/memory/2026-10-20.md"
+        },
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/REC02-a01"
+      }
+    }
+  ]
+}

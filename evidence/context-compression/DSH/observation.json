@@ -1,0 +1,11 @@
+{
+  "product": "DSH",
+  "content_pass_count": 16,
+  "candidate_check_count": 16,
+  "formal_score": null,
+  "compaction_confirmed": true,
+  "final_source_level": "原生记录/最终回复副本",
+  "limits": [
+    "已确认手动压缩与后续基础正文中的相同摘要；不证明自动触发或服务端实际接收。"
+  ]
+}

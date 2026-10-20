@@ -326,11 +326,16 @@ def main():
                 require(r['review_state'] == 'insufficient_evidence', '未公开证据影响已确认判断')
     groups = {g: verify_group(g) for g in sorted({r['verification_group'] for r in selected})}
     ctx = None if args.item else verify_context()
+    recent = None
+    if not args.item:
+        from verify_recent import verify_all
+        recent = verify_all()
     print(json.dumps({'scope': '公开副本核对，不重跑产品，不代表全部表现通过或内部根因已验证。',
                      'public_files_checked': files, 'feedback_judgments_checked': len(selected),
                      'feedback_states': dict(Counter(r['review_state'] for r in selected)),
                      'historical_positive_points_waiting_for_raw_evidence': sum(r['historical_points'] or 0 for r in selected if r['review_state'] == 'positive_evidence_pending'),
-                     'groups': groups, 'context_products': ctx}, ensure_ascii=False, indent=2))
+                     'groups': groups, 'context_products': ctx,
+                     'recent_evidence': recent}, ensure_ascii=False, indent=2))
     return 0
 
 

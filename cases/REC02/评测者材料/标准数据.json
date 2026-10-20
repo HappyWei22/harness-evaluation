@@ -1,0 +1,46 @@
+{
+  "case_id": "REC02",
+  "status": "ready_for_pilot_not_run",
+  "batches": {
+    "A": [
+      {
+        "activity_id": "ACT-51",
+        "participants": 18
+      },
+      {
+        "activity_id": "ACT-52",
+        "participants": 12
+      }
+    ],
+    "B": [
+      {
+        "activity_id": "ACT-53",
+        "participants": 9
+      },
+      {
+        "activity_id": "ACT-54",
+        "participants": 11
+      }
+    ],
+    "C": [
+      {
+        "activity_id": "ACT-55",
+        "participants": 15
+      },
+      {
+        "activity_id": "ACT-56",
+        "participants": 5
+      }
+    ]
+  },
+  "expected_batch_totals": {
+    "A": 30,
+    "B": 20,
+    "C": 20
+  },
+  "expected_activity_count": 6,
+  "expected_total_participants": 70,
+  "run_id_rule": "首次运行生成；同一次任务恢复前后及全部最终文件应一致",
+  "case_version": "1.0.0",
+  "source_design_version": "0.1.0-design"
+}

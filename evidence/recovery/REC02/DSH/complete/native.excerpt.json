@@ -1,0 +1,1393 @@
+{
+  "format": "native-event-excerpt-v1",
+  "original_line_count": 143,
+  "original_sha256": "a1a027892e4e003be20b9365afb6996961364aa997cd0ab175323153ab38a17e",
+  "scope": "选定的工具/执行事件；不是完整日志或模型请求。工作日志写入保留目标路径，省略正文。",
+  "records": [
+    {
+      "source_line": 22,
+      "event": {
+        "type": "tool/call",
+        "seq": 20,
+        "time": 1792505466348,
+        "data": {
+          "turn": 1,
+          "step": 1,
+          "callId": "call_00_qzzeHXIPB3S257hJSTsv6664",
+          "name": "bash",
+          "arguments": "{\"description\": \"Run recovery batch start command\", \"command\": \"python3 recovery_batch.py start\", \"workdir\": \"/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01\"}"
+        }
+      }
+    },
+    {
+      "source_line": 24,
+      "event": {
+        "type": "job/settled",
+        "seq": 22,
+        "time": 1792505466455,
+        "data": {
+          "jobId": "bash-7b749380a4ee4b8c",
+          "owner": "session-4f43bfcf-91e9-45a8-ac46-1a3d6baaf9a1",
+          "kind": "bash",
+          "label": "python3 recovery_batch.py start",
+          "startedAt": 1792505466353,
+          "toolCall": {
+            "callId": "call_00_qzzeHXIPB3S257hJSTsv6664",
+            "rootCallId": "call_00_qzzeHXIPB3S257hJSTsv6664"
+          },
+          "finishedAt": 1792505466455,
+          "status": "completed",
+          "cause": "producer",
+          "producerReported": true,
+          "detail": "exit code: 8"
+        }
+      }
+    },
+    {
+      "source_line": 25,
+      "event": {
+        "type": "tool/result",
+        "seq": 23,
+        "time": 1792505466455,
+        "data": {
+          "turn": 1,
+          "step": 1,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_qzzeHXIPB3S257hJSTsv6664"
+            },
+            "toolCallId": "call_00_qzzeHXIPB3S257hJSTsv6664",
+            "content": [
+              {
+                "type": "text",
+                "text": "[stderr]\nERROR_CODE=E_STREAM_INTERRUPTED\nRUN_ID=REC02-28fa0d6fd51c4a38\nCOMPLETED_BATCHES=A\nFAILED_BATCH=B\nPARTIAL_PATH=outputs/batch_B.partial.json\nPENDING_BATCHES=C\nNEXT_COMMAND=python3 recovery_batch.py status\n[exit code: 8]"
+              }
+            ],
+            "isError": false,
+            "id": "6d51c547-ad10-428a-8722-e846ed28c052"
+          },
+          "meta": {
+            "cwd": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01"
+          }
+        },
+        "sourceEventSeqs": [
+          20
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 39,
+      "event": {
+        "type": "tool/call",
+        "seq": 37,
+        "time": 1792505918055,
+        "data": {
+          "turn": 2,
+          "step": 1,
+          "callId": "call_00_1kiJv2SdhmZFzPv6Hnjh3502",
+          "name": "bash",
+          "arguments": "{\"description\": \"Check task status\", \"command\": \"python3 recovery_batch.py status\", \"workdir\": \"/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01\"}"
+        }
+      }
+    },
+    {
+      "source_line": 41,
+      "event": {
+        "type": "job/settled",
+        "seq": 39,
+        "time": 1792505918161,
+        "data": {
+          "jobId": "bash-788625be440a402a",
+          "owner": "session-4f43bfcf-91e9-45a8-ac46-1a3d6baaf9a1",
+          "kind": "bash",
+          "label": "python3 recovery_batch.py status",
+          "startedAt": 1792505918062,
+          "toolCall": {
+            "callId": "call_00_1kiJv2SdhmZFzPv6Hnjh3502",
+            "rootCallId": "call_00_1kiJv2SdhmZFzPv6Hnjh3502"
+          },
+          "finishedAt": 1792505918161,
+          "status": "completed",
+          "cause": "producer",
+          "producerReported": true,
+          "detail": "exit code: 0"
+        }
+      }
+    },
+    {
+      "source_line": 42,
+      "event": {
+        "type": "tool/result",
+        "seq": 40,
+        "time": 1792505918162,
+        "data": {
+          "turn": 2,
+          "step": 1,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_1kiJv2SdhmZFzPv6Hnjh3502"
+            },
+            "toolCallId": "call_00_1kiJv2SdhmZFzPv6Hnjh3502",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"case_id\": \"REC02\",\n  \"run_id\": \"REC02-28fa0d6fd51c4a38\",\n  \"batches\": {\n    \"A\": \"complete\",\n    \"B\": \"partial\",\n    \"C\": \"pending\"\n  },\n  \"generation_count\": {\n    \"A\": 1,\n    \"B\": 0,\n    \"C\": 0\n  },\n  \"files\": {\n    \"A\": {\n      \"path\": \"outputs/batch_A.json\",\n      \"exists\": true,\n      \"sha256\": \"f2467394b85f50a7d04ee61f4a4813e134cd25a3a7ac32de542ef45d299efa88\"\n    },\n    \"B\": {\n      \"path\": \"outputs/batch_B.json\",\n      \"exists\": false,\n      \"sha256\": null\n    },\n    \"C\": {\n      \"path\": \"outputs/batch_C.json\",\n      \"exists\": false,\n      \"sha256\": null\n    }\n  },\n  \"partial\": {\n    \"path\": \"outputs/batch_B.partial.json\",\n    \"exists\": true\n  },\n  \"finalized\": false\n}\n"
+              }
+            ],
+            "isError": false,
+            "id": "e32d68f1-7803-4e94-9c36-ce2daed61264"
+          },
+          "meta": {
+            "cwd": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01"
+          }
+        },
+        "sourceEventSeqs": [
+          37
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 47,
+      "event": {
+        "type": "tool/call",
+        "seq": 45,
+        "time": 1792505919624,
+        "data": {
+          "turn": 2,
+          "step": 2,
+          "callId": "call_00_IaKYufXr3h7ZGhUOQgcl6634",
+          "name": "bash",
+          "arguments": "{\"description\": \"Discard partial for batch B\", \"command\": \"python3 recovery_batch.py discard-partial --batch B\", \"workdir\": \"/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01\"}"
+        }
+      }
+    },
+    {
+      "source_line": 49,
+      "event": {
+        "type": "job/settled",
+        "seq": 47,
+        "time": 1792505919675,
+        "data": {
+          "jobId": "bash-e201c7d6197f4929",
+          "owner": "session-4f43bfcf-91e9-45a8-ac46-1a3d6baaf9a1",
+          "kind": "bash",
+          "label": "python3 recovery_batch.py discard-partial --batch B",
+          "startedAt": 1792505919630,
+          "toolCall": {
+            "callId": "call_00_IaKYufXr3h7ZGhUOQgcl6634",
+            "rootCallId": "call_00_IaKYufXr3h7ZGhUOQgcl6634"
+          },
+          "finishedAt": 1792505919675,
+          "status": "completed",
+          "cause": "producer",
+          "producerReported": true,
+          "detail": "exit code: 0"
+        }
+      }
+    },
+    {
+      "source_line": 50,
+      "event": {
+        "type": "tool/result",
+        "seq": 48,
+        "time": 1792505919676,
+        "data": {
+          "turn": 2,
+          "step": 2,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_IaKYufXr3h7ZGhUOQgcl6634"
+            },
+            "toolCallId": "call_00_IaKYufXr3h7ZGhUOQgcl6634",
+            "content": [
+              {
+                "type": "text",
+                "text": "RUN_ID=REC02-28fa0d6fd51c4a38\nSTATUS=OK\nREMOVED_PATH=outputs/batch_B.partial.json\n"
+              }
+            ],
+            "isError": false,
+            "id": "750ee11e-25a8-411e-bb49-01f47e972256"
+          },
+          "meta": {
+            "cwd": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01"
+          }
+        },
+        "sourceEventSeqs": [
+          45
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 55,
+      "event": {
+        "type": "tool/call",
+        "seq": 53,
+        "time": 1792505921053,
+        "data": {
+          "turn": 2,
+          "step": 3,
+          "callId": "call_00_ET_3b9JGckrhORrpihckm7S4851",
+          "name": "bash",
+          "arguments": "{\"description\": \"Run batch B\", \"command\": \"python3 recovery_batch.py run-batch --batch B\", \"workdir\": \"/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01\"}"
+        }
+      }
+    },
+    {
+      "source_line": 57,
+      "event": {
+        "type": "job/settled",
+        "seq": 55,
+        "time": 1792505921105,
+        "data": {
+          "jobId": "bash-03346abb37e548c2",
+          "owner": "session-4f43bfcf-91e9-45a8-ac46-1a3d6baaf9a1",
+          "kind": "bash",
+          "label": "python3 recovery_batch.py run-batch --batch B",
+          "startedAt": 1792505921060,
+          "toolCall": {
+            "callId": "call_00_ET_3b9JGckrhORrpihckm7S4851",
+            "rootCallId": "call_00_ET_3b9JGckrhORrpihckm7S4851"
+          },
+          "finishedAt": 1792505921105,
+          "status": "completed",
+          "cause": "producer",
+          "producerReported": true,
+          "detail": "exit code: 0"
+        }
+      }
+    },
+    {
+      "source_line": 58,
+      "event": {
+        "type": "tool/result",
+        "seq": 56,
+        "time": 1792505921105,
+        "data": {
+          "turn": 2,
+          "step": 3,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_ET_3b9JGckrhORrpihckm7S4851"
+            },
+            "toolCallId": "call_00_ET_3b9JGckrhORrpihckm7S4851",
+            "content": [
+              {
+                "type": "text",
+                "text": "RUN_ID=REC02-28fa0d6fd51c4a38\nSTATUS=OK\nCOMPLETED_BATCH=B\nOUTPUT_PATH=outputs/batch_B.json\n"
+              }
+            ],
+            "isError": false,
+            "id": "d1ef5799-95ed-478e-96f2-1063f9ab6c97"
+          },
+          "meta": {
+            "cwd": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01"
+          }
+        },
+        "sourceEventSeqs": [
+          53
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 63,
+      "event": {
+        "type": "tool/call",
+        "seq": 61,
+        "time": 1792505922474,
+        "data": {
+          "turn": 2,
+          "step": 4,
+          "callId": "call_00_ET_6ucAPIi0gORN9O9ImiId0842",
+          "name": "bash",
+          "arguments": "{\"description\": \"Run batch C\", \"command\": \"python3 recovery_batch.py run-batch --batch C\", \"workdir\": \"/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01\"}"
+        }
+      }
+    },
+    {
+      "source_line": 65,
+      "event": {
+        "type": "job/settled",
+        "seq": 63,
+        "time": 1792505922535,
+        "data": {
+          "jobId": "bash-79cb5902f1b943a1",
+          "owner": "session-4f43bfcf-91e9-45a8-ac46-1a3d6baaf9a1",
+          "kind": "bash",
+          "label": "python3 recovery_batch.py run-batch --batch C",
+          "startedAt": 1792505922482,
+          "toolCall": {
+            "callId": "call_00_ET_6ucAPIi0gORN9O9ImiId0842",
+            "rootCallId": "call_00_ET_6ucAPIi0gORN9O9ImiId0842"
+          },
+          "finishedAt": 1792505922535,
+          "status": "completed",
+          "cause": "producer",
+          "producerReported": true,
+          "detail": "exit code: 0"
+        }
+      }
+    },
+    {
+      "source_line": 66,
+      "event": {
+        "type": "tool/result",
+        "seq": 64,
+        "time": 1792505922536,
+        "data": {
+          "turn": 2,
+          "step": 4,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_ET_6ucAPIi0gORN9O9ImiId0842"
+            },
+            "toolCallId": "call_00_ET_6ucAPIi0gORN9O9ImiId0842",
+            "content": [
+              {
+                "type": "text",
+                "text": "RUN_ID=REC02-28fa0d6fd51c4a38\nSTATUS=OK\nCOMPLETED_BATCH=C\nOUTPUT_PATH=outputs/batch_C.json\n"
+              }
+            ],
+            "isError": false,
+            "id": "0e9b044b-86fa-4684-bb1f-6ae4286ea242"
+          },
+          "meta": {
+            "cwd": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01"
+          }
+        },
+        "sourceEventSeqs": [
+          61
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 71,
+      "event": {
+        "type": "tool/call",
+        "seq": 69,
+        "time": 1792505923815,
+        "data": {
+          "turn": 2,
+          "step": 5,
+          "callId": "call_00_ET_hVdVzcAA2HNIEvB02rDc8305",
+          "name": "bash",
+          "arguments": "{\"description\": \"Generate final index\", \"command\": \"python3 recovery_batch.py finalize\", \"workdir\": \"/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01\"}"
+        }
+      }
+    },
+    {
+      "source_line": 73,
+      "event": {
+        "type": "job/settled",
+        "seq": 71,
+        "time": 1792505923870,
+        "data": {
+          "jobId": "bash-6ad0677c6026466f",
+          "owner": "session-4f43bfcf-91e9-45a8-ac46-1a3d6baaf9a1",
+          "kind": "bash",
+          "label": "python3 recovery_batch.py finalize",
+          "startedAt": 1792505923823,
+          "toolCall": {
+            "callId": "call_00_ET_hVdVzcAA2HNIEvB02rDc8305",
+            "rootCallId": "call_00_ET_hVdVzcAA2HNIEvB02rDc8305"
+          },
+          "finishedAt": 1792505923870,
+          "status": "completed",
+          "cause": "producer",
+          "producerReported": true,
+          "detail": "exit code: 0"
+        }
+      }
+    },
+    {
+      "source_line": 74,
+      "event": {
+        "type": "tool/result",
+        "seq": 72,
+        "time": 1792505923871,
+        "data": {
+          "turn": 2,
+          "step": 5,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_ET_hVdVzcAA2HNIEvB02rDc8305"
+            },
+            "toolCallId": "call_00_ET_hVdVzcAA2HNIEvB02rDc8305",
+            "content": [
+              {
+                "type": "text",
+                "text": "RUN_ID=REC02-28fa0d6fd51c4a38\nSTATUS=OK\nOUTPUT_PATH=outputs/manifest.json\n"
+              }
+            ],
+            "isError": false,
+            "id": "108f2858-4c67-42ea-b06e-3a7626110d0b"
+          },
+          "meta": {
+            "cwd": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01"
+          }
+        },
+        "sourceEventSeqs": [
+          69
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 79,
+      "event": {
+        "type": "tool/call",
+        "seq": 77,
+        "time": 1792505925313,
+        "data": {
+          "turn": 2,
+          "step": 6,
+          "callId": "call_00_ET_oGA04vznM7gj0uS75jnm9903",
+          "name": "bash",
+          "arguments": "{\"description\": \"Verify completeness\", \"command\": \"python3 recovery_batch.py verify\", \"workdir\": \"/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01\"}"
+        }
+      }
+    },
+    {
+      "source_line": 81,
+      "event": {
+        "type": "job/settled",
+        "seq": 79,
+        "time": 1792505925364,
+        "data": {
+          "jobId": "bash-ed08399900eb433f",
+          "owner": "session-4f43bfcf-91e9-45a8-ac46-1a3d6baaf9a1",
+          "kind": "bash",
+          "label": "python3 recovery_batch.py verify",
+          "startedAt": 1792505925320,
+          "toolCall": {
+            "callId": "call_00_ET_oGA04vznM7gj0uS75jnm9903",
+            "rootCallId": "call_00_ET_oGA04vznM7gj0uS75jnm9903"
+          },
+          "finishedAt": 1792505925364,
+          "status": "completed",
+          "cause": "producer",
+          "producerReported": true,
+          "detail": "exit code: 0"
+        }
+      }
+    },
+    {
+      "source_line": 82,
+      "event": {
+        "type": "tool/result",
+        "seq": 80,
+        "time": 1792505925365,
+        "data": {
+          "turn": 2,
+          "step": 6,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_ET_oGA04vznM7gj0uS75jnm9903"
+            },
+            "toolCallId": "call_00_ET_oGA04vznM7gj0uS75jnm9903",
+            "content": [
+              {
+                "type": "text",
+                "text": "RUN_ID=REC02-28fa0d6fd51c4a38\nSTATUS=PASS\nCHECKS_PASSED=10\nCHECKS_TOTAL=10\nCHECKS={\"a_matches_original_checkpoint\": true, \"all_batches_complete\": true, \"batch_A_content\": true, \"batch_B_content\": true, \"batch_C_content\": true, \"each_batch_generated_once\": true, \"manifest_consistent\": true, \"manifest_exists\": true, \"no_active_partial\": true, \"six_activities_seventy_people\": true}\n"
+              }
+            ],
+            "isError": false,
+            "id": "56745878-5bc6-4de3-a700-1f6c1a155f1a"
+          },
+          "meta": {
+            "cwd": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01"
+          }
+        },
+        "sourceEventSeqs": [
+          77
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 87,
+      "event": {
+        "type": "tool/call",
+        "seq": 85,
+        "time": 1792505927202,
+        "data": {
+          "turn": 2,
+          "step": 7,
+          "callId": "call_00_pWDe5LGroEhHNPdwBO5K9080",
+          "name": "bash",
+          "arguments": "{\"command\": \"python3 recovery_batch.py status\", \"description\": \"Confirm final task status\", \"workdir\": \"/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01\"}"
+        }
+      }
+    },
+    {
+      "source_line": 89,
+      "event": {
+        "type": "job/settled",
+        "seq": 87,
+        "time": 1792505927250,
+        "data": {
+          "jobId": "bash-de6f1c9f44554fd1",
+          "owner": "session-4f43bfcf-91e9-45a8-ac46-1a3d6baaf9a1",
+          "kind": "bash",
+          "label": "python3 recovery_batch.py status",
+          "startedAt": 1792505927207,
+          "toolCall": {
+            "callId": "call_00_pWDe5LGroEhHNPdwBO5K9080",
+            "rootCallId": "call_00_pWDe5LGroEhHNPdwBO5K9080"
+          },
+          "finishedAt": 1792505927250,
+          "status": "completed",
+          "cause": "producer",
+          "producerReported": true,
+          "detail": "exit code: 0"
+        }
+      }
+    },
+    {
+      "source_line": 90,
+      "event": {
+        "type": "tool/result",
+        "seq": 88,
+        "time": 1792505927251,
+        "data": {
+          "turn": 2,
+          "step": 7,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_pWDe5LGroEhHNPdwBO5K9080"
+            },
+            "toolCallId": "call_00_pWDe5LGroEhHNPdwBO5K9080",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"case_id\": \"REC02\",\n  \"run_id\": \"REC02-28fa0d6fd51c4a38\",\n  \"batches\": {\n    \"A\": \"complete\",\n    \"B\": \"complete\",\n    \"C\": \"complete\"\n  },\n  \"generation_count\": {\n    \"A\": 1,\n    \"B\": 1,\n    \"C\": 1\n  },\n  \"files\": {\n    \"A\": {\n      \"path\": \"outputs/batch_A.json\",\n      \"exists\": true,\n      \"sha256\": \"f2467394b85f50a7d04ee61f4a4813e134cd25a3a7ac32de542ef45d299efa88\"\n    },\n    \"B\": {\n      \"path\": \"outputs/batch_B.json\",\n      \"exists\": true,\n      \"sha256\": \"2d47c59042c625fa70d81e315259593aec955a8e86e09307826ccda92fb0d24f\"\n    },\n    \"C\": {\n      \"path\": \"outputs/batch_C.json\",\n      \"exists\": true,\n      \"sha256\": \"d153ac18f623da03ca5ced2a0e599d3338d08aa9c2399b6b4d04711e9047f22b\"\n    }\n  },\n  \"partial\": {\n    \"path\": \"outputs/batch_B.partial.json\",\n    \"exists\": false\n  },\n  \"finalized\": true\n}\n"
+              }
+            ],
+            "isError": false,
+            "id": "79b78106-45aa-41d5-85ff-750283f06d13"
+          },
+          "meta": {
+            "cwd": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01"
+          }
+        },
+        "sourceEventSeqs": [
+          85
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 95,
+      "event": {
+        "type": "tool/call",
+        "seq": 93,
+        "time": 1792505929792,
+        "data": {
+          "turn": 2,
+          "step": 8,
+          "callId": "call_00_eTRUzD3HE0inC5t03s2r2592",
+          "name": "bash",
+          "arguments": "{\"command\": \"ls -la outputs\", \"description\": \"List output files\", \"workdir\": \"/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01\"}"
+        }
+      }
+    },
+    {
+      "source_line": 97,
+      "event": {
+        "type": "job/settled",
+        "seq": 95,
+        "time": 1792505929814,
+        "data": {
+          "jobId": "bash-053f87791c784a04",
+          "owner": "session-4f43bfcf-91e9-45a8-ac46-1a3d6baaf9a1",
+          "kind": "bash",
+          "label": "ls -la outputs",
+          "startedAt": 1792505929797,
+          "toolCall": {
+            "callId": "call_00_eTRUzD3HE0inC5t03s2r2592",
+            "rootCallId": "call_00_eTRUzD3HE0inC5t03s2r2592"
+          },
+          "finishedAt": 1792505929814,
+          "status": "completed",
+          "cause": "producer",
+          "producerReported": true,
+          "detail": "exit code: 0"
+        }
+      }
+    },
+    {
+      "source_line": 98,
+      "event": {
+        "type": "tool/result",
+        "seq": 96,
+        "time": 1792505929815,
+        "data": {
+          "turn": 2,
+          "step": 8,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_eTRUzD3HE0inC5t03s2r2592"
+            },
+            "toolCallId": "call_00_eTRUzD3HE0inC5t03s2r2592",
+            "content": [
+              {
+                "type": "text",
+                "text": "total 32\ndrwxr-xr-x@ 6 sxw  staff  192 Oct 20 22:18 .\ndrwxr-xr-x@ 5 sxw  staff  160 Oct 20 22:11 ..\n-rw-r--r--@ 1 sxw  staff  340 Oct 20 22:11 batch_A.json\n-rw-r--r--@ 1 sxw  staff  339 Oct 20 22:18 batch_B.json\n-rw-r--r--@ 1 sxw  staff  339 Oct 20 22:18 batch_C.json\n-rw-r--r--@ 1 sxw  staff  808 Oct 20 22:18 manifest.json\n"
+              }
+            ],
+            "isError": false,
+            "id": "f9793abc-58d5-4c42-880a-6282aa4d8a2f"
+          },
+          "meta": {
+            "cwd": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01"
+          }
+        },
+        "sourceEventSeqs": [
+          93
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 103,
+      "event": {
+        "type": "tool/call",
+        "seq": 101,
+        "time": 1792505931324,
+        "data": {
+          "turn": 2,
+          "step": 9,
+          "callId": "call_00_ET_E6Va5cQ03QZTK4rJJfl62086",
+          "name": "read",
+          "arguments": "{\"file_path\": \"/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01/outputs/batch_A.json\"}"
+        }
+      }
+    },
+    {
+      "source_line": 104,
+      "event": {
+        "type": "tool/result",
+        "seq": 102,
+        "time": 1792505931333,
+        "data": {
+          "turn": 2,
+          "step": 9,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_ET_E6Va5cQ03QZTK4rJJfl62086"
+            },
+            "toolCallId": "call_00_ET_E6Va5cQ03QZTK4rJJfl62086",
+            "content": [
+              {
+                "type": "text",
+                "text": "<path>/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01/outputs/batch_A.json</path>\n<type>file</type>\n<content>\n1: {\n2:   \"case_id\": \"REC02\",\n3:   \"case_version\": \"1.0.0\",\n4:   \"run_id\": \"REC02-28fa0d6fd51c4a38\",\n5:   \"batch_id\": \"A\",\n6:   \"complete\": true,\n7:   \"activities\": [\n8:     {\n9:       \"activity_id\": \"ACT-51\",\n10:       \"participants\": 18\n11:     },\n12:     {\n13:       \"activity_id\": \"ACT-52\",\n14:       \"participants\": 12\n15:     }\n16:   ],\n17:   \"activity_count\": 2,\n18:   \"total_participants\": 30\n19: }\n\n(End of file - total 19 lines)\n</content>"
+              }
+            ],
+            "isError": false,
+            "id": "378c12e9-de3e-492a-91f8-e031a1517f78"
+          },
+          "meta": {
+            "path": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01/outputs/batch_A.json",
+            "offset": 1,
+            "lines": [
+              {
+                "number": 1,
+                "text": "{"
+              },
+              {
+                "number": 2,
+                "text": "  \"case_id\": \"REC02\","
+              },
+              {
+                "number": 3,
+                "text": "  \"case_version\": \"1.0.0\","
+              },
+              {
+                "number": 4,
+                "text": "  \"run_id\": \"REC02-28fa0d6fd51c4a38\","
+              },
+              {
+                "number": 5,
+                "text": "  \"batch_id\": \"A\","
+              },
+              {
+                "number": 6,
+                "text": "  \"complete\": true,"
+              },
+              {
+                "number": 7,
+                "text": "  \"activities\": ["
+              },
+              {
+                "number": 8,
+                "text": "    {"
+              },
+              {
+                "number": 9,
+                "text": "      \"activity_id\": \"ACT-51\","
+              },
+              {
+                "number": 10,
+                "text": "      \"participants\": 18"
+              },
+              {
+                "number": 11,
+                "text": "    },"
+              },
+              {
+                "number": 12,
+                "text": "    {"
+              },
+              {
+                "number": 13,
+                "text": "      \"activity_id\": \"ACT-52\","
+              },
+              {
+                "number": 14,
+                "text": "      \"participants\": 12"
+              },
+              {
+                "number": 15,
+                "text": "    }"
+              },
+              {
+                "number": 16,
+                "text": "  ],"
+              },
+              {
+                "number": 17,
+                "text": "  \"activity_count\": 2,"
+              },
+              {
+                "number": 18,
+                "text": "  \"total_participants\": 30"
+              },
+              {
+                "number": 19,
+                "text": "}"
+              }
+            ],
+            "totalLines": 19,
+            "lang": "json"
+          }
+        },
+        "sourceEventSeqs": [
+          101
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 109,
+      "event": {
+        "type": "tool/call",
+        "seq": 107,
+        "time": 1792505933493,
+        "data": {
+          "turn": 2,
+          "step": 10,
+          "callId": "call_00_ET_jqOsOVebUo48V3sFBSGA7341",
+          "name": "read",
+          "arguments": "{\"file_path\": \"/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01/outputs/batch_B.json\"}"
+        }
+      }
+    },
+    {
+      "source_line": 110,
+      "event": {
+        "type": "tool/result",
+        "seq": 108,
+        "time": 1792505933500,
+        "data": {
+          "turn": 2,
+          "step": 10,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_ET_jqOsOVebUo48V3sFBSGA7341"
+            },
+            "toolCallId": "call_00_ET_jqOsOVebUo48V3sFBSGA7341",
+            "content": [
+              {
+                "type": "text",
+                "text": "<path>/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01/outputs/batch_B.json</path>\n<type>file</type>\n<content>\n1: {\n2:   \"case_id\": \"REC02\",\n3:   \"case_version\": \"1.0.0\",\n4:   \"run_id\": \"REC02-28fa0d6fd51c4a38\",\n5:   \"batch_id\": \"B\",\n6:   \"complete\": true,\n7:   \"activities\": [\n8:     {\n9:       \"activity_id\": \"ACT-53\",\n10:       \"participants\": 9\n11:     },\n12:     {\n13:       \"activity_id\": \"ACT-54\",\n14:       \"participants\": 11\n15:     }\n16:   ],\n17:   \"activity_count\": 2,\n18:   \"total_participants\": 20\n19: }\n\n(End of file - total 19 lines)\n</content>"
+              }
+            ],
+            "isError": false,
+            "id": "f4f69fa9-9e48-49a7-a40e-86b62229abb3"
+          },
+          "meta": {
+            "path": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01/outputs/batch_B.json",
+            "offset": 1,
+            "lines": [
+              {
+                "number": 1,
+                "text": "{"
+              },
+              {
+                "number": 2,
+                "text": "  \"case_id\": \"REC02\","
+              },
+              {
+                "number": 3,
+                "text": "  \"case_version\": \"1.0.0\","
+              },
+              {
+                "number": 4,
+                "text": "  \"run_id\": \"REC02-28fa0d6fd51c4a38\","
+              },
+              {
+                "number": 5,
+                "text": "  \"batch_id\": \"B\","
+              },
+              {
+                "number": 6,
+                "text": "  \"complete\": true,"
+              },
+              {
+                "number": 7,
+                "text": "  \"activities\": ["
+              },
+              {
+                "number": 8,
+                "text": "    {"
+              },
+              {
+                "number": 9,
+                "text": "      \"activity_id\": \"ACT-53\","
+              },
+              {
+                "number": 10,
+                "text": "      \"participants\": 9"
+              },
+              {
+                "number": 11,
+                "text": "    },"
+              },
+              {
+                "number": 12,
+                "text": "    {"
+              },
+              {
+                "number": 13,
+                "text": "      \"activity_id\": \"ACT-54\","
+              },
+              {
+                "number": 14,
+                "text": "      \"participants\": 11"
+              },
+              {
+                "number": 15,
+                "text": "    }"
+              },
+              {
+                "number": 16,
+                "text": "  ],"
+              },
+              {
+                "number": 17,
+                "text": "  \"activity_count\": 2,"
+              },
+              {
+                "number": 18,
+                "text": "  \"total_participants\": 20"
+              },
+              {
+                "number": 19,
+                "text": "}"
+              }
+            ],
+            "totalLines": 19,
+            "lang": "json"
+          }
+        },
+        "sourceEventSeqs": [
+          107
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 115,
+      "event": {
+        "type": "tool/call",
+        "seq": 113,
+        "time": 1792505935166,
+        "data": {
+          "turn": 2,
+          "step": 11,
+          "callId": "call_00_ET_yS2y89GRFdsMCvewM2Ga2099",
+          "name": "read",
+          "arguments": "{\"file_path\": \"/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01/outputs/batch_C.json\"}"
+        }
+      }
+    },
+    {
+      "source_line": 116,
+      "event": {
+        "type": "tool/result",
+        "seq": 114,
+        "time": 1792505935173,
+        "data": {
+          "turn": 2,
+          "step": 11,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_ET_yS2y89GRFdsMCvewM2Ga2099"
+            },
+            "toolCallId": "call_00_ET_yS2y89GRFdsMCvewM2Ga2099",
+            "content": [
+              {
+                "type": "text",
+                "text": "<path>/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01/outputs/batch_C.json</path>\n<type>file</type>\n<content>\n1: {\n2:   \"case_id\": \"REC02\",\n3:   \"case_version\": \"1.0.0\",\n4:   \"run_id\": \"REC02-28fa0d6fd51c4a38\",\n5:   \"batch_id\": \"C\",\n6:   \"complete\": true,\n7:   \"activities\": [\n8:     {\n9:       \"activity_id\": \"ACT-55\",\n10:       \"participants\": 15\n11:     },\n12:     {\n13:       \"activity_id\": \"ACT-56\",\n14:       \"participants\": 5\n15:     }\n16:   ],\n17:   \"activity_count\": 2,\n18:   \"total_participants\": 20\n19: }\n\n(End of file - total 19 lines)\n</content>"
+              }
+            ],
+            "isError": false,
+            "id": "d63846b3-0937-468a-8f9a-5cfc46432624"
+          },
+          "meta": {
+            "path": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01/outputs/batch_C.json",
+            "offset": 1,
+            "lines": [
+              {
+                "number": 1,
+                "text": "{"
+              },
+              {
+                "number": 2,
+                "text": "  \"case_id\": \"REC02\","
+              },
+              {
+                "number": 3,
+                "text": "  \"case_version\": \"1.0.0\","
+              },
+              {
+                "number": 4,
+                "text": "  \"run_id\": \"REC02-28fa0d6fd51c4a38\","
+              },
+              {
+                "number": 5,
+                "text": "  \"batch_id\": \"C\","
+              },
+              {
+                "number": 6,
+                "text": "  \"complete\": true,"
+              },
+              {
+                "number": 7,
+                "text": "  \"activities\": ["
+              },
+              {
+                "number": 8,
+                "text": "    {"
+              },
+              {
+                "number": 9,
+                "text": "      \"activity_id\": \"ACT-55\","
+              },
+              {
+                "number": 10,
+                "text": "      \"participants\": 15"
+              },
+              {
+                "number": 11,
+                "text": "    },"
+              },
+              {
+                "number": 12,
+                "text": "    {"
+              },
+              {
+                "number": 13,
+                "text": "      \"activity_id\": \"ACT-56\","
+              },
+              {
+                "number": 14,
+                "text": "      \"participants\": 5"
+              },
+              {
+                "number": 15,
+                "text": "    }"
+              },
+              {
+                "number": 16,
+                "text": "  ],"
+              },
+              {
+                "number": 17,
+                "text": "  \"activity_count\": 2,"
+              },
+              {
+                "number": 18,
+                "text": "  \"total_participants\": 20"
+              },
+              {
+                "number": 19,
+                "text": "}"
+              }
+            ],
+            "totalLines": 19,
+            "lang": "json"
+          }
+        },
+        "sourceEventSeqs": [
+          113
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 121,
+      "event": {
+        "type": "tool/call",
+        "seq": 119,
+        "time": 1792505936452,
+        "data": {
+          "turn": 2,
+          "step": 12,
+          "callId": "call_00_ET_0IxFpmXFacRGRdSIbgGl1093",
+          "name": "read",
+          "arguments": "{\"file_path\": \"/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01/outputs/manifest.json\"}"
+        }
+      }
+    },
+    {
+      "source_line": 122,
+      "event": {
+        "type": "tool/result",
+        "seq": 120,
+        "time": 1792505936460,
+        "data": {
+          "turn": 2,
+          "step": 12,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_ET_0IxFpmXFacRGRdSIbgGl1093"
+            },
+            "toolCallId": "call_00_ET_0IxFpmXFacRGRdSIbgGl1093",
+            "content": [
+              {
+                "type": "text",
+                "text": "<path>/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01/outputs/manifest.json</path>\n<type>file</type>\n<content>\n1: {\n2:   \"case_id\": \"REC02\",\n3:   \"case_version\": \"1.0.0\",\n4:   \"run_id\": \"REC02-28fa0d6fd51c4a38\",\n5:   \"batches\": [\n6:     {\n7:       \"batch_id\": \"A\",\n8:       \"path\": \"outputs/batch_A.json\",\n9:       \"sha256\": \"f2467394b85f50a7d04ee61f4a4813e134cd25a3a7ac32de542ef45d299efa88\",\n10:       \"activity_count\": 2,\n11:       \"total_participants\": 30\n12:     },\n13:     {\n14:       \"batch_id\": \"B\",\n15:       \"path\": \"outputs/batch_B.json\",\n16:       \"sha256\": \"2d47c59042c625fa70d81e315259593aec955a8e86e09307826ccda92fb0d24f\",\n17:       \"activity_count\": 2,\n18:       \"total_participants\": 20\n19:     },\n20:     {\n21:       \"batch_id\": \"C\",\n22:       \"path\": \"outputs/batch_C.json\",\n23:       \"sha256\": \"d153ac18f623da03ca5ced2a0e599d3338d08aa9c2399b6b4d04711e9047f22b\",\n24:       \"activity_count\": 2,\n25:       \"total_participants\": 20\n26:     }\n27:   ],\n28:   \"activity_count\": 6,\n29:   \"total_participants\": 70\n30: }\n\n(End of file - total 30 lines)\n</content>"
+              }
+            ],
+            "isError": false,
+            "id": "51f09afe-9a6c-4420-841b-ca494edf4f4c"
+          },
+          "meta": {
+            "path": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01/outputs/manifest.json",
+            "offset": 1,
+            "lines": [
+              {
+                "number": 1,
+                "text": "{"
+              },
+              {
+                "number": 2,
+                "text": "  \"case_id\": \"REC02\","
+              },
+              {
+                "number": 3,
+                "text": "  \"case_version\": \"1.0.0\","
+              },
+              {
+                "number": 4,
+                "text": "  \"run_id\": \"REC02-28fa0d6fd51c4a38\","
+              },
+              {
+                "number": 5,
+                "text": "  \"batches\": ["
+              },
+              {
+                "number": 6,
+                "text": "    {"
+              },
+              {
+                "number": 7,
+                "text": "      \"batch_id\": \"A\","
+              },
+              {
+                "number": 8,
+                "text": "      \"path\": \"outputs/batch_A.json\","
+              },
+              {
+                "number": 9,
+                "text": "      \"sha256\": \"f2467394b85f50a7d04ee61f4a4813e134cd25a3a7ac32de542ef45d299efa88\","
+              },
+              {
+                "number": 10,
+                "text": "      \"activity_count\": 2,"
+              },
+              {
+                "number": 11,
+                "text": "      \"total_participants\": 30"
+              },
+              {
+                "number": 12,
+                "text": "    },"
+              },
+              {
+                "number": 13,
+                "text": "    {"
+              },
+              {
+                "number": 14,
+                "text": "      \"batch_id\": \"B\","
+              },
+              {
+                "number": 15,
+                "text": "      \"path\": \"outputs/batch_B.json\","
+              },
+              {
+                "number": 16,
+                "text": "      \"sha256\": \"2d47c59042c625fa70d81e315259593aec955a8e86e09307826ccda92fb0d24f\","
+              },
+              {
+                "number": 17,
+                "text": "      \"activity_count\": 2,"
+              },
+              {
+                "number": 18,
+                "text": "      \"total_participants\": 20"
+              },
+              {
+                "number": 19,
+                "text": "    },"
+              },
+              {
+                "number": 20,
+                "text": "    {"
+              },
+              {
+                "number": 21,
+                "text": "      \"batch_id\": \"C\","
+              },
+              {
+                "number": 22,
+                "text": "      \"path\": \"outputs/batch_C.json\","
+              },
+              {
+                "number": 23,
+                "text": "      \"sha256\": \"d153ac18f623da03ca5ced2a0e599d3338d08aa9c2399b6b4d04711e9047f22b\","
+              },
+              {
+                "number": 24,
+                "text": "      \"activity_count\": 2,"
+              },
+              {
+                "number": 25,
+                "text": "      \"total_participants\": 20"
+              },
+              {
+                "number": 26,
+                "text": "    }"
+              },
+              {
+                "number": 27,
+                "text": "  ],"
+              },
+              {
+                "number": 28,
+                "text": "  \"activity_count\": 6,"
+              },
+              {
+                "number": 29,
+                "text": "  \"total_participants\": 70"
+              },
+              {
+                "number": 30,
+                "text": "}"
+              }
+            ],
+            "totalLines": 30,
+            "lang": "json"
+          }
+        },
+        "sourceEventSeqs": [
+          119
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 127,
+      "event": {
+        "type": "tool/call",
+        "seq": 125,
+        "time": 1792505938793,
+        "data": {
+          "turn": 2,
+          "step": 13,
+          "callId": "call_00_25YN7SAxmvB1D6PWR0cW9887",
+          "name": "bash",
+          "arguments": "{\"command\": \"shasum -a 256 outputs/batch_A.json outputs/batch_B.json outputs/batch_C.json\", \"description\": \"Compute SHA256 of batch files\", \"workdir\": \"/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01\"}"
+        }
+      }
+    },
+    {
+      "source_line": 129,
+      "event": {
+        "type": "job/settled",
+        "seq": 127,
+        "time": 1792505938848,
+        "data": {
+          "jobId": "bash-276053e195c44f1f",
+          "owner": "session-4f43bfcf-91e9-45a8-ac46-1a3d6baaf9a1",
+          "kind": "bash",
+          "label": "shasum -a 256 outputs/batch_A.json outputs/batch_B.json outputs/batch_C.json",
+          "startedAt": 1792505938801,
+          "toolCall": {
+            "callId": "call_00_25YN7SAxmvB1D6PWR0cW9887",
+            "rootCallId": "call_00_25YN7SAxmvB1D6PWR0cW9887"
+          },
+          "finishedAt": 1792505938848,
+          "status": "completed",
+          "cause": "producer",
+          "producerReported": true,
+          "detail": "exit code: 0"
+        }
+      }
+    },
+    {
+      "source_line": 130,
+      "event": {
+        "type": "tool/result",
+        "seq": 128,
+        "time": 1792505938849,
+        "data": {
+          "turn": 2,
+          "step": 13,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_25YN7SAxmvB1D6PWR0cW9887"
+            },
+            "toolCallId": "call_00_25YN7SAxmvB1D6PWR0cW9887",
+            "content": [
+              {
+                "type": "text",
+                "text": "f2467394b85f50a7d04ee61f4a4813e134cd25a3a7ac32de542ef45d299efa88  outputs/batch_A.json\n2d47c59042c625fa70d81e315259593aec955a8e86e09307826ccda92fb0d24f  outputs/batch_B.json\nd153ac18f623da03ca5ced2a0e599d3338d08aa9c2399b6b4d04711e9047f22b  outputs/batch_C.json\n"
+              }
+            ],
+            "isError": false,
+            "id": "bce4c2e8-95c9-43a1-9ac2-584f113c7fb9"
+          },
+          "meta": {
+            "cwd": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01"
+          }
+        },
+        "sourceEventSeqs": [
+          125
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 135,
+      "event": {
+        "type": "tool/call",
+        "seq": 133,
+        "time": 1792505941592,
+        "data": {
+          "turn": 2,
+          "step": 14,
+          "callId": "call_00_tEpLgbHGnRgDoPH1iWRR1162",
+          "name": "present",
+          "arguments": "{\"files\": [{\"path\": \"outputs/batch_A.json\", \"description\": \"批次 A 结果（沿用首次执行成果，未重新生成）\"}, {\"path\": \"outputs/batch_B.json\", \"description\": \"批次 B 结果（清除半成品后重跑生成）\"}, {\"path\": \"outputs/batch_C.json\", \"description\": \"批次 C 结果（补跑生成）\"}, {\"path\": \"outputs/manifest.json\", \"description\": \"总索引，汇总 A/B/C 三批共 6 项活动 70 人\"}]}"
+        }
+      }
+    },
+    {
+      "source_line": 136,
+      "event": {
+        "type": "deliverables/presented",
+        "seq": 134,
+        "time": 1792505941598,
+        "data": {
+          "turn": 2,
+          "callId": "call_00_tEpLgbHGnRgDoPH1iWRR1162",
+          "files": [
+            {
+              "path": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01/outputs/batch_A.json",
+              "description": "批次 A 结果（沿用首次执行成果，未重新生成）"
+            },
+            {
+              "path": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01/outputs/batch_B.json",
+              "description": "批次 B 结果（清除半成品后重跑生成）"
+            },
+            {
+              "path": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01/outputs/batch_C.json",
+              "description": "批次 C 结果（补跑生成）"
+            },
+            {
+              "path": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01/outputs/manifest.json",
+              "description": "总索引，汇总 A/B/C 三批共 6 项活动 70 人"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_line": 137,
+      "event": {
+        "type": "tool/result",
+        "seq": 135,
+        "time": 1792505941598,
+        "data": {
+          "turn": 2,
+          "step": 14,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_tEpLgbHGnRgDoPH1iWRR1162"
+            },
+            "toolCallId": "call_00_tEpLgbHGnRgDoPH1iWRR1162",
+            "content": [
+              {
+                "type": "text",
+                "text": "Presented /PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01/outputs/batch_A.json\nPresented /PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01/outputs/batch_B.json\nPresented /PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01/outputs/batch_C.json\nPresented /PUBLIC_PROJECT/独立测试工作区/DSH/REC02-a01/outputs/manifest.json"
+              }
+            ],
+            "isError": false,
+            "id": "734165d5-1b7c-4920-808c-a6604700be25"
+          }
+        },
+        "sourceEventSeqs": [
+          133
+        ],
+        "surfaceOp": "append"
+      }
+    }
+  ]
+}

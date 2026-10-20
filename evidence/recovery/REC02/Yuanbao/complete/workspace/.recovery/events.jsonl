@@ -1,0 +1,7 @@
+{"case_id": "REC02", "run_id": "REC02-82123ab235e14e78", "action": "task_started"}
+{"case_id": "REC02", "run_id": "REC02-82123ab235e14e78", "action": "batch_completed", "batch": "A", "sha256": "52292a483d4ccbbb7d4144d76b3f854f757b8a5521c501ff775b4609d67a7360"}
+{"case_id": "REC02", "run_id": "REC02-82123ab235e14e78", "action": "batch_interrupted", "batch": "B", "partial_path": "outputs/batch_B.partial.json", "exit_code": 8}
+{"case_id": "REC02", "run_id": "REC02-82123ab235e14e78", "action": "partial_discarded", "batch": "B", "path": "outputs/batch_B.partial.json", "sha256": "73b23345759d022a70e5f34ebb817ece0410d5b35fea0c3f987fca168dab4021"}
+{"case_id": "REC02", "run_id": "REC02-82123ab235e14e78", "action": "batch_completed", "batch": "B", "sha256": "e5d0b86577b49190caf9fa3da5f2c245c001d244cee67d66331c3c8cb788085c"}
+{"case_id": "REC02", "run_id": "REC02-82123ab235e14e78", "action": "batch_completed", "batch": "C", "sha256": "3217ce1fb76030f6d2315b9e5643a92fa12567e77dff3a51ea3e10c44ebed08f"}
+{"case_id": "REC02", "run_id": "REC02-82123ab235e14e78", "action": "manifest_created", "path": "outputs/manifest.json"}

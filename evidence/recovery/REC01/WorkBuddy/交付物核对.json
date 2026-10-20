@@ -1,0 +1,13 @@
+{
+  "artifact": "/PUBLIC_PROJECT/维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/WorkBuddy-a01/原始材料/快照01/outputs/registration_summary.json",
+  "artifact_exists": true,
+  "script_unchanged": true,
+  "formal_score": null,
+  "scope": "仅检查交付物和提供的脚本；不证明首次故障、工具状态或自主恢复",
+  "script": "/PUBLIC_PROJECT/维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/WorkBuddy-a01/原始材料/快照01/recovery_export.py",
+  "script_sha256": "0294151d1f04e129f4e07764c2f7028375a56d11525f0efbea4bd9dadb4fdbe3",
+  "artifact_sha256": "b41dd0070a7b20e1bfc831e6b49f70acf33577e96d9538a3808c26fb5b632705",
+  "artifact_bytes": 331,
+  "json_valid": true,
+  "content_matches": true
+}

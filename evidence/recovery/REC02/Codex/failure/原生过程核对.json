@@ -1,0 +1,38 @@
+{
+  "scope": "读取归档原生JSONL与失败文件，不执行产品脚本；外层exec编排完成不等于内部Python成功",
+  "session_id": "01a159f0-0f89-73e0-80ff-e8b9c7a36033",
+  "native_records": 28,
+  "call_line": 19,
+  "result_line": 22,
+  "command_execution_line": 21,
+  "call_id": "call_338d8c1f09c8444b819d93c04fe30c18",
+  "tool_name": "exec",
+  "tool_input": "const result = await tools.exec_command({cmd:\"python3 recovery_batch.py start\",workdir:\"/PUBLIC_PROJECT/独立测试工作区/Codex/REC02-a01\",max_output_tokens:6000});text(result);\n",
+  "actual_command": [
+    "/bin/zsh",
+    "-lc",
+    "python3 recovery_batch.py start"
+  ],
+  "actual_exit_code": 8,
+  "actual_tool_output": "ERROR_CODE=E_STREAM_INTERRUPTED\nRUN_ID=REC02-a08b41f10ee24bce\nCOMPLETED_BATCHES=A\nFAILED_BATCH=B\nPARTIAL_PATH=outputs/batch_B.partial.json\nPENDING_BATCHES=C\nNEXT_COMMAND=python3 recovery_batch.py status\n",
+  "file_checks_passed": 9,
+  "first_stage_a_sha256": "b9a214858358f635c7c2b265d22ddfb9e881a438465c08435386c049402503fa",
+  "observed_configuration": {
+    "model": "gpt-6.1-sol",
+    "effort": "high",
+    "approval_policy": "on-request",
+    "sandbox_policy": {
+      "type": "workspace-write",
+      "writable_roots": [
+        "/PUBLIC_HOME/.codex/visualizations/2026/10/20/01a159f0-0f89-73e0-80ff-e8b9c7a36033"
+      ],
+      "network_access": false,
+      "exclude_tmpdir_env_var": false,
+      "exclude_slash_tmp": false
+    }
+  },
+  "first_round_has_one_execution_only": true,
+  "recovery_started": false,
+  "confidence": "高：命令事件、工具原始返回与实际阶段文件互相印证；不由最终回复单独得出结论",
+  "attribution": "退出8是题目脚本预设故障，不是Codex自身故障；目前未测试恢复能力，不预先赋12分"
+}

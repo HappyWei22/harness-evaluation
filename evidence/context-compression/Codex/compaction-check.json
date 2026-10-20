@@ -1,0 +1,66 @@
+{
+  "compactedLine": 66,
+  "completionEvents": [
+    {
+      "line": 71,
+      "item": {
+        "type": "ContextCompaction",
+        "id": "01a15483-734e-7fb1-9995-bd7a5f1791e7"
+      }
+    }
+  ],
+  "nativeCompactionCompleted": true,
+  "replacementHistoryCount": 12,
+  "inputCoverage": [
+    {
+      "prompt": "01-初始登记.md",
+      "retainedAsFullUserText": true,
+      "replacementHistoryIndices": [
+        2
+      ],
+      "exclusiveRelianceOnCompactionSummary": false
+    },
+    {
+      "prompt": "02-第一批更正.md",
+      "retainedAsFullUserText": true,
+      "replacementHistoryIndices": [
+        3
+      ],
+      "exclusiveRelianceOnCompactionSummary": false
+    },
+    {
+      "prompt": "03-第二批更正.md",
+      "retainedAsFullUserText": true,
+      "replacementHistoryIndices": [
+        4
+      ],
+      "exclusiveRelianceOnCompactionSummary": false
+    },
+    {
+      "prompt": "04-执行背景1.md",
+      "retainedAsFullUserText": true,
+      "replacementHistoryIndices": [
+        5
+      ],
+      "exclusiveRelianceOnCompactionSummary": false
+    },
+    {
+      "prompt": "05-执行背景2.md",
+      "retainedAsFullUserText": true,
+      "replacementHistoryIndices": [
+        10
+      ],
+      "exclusiveRelianceOnCompactionSummary": false
+    }
+  ],
+  "encryptedCompactionItemCount": 1,
+  "encryptedCompactionReadable": false,
+  "confidence": {
+    "compactionCompleted": "高：用户操作说明、完成截图、compacted记录与ContextCompaction完成事件相互对应。",
+    "retainedBusinessInputs": "高：五份固定提示词全文均能在replacement_history的user消息中找到，忽略提示词文件首尾空白。",
+    "summaryContent": "无法判断：压缩项的encrypted_content为不透明内容，没有解密或据此猜测。",
+    "nextModelRequest": "尚未发生最终问答；当前没有其完整发送前请求证据。"
+  },
+  "limits": "已确认产品完成一次原生压缩操作，但五轮用户业务原文仍保留。不能把后续答对解释为只能依靠摘要恢复信息，也不推断产品压缩无效。",
+  "formalScore": null
+}

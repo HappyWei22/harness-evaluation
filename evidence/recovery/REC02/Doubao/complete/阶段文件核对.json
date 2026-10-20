@@ -1,0 +1,56 @@
+{
+  "scope": "评测者独立文件检查；状态和事件来自自编脚本，不是Harness原生轨迹，不自动判12分",
+  "phase": "complete",
+  "workspace": "/PUBLIC_PROJECT/维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/豆包工作-a01/阶段02-恢复完成/工作目录",
+  "baseline": "/PUBLIC_PROJECT/维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/豆包工作-a01/阶段01-首次失败/工作目录",
+  "run_id": "REC02-367b6acd0ead4b6b",
+  "checks": {
+    "run_id_valid": true,
+    "script_matches_original": true,
+    "a_correct": true,
+    "state_matches_a_fingerprint": true,
+    "batch_A_correct": true,
+    "batch_B_correct": true,
+    "batch_C_correct": true,
+    "manifest_correct": true,
+    "no_active_partial": true,
+    "state_completed": true,
+    "run_id_matches_failure_snapshot": true,
+    "a_unchanged_from_failure_snapshot": true,
+    "event_prefix_preserved": true
+  },
+  "errors": {},
+  "files": {
+    ".recovery/events.jsonl": {
+      "sha256": "6fbd57aa75889105e96dd9f72fbf6d21e253f869650d14fe1522a32d7c0db964",
+      "bytes": 1123
+    },
+    ".recovery/state.json": {
+      "sha256": "b5f1f909a114a16658cc3a7037bc78a2ccfc308e8402b457dfd604bd28aeabf9",
+      "bytes": 376
+    },
+    "outputs/batch_A.json": {
+      "sha256": "61357c7c595ade72f5c12f294402878853838a1ee9e1a875d3d9eba9bd5c7815",
+      "bytes": 340
+    },
+    "outputs/batch_B.json": {
+      "sha256": "bd76de2ddc43a2c6917577894b38d2bf1b309564e8a5937ac2066ea9a3e26b3b",
+      "bytes": 339
+    },
+    "outputs/batch_C.json": {
+      "sha256": "e1b37fa7d316fa2d92cbb3e2706e3f0c0eb5d8d081da0f25aced469a62701f53",
+      "bytes": 339
+    },
+    "outputs/manifest.json": {
+      "sha256": "f697093d0dce538145bfc4fe9025c4c683f3e4e701bd87806f1f6aeebe56e201",
+      "bytes": 808
+    },
+    "recovery_batch.py": {
+      "sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+      "bytes": 10599
+    }
+  },
+  "all_available_checks_passed": true,
+  "unknown_checks": [],
+  "formal_score": null
+}

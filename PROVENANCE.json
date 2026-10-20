@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-17",
+  "date": "2026-10-21",
   "description": "原始来源哈希用于记录来源关系，不代表完整原文件已公开或外部可认证。public文件的实际字节指纹另见MANIFEST.json。",
   "exports": [
     {
@@ -575,6 +575,1091 @@
       "original_sha256": "34eb6efad2f177c7c8c52ce16daea5e304600b5d4d7fa1255e9ea571671a5462",
       "transformation": "JSON副本：替换本机路径/分享入口，删除推理及重放字段；必要时替换用户名，历史Markdown作为文本快照",
       "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/REC01/输入/recovery_export.py",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/输入/recovery_export.py",
+      "original_sha256": "0294151d1f04e129f4e07764c2f7028375a56d11525f0efbea4bd9dadb4fdbe3",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/REC01/提示词/01-开始任务.md",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/提示词/01-开始任务.md",
+      "original_sha256": "87ed143159cf677c72ec17f3893a504c1df428ac449be92689cda5b00b89e4bf",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/REC01/提示词/02-可选诊断-仅在未继续时使用.md",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/提示词/02-可选诊断-仅在未继续时使用.md",
+      "original_sha256": "62bfd50ab3787d0ffe6860dff2b403561f1ab616b41826370d45335227d8ef04",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/REC01/评测者材料/标准结果.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/评测者材料/标准结果.json",
+      "original_sha256": "8a1e499fbf5be6e1d112e08690bdd724dc1e4a923bc740297a3bac8cba871e02",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/REC01/用例与判分规则.md",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/用例与判分规则.md",
+      "original_sha256": "63ba45b7a6a77bb30541e2598a38039b03369485525da5a90004f29dccedeee2",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/REC01/checks/核对交付物.py",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/checks/核对交付物.py",
+      "original_sha256": "23b43d607017997695c8acbb24397514617ab52c5ac37a1b33760e6d1e5029d4",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC01/Codex/snapshot/outputs/registration_summary.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/Codex-a01/原始材料/快照01/outputs/registration_summary.json",
+      "original_sha256": "b41dd0070a7b20e1bfc831e6b49f70acf33577e96d9538a3808c26fb5b632705",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC01/Codex/snapshot/recovery_export.py",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/Codex-a01/原始材料/快照01/recovery_export.py",
+      "original_sha256": "0294151d1f04e129f4e07764c2f7028375a56d11525f0efbea4bd9dadb4fdbe3",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC01/Codex/native.excerpt.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/Codex-a01/原始材料/快照01/native-session.jsonl",
+      "original_sha256": "c12c0a7547ba01d319ab2209c830afed3227a5ce08b8682bb3f315e8c39d808f",
+      "transformation": "白名单选取工具事件和执行记录，保留原行号；删除系统/推理/账号/重放字段，替换本机路径",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC01/Codex/交付物核对.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/Codex-a01/交付物核对.json",
+      "original_sha256": "1bf0348c7e199cdcc4cf054714f561e22352a2cce299b62d1d6ae7bb7d90b66b",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC01/Codex/score.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/Codex-a01/评分与归因.json",
+      "original_sha256": "55fb719a78d75e508d13b67d1f132b45336dd3040f28e4079abae86cbdff5fac",
+      "transformation": "保留逐项判断与置信依据，加入公开证据入口；原始位置仅追溯，删除会话入口，替换本机路径；删除已被REC02取代的准备阶段complex_part字段",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC01/WorkBuddy/snapshot/outputs/registration_summary.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/WorkBuddy-a01/原始材料/快照01/outputs/registration_summary.json",
+      "original_sha256": "b41dd0070a7b20e1bfc831e6b49f70acf33577e96d9538a3808c26fb5b632705",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC01/WorkBuddy/snapshot/recovery_export.py",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/WorkBuddy-a01/原始材料/快照01/recovery_export.py",
+      "original_sha256": "0294151d1f04e129f4e07764c2f7028375a56d11525f0efbea4bd9dadb4fdbe3",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC01/WorkBuddy/native.excerpt.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/WorkBuddy-a01/原始材料/快照01/native-session.jsonl",
+      "original_sha256": "70adc20c84f8369f3cf6c0e8e2ad1b892e34e4cb0d697c458a3b3e7e1b373f8c",
+      "transformation": "白名单选取工具事件和执行记录，保留原行号；删除系统/推理/账号/重放字段，替换本机路径",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC01/WorkBuddy/交付物核对.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/WorkBuddy-a01/交付物核对.json",
+      "original_sha256": "93b2deec5f5a02c693dd079cff6ecfb6f987a3dd5051d6e10a496c62be510b8c",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC01/WorkBuddy/score.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/WorkBuddy-a01/评分与归因.json",
+      "original_sha256": "34684b843964f03b53def9f061c33be8f4e67d44a813c02bfaff49a45c4cfb58",
+      "transformation": "保留逐项判断与置信依据，加入公开证据入口；原始位置仅追溯，删除会话入口，替换本机路径；删除已被REC02取代的准备阶段complex_part字段",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC01/DSH/snapshot/outputs/registration_summary.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/DSH-a01/原始材料/快照01/outputs/registration_summary.json",
+      "original_sha256": "b41dd0070a7b20e1bfc831e6b49f70acf33577e96d9538a3808c26fb5b632705",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC01/DSH/snapshot/recovery_export.py",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/DSH-a01/原始材料/快照01/recovery_export.py",
+      "original_sha256": "0294151d1f04e129f4e07764c2f7028375a56d11525f0efbea4bd9dadb4fdbe3",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC01/DSH/native.excerpt.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/DSH-a01/原始材料/快照01/session.v4.jsonl",
+      "original_sha256": "ff51ae92dcda5487fff983e4a4ae26c3c78471b0d2bed8eff37f647f19406560",
+      "transformation": "白名单选取工具事件和执行记录，保留原行号；删除系统/推理/账号/重放字段，替换本机路径",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC01/DSH/交付物核对.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/DSH-a01/交付物核对.json",
+      "original_sha256": "3249da1b552f36909e97bf8395d40d2a14e0574fe3bc59fa3effacb03b339957",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC01/DSH/score.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/DSH-a01/评分与归因.json",
+      "original_sha256": "0e8a6089ac0babe57cc914aa89598866f73587b872e69f1f3e77fb626d24642c",
+      "transformation": "保留逐项判断与置信依据，加入公开证据入口；原始位置仅追溯，删除会话入口，替换本机路径；删除已被REC02取代的准备阶段complex_part字段",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC01/Doubao/snapshot/outputs/registration_summary.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/豆包工作-a01/原始材料/快照01/outputs/registration_summary.json",
+      "original_sha256": "b41dd0070a7b20e1bfc831e6b49f70acf33577e96d9538a3808c26fb5b632705",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC01/Doubao/snapshot/recovery_export.py",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/豆包工作-a01/原始材料/快照01/recovery_export.py",
+      "original_sha256": "0294151d1f04e129f4e07764c2f7028375a56d11525f0efbea4bd9dadb4fdbe3",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC01/Doubao/交付物核对.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/豆包工作-a01/交付物核对.json",
+      "original_sha256": "1a3c47a5abdaee3e56c9177ac59e58bff7522c7658486c68e0c37d610945f251",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC01/Doubao/界面核对摘录.md",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/豆包工作-a01/界面核对摘录.md",
+      "original_sha256": "40a110e812ea06a215a1e203aa8e243a004c839ef1b40f1735c676dff1b4d107",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换；分享链接改为不可点击的隐藏说明",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC01/Doubao/score.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/豆包工作-a01/评分与归因.json",
+      "original_sha256": "4abd8834e8626e64b870e4530e4fa0d3e2749e027b520f14692a92ed7bee56bd",
+      "transformation": "保留逐项判断与置信依据，加入公开证据入口；原始位置仅追溯，删除会话入口，替换本机路径；删除已被REC02取代的准备阶段complex_part字段",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC01/Yuanbao/snapshot/outputs/registration_summary.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/元宝-a01/原始材料/快照01/outputs/registration_summary.json",
+      "original_sha256": "b41dd0070a7b20e1bfc831e6b49f70acf33577e96d9538a3808c26fb5b632705",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC01/Yuanbao/交付物核对.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/元宝-a01/交付物核对.json",
+      "original_sha256": "155ec1bc563c9ef6a8439c866fa4eb3eaf4302530aecf1df0a81c1b95e70b479",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC01/Yuanbao/界面核对摘录.md",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/元宝-a01/界面核对摘录.md",
+      "original_sha256": "c3d8ac171b7cec0e8bebf943cdc9763b265a17090c5894b56949fb0e914a2a8c",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换；分享链接改为不可点击的隐藏说明",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC01/Yuanbao/补充材料-用户转述的工具返回.md",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/元宝-a01/补充材料-用户转述的工具返回.md",
+      "original_sha256": "b8a25c8a53b177c0e84d8feb706c02d89fa0b737466cbf9de19f72af797a5604",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC01/Yuanbao/score.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/元宝-a01/评分与归因.json",
+      "original_sha256": "e84a3c03a31beac782e8f072ea6e7f8db975df6efb94fa0be7234fb6075282a6",
+      "transformation": "保留逐项判断与置信依据，加入公开证据入口；原始位置仅追溯，删除会话入口，替换本机路径；删除已被REC02取代的准备阶段complex_part字段",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/REC02/输入/recovery_batch.py",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/输入/recovery_batch.py",
+      "original_sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/REC02/提示词/01-首次运行后停止.md",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/提示词/01-首次运行后停止.md",
+      "original_sha256": "5ea6cdac2803e4cabd4f67a6a13824338eefa9b44d57db8caef9872ae91bc98d",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/REC02/提示词/02-继续完成原任务.md",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/提示词/02-继续完成原任务.md",
+      "original_sha256": "0637a6caf739d4c8651dfb7b80aa2141c30563cd3985a4dfa2707c189d66b516",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/REC02/评测者材料/12项观察表.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/评测者材料/12项观察表.json",
+      "original_sha256": "e906064d6f2e8d05ba1e360ac11357d69d0d306cb969fbb2a2000069dde25fb6",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/REC02/评测者材料/标准数据.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/评测者材料/标准数据.json",
+      "original_sha256": "8d658da28bed921d1bda49247efbf4857c58a595bf6910de0da50eebb224a302",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/REC02/用例与判分规则.md",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/用例与判分规则.md",
+      "original_sha256": "145d85f0100a4987a5d45265e02ebb66d8bd329e4411cd6fff62bb9d5bfd0243",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/REC02/checks/核对阶段文件.py",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/checks/核对阶段文件.py",
+      "original_sha256": "be5a3726367f5739bb275e186f36c9661eacac60c4eac81220ad1de044a7a20c",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/failure/workspace/.recovery/events.jsonl",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/Codex-a01/阶段01-首次失败/工作目录/.recovery/events.jsonl",
+      "original_sha256": "109c2aaa9ce1a193d2df8b7e73b37ebb5469b0e9816eaf15745760633cdd196c",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/failure/workspace/.recovery/state.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/Codex-a01/阶段01-首次失败/工作目录/.recovery/state.json",
+      "original_sha256": "5a47bd74d19c3706bda95b95104802556c580ec6f674aad4e85c9a4544cbdd0d",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_A.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/Codex-a01/阶段01-首次失败/工作目录/outputs/batch_A.json",
+      "original_sha256": "b9a214858358f635c7c2b265d22ddfb9e881a438465c08435386c049402503fa",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_B.partial.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/Codex-a01/阶段01-首次失败/工作目录/outputs/batch_B.partial.json",
+      "original_sha256": "21138aad05967b69a50a76415a6c21c118b2cc85672478a55059e95d7706920e",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/failure/workspace/recovery_batch.py",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/Codex-a01/阶段01-首次失败/工作目录/recovery_batch.py",
+      "original_sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/failure/native.excerpt.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/Codex-a01/阶段01-首次失败/原生日志/native-session.jsonl",
+      "original_sha256": "1310fff51865003a3ee0faba9fe91ef64b25023410aab7397a145c7b463d1bd6",
+      "transformation": "白名单选取工具事件和执行记录，保留原行号；删除系统/推理/账号/重放字段，替换本机路径",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/failure/阶段文件核对.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/Codex-a01/阶段01-首次失败/阶段文件核对.json",
+      "original_sha256": "ab630c9db37c8601f7ee8f2e4373829e8d2999c291cdfba9c970dc54758520cb",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/failure/原生过程核对.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/Codex-a01/阶段01-首次失败/原生过程核对.json",
+      "original_sha256": "16506c2f71223d65ef07f8549680fa6f5f49c12acdc0d823a7a5cf2d3eae5076",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/complete/workspace/.recovery/events.jsonl",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/Codex-a01/阶段02-恢复完成/工作目录/.recovery/events.jsonl",
+      "original_sha256": "3869c0a9bb410749add2646573484b2e2d5c3fbef5e8ff68d51957cf21687776",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/complete/workspace/.recovery/state.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/Codex-a01/阶段02-恢复完成/工作目录/.recovery/state.json",
+      "original_sha256": "411972ffbe6266bb7b038c6e9dd273a23aa0072e7cccafd6b3e72f662a0a30a6",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_A.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/Codex-a01/阶段02-恢复完成/工作目录/outputs/batch_A.json",
+      "original_sha256": "b9a214858358f635c7c2b265d22ddfb9e881a438465c08435386c049402503fa",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_B.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/Codex-a01/阶段02-恢复完成/工作目录/outputs/batch_B.json",
+      "original_sha256": "4b37f373f227d718595a8c0a6b53e7f99e91471960e9867c135a87ebd005d40e",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_C.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/Codex-a01/阶段02-恢复完成/工作目录/outputs/batch_C.json",
+      "original_sha256": "9ad8a5ff8ad9046997d67ccdafced4d5b2171cc35b63350a68185d8788b3e1e4",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/complete/workspace/outputs/manifest.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/Codex-a01/阶段02-恢复完成/工作目录/outputs/manifest.json",
+      "original_sha256": "9c17928e84777c55f09e067cef202fd853ce77761e76a6dc12c279da3da4a596",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/complete/workspace/recovery_batch.py",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/Codex-a01/阶段02-恢复完成/工作目录/recovery_batch.py",
+      "original_sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/complete/native.excerpt.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/Codex-a01/阶段02-恢复完成/原生日志/native-session.jsonl",
+      "original_sha256": "d88a33538cbb9e3a21bc49a5a24923cdcdcb85b7535925a5755f1c63fcfd5b4b",
+      "transformation": "白名单选取工具事件和执行记录，保留原行号；删除系统/推理/账号/重放字段，替换本机路径",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/complete/阶段文件核对.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/Codex-a01/阶段02-恢复完成/阶段文件核对.json",
+      "original_sha256": "8620fc9d10b5c70468371f1c4f7e6afc11c289647d7e77ede866f265aa0fc03f",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/Codex/score.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/Codex-a01/评分与归因.json",
+      "original_sha256": "3ecb466129714aff146f1b157caf1c181c3b5d3f21d935f5b5a1d8230f21671a",
+      "transformation": "保留逐项判断与置信依据，加入公开证据入口；原始位置仅追溯，删除会话入口，替换本机路径；删除已被REC02取代的准备阶段complex_part字段",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/failure/workspace/.recovery/events.jsonl",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/WorkBuddy-a01/阶段01-首次失败/工作目录/.recovery/events.jsonl",
+      "original_sha256": "7c29886f42919f22c0e98c23b998a742c7aa5378ef21022f3b2944a1e0b0f1fa",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/failure/workspace/.recovery/state.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/WorkBuddy-a01/阶段01-首次失败/工作目录/.recovery/state.json",
+      "original_sha256": "3c57f25668a7a273a1a9e56ff0ba87b7e587fa90ac116447ca2a912490a83979",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/failure/workspace/outputs/batch_A.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/WorkBuddy-a01/阶段01-首次失败/工作目录/outputs/batch_A.json",
+      "original_sha256": "f762ea987ef5810b9d130ac2b021a0bcc14d54f76f526c37cff0f2954b8c14fe",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/failure/workspace/outputs/batch_B.partial.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/WorkBuddy-a01/阶段01-首次失败/工作目录/outputs/batch_B.partial.json",
+      "original_sha256": "cfd40cead5fc2b6ce9cc382a44aa31ef37039db7e0fefe7d91ab8e07e0d83581",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/failure/workspace/recovery_batch.py",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/WorkBuddy-a01/阶段01-首次失败/工作目录/recovery_batch.py",
+      "original_sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/failure/native.excerpt.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/WorkBuddy-a01/阶段01-首次失败/原生日志/native-session.jsonl",
+      "original_sha256": "b8864a763be16ab30edee0cb4d5b6694fe5fa1b4a5c36237d86c7a972e5db00c",
+      "transformation": "白名单选取工具事件和执行记录，保留原行号；删除系统/推理/账号/重放字段，替换本机路径",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/failure/阶段文件核对.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/WorkBuddy-a01/阶段01-首次失败/阶段文件核对.json",
+      "original_sha256": "afebcdd225e0636219f42b10aee50f90c5ab2ef6a34d188237b91bcd070d8339",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/failure/过程核对摘录.md",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/WorkBuddy-a01/阶段01-首次失败/过程核对摘录.md",
+      "original_sha256": "5f291f5bd3f233897c60789ceac774732c2219dfb873e00bb30ffcac00fd302e",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/complete/workspace/.recovery/events.jsonl",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/WorkBuddy-a01/阶段02-恢复完成/工作目录/.recovery/events.jsonl",
+      "original_sha256": "82d692659bf34669a8804b751383bc961fde2ecdb7c6d7e89aec850420c99b28",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/complete/workspace/.recovery/state.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/WorkBuddy-a01/阶段02-恢复完成/工作目录/.recovery/state.json",
+      "original_sha256": "9d891fe0d2411f9ce1ce827c6bc9fd533a754bc47386b4ebb283dbd9173f560a",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/complete/workspace/outputs/batch_A.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/WorkBuddy-a01/阶段02-恢复完成/工作目录/outputs/batch_A.json",
+      "original_sha256": "f762ea987ef5810b9d130ac2b021a0bcc14d54f76f526c37cff0f2954b8c14fe",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/complete/workspace/outputs/batch_B.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/WorkBuddy-a01/阶段02-恢复完成/工作目录/outputs/batch_B.json",
+      "original_sha256": "70e548c424b44d1fbd471cb2425481af3ba168f2ea6ce0f571bfdae16027f8da",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/complete/workspace/outputs/batch_C.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/WorkBuddy-a01/阶段02-恢复完成/工作目录/outputs/batch_C.json",
+      "original_sha256": "90c656af101a7a835fd9a72ed555228e113f21f0a5b61ee5d93facf84b29d848",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/complete/workspace/outputs/manifest.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/WorkBuddy-a01/阶段02-恢复完成/工作目录/outputs/manifest.json",
+      "original_sha256": "0178155994806a52d18072fcf63a4da78de0f77c0e88f2bb815a59e41b4c7f89",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/complete/workspace/recovery_batch.py",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/WorkBuddy-a01/阶段02-恢复完成/工作目录/recovery_batch.py",
+      "original_sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/complete/native.excerpt.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/WorkBuddy-a01/阶段02-恢复完成/原生日志/native-session.jsonl",
+      "original_sha256": "65e882e47d274fdfdeca24c515fcea64c986a034958c704a95f745a79f379c8b",
+      "transformation": "白名单选取工具事件和执行记录，保留原行号；删除系统/推理/账号/重放字段，替换本机路径",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/complete/阶段文件核对.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/WorkBuddy-a01/阶段02-恢复完成/阶段文件核对.json",
+      "original_sha256": "823857796650afd6afe9dc0cb6a28ea68adee3ffe4af50172c8f7cd3e4a6a314",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/WorkBuddy/score.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/WorkBuddy-a01/评分与归因.json",
+      "original_sha256": "7c2e62187c1c70d19ac9b477dc2e634da871a23354c5f736da8f6d579ebada09",
+      "transformation": "保留逐项判断与置信依据，加入公开证据入口；原始位置仅追溯，删除会话入口，替换本机路径；删除已被REC02取代的准备阶段complex_part字段",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/failure/workspace/.recovery/events.jsonl",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/DSH-a01/阶段01-首次失败/工作目录/.recovery/events.jsonl",
+      "original_sha256": "4cf3374dfebf1f577e702858eeb810b20b595502c9903f9f4aca7c18e58d59cb",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/failure/workspace/.recovery/state.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/DSH-a01/阶段01-首次失败/工作目录/.recovery/state.json",
+      "original_sha256": "1b11d4c9f0f2b20d4d98aa9cfbd31da18b3821e82d87dde4e004d2c4cc674971",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_A.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/DSH-a01/阶段01-首次失败/工作目录/outputs/batch_A.json",
+      "original_sha256": "f2467394b85f50a7d04ee61f4a4813e134cd25a3a7ac32de542ef45d299efa88",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_B.partial.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/DSH-a01/阶段01-首次失败/工作目录/outputs/batch_B.partial.json",
+      "original_sha256": "85db91e2a971a22a0b41afc79d6725360811e235e231d13ff5fde90521210b9c",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/failure/workspace/recovery_batch.py",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/DSH-a01/阶段01-首次失败/工作目录/recovery_batch.py",
+      "original_sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/failure/native.excerpt.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/DSH-a01/阶段01-首次失败/原生日志/session.v4.jsonl",
+      "original_sha256": "ec15576e4998113ea7b3d4de2e248263a3ff079da5f4d09fae8d65407c04129b",
+      "transformation": "白名单选取工具事件和执行记录，保留原行号；删除系统/推理/账号/重放字段，替换本机路径",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/failure/阶段文件核对.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/DSH-a01/阶段01-首次失败/阶段文件核对.json",
+      "original_sha256": "c7ec87831fb13357589cd4a9528f5abd14acf4cf471d86f63a778edf3321c2fb",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/failure/原生过程核对.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/DSH-a01/阶段01-首次失败/原生过程核对.json",
+      "original_sha256": "ec374a4ef33b73c3e98b9e598f4b96839a537aa27fcfd5ee0df79338f161e9e6",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/complete/workspace/.recovery/events.jsonl",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/DSH-a01/阶段02-恢复完成/工作目录/.recovery/events.jsonl",
+      "original_sha256": "0570d73cd505f69932091230b826366eced25a4048aa97d76d026d98948950f4",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/complete/workspace/.recovery/state.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/DSH-a01/阶段02-恢复完成/工作目录/.recovery/state.json",
+      "original_sha256": "62493b2156573da754ec74dfdb9905ef3ca535169b7df5d0f4b96fadeae9eb97",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_A.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/DSH-a01/阶段02-恢复完成/工作目录/outputs/batch_A.json",
+      "original_sha256": "f2467394b85f50a7d04ee61f4a4813e134cd25a3a7ac32de542ef45d299efa88",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_B.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/DSH-a01/阶段02-恢复完成/工作目录/outputs/batch_B.json",
+      "original_sha256": "2d47c59042c625fa70d81e315259593aec955a8e86e09307826ccda92fb0d24f",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_C.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/DSH-a01/阶段02-恢复完成/工作目录/outputs/batch_C.json",
+      "original_sha256": "d153ac18f623da03ca5ced2a0e599d3338d08aa9c2399b6b4d04711e9047f22b",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/complete/workspace/outputs/manifest.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/DSH-a01/阶段02-恢复完成/工作目录/outputs/manifest.json",
+      "original_sha256": "c756c4415834f856b5a512e11f64b2ae6154d58dc4c2ab0b538642239f50fb19",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/complete/workspace/recovery_batch.py",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/DSH-a01/阶段02-恢复完成/工作目录/recovery_batch.py",
+      "original_sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/complete/native.excerpt.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/DSH-a01/阶段02-恢复完成/原生日志/session.v4.jsonl",
+      "original_sha256": "a1a027892e4e003be20b9365afb6996961364aa997cd0ab175323153ab38a17e",
+      "transformation": "白名单选取工具事件和执行记录，保留原行号；删除系统/推理/账号/重放字段，替换本机路径",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/complete/阶段文件核对.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/DSH-a01/阶段02-恢复完成/阶段文件核对.json",
+      "original_sha256": "26269eb835d55e8a37d39b2a39fbf2fbf6e9b8fdb22319a5b7f98ee81517ede6",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/DSH/score.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/DSH-a01/评分与归因.json",
+      "original_sha256": "a247bed96f8210a62996271029870fa3946c2bc2cd4f51bd791817b2730f587a",
+      "transformation": "保留逐项判断与置信依据，加入公开证据入口；原始位置仅追溯，删除会话入口，替换本机路径；删除已被REC02取代的准备阶段complex_part字段",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/failure/workspace/.recovery/events.jsonl",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/豆包工作-a01/阶段01-首次失败/工作目录/.recovery/events.jsonl",
+      "original_sha256": "8e2366f796094d1eb0e4f07702d4ad1e8751ac5ea362a15adf11cdf45078c8d8",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/failure/workspace/.recovery/state.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/豆包工作-a01/阶段01-首次失败/工作目录/.recovery/state.json",
+      "original_sha256": "9a96bfa9fc63f6ed55e6a554e9707de762b29cef60268584d79f1910c6f62981",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/failure/workspace/outputs/batch_A.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/豆包工作-a01/阶段01-首次失败/工作目录/outputs/batch_A.json",
+      "original_sha256": "61357c7c595ade72f5c12f294402878853838a1ee9e1a875d3d9eba9bd5c7815",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/failure/workspace/outputs/batch_B.partial.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/豆包工作-a01/阶段01-首次失败/工作目录/outputs/batch_B.partial.json",
+      "original_sha256": "35aebb6e7b8b3530db1177a11cf5498387bac2b4d3158695675c592dce23587f",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/failure/workspace/recovery_batch.py",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/豆包工作-a01/阶段01-首次失败/工作目录/recovery_batch.py",
+      "original_sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/failure/阶段文件核对.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/豆包工作-a01/阶段01-首次失败/阶段文件核对.json",
+      "original_sha256": "b895fc77cfc662cc61e8ae56bd6dd1a01da27575ea543cf32dd8cd2cfc10a9d2",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/failure/过程核对摘录.md",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/豆包工作-a01/阶段01-首次失败/过程核对摘录.md",
+      "original_sha256": "418b9303f36340d4e706a6ec5a8e9af7c32ed60f106a41d687efc4747fcb9142",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/complete/workspace/.recovery/events.jsonl",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/豆包工作-a01/阶段02-恢复完成/工作目录/.recovery/events.jsonl",
+      "original_sha256": "6fbd57aa75889105e96dd9f72fbf6d21e253f869650d14fe1522a32d7c0db964",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/complete/workspace/.recovery/state.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/豆包工作-a01/阶段02-恢复完成/工作目录/.recovery/state.json",
+      "original_sha256": "b5f1f909a114a16658cc3a7037bc78a2ccfc308e8402b457dfd604bd28aeabf9",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/complete/workspace/outputs/batch_A.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/豆包工作-a01/阶段02-恢复完成/工作目录/outputs/batch_A.json",
+      "original_sha256": "61357c7c595ade72f5c12f294402878853838a1ee9e1a875d3d9eba9bd5c7815",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/complete/workspace/outputs/batch_B.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/豆包工作-a01/阶段02-恢复完成/工作目录/outputs/batch_B.json",
+      "original_sha256": "bd76de2ddc43a2c6917577894b38d2bf1b309564e8a5937ac2066ea9a3e26b3b",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/complete/workspace/outputs/batch_C.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/豆包工作-a01/阶段02-恢复完成/工作目录/outputs/batch_C.json",
+      "original_sha256": "e1b37fa7d316fa2d92cbb3e2706e3f0c0eb5d8d081da0f25aced469a62701f53",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/complete/workspace/outputs/manifest.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/豆包工作-a01/阶段02-恢复完成/工作目录/outputs/manifest.json",
+      "original_sha256": "f697093d0dce538145bfc4fe9025c4c683f3e4e701bd87806f1f6aeebe56e201",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/complete/workspace/recovery_batch.py",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/豆包工作-a01/阶段02-恢复完成/工作目录/recovery_batch.py",
+      "original_sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/complete/阶段文件核对.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/豆包工作-a01/阶段02-恢复完成/阶段文件核对.json",
+      "original_sha256": "cadb54c53b518026951d19f84f0406690393fb54aca5dcdded149376f88bc00b",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/complete/客户端过程核对.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/豆包工作-a01/阶段02-恢复完成/客户端过程核对.json",
+      "original_sha256": "f5b835c630c13bcb822b4f659381f940d2bd47dd0685a9acf2ff60696066f340",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/Doubao/score.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/豆包工作-a01/评分与归因.json",
+      "original_sha256": "1b9767f948299836f5101c018395b0619630eb9d23bf6e3d76346c1a26da5c33",
+      "transformation": "保留逐项判断与置信依据，加入公开证据入口；原始位置仅追溯，删除会话入口，替换本机路径；删除已被REC02取代的准备阶段complex_part字段",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/events.jsonl",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/元宝-a01/阶段01-首次失败/工作目录/.recovery/events.jsonl",
+      "original_sha256": "99439e3bc4c0be92b9b90cc7ffc39f0346bb814d23548779fbe144135ad9d8cc",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/state.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/元宝-a01/阶段01-首次失败/工作目录/.recovery/state.json",
+      "original_sha256": "4e9be68c6dfe23dc33d9de2b831f18efb35d358e67df38fd39d9078ccd9b36a5",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_A.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/元宝-a01/阶段01-首次失败/工作目录/outputs/batch_A.json",
+      "original_sha256": "52292a483d4ccbbb7d4144d76b3f854f757b8a5521c501ff775b4609d67a7360",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_B.partial.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/元宝-a01/阶段01-首次失败/工作目录/outputs/batch_B.partial.json",
+      "original_sha256": "73b23345759d022a70e5f34ebb817ece0410d5b35fea0c3f987fca168dab4021",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/failure/workspace/recovery_batch.py",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/元宝-a01/阶段01-首次失败/工作目录/recovery_batch.py",
+      "original_sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/failure/阶段文件核对.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/元宝-a01/阶段01-首次失败/阶段文件核对.json",
+      "original_sha256": "a74d333562d039410346a7dc496c70b4d69e1fd8edbe5874f3c3080d5354c8c2",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/failure/过程核对摘录.md",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/元宝-a01/阶段01-首次失败/过程核对摘录.md",
+      "original_sha256": "31b798e3c9e2cdb747315cf4c34645135af9f372d663e590892bedba254f4e45",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/events.jsonl",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/元宝-a01/阶段02-恢复完成/工作目录/.recovery/events.jsonl",
+      "original_sha256": "e332c1b14826ea7b2d123d647ee83174f37e20bee62822f36b5de084d8dfb89c",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/state.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/元宝-a01/阶段02-恢复完成/工作目录/.recovery/state.json",
+      "original_sha256": "e808f6a7559933b38272a4b3103c7585622de48222a8436838ba5f6cd6bba9c9",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_A.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/元宝-a01/阶段02-恢复完成/工作目录/outputs/batch_A.json",
+      "original_sha256": "52292a483d4ccbbb7d4144d76b3f854f757b8a5521c501ff775b4609d67a7360",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_B.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/元宝-a01/阶段02-恢复完成/工作目录/outputs/batch_B.json",
+      "original_sha256": "e5d0b86577b49190caf9fa3da5f2c245c001d244cee67d66331c3c8cb788085c",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_C.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/元宝-a01/阶段02-恢复完成/工作目录/outputs/batch_C.json",
+      "original_sha256": "3217ce1fb76030f6d2315b9e5643a92fa12567e77dff3a51ea3e10c44ebed08f",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/manifest.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/元宝-a01/阶段02-恢复完成/工作目录/outputs/manifest.json",
+      "original_sha256": "07154d9702e26dd984fd340d76c7cda5bb187cd09de733b731e43f86f39ecbca",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/complete/workspace/recovery_batch.py",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/元宝-a01/阶段02-恢复完成/工作目录/recovery_batch.py",
+      "original_sha256": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+      "transformation": "原文件字节副本；不含账号、系统提示或完整原生日志",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/complete/阶段文件核对.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/元宝-a01/阶段02-恢复完成/阶段文件核对.json",
+      "original_sha256": "8f3818ba8d54702d2a70ee4db97f6a1e4a82f1e04984d8aef3efdd5474bfa70c",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/complete/客户端过程核对.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/元宝-a01/阶段02-恢复完成/客户端过程核对.json",
+      "original_sha256": "8b77a5b7ace278917c573e07d0dc8e4acc22888688033a0b66e9b6688c4872cd",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/complete/快照补证复核.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/元宝-a01/阶段02-恢复完成/快照补证复核.json",
+      "original_sha256": "148b2a075f63cb60a68f0274ae1cff76f929c3104dd922a5670969f8b617520e",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/recovery/REC02/Yuanbao/score.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/元宝-a01/评分与归因.json",
+      "original_sha256": "63ca2dfa9fb6875ef847c774e810c64ee0b2eddb6e217ea5f6a4a016206145f9",
+      "transformation": "保留逐项判断与置信依据，加入公开证据入口；原始位置仅追溯，删除会话入口，替换本机路径；删除已被REC02取代的准备阶段complex_part字段",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/CTX02/提示词/01-初始登记.md",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/提示词/01-初始登记.md",
+      "original_sha256": "06e7ecb18a246d258f7b98543d5179dfdf07e473f1db6627ea0d649dbcd3754f",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/CTX02/提示词/02-第一批更正.md",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/提示词/02-第一批更正.md",
+      "original_sha256": "1c1d4c17de9a0b3dd1f8f6df7f304dc113acd57510963090895c0e5acc93f160",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/CTX02/提示词/03-第二批更正.md",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/提示词/03-第二批更正.md",
+      "original_sha256": "4257f46fb9ce08e0f33902bbff745f187d10fdd2131f6b573908a9b8d54719a1",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/CTX02/提示词/04-执行背景1.md",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/提示词/04-执行背景1.md",
+      "original_sha256": "133f9be52cdefa67df10933cc59ce151a6f2a4d942134ebc97fcda133ad16db9",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/CTX02/提示词/05-执行背景2.md",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/提示词/05-执行背景2.md",
+      "original_sha256": "f93d0ba7adb549bf4b3c8de2b7737977778ac44c555f455204eac44276558590",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/CTX02/提示词/06-压缩后输出.md",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/提示词/06-压缩后输出.md",
+      "original_sha256": "e98560800f7c7cbfd9fa5263aa7b669da87abed56b1ab4af3f97c60a9f7ff7d3",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/CTX02/评测者材料/16项检查表.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/评测者材料/16项检查表.json",
+      "original_sha256": "4bc877c3929d95d77a38ef99c51efb00ab8ccceebcecabf4be5b06ca056a93c3",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/CTX02/评测者材料/预期状态.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/评测者材料/预期状态.json",
+      "original_sha256": "cbd3e09e4e1df104b1188690ef0042370adbd1e5b868960f595974c6b094eb04",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/CTX02/用例与判分规则.md",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/用例与判分规则.md",
+      "original_sha256": "f60afa5bf7f73f4b4679e7d5e0596c74a339498c07d95311c2f9b57a4c68d081",
+      "transformation": "仅替换本机路径/分享入口；JSON格式化，删除推理或重放字段；输入与业务文件不替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/context-compression/DSH/final.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/运行记录/DSH-a01/阶段07-最终输出/最终回复.json",
+      "original_sha256": "cbd3e09e4e1df104b1188690ef0042370adbd1e5b868960f595974c6b094eb04",
+      "transformation": "只保留实际最终活动JSON；豆包/元宝为用户转述，不伪装原生工具输出",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/context-compression/DSH/compaction-summary.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/运行记录/DSH-a01/阶段06-手动压缩/原生会话.jsonl",
+      "original_sha256": "27329da8fd8f1cf27678766180b4e2d77d3878a6d5d9ba94fccc42d1db81e008",
+      "transformation": "只选本题压缩摘要与覆盖序号，不导出系统提示/思考/完整日志",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/context-compression/DSH/post-request-summary-block.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/运行记录/DSH-a01/阶段07-最终输出/发送前基础正文.json",
+      "original_sha256": "22c6d4c9f75b4aa25cec570675954da9ca5ccf1fb0dda07a9d05a3bd95dbaea6",
+      "transformation": "仅导出对应摘要文本块及定位；不导出完整请求",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/context-compression/DSH/observation.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/运行记录/DSH-a01/运行状态.json",
+      "original_sha256": "9249af211fdd2dc9f7b9108af4c622d0f76f682e2be27c30716f4b6a6723c566",
+      "transformation": "按原状态整理内容检查、压缩确认和限制；非正式评分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/context-compression/WorkBuddy/final.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/运行记录/WorkBuddy-a01/阶段07-最终输出/最终回复.json",
+      "original_sha256": "cbd3e09e4e1df104b1188690ef0042370adbd1e5b868960f595974c6b094eb04",
+      "transformation": "只保留实际最终活动JSON；豆包/元宝为用户转述，不伪装原生工具输出",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/context-compression/WorkBuddy/compaction-content-excerpt.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/运行记录/WorkBuddy-a01/阶段07-最终输出/原生会话.jsonl",
+      "original_sha256": "507d860ad0168d940eb1cb991f500c9a8680224096db4c587cb34fcd78e26270",
+      "transformation": "从原生压缩记录只选任务用户正文，删除其他注入内容",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/context-compression/WorkBuddy/observation.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/运行记录/WorkBuddy-a01/运行状态.json",
+      "original_sha256": "3d8a18cb1cd49d8ae67babf40d7815586e9e5ce939559539b7d00f3a0b2e6acb",
+      "transformation": "按原状态整理内容检查、压缩确认和限制；非正式评分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/context-compression/Codex/final.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/运行记录/Codex-a01/阶段07-最终输出/最终回复.json",
+      "original_sha256": "bc14185c53aab80b9da80af124668e5ee99b54c7f77a0fb8b3700168978a8a33",
+      "transformation": "只保留实际最终活动JSON；豆包/元宝为用户转述，不伪装原生工具输出",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/context-compression/Codex/replacement-history-excerpt.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/运行记录/Codex-a01/阶段06-手动压缩/原生会话日志.jsonl",
+      "original_sha256": "00837de49b225c01bd6b8956c4feab3291b39f3c85052003c058d3e615439d90",
+      "transformation": "仅选压缩替换历史中的任务用户正文，保留原行号与位置",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/context-compression/Codex/compaction-check.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/运行记录/Codex-a01/阶段06-手动压缩/压缩核对.json",
+      "original_sha256": "e12702ed1316def595864e72ee087b63aff43ebceadd79acded4d2db1cbc29fb",
+      "transformation": "只取压缩完成事件及覆盖检查，不含原始会话路径或加密内容",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/context-compression/Codex/observation.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/运行记录/Codex-a01/运行状态.json",
+      "original_sha256": "9e1fd685c042224e3a0cb5dcee4bb7f7236e0ddc1a6bdf714fd2233cf40705c1",
+      "transformation": "按原状态整理内容检查、压缩确认和限制；非正式评分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/context-compression/Doubao/final.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/运行记录/豆包-a01/阶段07-最终输出/用户提供的最终回复.txt",
+      "original_sha256": "bc14185c53aab80b9da80af124668e5ee99b54c7f77a0fb8b3700168978a8a33",
+      "transformation": "只保留实际最终活动JSON；豆包/元宝为用户转述，不伪装原生工具输出",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/context-compression/Doubao/observation.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/运行记录/豆包-a01/运行状态.json",
+      "original_sha256": "85865a394a3e8788e32a708b566b0399e0edb7009346126bea6f9b98f47ef4bb",
+      "transformation": "按原状态整理内容检查、压缩确认和限制；非正式评分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/context-compression/Yuanbao/final.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/运行记录/元宝-a01/阶段07-最终输出/用户提供的最终回复.txt",
+      "original_sha256": "04488146473bb5d2f26c9d41681e35b52f24b31a64922855a894cadc836d05ee",
+      "transformation": "只保留实际最终活动JSON；豆包/元宝为用户转述，不伪装原生工具输出",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/context-compression/Yuanbao/observation.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/运行记录/元宝-a01/运行状态.json",
+      "original_sha256": "d75accd8eef542e24155db52d3ef4b56deaed49eae395d24936c6b0490791c9d",
+      "transformation": "按原状态整理内容检查、压缩确认和限制；非正式评分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/REC01/运行记录/单次记录模板.md",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/单次记录模板.md",
+      "original_sha256": "f84c39bc25b69044f2112eb43de461bcc7476454a3192f1553185a084a09bdb2",
+      "transformation": "无内容替换；设计草案保留已标注的历史状态，不作为当前执行指令",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/REC02/设计草案.md",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/设计草案.md",
+      "original_sha256": "f96823ef5c36bf72239eac17277b198e15739a286b3cb7b4cdd7a50bc8351e5e",
+      "transformation": "无内容替换；设计草案保留已标注的历史状态，不作为当前执行指令",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/CTX02/触发与归因检查.md",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/触发与归因检查.md",
+      "original_sha256": "2146afa4a2ad666869b09967287bed5da3096d41d99adb24df3cc45a3444dd5d",
+      "transformation": "替换本机路径",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/CTX02/checks/核对最终状态.py",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/checks/核对最终状态.py",
+      "original_sha256": "1154d10c4dd8f2fea49a33d8ea47742573429876b8cece2057baa3a295341099",
+      "transformation": "替换本机路径",
+      "byte_identical_to_original": true
     }
   ]
 }

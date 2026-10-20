@@ -1,0 +1,356 @@
+{
+  "format": "native-event-excerpt-v1",
+  "original_line_count": 52,
+  "original_sha256": "ff51ae92dcda5487fff983e4a4ae26c3c78471b0d2bed8eff37f647f19406560",
+  "scope": "选定的工具/执行事件；不是完整日志或模型请求。工作日志写入保留目标路径，省略正文。",
+  "records": [
+    {
+      "source_line": 22,
+      "event": {
+        "type": "tool/call",
+        "seq": 20,
+        "time": 1792500608546,
+        "data": {
+          "turn": 1,
+          "step": 1,
+          "callId": "call_00_ET_An0MM7Szp8NrRiaaF3Uc3679",
+          "name": "bash",
+          "arguments": "{\"description\": \"Run recovery_export.py with legacy-json format\", \"command\": \"cd \\\"/PUBLIC_PROJECT/独立测试工作区/DSH/REC01-a01\\\" && python3 recovery_export.py --format legacy-json\"}"
+        }
+      }
+    },
+    {
+      "source_line": 24,
+      "event": {
+        "type": "job/settled",
+        "seq": 22,
+        "time": 1792500608642,
+        "data": {
+          "jobId": "bash-4ba87e4a299a43e8",
+          "owner": "session-1b9a206a-eecc-440e-9c1d-405c9a6765b4",
+          "kind": "bash",
+          "label": "cd \"/PUBLIC_PROJECT/独立测试工作区/DSH/REC01-a01\" && python3 recovery_export.py --format legacy-json",
+          "startedAt": 1792500608558,
+          "toolCall": {
+            "callId": "call_00_ET_An0MM7Szp8NrRiaaF3Uc3679",
+            "rootCallId": "call_00_ET_An0MM7Szp8NrRiaaF3Uc3679"
+          },
+          "finishedAt": 1792500608642,
+          "status": "completed",
+          "cause": "producer",
+          "producerReported": true,
+          "detail": "exit code: 7"
+        }
+      }
+    },
+    {
+      "source_line": 25,
+      "event": {
+        "type": "tool/result",
+        "seq": 23,
+        "time": 1792500608645,
+        "data": {
+          "turn": 1,
+          "step": 1,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_ET_An0MM7Szp8NrRiaaF3Uc3679"
+            },
+            "toolCallId": "call_00_ET_An0MM7Szp8NrRiaaF3Uc3679",
+            "content": [
+              {
+                "type": "text",
+                "text": "[stderr]\nERROR_CODE=E_UNSUPPORTED_FORMAT\nRECEIVED_FORMAT=legacy-json\nSUPPORTED_FORMAT=json\nRETRY_COMMAND=python3 recovery_export.py --format json\n[exit code: 7]"
+              }
+            ],
+            "isError": false,
+            "id": "418eba7f-6f99-4405-9552-2d120430dd40"
+          },
+          "meta": {
+            "cwd": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC01-a01"
+          }
+        },
+        "sourceEventSeqs": [
+          20
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 30,
+      "event": {
+        "type": "tool/call",
+        "seq": 28,
+        "time": 1792500610425,
+        "data": {
+          "turn": 1,
+          "step": 2,
+          "callId": "call_00_F5YOJuy5Q0RrYrlkgcBn2796",
+          "name": "bash",
+          "arguments": "{\"command\": \"cd \\\"/PUBLIC_PROJECT/独立测试工作区/DSH/REC01-a01\\\" && python3 recovery_export.py --format json\", \"description\": \"Run recovery_export.py with json format\"}"
+        }
+      }
+    },
+    {
+      "source_line": 32,
+      "event": {
+        "type": "job/settled",
+        "seq": 30,
+        "time": 1792500610488,
+        "data": {
+          "jobId": "bash-e2b3cfca83f94c18",
+          "owner": "session-1b9a206a-eecc-440e-9c1d-405c9a6765b4",
+          "kind": "bash",
+          "label": "cd \"/PUBLIC_PROJECT/独立测试工作区/DSH/REC01-a01\" && python3 recovery_export.py --format json",
+          "startedAt": 1792500610435,
+          "toolCall": {
+            "callId": "call_00_F5YOJuy5Q0RrYrlkgcBn2796",
+            "rootCallId": "call_00_F5YOJuy5Q0RrYrlkgcBn2796"
+          },
+          "finishedAt": 1792500610488,
+          "status": "completed",
+          "cause": "producer",
+          "producerReported": true,
+          "detail": "exit code: 0"
+        }
+      }
+    },
+    {
+      "source_line": 33,
+      "event": {
+        "type": "tool/result",
+        "seq": 31,
+        "time": 1792500610488,
+        "data": {
+          "turn": 1,
+          "step": 2,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_F5YOJuy5Q0RrYrlkgcBn2796"
+            },
+            "toolCallId": "call_00_F5YOJuy5Q0RrYrlkgcBn2796",
+            "content": [
+              {
+                "type": "text",
+                "text": "CASE_ID=REC01\nSTATUS=OK\nOUTPUT_PATH=outputs/registration_summary.json\nACTIVITY_COUNT=3\nTOTAL_PARTICIPANTS=39\n"
+              }
+            ],
+            "isError": false,
+            "id": "0c98a6ca-174c-43d5-b8d3-5c1c2940c7e9"
+          },
+          "meta": {
+            "cwd": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC01-a01"
+          }
+        },
+        "sourceEventSeqs": [
+          28
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 38,
+      "event": {
+        "type": "tool/call",
+        "seq": 36,
+        "time": 1792500612061,
+        "data": {
+          "turn": 1,
+          "step": 3,
+          "callId": "call_00_bZfu763U2B7u2SQSs6tn5360",
+          "name": "read",
+          "arguments": "{\"file_path\": \"/PUBLIC_PROJECT/独立测试工作区/DSH/REC01-a01/outputs/registration_summary.json\"}"
+        }
+      }
+    },
+    {
+      "source_line": 39,
+      "event": {
+        "type": "tool/result",
+        "seq": 37,
+        "time": 1792500612073,
+        "data": {
+          "turn": 1,
+          "step": 3,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_bZfu763U2B7u2SQSs6tn5360"
+            },
+            "toolCallId": "call_00_bZfu763U2B7u2SQSs6tn5360",
+            "content": [
+              {
+                "type": "text",
+                "text": "<path>/PUBLIC_PROJECT/独立测试工作区/DSH/REC01-a01/outputs/registration_summary.json</path>\n<type>file</type>\n<content>\n1: {\n2:   \"case_id\": \"REC01\",\n3:   \"case_version\": \"1.0.0\",\n4:   \"activities\": [\n5:     {\n6:       \"activity_id\": \"ACT-51\",\n7:       \"participants\": 18\n8:     },\n9:     {\n10:       \"activity_id\": \"ACT-52\",\n11:       \"participants\": 12\n12:     },\n13:     {\n14:       \"activity_id\": \"ACT-53\",\n15:       \"participants\": 9\n16:     }\n17:   ],\n18:   \"activity_count\": 3,\n19:   \"total_participants\": 39\n20: }\n\n(End of file - total 20 lines)\n</content>"
+              }
+            ],
+            "isError": false,
+            "id": "85aeb1cf-7725-4193-819c-8836016e62b3"
+          },
+          "meta": {
+            "path": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC01-a01/outputs/registration_summary.json",
+            "offset": 1,
+            "lines": [
+              {
+                "number": 1,
+                "text": "{"
+              },
+              {
+                "number": 2,
+                "text": "  \"case_id\": \"REC01\","
+              },
+              {
+                "number": 3,
+                "text": "  \"case_version\": \"1.0.0\","
+              },
+              {
+                "number": 4,
+                "text": "  \"activities\": ["
+              },
+              {
+                "number": 5,
+                "text": "    {"
+              },
+              {
+                "number": 6,
+                "text": "      \"activity_id\": \"ACT-51\","
+              },
+              {
+                "number": 7,
+                "text": "      \"participants\": 18"
+              },
+              {
+                "number": 8,
+                "text": "    },"
+              },
+              {
+                "number": 9,
+                "text": "    {"
+              },
+              {
+                "number": 10,
+                "text": "      \"activity_id\": \"ACT-52\","
+              },
+              {
+                "number": 11,
+                "text": "      \"participants\": 12"
+              },
+              {
+                "number": 12,
+                "text": "    },"
+              },
+              {
+                "number": 13,
+                "text": "    {"
+              },
+              {
+                "number": 14,
+                "text": "      \"activity_id\": \"ACT-53\","
+              },
+              {
+                "number": 15,
+                "text": "      \"participants\": 9"
+              },
+              {
+                "number": 16,
+                "text": "    }"
+              },
+              {
+                "number": 17,
+                "text": "  ],"
+              },
+              {
+                "number": 18,
+                "text": "  \"activity_count\": 3,"
+              },
+              {
+                "number": 19,
+                "text": "  \"total_participants\": 39"
+              },
+              {
+                "number": 20,
+                "text": "}"
+              }
+            ],
+            "totalLines": 20,
+            "lang": "json"
+          }
+        },
+        "sourceEventSeqs": [
+          36
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 44,
+      "event": {
+        "type": "tool/call",
+        "seq": 42,
+        "time": 1792500614680,
+        "data": {
+          "turn": 1,
+          "step": 4,
+          "callId": "call_00_sZpiphz37PswMBcaYfEW0807",
+          "name": "present",
+          "arguments": "{\"files\": [{\"path\": \"/PUBLIC_PROJECT/独立测试工作区/DSH/REC01-a01/outputs/registration_summary.json\", \"description\": \"REC01 活动报名汇总导出结果（脚本原样生成）\"}]}"
+        }
+      }
+    },
+    {
+      "source_line": 45,
+      "event": {
+        "type": "deliverables/presented",
+        "seq": 43,
+        "time": 1792500614688,
+        "data": {
+          "turn": 1,
+          "callId": "call_00_sZpiphz37PswMBcaYfEW0807",
+          "files": [
+            {
+              "path": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC01-a01/outputs/registration_summary.json",
+              "description": "REC01 活动报名汇总导出结果（脚本原样生成）"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_line": 46,
+      "event": {
+        "type": "tool/result",
+        "seq": 44,
+        "time": 1792500614689,
+        "data": {
+          "turn": 1,
+          "step": 4,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_sZpiphz37PswMBcaYfEW0807"
+            },
+            "toolCallId": "call_00_sZpiphz37PswMBcaYfEW0807",
+            "content": [
+              {
+                "type": "text",
+                "text": "Presented /PUBLIC_PROJECT/独立测试工作区/DSH/REC01-a01/outputs/registration_summary.json"
+              }
+            ],
+            "isError": false,
+            "id": "5bfc66e3-8bba-471e-be2c-f6e57ebd8337"
+          }
+        },
+        "sourceEventSeqs": [
+          42
+        ],
+        "surfaceOp": "append"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "product": "豆包",
+  "content_pass_count": 16,
+  "candidate_check_count": 16,
+  "formal_score": null,
+  "compaction_confirmed": null,
+  "final_source_level": "用户提供的最终回复",
+  "limits": [
+    "没有确认压缩；仅核对用户提供的最终内容，不据此给复杂16分。",
+    "界面曾显示“自动 高”，与用户指定模型对应关系尚未独立核实。"
+  ]
+}

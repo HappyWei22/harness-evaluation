@@ -1,0 +1,48 @@
+{
+  "phase": "首次故障确认，恢复阶段未开始，不判12分",
+  "session_id": "session-4f43bfcf-91e9-45a8-ac46-1a3d6baaf9a1",
+  "run_id": "REC02-28fa0d6fd51c4a38",
+  "native_log": "原生日志/session.v4.jsonl",
+  "native_record_count": 31,
+  "checks": {
+    "session_cwd_matches": true,
+    "first_prompt_matches": true,
+    "exactly_one_tool_call": true,
+    "native_command_exact": true,
+    "native_workdir_correct": true,
+    "job_reports_exit_8": true,
+    "call_and_result_link": true,
+    "error_fields_complete": true,
+    "task_id_matches_actual_state": true,
+    "failure_file_check_passed": true,
+    "turn_ended_completed": true
+  },
+  "all_checks_passed": true,
+  "evidence_positions": {
+    "user_prompt": {
+      "line": 10,
+      "seq": 8
+    },
+    "first_call": {
+      "line": 22,
+      "seq": 20,
+      "call_id": "call_00_qzzeHXIPB3S257hJSTsv6664"
+    },
+    "job_exit": {
+      "line": 24,
+      "seq": 22
+    },
+    "tool_result": {
+      "line": 25,
+      "seq": 23
+    },
+    "turn_end": {
+      "line": 31,
+      "seq": 29
+    }
+  },
+  "confidence_basis": "高：同一调用编号的原生参数、退出事件、错误正文，与独立失败快照文件及原脚本指纹一致。",
+  "limitations": "只确认首次故障与失败前进度，不证明恢复能力；脚本事件不是DSH原生轨迹，没有捕获本次实际模型请求。",
+  "formal_score": null,
+  "pilot_score": null
+}

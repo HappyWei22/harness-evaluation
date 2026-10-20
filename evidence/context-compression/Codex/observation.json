@@ -1,0 +1,11 @@
+{
+  "product": "Codex",
+  "content_pass_count": 16,
+  "candidate_check_count": 16,
+  "formal_score": null,
+  "compaction_confirmed": true,
+  "final_source_level": "原生记录/最终回复副本",
+  "limits": [
+    "手动压缩完成，但五轮用户原文仍在替换历史；加密压缩项不可读，没有完整模型请求。"
+  ]
+}

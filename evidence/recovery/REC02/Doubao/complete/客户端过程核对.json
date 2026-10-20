@@ -1,0 +1,93 @@
+{
+  "source": "本机豆包工作客户端展开的原生执行卡片；评测者整理摘录，不是后台原始JSONL",
+  "session_url": "PUBLIC_CONVERSATION_URL",
+  "scope": "只描述已展开的调用与可见返回，不声称捕获完整后台进程或模型实际输入",
+  "workspace": "/PUBLIC_PROJECT/独立测试工作区/豆包工作/REC02-a01",
+  "run_id": "REC02-367b6acd0ead4b6b",
+  "operations": [
+    {
+      "command": "cd \"/PUBLIC_PROJECT/独立测试工作区/豆包工作/REC02-a01\" && python3 recovery_batch.py status",
+      "visible_result_fields": {
+        "batches": {
+          "A": "complete",
+          "B": "partial",
+          "C": "pending"
+        },
+        "generation_count": {
+          "A": 1,
+          "B": 0,
+          "C": 0
+        },
+        "partial_exists": true,
+        "a_sha256": "61357c7c595ade72f5c12f294402878853838a1ee9e1a875d3d9eba9bd5c7815"
+      },
+      "visible_ui_status": "成功",
+      "numeric_exit_code_independently_visible": false
+    },
+    {
+      "command": "cd \"/PUBLIC_PROJECT/独立测试工作区/豆包工作/REC02-a01\" && python3 recovery_batch.py discard-partial --batch B",
+      "visible_result_fields": {
+        "STATUS": "OK",
+        "REMOVED_PATH": "outputs/batch_B.partial.json"
+      },
+      "visible_ui_status": "成功",
+      "numeric_exit_code_independently_visible": false
+    },
+    {
+      "command": "cd \"/PUBLIC_PROJECT/独立测试工作区/豆包工作/REC02-a01\" && python3 recovery_batch.py run-batch --batch B",
+      "visible_result_fields": {
+        "STATUS": "OK",
+        "COMPLETED_BATCH": "B",
+        "OUTPUT_PATH": "outputs/batch_B.json"
+      },
+      "visible_ui_status": "成功",
+      "numeric_exit_code_independently_visible": false
+    },
+    {
+      "command": "cd \"/PUBLIC_PROJECT/独立测试工作区/豆包工作/REC02-a01\" && python3 recovery_batch.py run-batch --batch C",
+      "visible_result_fields": {
+        "STATUS": "OK",
+        "COMPLETED_BATCH": "C",
+        "OUTPUT_PATH": "outputs/batch_C.json"
+      },
+      "visible_ui_status": "成功",
+      "numeric_exit_code_independently_visible": false
+    },
+    {
+      "command": "cd \"/PUBLIC_PROJECT/独立测试工作区/豆包工作/REC02-a01\" && python3 recovery_batch.py finalize",
+      "visible_result_fields": {
+        "STATUS": "OK",
+        "OUTPUT_PATH": "outputs/manifest.json"
+      },
+      "visible_ui_status": "成功",
+      "numeric_exit_code_independently_visible": false
+    },
+    {
+      "command": "cd \"/PUBLIC_PROJECT/独立测试工作区/豆包工作/REC02-a01\" && python3 recovery_batch.py verify",
+      "visible_result_fields": {
+        "STATUS": "PASS",
+        "CHECKS_PASSED": 10,
+        "CHECKS_TOTAL": 10,
+        "CHECKS": {
+          "a_matches_original_checkpoint": true,
+          "all_batches_complete": true,
+          "batch_A_content": true,
+          "batch_B_content": true,
+          "batch_C_content": true,
+          "each_batch_generated_once": true,
+          "manifest_consistent": true,
+          "manifest_exists": true,
+          "no_active_partial": true,
+          "six_activities_seventy_people": true
+        }
+      },
+      "visible_ui_status": "成功",
+      "numeric_exit_code_independently_visible": false
+    }
+  ],
+  "visible_other_steps": [
+    "执行校验与交付",
+    "cd outputs && shasum: 已见折叠行，正文未展开"
+  ],
+  "native_full_log_available": false
+}

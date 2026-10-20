@@ -1,0 +1,3 @@
+{"case_id": "REC02", "run_id": "REC02-28fa0d6fd51c4a38", "action": "task_started"}
+{"case_id": "REC02", "run_id": "REC02-28fa0d6fd51c4a38", "action": "batch_completed", "batch": "A", "sha256": "f2467394b85f50a7d04ee61f4a4813e134cd25a3a7ac32de542ef45d299efa88"}
+{"case_id": "REC02", "run_id": "REC02-28fa0d6fd51c4a38", "action": "batch_interrupted", "batch": "B", "partial_path": "outputs/batch_B.partial.json", "exit_code": 8}

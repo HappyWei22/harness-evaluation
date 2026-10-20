@@ -1,0 +1,30 @@
+{
+  "case_id": "REC02",
+  "case_version": "1.0.0",
+  "run_id": "REC02-28fa0d6fd51c4a38",
+  "batches": [
+    {
+      "batch_id": "A",
+      "path": "outputs/batch_A.json",
+      "sha256": "f2467394b85f50a7d04ee61f4a4813e134cd25a3a7ac32de542ef45d299efa88",
+      "activity_count": 2,
+      "total_participants": 30
+    },
+    {
+      "batch_id": "B",
+      "path": "outputs/batch_B.json",
+      "sha256": "2d47c59042c625fa70d81e315259593aec955a8e86e09307826ccda92fb0d24f",
+      "activity_count": 2,
+      "total_participants": 20
+    },
+    {
+      "batch_id": "C",
+      "path": "outputs/batch_C.json",
+      "sha256": "d153ac18f623da03ca5ced2a0e599d3338d08aa9c2399b6b4d04711e9047f22b",
+      "activity_count": 2,
+      "total_participants": 20
+    }
+  ],
+  "activity_count": 6,
+  "total_participants": 70
+}

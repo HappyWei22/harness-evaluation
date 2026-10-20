@@ -1,0 +1,11 @@
+{
+  "product": "WorkBuddy",
+  "content_pass_count": 16,
+  "candidate_check_count": 16,
+  "formal_score": null,
+  "compaction_confirmed": true,
+  "final_source_level": "原生记录/最终回复副本",
+  "limits": [
+    "手动压缩记录仍保留五轮原业务输入；没有最终完整模型请求，不证明只靠摘要恢复。"
+  ]
+}

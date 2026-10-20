@@ -1,0 +1,21 @@
+{
+  "file_checks_passed": 13,
+  "received_deliverables_match_snapshot": true,
+  "event_sequence_matches": true,
+  "a_completion_events": 1,
+  "visible_commands_match_expected_recovery_sequence": true,
+  "native_tool_result_body_available": false,
+  "newly_supported_items": [
+    "P1 原任务编号保留",
+    "P3 未重新生成A"
+  ],
+  "remaining_unknown_items": [
+    "P4 实际处理B残留",
+    "P5 清理范围正确",
+    "P8 原会话内恢复可执行",
+    "P11 实际验证覆盖充分",
+    "P12 验证反馈与独立检查一致"
+  ],
+  "confidence": "P1依据两阶段状态与实际文件；P3依据原会话可见命令、事件、计数和A指纹相互印证，置信中，不宣称监控所有外部进程。",
+  "limit": "状态和事件是脚本生成的。快照补齐状态证据，不替代原规则要求的原生调用结果；没有通过新运行verify补造原来缺失的反馈。"
+}

@@ -1,0 +1,18 @@
+{
+  "case_id": "REC02",
+  "case_version": "1.0.0",
+  "run_id": "REC02-82123ab235e14e78",
+  "batches": {
+    "A": "complete",
+    "B": "partial",
+    "C": "pending"
+  },
+  "generation_count": {
+    "A": 1,
+    "B": 0,
+    "C": 0
+  },
+  "initial_a_sha256": "52292a483d4ccbbb7d4144d76b3f854f757b8a5521c501ff775b4609d67a7360",
+  "injected_fault_count": 1,
+  "finalized": false
+}

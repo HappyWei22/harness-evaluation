@@ -1,0 +1,750 @@
+{
+  "case_id": "REC02",
+  "case_name": "批量导出中断后续做",
+  "case_version": "1.0.0",
+  "product": "Codex",
+  "phase": "先行试测",
+  "run_id": "REC02-a08b41f10ee24bce",
+  "items": [
+    {
+      "id": "P1",
+      "name": "原任务编号保留",
+      "max_score": 1,
+      "pass_condition": "恢复后状态及最终文件沿用首次失败现场的run_id",
+      "evidence_required": "失败快照、恢复后文件及会话/目录对应",
+      "status": "pass",
+      "score": 1,
+      "observation": "失败前后state和四个最终文件沿用REC02-a08b41f10ee24bce；全部命令在原会话、原目录执行。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "高：实际文件、独立标准、原生调用与对应工具返回、任务事件相互印证；P3不只凭哈希或计数，不声称监控会话外全部进程。",
+      "attribution_level": "固定任务和原生配置下的本次表现已确认；模型/原生Skill/Harness的因果贡献未隔离",
+      "limitations": "人工暂停并发送继续提示词；单次预设故障，操作接口和验证器由题目提供，不证明产品原生检查点、无人提醒的自动恢复或长期可靠性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/过程与逐项复核.json",
+          "section": "rule_checks.P1"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/原生日志/native-session.jsonl",
+          "lines": [
+            36,
+            37,
+            39,
+            63,
+            67,
+            68
+          ]
+        },
+        {
+          "file": "阶段02-恢复完成/工作目录/.recovery/events.jsonl"
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/failure/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Codex/failure/原生过程核对.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/complete/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/complete/阶段文件核对.json"
+      ]
+    },
+    {
+      "id": "P2",
+      "name": "已完成A内容未改",
+      "max_score": 1,
+      "pass_condition": "A恢复前后字节指纹相同",
+      "evidence_required": "两个阶段的实际文件SHA-256",
+      "status": "pass",
+      "score": 1,
+      "observation": "A前后实际SHA-256均为b9a214858358f635c7c2b265d22ddfb9e881a438465c08435386c049402503fa。字节相同仅用于本项，是否重生成另看P3。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "高：实际文件、独立标准、原生调用与对应工具返回、任务事件相互印证；P3不只凭哈希或计数，不声称监控会话外全部进程。",
+      "attribution_level": "固定任务和原生配置下的本次表现已确认；模型/原生Skill/Harness的因果贡献未隔离",
+      "limitations": "人工暂停并发送继续提示词；单次预设故障，操作接口和验证器由题目提供，不证明产品原生检查点、无人提醒的自动恢复或长期可靠性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/过程与逐项复核.json",
+          "section": "rule_checks.P2"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/工作目录/.recovery/events.jsonl"
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/failure/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Codex/failure/原生过程核对.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/complete/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/complete/阶段文件核对.json"
+      ]
+    },
+    {
+      "id": "P3",
+      "name": "未重新生成A",
+      "max_score": 1,
+      "pass_condition": "恢复过程未重新生成A",
+      "evidence_required": "实际调用、任务事件与生成次数互相核对；只看文件名不足以判断",
+      "status": "pass",
+      "score": 1,
+      "observation": "完整本会话只有一次start，没有run-batch A或手写结果命令；任务事件仅一次A完成，generation_count.A=1，初始日志前缀保留。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "高：实际文件、独立标准、原生调用与对应工具返回、任务事件相互印证；P3不只凭哈希或计数，不声称监控会话外全部进程。",
+      "attribution_level": "固定任务和原生配置下的本次表现已确认；模型/原生Skill/Harness的因果贡献未隔离",
+      "limitations": "人工暂停并发送继续提示词；单次预设故障，操作接口和验证器由题目提供，不证明产品原生检查点、无人提醒的自动恢复或长期可靠性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/过程与逐项复核.json",
+          "section": "rule_checks.P3"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/原生日志/native-session.jsonl",
+          "lines": [
+            19,
+            21,
+            22,
+            36,
+            37,
+            39,
+            43,
+            44,
+            46,
+            48,
+            50,
+            51,
+            53,
+            54,
+            56,
+            58,
+            59,
+            61,
+            63,
+            64,
+            66,
+            67,
+            68
+          ]
+        },
+        {
+          "file": "阶段02-恢复完成/工作目录/.recovery/events.jsonl"
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/failure/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Codex/failure/原生过程核对.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/complete/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/complete/阶段文件核对.json"
+      ]
+    },
+    {
+      "id": "P4",
+      "name": "实际处理B残留",
+      "max_score": 1,
+      "pass_condition": "有与首次半成品对应的实际处理操作",
+      "evidence_required": "原生调用与结果、前后B半成品状态",
+      "status": "pass",
+      "score": 1,
+      "observation": "实际执行discard-partial --batch B，返回STATUS=OK、指定REMOVED_PATH，退出0；初始存在的半成品在最终快照中消失。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "高：实际文件、独立标准、原生调用与对应工具返回、任务事件相互印证；P3不只凭哈希或计数，不声称监控会话外全部进程。",
+      "attribution_level": "固定任务和原生配置下的本次表现已确认；模型/原生Skill/Harness的因果贡献未隔离",
+      "limitations": "人工暂停并发送继续提示词；单次预设故障，操作接口和验证器由题目提供，不证明产品原生检查点、无人提醒的自动恢复或长期可靠性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/过程与逐项复核.json",
+          "section": "rule_checks.P4"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/原生日志/native-session.jsonl",
+          "lines": [
+            43,
+            44,
+            46
+          ]
+        },
+        {
+          "file": "阶段02-恢复完成/工作目录/.recovery/events.jsonl"
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/failure/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Codex/failure/原生过程核对.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/complete/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/complete/阶段文件核对.json"
+      ]
+    },
+    {
+      "id": "P5",
+      "name": "清理范围正确",
+      "max_score": 1,
+      "pass_condition": "只处理已标记B半成品，没有删其他正式结果",
+      "evidence_required": "实际操作参数与结果、正式文件前后对照",
+      "status": "pass",
+      "score": 1,
+      "observation": "唯一清理命令只指定B半成品；原版脚本未改，A原样，未见其他业务文件写删命令。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "高：实际文件、独立标准、原生调用与对应工具返回、任务事件相互印证；P3不只凭哈希或计数，不声称监控会话外全部进程。",
+      "attribution_level": "固定任务和原生配置下的本次表现已确认；模型/原生Skill/Harness的因果贡献未隔离",
+      "limitations": "人工暂停并发送继续提示词；单次预设故障，操作接口和验证器由题目提供，不证明产品原生检查点、无人提醒的自动恢复或长期可靠性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/过程与逐项复核.json",
+          "section": "rule_checks.P5"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/原生日志/native-session.jsonl",
+          "lines": [
+            43,
+            44,
+            46
+          ]
+        },
+        {
+          "file": "阶段02-恢复完成/工作目录/.recovery/events.jsonl"
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/failure/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Codex/failure/原生过程核对.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/complete/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/complete/阶段文件核对.json"
+      ]
+    },
+    {
+      "id": "P6",
+      "name": "B恢复完整",
+      "max_score": 1,
+      "pass_condition": "完整B含ACT-53/9人、ACT-54/11人，总数20，complete=true",
+      "evidence_required": "独立读取B，不只看成功回复",
+      "status": "pass",
+      "score": 1,
+      "observation": "独立读取B：ACT-53/9人、ACT-54/11人，complete=true，共20人。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "高：实际文件、独立标准、原生调用与对应工具返回、任务事件相互印证；P3不只凭哈希或计数，不声称监控会话外全部进程。",
+      "attribution_level": "固定任务和原生配置下的本次表现已确认；模型/原生Skill/Harness的因果贡献未隔离",
+      "limitations": "人工暂停并发送继续提示词；单次预设故障，操作接口和验证器由题目提供，不证明产品原生检查点、无人提醒的自动恢复或长期可靠性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/过程与逐项复核.json",
+          "section": "rule_checks.P6"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/原生日志/native-session.jsonl",
+          "lines": [
+            48,
+            50,
+            51,
+            63,
+            64,
+            68
+          ]
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/failure/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Codex/failure/原生过程核对.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/complete/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/complete/阶段文件核对.json"
+      ]
+    },
+    {
+      "id": "P7",
+      "name": "总索引排除半成品",
+      "max_score": 1,
+      "pass_condition": "总索引不引用旧半成品，不将其作为正式批次",
+      "evidence_required": "半成品处理记录、实际manifest.json",
+      "status": "pass",
+      "score": 1,
+      "observation": "总索引只引用三个正式批次；最终快照和status确认B半成品不存在。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "高：实际文件、独立标准、原生调用与对应工具返回、任务事件相互印证；P3不只凭哈希或计数，不声称监控会话外全部进程。",
+      "attribution_level": "固定任务和原生配置下的本次表现已确认；模型/原生Skill/Harness的因果贡献未隔离",
+      "limitations": "人工暂停并发送继续提示词；单次预设故障，操作接口和验证器由题目提供，不证明产品原生检查点、无人提醒的自动恢复或长期可靠性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/过程与逐项复核.json",
+          "section": "rule_checks.P7"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/原生日志/native-session.jsonl",
+          "lines": [
+            58,
+            59,
+            61,
+            63,
+            64,
+            67,
+            68
+          ]
+        },
+        {
+          "file": "阶段02-恢复完成/工作目录/.recovery/events.jsonl"
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/failure/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Codex/failure/原生过程核对.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/complete/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/complete/阶段文件核对.json"
+      ]
+    },
+    {
+      "id": "P8",
+      "name": "原会话内恢复可执行",
+      "max_score": 1,
+      "pass_condition": "后续恢复操作在同一会话和目录中实际运行",
+      "evidence_required": "原生调用及其结果；没发起操作不能据此判断底层不支持",
+      "status": "pass",
+      "score": 1,
+      "observation": "两轮原生日志属于同一会话和工作目录，首次28条日志为最终74条的前缀；恢复命令和对应结果齐全、退出0。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "高：实际文件、独立标准、原生调用与对应工具返回、任务事件相互印证；P3不只凭哈希或计数，不声称监控会话外全部进程。",
+      "attribution_level": "固定任务和原生配置下的本次表现已确认；模型/原生Skill/Harness的因果贡献未隔离",
+      "limitations": "人工暂停并发送继续提示词；单次预设故障，操作接口和验证器由题目提供，不证明产品原生检查点、无人提醒的自动恢复或长期可靠性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/过程与逐项复核.json",
+          "section": "rule_checks.P8"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/原生日志/native-session.jsonl",
+          "lines": [
+            36,
+            37,
+            39,
+            43,
+            44,
+            46,
+            48,
+            50,
+            51,
+            53,
+            54,
+            56,
+            58,
+            59,
+            61,
+            63,
+            64,
+            66,
+            67,
+            68
+          ]
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/failure/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Codex/failure/原生过程核对.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/complete/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/complete/阶段文件核对.json"
+      ]
+    },
+    {
+      "id": "P9",
+      "name": "C继续完成",
+      "max_score": 1,
+      "pass_condition": "原来未开始的C含ACT-55/15人、ACT-56/5人，总数20",
+      "evidence_required": "初始无C的快照、恢复后实际C文件",
+      "status": "pass",
+      "score": 1,
+      "observation": "初始没有C，实际补跑后C含ACT-55/15人、ACT-56/5人，共20人。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "高：实际文件、独立标准、原生调用与对应工具返回、任务事件相互印证；P3不只凭哈希或计数，不声称监控会话外全部进程。",
+      "attribution_level": "固定任务和原生配置下的本次表现已确认；模型/原生Skill/Harness的因果贡献未隔离",
+      "limitations": "人工暂停并发送继续提示词；单次预设故障，操作接口和验证器由题目提供，不证明产品原生检查点、无人提醒的自动恢复或长期可靠性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/过程与逐项复核.json",
+          "section": "rule_checks.P9"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/原生日志/native-session.jsonl",
+          "lines": [
+            53,
+            54,
+            56,
+            63,
+            64,
+            68
+          ]
+        },
+        {
+          "file": "阶段02-恢复完成/工作目录/.recovery/events.jsonl"
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/failure/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Codex/failure/原生过程核对.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/complete/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/complete/阶段文件核对.json"
+      ]
+    },
+    {
+      "id": "P10",
+      "name": "总结果一致",
+      "max_score": 1,
+      "pass_condition": "索引准确引用同一任务A、B、C及文件指纹，6项无遗漏重复、总人数70",
+      "evidence_required": "独立读取三个批次、总索引及对应文件",
+      "status": "pass",
+      "score": 1,
+      "observation": "实际A/B/C内容、总索引及文件指纹符合独立标准，6活动无重复遗漏，总人数70。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "高：实际文件、独立标准、原生调用与对应工具返回、任务事件相互印证；P3不只凭哈希或计数，不声称监控会话外全部进程。",
+      "attribution_level": "固定任务和原生配置下的本次表现已确认；模型/原生Skill/Harness的因果贡献未隔离",
+      "limitations": "人工暂停并发送继续提示词；单次预设故障，操作接口和验证器由题目提供，不证明产品原生检查点、无人提醒的自动恢复或长期可靠性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/过程与逐项复核.json",
+          "section": "rule_checks.P10"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/原生日志/native-session.jsonl",
+          "lines": [
+            63,
+            64,
+            68
+          ]
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/failure/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Codex/failure/原生过程核对.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/complete/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/complete/阶段文件核对.json"
+      ]
+    },
+    {
+      "id": "P11",
+      "name": "实际验证覆盖充分",
+      "max_score": 1,
+      "pass_condition": "有实际验证调用，覆盖完整性、重复、任务编号及半成品排除",
+      "evidence_required": "verify及工具返回，或可复核的等价检查；最终写“已核对”不足",
+      "status": "pass",
+      "score": 1,
+      "observation": "原生verify调用实际运行并返回10项true；覆盖完整性、计数、共同编号、索引一致与半成品排除。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "高：实际文件、独立标准、原生调用与对应工具返回、任务事件相互印证；P3不只凭哈希或计数，不声称监控会话外全部进程。",
+      "attribution_level": "固定任务和原生配置下的本次表现已确认；模型/原生Skill/Harness的因果贡献未隔离",
+      "limitations": "人工暂停并发送继续提示词；单次预设故障，操作接口和验证器由题目提供，不证明产品原生检查点、无人提醒的自动恢复或长期可靠性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/过程与逐项复核.json",
+          "section": "rule_checks.P11"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/原生日志/native-session.jsonl",
+          "lines": [
+            63,
+            66,
+            68
+          ]
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/failure/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Codex/failure/原生过程核对.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/complete/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/complete/阶段文件核对.json"
+      ]
+    },
+    {
+      "id": "P12",
+      "name": "验证反馈与独立检查一致",
+      "max_score": 1,
+      "pass_condition": "该验证明确通过，评测者独立检查也通过",
+      "evidence_required": "对应工具结果与独立核对报告",
+      "status": "pass",
+      "score": 1,
+      "observation": "verify原生返回PASS、退出0；评测者对两阶段实际文件的13项独立检查也通过。",
+      "verification_method": "从仓库根目录运行 python3 checks/verify_recovery.py；原生摘录保留source_line，源证据位置仅用于追溯，未公开完整日志。",
+      "confidence_basis": "高：实际文件、独立标准、原生调用与对应工具返回、任务事件相互印证；P3不只凭哈希或计数，不声称监控会话外全部进程。",
+      "attribution_level": "固定任务和原生配置下的本次表现已确认；模型/原生Skill/Harness的因果贡献未隔离",
+      "limitations": "人工暂停并发送继续提示词；单次预设故障，操作接口和验证器由题目提供，不证明产品原生检查点、无人提醒的自动恢复或长期可靠性。",
+      "source_evidence_locations": [
+        {
+          "file": "阶段02-恢复完成/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/过程与逐项复核.json",
+          "section": "rule_checks.P12"
+        },
+        {
+          "file": "阶段01-首次失败/阶段文件核对.json"
+        },
+        {
+          "file": "阶段02-恢复完成/原生日志/native-session.jsonl",
+          "lines": [
+            63,
+            66,
+            68
+          ]
+        }
+      ],
+      "public_evidence": [
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/failure/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_B.partial.json",
+        "evidence/recovery/REC02/Codex/failure/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/failure/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/failure/阶段文件核对.json",
+        "evidence/recovery/REC02/Codex/failure/原生过程核对.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/events.jsonl",
+        "evidence/recovery/REC02/Codex/complete/workspace/.recovery/state.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_A.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_B.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_C.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/outputs/manifest.json",
+        "evidence/recovery/REC02/Codex/complete/workspace/recovery_batch.py",
+        "evidence/recovery/REC02/Codex/complete/native.excerpt.json",
+        "evidence/recovery/REC02/Codex/complete/阶段文件核对.json"
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "name": "进度保留",
+      "confirmed_score": 3,
+      "assessed_max": 3,
+      "unknown_points": 0
+    },
+    {
+      "name": "半成品处理",
+      "confirmed_score": 4,
+      "assessed_max": 4,
+      "unknown_points": 0
+    },
+    {
+      "name": "后续执行",
+      "confirmed_score": 3,
+      "assessed_max": 3,
+      "unknown_points": 0
+    },
+    {
+      "name": "恢复验证",
+      "confirmed_score": 2,
+      "assessed_max": 2,
+      "unknown_points": 0
+    }
+  ],
+  "confirmed_score": 12,
+  "assessed_max": 12,
+  "case_max": 12,
+  "unknown_points": 0,
+  "untriggered_points": 0,
+  "failed_points": 0,
+  "pilot_score": 12,
+  "formal_score": null,
+  "native_causal_harness_score": null,
+  "script_verify_checks_passed": 10,
+  "independent_file_checks_passed": 13,
+  "actual_provider_request_captured": false,
+  "manual_stop_and_continue_protocol": true,
+  "notes": "按原12项评分，不将脚本10项PASS或文件13项检查直接换算成12分；复核只读取归档材料，未重跑输入脚本。",
+  "public_scope": "按原规则保留本次判断；工具摘录、文件和界面摘录可复核；不是完整会话，也不是纯Harness因果得分。"
+}
