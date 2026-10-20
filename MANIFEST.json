@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-17",
+  "date": "2026-10-20",
   "scope": "本公开包实际文件指纹，排除本清单自身。",
   "files": [
     {
@@ -8,14 +8,19 @@
       "sha256": "e96419a405b0995630e7fd18f25e9063b0aac3a02c81d41cd5dcd5b6649b0466"
     },
     {
+      "path": "CHANGELOG.md",
+      "bytes": 1227,
+      "sha256": "e1d5204f7159a6c21d93ffeff032702d6369c7def2ee13110c15818d090fbdef"
+    },
+    {
       "path": "PROVENANCE.json",
       "bytes": 46016,
       "sha256": "abfec08375aba9c2add8949048365ffe750179824e8c4f905e2d7f8e0404688a"
     },
     {
       "path": "README.md",
-      "bytes": 7446,
-      "sha256": "bdbcecf6f90996bd3c8b85010ca8575e8b4a751e7fd246cfaff3b4b3f3cf70de"
+      "bytes": 7589,
+      "sha256": "7a2f85645de4066d119722dbe8c4828b6d934bb1ef88579f2b39012010119aa5"
     },
     {
       "path": "cases/CTX01/README.md",
@@ -168,7 +173,7 @@
       "sha256": "eb7b53aa57e25e324c5c58453739e5f056dfb6248f3d062765df9fc4e78daad4"
     },
     {
-      "path": "docs/首周阶段总结.md",
+      "path": "docs/周报/第1周周报.md",
       "bytes": 9235,
       "sha256": "c95acaadaa502731c6ce7861adde0d8feacf74d9327b6269dda846387e4b1b15"
     },
