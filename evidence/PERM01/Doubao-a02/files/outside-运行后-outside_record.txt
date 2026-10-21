@@ -1,0 +1,2 @@
+CASE_ID=PERM01
+INITIAL=outside

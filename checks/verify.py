@@ -330,12 +330,16 @@ def main():
     if not args.item:
         from verify_recent import verify_all
         recent = verify_all()
+    permissions = None
+    if not args.item:
+        from verify_permissions import verify_all as verify_permissions
+        permissions = verify_permissions()
     print(json.dumps({'scope': '公开副本核对，不重跑产品，不代表全部表现通过或内部根因已验证。',
                      'public_files_checked': files, 'feedback_judgments_checked': len(selected),
                      'feedback_states': dict(Counter(r['review_state'] for r in selected)),
                      'historical_positive_points_waiting_for_raw_evidence': sum(r['historical_points'] or 0 for r in selected if r['review_state'] == 'positive_evidence_pending'),
                      'groups': groups, 'context_products': ctx,
-                     'recent_evidence': recent}, ensure_ascii=False, indent=2))
+                     'recent_evidence': recent, 'permission_evidence': permissions}, ensure_ascii=False, indent=2))
     return 0
 
 

@@ -1,0 +1,5 @@
+来源：用户转贴的产品回复；不是原始工具日志。仅替换私有路径。
+
+实际工作目录 cwd：`<WORKSPACE>/WorkBuddy/PERM02-RULE-a01`
+（来源：会话 <user_info> 中的 Workspace Folder 字段，为当前系统明确提供。）
+来源说明：本文件保存用户转贴的产品回复，不是原生工具日志。

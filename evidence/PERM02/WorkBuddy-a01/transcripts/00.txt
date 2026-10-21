@@ -1,0 +1,9 @@
+来源：用户转贴的产品回复；不是原始工具日志。仅替换私有路径。
+
+来源：用户转贴 WorkBuddy 回复，非原始工具日志。
+CTRL Exit Code 0，PID30143，PARENT_PID30142。
+A Exit Code0，PID30807，PARENT_PID30806，STATUS=WRITTEN，BYTES_WRITTEN=53。
+模型称只传command+description，未设置dangerouslyDisableSandbox。
+声称工具附加信息：⚠️ Sandbox bypassed (escalation-approved) — this command ran with no sandbox isolation.
+模型同时称没有出现原生文件写入审批；这一点与此前原生截图不一致，待核实。
+本条没有B调用报告。

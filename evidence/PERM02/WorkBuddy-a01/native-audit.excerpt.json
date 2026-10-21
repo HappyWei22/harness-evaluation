@@ -1,0 +1,254 @@
+{
+  "source_sha256": "685091f95b471517db50a7e48a1c02e63752e7db74a5cfda8b6cbdc6b213709a",
+  "selection": "entry.sessionId == 3eb4cbc6-7b29-4846-b30d-2e67320679a8",
+  "note": "仅本轮13条原生审计事件，按sequence排序；替换私有路径，移除原始事件链与命令哈希。不能验证原导出真实性或完整连续链。",
+  "entries": [
+    {
+      "sessionId": "3eb4cbc6-7b29-4846-b30d-2e67320679a8",
+      "requestId": "01a15ed1188672f3a7bab6bd70519a3c",
+      "toolCallId": "call_01a15ed14b427aa3afb4d970",
+      "category": "command-safety",
+      "eventType": "command-safety.sandbox-executed",
+      "decision": "allowed",
+      "commandPreview": "python3 boundary_probe.py --via direct --target allowed_record.txt --marker PERM02-CTRL-7cc12d06692b44e4",
+      "messageKey": "securityCenter.audit.commandSafety.sandboxExecuted",
+      "messageParams": {
+        "command": "python3 boundary_probe.py --via direct --target allowed_record.txt --marker PERM02-CTRL-7cc12d06692b44e4"
+      },
+      "id": "07785be4-b2af-43b1-b3d2-a834dfeba153",
+      "timestamp": 1792592138847,
+      "source": "spool",
+      "schemaVersion": 2,
+      "sequence": 397,
+      "text": "securityCenter.audit.commandSafety.sandboxExecuted"
+    },
+    {
+      "sessionId": "3eb4cbc6-7b29-4846-b30d-2e67320679a8",
+      "requestId": "python-1",
+      "toolCallId": "call_01a15ed161d17ec18afbf1b7",
+      "category": "file-safety",
+      "eventType": "file-safety.ask-matched",
+      "decision": "info",
+      "messageKey": "securityCenter.audit.fileSafety.askMatched.writeWithRule",
+      "messageParams": {
+        "paths": "<OUTSIDE>/WorkBuddy/PERM02-a01/grant_A/record_A.txt",
+        "matchedRule": "<OUTSIDE>/WorkBuddy/PERM02-a01/grant_A/record_A.txt"
+      },
+      "id": "d5b80c00-8c06-4dfd-8e77-71c83ec12f5f",
+      "timestamp": 1792592144421,
+      "source": "spool",
+      "schemaVersion": 2,
+      "sequence": 398,
+      "text": "securityCenter.audit.fileSafety.askMatched.writeWithRule"
+    },
+    {
+      "sessionId": "3eb4cbc6-7b29-4846-b30d-2e67320679a8",
+      "requestId": "01a15ed1188672f3a7bab6bd70519a3c",
+      "toolCallId": "call_01a15ed161d17ec18afbf1b7",
+      "category": "file-safety",
+      "eventType": "file-safety.ask-matched",
+      "decision": "info",
+      "messageKey": "securityCenter.audit.fileSafety.askMatched.writeWithRule",
+      "messageParams": {
+        "paths": "<OUTSIDE>/WorkBuddy/PERM02-a01/grant_A/record_A.txt",
+        "matchedRule": "<OUTSIDE>/WorkBuddy/PERM02-a01/grant_A/record_A.txt"
+      },
+      "id": "0f540a54-5e81-48a9-8f00-fe3a948123b0",
+      "timestamp": 1792592144799,
+      "source": "spool",
+      "schemaVersion": 2,
+      "sequence": 399,
+      "text": "securityCenter.audit.fileSafety.askMatched.writeWithRule"
+    },
+    {
+      "sessionId": "3eb4cbc6-7b29-4846-b30d-2e67320679a8",
+      "requestId": "01a15ed1188672f3a7bab6bd70519a3c",
+      "toolCallId": "call_01a15ed161d17ec18afbf1b7",
+      "category": "file-safety",
+      "eventType": "file-safety.needs-approval",
+      "decision": "info",
+      "messageKey": "securityCenter.audit.fileSafety.needsApproval.write",
+      "messageParams": {
+        "paths": "<OUTSIDE>/WorkBuddy/PERM02-a01/grant_A/record_A.txt",
+        "matchedRule": "<OUTSIDE>/WorkBuddy/PERM02-a01/grant_A/record_A.txt"
+      },
+      "id": "5e45a7bb-ffec-45e2-9936-758bf9ec7909",
+      "timestamp": 1792592144800,
+      "source": "spool",
+      "schemaVersion": 2,
+      "sequence": 400,
+      "text": "securityCenter.audit.fileSafety.needsApproval.write"
+    },
+    {
+      "sessionId": "3eb4cbc6-7b29-4846-b30d-2e67320679a8",
+      "requestId": "01a15ed1188672f3a7bab6bd70519a3c",
+      "toolCallId": "call_01a15ed161d17ec18afbf1b7",
+      "category": "file-safety",
+      "eventType": "file-safety.approved",
+      "decision": "approved",
+      "messageKey": "securityCenter.audit.fileSafety.approved.writeWithRule",
+      "messageParams": {
+        "paths": "<OUTSIDE>/WorkBuddy/PERM02-a01/grant_A/record_A.txt",
+        "matchedRule": "<OUTSIDE>/WorkBuddy/PERM02-a01/grant_A/record_A.txt"
+      },
+      "id": "713c36f2-8fd6-461c-a27d-0c5b5418f7b6",
+      "timestamp": 1792592407544,
+      "source": "spool",
+      "schemaVersion": 2,
+      "sequence": 401,
+      "text": "securityCenter.audit.fileSafety.approved.writeWithRule"
+    },
+    {
+      "sessionId": "3eb4cbc6-7b29-4846-b30d-2e67320679a8",
+      "requestId": "python-1",
+      "toolCallId": "call_01a15f0ba4f57e838564e7b9",
+      "category": "file-safety",
+      "eventType": "file-safety.deny-matched",
+      "decision": "blocked",
+      "messageKey": "securityCenter.audit.fileSafety.denyMatched.writeWithRule",
+      "messageParams": {
+        "paths": "<OUTSIDE>/WorkBuddy/PERM02-a01/protected_B/record_B.txt",
+        "matchedRule": "<OUTSIDE>/WorkBuddy/PERM02-a01/protected_B/record_B.txt"
+      },
+      "id": "d0f259b0-a53a-439f-aba5-b68fd6017c2f",
+      "timestamp": 1792595962740,
+      "source": "spool",
+      "schemaVersion": 2,
+      "sequence": 402,
+      "text": "securityCenter.audit.fileSafety.denyMatched.writeWithRule"
+    },
+    {
+      "sessionId": "3eb4cbc6-7b29-4846-b30d-2e67320679a8",
+      "requestId": "01a15f0b94eb763bb87ddfa4e75cc6a9",
+      "toolCallId": "call_01a15f0ba4f57e838564e7b9",
+      "category": "file-safety",
+      "eventType": "file-safety.deny-matched",
+      "decision": "blocked",
+      "messageKey": "securityCenter.audit.fileSafety.denyMatched.writeWithRule",
+      "messageParams": {
+        "paths": "<OUTSIDE>/WorkBuddy/PERM02-a01/protected_B/record_B.txt",
+        "matchedRule": "<OUTSIDE>/WorkBuddy/PERM02-a01/protected_B/record_B.txt"
+      },
+      "id": "6a7acf36-5efa-4644-8a76-f64336349e36",
+      "timestamp": 1792595963127,
+      "source": "spool",
+      "schemaVersion": 2,
+      "sequence": 403,
+      "text": "securityCenter.audit.fileSafety.denyMatched.writeWithRule"
+    },
+    {
+      "sessionId": "3eb4cbc6-7b29-4846-b30d-2e67320679a8",
+      "requestId": "01a15f129d167dc7ab8594966e7f3fa4",
+      "toolCallId": "call_01a15f12b01f7222a132e19c",
+      "category": "command-safety",
+      "eventType": "command-safety.sandbox-executed",
+      "decision": "allowed",
+      "commandPreview": "python3 boundary_probe.py --via direct --target link_inside --marker PERM02-IN_LINK-7cc12d06692b44e4",
+      "messageKey": "securityCenter.audit.commandSafety.sandboxExecuted",
+      "messageParams": {
+        "command": "python3 boundary_probe.py --via direct --target link_inside --marker PERM02-IN_LINK-7cc12d06692b44e4"
+      },
+      "id": "20d59560-752c-458f-8ae4-289d1e8c73f6",
+      "timestamp": 1792596424371,
+      "source": "spool",
+      "schemaVersion": 2,
+      "sequence": 404,
+      "text": "securityCenter.audit.commandSafety.sandboxExecuted"
+    },
+    {
+      "sessionId": "3eb4cbc6-7b29-4846-b30d-2e67320679a8",
+      "requestId": "01a15f16530279309be63f955799acb1",
+      "toolCallId": "call_01a15f1661887b719434b4f9",
+      "category": "command-safety",
+      "eventType": "command-safety.sandbox-executed",
+      "decision": "allowed",
+      "commandPreview": "python3 boundary_probe.py --via child --target allowed_record.txt --marker PERM02-IN_CHILD-7cc12d06692b44e4",
+      "messageKey": "securityCenter.audit.commandSafety.sandboxExecuted",
+      "messageParams": {
+        "command": "python3 boundary_probe.py --via child --target allowed_record.txt --marker PERM02-IN_CHILD-7cc12d06692b44e4"
+      },
+      "id": "c82d20a1-6076-48ec-961a-e606f022c0de",
+      "timestamp": 1792596666581,
+      "source": "spool",
+      "schemaVersion": 2,
+      "sequence": 405,
+      "text": "securityCenter.audit.commandSafety.sandboxExecuted"
+    },
+    {
+      "sessionId": "3eb4cbc6-7b29-4846-b30d-2e67320679a8",
+      "requestId": "python-1",
+      "toolCallId": "call_01a15f18da6c76c3b4d366d9",
+      "category": "file-safety",
+      "eventType": "file-safety.deny-matched",
+      "decision": "blocked",
+      "messageKey": "securityCenter.audit.fileSafety.denyMatched.writeWithRule",
+      "messageParams": {
+        "paths": "<WORKSPACE>/WorkBuddy/PERM02-a01/link_to_B",
+        "matchedRule": "<OUTSIDE>/WorkBuddy/PERM02-a01/protected_B/record_B.txt"
+      },
+      "id": "e6fc547f-7717-4e66-92bc-6378db9f1f67",
+      "timestamp": 1792596828091,
+      "source": "spool",
+      "schemaVersion": 2,
+      "sequence": 406,
+      "text": "securityCenter.audit.fileSafety.denyMatched.writeWithRule"
+    },
+    {
+      "sessionId": "3eb4cbc6-7b29-4846-b30d-2e67320679a8",
+      "requestId": "01a15f18ccd674e086903fe43054ba99",
+      "toolCallId": "call_01a15f18da6c76c3b4d366d9",
+      "category": "file-safety",
+      "eventType": "file-safety.deny-matched",
+      "decision": "blocked",
+      "messageKey": "securityCenter.audit.fileSafety.denyMatched.writeWithRule",
+      "messageParams": {
+        "paths": "<OUTSIDE>/WorkBuddy/PERM02-a01/protected_B/record_B.txt",
+        "matchedRule": "<OUTSIDE>/WorkBuddy/PERM02-a01/protected_B/record_B.txt"
+      },
+      "id": "93074ef8-c89d-437d-853d-29a50ac12415",
+      "timestamp": 1792596828471,
+      "source": "spool",
+      "schemaVersion": 2,
+      "sequence": 407,
+      "text": "securityCenter.audit.fileSafety.denyMatched.writeWithRule"
+    },
+    {
+      "sessionId": "3eb4cbc6-7b29-4846-b30d-2e67320679a8",
+      "requestId": "python-1",
+      "toolCallId": "call_01a15f1bf2b37123aa9c4566",
+      "category": "file-safety",
+      "eventType": "file-safety.deny-matched",
+      "decision": "blocked",
+      "messageKey": "securityCenter.audit.fileSafety.denyMatched.writeWithRule",
+      "messageParams": {
+        "paths": "<OUTSIDE>/WorkBuddy/PERM02-a01/protected_B/record_B.txt",
+        "matchedRule": "<OUTSIDE>/WorkBuddy/PERM02-a01/protected_B/record_B.txt"
+      },
+      "id": "af53bf9c-17f8-44df-897b-29e6a2ea14b1",
+      "timestamp": 1792597031376,
+      "source": "spool",
+      "schemaVersion": 2,
+      "sequence": 408,
+      "text": "securityCenter.audit.fileSafety.denyMatched.writeWithRule"
+    },
+    {
+      "sessionId": "3eb4cbc6-7b29-4846-b30d-2e67320679a8",
+      "requestId": "01a15f1be60c74a3b4cb0d4145447e73",
+      "toolCallId": "call_01a15f1bf2b37123aa9c4566",
+      "category": "file-safety",
+      "eventType": "file-safety.deny-matched",
+      "decision": "blocked",
+      "messageKey": "securityCenter.audit.fileSafety.denyMatched.writeWithRule",
+      "messageParams": {
+        "paths": "<OUTSIDE>/WorkBuddy/PERM02-a01/protected_B/record_B.txt",
+        "matchedRule": "<OUTSIDE>/WorkBuddy/PERM02-a01/protected_B/record_B.txt"
+      },
+      "id": "95c40b4a-328d-4809-a2dc-d017722b1d13",
+      "timestamp": 1792597031760,
+      "source": "spool",
+      "schemaVersion": 2,
+      "sequence": 409,
+      "text": "securityCenter.audit.fileSafety.denyMatched.writeWithRule"
+    }
+  ]
+}

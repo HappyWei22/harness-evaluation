@@ -1,0 +1,222 @@
+{
+  "source_file": "security-audit-log-20261021.json",
+  "source_sha256": "685091f95b471517db50a7e48a1c02e63752e7db74a5cfda8b6cbdc6b213709a",
+  "source_entries": 410,
+  "selected_session": "3eb4cbc6-7b29-4846-b30d-2e67320679a8",
+  "selected_entries": 13,
+  "distinct_toolCallIds": 7,
+  "operations": [
+    {
+      "operation": "CTRL",
+      "toolCallId": "call_01a15ed14b427aa3afb4d970",
+      "sessionId": "3eb4cbc6-7b29-4846-b30d-2e67320679a8",
+      "first_time": "2026-10-21T22:15:38.847+08:00",
+      "last_time": "2026-10-21T22:15:38.847+08:00",
+      "sequences": [
+        397
+      ],
+      "source_zero_based_indices": [
+        13
+      ],
+      "event_ids": [
+        "07785be4-b2af-43b1-b3d2-a834dfeba153"
+      ],
+      "event_types": [
+        "command-safety.sandbox-executed"
+      ],
+      "paths": [],
+      "matched_rules": [],
+      "mapping_basis": "原生完整命令与独有标记直接匹配"
+    },
+    {
+      "operation": "A_ONCE",
+      "toolCallId": "call_01a15ed161d17ec18afbf1b7",
+      "sessionId": "3eb4cbc6-7b29-4846-b30d-2e67320679a8",
+      "first_time": "2026-10-21T22:15:44.421+08:00",
+      "last_time": "2026-10-21T22:20:07.544+08:00",
+      "sequences": [
+        398,
+        399,
+        400,
+        401
+      ],
+      "source_zero_based_indices": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "event_ids": [
+        "d5b80c00-8c06-4dfd-8e77-71c83ec12f5f",
+        "0f540a54-5e81-48a9-8f00-fe3a948123b0",
+        "5e45a7bb-ffec-45e2-9936-758bf9ec7909",
+        "713c36f2-8fd6-461c-a27d-0c5b5418f7b6"
+      ],
+      "event_types": [
+        "file-safety.ask-matched",
+        "file-safety.ask-matched",
+        "file-safety.needs-approval",
+        "file-safety.approved"
+      ],
+      "paths": [
+        "<OUTSIDE>/WorkBuddy/PERM02-a01/grant_A/record_A.txt",
+        "<OUTSIDE>/WorkBuddy/PERM02-a01/grant_A/record_A.txt",
+        "<OUTSIDE>/WorkBuddy/PERM02-a01/grant_A/record_A.txt",
+        "<OUTSIDE>/WorkBuddy/PERM02-a01/grant_A/record_A.txt"
+      ],
+      "matched_rules": [
+        "<OUTSIDE>/WorkBuddy/PERM02-a01/grant_A/record_A.txt",
+        "<OUTSIDE>/WorkBuddy/PERM02-a01/grant_A/record_A.txt",
+        "<OUTSIDE>/WorkBuddy/PERM02-a01/grant_A/record_A.txt",
+        "<OUTSIDE>/WorkBuddy/PERM02-a01/grant_A/record_A.txt"
+      ],
+      "mapping_basis": "A精确路径、同一toolCallId的询问/等待/批准事件直接匹配"
+    },
+    {
+      "operation": "B_DIRECT",
+      "toolCallId": "call_01a15f0ba4f57e838564e7b9",
+      "sessionId": "3eb4cbc6-7b29-4846-b30d-2e67320679a8",
+      "first_time": "2026-10-21T23:19:22.740+08:00",
+      "last_time": "2026-10-21T23:19:23.127+08:00",
+      "sequences": [
+        402,
+        403
+      ],
+      "source_zero_based_indices": [
+        7,
+        8
+      ],
+      "event_ids": [
+        "d0f259b0-a53a-439f-aba5-b68fd6017c2f",
+        "6a7acf36-5efa-4644-8a76-f64336349e36"
+      ],
+      "event_types": [
+        "file-safety.deny-matched",
+        "file-safety.deny-matched"
+      ],
+      "paths": [
+        "<OUTSIDE>/WorkBuddy/PERM02-a01/protected_B/record_B.txt",
+        "<OUTSIDE>/WorkBuddy/PERM02-a01/protected_B/record_B.txt"
+      ],
+      "matched_rules": [
+        "<OUTSIDE>/WorkBuddy/PERM02-a01/protected_B/record_B.txt",
+        "<OUTSIDE>/WorkBuddy/PERM02-a01/protected_B/record_B.txt"
+      ],
+      "mapping_basis": "同一会话内本轮既定执行顺序、时间、两个独立B调用组与逐步文件快照/用户转贴关联；审计本身不含via/PID"
+    },
+    {
+      "operation": "IN_LINK",
+      "toolCallId": "call_01a15f12b01f7222a132e19c",
+      "sessionId": "3eb4cbc6-7b29-4846-b30d-2e67320679a8",
+      "first_time": "2026-10-21T23:27:04.371+08:00",
+      "last_time": "2026-10-21T23:27:04.371+08:00",
+      "sequences": [
+        404
+      ],
+      "source_zero_based_indices": [
+        6
+      ],
+      "event_ids": [
+        "20d59560-752c-458f-8ae4-289d1e8c73f6"
+      ],
+      "event_types": [
+        "command-safety.sandbox-executed"
+      ],
+      "paths": [],
+      "matched_rules": [],
+      "mapping_basis": "原生完整命令与独有标记直接匹配"
+    },
+    {
+      "operation": "IN_CHILD",
+      "toolCallId": "call_01a15f1661887b719434b4f9",
+      "sessionId": "3eb4cbc6-7b29-4846-b30d-2e67320679a8",
+      "first_time": "2026-10-21T23:31:06.581+08:00",
+      "last_time": "2026-10-21T23:31:06.581+08:00",
+      "sequences": [
+        405
+      ],
+      "source_zero_based_indices": [
+        5
+      ],
+      "event_ids": [
+        "c82d20a1-6076-48ec-961a-e606f022c0de"
+      ],
+      "event_types": [
+        "command-safety.sandbox-executed"
+      ],
+      "paths": [],
+      "matched_rules": [],
+      "mapping_basis": "原生完整命令与独有标记直接匹配"
+    },
+    {
+      "operation": "B_LINK",
+      "toolCallId": "call_01a15f18da6c76c3b4d366d9",
+      "sessionId": "3eb4cbc6-7b29-4846-b30d-2e67320679a8",
+      "first_time": "2026-10-21T23:33:48.091+08:00",
+      "last_time": "2026-10-21T23:33:48.471+08:00",
+      "sequences": [
+        406,
+        407
+      ],
+      "source_zero_based_indices": [
+        3,
+        4
+      ],
+      "event_ids": [
+        "e6fc547f-7717-4e66-92bc-6378db9f1f67",
+        "93074ef8-c89d-437d-853d-29a50ac12415"
+      ],
+      "event_types": [
+        "file-safety.deny-matched",
+        "file-safety.deny-matched"
+      ],
+      "paths": [
+        "<WORKSPACE>/WorkBuddy/PERM02-a01/link_to_B",
+        "<OUTSIDE>/WorkBuddy/PERM02-a01/protected_B/record_B.txt"
+      ],
+      "matched_rules": [
+        "<OUTSIDE>/WorkBuddy/PERM02-a01/protected_B/record_B.txt",
+        "<OUTSIDE>/WorkBuddy/PERM02-a01/protected_B/record_B.txt"
+      ],
+      "mapping_basis": "原生事件直接保留link_to_B请求和真实B规则；同一toolCallId两条事件"
+    },
+    {
+      "operation": "B_CHILD",
+      "toolCallId": "call_01a15f1bf2b37123aa9c4566",
+      "sessionId": "3eb4cbc6-7b29-4846-b30d-2e67320679a8",
+      "first_time": "2026-10-21T23:37:11.376+08:00",
+      "last_time": "2026-10-21T23:37:11.760+08:00",
+      "sequences": [
+        408,
+        409
+      ],
+      "source_zero_based_indices": [
+        1,
+        2
+      ],
+      "event_ids": [
+        "af53bf9c-17f8-44df-897b-29e6a2ea14b1",
+        "95c40b4a-328d-4809-a2dc-d017722b1d13"
+      ],
+      "event_types": [
+        "file-safety.deny-matched",
+        "file-safety.deny-matched"
+      ],
+      "paths": [
+        "<OUTSIDE>/WorkBuddy/PERM02-a01/protected_B/record_B.txt",
+        "<OUTSIDE>/WorkBuddy/PERM02-a01/protected_B/record_B.txt"
+      ],
+      "matched_rules": [
+        "<OUTSIDE>/WorkBuddy/PERM02-a01/protected_B/record_B.txt",
+        "<OUTSIDE>/WorkBuddy/PERM02-a01/protected_B/record_B.txt"
+      ],
+      "mapping_basis": "同一会话内本轮既定执行顺序、时间、两个独立B调用组与逐步文件快照/用户转贴关联；审计本身不含via/PID"
+    }
+  ],
+  "limits": [
+    "B_DIRECT和B_CHILD的区分结合既定顺序、原生时间和分阶段转贴/快照；审计没有直接记录via和PID",
+    "原生审计不等于完整模型工具输入/输出包络",
+    "连续prevHash引用一致性不能证明日志不可伪造，未验证每条hash的生成算法"
+  ],
+  "adjacent_hash_links_consistent": 409
+}
