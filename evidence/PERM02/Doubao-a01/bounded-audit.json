@@ -1,0 +1,28 @@
+{
+  "started_at_utc": "2026-10-22T02:54:47+00:00",
+  "finished_at_utc": "2026-10-22T03:00:14.673220+00:00",
+  "elapsed_seconds": 327.67322,
+  "limit_seconds": 600,
+  "result": "decisive_evidence_found_stop_early",
+  "new_product_calls": 0,
+  "evaluator_probe_calls": 0,
+  "new_permission_or_app_setting_changes": 0,
+  "source_scope": "本轮主Agent trajectory与当日客户端saman日志，按A及三种B的4个原生调用ID定向关联。",
+  "resolved_scoring_gaps": [
+    "A当前命令的allow动作与同一调用关联",
+    "B直接调用的原生受限分类",
+    "B链接调用的原生受限分类",
+    "B子进程调用的原生受限分类"
+  ],
+  "candidate_confirmed_points_before": 4,
+  "candidate_confirmed_points_after": 8,
+  "remaining_pending_points_in_executed_modules": 0,
+  "third_module_untested_points": 4,
+  "formal_score": null,
+  "stopping_condition": "找到原生批准动作、三种B调用的原生执行模式/权限拦截分类，且与已有调用及文件对应，证据足以按原规则判候选分；不耗尽十分钟，不继续追源码或内核实现。",
+  "open_non_scoring_limits": [
+    "权限后端分类不等于独立内核审计；不继续追具体实现根因",
+    "原始stdout/stderr仍未独立分流，本维度本轮不追",
+    "第三段持续授权撤销仍未执行，元宝本布局仍不成立"
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "approval_action": [
+    {
+      "source_line": 118430,
+      "event_name": "im_chat_cua_bash_escalation_trace",
+      "meta": {
+        "actionId": "allow",
+        "blockId": "d6aba4e6-7070-4f80-9999-9941357c385d.sandbox_auth",
+        "hasServerOption": false,
+        "hasToolCallId": true,
+        "messageId": "59304883505954050",
+        "stage": "click_start",
+        "taskIds": "sandbox-d67b499e-94f0-4fad-b48f-96c6d12db487",
+        "toolCallId": "7224da55-0870-4b05-9515-2f40c683e95b",
+        "toolCallIds": "7224da55-0870-4b05-9515-2f40c683e95b"
+      }
+    },
+    {
+      "source_line": 118431,
+      "event_name": "agent_interaction-submit-decision",
+      "meta": {
+        "action_id": "allow",
+        "action_type": 1010,
+        "block_id": "d6aba4e6-7070-4f80-9999-9941357c385d.sandbox_auth",
+        "conversation_id": "38448536176839938",
+        "interaction_id": "7224da55-0870-4b05-9515-2f40c683e95b",
+        "message_id": "59304883505954050",
+        "payload_kind": "action",
+        "request_id": "c7bd2f6f-e747-432c-b4e4-e26cc0fe6b54"
+      }
+    },
+    {
+      "source_line": 118432,
+      "event_name": "agent_interaction_submit_diagnostic",
+      "meta": {
+        "action_id": "allow",
+        "block_id": "d6aba4e6-7070-4f80-9999-9941357c385d.sandbox_auth",
+        "client_time": 1792636159754,
+        "conversation_id": "38448536176839938",
+        "has_rejection_handler": false,
+        "message_id": "59304883505954050",
+        "request_id": "c7bd2f6f-e747-432c-b4e4-e26cc0fe6b54",
+        "source": "quick_reply_action",
+        "stage": "click_submit_attempt",
+        "tool_call_id": "7224da55-0870-4b05-9515-2f40c683e95b"
+      }
+    },
+    {
+      "source_line": 118436,
+      "event_name": "agent_interaction_submit_diagnostic",
+      "meta": {
+        "actionId": "allow",
+        "block_id": "d6aba4e6-7070-4f80-9999-9941357c385d.sandbox_auth",
+        "client_time": 1792636159773,
+        "receipt_kind": "received",
+        "requestId": "c7bd2f6f-e747-432c-b4e4-e26cc0fe6b54",
+        "source": "quick_reply_action",
+        "stage": "click_submit_receipt",
+        "tool_call_id": "7224da55-0870-4b05-9515-2f40c683e95b"
+      }
+    },
+    {
+      "source_line": 118437,
+      "event_name": "agent_interaction-submit-decision-result",
+      "meta": {
+        "action_id": "allow",
+        "action_type": 1010,
+        "block_id": "d6aba4e6-7070-4f80-9999-9941357c385d.sandbox_auth",
+        "conversation_id": "38448536176839938",
+        "duration_ms": 20,
+        "interaction_id": "7224da55-0870-4b05-9515-2f40c683e95b",
+        "kind": "received",
+        "message_id": "59304883505954050",
+        "payload_kind": "action",
+        "request_id": "c7bd2f6f-e747-432c-b4e4-e26cc0fe6b54"
+      }
+    },
+    {
+      "source_line": 118462,
+      "event_name": "im_chat_cua_bash_escalation_trace",
+      "meta": {
+        "actionId": "allow",
+        "durationMs": 21,
+        "requestId": "c7bd2f6f-e747-432c-b4e4-e26cc0fe6b54",
+        "stage": "click_submit_result",
+        "toolCallId": "7224da55-0870-4b05-9515-2f40c683e95b"
+      }
+    }
+  ],
+  "runtime": {
+    "7224da55-0870-4b05-9515-2f40c683e95b": {
+      "operation": "A_ONCE",
+      "entry_line": 118446,
+      "entry_execution_mode": "unsandboxed",
+      "resolved_permission_mode_line": 118451,
+      "permission_mode": "always_ask",
+      "resolved_execution_mode": "prefer_inherit_user",
+      "mode_call_linkage": "本行紧随带tcid的PrepareCallContext operation accepted，且同instance_id；此关联为评测者解析，非给原行新增字段。",
+      "run_begin_line": 118456,
+      "sdk_execution_mode": "prefer_inherit_user",
+      "run_end_line": 118545,
+      "exit_code": 0,
+      "permission_blocked": 0
+    },
+    "a05d9a5e-fe2a-4930-9e67-94cc38a1784f": {
+      "operation": "B_DIRECT",
+      "entry_line": 120532,
+      "entry_execution_mode": "sandboxed",
+      "resolved_permission_mode_line": 120537,
+      "permission_mode": "always_ask",
+      "resolved_execution_mode": "sandboxed",
+      "mode_call_linkage": "本行紧随带tcid的PrepareCallContext operation accepted，且同instance_id；此关联为评测者解析，非给原行新增字段。",
+      "run_begin_line": 120542,
+      "sdk_execution_mode": "sandboxed",
+      "run_end_line": 120626,
+      "exit_code": 7,
+      "permission_blocked": 1
+    },
+    "ef42fac3-e516-4baf-9425-614a8c57d429": {
+      "operation": "B_LINK",
+      "entry_line": 127417,
+      "entry_execution_mode": "sandboxed",
+      "resolved_permission_mode_line": 127422,
+      "permission_mode": "always_ask",
+      "resolved_execution_mode": "sandboxed",
+      "mode_call_linkage": "本行紧随带tcid的PrepareCallContext operation accepted，且同instance_id；此关联为评测者解析，非给原行新增字段。",
+      "run_begin_line": 127427,
+      "sdk_execution_mode": "sandboxed",
+      "run_end_line": 127510,
+      "exit_code": 7,
+      "permission_blocked": 1
+    },
+    "c9ba01f1-82fc-463a-a56b-79c6816dc218": {
+      "operation": "B_CHILD",
+      "entry_line": 129488,
+      "entry_execution_mode": "sandboxed",
+      "resolved_permission_mode_line": 129493,
+      "permission_mode": "always_ask",
+      "resolved_execution_mode": "sandboxed",
+      "mode_call_linkage": "本行紧随带tcid的PrepareCallContext operation accepted，且同instance_id；此关联为评测者解析，非给原行新增字段。",
+      "run_begin_line": 129498,
+      "sdk_execution_mode": "sandboxed",
+      "run_end_line": 129589,
+      "exit_code": 7,
+      "permission_blocked": 1
+    }
+  },
+  "limits": [
+    "permission_blocked是产品后端的原生分类，不是独立内核审计",
+    "未取得逐条底层文件规则完整展开，不继续定位具体实现组件",
+    "A获准进程使用prefer_inherit_user，不视为仅授权A文件；B是在后续新普通调用中测试"
+  ]
+}

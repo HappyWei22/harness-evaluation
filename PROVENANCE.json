@@ -2297,6 +2297,433 @@
       "original_sha256": "673742b71ce3a576ba0598af66f6a9aceb220d287714c506bd65501d93500193",
       "transformation": "保留原设计；添加历史状态说明、将本地链接改为文字，保留外部参考。",
       "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/blobs/8d33b90a37adb4485fa03aa47d69e313a493fea6cc82b81ad528183ab8903edb.txt",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/阶段00-本地输入准备/inside-bytes.txt",
+      "original_sha256": "8d33b90a37adb4485fa03aa47d69e313a493fea6cc82b81ad528183ab8903edb",
+      "transformation": "模拟文件真实字节原样复制；未执行脚本。",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/PERM02/blobs/ae0059813dd115ebcf8b08a8c93b99e030c75eb9277f6c76e80a77c9a8b3af36.txt",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/阶段00-本地输入准备/A-bytes.txt",
+      "original_sha256": "ae0059813dd115ebcf8b08a8c93b99e030c75eb9277f6c76e80a77c9a8b3af36",
+      "transformation": "模拟文件真实字节原样复制；未执行脚本。",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/PERM02/blobs/8d2a0243c515399cc4ece73134cc097a8b49b8e4e9c6234d80592f02112e6ae1.txt",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/阶段00-本地输入准备/B-bytes.txt",
+      "original_sha256": "8d2a0243c515399cc4ece73134cc097a8b49b8e4e9c6234d80592f02112e6ae1",
+      "transformation": "模拟文件真实字节原样复制；未执行脚本。",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/PERM02/Doubao-a01/snapshots/00.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/阶段00-本地输入准备/file_facts.json",
+      "original_sha256": "305979124fe1c726ec24529d7c265ddfa79d142c5f11aa8235c799df95b991fd",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/Doubao-a01/snapshots/01.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/阶段01-预检报告核对/文件快照/file_facts.json",
+      "original_sha256": "6796441ee244a54f7414af5b5c93251190dbc00cb0c5aab2eca4bbbdb675cc2c",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/blobs/f996fec6e78f180ab97c2ed80b5534dac687f373cbc463e2b2a6b9c68ca09058.txt",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/阶段02-目录内对照后/文件快照/inside-bytes.txt",
+      "original_sha256": "f996fec6e78f180ab97c2ed80b5534dac687f373cbc463e2b2a6b9c68ca09058",
+      "transformation": "模拟文件真实字节原样复制；未执行脚本。",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/PERM02/Doubao-a01/snapshots/02.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/阶段02-目录内对照后/文件快照/file_facts.json",
+      "original_sha256": "bf061d9464bf0cb82cfec7f617a4a959bec8d1447967b076a01066051bed310a",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/Doubao-a01/snapshots/03.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/阶段03-A普通权限返回后/文件快照/file_facts.json",
+      "original_sha256": "8acab79a175a22b167be994d2d130b10c91f9c487a9316db5280c774301ff0c4",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/Doubao-a01/snapshots/04.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/阶段04-A原生审批待批准/文件快照/file_facts.json",
+      "original_sha256": "3772c54b7fe3de872d685e57cef919c6a15d8221c7fe329d088ad54a6acdd55c",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/blobs/0576b685f7216f260da9f87a68def636663730985acd289cde854fdcae84a05c.txt",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/阶段05-A审批调用返回后/文件快照/A-bytes.txt",
+      "original_sha256": "0576b685f7216f260da9f87a68def636663730985acd289cde854fdcae84a05c",
+      "transformation": "模拟文件真实字节原样复制；未执行脚本。",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/PERM02/Doubao-a01/snapshots/05.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/阶段05-A审批调用返回后/文件快照/file_facts.json",
+      "original_sha256": "b58ecb122d8a1ff49762cf30380fa195ef8e02f5370bfb25df1c87f0d5d80332",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/Doubao-a01/snapshots/06.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/阶段06-B普通访问后/文件快照/file_facts.json",
+      "original_sha256": "163b4392b7eb3c18b78655f9466923d87f8f8f66f03d2b5dc970e1d75a16e00f",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/blobs/7573e5ec6edf7792a4b88b6eb5135de6d1a29fc9d6fc3f5130534510a1abeb78.txt",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/阶段07-目录内链接对照后/文件快照/inside-bytes.txt",
+      "original_sha256": "7573e5ec6edf7792a4b88b6eb5135de6d1a29fc9d6fc3f5130534510a1abeb78",
+      "transformation": "模拟文件真实字节原样复制；未执行脚本。",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/PERM02/Doubao-a01/snapshots/07.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/阶段07-目录内链接对照后/文件快照/file_facts.json",
+      "original_sha256": "98e6a6b1b64825db1e84463d51f6992dbe59dce3123679e2b1f1466ea81cb356",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/blobs/4cb6944c713c04c2a92f28100bcdfc183b3950599b5fddde72ed0febfef5f2f5.txt",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/阶段08-目录内子进程对照后/文件快照/inside-bytes.txt",
+      "original_sha256": "4cb6944c713c04c2a92f28100bcdfc183b3950599b5fddde72ed0febfef5f2f5",
+      "transformation": "模拟文件真实字节原样复制；未执行脚本。",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/PERM02/Doubao-a01/snapshots/08.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/阶段08-目录内子进程对照后/文件快照/file_facts.json",
+      "original_sha256": "d2ca92ca4bfd148e78f7f2cb847fac935642e305faf5a236ddb9c86b128be1fe",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/Doubao-a01/snapshots/09.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/阶段09-B链接访问后/文件快照/file_facts.json",
+      "original_sha256": "b7a66a9f018c3ed6b6b8da15ab5b57b85188a9a1494b1131ddece189a9f222fb",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/Doubao-a01/snapshots/10.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/阶段10-B子进程访问后/文件快照/file_facts.json",
+      "original_sha256": "f3012933fae599e3233f2386447ad8d9fd88925beb43661c4b5c2e4bbb53fa76",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/Doubao-a01/preparation.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/评测者材料/豆包工作-a01-准备清单.json",
+      "original_sha256": "b8d1769267a8fdf3e7feafed64aece76da23fca17dab482b5a8b7bc306023bd2",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/blobs/f53144d1d930af9fee4490e78dee4296d8d3f94c39e5c333f7160073e28593ee.txt",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段00-初始现场/inside-bytes.txt",
+      "original_sha256": "f53144d1d930af9fee4490e78dee4296d8d3f94c39e5c333f7160073e28593ee",
+      "transformation": "模拟文件真实字节原样复制；未执行脚本。",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/PERM02/blobs/411387d2275a518b90da4f12fdb8a1d7f5dd5ffb03b7817a051d06957b2e829e.txt",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段00-初始现场/A-bytes.txt",
+      "original_sha256": "411387d2275a518b90da4f12fdb8a1d7f5dd5ffb03b7817a051d06957b2e829e",
+      "transformation": "模拟文件真实字节原样复制；未执行脚本。",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/PERM02/blobs/ae764ddbf73455c1e11b3beac6c67746741bf74a7c032ddc4f10579e5654d872.txt",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段00-初始现场/B-bytes.txt",
+      "original_sha256": "ae764ddbf73455c1e11b3beac6c67746741bf74a7c032ddc4f10579e5654d872",
+      "transformation": "模拟文件真实字节原样复制；未执行脚本。",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/PERM02/Codex-a01/snapshots/00.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段00-初始现场/file_facts.json",
+      "original_sha256": "28f03d8e683bcd3baa223e30f516221787ec7f61a66f9d6a64b5de90c41d3bf0",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/Codex-a01/snapshots/01.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段01-预检报告核对/文件快照/file_facts.json",
+      "original_sha256": "81a931db931be4d827464423e1bd52dc984fefb31f59cc4b07b9983d1d171f08",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/blobs/72139bb35b9eae2818dcd3a67798ebbaa8574c2bfe519a0a07ff14346077eb32.txt",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段02-目录内直接对照后/文件快照/inside-bytes.txt",
+      "original_sha256": "72139bb35b9eae2818dcd3a67798ebbaa8574c2bfe519a0a07ff14346077eb32",
+      "transformation": "模拟文件真实字节原样复制；未执行脚本。",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/PERM02/Codex-a01/snapshots/02.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段02-目录内直接对照后/文件快照/file_facts.json",
+      "original_sha256": "e9550be979326c07f6dc9758d664e4c5f8f9bd7d97eafddd4acf63c367511f59",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/Codex-a01/snapshots/03.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段03-A普通调用后/文件快照/file_facts.json",
+      "original_sha256": "c03eeaceb95af96731375729c1dcb6a26f0f32276623027b35e7ba93bb2da907",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/blobs/ddc1c373ae57b7e84e4bc3422d85d125ddd21066f263a006ea9c95bf54f41654.txt",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段04-A审批调用返回后/文件快照/A-bytes.txt",
+      "original_sha256": "ddc1c373ae57b7e84e4bc3422d85d125ddd21066f263a006ea9c95bf54f41654",
+      "transformation": "模拟文件真实字节原样复制；未执行脚本。",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/PERM02/Codex-a01/snapshots/04.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段04-A审批调用返回后/文件快照/file_facts.json",
+      "original_sha256": "4c70853757bd8abbdf5b22538c41fd4208b2a09ba04964b74dd185cd21ed3774",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/Codex-a01/snapshots/05.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段05-B普通调用后/文件快照/file_facts.json",
+      "original_sha256": "3a21e7ce1cbd17de7148fcda93dda7824c0293bbcb0cb8a894840aee0e45f627",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/blobs/d8bec1662e9056f030e2ef0c020392cee65adb76644a37cdf19a228a859eba9d.txt",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段06-目录内链接对照后/文件快照/inside-bytes.txt",
+      "original_sha256": "d8bec1662e9056f030e2ef0c020392cee65adb76644a37cdf19a228a859eba9d",
+      "transformation": "模拟文件真实字节原样复制；未执行脚本。",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/PERM02/Codex-a01/snapshots/06.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段06-目录内链接对照后/文件快照/file_facts.json",
+      "original_sha256": "a39fdb64a52921a88dbc8323a6f052711c624ec7ae85b6b9ffbd93100c02b06a",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/blobs/987733f683821e4e8db2a3e567a78d23026b04f77333ee3c6311b2fd0753ecc6.txt",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段07-目录内子进程对照后/文件快照/inside-bytes.txt",
+      "original_sha256": "987733f683821e4e8db2a3e567a78d23026b04f77333ee3c6311b2fd0753ecc6",
+      "transformation": "模拟文件真实字节原样复制；未执行脚本。",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/PERM02/Codex-a01/snapshots/07.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段07-目录内子进程对照后/文件快照/file_facts.json",
+      "original_sha256": "a0c1c381571d13d1a3fd0cb18f9469c1748975805a35fc370fd81af2b96c1cf3",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/Codex-a01/snapshots/08.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段08-B链接调用后/文件快照/file_facts.json",
+      "original_sha256": "1bd6c041c8f01465cd56b669091909d970f4b8d6740d324968bc9141df060387",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/Codex-a01/snapshots/09.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段09-B子进程调用后/文件快照/file_facts.json",
+      "original_sha256": "6b189d4228eb604c2fa75c52da49f28ae021e6936afae1370bc8d8c1c7c9a310",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/Codex-a01/preparation.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/评测者材料/Codex-a01-准备清单.json",
+      "original_sha256": "cb4bad4dea4e385e31233fe040f4c68c1fef7699f881f1d6d92702099363fc15",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/Doubao-a01/native.excerpt.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/阶段11-原生调用与归档复核/原生调用返回摘录.json",
+      "original_sha256": "3c24419eefbbb8247172cc2d5884876042e3a644a3f7d95d746fdd564b728dde",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/Doubao-a01/approval-runtime.excerpt.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/阶段12-十分钟定向补查/原生审批与执行器摘录.json",
+      "original_sha256": "b21869e3211ad0f5f54496f8d790de39aa201bd2ff791e9d775c1d8c4a0fe988",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/Doubao-a01/decision-mapping.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/阶段12-十分钟定向补查/调用与原生决定关联.json",
+      "original_sha256": "bd86b4015a81d7a559f57d35a82b5072bc160fb4bd9fc2777024fb8aa3eadb41",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/PERM02/Doubao-a01/bounded-audit.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/阶段12-十分钟定向补查/补查结论.json",
+      "original_sha256": "5e79a685a521372da51a324bf09ec3cedca4b0561ab4c6934540af7262388810",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/PERM02/Codex-a01/native.excerpt.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段10-原生记录与最终复核/原生调用与配置摘录.json",
+      "original_sha256": "4d0c94e3d5c9e562a3436dd11c08209a3ac1a7a2e516c3b0c67119c16ba93527",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/Codex-a01/call-comparison.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段10-原生记录与最终复核/八条调用核对.json",
+      "original_sha256": "7c02a2019f8c6f3f350515b18b0fb8b2cfa573ec274eccf08020bb20df8f899a",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/PERM02/Codex-a01/review-start.excerpt.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段11-限时审批决定补查/原生审核启动摘录.json",
+      "original_sha256": "daa5c5745349b65fef4b24f68408c1b7f813dc5786eee8119fdadc48307ae738",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/Codex-a01/review-command-mapping.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段11-限时审批决定补查/A命令与审核请求关联.json",
+      "original_sha256": "afd041dc22642bb999e27034158adc4bd9a981ab4c6c880280739da27d486319",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/PERM02/Codex-a01/bounded-audit.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段11-限时审批决定补查/补查结论.json",
+      "original_sha256": "6f74c3649046e2c6b2b2886ff399e8dd1f7c80e7955c0365889eee285a1bebe4",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/PERM02/Yuanbao-a01/preflight-review.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/元宝-a01/阶段01-预检报告核对/预检核对.json",
+      "original_sha256": "af77bf06f5703a26e0127d2dcf26511a4aec418eeb932ef77e67a19f6f3b8064",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "results/PERM02/WorkBuddy-a01.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/WorkBuddy-a01/候选评分.json",
+      "original_sha256": "0c57b12aea12b429f662006faf19c74a02e0e2e1f468ca6e7d906a23399aabbe",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/PERM02/Doubao-a01.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/候选评分.json",
+      "original_sha256": "c0f1a0f41dc84af3d48f0b9637d8141708b19be0e646b2dee079204b7d9a268d",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/PERM02/Codex-a01.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/候选评分.json",
+      "original_sha256": "169f2ee67613d0267c6c549bcfa25d815fa66da3bd787fca6a091f10796d242a",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/PERM02/DSH-a01.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/DSH-a01/简化评测记录.md",
+      "original_sha256": "d31048158782a16a1c9ca1c4b565023e11e43a4b62deb12a827b347eddd0ba9c",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "docs/permission-runs/DSH-a01.md",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/DSH-a01/简化评测记录.md",
+      "original_sha256": "d31048158782a16a1c9ca1c4b565023e11e43a4b62deb12a827b347eddd0ba9c",
+      "transformation": "将本地记录整理为公开副本；替换路径，重定位已公开证据链接，其他本地链接改为来源文字。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "docs/permission-runs/WorkBuddy-a01.md",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/WorkBuddy-a01/简化评测记录.md",
+      "original_sha256": "7ab514bf7f78f0018d960e270b287a27feb086145899786ab72089874e2bf341",
+      "transformation": "将本地记录整理为公开副本；替换路径，重定位已公开证据链接，其他本地链接改为来源文字。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "docs/permission-runs/Doubao-a01.md",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/豆包工作-a01/简化评测记录.md",
+      "original_sha256": "e57bbdbdcfb663e4837964fab13ccfa07e7d66bcd07e87be3a8cf51b6a8f64cd",
+      "transformation": "将本地记录整理为公开副本；替换路径，重定位已公开证据链接，其他本地链接改为来源文字。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "docs/permission-runs/Codex-a01.md",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/简化评测记录.md",
+      "original_sha256": "b523873a866509659e1c3f59e29d4a61dcdcef8090469ea8b7191ac4dfd77f4d",
+      "transformation": "将本地记录整理为公开副本；替换路径，重定位已公开证据链接，其他本地链接改为来源文字。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "docs/permission-runs/WorkBuddy-RULE-a01.md",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/WorkBuddy-RULE-a01/简化评测记录.md",
+      "original_sha256": "8763ffb1e260f05723ba1121171e08b6f1a80fe45ad0f7ce178459962098d399",
+      "transformation": "将本地记录整理为公开副本；替换路径，重定位已公开证据链接，其他本地链接改为来源文字。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "docs/permission-runs/Yuanbao-a01.md",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/元宝-a01/预检收束说明.md",
+      "original_sha256": "59c068d1a1e5808c509969a1606596322fcb91c5d2d8828a6303045a11dc3549",
+      "transformation": "将本地记录整理为公开副本；替换路径，重定位已公开证据链接，其他本地链接改为来源文字。",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "docs/permission-runs/Codex-bounded-audit.md",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/运行记录/Codex-a01/阶段11-限时审批决定补查/补查说明.md",
+      "original_sha256": "d5da6db4d12e7ea58c66b3029eb859afb90e1596e814debc21dcb96660dcf1ba",
+      "transformation": "将本地记录整理为公开副本；替换路径，重定位已公开证据链接，其他本地链接改为来源文字。",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "results/permission-boundary.md",
+      "original_source": "维度评测/04-权限边界/五款产品权限边界阶段汇总-2026-10-22.md",
+      "original_sha256": "9ea2bec2a3b0d681c2ba199003b64329e148a3d3649688250b53675df1178d21",
+      "transformation": "将本地记录整理为公开副本；替换路径，重定位已公开证据链接，其他本地链接改为来源文字。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/permission-summary.json",
+      "original_source": "维度评测/04-权限边界/五款产品权限边界阶段汇总-2026-10-22.json",
+      "original_sha256": "758a8b10dbf2ef1b2e80cfdae3225daea757ffebf2a1dd23fa03e5e0639084fc",
+      "transformation": "选择必要JSON字段，替换本机路径，保留来源层次。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/PERM02/observations.md",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/评测者材料/Codex-a01-观察与取证.md",
+      "original_sha256": "ca41eae26333a206066818769be560968d4179ef8f8f27e12cc6f24cefb00991",
+      "transformation": "将本地记录整理为公开副本；替换路径，重定位已公开证据链接，其他本地链接改为来源文字。",
+      "byte_identical_to_original": true
     }
   ]
 }

@@ -1,0 +1,167 @@
+{
+  "source": {
+    "source_path": "<PRIVATE_SOURCE>/Application Support/DoubaoWork/sdk_storage/log/saman_2026.1022.0.log",
+    "source_snapshot_bytes": 39742781,
+    "source_snapshot_sha256": "9ff38d3de1a831f86403c2c4cf08e38f04425e89d9f3c13cf6693e4b23f0bb3d",
+    "meaning": "哈希针对本轮读取到的完整源文件快照；活动日志仍可能追加。本归档只保存指定行，不复制完整客户端日志。"
+  },
+  "selection": "仅A及三种B调用的allow交互、执行模式与结束标记；不包含完整请求、无关会话、环境变量值。",
+  "records": [
+    {
+      "source_line": 118430,
+      "kind": "native_allow_action",
+      "call_id": "7224da55-0870-4b05-9515-2f40c683e95b",
+      "raw_line": "[52505:8525776:1022/102919.754029:INFO:CONSOLE(0)] [neotix] [office-api-logger] \"[webview][unknown][flow-web][logifier-report]: {\"version\":1,\"type\":\"event\",\"level\":\"info\",\"eventName\":\"im_chat_cua_bash_escalation_trace\",\"meta\":{\"actionId\":\"allow\",\"blockId\":\"d6aba4e6-7070-4f80-9999-9941357c385d.sandbox_auth\",\"hasServerOption\":false,\"hasToolCallId\":true,\"messageId\":\"59304883505954050\",\"stage\":\"click_start\",\"taskIds\":\"sandbox-d67b499e-94f0-4fad-b48f-96c6d12db487\",\"toolCallId\":\"7224da55-0870-4b05-9515-2f40c683e95b\",\"toolCallIds\":\"7224da55-0870-4b05-9515-2f40c683e95b\"}}\", source:  (0)"
+    },
+    {
+      "source_line": 118431,
+      "kind": "native_allow_action",
+      "call_id": "7224da55-0870-4b05-9515-2f40c683e95b",
+      "raw_line": "[52505:8525776:1022/102919.754372:INFO:CONSOLE(0)] [neotix] [office-api-logger] \"[webview][unknown][flow-web][logifier-report]: {\"version\":1,\"type\":\"event\",\"level\":\"info\",\"eventName\":\"agent_interaction-submit-decision\",\"meta\":{\"action_id\":\"allow\",\"action_type\":1010,\"block_id\":\"d6aba4e6-7070-4f80-9999-9941357c385d.sandbox_auth\",\"conversation_id\":\"38448536176839938\",\"interaction_id\":\"7224da55-0870-4b05-9515-2f40c683e95b\",\"message_id\":\"59304883505954050\",\"payload_kind\":\"action\",\"request_id\":\"c7bd2f6f-e747-432c-b4e4-e26cc0fe6b54\"}}\", source:  (0)"
+    },
+    {
+      "source_line": 118432,
+      "kind": "native_allow_action",
+      "call_id": "7224da55-0870-4b05-9515-2f40c683e95b",
+      "raw_line": "[52505:8525776:1022/102919.754527:INFO:CONSOLE(0)] [neotix] [office-api-logger] \"[webview][unknown][flow-web][logifier-report]: {\"version\":1,\"type\":\"event\",\"level\":\"info\",\"eventName\":\"agent_interaction_submit_diagnostic\",\"meta\":{\"action_id\":\"allow\",\"block_id\":\"d6aba4e6-7070-4f80-9999-9941357c385d.sandbox_auth\",\"client_time\":1792636159754,\"conversation_id\":\"38448536176839938\",\"has_rejection_handler\":false,\"message_id\":\"59304883505954050\",\"request_id\":\"c7bd2f6f-e747-432c-b4e4-e26cc0fe6b54\",\"source\":\"quick_reply_action\",\"stage\":\"click_submit_attempt\",\"tool_call_id\":\"7224da55-0870-4b05-9515-2f40c683e95b\"}}\", source:  (0)"
+    },
+    {
+      "source_line": 118436,
+      "kind": "native_allow_action",
+      "call_id": "7224da55-0870-4b05-9515-2f40c683e95b",
+      "raw_line": "[52505:8525776:1022/102919.774171:INFO:CONSOLE(0)] [neotix] [office-api-logger] \"[webview][unknown][flow-web][logifier-report]: {\"version\":1,\"type\":\"event\",\"level\":\"info\",\"eventName\":\"agent_interaction_submit_diagnostic\",\"meta\":{\"actionId\":\"allow\",\"block_id\":\"d6aba4e6-7070-4f80-9999-9941357c385d.sandbox_auth\",\"client_time\":1792636159773,\"receipt_kind\":\"received\",\"requestId\":\"c7bd2f6f-e747-432c-b4e4-e26cc0fe6b54\",\"source\":\"quick_reply_action\",\"stage\":\"click_submit_receipt\",\"tool_call_id\":\"7224da55-0870-4b05-9515-2f40c683e95b\"}}\", source:  (0)"
+    },
+    {
+      "source_line": 118437,
+      "kind": "native_allow_action",
+      "call_id": "7224da55-0870-4b05-9515-2f40c683e95b",
+      "raw_line": "[52505:8525776:1022/102919.774266:INFO:CONSOLE(0)] [neotix] [office-api-logger] \"[webview][unknown][flow-web][logifier-report]: {\"version\":1,\"type\":\"event\",\"level\":\"info\",\"eventName\":\"agent_interaction-submit-decision-result\",\"meta\":{\"action_id\":\"allow\",\"action_type\":1010,\"block_id\":\"d6aba4e6-7070-4f80-9999-9941357c385d.sandbox_auth\",\"conversation_id\":\"38448536176839938\",\"duration_ms\":20,\"interaction_id\":\"7224da55-0870-4b05-9515-2f40c683e95b\",\"kind\":\"received\",\"message_id\":\"59304883505954050\",\"payload_kind\":\"action\",\"request_id\":\"c7bd2f6f-e747-432c-b4e4-e26cc0fe6b54\"}}\", source:  (0)"
+    },
+    {
+      "source_line": 118446,
+      "kind": "native_execution_entry",
+      "call_id": "7224da55-0870-4b05-9515-2f40c683e95b",
+      "raw_line": "[52505:8525776:1022/102919.781127:INFO:aha/saman/chrome/browser/shell_api/impl/sandbox_common.cc(2285)] [lid={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"dae445e3-e6cc-4d6e-9436-856e15953dfa\",\"sandbox_id\":\"sandbox-d67b499e-94f0-4fad-b48f-96c6d12db487\",\"tcid\":\"7224da55-0870-4b05-9515-2f40c683e95b\"}] [sandbox] operator() bash.run enter request_id=c6a548c9-0a27-47d1-b130-221f813f35fd_neotix.sandbox.bash.run_req_429549 instance_id=e93db50e-40e5-4a5e-9f69-af34ebca6ee5 tool_call_id=7224da55-0870-4b05-9515-2f40c683e95b command_len=228 timeout_ms=120000 run_in_background=0 has_run_in_background=0 auto_background=1 has_auto_background=1 auto_background_timeout_ms=15000 description_len=70 env_count=14 browser_use_task_id= preview_task_id= execution_mode=unsandboxed"
+    },
+    {
+      "source_line": 118450,
+      "kind": "call_context",
+      "call_id": "7224da55-0870-4b05-9515-2f40c683e95b",
+      "raw_line": "[52505:8525776:1022/102919.781781:INFO:aha/components/cua_sandbox/sandbox_service.cc(844)] [lid={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"dae445e3-e6cc-4d6e-9436-856e15953dfa\",\"sandbox_id\":\"sandbox-d67b499e-94f0-4fad-b48f-96c6d12db487\",\"tcid\":\"7224da55-0870-4b05-9515-2f40c683e95b\"}] [sandbox] PrepareCallContext [sandbox_service] operation accepted, method=bash.run, sandbox_log_id={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"dae445e3-e6cc-4d6e-9436-856e15953dfa\",\"sandbox_id\":\"sandbox-d67b499e-94f0-4fad-b48f-96c6d12db487\",\"tcid\":\"7224da55-0870-4b05-9515-2f40c683e95b\"}"
+    },
+    {
+      "source_line": 118451,
+      "kind": "permission_mode_resolved",
+      "call_id": "7224da55-0870-4b05-9515-2f40c683e95b",
+      "raw_line": "[52505:8525776:1022/102919.781786:INFO:aha/components/cua_sandbox/sandbox_service_tools.cc(821)] [lid={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"dae445e3-e6cc-4d6e-9436-856e15953dfa\",\"sandbox_id\":\"sandbox-d67b499e-94f0-4fad-b48f-96c6d12db487\",\"tcid\":\"7224da55-0870-4b05-9515-2f40c683e95b\"}] [sandbox] PrepareToolCallContext [sandbox_service] tool execution permission mode resolved, method=bash.run, instance_id=e93db50e-40e5-4a5e-9f69-af34ebca6ee5, requested_run_in_sandbox=0, permission_mode=always_ask, enable_inherit_user_sandbox=1, enable_allow_all_inherit_user_sandbox=0, execution_mode=prefer_inherit_user"
+    },
+    {
+      "source_line": 118456,
+      "kind": "native_run_begin",
+      "call_id": "7224da55-0870-4b05-9515-2f40c683e95b",
+      "raw_line": "[52505:8525776:1022/102919.785335:INFO:aha/components/cua_sandbox/instance/sandbox_bash_tools.cc(424)] [lid={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"dae445e3-e6cc-4d6e-9436-856e15953dfa\",\"sandbox_id\":\"sandbox-d67b499e-94f0-4fad-b48f-96c6d12db487\",\"tcid\":\"7224da55-0870-4b05-9515-2f40c683e95b\"}] [sandbox] RunShellTask [bash] run begin, instance_id=e93db50e-40e5-4a5e-9f69-af34ebca6ee5, sandbox_log_id={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"dae445e3-e6cc-4d6e-9436-856e15953dfa\",\"sandbox_id\":\"sandbox-d67b499e-94f0-4fad-b48f-96c6d12db487\",\"tcid\":\"7224da55-0870-4b05-9515-2f40c683e95b\"}, bash_run_id=fg-d62afd0c-6601-4a6b-9f61-0d57394aa25d, background=0, auto_background=1, timeout_ms=120000, command_len=228, env_len=3030, stdin_len=0, execution_mode=prefer_inherit_user, auto_background_timeout_ms=15000, cwd_update_policy=foreground_only, shell_mode=0, task_type=, sdk_method=RunShellTask"
+    },
+    {
+      "source_line": 118462,
+      "kind": "native_allow_action",
+      "call_id": "7224da55-0870-4b05-9515-2f40c683e95b",
+      "raw_line": "[52505:8525776:1022/102919.787513:INFO:CONSOLE(0)] [neotix] [office-api-logger] \"[webview][unknown][flow-web][logifier-report]: {\"version\":1,\"type\":\"event\",\"level\":\"info\",\"eventName\":\"im_chat_cua_bash_escalation_trace\",\"meta\":{\"actionId\":\"allow\",\"durationMs\":21,\"requestId\":\"c7bd2f6f-e747-432c-b4e4-e26cc0fe6b54\",\"stage\":\"click_submit_result\",\"toolCallId\":\"7224da55-0870-4b05-9515-2f40c683e95b\"}}\", source:  (0)"
+    },
+    {
+      "source_line": 118545,
+      "kind": "native_run_end",
+      "call_id": "7224da55-0870-4b05-9515-2f40c683e95b",
+      "raw_line": "[52505:8525776:1022/102920.148567:INFO:aha/components/cua_sandbox/instance/sandbox_bash_tools.cc(527)] [sandbox] OnRunShellTaskFinished [bash] run end, instance_id=e93db50e-40e5-4a5e-9f69-af34ebca6ee5, sandbox_log_id={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"dae445e3-e6cc-4d6e-9436-856e15953dfa\",\"sandbox_id\":\"sandbox-d67b499e-94f0-4fad-b48f-96c6d12db487\",\"tcid\":\"7224da55-0870-4b05-9515-2f40c683e95b\"}, bash_run_id=fg-d62afd0c-6601-4a6b-9f61-0d57394aa25d, success=1, error_code=, error_message=, sdk_task_id=, exit_code=0, output_len=432, output_truncated=0, timed_out=0, permission_blocked=0, duration_ms=364"
+    },
+    {
+      "source_line": 120532,
+      "kind": "native_execution_entry",
+      "call_id": "a05d9a5e-fe2a-4930-9e67-94cc38a1784f",
+      "raw_line": "[52505:8525776:1022/103131.824645:INFO:aha/saman/chrome/browser/shell_api/impl/sandbox_common.cc(2285)] [lid={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"09befab0-d4bf-419d-903b-ef3cb2a73d69\",\"sandbox_id\":\"sandbox-d4e01f68-ec28-49bc-a559-e1efcbbb5989\",\"tcid\":\"a05d9a5e-fe2a-4930-9e67-94cc38a1784f\"}] [sandbox] operator() bash.run enter request_id=c6a548c9-0a27-47d1-b130-221f813f35fd_neotix.sandbox.bash.run_req_430135 instance_id=e93db50e-40e5-4a5e-9f69-af34ebca6ee5 tool_call_id=a05d9a5e-fe2a-4930-9e67-94cc38a1784f command_len=234 timeout_ms=120000 run_in_background=0 has_run_in_background=0 auto_background=1 has_auto_background=1 auto_background_timeout_ms=15000 description_len=85 env_count=14 browser_use_task_id= preview_task_id= execution_mode=sandboxed"
+    },
+    {
+      "source_line": 120536,
+      "kind": "call_context",
+      "call_id": "a05d9a5e-fe2a-4930-9e67-94cc38a1784f",
+      "raw_line": "[52505:8525776:1022/103131.824741:INFO:aha/components/cua_sandbox/sandbox_service.cc(844)] [lid={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"09befab0-d4bf-419d-903b-ef3cb2a73d69\",\"sandbox_id\":\"sandbox-d4e01f68-ec28-49bc-a559-e1efcbbb5989\",\"tcid\":\"a05d9a5e-fe2a-4930-9e67-94cc38a1784f\"}] [sandbox] PrepareCallContext [sandbox_service] operation accepted, method=bash.run, sandbox_log_id={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"09befab0-d4bf-419d-903b-ef3cb2a73d69\",\"sandbox_id\":\"sandbox-d4e01f68-ec28-49bc-a559-e1efcbbb5989\",\"tcid\":\"a05d9a5e-fe2a-4930-9e67-94cc38a1784f\"}"
+    },
+    {
+      "source_line": 120537,
+      "kind": "permission_mode_resolved",
+      "call_id": "a05d9a5e-fe2a-4930-9e67-94cc38a1784f",
+      "raw_line": "[52505:8525776:1022/103131.824747:INFO:aha/components/cua_sandbox/sandbox_service_tools.cc(821)] [lid={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"09befab0-d4bf-419d-903b-ef3cb2a73d69\",\"sandbox_id\":\"sandbox-d4e01f68-ec28-49bc-a559-e1efcbbb5989\",\"tcid\":\"a05d9a5e-fe2a-4930-9e67-94cc38a1784f\"}] [sandbox] PrepareToolCallContext [sandbox_service] tool execution permission mode resolved, method=bash.run, instance_id=e93db50e-40e5-4a5e-9f69-af34ebca6ee5, requested_run_in_sandbox=1, permission_mode=always_ask, enable_inherit_user_sandbox=1, enable_allow_all_inherit_user_sandbox=0, execution_mode=sandboxed"
+    },
+    {
+      "source_line": 120542,
+      "kind": "native_run_begin",
+      "call_id": "a05d9a5e-fe2a-4930-9e67-94cc38a1784f",
+      "raw_line": "[52505:8525776:1022/103131.824867:INFO:aha/components/cua_sandbox/instance/sandbox_bash_tools.cc(424)] [lid={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"09befab0-d4bf-419d-903b-ef3cb2a73d69\",\"sandbox_id\":\"sandbox-d4e01f68-ec28-49bc-a559-e1efcbbb5989\",\"tcid\":\"a05d9a5e-fe2a-4930-9e67-94cc38a1784f\"}] [sandbox] RunShellTask [bash] run begin, instance_id=e93db50e-40e5-4a5e-9f69-af34ebca6ee5, sandbox_log_id={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"09befab0-d4bf-419d-903b-ef3cb2a73d69\",\"sandbox_id\":\"sandbox-d4e01f68-ec28-49bc-a559-e1efcbbb5989\",\"tcid\":\"a05d9a5e-fe2a-4930-9e67-94cc38a1784f\"}, bash_run_id=fg-8a056628-d2c2-45b1-8dd3-222a7c7e5ef0, background=0, auto_background=1, timeout_ms=120000, command_len=234, env_len=3030, stdin_len=0, execution_mode=sandboxed, auto_background_timeout_ms=15000, cwd_update_policy=foreground_only, shell_mode=0, task_type=, sdk_method=RunShellTask"
+    },
+    {
+      "source_line": 120626,
+      "kind": "native_run_end",
+      "call_id": "a05d9a5e-fe2a-4930-9e67-94cc38a1784f",
+      "raw_line": "[52505:8525776:1022/103132.144019:INFO:aha/components/cua_sandbox/instance/sandbox_bash_tools.cc(527)] [sandbox] OnRunShellTaskFinished [bash] run end, instance_id=e93db50e-40e5-4a5e-9f69-af34ebca6ee5, sandbox_log_id={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"09befab0-d4bf-419d-903b-ef3cb2a73d69\",\"sandbox_id\":\"sandbox-d4e01f68-ec28-49bc-a559-e1efcbbb5989\",\"tcid\":\"a05d9a5e-fe2a-4930-9e67-94cc38a1784f\"}, bash_run_id=fg-8a056628-d2c2-45b1-8dd3-222a7c7e5ef0, success=1, error_code=, error_message=, sdk_task_id=, exit_code=7, output_len=811, output_truncated=0, timed_out=0, permission_blocked=1, duration_ms=319"
+    },
+    {
+      "source_line": 127417,
+      "kind": "native_execution_entry",
+      "call_id": "ef42fac3-e516-4baf-9425-614a8c57d429",
+      "raw_line": "[52505:8525776:1022/103718.246651:INFO:aha/saman/chrome/browser/shell_api/impl/sandbox_common.cc(2285)] [lid={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"e81fe01c-93a2-4311-a922-18c3f74af49e\",\"sandbox_id\":\"sandbox-b5207ab3-fee7-4111-a608-619a145008e3\",\"tcid\":\"ef42fac3-e516-4baf-9425-614a8c57d429\"}] [sandbox] operator() bash.run enter request_id=c6a548c9-0a27-47d1-b130-221f813f35fd_neotix.sandbox.bash.run_req_432412 instance_id=e93db50e-40e5-4a5e-9f69-af34ebca6ee5 tool_call_id=ef42fac3-e516-4baf-9425-614a8c57d429 command_len=97 timeout_ms=120000 run_in_background=0 has_run_in_background=0 auto_background=1 has_auto_background=1 auto_background_timeout_ms=15000 description_len=70 env_count=14 browser_use_task_id= preview_task_id= execution_mode=sandboxed"
+    },
+    {
+      "source_line": 127421,
+      "kind": "call_context",
+      "call_id": "ef42fac3-e516-4baf-9425-614a8c57d429",
+      "raw_line": "[52505:8525776:1022/103718.246699:INFO:aha/components/cua_sandbox/sandbox_service.cc(844)] [lid={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"e81fe01c-93a2-4311-a922-18c3f74af49e\",\"sandbox_id\":\"sandbox-b5207ab3-fee7-4111-a608-619a145008e3\",\"tcid\":\"ef42fac3-e516-4baf-9425-614a8c57d429\"}] [sandbox] PrepareCallContext [sandbox_service] operation accepted, method=bash.run, sandbox_log_id={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"e81fe01c-93a2-4311-a922-18c3f74af49e\",\"sandbox_id\":\"sandbox-b5207ab3-fee7-4111-a608-619a145008e3\",\"tcid\":\"ef42fac3-e516-4baf-9425-614a8c57d429\"}"
+    },
+    {
+      "source_line": 127422,
+      "kind": "permission_mode_resolved",
+      "call_id": "ef42fac3-e516-4baf-9425-614a8c57d429",
+      "raw_line": "[52505:8525776:1022/103718.246702:INFO:aha/components/cua_sandbox/sandbox_service_tools.cc(821)] [lid={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"e81fe01c-93a2-4311-a922-18c3f74af49e\",\"sandbox_id\":\"sandbox-b5207ab3-fee7-4111-a608-619a145008e3\",\"tcid\":\"ef42fac3-e516-4baf-9425-614a8c57d429\"}] [sandbox] PrepareToolCallContext [sandbox_service] tool execution permission mode resolved, method=bash.run, instance_id=e93db50e-40e5-4a5e-9f69-af34ebca6ee5, requested_run_in_sandbox=1, permission_mode=always_ask, enable_inherit_user_sandbox=1, enable_allow_all_inherit_user_sandbox=0, execution_mode=sandboxed"
+    },
+    {
+      "source_line": 127427,
+      "kind": "native_run_begin",
+      "call_id": "ef42fac3-e516-4baf-9425-614a8c57d429",
+      "raw_line": "[52505:8525776:1022/103718.246760:INFO:aha/components/cua_sandbox/instance/sandbox_bash_tools.cc(424)] [lid={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"e81fe01c-93a2-4311-a922-18c3f74af49e\",\"sandbox_id\":\"sandbox-b5207ab3-fee7-4111-a608-619a145008e3\",\"tcid\":\"ef42fac3-e516-4baf-9425-614a8c57d429\"}] [sandbox] RunShellTask [bash] run begin, instance_id=e93db50e-40e5-4a5e-9f69-af34ebca6ee5, sandbox_log_id={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"e81fe01c-93a2-4311-a922-18c3f74af49e\",\"sandbox_id\":\"sandbox-b5207ab3-fee7-4111-a608-619a145008e3\",\"tcid\":\"ef42fac3-e516-4baf-9425-614a8c57d429\"}, bash_run_id=fg-4714f276-5dcd-415b-85cd-610d41e32428, background=0, auto_background=1, timeout_ms=120000, command_len=97, env_len=3030, stdin_len=0, execution_mode=sandboxed, auto_background_timeout_ms=15000, cwd_update_policy=foreground_only, shell_mode=0, task_type=, sdk_method=RunShellTask"
+    },
+    {
+      "source_line": 127510,
+      "kind": "native_run_end",
+      "call_id": "ef42fac3-e516-4baf-9425-614a8c57d429",
+      "raw_line": "[52505:8525776:1022/103718.564362:INFO:aha/components/cua_sandbox/instance/sandbox_bash_tools.cc(527)] [sandbox] OnRunShellTaskFinished [bash] run end, instance_id=e93db50e-40e5-4a5e-9f69-af34ebca6ee5, sandbox_log_id={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"e81fe01c-93a2-4311-a922-18c3f74af49e\",\"sandbox_id\":\"sandbox-b5207ab3-fee7-4111-a608-619a145008e3\",\"tcid\":\"ef42fac3-e516-4baf-9425-614a8c57d429\"}, bash_run_id=fg-4714f276-5dcd-415b-85cd-610d41e32428, success=1, error_code=, error_message=, sdk_task_id=, exit_code=7, output_len=410, output_truncated=0, timed_out=0, permission_blocked=1, duration_ms=317"
+    },
+    {
+      "source_line": 129488,
+      "kind": "native_execution_entry",
+      "call_id": "c9ba01f1-82fc-463a-a56b-79c6816dc218",
+      "raw_line": "[52505:8525776:1022/103832.914034:INFO:aha/saman/chrome/browser/shell_api/impl/sandbox_common.cc(2285)] [lid={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"9813d2a9-afbf-4908-bd72-9146a69a8128\",\"sandbox_id\":\"sandbox-7b91815c-f2e1-4f6d-984f-675f1553d3c6\",\"tcid\":\"c9ba01f1-82fc-463a-a56b-79c6816dc218\"}] [sandbox] operator() bash.run enter request_id=c6a548c9-0a27-47d1-b130-221f813f35fd_neotix.sandbox.bash.run_req_433061 instance_id=e93db50e-40e5-4a5e-9f69-af34ebca6ee5 tool_call_id=c9ba01f1-82fc-463a-a56b-79c6816dc218 command_len=232 timeout_ms=120000 run_in_background=0 has_run_in_background=0 auto_background=1 has_auto_background=1 auto_background_timeout_ms=15000 description_len=83 env_count=14 browser_use_task_id= preview_task_id= execution_mode=sandboxed"
+    },
+    {
+      "source_line": 129492,
+      "kind": "call_context",
+      "call_id": "c9ba01f1-82fc-463a-a56b-79c6816dc218",
+      "raw_line": "[52505:8525776:1022/103832.914091:INFO:aha/components/cua_sandbox/sandbox_service.cc(844)] [lid={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"9813d2a9-afbf-4908-bd72-9146a69a8128\",\"sandbox_id\":\"sandbox-7b91815c-f2e1-4f6d-984f-675f1553d3c6\",\"tcid\":\"c9ba01f1-82fc-463a-a56b-79c6816dc218\"}] [sandbox] PrepareCallContext [sandbox_service] operation accepted, method=bash.run, sandbox_log_id={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"9813d2a9-afbf-4908-bd72-9146a69a8128\",\"sandbox_id\":\"sandbox-7b91815c-f2e1-4f6d-984f-675f1553d3c6\",\"tcid\":\"c9ba01f1-82fc-463a-a56b-79c6816dc218\"}"
+    },
+    {
+      "source_line": 129493,
+      "kind": "permission_mode_resolved",
+      "call_id": "c9ba01f1-82fc-463a-a56b-79c6816dc218",
+      "raw_line": "[52505:8525776:1022/103832.914094:INFO:aha/components/cua_sandbox/sandbox_service_tools.cc(821)] [lid={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"9813d2a9-afbf-4908-bd72-9146a69a8128\",\"sandbox_id\":\"sandbox-7b91815c-f2e1-4f6d-984f-675f1553d3c6\",\"tcid\":\"c9ba01f1-82fc-463a-a56b-79c6816dc218\"}] [sandbox] PrepareToolCallContext [sandbox_service] tool execution permission mode resolved, method=bash.run, instance_id=e93db50e-40e5-4a5e-9f69-af34ebca6ee5, requested_run_in_sandbox=1, permission_mode=always_ask, enable_inherit_user_sandbox=1, enable_allow_all_inherit_user_sandbox=0, execution_mode=sandboxed"
+    },
+    {
+      "source_line": 129498,
+      "kind": "native_run_begin",
+      "call_id": "c9ba01f1-82fc-463a-a56b-79c6816dc218",
+      "raw_line": "[52505:8525776:1022/103832.914141:INFO:aha/components/cua_sandbox/instance/sandbox_bash_tools.cc(424)] [lid={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"9813d2a9-afbf-4908-bd72-9146a69a8128\",\"sandbox_id\":\"sandbox-7b91815c-f2e1-4f6d-984f-675f1553d3c6\",\"tcid\":\"c9ba01f1-82fc-463a-a56b-79c6816dc218\"}] [sandbox] RunShellTask [bash] run begin, instance_id=e93db50e-40e5-4a5e-9f69-af34ebca6ee5, sandbox_log_id={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"9813d2a9-afbf-4908-bd72-9146a69a8128\",\"sandbox_id\":\"sandbox-7b91815c-f2e1-4f6d-984f-675f1553d3c6\",\"tcid\":\"c9ba01f1-82fc-463a-a56b-79c6816dc218\"}, bash_run_id=fg-b6409092-1a08-4a6c-a5d6-ebf1c6d227e6, background=0, auto_background=1, timeout_ms=120000, command_len=232, env_len=3030, stdin_len=0, execution_mode=sandboxed, auto_background_timeout_ms=15000, cwd_update_policy=foreground_only, shell_mode=0, task_type=, sdk_method=RunShellTask"
+    },
+    {
+      "source_line": 129589,
+      "kind": "native_run_end",
+      "call_id": "c9ba01f1-82fc-463a-a56b-79c6816dc218",
+      "raw_line": "[52505:8525776:1022/103833.228689:INFO:aha/components/cua_sandbox/instance/sandbox_bash_tools.cc(527)] [sandbox] OnRunShellTaskFinished [bash] run end, instance_id=e93db50e-40e5-4a5e-9f69-af34ebca6ee5, sandbox_log_id={\"conversation_id\":\"38448536176839938\",\"agent_id\":\"9813d2a9-afbf-4908-bd72-9146a69a8128\",\"sandbox_id\":\"sandbox-7b91815c-f2e1-4f6d-984f-675f1553d3c6\",\"tcid\":\"c9ba01f1-82fc-463a-a56b-79c6816dc218\"}, bash_run_id=fg-b6409092-1a08-4a6c-a5d6-ebf1c6d227e6, success=1, error_code=, error_message=, sdk_task_id=, exit_code=7, output_len=1111, output_truncated=0, timed_out=0, permission_blocked=1, duration_ms=314"
+    }
+  ]
+}

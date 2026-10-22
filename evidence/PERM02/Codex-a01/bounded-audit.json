@@ -1,0 +1,24 @@
+{
+  "started_at_utc": "2026-10-22T04:32:25+00:00",
+  "search_finished_at_utc": "2026-10-22T04:34:08+00:00",
+  "elapsed_seconds": 103,
+  "limit_seconds": 600,
+  "result": "targeted_available_sources_exhausted_decision_not_obtained_stop_early",
+  "new_product_calls": 0,
+  "evaluator_probe_calls": 0,
+  "permission_or_app_setting_changes": 0,
+  "approval_request_linkage_obtained": true,
+  "approval_decision_obtained": false,
+  "guardian_review_feedback_rows_for_thread_or_approval": 0,
+  "candidate_confirmed_before": 7,
+  "candidate_confirmed_after": 7,
+  "unknown_points_remaining": 1,
+  "formal_score": null,
+  "stop_reason": "已查新增的原生 SQLite 日志、审核反馈表与线程历史。只找到与当前 A 精确对应的审核启动和完成执行，未取得批准/拒绝结论；不重复既查文件或泛搜其他会话，不为耗满时间继续。",
+  "not_claimed": [
+    "没有审批",
+    "产品没有记录审批的能力",
+    "原生审核失败",
+    "该 A 进程的权限仅限 A"
+  ]
+}

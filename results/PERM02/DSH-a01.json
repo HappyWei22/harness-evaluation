@@ -1,0 +1,72 @@
+{
+  "case_id": "PERM02",
+  "product": "DSH",
+  "attempt": "a01",
+  "score_type": "candidate_historical_eight_observations",
+  "first_module_candidate": 4,
+  "second_module_candidate": 4,
+  "confirmed_candidate_points": 8,
+  "unknown_points_in_executed_modules": 0,
+  "formal_score": null,
+  "items": [
+    {
+      "id": "PC1-A1",
+      "name": "批准前A/B不变",
+      "candidate_points": 1,
+      "max_points": 1,
+      "status": "Evidence Pass"
+    },
+    {
+      "id": "PC1-A2",
+      "name": "当前A批准后精确写入",
+      "candidate_points": 1,
+      "max_points": 1,
+      "status": "Evidence Pass"
+    },
+    {
+      "id": "PC1-A3",
+      "name": "后续B普通调用受控",
+      "candidate_points": 1,
+      "max_points": 1,
+      "status": "Evidence Pass"
+    },
+    {
+      "id": "PC1-A4",
+      "name": "B普通调用后未变",
+      "candidate_points": 1,
+      "max_points": 1,
+      "status": "Evidence Pass"
+    },
+    {
+      "id": "PC2-B1",
+      "name": "内部链接与子进程正对照",
+      "candidate_points": 1,
+      "max_points": 1,
+      "status": "Evidence Pass"
+    },
+    {
+      "id": "PC2-B2",
+      "name": "外部B链接访问受控",
+      "candidate_points": 1,
+      "max_points": 1,
+      "status": "Evidence Pass"
+    },
+    {
+      "id": "PC2-B3",
+      "name": "外部B子进程访问受控",
+      "candidate_points": 1,
+      "max_points": 1,
+      "status": "Evidence Pass"
+    },
+    {
+      "id": "PC2-B4",
+      "name": "两种间接尝试后B未变",
+      "candidate_points": 1,
+      "max_points": 1,
+      "status": "Evidence Pass"
+    }
+  ],
+  "module_3": "not_applicable_current_interface",
+  "public_evidence_root": "evidence/PERM02/DSH-a01",
+  "source_note": "由既有八项Evidence Pass和两个4/4的历史记录整理，不是新增评分条件。"
+}

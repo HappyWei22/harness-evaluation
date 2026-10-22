@@ -1,0 +1,44 @@
+{
+  "records": [
+    {
+      "id": 74583954,
+      "ts": 1792642551,
+      "ts_nanos": 146789000,
+      "level": "INFO",
+      "target": "codex_models_manager::manager",
+      "feedback_log_body": "decide_request{approval_id=\"11dcd759-7068-4328-81dd-4651acfcfd47\"}:guardian_review{review_id=\"11dcd759-7068-4328-81dd-4651acfcfd47\" thread_id=01a161cb-40ff-7981-a5c2-37303272e5cd tool_call_id=\"exec-6d67f80d-53a8-4aed-8f2f-c0dfd97368f8\"}:list_models{refresh_strategy=offline}: models cache: evaluating cache eligibility client_version=\"0.163.0\"",
+      "thread_id": "01a161cb-40ff-7981-a5c2-37303272e5cd",
+      "process_uuid": "pid:51698:e083bbaa-2c19-4b54-b410-e1e2ceecd441"
+    },
+    {
+      "id": 74583955,
+      "ts": 1792642551,
+      "ts_nanos": 146829000,
+      "level": "INFO",
+      "target": "codex_models_manager::cache",
+      "feedback_log_body": "decide_request{approval_id=\"11dcd759-7068-4328-81dd-4651acfcfd47\"}:guardian_review{review_id=\"11dcd759-7068-4328-81dd-4651acfcfd47\" thread_id=01a161cb-40ff-7981-a5c2-37303272e5cd tool_call_id=\"exec-6d67f80d-53a8-4aed-8f2f-c0dfd97368f8\"}:list_models{refresh_strategy=offline}: models cache: attempting load_fresh cache_path=<PRIVATE_HOME>/.codex/models_cache.json expected_version=\"0.163.0\"",
+      "thread_id": "01a161cb-40ff-7981-a5c2-37303272e5cd",
+      "process_uuid": "pid:51698:e083bbaa-2c19-4b54-b410-e1e2ceecd441"
+    },
+    {
+      "id": 74583956,
+      "ts": 1792642551,
+      "ts_nanos": 148742000,
+      "level": "INFO",
+      "target": "codex_models_manager::cache",
+      "feedback_log_body": "decide_request{approval_id=\"11dcd759-7068-4328-81dd-4651acfcfd47\"}:guardian_review{review_id=\"11dcd759-7068-4328-81dd-4651acfcfd47\" thread_id=01a161cb-40ff-7981-a5c2-37303272e5cd tool_call_id=\"exec-6d67f80d-53a8-4aed-8f2f-c0dfd97368f8\"}:list_models{refresh_strategy=offline}: models cache: loaded cache file cache_path=<PRIVATE_HOME>/.codex/models_cache.json cached_version=Some(\"0.163.0\") fetched_at=2026-10-22 04:15:46.708125 UTC",
+      "thread_id": "01a161cb-40ff-7981-a5c2-37303272e5cd",
+      "process_uuid": "pid:51698:e083bbaa-2c19-4b54-b410-e1e2ceecd441"
+    },
+    {
+      "id": 74583957,
+      "ts": 1792642551,
+      "ts_nanos": 148785000,
+      "level": "INFO",
+      "target": "codex_models_manager::cache",
+      "feedback_log_body": "decide_request{approval_id=\"11dcd759-7068-4328-81dd-4651acfcfd47\"}:guardian_review{review_id=\"11dcd759-7068-4328-81dd-4651acfcfd47\" thread_id=01a161cb-40ff-7981-a5c2-37303272e5cd tool_call_id=\"exec-6d67f80d-53a8-4aed-8f2f-c0dfd97368f8\"}:list_models{refresh_strategy=offline}: models cache: cache hit cache_path=<PRIVATE_HOME>/.codex/models_cache.json cache_ttl_secs=300",
+      "thread_id": "01a161cb-40ff-7981-a5c2-37303272e5cd",
+      "process_uuid": "pid:51698:e083bbaa-2c19-4b54-b410-e1e2ceecd441"
+    }
+  ]
+}
