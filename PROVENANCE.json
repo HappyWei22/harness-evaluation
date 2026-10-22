@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "description": "原始来源哈希用于记录来源关系，不代表完整原文件已公开或外部可认证。public文件的实际字节指纹另见MANIFEST.json。",
   "exports": [
     {
@@ -2724,6 +2724,419 @@
       "original_sha256": "ca41eae26333a206066818769be560968d4179ef8f8f27e12cc6f24cefb00991",
       "transformation": "将本地记录整理为公开副本；替换路径，重定位已公开证据链接，其他本地链接改为来源文字。",
       "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/DSH/score.json",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/运行记录/DSH-a01/评分与归因.json",
+      "original_sha256": "eca5d31d9520f6a7f0a3a413f3ef4e5238b5843edcafe482d5f2f6f947ba8b88",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/DSH/用户入口确认.json",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/运行记录/DSH-a01/用户入口确认.json",
+      "original_sha256": "d5b7071855e66158cd9817503f553006c7b800f3204e6f3fd4e620cdbbc2ede7",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/DSH/独立文件检查摘录.json",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/运行记录/DSH-a01/阶段01-完成后/交付物独立核对.json",
+      "original_sha256": "af2dd678434d9eeb5c2f193c791b32b47832859a29424b52c2041a5b606d8f42",
+      "transformation": "独立观察字段摘录；替换本机路径；原题只保留聚合数值，不包含原始附件或业务答案",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/WorkBuddy/score.json",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/运行记录/WorkBuddy-a01/评分与归因.json",
+      "original_sha256": "471ef95ac6a6c7c1eb35a3cb3842d987339bc8499c18d8c984522418fd5e2ccb",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/WorkBuddy/用户入口确认.json",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/运行记录/WorkBuddy-a01/用户入口确认.json",
+      "original_sha256": "279b2e37d07a6202c04f220d8bcbf4ab5d06d8a836f8b6ed0e17bd82a4cbc2d5",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/WorkBuddy/独立文件检查摘录.json",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/运行记录/WorkBuddy-a01/阶段01-首次交付/交付物独立核对.json",
+      "original_sha256": "53b037f2c875574b656b0491791706b1f659577cd51e63c9b07fea8c16e1aee9",
+      "transformation": "独立观察字段摘录；替换本机路径；原题只保留聚合数值，不包含原始附件或业务答案",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/豆包办公/score.json",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/运行记录/豆包办公-a01/评分与归因.json",
+      "original_sha256": "7291114cf69a1ee602ec65bc0563a856fd525a06c09283ba00dff232248f362b",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/豆包办公/用户入口确认.json",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/运行记录/豆包办公-a01/用户入口确认.json",
+      "original_sha256": "e02773f9ddc2e012fd9c66345505d663a9d8d4c587a0c1d2703fb6be8cc4f7fc",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/豆包办公/独立文件检查摘录.json",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/运行记录/豆包办公-a01/阶段01-首次交付/交付物独立核对.json",
+      "original_sha256": "ed00bed360634a7c183dcabf05e6f01b9664c8c936f9755afa6fa67637655682",
+      "transformation": "独立观察字段摘录；替换本机路径；原题只保留聚合数值，不包含原始附件或业务答案",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/元宝专家模式/score.json",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/运行记录/元宝专家模式-a01/评分与归因.json",
+      "original_sha256": "44ed474c750b76d9ebc142a0c7d3263a263b803e466fb0719b87b5c44a8d3bf1",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/元宝专家模式/用户入口确认.json",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/运行记录/元宝专家模式-a01/用户入口确认.json",
+      "original_sha256": "485ac950a8f2999e0220a04584b3b9ab29af23f9bcbbab93ea5f6d57e283dc57",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/元宝专家模式/独立文件检查摘录.json",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/运行记录/元宝专家模式-a01/阶段01-实际取件/交付物独立核对.json",
+      "original_sha256": "82183f3e32a94645369a6d88d37f4913a486c6d477158b88b3dae375983fc409",
+      "transformation": "独立观察字段摘录；替换本机路径；原题只保留聚合数值，不包含原始附件或业务答案",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/DSH/score.json",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/运行记录/DSH-a01/评分与归因.json",
+      "original_sha256": "759c53444957e8900ffa8dc3a53f0be196adb6a520e2846ac2cac2580d8ee914",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/DSH/用户入口确认.json",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/运行记录/DSH-a01/用户入口确认.json",
+      "original_sha256": "ca28103344aee933568ea05dc3f3eb95c77cebdfb26a4b6f48864ea6917c4203",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/DSH/独立文件检查摘录.json",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/运行记录/DSH-a01/阶段01-完成后/交付物独立核对.json",
+      "original_sha256": "5f50bb13dd2b815e252e5ba353882513e21db729013bc353e34c2c1bc1dc4772",
+      "transformation": "独立观察字段摘录；替换本机路径；原题只保留聚合数值，不包含原始附件或业务答案",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/WorkBuddy/score.json",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/运行记录/WorkBuddy-a01/评分与归因.json",
+      "original_sha256": "af6ffcc72b7594b44d340803a2a08d9e33c94488cee48036ca3509368c5a6f9d",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/WorkBuddy/用户入口确认.json",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/运行记录/WorkBuddy-a01/用户入口确认.json",
+      "original_sha256": "221b4ff5c962eaaf5d53b88912f494ac3c52ab117661a82a75df6e13641869fe",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/WorkBuddy/独立文件检查摘录.json",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/运行记录/WorkBuddy-a01/阶段01-首次交付/交付物独立核对.json",
+      "original_sha256": "93c75b5e93ce996030244307e5da762ecc90f304af821f891100f1559fad89b9",
+      "transformation": "独立观察字段摘录；替换本机路径；原题只保留聚合数值，不包含原始附件或业务答案",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/豆包办公/score.json",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/运行记录/豆包办公-a01/评分与归因.json",
+      "original_sha256": "72506c21c859ad1f35fd18eb04a83eabe0a5e638c2e2662105cedc118c487a5b",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/豆包办公/用户入口确认.json",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/运行记录/豆包办公-a01/用户入口确认.json",
+      "original_sha256": "6a7fb551f6f8440b340b854f214ea8be8bf6ba4cc4bca8f2f003ae397eb9145f",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/豆包办公/独立文件检查摘录.json",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/运行记录/豆包办公-a01/阶段01-首次交付/交付物独立核对.json",
+      "original_sha256": "9b13cfebb4228d663e5402448cfa3771fdee097d698acd212d5b1c4ceb39af76",
+      "transformation": "独立观察字段摘录；替换本机路径；原题只保留聚合数值，不包含原始附件或业务答案",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/元宝专家模式/score.json",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/运行记录/元宝专家模式-a01/评分与归因.json",
+      "original_sha256": "7d8ffffb0849e47c54a57774773fced064682af274a20eb635b50099da6ab3be",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/元宝专家模式/用户入口确认.json",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/运行记录/元宝专家模式-a01/用户入口确认.json",
+      "original_sha256": "d385a0001f489ac925ca334ec41fc5e5e363681e930d8ab6ec74cab1357be368",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/DSH/score.json",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/运行记录/DSH-a01/评分与归因.json",
+      "original_sha256": "961adfcb72a0a60b3b750e7e863ff0e46ea4618806e7fa71ab704c527a69f81a",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/DSH/用户入口确认.json",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/运行记录/DSH-a01/用户入口确认.json",
+      "original_sha256": "cd274d94812298c00d8769387ed1683d956726d3f13da3add167a326998e1ccb",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/DSH/独立文件检查摘录.json",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/运行记录/DSH-a01/阶段01-首次交付/文件独立核对.json",
+      "original_sha256": "1dadbc9b302714e2c5b5cacfe3955f18704a7aaf8834ac6d2130b348d4ae6d77",
+      "transformation": "独立观察字段摘录；替换本机路径；原题只保留聚合数值，不包含原始附件或业务答案",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/WorkBuddy/score.json",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/运行记录/WorkBuddy-a01/评分与归因.json",
+      "original_sha256": "86058ccc161bb3042c8ec1ca674847d9fac69a81b38775cf922d584c104c2659",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/WorkBuddy/用户入口确认.json",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/运行记录/WorkBuddy-a01/用户入口确认.json",
+      "original_sha256": "831cf16b4ee9967b8a035ff7ab5e12dd2cd66c1693be138a1f1884e247a0209c",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/WorkBuddy/独立文件检查摘录.json",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/运行记录/WorkBuddy-a01/阶段01-首次交付/文件独立核对.json",
+      "original_sha256": "5953e5c511f7b4ea6ba9c3c6bc4bb93e352cb142f92bf28c76ee5f60ec5fe7ae",
+      "transformation": "独立观察字段摘录；替换本机路径；原题只保留聚合数值，不包含原始附件或业务答案",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/豆包办公/score.json",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/运行记录/豆包办公-a01/评分与归因.json",
+      "original_sha256": "c636d9c595178d5fd129404dab1ef7a71dc8a448939706ecf5b765e872f0f033",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/豆包办公/用户入口确认.json",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/运行记录/豆包办公-a01/用户入口确认.json",
+      "original_sha256": "caca45fd277dc38be5fa6f39f7c20efae5489b189a54aa92c9cc6ccf15317660",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/豆包办公/独立文件检查摘录.json",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/运行记录/豆包办公-a01/阶段01-首次交付/文件独立核对.json",
+      "original_sha256": "43178824f98c89d8da48b286f4bec29e829e70de9af196a240063d0255ec41a3",
+      "transformation": "独立观察字段摘录；替换本机路径；原题只保留聚合数值，不包含原始附件或业务答案",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/元宝专家模式/score.json",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/运行记录/元宝专家模式-a01/评分与归因.json",
+      "original_sha256": "8a82f76dde4cfd083a0e3e801b01e6c0f5328d724b98fd3a3cac151e65a8cf1c",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/元宝专家模式/用户入口确认.json",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/运行记录/元宝专家模式-a01/用户入口确认.json",
+      "original_sha256": "6bfc6eb64752ac88c9e54d5b85b57e24c55206ebd6f32fdee55a078c5b2e91f4",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/DSH/score.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/DSH-a01/候选评分.json",
+      "original_sha256": "e682af812ee30d875d1de0d06e591a4085cbd912208ad57e72be0e06ff80911c",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/DSH/第二轮用户入口确认.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/DSH-a01/第二轮用户入口确认.json",
+      "original_sha256": "8b8c6256f3204cd5851b7e2ffdd115fdc9cd04c67d0c8c547366f88d89cc6dff",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/DSH/原生入口版本核对.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/DSH-a01/原生入口版本核对.json",
+      "original_sha256": "4ece2464ffb643618ed317329292b2bd2676194149df8b99008f4155814ea757",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/DSH/条目与指定位置独立核对-v02.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/DSH-a01/阶段02-修改后交付/条目与指定位置独立核对-v02.json",
+      "original_sha256": "81479925b9061e0bd2ccaf8f626c271b1a4e9eaffd0dd23373b9a485b1789422",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/DSH/文件独立核对.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/DSH-a01/阶段02-修改后交付/文件独立核对.json",
+      "original_sha256": "0f696fef459551381bfd1a4c495863161f8936bfc9523d262319826420d03967",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/WorkBuddy/score.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/WorkBuddy-a01/评分与归因.json",
+      "original_sha256": "6bccdefb44d14ca93b17b4e9116bb4ca526f7e9458023f17ffdb08997281dd09",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/WorkBuddy/第二轮用户入口确认.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/WorkBuddy-a01/第二轮用户入口确认.json",
+      "original_sha256": "06f713a4ef04c37d19fa728592dc3d384b529d5af7139662be85f8b5da4eb2e2",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/WorkBuddy/原生入口版本核对.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/WorkBuddy-a01/原生入口版本核对.json",
+      "original_sha256": "501e1fc8a3ad0bf977c690b55cebb18bdef202650e69bcee7dc3ddc59c1a834e",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/WorkBuddy/条目与指定位置独立核对-v02.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/WorkBuddy-a01/阶段02-修改后交付/条目与指定位置独立核对-v02.json",
+      "original_sha256": "02bcfd95a2a5aa334f686cadde2173072c1321ea9033046be8092a55351063a5",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/WorkBuddy/文件独立核对.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/WorkBuddy-a01/阶段02-修改后交付/文件独立核对.json",
+      "original_sha256": "80f21c538c0b98705e2d5be5a43d95b29e3ba7bb6a0871a55490e5df1329bd32",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/WorkBuddy/只读加载及摘要复核.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/WorkBuddy-a01/阶段02-修改后交付/只读加载及摘要复核.json",
+      "original_sha256": "5fe81048345d8d645a4ad00c1ffc1080c324b7413dfb1fe2005bc0ccf0c9ca17",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/WorkBuddy/发布返回对象复核.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/WorkBuddy-a01/阶段02-修改后交付/发布返回对象复核.json",
+      "original_sha256": "ea1ea4f0fdecba1ae0d2f26cf82269f5c3b4981d8a34af859c069c01425c669a",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/豆包办公/score.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/豆包办公-a01/评分与归因.json",
+      "original_sha256": "a1f9a08358b176d28f2610fcc6bcce5eb74b7d5d39caeeed247dbad8bc271ad7",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/豆包办公/第二轮用户入口确认.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/豆包办公-a01/第二轮用户入口确认.json",
+      "original_sha256": "06f713a4ef04c37d19fa728592dc3d384b529d5af7139662be85f8b5da4eb2e2",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/豆包办公/原生入口版本核对.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/豆包办公-a01/原生入口版本核对.json",
+      "original_sha256": "8eed5fa14fbf1840ebbae597b2405d408dab57e219edbd8ca1afc6aac6dee510",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/豆包办公/条目与指定位置独立核对-v02.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/豆包办公-a01/阶段02-修改后交付/条目与指定位置独立核对-v02.json",
+      "original_sha256": "17bb625a89c308e794db4df2c6149fadea9468c3e51c3a8904e9cfa83e3d4b34",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/豆包办公/文件独立核对.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/豆包办公-a01/阶段02-修改后交付/文件独立核对.json",
+      "original_sha256": "44050d3f1e2246866452ad3406af7352b33aaecd7842c9e40fc20c813e06ee4c",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/豆包办公/只读加载及摘要复核.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/豆包办公-a01/阶段02-修改后交付/只读加载及摘要复核.json",
+      "original_sha256": "d01559e000fe0020e656f7c5be22e9497c011f853ea12292546ab84e63d37394",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/豆包办公/发布返回对象复核.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/豆包办公-a01/阶段02-修改后交付/发布返回对象复核.json",
+      "original_sha256": "5df93276c8dee00429fb98879a395f690fdab8a8bb3ebe81b4fa9b028bac7584",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/元宝专家模式/score.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/元宝专家模式-a01/评分与归因.json",
+      "original_sha256": "daced191129f1122d87983bf93244ab1b3f79ec4432e6dfdec5e73438169b739",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/元宝专家模式/原生入口版本核对.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/元宝专家模式-a01/原生入口版本核对.json",
+      "original_sha256": "93894684bbe752efbed3be022acc0f137a78bab7300aad869d3cd3a4d8feb686",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/元宝专家模式/条目与指定位置独立核对-v02.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/元宝专家模式-a01/阶段02-修改后交付/条目与指定位置独立核对-v02.json",
+      "original_sha256": "32703931b6c4591ac4685c50a985f68e2df10630689c41fef35f82e95d213377",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/元宝专家模式/实际取回文件独立核对.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/元宝专家模式-a01/阶段02-修改后交付/实际取回文件独立核对.json",
+      "original_sha256": "bdf4ffff6afb296f7ebd97088822350e85b39b46ac24e0bd7bcc3776f7552a08",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/元宝专家模式/只读加载及摘要复核.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/元宝专家模式-a01/阶段02-修改后交付/只读加载及摘要复核.json",
+      "original_sha256": "18d341522d8b3ffa750a7321731f62e3db3a60f7835bec8bde3a2cf5e80b8bf7",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/元宝专家模式/首轮实际下载差异.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/元宝专家模式-a01/阶段01-原包交付/实际取件来源与字节核对.json",
+      "original_sha256": "57821464bd039c5bbf79d1d973e42ea4c4fb71ad308d3056645dc06d9ccbf70e",
+      "transformation": "公开JSON副本；替换本机路径，删除会话/账户标识与推理字段；不含原始附件、完整日志或模型思考",
+      "byte_identical_to_original": false
     }
   ]
 }

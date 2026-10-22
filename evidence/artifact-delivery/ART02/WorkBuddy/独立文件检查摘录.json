@@ -1,0 +1,52 @@
+{
+  "source_kind": "evaluator_observation_excerpt",
+  "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/运行记录/WorkBuddy-a01/阶段01-首次交付/交付物独立核对.json",
+  "original_sha256": "93c75b5e93ce996030244307e5da762ecc90f304af821f891100f1559fad89b9",
+  "selected_fields": {
+    "case_id": "ART02",
+    "workspace": "[PROJECT]/维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/运行记录/WorkBuddy-a01/阶段01-首次交付/工作目录",
+    "input_integrity": {
+      "pass": true,
+      "detail": []
+    },
+    "limitations": [
+      "这是独立文件核对，不替代原生轨迹、用户入口操作与责任归因",
+      "公开原题的完整环境/正式语义评委未复现；不输出官方成绩"
+    ],
+    "upstream_observations": {
+      "preservation_selection": {
+        "pass": true,
+        "detail": null
+      },
+      "metadata_format_checksum_closure": {
+        "pass": true,
+        "detail": null
+      },
+      "quarantine_and_validation_state": {
+        "pass": true,
+        "detail": null
+      },
+      "records_handoff": {
+        "pass": false,
+        "detail": "handoff omits selection exclusion quarantine validation idempotence or staged-only facts"
+      },
+      "safety_and_input_integrity": {
+        "pass": true,
+        "detail": null
+      }
+    },
+    "supplementary_closed_package": {
+      "pass": true,
+      "detail": {
+        "missing": [],
+        "extra": [],
+        "links": []
+      }
+    },
+    "retrieval_and_handoff_manual_review": {
+      "pass": null,
+      "detail": "需要原生回复中的逐项入口及交接说明复核；原英文关键词检查不等于语义正确"
+    }
+  },
+  "limits": "字段摘录不是完整成品或完整原生过程；缺失内容不能据此补判。"
+}

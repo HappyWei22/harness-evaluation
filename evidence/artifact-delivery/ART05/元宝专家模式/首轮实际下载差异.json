@@ -1,0 +1,86 @@
+{
+  "product": "元宝专家模式",
+  "case_id": "ART05",
+  "phase": "release",
+  "cloud_saved_workspace_reported": "/data/workspace/ART05-a01",
+  "source_kind": "actual_gui_downloads_from_first_reply_previews",
+  "route": "本轮最终文件卡片 → 对应文档预览 → 下载 → 原Office格式 → 系统保存面板 → 取得文件；三次界面均提示下载成功",
+  "input_attachment_cards_not_clicked_as_output": true,
+  "evaluator_local_directory_role": "真实取回的文件，不是云端工作目录镜像",
+  "download_path_is_outside_any_product_workspace": true,
+  "files": [
+    {
+      "name": "public_company_reporting.docx",
+      "bytes": 177079,
+      "sha256": "7dd31ba3af98f9d13a65f6cd78faa33bbc6ee8fd302e26803d48ec07952ffc21",
+      "initial_bytes": 164229,
+      "initial_sha256": "78b9376029ca5ab650d903c05b93ac8430a313d2f285a1f89b440f59dab1a765",
+      "matches_initial_bytes": false,
+      "zip_crc_pass": true,
+      "input_parts": 21,
+      "download_parts": 22,
+      "changed_parts": [
+        "[Content_Types].xml",
+        "_rels/.rels"
+      ],
+      "extra_parts": [
+        "docProps/custom.xml"
+      ],
+      "missing_parts": [],
+      "original_content_parts_equal": true
+    },
+    {
+      "name": "public_company_reporting.pptx",
+      "bytes": 410261,
+      "sha256": "e667fa729d6a56f8e334d06d7eef4280bed2c6697caec4774eb8b7302f656aad",
+      "initial_bytes": 385480,
+      "initial_sha256": "76f5905d4d2ba2c40c2dbf5116a9cee0419c025a9456864d638a688f25bc10f7",
+      "matches_initial_bytes": false,
+      "zip_crc_pass": true,
+      "input_parts": 481,
+      "download_parts": 482,
+      "changed_parts": [
+        "[Content_Types].xml",
+        "_rels/.rels"
+      ],
+      "extra_parts": [
+        "docProps/custom.xml"
+      ],
+      "missing_parts": [],
+      "original_content_parts_equal": true
+    },
+    {
+      "name": "public_company_reporting.xlsx",
+      "bytes": 13911653,
+      "sha256": "b8f4cdf620d00e5882e700ea12e44c1735e086ea16e68c6cd3b8c17785d00570",
+      "initial_bytes": 13616038,
+      "initial_sha256": "69c3f1ad7a5d700ffc877dc651c17b55f2eb6dbf4e08ecdb4a879f8231754c1a",
+      "matches_initial_bytes": false,
+      "zip_crc_pass": true,
+      "input_parts": 29,
+      "download_parts": 30,
+      "changed_parts": [
+        "[Content_Types].xml",
+        "_rels/.rels"
+      ],
+      "extra_parts": [
+        "docProps/custom.xml"
+      ],
+      "missing_parts": [],
+      "original_content_parts_equal": true
+    }
+  ],
+  "all_three_available": true,
+  "all_three_original_byte_match": false,
+  "cloud_saved_file_sha256_independently_verified": false,
+  "cloud_input_integrity_independently_verified": false,
+  "visible_tool_commands_present": true,
+  "complete_raw_cloud_tool_returns_available": false,
+  "model_self_report_is_not_independent_cloud_state": true,
+  "score": null,
+  "release_phase_score": 0,
+  "first_byte_deviation_must_not_block_second_round_if_parseable": true,
+  "evaluator_repaired_or_removed_metadata": false,
+  "download_security_urls_saved_or_republished": false,
+  "no_message_or_task_sent_by_evaluator": true
+}

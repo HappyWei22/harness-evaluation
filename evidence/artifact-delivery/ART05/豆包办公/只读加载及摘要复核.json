@@ -1,0 +1,52 @@
+{
+  "sheet_count": 16,
+  "dashboard_version": "2026.11-R3A4-D1",
+  "assumptions_version": "2026.11-R3A4-D1",
+  "library_change_log_rows_91_to_93": [
+    [
+      "CHG-0090",
+      "2026-09-09 00:00:00",
+      "Narrative report",
+      "Update review narrative",
+      "Compliance",
+      "Data owner",
+      "2026.09-R3"
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "CHG-0092",
+      null,
+      null,
+      "REV-2026-018 | delivery correction only | prior version 2026.11-R3A4",
+      null,
+      null,
+      "2026.11-R3A4-D1"
+    ]
+  ],
+  "library": "openpyxl, python-pptx, python-docx",
+  "does_not_prove_row_schema_validity": true,
+  "slide_count": 112,
+  "body_paragraph_count": 664,
+  "table_count": 26,
+  "subtitle": "Management evidence book | public data with a synthetic workflow overlay | Delivery correction REV-2026-018",
+  "version": "Version 2026.11-R3A4-D1",
+  "hashes_before": {
+    "public_company_reporting.xlsx": "100a40c6e54c58f25d57f21ff5a5c22531345014fa78746206644b30690a0467",
+    "public_company_reporting.docx": "78b7b95ef316059ca4e7b6b6499359133711e36e9f0bd5d08881afe24a500041",
+    "public_company_reporting.pptx": "abf5f24aa1c7d0a7c48f1987a8301f9c5bfbe2a5107bdf89896cc0bdf95d91cd"
+  },
+  "hashes_after": {
+    "public_company_reporting.xlsx": "100a40c6e54c58f25d57f21ff5a5c22531345014fa78746206644b30690a0467",
+    "public_company_reporting.docx": "78b7b95ef316059ca4e7b6b6499359133711e36e9f0bd5d08881afe24a500041",
+    "public_company_reporting.pptx": "abf5f24aa1c7d0a7c48f1987a8301f9c5bfbe2a5107bdf89896cc0bdf95d91cd"
+  },
+  "stable": true
+}

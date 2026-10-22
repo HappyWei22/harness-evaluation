@@ -1,0 +1,18 @@
+{
+  "method": "原生发布调用与工具返回为本地文件对象；用户确认实际取得本轮三份；将返回路径与独立验版的同一路径对应",
+  "publish_call_line": 89,
+  "publish_result_line": 90,
+  "native_local_paths": [
+    "[PROJECT]/独立测试工作区/WorkBuddy/ART05-a01/output/public_company_reporting.xlsx",
+    "[PROJECT]/独立测试工作区/WorkBuddy/ART05-a01/output/public_company_reporting.pptx",
+    "[PROJECT]/独立测试工作区/WorkBuddy/ART05-a01/output/public_company_reporting.docx"
+  ],
+  "paths_match_current_workspace": true,
+  "archived_paths_still_match_current": true,
+  "current_version": "2026.11-R3A4-D1",
+  "semantic_version_check": "阶段02-修改后交付/文件独立核对.json",
+  "user_retrieval_confirmation": "第二轮用户入口确认.json",
+  "download_copy_hash_comparison_performed": false,
+  "not_merely_click_success": true,
+  "limitations": "未另存用户下载副本，采用规则允许的原生本地文件对象路径证据；不声称云端导出或下载字节哈希复核。"
+}

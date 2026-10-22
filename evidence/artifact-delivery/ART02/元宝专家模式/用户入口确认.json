@@ -1,0 +1,10 @@
+{
+  "case_id": "ART02",
+  "product": "元宝专家模式",
+  "actual_retrieval": "confirmed_by_evaluator_gui_download",
+  "all_required_artifacts_retrieved": true,
+  "evidence": "阶段01-实际取件/取件来源.json",
+  "latest_user_message": null,
+  "latest_user_message_is_retrieval_confirmation": null,
+  "note": "元宝原生最终ZIP入口已由评测助手实际下载；包内九份成果完整，清单与实际记录对应。"
+}

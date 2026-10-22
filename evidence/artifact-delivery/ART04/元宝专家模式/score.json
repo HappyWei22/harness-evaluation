@@ -1,0 +1,69 @@
+{
+  "case_id": "ART04",
+  "task_name": "三文件修订与多轮交付首轮",
+  "date": "2026-10-22",
+  "product": "元宝专家模式",
+  "rule_version": "art04-1.0.0-preflight",
+  "common_scope_review": "2026-10-22-common-unknown",
+  "product_runs": 1,
+  "max_score": 4,
+  "confirmed_score": 0,
+  "known_failed_score": 1,
+  "unknown_score": 3,
+  "formal_score": null,
+  "is_pure_harness_causal_score": false,
+  "judgment_scope": "当前未交付观察；后台是否完成未知，非新增超时规则。若同一会话后续产出，保留本次观察并追加更新。",
+  "items": [
+    {
+      "id": "ART04-1",
+      "name": "首轮最终版保存",
+      "allocation": 1,
+      "score": null,
+      "verdict": "unknown_no_cloud_artifact",
+      "reason": "未取得实际成品或云端保存现场，无法核对版本；不把无回复解释为内部从未保存。"
+    },
+    {
+      "id": "ART04-2",
+      "name": "首轮三文件齐全且对应",
+      "allocation": 1,
+      "score": null,
+      "verdict": "unknown_no_cloud_artifact",
+      "reason": "界面没有成品；未取得云端output与input，无法独立判定三文件是否保存及输入是否原样。"
+    },
+    {
+      "id": "ART04-3",
+      "name": "首轮结构和非目标内容保留",
+      "allocation": 1,
+      "score": null,
+      "verdict": "unknown_task_scope_and_no_artifact",
+      "reason": "共同任务授权范围歧义保留，另缺实际成品，不能核对结构。"
+    },
+    {
+      "id": "ART04-4",
+      "name": "首轮实际取件",
+      "allocation": 1,
+      "score": 0,
+      "verdict": "fail_no_entry_at_observation",
+      "reason": "用户报告本轮最后没有输出；原生界面仍只有正在处理，没有任何交付入口，当前用户未取得三份成果。依据是未交付事实，不是等待时长。",
+      "evidence": [
+        "阶段01-界面未交付观察/观察记录.json",
+        "阶段01-界面未交付观察/原生界面截图.png",
+        "阶段01-界面未交付观察/原生界面文字.txt"
+      ]
+    }
+  ],
+  "followup_sent": false,
+  "followup_phase_allocation": 0,
+  "followup_replacement": "ART05",
+  "product_outputs_modified_by_evaluator": false,
+  "product_task_retried_by_evaluator": false,
+  "read_isolation_verified": false,
+  "raw_upstream_local": null,
+  "limits": [
+    "没有明确错误信息、完整原生调用返回或云端工作目录，无法定位是否卡在部署、计算、任务执行或界面显示。",
+    "页面可见输入附件不等于确认逐字节部署或成功读取。",
+    "不将本机元宝暂存目录当云端现场。",
+    "尚无后台完成事件或事前超时阈值，未交付判定限于当前观察，不能宣称已证明永久失败或保存工具故障。",
+    "未运行原题程序，因为没有可验证的产品输出；不以输入副本或参考成品替代。"
+  ]
+}

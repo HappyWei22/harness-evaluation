@@ -1,0 +1,91 @@
+{
+  "case_id": "ART01",
+  "task_name": "技能包整理与可用性交付",
+  "rule_version": "0.1.0-pilot",
+  "date": "2026-10-22",
+  "product": "DSH",
+  "product_runs": 1,
+  "status": "completed_candidate_pass",
+  "confirmed_score": 2,
+  "candidate_max_score": 2,
+  "unknown_score": 0,
+  "formal_score": null,
+  "is_pure_harness_causal_score": false,
+  "items": [
+    {
+      "id": "ART01-1",
+      "name": "包内文件、结构与清单对应",
+      "score": 1,
+      "max_score": 1,
+      "verdict": "pass",
+      "evidence": [
+        {
+          "file": "阶段01-完成后/交付物独立核对.json",
+          "keys": [
+            "input_integrity",
+            "upstream_detailed_checks"
+          ]
+        },
+        {
+          "file": "阶段01-完成后/原生日志/session.v4.jsonl",
+          "lines": [
+            93,
+            101,
+            109,
+            125
+          ]
+        }
+      ],
+      "confidence": "高：独立文件检查与原生日志一致，九个原件指纹与运行前快照一致",
+      "attribution": "仅确认本次产品执行成功；未发现保存/打包失败，不推断Harness独立优势"
+    },
+    {
+      "id": "ART01-2",
+      "name": "用户取得的包可实际使用",
+      "score": 1,
+      "max_score": 1,
+      "verdict": "pass",
+      "evidence": [
+        {
+          "file": "阶段01-完成后/交付物独立核对.json",
+          "keys": [
+            "local_archive_usability"
+          ]
+        },
+        {
+          "file": "阶段01-完成后/原生日志/session.v4.jsonl",
+          "lines": [
+            117,
+            131,
+            132,
+            136
+          ]
+        },
+        {
+          "file": "用户入口确认.json",
+          "keys": [
+            "answer",
+            "user_confirmed_open_or_download"
+          ]
+        }
+      ],
+      "confidence": "原生发布、实际解包运行和独立运行核对一致；入口实际点击成功由用户直接确认，无独立点击录屏或另一个下载副本",
+      "attribution": "present发布的本地路径与实际正确ZIP对应；用户入口使用成功，不证明所有客户端或长期稳定性"
+    }
+  ],
+  "upstream_result": {
+    "raw_checks_passed": 14,
+    "raw_checks_total": 16,
+    "raw_false_checks": [
+      "safe_extraction",
+      "runtime_smoke"
+    ],
+    "interpretation": "本机macOS RLIMIT_AS兼容问题已在正确样例校准中复现；两项原false不作为产品失败。原正式成绩留空；本地可信解包运行补充检查通过"
+  },
+  "limitations": [
+    "本题只覆盖基础候选2分，复杂8分未运行",
+    "单次、单产品、原生模型/Skill未统一，不代表纯Harness比较或稳定性",
+    "产品工作区外读取隔离未独立建立；已审查可见调用未发现答案接触",
+    "入口使用依据用户直接确认，未取得独立点击日志或另一个下载副本"
+  ]
+}

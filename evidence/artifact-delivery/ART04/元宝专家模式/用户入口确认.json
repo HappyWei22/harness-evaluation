@@ -1,0 +1,11 @@
+{
+  "product": "元宝专家模式",
+  "case_id": "ART04",
+  "user_report": "元宝最后没有给输出",
+  "elapsed_answer": "超过15分钟",
+  "actual_output_entry_available_at_observation": false,
+  "cloud_outputs_exist": null,
+  "backend_completion_state": null,
+  "evidence": "阶段01-界面未交付观察/观察记录.json",
+  "no_retry_requested_or_performed": true
+}

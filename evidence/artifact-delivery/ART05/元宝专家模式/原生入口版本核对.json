@@ -1,0 +1,12 @@
+{
+  "native_conversation": "0RIHagCr36f",
+  "source_kind": "实际第二轮最终卡片的预览下载，不是上传附件或首轮卡片",
+  "three_actual_downloads": true,
+  "version": "2026.11-R3A4-D1",
+  "version_checks": "阶段02-修改后交付/实际取回文件独立核对.json",
+  "exactly_one_new_log_record": true,
+  "all_three_changed_since_first": true,
+  "download_manifest": "阶段02-修改后交付/归档清单.json",
+  "cloud_workspace_snapshot_available": false,
+  "limits": "能够确认本轮真实取件和版本；不声称云端input摘要已独立验证，也不把本机部署输入当云端快照。"
+}

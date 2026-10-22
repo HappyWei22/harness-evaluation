@@ -1,0 +1,12 @@
+{
+  "case_id": "ART02",
+  "product": "豆包办公",
+  "actual_retrieval": "map_located_in_local_directory_ui_route_not_confirmed",
+  "all_required_artifacts_retrieved": null,
+  "evidence": null,
+  "latest_user_message": "在'[PROJECT]/独立测试工作区/豆包办公/ART02-a01/staged_transfer/records/REC-002/district_boundary_map.tif'\n这里能找da0",
+  "latest_user_message_is_retrieval_confirmation": false,
+  "note": "用户已确认地图在本地指定路径能找到。未说明经原回复卡片打开或自行按路径查找；仅补记可定位，不推断预览成功或全部九份成果已从原入口取得。",
+  "map_local_location_confirmed": true,
+  "original_reply_entry_route_confirmed": null
+}

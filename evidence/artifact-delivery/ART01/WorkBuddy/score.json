@@ -1,0 +1,57 @@
+{
+  "case_id": "ART01",
+  "task_name": "技能包整理与可用性交付",
+  "product": "WorkBuddy",
+  "rule_version": "0.1.0-pilot",
+  "product_runs": 1,
+  "max_score": 2,
+  "confirmed_score": 2,
+  "known_failed_score": 0,
+  "unknown_score": 0,
+  "formal_score": null,
+  "is_pure_harness_causal_score": false,
+  "items": [
+    {
+      "id": "ART01-1",
+      "name": "包内文件、结构与清单对应",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "evidence": [
+        "阶段01-首次交付/交付物独立核对.json",
+        "轨迹核对.json"
+      ],
+      "reason": "四个包内条目、载荷和清单符合合同，公开九份原件和工具逐项指纹不变。"
+    },
+    {
+      "id": "ART01-2",
+      "name": "用户取得的包可实际使用",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "evidence": [
+        "用户入口确认.json",
+        "阶段01-首次交付/交付物独立核对.json"
+      ],
+      "reason": "原生发布路径与本轮文件对应，用户确认实际取件；可信载荷指纹核对后独立解包运行通过。"
+    }
+  ],
+  "product_outputs_modified_by_evaluator": false,
+  "limits": [
+    "仅一次原生配置试测，不能推出稳定性或纯Harness优势",
+    "缺证据不记为失败；原题聚合结果与本维度两分分别保留"
+  ],
+  "separate_findings": [
+    {
+      "kind": "unexpected_workspace_memory",
+      "path": ".workbuddy/memory/2026-10-22.md",
+      "native_context_line": 3,
+      "write_call_line": 65,
+      "original_workspace_requirement_passed": false,
+      "dimension_effect": "不扩充冻结的包内/清单/原件保护观察项为全工作区清洁门；保留原题workspace_scope失败，不删除记忆文件、不改原程序失败。",
+      "self_report_issue": "最终回复声称工作区只增加ZIP，但交付前另写了记忆文件。",
+      "causal_evidence": "原生提醒要求写记忆，与实际写入吻合；尚未做单组件对照。"
+    }
+  ],
+  "interpretation": "维度2/2不表示全部原题要求通过；原题工作区清洁要求明确失败。"
+}

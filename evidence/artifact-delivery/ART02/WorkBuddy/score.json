@@ -1,0 +1,71 @@
+{
+  "case_id": "ART02",
+  "task_name": "电子档案筛选与移交包交付",
+  "product": "WorkBuddy",
+  "rule_version": "0.1.1-scope-audit",
+  "product_runs": 1,
+  "max_score": 2,
+  "confirmed_score": 1,
+  "known_failed_score": 1,
+  "unknown_score": 0,
+  "formal_score": null,
+  "is_pure_harness_causal_score": false,
+  "items": [
+    {
+      "id": "ART02-2",
+      "name": "清单对应实物",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "实际九份成果完整；三份记录路径、元数据、字节和摘要与清单对应，回执引用摘要匹配，暂存树无额外记录。",
+      "evidence": [
+        "../../../三产品并行试测/ART02三产品独立核对.json"
+      ]
+    },
+    {
+      "id": "ART02-4",
+      "name": "成果齐全且可取",
+      "allocation": 1,
+      "score": 0,
+      "verdict": "fail",
+      "reason": "原生present_files仅发布六份说明和清单，最终回复只以REC-00{1,2,3}/…概括记录目录；没有三份实际记录副本的明确可打开入口，也没有完整成果ZIP。文件保存通过，最终交付不完整。",
+      "evidence": [
+        "阶段01-首次交付/原生记录/1a37e070-3abe-4851-8d64-bc663dd321c5.jsonl:112",
+        "产品最终回复-原生日志提取.md",
+        "用户入口确认.json"
+      ]
+    }
+  ],
+  "excluded_business_items": [
+    {
+      "id": "ART02-1",
+      "name": "交付选择有依据",
+      "dimension_score": null
+    },
+    {
+      "id": "ART02-3",
+      "name": "异常处理完整",
+      "dimension_score": null
+    }
+  ],
+  "separate_findings": [
+    {
+      "kind": "repeat_apply_environment_error_and_workaround",
+      "evidence": "阶段01-首次交付/原生记录/1a37e070-3abe-4851-8d64-bc663dd321c5.jsonl:50,61,72,81-82",
+      "observed": "同一计划重复apply三次报PermissionError: EEXIST；第81行关闭沙箱参数并清除两个hook标记后，第82行apply及verify成功，七份生成文件未漂移。",
+      "interpretation": "失败栈进入WorkBuddy注入的Python文件操作代理；支持本次执行链相关性，不证明已修复代理，也不将绕行后成功写成原配置稳定通过。",
+      "permission_acceptance_evidence": "原生参数可见，是否经过产品用户审批的界面证据未取得；不在本维度新增权限分。"
+    },
+    {
+      "kind": "extra_memory_outside_staged_package",
+      "path": ".workbuddy/memory/2026-10-22.md",
+      "dimension_effect": "本题没有ART01的工作区仅允许初始文件和ZIP的约束；不沿用上一题工作区违规结论。"
+    }
+  ],
+  "product_outputs_modified_by_evaluator": false,
+  "limits": [
+    "原有英文关键词检查的handoff失败完整保留，人工语义复核见本次试测结果，不改原程序结果。",
+    "未复现官方语义评委；仅单次原生产品结果，不推出稳定性或纯Harness因果结论。"
+  ],
+  "interpretation": "依据原生发布调用与最终回复确认交付入口缺失；不声称文件不存在，不用评测助手补充的完整路径替产品补交付。"
+}

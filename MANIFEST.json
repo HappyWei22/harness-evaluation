@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "scope": "本公开包实际文件指纹，排除本清单自身。",
   "files": [
     {
@@ -14,18 +14,38 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 5744,
-      "sha256": "9040034df003ab90e28de0d36405b45da1152417f1fe881bc93d1c2642551b06"
+      "bytes": 6457,
+      "sha256": "f5c900694a187c36da8b8b54a33b089c9d5921023af0560d7bf8b6cd01515def"
     },
     {
       "path": "PROVENANCE.json",
-      "bytes": 199935,
-      "sha256": "8ff006f48b45ddb1cc3320dd3509e379cbea57e9bffbf3e723c5ac33d33a6644"
+      "bytes": 232981,
+      "sha256": "59b142ba9d1c289659008ff1e575dd0f82b6c2455464ae8f099cc40b9987feca"
     },
     {
       "path": "README.md",
-      "bytes": 11802,
-      "sha256": "775cabab778d19afae3d3485c8e544630154ced179d5877245a50b3f47f0c676"
+      "bytes": 12586,
+      "sha256": "fead5e5a2681d53c15996b083f30b1623603260ee11382ed084e21966692b959"
+    },
+    {
+      "path": "cases/ART01/README.md",
+      "bytes": 782,
+      "sha256": "97a45dc585833c244847cd4e708ad0946b5847987d6500658c89ee6de645ccb6"
+    },
+    {
+      "path": "cases/ART02/README.md",
+      "bytes": 772,
+      "sha256": "6a5d1c04a143a5d267fd7a78d405d6657d2f394dab48f1113df4e0e27908378e"
+    },
+    {
+      "path": "cases/ART04/README.md",
+      "bytes": 802,
+      "sha256": "910828002327764fd0857e97a3e1f85d3a71e74973ea24e6fa35493d22aae811"
+    },
+    {
+      "path": "cases/ART05/README.md",
+      "bytes": 877,
+      "sha256": "3bbc7d5fa0040f1e69c16598bb7217fe5a1b53f55686030cd4997e9b88ed736e"
     },
     {
       "path": "cases/CTX01/README.md",
@@ -314,8 +334,13 @@
     },
     {
       "path": "checks/verify.py",
-      "bytes": 20266,
-      "sha256": "73acebdf3501789314200b2cb57461b7d8f13f75a8051ba43744300300e84adf"
+      "bytes": 20478,
+      "sha256": "bd5f2d543b825f25590cfd8a8580d6a62793c9b9901b7f871eb473f05fb0f6aa"
+    },
+    {
+      "path": "checks/verify_artifacts.py",
+      "bytes": 3496,
+      "sha256": "70afd841e02fb3c7de81107e4f484f9153ad5dc589ed8901e04f7a71b9ba2872"
     },
     {
       "path": "checks/verify_permissions.py",
@@ -334,8 +359,8 @@
     },
     {
       "path": "checks/整理检查结果.md",
-      "bytes": 2518,
-      "sha256": "6d51574be0ec919615ec16f8d0e8b882f9afe89353e301b11e4313f784aad88a"
+      "bytes": 2979,
+      "sha256": "138f0b675414cc86f3a028c9e63d8faa7378d3120f5f84a47eca637a117ade76"
     },
     {
       "path": "checks/权限材料整理检查-2026-10-21.md",
@@ -389,8 +414,8 @@
     },
     {
       "path": "docs/公开材料与来源说明.md",
-      "bytes": 8677,
-      "sha256": "df3c4aecd0ed2825c49f76eb9ed46a69c41817c9d8002457ebaf1ca322002889"
+      "bytes": 9066,
+      "sha256": "9baae59dce57981a68a9180c9d3d57e0d25007dd771db54c2a5ab77cf4be00ff"
     },
     {
       "path": "docs/单次评测记录模板.md",
@@ -414,8 +439,8 @@
     },
     {
       "path": "docs/待完成事项.md",
-      "bytes": 2591,
-      "sha256": "8abde7661984f502e4a1de7be7e601267efc23f2c7539a8d5a48a2d16a8f2ce7"
+      "bytes": 2722,
+      "sha256": "af8ec3d009bfb1abd0d0e7e85053b11add49a4fa4d363501871389cd343f4324"
     },
     {
       "path": "docs/打分与证据规则.md",
@@ -451,6 +476,11 @@
       "path": "docs/阶段进展/2026-10-22.md",
       "bytes": 1691,
       "sha256": "863467e4d806823aa91186ebedad2a168dbae505a8eb813b2d7e5cb9b5b56d7d"
+    },
+    {
+      "path": "docs/阶段进展/2026-10-23.md",
+      "bytes": 940,
+      "sha256": "08dfa71ac57a4931f33991892820c55299a7c31502932b2daa16344338b8d75c"
     },
     {
       "path": "evidence/PERM01/Codex-a01/files/inside-运行后-allowed_record.txt",
@@ -1106,6 +1136,306 @@
       "path": "evidence/PERM02/blobs/f996fec6e78f180ab97c2ed80b5534dac687f373cbc463e2b2a6b9c68ca09058.txt",
       "bytes": 51,
       "sha256": "f996fec6e78f180ab97c2ed80b5534dac687f373cbc463e2b2a6b9c68ca09058"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/DSH/score.json",
+      "bytes": 2929,
+      "sha256": "02387ae3c0e4f23b943e0acc7968129dbb8ee23ebd26560b08d332dc432419c9"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/DSH/独立文件检查摘录.json",
+      "bytes": 2246,
+      "sha256": "d5db0cf47479c7baae25e6478d1ddb2c580bb72a387491da7a84855f7f638067"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/DSH/用户入口确认.json",
+      "bytes": 469,
+      "sha256": "d5b7071855e66158cd9817503f553006c7b800f3204e6f3fd4e620cdbbc2ede7"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/WorkBuddy/score.json",
+      "bytes": 2142,
+      "sha256": "471ef95ac6a6c7c1eb35a3cb3842d987339bc8499c18d8c984522418fd5e2ccb"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/WorkBuddy/独立文件检查摘录.json",
+      "bytes": 2265,
+      "sha256": "be3def28c2301436c9bd097ed62d5b353b7a7ace619a02f65d279800234637cd"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/WorkBuddy/用户入口确认.json",
+      "bytes": 447,
+      "sha256": "279b2e37d07a6202c04f220d8bcbf4ab5d06d8a836f8b6ed0e17bd82a4cbc2d5"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/元宝专家模式/score.json",
+      "bytes": 1550,
+      "sha256": "44ed474c750b76d9ebc142a0c7d3263a263b803e466fb0719b87b5c44a8d3bf1"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/元宝专家模式/独立文件检查摘录.json",
+      "bytes": 1698,
+      "sha256": "9cd1f91dea0614f812b18298df5b41748762d161cfbb568458f124010e60786b"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/元宝专家模式/用户入口确认.json",
+      "bytes": 455,
+      "sha256": "485ac950a8f2999e0220a04584b3b9ab29af23f9bcbbab93ea5f6d57e283dc57"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/豆包办公/score.json",
+      "bytes": 1371,
+      "sha256": "7291114cf69a1ee602ec65bc0563a856fd525a06c09283ba00dff232248f362b"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/豆包办公/独立文件检查摘录.json",
+      "bytes": 2270,
+      "sha256": "f6411c6eff8d1b56a6d4b8654ef2908959d9e3496c84d2a34ab09bab10f50ef5"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/豆包办公/用户入口确认.json",
+      "bytes": 450,
+      "sha256": "e02773f9ddc2e012fd9c66345505d663a9d8d4c587a0c1d2703fb6be8cc4f7fc"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/DSH/score.json",
+      "bytes": 6726,
+      "sha256": "97a4d9d8ef48fd72edf783d387e04dee8feeaba9febb230a1e3f337d7c0d2470"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/DSH/独立文件检查摘录.json",
+      "bytes": 1844,
+      "sha256": "7ca2b7f3cbd475738354a78cba81e8f42d5b3950ccda2627c7b77b6ea952b020"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/DSH/用户入口确认.json",
+      "bytes": 468,
+      "sha256": "ca28103344aee933568ea05dc3f3eb95c77cebdfb26a4b6f48864ea6917c4203"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/WorkBuddy/score.json",
+      "bytes": 3110,
+      "sha256": "af6ffcc72b7594b44d340803a2a08d9e33c94488cee48036ca3509368c5a6f9d"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/WorkBuddy/独立文件检查摘录.json",
+      "bytes": 1862,
+      "sha256": "50c2e0795af4bb481d874a6ee05f6fff31793582761723494a13387c4ca7616c"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/WorkBuddy/用户入口确认.json",
+      "bytes": 863,
+      "sha256": "221b4ff5c962eaaf5d53b88912f494ac3c52ab117661a82a75df6e13641869fe"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/元宝专家模式/score.json",
+      "bytes": 2514,
+      "sha256": "7d8ffffb0849e47c54a57774773fced064682af274a20eb635b50099da6ab3be"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/元宝专家模式/用户入口确认.json",
+      "bytes": 441,
+      "sha256": "d385a0001f489ac925ca334ec41fc5e5e363681e930d8ab6ec74cab1357be368"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/豆包办公/score.json",
+      "bytes": 2346,
+      "sha256": "72506c21c859ad1f35fd18eb04a83eabe0a5e638c2e2662105cedc118c487a5b"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/豆包办公/独立文件检查摘录.json",
+      "bytes": 1868,
+      "sha256": "b6031b3c3f7c4bfc4a1b0e4174ab93c46e0ff5a011702ca8e342aba8fe60f942"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/豆包办公/用户入口确认.json",
+      "bytes": 721,
+      "sha256": "9dc67c14a5af874d9ce143fe55441f535834181752b47daeaa43480d5fb511ca"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/DSH/score.json",
+      "bytes": 4641,
+      "sha256": "0e2e5a4dc59860bd893848240bfe8f051f7aa1817032c58c46c319ab01a0a6ce"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/DSH/独立文件检查摘录.json",
+      "bytes": 4156,
+      "sha256": "1134d55f1d2de2c2609f5d96e13d1064ed0fbe1ee755d860cb802e12e25954c5"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/DSH/用户入口确认.json",
+      "bytes": 358,
+      "sha256": "cd274d94812298c00d8769387ed1683d956726d3f13da3add167a326998e1ccb"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/WorkBuddy/score.json",
+      "bytes": 3902,
+      "sha256": "86058ccc161bb3042c8ec1ca674847d9fac69a81b38775cf922d584c104c2659"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/WorkBuddy/独立文件检查摘录.json",
+      "bytes": 4159,
+      "sha256": "6ec8e971aa491085b361a1213e68546ec5dd67089855efa9eef894f5fb4bfaf5"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/WorkBuddy/用户入口确认.json",
+      "bytes": 393,
+      "sha256": "831cf16b4ee9967b8a035ff7ab5e12dd2cd66c1693be138a1f1884e247a0209c"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/元宝专家模式/score.json",
+      "bytes": 2901,
+      "sha256": "8a82f76dde4cfd083a0e3e801b01e6c0f5328d724b98fd3a3cac151e65a8cf1c"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/元宝专家模式/用户入口确认.json",
+      "bytes": 379,
+      "sha256": "6bfc6eb64752ac88c9e54d5b85b57e24c55206ebd6f32fdee55a078c5b2e91f4"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/豆包办公/score.json",
+      "bytes": 3823,
+      "sha256": "c636d9c595178d5fd129404dab1ef7a71dc8a448939706ecf5b765e872f0f033"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/豆包办公/独立文件检查摘录.json",
+      "bytes": 4165,
+      "sha256": "529a7955c154f25739a129eaa1aacd434231668163133447f284cf5aeca1799b"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/豆包办公/用户入口确认.json",
+      "bytes": 396,
+      "sha256": "caca45fd277dc38be5fa6f39f7c20efae5489b189a54aa92c9cc6ccf15317660"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/DSH/score.json",
+      "bytes": 2018,
+      "sha256": "e682af812ee30d875d1de0d06e591a4085cbd912208ad57e72be0e06ff80911c"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/DSH/原生入口版本核对.json",
+      "bytes": 2895,
+      "sha256": "2fd2d1c7206c160a3f9009d6e2490cece9af9cfb719a352c68f01a0c4ffdca21"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/DSH/文件独立核对.json",
+      "bytes": 16445,
+      "sha256": "73f794afc46851c8640b98546b2ebff525a2012fba8d435b500fb5bf8e650984"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/DSH/条目与指定位置独立核对-v02.json",
+      "bytes": 11660,
+      "sha256": "81479925b9061e0bd2ccaf8f626c271b1a4e9eaffd0dd23373b9a485b1789422"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/DSH/第二轮用户入口确认.json",
+      "bytes": 630,
+      "sha256": "8b8c6256f3204cd5851b7e2ffdd115fdc9cd04c67d0c8c547366f88d89cc6dff"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/WorkBuddy/score.json",
+      "bytes": 2108,
+      "sha256": "6bccdefb44d14ca93b17b4e9116bb4ca526f7e9458023f17ffdb08997281dd09"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/WorkBuddy/原生入口版本核对.json",
+      "bytes": 1066,
+      "sha256": "81aba4ae11358fa5e54f00b8ef597af5ca4dd357cc1d9cd7162e27ce8507c14d"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/WorkBuddy/发布返回对象复核.json",
+      "bytes": 460,
+      "sha256": "acbaced1f3d6a4e6bb7c26156875085f92c546d2379e2161dcd09eed220e66b1"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/WorkBuddy/只读加载及摘要复核.json",
+      "bytes": 1741,
+      "sha256": "5fe81048345d8d645a4ad00c1ffc1080c324b7413dfb1fe2005bc0ccf0c9ca17"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/WorkBuddy/文件独立核对.json",
+      "bytes": 16439,
+      "sha256": "80f21c538c0b98705e2d5be5a43d95b29e3ba7bb6a0871a55490e5df1329bd32"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/WorkBuddy/条目与指定位置独立核对-v02.json",
+      "bytes": 11666,
+      "sha256": "02bcfd95a2a5aa334f686cadde2173072c1321ea9033046be8092a55351063a5"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/WorkBuddy/第二轮用户入口确认.json",
+      "bytes": 421,
+      "sha256": "06f713a4ef04c37d19fa728592dc3d384b529d5af7139662be85f8b5da4eb2e2"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/元宝专家模式/score.json",
+      "bytes": 2262,
+      "sha256": "daced191129f1122d87983bf93244ab1b3f79ec4432e6dfdec5e73438169b739"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/元宝专家模式/原生入口版本核对.json",
+      "bytes": 634,
+      "sha256": "93894684bbe752efbed3be022acc0f137a78bab7300aad869d3cd3a4d8feb686"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/元宝专家模式/只读加载及摘要复核.json",
+      "bytes": 1741,
+      "sha256": "18d341522d8b3ffa750a7321731f62e3db3a60f7835bec8bde3a2cf5e80b8bf7"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/元宝专家模式/实际取回文件独立核对.json",
+      "bytes": 16457,
+      "sha256": "bdf4ffff6afb296f7ebd97088822350e85b39b46ac24e0bd7bcc3776f7552a08"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/元宝专家模式/条目与指定位置独立核对-v02.json",
+      "bytes": 12081,
+      "sha256": "32703931b6c4591ac4685c50a985f68e2df10630689c41fef35f82e95d213377"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/元宝专家模式/首轮实际下载差异.json",
+      "bytes": 3115,
+      "sha256": "38d7d65f13e44714f64a8a331915eb97fba7f679a8e867f3c83a4fb7233bbe1d"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/豆包办公/score.json",
+      "bytes": 2334,
+      "sha256": "a1f9a08358b176d28f2610fcc6bcce5eb74b7d5d39caeeed247dbad8bc271ad7"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/豆包办公/原生入口版本核对.json",
+      "bytes": 1075,
+      "sha256": "88a97d2d6ac0dda9cec0913986b5904c3447411aa4532680425139a11ec7be77"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/豆包办公/发布返回对象复核.json",
+      "bytes": 469,
+      "sha256": "14870d8e22efa70542188916311a8c90cfc07cb688daddd6810df47ccecfcf00"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/豆包办公/只读加载及摘要复核.json",
+      "bytes": 1642,
+      "sha256": "d01559e000fe0020e656f7c5be22e9497c011f853ea12292546ab84e63d37394"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/豆包办公/文件独立核对.json",
+      "bytes": 16442,
+      "sha256": "44050d3f1e2246866452ad3406af7352b33aaecd7842c9e40fc20c813e06ee4c"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/豆包办公/日志行结构现场.json",
+      "bytes": 1069,
+      "sha256": "ca99521bd771893701fa30895dda8d843402ef17f7bd435d7018b78c16ffdef8"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/豆包办公/条目与指定位置独立核对-v02.json",
+      "bytes": 11785,
+      "sha256": "17bb625a89c308e794db4df2c6149fadea9468c3e51c3a8904e9cfa83e3d4b34"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/豆包办公/第二轮用户入口确认.json",
+      "bytes": 421,
+      "sha256": "06f713a4ef04c37d19fa728592dc3d384b529d5af7139662be85f8b5da4eb2e2"
     },
     {
       "path": "evidence/context-compression/Codex/compaction-check.json",
@@ -2186,6 +2516,16 @@
       "path": "results/PERM02/WorkBuddy-a01.json",
       "bytes": 5390,
       "sha256": "11e745f1c9a9f12bc5e20897bbb52dd03eab506f906a292e5d346c231167bfa3"
+    },
+    {
+      "path": "results/artifact-delivery.json",
+      "bytes": 12009,
+      "sha256": "27166d7027a9505272dd71c23372d8207d45253824edc59585ad1e4448c3a2a3"
+    },
+    {
+      "path": "results/artifact-delivery.md",
+      "bytes": 4437,
+      "sha256": "5a3221ee40d288d40895ac8a0320ec0b3daffd580c36a000b503790eb3e78cd0"
     },
     {
       "path": "results/context-compression.json",

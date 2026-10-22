@@ -1,0 +1,124 @@
+{
+  "case_id": "ART04",
+  "task_name": "三文件修订与多轮交付",
+  "date": "2026-10-22",
+  "product": "DSH",
+  "rule_version": "art04-1.0.0-preflight",
+  "product_runs": 1,
+  "max_score": 6,
+  "first_phase_allocation": 4,
+  "followup_phase_allocation": 2,
+  "confirmed_score": 2,
+  "known_failed_score": 1,
+  "unknown_or_disputed_score": 1,
+  "not_triggered_score": 2,
+  "raw_first_phase_frozen_score": 2,
+  "formal_score": null,
+  "is_pure_harness_causal_score": false,
+  "items": [
+    {
+      "id": "ART04-1",
+      "name": "首轮最终版保存",
+      "allocation": 1,
+      "score": 0,
+      "verdict": "fail",
+      "evidence": [
+        "阶段01-首次交付/文件独立核对.json:version_observation",
+        "首轮差异与归因核对.json:ppt_footer_values",
+        "阶段01-首次交付/工作目录/work/patch_pptx.py"
+      ],
+      "reason": "112页页脚未进入批准的新报告期及版本；末页标签已改，版本同步不完整",
+      "attribution": "现有修改脚本遗漏页脚，未见正确完整页脚版形成后被保存/交付工具丢失的证据，不作Harness保存机制故障归因"
+    },
+    {
+      "id": "ART04-2",
+      "name": "首轮三文件齐全且对应",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "evidence": [
+        "阶段01-首次交付/文件独立核对.json:package_state",
+        "阶段01-首次交付/文件独立核对.json:input_state",
+        "产品自检与独立检查对照.json"
+      ],
+      "reason": "三份原名Office成品齐全且确有改动，六份input未变，output无额外文件"
+    },
+    {
+      "id": "ART04-3",
+      "name": "首轮结构和非目标内容保留",
+      "allocation": 1,
+      "score": null,
+      "raw_frozen_program_score": 0,
+      "verdict": "unknown_task_scope_ambiguity",
+      "evidence": [
+        "阶段01-首次交付/文件独立核对.json:upstream_original",
+        "首轮差异与归因核对.json:scope_review"
+      ],
+      "reason": "已复现同步Word控制表版本仍被原程序判非目标变化；其他修改的授权边界仍不唯一，最终无法判断，不补分也不记确定失败。",
+      "attribution": "未把原失败改成通过，也不直接认定为产品越权破坏；需要独立审查验证范围",
+      "review_complete": true,
+      "review_evidence": "评测范围复核/复核结论.md"
+    },
+    {
+      "id": "ART04-4",
+      "name": "首轮实际取件",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass_user_confirmed",
+      "evidence": [
+        "用户入口确认.json",
+        "阶段01-首次交付/原生日志/session.v4.jsonl:589-590,594"
+      ],
+      "reason": "present三文件与最终入口对应，用户确认三份均可取得",
+      "limitations": "无独立保存的下载副本，不宣称实际下载字节比对"
+    },
+    {
+      "id": "ART04-5",
+      "name": "追加修改保存且前轮成果保留",
+      "allocation": 1,
+      "score": null,
+      "verdict": "not_triggered",
+      "reason": "事前固定首轮版本同步触发条件未满足，追加轮未发送"
+    },
+    {
+      "id": "ART04-6",
+      "name": "再次交付对应当前最新版",
+      "allocation": 1,
+      "score": null,
+      "verdict": "not_triggered",
+      "reason": "没有第二轮执行及取件证据"
+    }
+  ],
+  "raw_upstream_local": {
+    "passed": false,
+    "score": 53.7,
+    "semantic_score": 46.67,
+    "preservation_score": 81.82
+  },
+  "original_verifier_modified": false,
+  "rubric_modified_after_run": false,
+  "product_outputs_modified_by_evaluator": false,
+  "raw_program_failure_overridden_to_pass": false,
+  "followup_sent": false,
+  "separate_defects": [
+    {
+      "kind": "self_report_count",
+      "claim": 46,
+      "actual_PASS_lines": 45,
+      "effect": "回复计数不准确，单列，不重复扣保存分"
+    }
+  ],
+  "source_issues": [
+    "作者seed_input将先前实际数写入B5，而目标RAYONIER在A6/B6；输入B6仍2543，批准终值3125明确",
+    "原题要求同步受治理载体，但原preservation排除位置未涵盖部分目标业务内容，当前该项待判"
+  ],
+  "limitations": [
+    "单次产品试测；原生模型和Skill未统一，非纯Harness对照",
+    "未建立系统级读隔离；仅审查可见调用无评测者答案读取",
+    "用户直接确认入口，无独立下载副本",
+    "程序渲染及读图可见，不等于评测者全页视觉验收"
+  ],
+  "scope_review_complete": true,
+  "scope_review_verdict": "unknown_not_product_failure",
+  "review_file": "评测范围复核/复核结论.md"
+}

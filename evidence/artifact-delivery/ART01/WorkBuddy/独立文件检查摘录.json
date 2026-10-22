@@ -1,0 +1,54 @@
+{
+  "source_kind": "evaluator_observation_excerpt",
+  "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/运行记录/WorkBuddy-a01/阶段01-首次交付/交付物独立核对.json",
+  "original_sha256": "53b037f2c875574b656b0491791706b1f659577cd51e63c9b07fea8c16e1aee9",
+  "selected_fields": {
+    "case_id": "ART01",
+    "workspace": "[PROJECT]/维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/运行记录/WorkBuddy-a01/阶段01-首次交付/工作目录",
+    "input_integrity": {
+      "pass": true,
+      "detail": []
+    },
+    "limitations": [
+      "这是独立文件核对，不替代原生轨迹、用户入口操作与责任归因",
+      "公开原题的完整环境/正式语义评委未复现；不输出官方成绩"
+    ],
+    "upstream_observations": {
+      "business_result": {
+        "pass": false,
+        "detail": "unexpected final workspace files"
+      },
+      "evidence_consistency": {
+        "pass": false,
+        "detail": "unexpected final workspace files"
+      },
+      "complete_delivery": {
+        "pass": false,
+        "detail": "unexpected final workspace files"
+      },
+      "protected_workspace": {
+        "pass": true,
+        "detail": null
+      }
+    },
+    "local_archive_usability": {
+      "pass": true,
+      "detail": {
+        "returncode": 0,
+        "stdout": "{\"item_count\": 3, \"items\": [\"核对今日会议材料\", \"整理客户回访事项\", \"发送团队日程简报\"], \"schema_version\": \"calendar_briefing_result_v1\"}\n",
+        "stderr": "",
+        "trusted_payload_hash_checked_before_execution": true,
+        "limit": "本地补充检查未设置原验证器的Linux RLIMIT_AS；不等同原环境正式评分"
+      }
+    },
+    "upstream_runtime_environment": {
+      "platform": "darwin",
+      "qualification": "本机原正确样例的RLIMIT_AS设置失败；原safe_extraction/runtime_smoke不能直接作为产品失败证据"
+    },
+    "retrieved_bytes_match": {
+      "pass": null,
+      "detail": "尚未提供通过最终入口取得的文件；入口有效性待人工核对"
+    }
+  },
+  "limits": "字段摘录不是完整成品或完整原生过程；缺失内容不能据此补判。"
+}

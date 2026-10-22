@@ -1,0 +1,177 @@
+{
+  "date": "2026-10-22",
+  "case_id": "ART02",
+  "task_name": "电子档案筛选与移交包交付",
+  "product": "DSH",
+  "rule_version": "0.1.1-scope-audit",
+  "product_runs": 1,
+  "status": "scope_audited_two_points_retained",
+  "confirmed_score": 2,
+  "candidate_max_score": 4,
+  "unknown_score": 0,
+  "formal_score": null,
+  "is_pure_harness_causal_score": false,
+  "items": [
+    {
+      "id": "ART02-1",
+      "name": "交付选择有依据",
+      "score": null,
+      "max_score": 1,
+      "verdict": "excluded_from_dimension",
+      "evidence": [
+        {
+          "file": "阶段01-完成后/交付物独立核对.json",
+          "upstream_keys": [
+            "preservation_selection"
+          ]
+        },
+        {
+          "file": "阶段01-完成后/原生日志/session.v4.jsonl",
+          "lines": [
+            29,
+            66,
+            84,
+            92
+          ]
+        }
+      ],
+      "confidence": "高：原生操作与独立文件核对一致",
+      "attribution": "本次表现通过；不能由单次成功推断纯Harness优势",
+      "historical_task_score": 1,
+      "counts_toward_dimension": false,
+      "scope_audit_reason": "选择哪份材料是业务判断，不能仅凭选择正确证明保存或交付机制正确"
+    },
+    {
+      "id": "ART02-2",
+      "name": "清单对应实物",
+      "score": 1,
+      "max_score": 1,
+      "verdict": "pass",
+      "evidence": [
+        {
+          "file": "阶段01-完成后/交付物独立核对.json",
+          "upstream_keys": [
+            "metadata_format_checksum_closure"
+          ]
+        },
+        {
+          "file": "阶段01-完成后/原生日志/session.v4.jsonl",
+          "lines": [
+            92,
+            100,
+            114
+          ]
+        }
+      ],
+      "confidence": "高：原生操作与独立文件核对一致",
+      "attribution": "本次表现通过；不能由单次成功推断纯Harness优势",
+      "historical_task_score": 1,
+      "counts_toward_dimension": true,
+      "scope_audit_reason": "保留原有清单、路径、字节与指纹对应的独立证据"
+    },
+    {
+      "id": "ART02-3",
+      "name": "异常处理完整",
+      "score": null,
+      "max_score": 1,
+      "verdict": "excluded_from_dimension",
+      "evidence": [
+        {
+          "file": "阶段01-完成后/交付物独立核对.json",
+          "upstream_keys": [
+            "quarantine_and_validation_state"
+          ]
+        },
+        {
+          "file": "阶段01-完成后/原生日志/session.v4.jsonl",
+          "lines": [
+            84,
+            92,
+            100,
+            114
+          ]
+        }
+      ],
+      "confidence": "高：原生操作与独立文件核对一致",
+      "attribution": "本次表现通过；不能由单次成功推断纯Harness优势",
+      "historical_task_score": 1,
+      "counts_toward_dimension": false,
+      "scope_audit_reason": "原项混合异常业务处置、隔离对象选择和验证状态，无法整项当作保存交付分；其文件一致性事实已在清单对应实物中观察，不重复计分"
+    },
+    {
+      "id": "ART02-4",
+      "name": "成果齐全且可取",
+      "score": 1,
+      "max_score": 1,
+      "verdict": "pass_with_separate_quality_defect",
+      "evidence": [
+        {
+          "file": "阶段01-完成后/交付物独立核对.json",
+          "keys": [
+            "supplementary_closed_package"
+          ]
+        },
+        {
+          "file": "阶段01-完成后/原生日志/session.v4.jsonl",
+          "lines": [
+            123,
+            124,
+            128
+          ]
+        },
+        {
+          "file": "用户入口确认.json"
+        },
+        {
+          "file": "交接说明事实核对.json"
+        }
+      ],
+      "confidence": "成果集合与链接可独立核对；实际点击成功由用户直接确认，没有独立下载副本",
+      "scoring_boundary": "既定第四项要求成果齐全、可取以及准确说明暂存而非提交，这些条件已满足。对说明额外数字错误另列缺陷，不在本轮结果出现后追加一个未细化的位数扣分条件；原题完整语义验收未宣称通过。",
+      "separate_defect": "ART02-DSH-a01-D01：摘要位数63/64写错，实际64/65，不能写整体交接说明无误",
+      "historical_task_score": 1,
+      "counts_toward_dimension": true,
+      "scope_audit_reason": "保留实际成果集合、最终入口及用户取得文件的证据；说明文字质量另列，不解释为全部业务内容正确"
+    }
+  ],
+  "raw_upstream_observations": "阶段01-完成后/交付物独立核对.json",
+  "raw_records_handoff": false,
+  "original_semantic_judge_run": false,
+  "separate_defects": [
+    {
+      "id": "ART02-DSH-a01-D01",
+      "file_lines": [
+        63,
+        64,
+        66,
+        67
+      ],
+      "native_write_line": 105,
+      "observed_claim": "observed 63 characters, registered 64 characters",
+      "actual": {
+        "observed_length": 64,
+        "registered_length": 65,
+        "observed_digest": "b320dc201ea827f2a5e425af36a9f10c71fcd4a5536d8bc9c2536d869c2183d7",
+        "registered_digest": "b320dc201ea827f2a5e425af36a9f10c71fcd4a5536d8bc9c2536d869c2183d70"
+      },
+      "classification": "交接说明中可复核的数值错误",
+      "effect": "不改变正确的差异判断、隔离动作和未提交状态；不能称整份说明完全准确",
+      "cause_boundary": "原生write调用的content已经包含错数值，归档文件与调用内容一致；没有证据表明保存工具篡改正确文字"
+    }
+  ],
+  "limitations": [
+    "本题源媒体是模拟占位字节，不证明真实媒体可读性或处理能力",
+    "单次单产品，原生模型/Skill未统一，不证明稳定性或Harness因果优势",
+    "工作区外读取隔离未独立建立，仅审查本次可见轨迹未发现答案读取",
+    "原题records_handoff关键词项为false，原题语义评委未运行，不宣称原题完整满分",
+    "本项目候选四项覆盖未细化所有说明数字正确性；4/4不表示文档不存在事实错误",
+    "范围复核后只保留本维度2分，原另2分为选题/评分覆盖缺口，不能称DSH失败或继续计入维度"
+  ],
+  "audit_date": "2026-10-22",
+  "dimension_supported_max_score": 2,
+  "excluded_from_dimension_score": 2,
+  "uncovered_allocation_score": 2,
+  "historical_task_candidate_score": 4,
+  "historical_score_file": "历史评分-0.1.0/评分与归因.json",
+  "audit_method": "依据七维表已确定的产物保存与交付定义，重新分类已有四项；不新增评分项、不重跑产品、不把移出项当失败，也不将2分折算为4分"
+}

@@ -1,0 +1,10 @@
+{
+  "case_id": "ART04",
+  "product": "豆包办公",
+  "question": "ART04三份Office原回复入口能否实际取得",
+  "answer": "两款的三份文件都能取得",
+  "confirmed": true,
+  "source": "用户本评测会话异步答复",
+  "retrieved_copy_hash_compared": false,
+  "limitations": "用户确认取件；没有独立下载副本，不宣称下载字节与归档成品比对。"
+}

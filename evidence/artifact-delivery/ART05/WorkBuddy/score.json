@@ -1,0 +1,53 @@
+{
+  "case_id": "ART05",
+  "task_name": "已定稿报告包的多轮交付",
+  "date": "2026-10-23",
+  "execution_date": "2026-10-22",
+  "rule_version": "art05-1.0.0-preflight",
+  "product": "WorkBuddy",
+  "product_runs": 1,
+  "turns_completed": 2,
+  "first_release_score": 0,
+  "max_score": 2,
+  "confirmed_score": 2,
+  "known_failed_score": 0,
+  "unknown_score": 0,
+  "formal_score": null,
+  "is_pure_harness_causal_score": false,
+  "items": [
+    {
+      "id": "ART05-1",
+      "name": "后续修改保存且原成果保留",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "首轮三份与提供输入逐字节一致；两轮输入未变；第二轮指定修改正确，日志CHG-0092作为独立第93行追加，历史与非目标内容保留。",
+      "evidence": [
+        "阶段02-修改后交付/条目与指定位置独立核对-v02.json",
+        "阶段01-原包交付/文件独立核对.json"
+      ]
+    },
+    {
+      "id": "ART05-2",
+      "name": "再次交付对应当前最新版",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "用户确认本轮三个入口均已取得；原生present_files调用及返回对象三路径与独立验版的本地output三文件逐一对应，当前摘要仍匹配第二轮稳定快照。",
+      "evidence": [
+        "原生入口版本核对.json",
+        "第二轮用户入口确认.json",
+        "阶段02-修改后交付/发布返回对象复核.json"
+      ]
+    }
+  ],
+  "product_outputs_modified_by_evaluator": false,
+  "original_verifier_modified": false,
+  "read_isolation_verified": false,
+  "limits": [
+    "每项仅此配置一次两轮执行，不推断稳定性或纯Harness因果。",
+    "未进行全页视觉验收；结构和值检查不等于所有Office软件渲染均已验证。",
+    "用户下载副本未另存比对字节；采用规则允许的原生本地文件对象路径及实际取件确认。"
+  ],
+  "attribution": "指定修改、保留及当前本地文件发布成功；不由此单次表现证明某个内部机制优于其他产品。"
+}

@@ -1,0 +1,38 @@
+{
+  "source_kind": "evaluator_observation_excerpt",
+  "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/运行记录/元宝专家模式-a01/阶段01-实际取件/交付物独立核对.json",
+  "original_sha256": "82183f3e32a94645369a6d88d37f4913a486c6d477158b88b3dae375983fc409",
+  "selected_fields": {
+    "case": "ART01",
+    "product": "元宝专家模式",
+    "local_archive_usability": {
+      "pass": true,
+      "detail": {
+        "returncode": 0,
+        "stdout": "{\"item_count\": 3, \"items\": [\"核对今日会议材料\", \"整理客户回访事项\", \"发送团队日程简报\"], \"schema_version\": \"calendar_briefing_result_v1\"}\n",
+        "stderr": "",
+        "trusted_payload_hash_checked_before_execution": true,
+        "limit": "本地补充检查未设置原验证器的Linux RLIMIT_AS；不等同原环境正式评分"
+      }
+    },
+    "archive_checks": {
+      "four_unique_entries": true,
+      "regular_0644": true,
+      "safe_relative_paths": true,
+      "crc_ok": true,
+      "payloads_match_trusted_source": true,
+      "manifest_matches_trusted_source": true
+    },
+    "cloud_input_integrity": {
+      "pass": null,
+      "reason": "未取得完整云端输入/工具快照或逐项指纹返回；本机暂存不代替云端现场"
+    },
+    "upstream_full_workspace_checks": {
+      "status": "not_run",
+      "reason": "只有实际取得ZIP，不构造完整云端工作区冒充现场"
+    },
+    "bytes": 1754,
+    "sha256": "debf2bd812a4a6c60d2583cc29e82cc9462cbeaa38e0aff216f88f58bf12c501"
+  },
+  "limits": "字段摘录不是完整成品或完整原生过程；缺失内容不能据此补判。"
+}

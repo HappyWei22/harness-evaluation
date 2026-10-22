@@ -1,0 +1,10 @@
+{
+  "source_kind": "actual_archived_xml_fragment",
+  "package_sha256": "100a40c6e54c58f25d57f21ff5a5c22531345014fa78746206644b30690a0467",
+  "member": "xl/worksheets/sheet11.xml",
+  "selection": "第92行起至sheetData结束前；原字符保持，省略外层命名空间声明",
+  "xml_fragment": "<x:row r=\"92\"><x:c r=\"A92\" s=\"6\" t=\"inlineStr\"><x:is><x:t>CHG-0091</x:t></x:is></x:c><x:c r=\"D92\" s=\"6\" t=\"inlineStr\"><x:is><x:t>Applied signed late amendment for RAYONIER INC and synchronized governed deliverables</x:t></x:is></x:c><x:c r=\"G92\" s=\"6\" t=\"inlineStr\"><x:is><x:t>2026.11-R3A4</x:t></x:is></x:c><x:row r=\"93\"><x:c r=\"A93\" s=\"6\" t=\"inlineStr\"><x:is><x:t>CHG-0092</x:t></x:is></x:c><x:c r=\"D93\" s=\"6\" t=\"inlineStr\"><x:is><x:t>REV-2026-018 | delivery correction only | prior version 2026.11-R3A4</x:t></x:is></x:c><x:c r=\"G93\" s=\"6\" t=\"inlineStr\"><x:is><x:t>2026.11-R3A4-D1</x:t></x:is></x:c></x:row></x:row>",
+  "observed_parent_of_row_93": "row r=92",
+  "expected_parent": "sheetData",
+  "not_full_workbook": true
+}

@@ -1,0 +1,67 @@
+{
+  "case_id": "ART02",
+  "task_name": "电子档案筛选与移交包交付",
+  "product": "豆包办公",
+  "rule_version": "0.1.1-scope-audit",
+  "product_runs": 1,
+  "max_score": 2,
+  "confirmed_score": 1,
+  "known_failed_score": 0,
+  "unknown_score": 1,
+  "formal_score": null,
+  "is_pure_harness_causal_score": false,
+  "items": [
+    {
+      "id": "ART02-2",
+      "name": "清单对应实物",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "实际九份成果完整；三份记录路径、元数据、字节和摘要与清单对应，回执引用摘要匹配，暂存树无额外记录。",
+      "evidence": [
+        "../../../三产品并行试测/ART02三产品独立核对.json"
+      ]
+    },
+    {
+      "id": "ART02-4",
+      "name": "成果齐全且可取",
+      "allocation": 1,
+      "score": null,
+      "verdict": "unknown",
+      "reason": "发布调用与返回均包含九份成果，但窗口地图位置显示暂不支持查看，实际取件尚待确认。",
+      "evidence": [
+        "用户入口确认.json"
+      ]
+    }
+  ],
+  "excluded_business_items": [
+    {
+      "id": "ART02-1",
+      "name": "交付选择有依据",
+      "dimension_score": null
+    },
+    {
+      "id": "ART02-3",
+      "name": "异常处理完整",
+      "dimension_score": null
+    }
+  ],
+  "separate_findings": [
+    {
+      "kind": "publication_and_ui_not_equivalent",
+      "evidence": "原生trajectory.jsonl第33-34行；用户应用窗口",
+      "observed": "请求并返回九份local_file对象，包含district_boundary_map.tif；界面该项显示暂不支持查看。",
+      "interpretation": "不能归因模型漏发地图，也不能只凭预览提示判定下载失败。"
+    },
+    {
+      "kind": "overbroad_probe_false_positive_corrected",
+      "evidence": "原生trajectory.jsonl第26、28行",
+      "observed": "*budget*误命中合法public_budget_hearing.wav；随后改用REC-004目录和budget_ledger.csv精确检查，无隔离件混入。"
+    }
+  ],
+  "product_outputs_modified_by_evaluator": false,
+  "limits": [
+    "原有英文关键词检查的handoff失败完整保留，人工语义复核见本次试测结果，不改原程序结果。",
+    "未复现官方语义评委；仅单次原生产品结果，不推出稳定性或纯Harness因果结论。"
+  ]
+}

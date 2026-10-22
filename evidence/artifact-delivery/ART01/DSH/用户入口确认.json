@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-22",
+  "question": "DSH最终回复中的ZIP文件入口，点击后能否正常打开或下载？",
+  "answer": "已点击，能正常打开或下载",
+  "source": "用户在本评测对话中直接回答",
+  "user_confirmed_open_or_download": true,
+  "has_screenshot_or_separate_download_copy": false,
+  "limitation": "入口实际使用由用户确认；没有独立浏览器点击日志或另一个下载副本，不据此声称存在后者"
+}

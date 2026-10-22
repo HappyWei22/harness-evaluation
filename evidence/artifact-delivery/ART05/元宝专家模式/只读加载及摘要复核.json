@@ -1,0 +1,52 @@
+{
+  "sheet_count": 16,
+  "dashboard_version": "2026.11-R3A4-D1",
+  "assumptions_version": "2026.11-R3A4-D1",
+  "library_change_log_rows_91_to_93": [
+    [
+      "CHG-0090",
+      "2026-09-09 00:00:00",
+      "Narrative report",
+      "Update review narrative",
+      "Compliance",
+      "Data owner",
+      "2026.09-R3"
+    ],
+    [
+      "CHG-0091",
+      null,
+      null,
+      "Applied signed late amendment for RAYONIER INC and synchronized governed deliverables",
+      null,
+      null,
+      "2026.11-R3A4"
+    ],
+    [
+      "CHG-0092",
+      null,
+      null,
+      "REV-2026-018 | delivery correction only | prior version 2026.11-R3A4",
+      null,
+      null,
+      "2026.11-R3A4-D1"
+    ]
+  ],
+  "library": "openpyxl, python-pptx, python-docx",
+  "does_not_prove_row_schema_validity": true,
+  "slide_count": 112,
+  "body_paragraph_count": 664,
+  "table_count": 26,
+  "subtitle": "Management evidence book | public data with a synthetic workflow overlay | Delivery correction REV-2026-018",
+  "version": "Version 2026.11-R3A4-D1",
+  "hashes_before": {
+    "public_company_reporting.xlsx": "4630d01e05dcc72d18f8b18a8a931a87a5be3be5947563d769a55694f083de6f",
+    "public_company_reporting.docx": "33655368532e7896647c2715e2429c110863be52459725fefd2ecf4b4d99bb02",
+    "public_company_reporting.pptx": "09fb3564b3a991d942f5277dd92bc12c15470ebb0a3f9bf5515a8afe747302bc"
+  },
+  "hashes_after": {
+    "public_company_reporting.xlsx": "4630d01e05dcc72d18f8b18a8a931a87a5be3be5947563d769a55694f083de6f",
+    "public_company_reporting.docx": "33655368532e7896647c2715e2429c110863be52459725fefd2ecf4b4d99bb02",
+    "public_company_reporting.pptx": "09fb3564b3a991d942f5277dd92bc12c15470ebb0a3f9bf5515a8afe747302bc"
+  },
+  "stable": true
+}

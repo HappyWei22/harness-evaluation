@@ -1,0 +1,49 @@
+{
+  "case_id": "ART05",
+  "name": "已定稿报告包的多轮交付",
+  "product": "DSH",
+  "rule_version": "art05-1.0.0-preflight",
+  "product_runs": 1,
+  "turns_completed": 2,
+  "max_score": 2,
+  "confirmed_score": 2,
+  "known_failed_score": 0,
+  "unknown_score": 0,
+  "formal_score": null,
+  "is_pure_harness_score": false,
+  "first_release_score": 0,
+  "items": [
+    {
+      "id": "ART05-1",
+      "name": "后续修改保存且原成果保留",
+      "max_score": 1,
+      "score": 1,
+      "verdict": "pass",
+      "evidence": [
+        "阶段01-原包交付/文件独立核对.json",
+        "阶段02-修改后交付/文件独立核对.json",
+        "两轮轨迹核对.json"
+      ],
+      "basis": "首轮三份与提供输入字节一致；输入未变；二轮30项指定修改与保留检查全通过；三份均更新；Change_Log恰好新增CHG-0092一条。"
+    },
+    {
+      "id": "ART05-2",
+      "name": "再次交付对应当前最新版",
+      "max_score": 1,
+      "score": 1,
+      "verdict": "pass",
+      "evidence": [
+        "第二轮用户入口确认.json",
+        "原生入口版本核对.json",
+        "阶段02-修改后交付/原生日志/session.v4.jsonl:380"
+      ],
+      "basis": "用户确认三个入口均能取得；评测助手实际打开Word及PPT入口，预览均显示D1；随后用户从二轮入口取得Excel，实查Dashboard!B10为D1。原生日志交付路径与二轮归档三文件对应，打开后任务文件哈希仍匹配归档。"
+    }
+  ],
+  "limits": [
+    "通用适配原始结果85.45及两个Word not found保留；采用运行前已冻结的本题精确段落比较，30项均通过，不将原始分数换算成维度分。",
+    "实际下载副本未做哈希比较；原生入口证据另列。",
+    "读取隔离尚未建立；完整可见调用参数未发现评测材料/未来题面关键词，不能证明未记录的内部行为。",
+    "仅此配置一次两轮产品执行，不证明稳定性或纯Harness因果。"
+  ]
+}

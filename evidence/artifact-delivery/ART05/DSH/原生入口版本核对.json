@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-22",
+  "method": "评测助手通过CUA点击DSH第二轮最终回复中的文件名，读取实际预览；不读取聊天中的自报版本作为预览证据",
+  "app": "DeepSeek Harness",
+  "window": "交付定稿报告包三份文件 — DeepSeek Harness",
+  "displayed_model": "DeepSeek-V4.1-Flash · High",
+  "backend_model_identity_verified": false,
+  "version": "2026.11-R3A4-D1",
+  "entries": [
+    {
+      "file": "public_company_reporting.docx",
+      "path": "[PROJECT]/独立测试工作区/DSH/ART05-a01/output/public_company_reporting.docx",
+      "version_proven": true,
+      "actual_preview_text": [
+        "Version 2026.11-R3A4-D1",
+        "Management evidence book | public data with a synthetic workflow overlay | Delivery correction REV-2026-018"
+      ],
+      "source": "原生DOCX预览首页及AX可访问性文字，截图见本对话CUA工具记录"
+    },
+    {
+      "file": "public_company_reporting.pptx",
+      "path": "[PROJECT]/独立测试工作区/DSH/ART05-a01/output/public_company_reporting.pptx",
+      "version_proven": true,
+      "actual_preview_text": [
+        "Internal management review | 2026-11 | 2026.11-R3A4-D1"
+      ],
+      "source": "原生PPTX预览前3页AX文字及前2页截图，见本对话CUA工具记录"
+    },
+    {
+      "file": "public_company_reporting.xlsx",
+      "path": "[PROJECT]/独立测试工作区/DSH/ART05-a01/output/public_company_reporting.xlsx",
+      "version_proven": true,
+      "actual_preview_text": [
+        "此表格超过预览大小限制。"
+      ],
+      "external_open_attempt": "从当前预览点击“用Microsoft Excel打开”；Excel已启动，但两次CUA读取Excel窗口均报ScreenCaptureKit Code=-3811，未取得单元格界面证据",
+      "status": "confirmed_by_user_retrieval_version_check",
+      "user_actual_cell": {
+        "sheet": "Dashboard",
+        "cell": "B10",
+        "value": "2026.11-R3A4-D1",
+        "answer_verbatim": "已检查，是 2026.11-R3A4-D1"
+      },
+      "source": "本对话用户对实际入口取得工作簿的单元格检查；不是评测助手读取Excel窗口"
+    }
+  ],
+  "actual_download_copies_compared": false,
+  "live_file_hashes_match_second_archive_after_open": true,
+  "scoring_status": "three_entries_version_evidence_complete",
+  "observer_effect": "从DSH入口打开Excel后出现output/~$public_company_reporting.xlsx锁文件；六个任务文件哈希不变，产品交付时只有三份output由打开前快照证明。未主动删除锁文件或保存工作簿。",
+  "limits": [
+    "预览只核实版本标识，不代替全文件视觉检查",
+    "本地文件核对中的retrieved=unknown原始结果保留，额外入口证据独立记录",
+    "Excel版本依据用户实际取件检查，未声称评测助手已成功读取Excel窗口；未比较用户下载副本的完整哈希。"
+  ]
+}

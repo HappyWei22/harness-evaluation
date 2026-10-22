@@ -1,0 +1,326 @@
+{
+  "dimension": "产物保存与交付",
+  "date": "2026-10-23",
+  "max_score_per_product": 10,
+  "formal_scores": null,
+  "runs": [
+    {
+      "case_id": "ART01",
+      "task_name": "技能包整理与可用性交付",
+      "product": "DSH",
+      "allocation": 2,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1,
+      "score_source": "evidence/artifact-delivery/ART01/DSH/score.json",
+      "evidence": [
+        "evidence/artifact-delivery/ART01/DSH/score.json",
+        "evidence/artifact-delivery/ART01/DSH/用户入口确认.json",
+        "evidence/artifact-delivery/ART01/DSH/独立文件检查摘录.json"
+      ]
+    },
+    {
+      "case_id": "ART01",
+      "task_name": "技能包整理与可用性交付",
+      "product": "WorkBuddy",
+      "allocation": 2,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1,
+      "score_source": "evidence/artifact-delivery/ART01/WorkBuddy/score.json",
+      "evidence": [
+        "evidence/artifact-delivery/ART01/WorkBuddy/score.json",
+        "evidence/artifact-delivery/ART01/WorkBuddy/用户入口确认.json",
+        "evidence/artifact-delivery/ART01/WorkBuddy/独立文件检查摘录.json"
+      ]
+    },
+    {
+      "case_id": "ART01",
+      "task_name": "技能包整理与可用性交付",
+      "product": "豆包办公",
+      "allocation": 2,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1,
+      "score_source": "evidence/artifact-delivery/ART01/豆包办公/score.json",
+      "evidence": [
+        "evidence/artifact-delivery/ART01/豆包办公/score.json",
+        "evidence/artifact-delivery/ART01/豆包办公/用户入口确认.json",
+        "evidence/artifact-delivery/ART01/豆包办公/独立文件检查摘录.json"
+      ]
+    },
+    {
+      "case_id": "ART01",
+      "task_name": "技能包整理与可用性交付",
+      "product": "元宝专家模式",
+      "allocation": 2,
+      "confirmed_score": 1,
+      "known_failed_score": 0,
+      "unknown_score": 1,
+      "product_runs": 1,
+      "score_source": "evidence/artifact-delivery/ART01/元宝专家模式/score.json",
+      "evidence": [
+        "evidence/artifact-delivery/ART01/元宝专家模式/score.json",
+        "evidence/artifact-delivery/ART01/元宝专家模式/用户入口确认.json",
+        "evidence/artifact-delivery/ART01/元宝专家模式/独立文件检查摘录.json"
+      ]
+    },
+    {
+      "case_id": "ART02",
+      "task_name": "电子档案筛选与移交包交付",
+      "product": "DSH",
+      "allocation": 2,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1,
+      "score_source": "evidence/artifact-delivery/ART02/DSH/score.json",
+      "evidence": [
+        "evidence/artifact-delivery/ART02/DSH/score.json",
+        "evidence/artifact-delivery/ART02/DSH/用户入口确认.json",
+        "evidence/artifact-delivery/ART02/DSH/独立文件检查摘录.json"
+      ]
+    },
+    {
+      "case_id": "ART02",
+      "task_name": "电子档案筛选与移交包交付",
+      "product": "WorkBuddy",
+      "allocation": 2,
+      "confirmed_score": 1,
+      "known_failed_score": 1,
+      "unknown_score": 0,
+      "product_runs": 1,
+      "score_source": "evidence/artifact-delivery/ART02/WorkBuddy/score.json",
+      "evidence": [
+        "evidence/artifact-delivery/ART02/WorkBuddy/score.json",
+        "evidence/artifact-delivery/ART02/WorkBuddy/用户入口确认.json",
+        "evidence/artifact-delivery/ART02/WorkBuddy/独立文件检查摘录.json"
+      ]
+    },
+    {
+      "case_id": "ART02",
+      "task_name": "电子档案筛选与移交包交付",
+      "product": "豆包办公",
+      "allocation": 2,
+      "confirmed_score": 1,
+      "known_failed_score": 0,
+      "unknown_score": 1,
+      "product_runs": 1,
+      "score_source": "evidence/artifact-delivery/ART02/豆包办公/score.json",
+      "evidence": [
+        "evidence/artifact-delivery/ART02/豆包办公/score.json",
+        "evidence/artifact-delivery/ART02/豆包办公/用户入口确认.json",
+        "evidence/artifact-delivery/ART02/豆包办公/独立文件检查摘录.json"
+      ]
+    },
+    {
+      "case_id": "ART02",
+      "task_name": "电子档案筛选与移交包交付",
+      "product": "元宝专家模式",
+      "allocation": 2,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1,
+      "score_source": "evidence/artifact-delivery/ART02/元宝专家模式/score.json",
+      "evidence": [
+        "evidence/artifact-delivery/ART02/元宝专家模式/score.json",
+        "evidence/artifact-delivery/ART02/元宝专家模式/用户入口确认.json"
+      ]
+    },
+    {
+      "case_id": "ART04",
+      "task_name": "三文件修订与多轮交付",
+      "product": "DSH",
+      "allocation": 4,
+      "confirmed_score": 2,
+      "known_failed_score": 1,
+      "unknown_score": 1,
+      "product_runs": 1,
+      "score_source": "evidence/artifact-delivery/ART04/DSH/score.json",
+      "evidence": [
+        "evidence/artifact-delivery/ART04/DSH/score.json",
+        "evidence/artifact-delivery/ART04/DSH/用户入口确认.json",
+        "evidence/artifact-delivery/ART04/DSH/独立文件检查摘录.json"
+      ]
+    },
+    {
+      "case_id": "ART04",
+      "task_name": "三文件修订与多轮交付",
+      "product": "WorkBuddy",
+      "allocation": 4,
+      "confirmed_score": 2,
+      "known_failed_score": 1,
+      "unknown_score": 1,
+      "product_runs": 1,
+      "score_source": "evidence/artifact-delivery/ART04/WorkBuddy/score.json",
+      "evidence": [
+        "evidence/artifact-delivery/ART04/WorkBuddy/score.json",
+        "evidence/artifact-delivery/ART04/WorkBuddy/用户入口确认.json",
+        "evidence/artifact-delivery/ART04/WorkBuddy/独立文件检查摘录.json"
+      ]
+    },
+    {
+      "case_id": "ART04",
+      "task_name": "三文件修订与多轮交付",
+      "product": "豆包办公",
+      "allocation": 4,
+      "confirmed_score": 2,
+      "known_failed_score": 1,
+      "unknown_score": 1,
+      "product_runs": 1,
+      "score_source": "evidence/artifact-delivery/ART04/豆包办公/score.json",
+      "evidence": [
+        "evidence/artifact-delivery/ART04/豆包办公/score.json",
+        "evidence/artifact-delivery/ART04/豆包办公/用户入口确认.json",
+        "evidence/artifact-delivery/ART04/豆包办公/独立文件检查摘录.json"
+      ]
+    },
+    {
+      "case_id": "ART04",
+      "task_name": "三文件修订与多轮交付",
+      "product": "元宝专家模式",
+      "allocation": 4,
+      "confirmed_score": 0,
+      "known_failed_score": 1,
+      "unknown_score": 3,
+      "product_runs": 1,
+      "score_source": "evidence/artifact-delivery/ART04/元宝专家模式/score.json",
+      "evidence": [
+        "evidence/artifact-delivery/ART04/元宝专家模式/score.json",
+        "evidence/artifact-delivery/ART04/元宝专家模式/用户入口确认.json"
+      ]
+    },
+    {
+      "case_id": "ART05",
+      "task_name": "已定稿报告包的多轮交付",
+      "product": "DSH",
+      "allocation": 2,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1,
+      "score_source": "evidence/artifact-delivery/ART05/DSH/score.json",
+      "evidence": [
+        "evidence/artifact-delivery/ART05/DSH/score.json",
+        "evidence/artifact-delivery/ART05/DSH/第二轮用户入口确认.json",
+        "evidence/artifact-delivery/ART05/DSH/原生入口版本核对.json",
+        "evidence/artifact-delivery/ART05/DSH/条目与指定位置独立核对-v02.json",
+        "evidence/artifact-delivery/ART05/DSH/文件独立核对.json"
+      ]
+    },
+    {
+      "case_id": "ART05",
+      "task_name": "已定稿报告包的多轮交付",
+      "product": "WorkBuddy",
+      "allocation": 2,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1,
+      "score_source": "evidence/artifact-delivery/ART05/WorkBuddy/score.json",
+      "evidence": [
+        "evidence/artifact-delivery/ART05/WorkBuddy/score.json",
+        "evidence/artifact-delivery/ART05/WorkBuddy/第二轮用户入口确认.json",
+        "evidence/artifact-delivery/ART05/WorkBuddy/原生入口版本核对.json",
+        "evidence/artifact-delivery/ART05/WorkBuddy/条目与指定位置独立核对-v02.json",
+        "evidence/artifact-delivery/ART05/WorkBuddy/文件独立核对.json",
+        "evidence/artifact-delivery/ART05/WorkBuddy/只读加载及摘要复核.json",
+        "evidence/artifact-delivery/ART05/WorkBuddy/发布返回对象复核.json"
+      ]
+    },
+    {
+      "case_id": "ART05",
+      "task_name": "已定稿报告包的多轮交付",
+      "product": "豆包办公",
+      "allocation": 2,
+      "confirmed_score": 1,
+      "known_failed_score": 1,
+      "unknown_score": 0,
+      "product_runs": 1,
+      "score_source": "evidence/artifact-delivery/ART05/豆包办公/score.json",
+      "evidence": [
+        "evidence/artifact-delivery/ART05/豆包办公/score.json",
+        "evidence/artifact-delivery/ART05/豆包办公/第二轮用户入口确认.json",
+        "evidence/artifact-delivery/ART05/豆包办公/原生入口版本核对.json",
+        "evidence/artifact-delivery/ART05/豆包办公/条目与指定位置独立核对-v02.json",
+        "evidence/artifact-delivery/ART05/豆包办公/文件独立核对.json",
+        "evidence/artifact-delivery/ART05/豆包办公/只读加载及摘要复核.json",
+        "evidence/artifact-delivery/ART05/豆包办公/发布返回对象复核.json"
+      ]
+    },
+    {
+      "case_id": "ART05",
+      "task_name": "已定稿报告包的多轮交付",
+      "product": "元宝专家模式",
+      "allocation": 2,
+      "confirmed_score": 1,
+      "known_failed_score": 1,
+      "unknown_score": 0,
+      "product_runs": 1,
+      "score_source": "evidence/artifact-delivery/ART05/元宝专家模式/score.json",
+      "evidence": [
+        "evidence/artifact-delivery/ART05/元宝专家模式/score.json",
+        "evidence/artifact-delivery/ART05/元宝专家模式/原生入口版本核对.json",
+        "evidence/artifact-delivery/ART05/元宝专家模式/条目与指定位置独立核对-v02.json",
+        "evidence/artifact-delivery/ART05/元宝专家模式/实际取回文件独立核对.json",
+        "evidence/artifact-delivery/ART05/元宝专家模式/只读加载及摘要复核.json",
+        "evidence/artifact-delivery/ART05/元宝专家模式/首轮实际下载差异.json"
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "product": "DSH",
+      "allocation": 10,
+      "confirmed_score": 8,
+      "known_failed_score": 1,
+      "unknown_score": 1,
+      "product_runs": 4,
+      "formal_score": null
+    },
+    {
+      "product": "WorkBuddy",
+      "allocation": 10,
+      "confirmed_score": 7,
+      "known_failed_score": 2,
+      "unknown_score": 1,
+      "product_runs": 4,
+      "formal_score": null
+    },
+    {
+      "product": "豆包办公",
+      "allocation": 10,
+      "confirmed_score": 6,
+      "known_failed_score": 2,
+      "unknown_score": 2,
+      "product_runs": 4,
+      "formal_score": null
+    },
+    {
+      "product": "元宝专家模式",
+      "allocation": 10,
+      "confirmed_score": 4,
+      "known_failed_score": 2,
+      "unknown_score": 4,
+      "product_runs": 4,
+      "formal_score": null
+    }
+  ],
+  "not_tested": [
+    {
+      "product": "Codex",
+      "allocation": 10,
+      "product_runs": 0
+    }
+  ],
+  "limits": [
+    "一次配置执行，不是纯Harness因果或稳定性结果。",
+    "Unknown不按0、不按比例换算，未形成五款排名。",
+    "公开检查记录及XML片段不等于完整产品附件或原生过程。",
+    "ART02业务分移出，ART04原追加额度由ART05替代，不重复计分。"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "case_id": "ART02",
+  "task_name": "电子档案筛选与移交包交付",
+  "product": "元宝专家模式",
+  "rule_version": "0.1.1-scope-audit",
+  "product_runs": 1,
+  "max_score": 2,
+  "confirmed_score": 2,
+  "known_failed_score": 0,
+  "unknown_score": 0,
+  "formal_score": null,
+  "is_pure_harness_causal_score": false,
+  "items": [
+    {
+      "id": "ART02-2",
+      "name": "清单对应实物",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "实际九份成果完整；三份记录路径、元数据、字节和摘要与清单对应，回执引用摘要匹配，暂存树无额外记录。",
+      "evidence": [
+        "../../../三产品并行试测/ART02三产品独立核对.json"
+      ]
+    },
+    {
+      "id": "ART02-4",
+      "name": "成果齐全且可取",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "元宝原生最终ZIP入口已由评测助手实际下载；包内九份成果完整，清单与实际记录对应。",
+      "evidence": [
+        "阶段01-实际取件/取件来源.json",
+        "../../../三产品并行试测/ART02三产品独立核对.json"
+      ]
+    }
+  ],
+  "excluded_business_items": [
+    {
+      "id": "ART02-1",
+      "name": "交付选择有依据",
+      "dimension_score": null
+    },
+    {
+      "id": "ART02-3",
+      "name": "异常处理完整",
+      "dimension_score": null
+    }
+  ],
+  "separate_findings": [
+    {
+      "kind": "cloud_input_integrity_unknown",
+      "observed": "窗口展示检查命令与模型判断，但未取得全部原始返回及完整云端现场。",
+      "dimension_effect": "不把本机部署副本当云端现场；ART02-2以实际下载九份成果对应为判据可确认。ART01已有原件保留Unknown保持不变。"
+    },
+    {
+      "kind": "handoff_source_count_typo",
+      "evidence": "阶段01-实际取件/解包交付物/records_handoff.md 第6节",
+      "observed": "说明写all five source candidates，实际题目包含六份候选源文件。",
+      "dimension_effect": "说明事实错误另列；未改变实际三份暂存副本、九份成果与清单对应，不新增扣分条件。"
+    }
+  ],
+  "product_outputs_modified_by_evaluator": false,
+  "limits": [
+    "原有英文关键词检查的handoff失败完整保留，人工语义复核见本次试测结果，不改原程序结果。",
+    "未复现官方语义评委；仅单次原生产品结果，不推出稳定性或纯Harness因果结论。"
+  ]
+}

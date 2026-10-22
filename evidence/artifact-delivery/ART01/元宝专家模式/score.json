@@ -1,0 +1,45 @@
+{
+  "case_id": "ART01",
+  "task_name": "技能包整理与可用性交付",
+  "product": "元宝专家模式",
+  "rule_version": "0.1.0-pilot",
+  "product_runs": 1,
+  "max_score": 2,
+  "confirmed_score": 1,
+  "known_failed_score": 0,
+  "unknown_score": 1,
+  "formal_score": null,
+  "is_pure_harness_causal_score": false,
+  "items": [
+    {
+      "id": "ART01-1",
+      "name": "包内文件、结构与清单对应",
+      "allocation": 1,
+      "score": null,
+      "verdict": "unknown_cloud_input_integrity",
+      "evidence": [
+        "阶段01-实际取件/交付物独立核对.json",
+        "原生界面观察.md"
+      ],
+      "reason": "实际取得的ZIP各包内检查通过，但云端九份原件与工具是否保持原样未独立取得决定性证据。"
+    },
+    {
+      "id": "ART01-2",
+      "name": "用户取得的包可实际使用",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "evidence": [
+        "用户入口确认.json",
+        "阶段01-实际取件/交付物独立核对.json"
+      ],
+      "reason": "实际最终入口取得本轮正确ZIP，可信载荷指纹核对后独立解包运行退出0，输出三条正确事项。"
+    }
+  ],
+  "product_outputs_modified_by_evaluator": false,
+  "limits": [
+    "仅一次原生配置试测，不能推出稳定性或纯Harness优势",
+    "缺证据不记为失败；原题聚合结果与本维度两分分别保留",
+    "截图思考和清理命令不是实际返回，不能用它们填补云端原件保留的决定性证据。"
+  ]
+}

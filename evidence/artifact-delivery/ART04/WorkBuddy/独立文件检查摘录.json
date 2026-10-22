@@ -1,0 +1,138 @@
+{
+  "source_kind": "evaluator_observation_excerpt",
+  "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/运行记录/WorkBuddy-a01/阶段01-首次交付/文件独立核对.json",
+  "original_sha256": "5953e5c511f7b4ea6ba9c3c6bc4bb93e352cb142f92bf28c76ee5f60ec5fe7ae",
+  "selected_fields": {
+    "case": "ART04",
+    "workspace": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/运行记录/WorkBuddy-a01/阶段01-首次交付/工作目录",
+    "package_state": {
+      "files": [
+        {
+          "name": "public_company_reporting.xlsx",
+          "exists": true,
+          "package_ok": true,
+          "bytes": 12592584,
+          "sha256": "27816fd5bb1ffad8d398073038bfdef6dae0ec594ba267ce9c2757b2f6db80da"
+        },
+        {
+          "name": "public_company_reporting.pptx",
+          "exists": true,
+          "package_ok": true,
+          "bytes": 382652,
+          "sha256": "bf24e52bbe672f8a8dffd59065b1660444c9723db0af69a94b8e816ddd3ffdc5"
+        },
+        {
+          "name": "public_company_reporting.docx",
+          "exists": true,
+          "package_ok": true,
+          "bytes": 164236,
+          "sha256": "0bede6e4804a8c6ea720873a65c46b555f548883103d6face4d86cce8191f0b6"
+        }
+      ],
+      "extras": [],
+      "exact_set": true,
+      "all_packages_ok": true
+    },
+    "input_state": {
+      "available": true,
+      "all_unchanged": true,
+      "files": [
+        {
+          "name": "OBW4-024_approval_record.docx",
+          "unchanged": true
+        },
+        {
+          "name": "OBW4-024_correspondence_extract.docx",
+          "unchanged": true
+        },
+        {
+          "name": "OBW4-024_request_memo.docx",
+          "unchanged": true
+        },
+        {
+          "name": "public_company_reporting.docx",
+          "unchanged": true
+        },
+        {
+          "name": "public_company_reporting.pptx",
+          "unchanged": true
+        },
+        {
+          "name": "public_company_reporting.xlsx",
+          "unchanged": true
+        }
+      ]
+    },
+    "version_observation": {
+      "passed": false,
+      "results": [
+        {
+          "id": "xlsx:0",
+          "passed": true,
+          "weight": 1,
+          "category": "semantic",
+          "message": "更新仪表盘版本",
+          "actual": {
+            "value": "2026.11-R3A4",
+            "formula": null
+          }
+        },
+        {
+          "id": "xlsx:1",
+          "passed": true,
+          "weight": 1,
+          "category": "semantic",
+          "message": "同步版本假设",
+          "actual": {
+            "value": "2026.11-R3A4",
+            "formula": null
+          }
+        },
+        {
+          "id": "ppt:0",
+          "passed": true,
+          "weight": 1,
+          "category": "semantic",
+          "message": "更新末页版本",
+          "actual": "2026.11-R3A4"
+        },
+        {
+          "id": "ppt:1",
+          "passed": false,
+          "weight": 2,
+          "category": "semantic",
+          "message": "统一演示页脚",
+          "actual": {
+            "matched": 0,
+            "total": 112
+          }
+        },
+        {
+          "id": "docx:0",
+          "passed": true,
+          "weight": 1,
+          "category": "semantic",
+          "message": "更新报告版本",
+          "actual": "Version 2026.11-R3A4"
+        }
+      ],
+      "scope": "只提取版本位置的语义原子检查；原题业务修改和完整保留结果见upstream_original"
+    },
+    "status": "observed_not_scored",
+    "retrieved": {
+      "status": "unknown",
+      "reason": "尚无从产品最终入口取得的副本；磁盘文件不能代替取件证据"
+    },
+    "upstream_original_summary": {
+      "passed": false,
+      "score": 59.76,
+      "semantic_score": 53.33,
+      "preservation_score": 85.45
+    },
+    "limitations": [
+      "原检查通过不证明Office实际打开或全部视觉排版正确",
+      "仅产生文件观察；维度判分还需原生日志与取件来源证据"
+    ]
+  },
+  "limits": "字段摘录不是完整成品或完整原生过程；缺失内容不能据此补判。"
+}

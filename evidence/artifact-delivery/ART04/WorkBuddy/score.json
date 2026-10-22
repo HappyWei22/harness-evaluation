@@ -1,0 +1,106 @@
+{
+  "case_id": "ART04",
+  "task_name": "三文件修订与多轮交付首轮",
+  "date": "2026-10-22",
+  "product": "WorkBuddy",
+  "rule_version": "art04-1.0.0-preflight",
+  "common_scope_review": "2026-10-22-common-unknown",
+  "product_runs": 1,
+  "max_score": 4,
+  "first_phase_allocation": 4,
+  "followup_phase_allocation": 0,
+  "followup_replacement": "ART05",
+  "confirmed_score": 2,
+  "known_failed_score": 1,
+  "unknown_score": 1,
+  "formal_score": null,
+  "is_pure_harness_causal_score": false,
+  "items": [
+    {
+      "id": "ART04-1",
+      "name": "首轮最终版保存",
+      "allocation": 1,
+      "score": 0,
+      "verdict": "fail",
+      "reason": "XLSX两版本、PPT末页、Word首页已更新；112页PPT页脚仍为Working draft | management review | September 2026，既定版本同步检查未通过。",
+      "evidence": [
+        "阶段01-首次交付/文件独立核对.json:version_observation",
+        "首轮差异与轨迹核对.json:ppt_footer_values"
+      ],
+      "attribution": "未见完整新版页脚先形成后被保存/发布工具丢失；产品任务完成度失败，不直接认定Harness保存机制故障。"
+    },
+    {
+      "id": "ART04-2",
+      "name": "首轮三文件齐全且对应",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "原名三份Office成品齐全、有实际修改，output无额外文件，六份输入与原件字节一致。",
+      "evidence": [
+        "阶段01-首次交付/文件独立核对.json:package_state",
+        "阶段01-首次交付/文件独立核对.json:input_state"
+      ]
+    },
+    {
+      "id": "ART04-3",
+      "name": "首轮结构和非目标内容保留",
+      "allocation": 1,
+      "score": null,
+      "verdict": "unknown_task_scope_ambiguity",
+      "reason": "统一适用既有授权范围与原保留名单冲突；原程序失败保持原样，不当作确定产品损坏，也不改写为通过。",
+      "evidence": [
+        "../DSH-a01/评测范围复核/复核结论.md",
+        "阶段01-首次交付/文件独立核对.json:upstream_original"
+      ]
+    },
+    {
+      "id": "ART04-4",
+      "name": "首轮实际取件",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass_user_confirmed",
+      "reason": "原生发布三份成品；用户确认两款本轮三份文件均能取得。",
+      "evidence": [
+        "用户入口确认.json",
+        "首轮差异与轨迹核对.json:native_trace"
+      ],
+      "limitations": "没有另存的实际下载副本，不宣称下载字节对比。"
+    }
+  ],
+  "raw_upstream_local": {
+    "passed": false,
+    "score": 59.76,
+    "semantic_score": 53.33,
+    "preservation_score": 85.45
+  },
+  "actual_model": "hy4-preview",
+  "native_rows": 252,
+  "native_paired_calls_returns": 81,
+  "product_outputs_modified_by_evaluator": false,
+  "original_verifier_modified": false,
+  "raw_program_failure_overridden_to_pass": false,
+  "followup_sent": false,
+  "read_isolation_verified": false,
+  "visible_forbidden_path_candidates": [],
+  "separate_findings": [
+    {
+      "kind": "self_report_check_count",
+      "claimed": 89,
+      "actual_pass_result_lines": 88,
+      "cause_observed": "grep -c PASS同时计入ALL CHECKS PASSED汇总行",
+      "score_effect": "单列，不重复扣分。"
+    },
+    {
+      "kind": "human_cleanup_approval",
+      "native_result": "escalation-approved",
+      "artifacts_unchanged_before_after": true,
+      "evidence": "审批01-清理tmp前/审批核对.json",
+      "score_effect": "人工审批另记，不因审批自动扣本维度分。"
+    }
+  ],
+  "limitations": [
+    "单次原生产品任务，模型与工具配置未统一，不作纯Harness因果结论。",
+    "原题本地程序结果与本维度判分分别保存。",
+    "无全页视觉验收结论；文件可解析与软件渲染、实际取件分别检查。"
+  ]
+}

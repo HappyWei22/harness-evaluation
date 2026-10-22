@@ -1,0 +1,16 @@
+{
+  "case_id": "ART02",
+  "product": "WorkBuddy",
+  "actual_retrieval": "original_reply_missing_three_record_entries",
+  "all_required_artifacts_retrieved": null,
+  "evidence": null,
+  "latest_user_message": "wb 的回复里貌似没有提到你说的这几份文件？我没懂你的意思",
+  "latest_user_message_is_retrieval_confirmation": false,
+  "note": "用户未提供三份副本取得成功的确认。Fail依据是原生发布仅六份、最终回复无三份记录的明确入口，不将用户疑问解释为亲自下载失败。评测助手查出的路径不算产品交付。",
+  "clarified_record_paths": [
+    "staged_transfer/records/REC-001/january_council_minutes.pdf",
+    "staged_transfer/records/REC-002/district_boundary_map.tif",
+    "staged_transfer/records/REC-003/public_budget_hearing.wav"
+  ],
+  "native_delivery_complete": false
+}

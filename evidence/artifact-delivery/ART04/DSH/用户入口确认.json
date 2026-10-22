@@ -1,0 +1,8 @@
+{
+  "phase": "first",
+  "question": "首轮三个Office文件入口是否可打开或下载",
+  "answer": "已点击，三份都能取得",
+  "source": "本评测对话中用户直接回复",
+  "independent_download_copies_available": false,
+  "limits": "用户确认实际入口成功；没有独立保存的下载副本，不宣称逐字节下载验证"
+}

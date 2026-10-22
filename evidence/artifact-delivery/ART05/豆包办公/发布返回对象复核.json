@@ -1,0 +1,11 @@
+{
+  "call_line": 95,
+  "return_line": 96,
+  "actual_returned_local_paths": [
+    "[PROJECT]/独立测试工作区/豆包办公/ART05-a01/output/public_company_reporting.xlsx",
+    "[PROJECT]/独立测试工作区/豆包办公/ART05-a01/output/public_company_reporting.pptx",
+    "[PROJECT]/独立测试工作区/豆包办公/ART05-a01/output/public_company_reporting.docx"
+  ],
+  "same_paths_as_version_checked_files": true,
+  "no_separate_download_byte_claim": true
+}

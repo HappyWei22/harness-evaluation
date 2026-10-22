@@ -1,0 +1,10 @@
+{
+  "question": "ART05 第二轮的三个文件入口，实际点击后能否取得版本为2026.11-R3A4-D1的文件？",
+  "answer_verbatim": "三份能取得，但尚未核对版本",
+  "establishes": "三个入口用户实际能取得文件",
+  "does_not_establish": "用户尚未核对取得对象的版本",
+  "source": "本对话用户异步答复",
+  "followup_excel_question": "请从ART05第二轮入口取得工作簿，查看Dashboard!B10是否为2026.11-R3A4-D1",
+  "followup_answer_verbatim": "已检查，是 2026.11-R3A4-D1",
+  "followup_establishes": "用户实际从二轮入口取得的Excel版本字段为D1"
+}
