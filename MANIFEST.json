@@ -14,38 +14,38 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 6457,
-      "sha256": "f5c900694a187c36da8b8b54a33b089c9d5921023af0560d7bf8b6cd01515def"
+      "bytes": 7110,
+      "sha256": "57903fb20c47717fef818d3554eea32a0267fec5432cbe221680e145cd245964"
     },
     {
       "path": "PROVENANCE.json",
-      "bytes": 232981,
-      "sha256": "59b142ba9d1c289659008ff1e575dd0f82b6c2455464ae8f099cc40b9987feca"
+      "bytes": 246301,
+      "sha256": "e8b171dbe1c59e7607183d3563a45cb34c93a83d3ef7905a3a42476ce04b08e2"
     },
     {
       "path": "README.md",
-      "bytes": 12586,
-      "sha256": "fead5e5a2681d53c15996b083f30b1623603260ee11382ed084e21966692b959"
+      "bytes": 12597,
+      "sha256": "92b36efac78bb0d218877ebd1fb619bb1180fd3334d680bfceed038e9b6d09a8"
     },
     {
       "path": "cases/ART01/README.md",
-      "bytes": 782,
-      "sha256": "97a45dc585833c244847cd4e708ad0946b5847987d6500658c89ee6de645ccb6"
+      "bytes": 804,
+      "sha256": "6024b430a11dd95cd7a49243124f6e6c5d21e97974bcccc20bacd90226137ff6"
     },
     {
       "path": "cases/ART02/README.md",
-      "bytes": 772,
-      "sha256": "6a5d1c04a143a5d267fd7a78d405d6657d2f394dab48f1113df4e0e27908378e"
+      "bytes": 794,
+      "sha256": "808f315b21f30076ed7c50c0c218b5d08adc2e32326a82f1b049dce2f25bf35f"
     },
     {
       "path": "cases/ART04/README.md",
-      "bytes": 802,
-      "sha256": "910828002327764fd0857e97a3e1f85d3a71e74973ea24e6fa35493d22aae811"
+      "bytes": 824,
+      "sha256": "caa3730e5d35718e4f8b7d6ccb776edd1a5465fd8493ee644eed369c8869a5cd"
     },
     {
       "path": "cases/ART05/README.md",
-      "bytes": 877,
-      "sha256": "3bbc7d5fa0040f1e69c16598bb7217fe5a1b53f55686030cd4997e9b88ed736e"
+      "bytes": 899,
+      "sha256": "89b23d6584407198fdf893e2f767d6c2550ad4bb808375aced8a8eb3a7d5beaa"
     },
     {
       "path": "cases/CTX01/README.md",
@@ -339,8 +339,8 @@
     },
     {
       "path": "checks/verify_artifacts.py",
-      "bytes": 3496,
-      "sha256": "70afd841e02fb3c7de81107e4f484f9153ad5dc589ed8901e04f7a71b9ba2872"
+      "bytes": 7255,
+      "sha256": "75fb94f4e16683b2ecdd00998c95d2556a39bb96b6aed1aeef3dded72217e261"
     },
     {
       "path": "checks/verify_permissions.py",
@@ -479,8 +479,8 @@
     },
     {
       "path": "docs/阶段进展/2026-10-23.md",
-      "bytes": 940,
-      "sha256": "08dfa71ac57a4931f33991892820c55299a7c31502932b2daa16344338b8d75c"
+      "bytes": 1342,
+      "sha256": "69184429f884ea9fff56bd1d2cdbf8884c5001daec93338e7667fab42c791ffe"
     },
     {
       "path": "evidence/PERM01/Codex-a01/files/inside-运行后-allowed_record.txt",
@@ -1138,6 +1138,21 @@
       "sha256": "f996fec6e78f180ab97c2ed80b5534dac687f373cbc463e2b2a6b9c68ca09058"
     },
     {
+      "path": "evidence/artifact-delivery/ART01/Codex/score.json",
+      "bytes": 2427,
+      "sha256": "b0a6aa96842c25b6cf359e9328b84c63bc9c7503f771239bf3ba318d8ee7d2fa"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/Codex/独立文件检查.json",
+      "bytes": 5109,
+      "sha256": "c134a8f6a92f042e9d0f0ae30822e86152f5bd3f5eec4edc61fe84db5fe1c05d"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART01/Codex/用户入口确认.json",
+      "bytes": 591,
+      "sha256": "751d3b3f538b5ac1e7b6c54a5fc49d4bafe8b26dc86f1dc163fae2f36cffbe97"
+    },
+    {
       "path": "evidence/artifact-delivery/ART01/DSH/score.json",
       "bytes": 2929,
       "sha256": "02387ae3c0e4f23b943e0acc7968129dbb8ee23ebd26560b08d332dc432419c9"
@@ -1198,6 +1213,26 @@
       "sha256": "e02773f9ddc2e012fd9c66345505d663a9d8d4c587a0c1d2703fb6be8cc4f7fc"
     },
     {
+      "path": "evidence/artifact-delivery/ART02/Codex/score.json",
+      "bytes": 3565,
+      "sha256": "0282133e6592e7df7f36ee958d4da212e0f9402ecaa97d738ca90aa6dba2bcc9"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/Codex/文件集合与对应独立核对.json",
+      "bytes": 1135,
+      "sha256": "faff58c7da02dcce0f92c85224325aebdf7c0bb11147de07df83249e288c8ebc"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/Codex/独立文件检查.json",
+      "bytes": 1415,
+      "sha256": "40a8eccb39261cc8e2931f82a26921d7960a38a211219494762d246eb38a3763"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART02/Codex/用户入口确认.json",
+      "bytes": 1045,
+      "sha256": "6cc6bd24c33935f1469de9887fb1505b4ac7f8a33bbe5d3c52dbf00c92f918b3"
+    },
+    {
       "path": "evidence/artifact-delivery/ART02/DSH/score.json",
       "bytes": 6726,
       "sha256": "97a4d9d8ef48fd72edf783d387e04dee8feeaba9febb230a1e3f337d7c0d2470"
@@ -1239,8 +1274,8 @@
     },
     {
       "path": "evidence/artifact-delivery/ART02/豆包办公/score.json",
-      "bytes": 2346,
-      "sha256": "72506c21c859ad1f35fd18eb04a83eabe0a5e638c2e2662105cedc118c487a5b"
+      "bytes": 2585,
+      "sha256": "3e89c36d33d7af6ed2a0f78a63cb43d629d66b39eaad158987236f9e5420c659"
     },
     {
       "path": "evidence/artifact-delivery/ART02/豆包办公/独立文件检查摘录.json",
@@ -1248,9 +1283,39 @@
       "sha256": "b6031b3c3f7c4bfc4a1b0e4174ab93c46e0ff5a011702ca8e342aba8fe60f942"
     },
     {
+      "path": "evidence/artifact-delivery/ART02/豆包办公/用户入口确认-限时复核补充.json",
+      "bytes": 796,
+      "sha256": "83f30213dc3a5dc1715bc55c11251cc5ca035c81a03742e1ba7911cae1692690"
+    },
+    {
       "path": "evidence/artifact-delivery/ART02/豆包办公/用户入口确认.json",
       "bytes": 721,
       "sha256": "9dc67c14a5af874d9ce143fe55441f535834181752b47daeaa43480d5fb511ca"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/Codex/score.json",
+      "bytes": 3891,
+      "sha256": "d6199bd58ab91bc850c3d5cb9618eca7783e7ef11fbf49da7a7ddc87a5fffae7"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/Codex/文件独立核对.json",
+      "bytes": 16465,
+      "sha256": "9ded9293cdf2c22fde50a287e8adc64203fbf36f0e62b24103a74b053fd76fca"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/Codex/用户入口确认.json",
+      "bytes": 751,
+      "sha256": "2c17cf1db796e819f1b54d0b3505a4f6653f95d384c32594661e870908c2132a"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/Codex/输入输出稳定性核对.json",
+      "bytes": 2614,
+      "sha256": "fe169cd7864fecbd06ec3bd9bfc2a300a6c5ba553099e50a5ac312f552007dbd"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART04/Codex/页脚版本观察补充.json",
+      "bytes": 1724,
+      "sha256": "7d3ac3bc99ddce5cd687bec3403fc6dca23960edb5cc42509920dac87dcb2506"
     },
     {
       "path": "evidence/artifact-delivery/ART04/DSH/score.json",
@@ -1306,6 +1371,41 @@
       "path": "evidence/artifact-delivery/ART04/豆包办公/用户入口确认.json",
       "bytes": 396,
       "sha256": "caca45fd277dc38be5fa6f39f7c20efae5489b189a54aa92c9cc6ccf15317660"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/Codex/score.json",
+      "bytes": 3552,
+      "sha256": "e55decf6b5882f7b9fb6da0c2cd1f930a534b2b99250939ced9f742c3044404c"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/Codex/原生入口版本核对摘录.json",
+      "bytes": 1774,
+      "sha256": "4dbc970c32ef0b7e1dffd413784c83d5dfcd19f68df97868cb167ec54b42983e"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/Codex/文件独立核对.json",
+      "bytes": 16435,
+      "sha256": "c78a98b9635ceb0aa1d5f4629bdf6acfe3b40210d7c2151381503003a6daec4b"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/Codex/条目与指定位置独立核对.json",
+      "bytes": 6498,
+      "sha256": "3329d16d191c32535c4cc012c5bbb378b70168cd3f14ccc5d47afb4576945c44"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/Codex/渲染图独立比较.json",
+      "bytes": 1434,
+      "sha256": "3f9f79cf9d483d2055ea78dc93f4547828484b2315d1e8d12883abf7ca34b550"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/Codex/第二轮用户入口确认.json",
+      "bytes": 427,
+      "sha256": "94db0d2766aa3e1597ed7ce9b4ee32468737a3e59dac7bda909504a71d79eeec"
+    },
+    {
+      "path": "evidence/artifact-delivery/ART05/Codex/首轮文件独立核对.json",
+      "bytes": 2230,
+      "sha256": "ad05794aac92cf4b96e74439522b18b65900ac285d8f421e3ff99814e6833c51"
     },
     {
       "path": "evidence/artifact-delivery/ART05/DSH/score.json",
@@ -1436,6 +1536,26 @@
       "path": "evidence/artifact-delivery/ART05/豆包办公/第二轮用户入口确认.json",
       "bytes": 421,
       "sha256": "06f713a4ef04c37d19fa728592dc3d384b529d5af7139662be85f8b5da4eb2e2"
+    },
+    {
+      "path": "evidence/artifact-delivery/review/五产品分数与待定复核.json",
+      "bytes": 34937,
+      "sha256": "e00923352ced264030815d139d719b4a35a5d4ae61d7a9a116e070c5eff3233d"
+    },
+    {
+      "path": "evidence/artifact-delivery/review/用户补充取件事实.json",
+      "bytes": 650,
+      "sha256": "3a7fd6348bd12c6c25fad4b5ff46061acbd024c41286de52d5e5e48f7548b175"
+    },
+    {
+      "path": "evidence/artifact-delivery/review/限时复核执行记录.json",
+      "bytes": 1300,
+      "sha256": "6b8229e17cdf40aa454cbf50299156512beea463e4735faa13b57ee58f8c3823"
+    },
+    {
+      "path": "evidence/artifact-delivery/review/页脚版本整句范围复核.json",
+      "bytes": 7556,
+      "sha256": "94b4b158673eec7044f6d5e45bd11fec6b6b79287e597ce334f530bf8b169f64"
     },
     {
       "path": "evidence/context-compression/Codex/compaction-check.json",
@@ -2519,13 +2639,13 @@
     },
     {
       "path": "results/artifact-delivery.json",
-      "bytes": 12009,
-      "sha256": "27166d7027a9505272dd71c23372d8207d45253824edc59585ad1e4448c3a2a3"
+      "bytes": 15181,
+      "sha256": "9c1b6db16d7faf7d62e15f45eb84bbbc7ae6cbb736fbb6c622dd214fe8fdb032"
     },
     {
       "path": "results/artifact-delivery.md",
-      "bytes": 4437,
-      "sha256": "5a3221ee40d288d40895ac8a0320ec0b3daffd580c36a000b503790eb3e78cd0"
+      "bytes": 6381,
+      "sha256": "4b9401d694d07f75ab6fb3203b4b8a79ae7f5baff602846f37e4172c94ad2a8a"
     },
     {
       "path": "results/context-compression.json",

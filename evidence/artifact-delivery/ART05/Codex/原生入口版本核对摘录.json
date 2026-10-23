@@ -1,0 +1,49 @@
+{
+  "case": "ART05",
+  "phase": "revision",
+  "native_rows": 259,
+  "first_native_log_is_exact_prefix": true,
+  "second_prompt_matches_fixed_text": true,
+  "outer_tool_call_pairs": 27,
+  "command_execution_count": 31,
+  "event_item_counts": {
+    "UserMessage": 1,
+    "AgentMessage": 6,
+    "CommandExecution": 31,
+    "Reasoning": 28,
+    "McpToolCall": 1,
+    "ImageView": 8
+  },
+  "final_link_paths": [
+    "$WORKSPACE/output/public_company_reporting.xlsx",
+    "$WORKSPACE/output/public_company_reporting.pptx",
+    "$WORKSPACE/output/public_company_reporting.docx"
+  ],
+  "current_files": [
+    {
+      "path": "$WORKSPACE/output/public_company_reporting.xlsx",
+      "sha256": "5c4f94ba01cc267d565599a6016a8776d7124ced187947d7cde295142f27a917",
+      "matches_archived_revision": true,
+      "differs_from_first": true
+    },
+    {
+      "path": "$WORKSPACE/output/public_company_reporting.pptx",
+      "sha256": "abf5f24aa1c7d0a7c48f1987a8301f9c5bfbe2a5107bdf89896cc0bdf95d91cd",
+      "matches_archived_revision": true,
+      "differs_from_first": true
+    },
+    {
+      "path": "$WORKSPACE/output/public_company_reporting.docx",
+      "sha256": "78b7b95ef316059ca4e7b6b6499359133711e36e9f0bd5d08881afe24a500041",
+      "matches_archived_revision": true,
+      "differs_from_first": true
+    }
+  ],
+  "all_three_links_point_to_current_revised_files": true,
+  "read_isolation_verified": false,
+  "limits": [
+    "源日志保留全部调用和原返回；后续成功不掩盖中途错误。",
+    "产品render_comparison报告native_chart_parts为空，但实际14个图表部件位于ppt/slides/charts；独立按实际路径逐字节核对保留，不依赖该漏计。",
+    "没有评测者逐页视觉验收，不声称Microsoft Office原生打开。"
+  ]
+}

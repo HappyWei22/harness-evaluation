@@ -1,0 +1,65 @@
+{
+  "case_id": "ART01",
+  "task_name": "技能包整理与可用性交付",
+  "date": "2026-10-23",
+  "product": "Codex",
+  "rule_version": "0.1.0-pilot",
+  "product_runs": 1,
+  "max_score": 2,
+  "confirmed_score": 2,
+  "known_failed_score": 0,
+  "unknown_score": 0,
+  "formal_score": null,
+  "is_pure_harness_causal_score": false,
+  "items": [
+    {
+      "id": "ART01-1",
+      "name": "包内文件、结构与清单对应",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "1754字节ZIP恰好四项，三份载荷与清单指纹符合既定合同，九份输入与工具保持原样；无额外工作区文件。",
+      "evidence": [
+        "阶段01-首次交付/交付物独立核对.json",
+        "轨迹核对.json"
+      ]
+    },
+    {
+      "id": "ART01-2",
+      "name": "用户取得的包可实际使用",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass_user_confirmed",
+      "reason": "用户确认已实际点击本轮最终ZIP入口且能够取得；原生链接对应本轮归档文件，可信载荷指纹核对后独立解包运行通过。",
+      "evidence": [
+        "阶段01-首次交付/交付物独立核对.json",
+        "轨迹核对.json",
+        "用户入口确认.json"
+      ]
+    }
+  ],
+  "actual_model": "gpt-6.1-sol",
+  "actual_reasoning": "high",
+  "native_outer_call_pairs": 5,
+  "native_inner_exec_commands": 10,
+  "inner_nonzero_exit_codes": [
+    1
+  ],
+  "product_outputs_modified_by_evaluator": false,
+  "original_verifier_modified": false,
+  "raw_original_verifier_result": "reject: safe_extraction/runtime_smoke本机环境不兼容；原16项逐项结果保留",
+  "separate_findings": [
+    {
+      "kind": "self_check_assertion_error",
+      "effect": "初始已有空output目录，但自检将其预期为新增项；产生一次exit1，随后文件白名单终检成功。",
+      "score_effect": "没有观察到成品或输入损坏，不因中间失败自动扣结果分。",
+      "evidence": "轨迹核对.json:failure_analysis"
+    }
+  ],
+  "limits": [
+    "没有沿用其他产品原题成功来推断Codex表现；采用同一既定检查。",
+    "原Linux运行环境未复现，不输出原题官方成绩。",
+    "仅一次原生配置，不能推断稳定可靠或纯Harness因果。",
+    "用户已确认实际取件；未另存用户下载副本，不声称进行了下载副本字节比较。"
+  ]
+}

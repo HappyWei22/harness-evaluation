@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-23",
+  "files": [
+    {
+      "path": "input/OBW4-024_approval_record.docx",
+      "archived_sha256": "43c4b8911ce7d08d9639c32d05500ded6a4523e8f391d7b97a9a683ec77fa459",
+      "live_sha256": "43c4b8911ce7d08d9639c32d05500ded6a4523e8f391d7b97a9a683ec77fa459",
+      "matches_archive": true
+    },
+    {
+      "path": "input/OBW4-024_correspondence_extract.docx",
+      "archived_sha256": "24e096963cded0e1dd094133c36c40ccc12c763cee2fa76084c3c07dfeca146b",
+      "live_sha256": "24e096963cded0e1dd094133c36c40ccc12c763cee2fa76084c3c07dfeca146b",
+      "matches_archive": true
+    },
+    {
+      "path": "input/OBW4-024_request_memo.docx",
+      "archived_sha256": "effaae608c39219dee456e8600f7f5152b5bb5494fb74f64e3a9c88cc0c42188",
+      "live_sha256": "effaae608c39219dee456e8600f7f5152b5bb5494fb74f64e3a9c88cc0c42188",
+      "matches_archive": true
+    },
+    {
+      "path": "input/public_company_reporting.docx",
+      "archived_sha256": "f1431152132c167fa4254a1ea1138c730f2f987e44f5651160b5db03e8a0aea3",
+      "live_sha256": "f1431152132c167fa4254a1ea1138c730f2f987e44f5651160b5db03e8a0aea3",
+      "matches_archive": true
+    },
+    {
+      "path": "input/public_company_reporting.pptx",
+      "archived_sha256": "33422366bf3b52a08e0abf7aefec4b5b99c1aada6f5a0ae392543208afd4f4d1",
+      "live_sha256": "33422366bf3b52a08e0abf7aefec4b5b99c1aada6f5a0ae392543208afd4f4d1",
+      "matches_archive": true
+    },
+    {
+      "path": "input/public_company_reporting.xlsx",
+      "archived_sha256": "c0e1fca4c34778db2ca344158ceb3f46c0c618f0eedcc7b472b96bd2775a1878",
+      "live_sha256": "c0e1fca4c34778db2ca344158ceb3f46c0c618f0eedcc7b472b96bd2775a1878",
+      "matches_archive": true
+    },
+    {
+      "path": "output/public_company_reporting.docx",
+      "archived_sha256": "6266119fb86a58ae87db1328d2b249df81bcedca323efc8455c5111ca722b88a",
+      "live_sha256": "6266119fb86a58ae87db1328d2b249df81bcedca323efc8455c5111ca722b88a",
+      "matches_archive": true
+    },
+    {
+      "path": "output/public_company_reporting.pptx",
+      "archived_sha256": "c940abdd56172cd857ee609eea0c5701b7a6e26f7284d095cd51c5ae57e29a57",
+      "live_sha256": "c940abdd56172cd857ee609eea0c5701b7a6e26f7284d095cd51c5ae57e29a57",
+      "matches_archive": true
+    },
+    {
+      "path": "output/public_company_reporting.xlsx",
+      "archived_sha256": "e0dbf550e6e931da843550d8dd5d26d7271e2df1605cf8860c722c930e5e3d27",
+      "live_sha256": "e0dbf550e6e931da843550d8dd5d26d7271e2df1605cf8860c722c930e5e3d27",
+      "matches_archive": true
+    }
+  ],
+  "all_nine_match": true,
+  "product_files_modified": false
+}

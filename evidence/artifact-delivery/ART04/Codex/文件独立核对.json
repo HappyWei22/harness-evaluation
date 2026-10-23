@@ -1,0 +1,574 @@
+{
+  "case": "ART04",
+  "rule_version": "art04-1.0.0-preflight",
+  "phase": "first",
+  "workspace": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/运行记录/Codex-a01/阶段01-首次交付/工作目录",
+  "package_state": {
+    "files": [
+      {
+        "name": "public_company_reporting.xlsx",
+        "exists": true,
+        "package_ok": true,
+        "bytes": 13618213,
+        "sha256": "e0dbf550e6e931da843550d8dd5d26d7271e2df1605cf8860c722c930e5e3d27"
+      },
+      {
+        "name": "public_company_reporting.pptx",
+        "exists": true,
+        "package_ok": true,
+        "bytes": 383913,
+        "sha256": "c940abdd56172cd857ee609eea0c5701b7a6e26f7284d095cd51c5ae57e29a57"
+      },
+      {
+        "name": "public_company_reporting.docx",
+        "exists": true,
+        "package_ok": true,
+        "bytes": 165137,
+        "sha256": "6266119fb86a58ae87db1328d2b249df81bcedca323efc8455c5111ca722b88a"
+      }
+    ],
+    "extras": [],
+    "exact_set": true,
+    "all_packages_ok": true
+  },
+  "input_state": {
+    "available": true,
+    "all_unchanged": true,
+    "files": [
+      {
+        "name": "OBW4-024_approval_record.docx",
+        "unchanged": true
+      },
+      {
+        "name": "OBW4-024_correspondence_extract.docx",
+        "unchanged": true
+      },
+      {
+        "name": "OBW4-024_request_memo.docx",
+        "unchanged": true
+      },
+      {
+        "name": "public_company_reporting.docx",
+        "unchanged": true
+      },
+      {
+        "name": "public_company_reporting.pptx",
+        "unchanged": true
+      },
+      {
+        "name": "public_company_reporting.xlsx",
+        "unchanged": true
+      }
+    ]
+  },
+  "retrieved": {
+    "status": "unknown",
+    "reason": "尚无从产品最终入口取得的副本；磁盘文件不能代替取件证据"
+  },
+  "automatic_dimension_score": null,
+  "limitations": [
+    "原检查通过不证明Office实际打开或全部视觉排版正确",
+    "仅产生文件观察；维度判分还需原生日志与取件来源证据"
+  ],
+  "upstream_original": {
+    "task_id": "OBW4-024",
+    "passed": false,
+    "file_passed": false,
+    "valid_run": true,
+    "score": 64.0,
+    "semantic_score": 60.0,
+    "preservation_score": 80.0,
+    "interaction": {
+      "required": false,
+      "evaluated": false,
+      "passed": true,
+      "score": null,
+      "checks": []
+    },
+    "semantic_earned_weight": 18,
+    "semantic_total_weight": 30,
+    "preservation_earned_weight": 44,
+    "preservation_total_weight": 55,
+    "results": [
+      {
+        "id": "xlsx:0",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "将 RAYONIER INC 的批准 Actual 更新为审批材料推导值",
+        "actual": {
+          "value": 3125,
+          "formula": null
+        }
+      },
+      {
+        "id": "xlsx:1",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "同步仪表盘报告期",
+        "actual": {
+          "value": "2026-11",
+          "formula": null
+        }
+      },
+      {
+        "id": "xlsx:2",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "同步受治理报告期",
+        "actual": {
+          "value": "2026-11",
+          "formula": null
+        }
+      },
+      {
+        "id": "xlsx:3",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "更新仪表盘版本",
+        "actual": {
+          "value": "2026.11-R3A4",
+          "formula": null
+        }
+      },
+      {
+        "id": "xlsx:4",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "同步版本假设",
+        "actual": {
+          "value": "2026.11-R3A4",
+          "formula": null
+        }
+      },
+      {
+        "id": "xlsx:5",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "同步报告负责人",
+        "actual": {
+          "value": "External Reporting",
+          "formula": null
+        }
+      },
+      {
+        "id": "xlsx:6",
+        "passed": false,
+        "weight": 1,
+        "category": "semantic",
+        "message": "更新来源用途说明",
+        "actual": {
+          "value": "Primary fact records",
+          "formula": null
+        }
+      },
+      {
+        "id": "xlsx:7",
+        "passed": false,
+        "weight": 1,
+        "category": "semantic",
+        "message": "记录来源更新",
+        "actual": {
+          "new_records": 4,
+          "selected_row": 122,
+          "matching_row": null
+        }
+      },
+      {
+        "id": "xlsx:8",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "关闭趋势问题",
+        "actual": {
+          "new_records": 4,
+          "selected_row": 122,
+          "matching_row": null
+        }
+      },
+      {
+        "id": "xlsx:9",
+        "passed": false,
+        "weight": 1,
+        "category": "semantic",
+        "message": "在Issue_Log追加late-amendment记录并填写Observation",
+        "actual": {
+          "new_records": 4,
+          "selected_row": 122,
+          "matching_row": null
+        }
+      },
+      {
+        "id": "xlsx:10",
+        "passed": false,
+        "weight": 1,
+        "category": "semantic",
+        "message": "在Issue_Log追加late-amendment记录并填写Decision",
+        "actual": {
+          "new_records": 4,
+          "selected_row": 122,
+          "matching_row": null
+        }
+      },
+      {
+        "id": "xlsx:11",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "在Issue_Log追加late-amendment记录并填写Owner",
+        "actual": {
+          "new_records": 4,
+          "selected_row": 122,
+          "matching_row": null
+        }
+      },
+      {
+        "id": "xlsx:12",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "在Issue_Log追加late-amendment记录并填写Status",
+        "actual": {
+          "new_records": 4,
+          "selected_row": 122,
+          "matching_row": null
+        }
+      },
+      {
+        "id": "xlsx:13",
+        "passed": false,
+        "weight": 1,
+        "category": "semantic",
+        "message": "在Change_Log追加amendment记录并填写Change summary",
+        "actual": {
+          "new_records": 5,
+          "selected_row": 92,
+          "matching_row": null
+        }
+      },
+      {
+        "id": "xlsx:14",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "在Change_Log追加amendment记录并填写Version",
+        "actual": {
+          "new_records": 5,
+          "selected_row": 92,
+          "matching_row": null
+        }
+      },
+      {
+        "id": "invariant:xlsx-open",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "XLSX package integrity"
+      },
+      {
+        "id": "invariant:xlsx-sheets",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "sheet count 16; baseline 16"
+      },
+      {
+        "id": "invariant:xlsx-panes",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "freeze panes preserved"
+      },
+      {
+        "id": "invariant:xlsx-names-charts",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "defined names and native chart count preserved"
+      },
+      {
+        "id": "invariant:xlsx-non-target-cells",
+        "passed": false,
+        "weight": 4,
+        "category": "preservation",
+        "message": "non-target cells and formulas preserved"
+      },
+      {
+        "id": "ppt:0",
+        "passed": true,
+        "weight": 2,
+        "category": "semantic",
+        "message": "将原生图表中 RAYONIER INC 对应数据点更新为批准值",
+        "actual": 3125.0
+      },
+      {
+        "id": "ppt:1",
+        "passed": false,
+        "weight": 1,
+        "category": "semantic",
+        "message": "追加审阅备注",
+        "actual": "Evidence note 25: U.S. SEC Financial Statement Data Sets, 2025 Q4. Review state: working draft. Owner: Operations PMO.OBW4-024 signed amendment | RAYONIER INC | control period 2026-11 | owner External Reporting. Actual 2,585 + signed adjustment 540 = 3,125. Exclude the unapproved adjacent item. Reference and other categories unchanged. Source: OBW4-024_approval_record.docx, Approved decisions and Approved calculation. Version 2026.09-R1 -> 2026.11-R3A4. Workbook stored baseline 2,543 differs from signed 2,585; retained as open ISS-0122. Do not substitute withdrawn candidate 3,260."
+      },
+      {
+        "id": "ppt:2",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "更新第二条业务切片实际值",
+        "actual": "2,882"
+      },
+      {
+        "id": "ppt:3",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "更新对应差异",
+        "actual": "+5.2%"
+      },
+      {
+        "id": "ppt:4",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "更新责任人",
+        "actual": "External Reporting"
+      },
+      {
+        "id": "ppt:5",
+        "passed": false,
+        "weight": 1,
+        "category": "semantic",
+        "message": "追加讲者备注",
+        "actual": "Evidence note 45: U.S. SEC Financial Statement Data Sets, 2025 Q4. Review state: working draft. Owner: Operations PMO.OBW4-024 signed management view | RAYONIER INC | 2026-11 | External Reporting. Reported value 2,882; variance +5.2%, as separately approved in OBW4-024_approval_record.docx. These are the signed management-table fields, not a recalculation from chart Actual or workbook Plan. Actual is 3,125. Other rows and disposition unchanged. Version 2026.09-R1 -> 2026.11-R3A4."
+      },
+      {
+        "id": "ppt:6",
+        "passed": false,
+        "weight": 2,
+        "category": "semantic",
+        "message": "统一演示来源行",
+        "actual": {
+          "matched": 0,
+          "total": 112
+        }
+      },
+      {
+        "id": "ppt:7",
+        "passed": false,
+        "weight": 1,
+        "category": "semantic",
+        "message": "更新演示门禁状态",
+        "actual": "WORKING DRAFTOwner review required"
+      },
+      {
+        "id": "ppt:8",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "更新末页版本",
+        "actual": "2026.11-R3A4"
+      },
+      {
+        "id": "ppt:9",
+        "passed": false,
+        "weight": 2,
+        "category": "semantic",
+        "message": "统一演示页脚",
+        "actual": {
+          "matched": 0,
+          "total": 112
+        }
+      },
+      {
+        "id": "ppt:10",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "记录版本滚动",
+        "actual": "Evidence note 112: U.S. SEC Financial Statement Data Sets, 2025 Q4. Review state: working draft. Owner: Operations PMO.Amendment lineage: supplied pack 2026.09-R1 retained as superseded evidence; current review version 2026.11-R3A4, control period 2026-11, owner External Reporting. No intermediate version inferred. Governing source: OBW4-024_approval_record.docx. Amendment evidence and prior logs retained in workbook CHG-0091 to CHG-0095. ISS-0122 baseline discrepancy remains Open. Publication state remains working draft; this amendment does not assert a new release authorization."
+      },
+      {
+        "id": "invariant:ppt-slides",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "slide count 112; baseline 112"
+      },
+      {
+        "id": "invariant:ppt-charts",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "native chart parts 14; baseline 14"
+      },
+      {
+        "id": "invariant:ppt-open",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "PPTX package integrity"
+      },
+      {
+        "id": "invariant:ppt-shapes-tables",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "per-slide shape and native-table counts preserved"
+      },
+      {
+        "id": "invariant:ppt-notes-masters",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "notes, masters and layouts preserved"
+      },
+      {
+        "id": "invariant:ppt-non-target-shape-text",
+        "passed": false,
+        "weight": 3,
+        "category": "preservation",
+        "message": "non-target slide text preserved"
+      },
+      {
+        "id": "invariant:ppt-non-target-native-data",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "non-target chart points and table cells preserved"
+      },
+      {
+        "id": "invariant:ppt-non-target-notes",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "non-target speaker notes preserved"
+      },
+      {
+        "id": "docx:0",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "更新报告版本",
+        "actual": "Version 2026.11-R3A4"
+      },
+      {
+        "id": "docx:1",
+        "passed": true,
+        "weight": 1,
+        "category": "preservation",
+        "message": "发布状态未经批准保持不变",
+        "actual": "Publication state: working draft"
+      },
+      {
+        "id": "invariant:docx-pages",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "explicit page breaks 85; baseline 85"
+      },
+      {
+        "id": "invariant:docx-comments",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "comments part preserved exactly"
+      },
+      {
+        "id": "invariant:docx-revisions",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "tracked revision identities preserved"
+      },
+      {
+        "id": "invariant:docx-bookmarks",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "bookmark names and ids preserved"
+      },
+      {
+        "id": "invariant:docx-links-headers",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "hyperlink targets and headers/footers preserved"
+      },
+      {
+        "id": "invariant:docx-open",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "DOCX package integrity"
+      },
+      {
+        "id": "invariant:docx-non-target-text",
+        "passed": false,
+        "weight": 4,
+        "category": "preservation",
+        "message": "non-target document text preserved"
+      }
+    ]
+  },
+  "version_observation": {
+    "passed": false,
+    "results": [
+      {
+        "id": "xlsx:0",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "更新仪表盘版本",
+        "actual": {
+          "value": "2026.11-R3A4",
+          "formula": null
+        }
+      },
+      {
+        "id": "xlsx:1",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "同步版本假设",
+        "actual": {
+          "value": "2026.11-R3A4",
+          "formula": null
+        }
+      },
+      {
+        "id": "ppt:0",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "更新末页版本",
+        "actual": "2026.11-R3A4"
+      },
+      {
+        "id": "ppt:1",
+        "passed": false,
+        "weight": 2,
+        "category": "semantic",
+        "message": "统一演示页脚",
+        "actual": {
+          "matched": 0,
+          "total": 112
+        }
+      },
+      {
+        "id": "docx:0",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "更新报告版本",
+        "actual": "Version 2026.11-R3A4"
+      }
+    ],
+    "scope": "只提取版本位置的语义原子检查；原题业务修改和完整保留结果见upstream_original"
+  },
+  "status": "observed_not_scored"
+}

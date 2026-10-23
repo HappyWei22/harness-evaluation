@@ -1,0 +1,19 @@
+{
+  "required_artifacts": 9,
+  "manifest_records": 3,
+  "manifest_paths_metadata_bytes_sha256_pass": true,
+  "checksums_and_receipt_pass": true,
+  "closed_staged_file_set_pass": true,
+  "quarantine_state_pass": true,
+  "initial_13_files_unchanged": true,
+  "input_integrity_unknown_reason": null,
+  "generated_file_sha256": {
+    "staged_transfer/manifest.json": "73a5d3d04d3a3115775ce5e2504476b0be21e6db6f84b3bf43848dc978c00268",
+    "staged_transfer/checksums.sha256": "034cf558d77975ba2b3083029439a515730bcb31bda7b0d0895a85606e9df08e",
+    "staged_transfer/records/REC-001/january_council_minutes.pdf": "9b0314eb15925911a8e0a3a9b39e5d4ae3b8c398268a3f98f419f1dfd1bf4f44",
+    "staged_transfer/records/REC-002/district_boundary_map.tif": "ad9d51f2deeed4ef283b3227604bb08ca72dfab67bbaf2ba55faccbad4f3d8ff",
+    "staged_transfer/records/REC-003/public_budget_hearing.wav": "722b21e1a901f19f1c5b387365d39fb3039f4a5f5864cb3c01c99d78e80e8515",
+    "quarantine.json": "c3ef0fa27740c2e7cea3557b554d1ae9f9c7265bb6d10a96ae4a7ecdd877a6ed",
+    "validation_receipt.json": "a055eba3271d0929809fc747954582ced6c273b9baf32eacd1ea759446e5d3db"
+  }
+}

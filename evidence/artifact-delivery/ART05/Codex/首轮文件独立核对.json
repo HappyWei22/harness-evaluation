@@ -1,0 +1,81 @@
+{
+  "case_id": "ART05",
+  "rule_version": "art05-1.0.0-preflight",
+  "phase": "release",
+  "workspace": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/Codex-a01/阶段01-原包交付/工作目录",
+  "package_state": {
+    "files": [
+      {
+        "name": "public_company_reporting.xlsx",
+        "exists": true,
+        "package_ok": true,
+        "bytes": 13616038,
+        "sha256": "69c3f1ad7a5d700ffc877dc651c17b55f2eb6dbf4e08ecdb4a879f8231754c1a"
+      },
+      {
+        "name": "public_company_reporting.pptx",
+        "exists": true,
+        "package_ok": true,
+        "bytes": 385480,
+        "sha256": "76f5905d4d2ba2c40c2dbf5116a9cee0419c025a9456864d638a688f25bc10f7"
+      },
+      {
+        "name": "public_company_reporting.docx",
+        "exists": true,
+        "package_ok": true,
+        "bytes": 164229,
+        "sha256": "78b9376029ca5ab650d903c05b93ac8430a313d2f285a1f89b440f59dab1a765"
+      }
+    ],
+    "extras": [],
+    "exact_set": true,
+    "all_packages_ok": true
+  },
+  "inputs": {
+    "available": true,
+    "all_match": true,
+    "files": [
+      {
+        "name": "public_company_reporting.docx",
+        "matches_initial": true
+      },
+      {
+        "name": "public_company_reporting.pptx",
+        "matches_initial": true
+      },
+      {
+        "name": "public_company_reporting.xlsx",
+        "matches_initial": true
+      }
+    ]
+  },
+  "retrieved": {
+    "status": "unknown",
+    "reason": "尚无从产品最终入口取得的副本；磁盘文件不能代替取件证据"
+  },
+  "automatic_dimension_score": null,
+  "is_product_run": false,
+  "limits": [
+    "原生结构检查不证明所有视觉样式无变化",
+    "实际交付入口和下载来源需独立留证"
+  ],
+  "initial_release_fidelity": {
+    "all_match": true,
+    "files": [
+      {
+        "name": "public_company_reporting.docx",
+        "matches_initial": true
+      },
+      {
+        "name": "public_company_reporting.pptx",
+        "matches_initial": true
+      },
+      {
+        "name": "public_company_reporting.xlsx",
+        "matches_initial": true
+      }
+    ]
+  },
+  "can_send_revision_after_archive": true,
+  "status": "release_observed_not_scored"
+}

@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-23",
+  "timezone": "Asia/Shanghai",
+  "time_budget_seconds": 600,
+  "started_at": "2026-10-23T14:53:01+08:00",
+  "main_review_completed_at": "2026-10-23T14:58:20+08:00",
+  "main_review_elapsed_seconds": 319,
+  "finished_within_budget": true,
+  "score_sources_checked": 20,
+  "effective_observations_checked": 50,
+  "pending_before": 10,
+  "pending_resolved": 2,
+  "pending_after": 8,
+  "pass_resolution": "Codex ART04实际取件",
+  "fail_resolution": "豆包ART02地图原回复交付入口",
+  "frozen_rule_changes": false,
+  "new_product_runs": 0,
+  "product_outputs_modified": false,
+  "published_to_github": false,
+  "ui_scope": "仅只读观察元宝当前ART05会话并尝试定位旧会话，未取得ART01/ART04新云端现场，未发送消息/刷新/重试；窗口检测到用户操作后停止动作。",
+  "checks": {
+    "twenty_source_sha256_match": true,
+    "fifty_item_totals_consistent": true,
+    "eight_pending_items_accounted_for": true,
+    "summary_local_links_exist": true,
+    "current_ledger_matches_summary": true
+  },
+  "limits": [
+    "待定项未自动当作失败或通过；无决定性新证据的继续保留。",
+    "没有修改历史原始日志、原程序结果、原生产品成品；当前评分及状态更新前已备份。"
+  ]
+}

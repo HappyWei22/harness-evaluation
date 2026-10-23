@@ -1,0 +1,590 @@
+{
+  "case_id": "ART05",
+  "rule_version": "art05-1.0.0-preflight",
+  "phase": "revision",
+  "workspace": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/运行记录/Codex-a01/阶段02-修改后交付/工作目录",
+  "package_state": {
+    "files": [
+      {
+        "name": "public_company_reporting.xlsx",
+        "exists": true,
+        "package_ok": true,
+        "bytes": 13616112,
+        "sha256": "5c4f94ba01cc267d565599a6016a8776d7124ced187947d7cde295142f27a917"
+      },
+      {
+        "name": "public_company_reporting.pptx",
+        "exists": true,
+        "package_ok": true,
+        "bytes": 385756,
+        "sha256": "abf5f24aa1c7d0a7c48f1987a8301f9c5bfbe2a5107bdf89896cc0bdf95d91cd"
+      },
+      {
+        "name": "public_company_reporting.docx",
+        "exists": true,
+        "package_ok": true,
+        "bytes": 164254,
+        "sha256": "78b7b95ef316059ca4e7b6b6499359133711e36e9f0bd5d08881afe24a500041"
+      }
+    ],
+    "extras": [],
+    "exact_set": true,
+    "all_packages_ok": true
+  },
+  "inputs": {
+    "available": true,
+    "all_match": true,
+    "files": [
+      {
+        "name": "public_company_reporting.docx",
+        "matches_initial": true
+      },
+      {
+        "name": "public_company_reporting.pptx",
+        "matches_initial": true
+      },
+      {
+        "name": "public_company_reporting.xlsx",
+        "matches_initial": true
+      }
+    ]
+  },
+  "retrieved": {
+    "status": "unknown",
+    "reason": "尚无从产品最终入口取得的副本；磁盘文件不能代替取件证据"
+  },
+  "automatic_dimension_score": null,
+  "is_product_run": false,
+  "limits": [
+    "原生结构检查不证明所有视觉样式无变化",
+    "实际交付入口和下载来源需独立留证"
+  ],
+  "first_release_fidelity": {
+    "all_match": true,
+    "files": [
+      {
+        "name": "public_company_reporting.docx",
+        "matches_initial": true
+      },
+      {
+        "name": "public_company_reporting.pptx",
+        "matches_initial": true
+      },
+      {
+        "name": "public_company_reporting.xlsx",
+        "matches_initial": true
+      }
+    ]
+  },
+  "generic_adapter_raw": {
+    "task_id": "ART05-revision",
+    "passed": false,
+    "file_passed": false,
+    "valid_run": true,
+    "score": 85.45,
+    "semantic_score": 81.82,
+    "preservation_score": 100.0,
+    "interaction": {
+      "required": false,
+      "evaluated": false,
+      "passed": true,
+      "score": null,
+      "checks": []
+    },
+    "semantic_earned_weight": 9,
+    "semantic_total_weight": 11,
+    "preservation_earned_weight": 54,
+    "preservation_total_weight": 54,
+    "results": [
+      {
+        "id": "xlsx:0",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "同步仪表盘版本",
+        "actual": {
+          "value": "2026.11-R3A4-D1",
+          "formula": null
+        }
+      },
+      {
+        "id": "xlsx:1",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "同步版本假设",
+        "actual": {
+          "value": "2026.11-R3A4-D1",
+          "formula": null
+        }
+      },
+      {
+        "id": "xlsx:2",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "追加本次修订的台账说明",
+        "actual": {
+          "new_records": 1,
+          "selected_row": 93,
+          "matching_row": 93
+        }
+      },
+      {
+        "id": "xlsx:3",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "新台账行对应新版本",
+        "actual": {
+          "new_records": 1,
+          "selected_row": 93,
+          "matching_row": 93
+        }
+      },
+      {
+        "id": "invariant:xlsx-open",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "XLSX package integrity"
+      },
+      {
+        "id": "invariant:xlsx-sheets",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "sheet count 16; baseline 16"
+      },
+      {
+        "id": "invariant:xlsx-panes",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "freeze panes preserved"
+      },
+      {
+        "id": "invariant:xlsx-names-charts",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "defined names and native chart count preserved"
+      },
+      {
+        "id": "invariant:xlsx-non-target-cells",
+        "passed": true,
+        "weight": 4,
+        "category": "preservation",
+        "message": "non-target cells and formulas preserved"
+      },
+      {
+        "id": "ppt:0",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "同步末页版本标记",
+        "actual": "2026.11-R3A4-D1"
+      },
+      {
+        "id": "ppt:1",
+        "passed": true,
+        "weight": 2,
+        "category": "semantic",
+        "message": "同步全部页脚版本，保留其他文字",
+        "actual": {
+          "matched": 112,
+          "total": 112
+        }
+      },
+      {
+        "id": "ppt:2",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "在末页原备注之后追加修订说明",
+        "actual": "Evidence note 112: U.S. SEC Financial Statement Data Sets, 2025 Q4. Review state: working draft. Owner: Operations PMO. Amendment 2026.11-R3A4 supersedes the prior candidate while retaining lineage; External Reporting confirmed the source.REV-2026-018: delivery correction only; prior approved business values retained."
+      },
+      {
+        "id": "invariant:ppt-slides",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "slide count 112; baseline 112"
+      },
+      {
+        "id": "invariant:ppt-charts",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "native chart parts 14; baseline 14"
+      },
+      {
+        "id": "invariant:ppt-open",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "PPTX package integrity"
+      },
+      {
+        "id": "invariant:ppt-shapes-tables",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "per-slide shape and native-table counts preserved"
+      },
+      {
+        "id": "invariant:ppt-notes-masters",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "notes, masters and layouts preserved"
+      },
+      {
+        "id": "invariant:ppt-non-target-shape-text",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "non-target slide text preserved"
+      },
+      {
+        "id": "invariant:ppt-non-target-native-data",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "non-target chart points and table cells preserved"
+      },
+      {
+        "id": "invariant:ppt-non-target-notes",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "non-target speaker notes preserved"
+      },
+      {
+        "id": "docx:0",
+        "passed": false,
+        "weight": 1,
+        "category": "semantic",
+        "message": "同步报告首页版本行",
+        "actual": "not found"
+      },
+      {
+        "id": "docx:1",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "同步报告控制表版本",
+        "actual": "2026.11-R3A4-D1"
+      },
+      {
+        "id": "docx:2",
+        "passed": false,
+        "weight": 1,
+        "category": "semantic",
+        "message": "在首页副标题末尾追加修订标识",
+        "actual": "not found"
+      },
+      {
+        "id": "invariant:docx-pages",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "explicit page breaks 85; baseline 85"
+      },
+      {
+        "id": "invariant:docx-comments",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "comments part preserved exactly"
+      },
+      {
+        "id": "invariant:docx-revisions",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "tracked revision identities preserved"
+      },
+      {
+        "id": "invariant:docx-bookmarks",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "bookmark names and ids preserved"
+      },
+      {
+        "id": "invariant:docx-links-headers",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "hyperlink targets and headers/footers preserved"
+      },
+      {
+        "id": "invariant:docx-open",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "DOCX package integrity"
+      },
+      {
+        "id": "invariant:docx-non-target-text",
+        "passed": true,
+        "weight": 4,
+        "category": "preservation",
+        "message": "non-target document text preserved"
+      }
+    ]
+  },
+  "revision": {
+    "passed": true,
+    "results": [
+      {
+        "id": "xlsx:0",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "同步仪表盘版本",
+        "actual": {
+          "value": "2026.11-R3A4-D1",
+          "formula": null
+        }
+      },
+      {
+        "id": "xlsx:1",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "同步版本假设",
+        "actual": {
+          "value": "2026.11-R3A4-D1",
+          "formula": null
+        }
+      },
+      {
+        "id": "xlsx:2",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "追加本次修订的台账说明",
+        "actual": {
+          "new_records": 1,
+          "selected_row": 93,
+          "matching_row": 93
+        }
+      },
+      {
+        "id": "xlsx:3",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "新台账行对应新版本",
+        "actual": {
+          "new_records": 1,
+          "selected_row": 93,
+          "matching_row": 93
+        }
+      },
+      {
+        "id": "invariant:xlsx-open",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "XLSX package integrity"
+      },
+      {
+        "id": "invariant:xlsx-sheets",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "sheet count 16; baseline 16"
+      },
+      {
+        "id": "invariant:xlsx-panes",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "freeze panes preserved"
+      },
+      {
+        "id": "invariant:xlsx-names-charts",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "defined names and native chart count preserved"
+      },
+      {
+        "id": "invariant:xlsx-non-target-cells",
+        "passed": true,
+        "weight": 4,
+        "category": "preservation",
+        "message": "non-target cells and formulas preserved"
+      },
+      {
+        "id": "ppt:0",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "同步末页版本标记",
+        "actual": "2026.11-R3A4-D1"
+      },
+      {
+        "id": "ppt:1",
+        "passed": true,
+        "weight": 2,
+        "category": "semantic",
+        "message": "同步全部页脚版本，保留其他文字",
+        "actual": {
+          "matched": 112,
+          "total": 112
+        }
+      },
+      {
+        "id": "ppt:2",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "在末页原备注之后追加修订说明",
+        "actual": "Evidence note 112: U.S. SEC Financial Statement Data Sets, 2025 Q4. Review state: working draft. Owner: Operations PMO. Amendment 2026.11-R3A4 supersedes the prior candidate while retaining lineage; External Reporting confirmed the source.REV-2026-018: delivery correction only; prior approved business values retained."
+      },
+      {
+        "id": "invariant:ppt-slides",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "slide count 112; baseline 112"
+      },
+      {
+        "id": "invariant:ppt-charts",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "native chart parts 14; baseline 14"
+      },
+      {
+        "id": "invariant:ppt-open",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "PPTX package integrity"
+      },
+      {
+        "id": "invariant:ppt-shapes-tables",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "per-slide shape and native-table counts preserved"
+      },
+      {
+        "id": "invariant:ppt-notes-masters",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "notes, masters and layouts preserved"
+      },
+      {
+        "id": "invariant:ppt-non-target-shape-text",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "non-target slide text preserved"
+      },
+      {
+        "id": "invariant:ppt-non-target-native-data",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "non-target chart points and table cells preserved"
+      },
+      {
+        "id": "invariant:ppt-non-target-notes",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "non-target speaker notes preserved"
+      },
+      {
+        "id": "docx:0",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "同步报告首页版本行",
+        "actual": [
+          "Version 2026.11-R3A4-D1"
+        ],
+        "method": "exact paragraph transformation at original index"
+      },
+      {
+        "id": "docx:1",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "同步报告控制表版本",
+        "actual": "2026.11-R3A4-D1"
+      },
+      {
+        "id": "docx:2",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "在首页副标题末尾追加修订标识",
+        "actual": [
+          "Management evidence book | public data with a synthetic workflow overlay | Delivery correction REV-2026-018"
+        ],
+        "method": "exact paragraph transformation at original index"
+      },
+      {
+        "id": "invariant:docx-pages",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "explicit page breaks 85; baseline 85"
+      },
+      {
+        "id": "invariant:docx-comments",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "comments part preserved exactly"
+      },
+      {
+        "id": "invariant:docx-revisions",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "tracked revision identities preserved"
+      },
+      {
+        "id": "invariant:docx-bookmarks",
+        "passed": true,
+        "weight": 2,
+        "category": "preservation",
+        "message": "bookmark names and ids preserved"
+      },
+      {
+        "id": "invariant:docx-links-headers",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "hyperlink targets and headers/footers preserved"
+      },
+      {
+        "id": "invariant:docx-open",
+        "passed": true,
+        "weight": 3,
+        "category": "preservation",
+        "message": "DOCX package integrity"
+      },
+      {
+        "id": "invariant:docx-non-target-text",
+        "passed": true,
+        "weight": 4,
+        "category": "preservation",
+        "message": "non-target document text preserved"
+      }
+    ],
+    "preservation_passed": true
+  },
+  "exactly_one_new_change_record": true,
+  "all_three_changed_since_first": true,
+  "status": "revision_observed_not_scored"
+}

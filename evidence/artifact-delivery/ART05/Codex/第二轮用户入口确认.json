@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-23",
+  "case": "ART05",
+  "product": "Codex",
+  "phase": "revision",
+  "question": "Codex 这题第二轮最终回复中的三份新版文件，你是否都已实际点击并能打开或取得？首轮文件不计入本次确认。",
+  "answer": "三份新版都已取得",
+  "source": "direct_user_async_question_reply",
+  "all_three_retrieved": true,
+  "download_copy_byte_comparison_performed": false
+}

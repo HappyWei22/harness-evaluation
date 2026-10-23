@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-23",
+  "source": "direct_user_async_question_reply",
+  "question": "限时核查需要补两项实际取件事实：① Codex 第三题“三文件修订”（会话 <conversation-id>）的三份文件是否都已点击取得？② 豆包“电子档案移交”中的 district_boundary_map.tif，能否从原回复入口或交接说明入口打开/取得，而非仅自行去文件夹找到？请分别回答；未验证就写未验证。",
+  "answer": "①已取得②无法从回复取得，要去文件夹才能找到",
+  "scope": "仅Codex ART04实际取件和豆包ART02地图原生入口，不套用到其他题/产品"
+}

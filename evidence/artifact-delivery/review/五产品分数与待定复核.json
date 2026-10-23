@@ -1,0 +1,824 @@
+{
+  "date": "2026-10-23",
+  "scope": "ART01 2分 + ART02仅两项2分 + ART04首轮四项4分 + ART05续修两项2分",
+  "initial_unknown_points": 10,
+  "resolved_unknown_points": 2,
+  "remaining_unknown_points": 8,
+  "new_product_runs_in_review": 0,
+  "products": [
+    {
+      "product": "DSH",
+      "max_score": 10,
+      "confirmed_score": 8,
+      "known_failed_score": 1,
+      "unknown_score": 1,
+      "possible_confirmed_score_range": [
+        8,
+        9
+      ],
+      "cases": [
+        {
+          "case": "ART01",
+          "task_name": "技能包整理与可用性交付",
+          "max_score": 2,
+          "confirmed_score": 2,
+          "known_failed_score": 0,
+          "unknown_score": 0,
+          "public_score_source": "evidence/artifact-delivery/ART01/DSH/score.json",
+          "items": [
+            {
+              "id": "ART01-1",
+              "name": "包内文件、结构与清单对应",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": ""
+            },
+            {
+              "id": "ART01-2",
+              "name": "用户取得的包可实际使用",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": ""
+            }
+          ]
+        },
+        {
+          "case": "ART02",
+          "task_name": "电子档案筛选与移交包交付",
+          "max_score": 2,
+          "confirmed_score": 2,
+          "known_failed_score": 0,
+          "unknown_score": 0,
+          "public_score_source": "evidence/artifact-delivery/ART02/DSH/score.json",
+          "items": [
+            {
+              "id": "ART02-2",
+              "name": "清单对应实物",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": ""
+            },
+            {
+              "id": "ART02-4",
+              "name": "成果齐全且可取",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass_with_separate_quality_defect",
+              "reason": ""
+            }
+          ]
+        },
+        {
+          "case": "ART04",
+          "task_name": "三文件修订与多轮交付",
+          "max_score": 4,
+          "confirmed_score": 2,
+          "known_failed_score": 1,
+          "unknown_score": 1,
+          "public_score_source": "evidence/artifact-delivery/ART04/DSH/score.json",
+          "items": [
+            {
+              "id": "ART04-1",
+              "name": "首轮最终版保存",
+              "allocation": 1,
+              "score": 0,
+              "verdict": "fail",
+              "reason": "112页页脚未进入批准的新报告期及版本；末页标签已改，版本同步不完整"
+            },
+            {
+              "id": "ART04-2",
+              "name": "首轮三文件齐全且对应",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": "三份原名Office成品齐全且确有改动，六份input未变，output无额外文件"
+            },
+            {
+              "id": "ART04-3",
+              "name": "首轮结构和非目标内容保留",
+              "allocation": 1,
+              "score": null,
+              "verdict": "unknown_task_scope_ambiguity",
+              "reason": "已复现同步Word控制表版本仍被原程序判非目标变化；其他修改的授权边界仍不唯一，最终无法判断，不补分也不记确定失败。"
+            },
+            {
+              "id": "ART04-4",
+              "name": "首轮实际取件",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass_user_confirmed",
+              "reason": "present三文件与最终入口对应，用户确认三份均可取得"
+            }
+          ]
+        },
+        {
+          "case": "ART05",
+          "task_name": "已定稿报告包的多轮交付",
+          "max_score": 2,
+          "confirmed_score": 2,
+          "known_failed_score": 0,
+          "unknown_score": 0,
+          "public_score_source": "evidence/artifact-delivery/ART05/DSH/score.json",
+          "items": [
+            {
+              "id": "ART05-1",
+              "name": "后续修改保存且原成果保留",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": "首轮三份与提供输入字节一致；输入未变；二轮30项指定修改与保留检查全通过；三份均更新；Change_Log恰好新增CHG-0092一条。"
+            },
+            {
+              "id": "ART05-2",
+              "name": "再次交付对应当前最新版",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": "用户确认三个入口均能取得；评测助手实际打开Word及PPT入口，预览均显示D1；随后用户从二轮入口取得Excel，实查Dashboard!B10为D1。原生日志交付路径与二轮归档三文件对应，打开后任务文件哈希仍匹配归档。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "WorkBuddy",
+      "max_score": 10,
+      "confirmed_score": 7,
+      "known_failed_score": 2,
+      "unknown_score": 1,
+      "possible_confirmed_score_range": [
+        7,
+        8
+      ],
+      "cases": [
+        {
+          "case": "ART01",
+          "task_name": "技能包整理与可用性交付",
+          "max_score": 2,
+          "confirmed_score": 2,
+          "known_failed_score": 0,
+          "unknown_score": 0,
+          "public_score_source": "evidence/artifact-delivery/ART01/WorkBuddy/score.json",
+          "items": [
+            {
+              "id": "ART01-1",
+              "name": "包内文件、结构与清单对应",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": "四个包内条目、载荷和清单符合合同，公开九份原件和工具逐项指纹不变。"
+            },
+            {
+              "id": "ART01-2",
+              "name": "用户取得的包可实际使用",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": "原生发布路径与本轮文件对应，用户确认实际取件；可信载荷指纹核对后独立解包运行通过。"
+            }
+          ]
+        },
+        {
+          "case": "ART02",
+          "task_name": "电子档案筛选与移交包交付",
+          "max_score": 2,
+          "confirmed_score": 1,
+          "known_failed_score": 1,
+          "unknown_score": 0,
+          "public_score_source": "evidence/artifact-delivery/ART02/WorkBuddy/score.json",
+          "items": [
+            {
+              "id": "ART02-2",
+              "name": "清单对应实物",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": "实际九份成果完整；三份记录路径、元数据、字节和摘要与清单对应，回执引用摘要匹配，暂存树无额外记录。"
+            },
+            {
+              "id": "ART02-4",
+              "name": "成果齐全且可取",
+              "allocation": 1,
+              "score": 0,
+              "verdict": "fail",
+              "reason": "原生present_files仅发布六份说明和清单，最终回复只以REC-00{1,2,3}/…概括记录目录；没有三份实际记录副本的明确可打开入口，也没有完整成果ZIP。文件保存通过，最终交付不完整。"
+            }
+          ]
+        },
+        {
+          "case": "ART04",
+          "task_name": "三文件修订与多轮交付首轮",
+          "max_score": 4,
+          "confirmed_score": 2,
+          "known_failed_score": 1,
+          "unknown_score": 1,
+          "public_score_source": "evidence/artifact-delivery/ART04/WorkBuddy/score.json",
+          "items": [
+            {
+              "id": "ART04-1",
+              "name": "首轮最终版保存",
+              "allocation": 1,
+              "score": 0,
+              "verdict": "fail",
+              "reason": "XLSX两版本、PPT末页、Word首页已更新；112页PPT页脚仍为Working draft | management review | September 2026，既定版本同步检查未通过。"
+            },
+            {
+              "id": "ART04-2",
+              "name": "首轮三文件齐全且对应",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": "原名三份Office成品齐全、有实际修改，output无额外文件，六份输入与原件字节一致。"
+            },
+            {
+              "id": "ART04-3",
+              "name": "首轮结构和非目标内容保留",
+              "allocation": 1,
+              "score": null,
+              "verdict": "unknown_task_scope_ambiguity",
+              "reason": "统一适用既有授权范围与原保留名单冲突；原程序失败保持原样，不当作确定产品损坏，也不改写为通过。"
+            },
+            {
+              "id": "ART04-4",
+              "name": "首轮实际取件",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass_user_confirmed",
+              "reason": "原生发布三份成品；用户确认两款本轮三份文件均能取得。"
+            }
+          ]
+        },
+        {
+          "case": "ART05",
+          "task_name": "已定稿报告包的多轮交付",
+          "max_score": 2,
+          "confirmed_score": 2,
+          "known_failed_score": 0,
+          "unknown_score": 0,
+          "public_score_source": "evidence/artifact-delivery/ART05/WorkBuddy/score.json",
+          "items": [
+            {
+              "id": "ART05-1",
+              "name": "后续修改保存且原成果保留",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": "首轮三份与提供输入逐字节一致；两轮输入未变；第二轮指定修改正确，日志CHG-0092作为独立第93行追加，历史与非目标内容保留。"
+            },
+            {
+              "id": "ART05-2",
+              "name": "再次交付对应当前最新版",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": "用户确认本轮三个入口均已取得；原生present_files调用及返回对象三路径与独立验版的本地output三文件逐一对应，当前摘要仍匹配第二轮稳定快照。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "豆包办公",
+      "max_score": 10,
+      "confirmed_score": 6,
+      "known_failed_score": 3,
+      "unknown_score": 1,
+      "possible_confirmed_score_range": [
+        6,
+        7
+      ],
+      "cases": [
+        {
+          "case": "ART01",
+          "task_name": "技能包整理与可用性交付",
+          "max_score": 2,
+          "confirmed_score": 2,
+          "known_failed_score": 0,
+          "unknown_score": 0,
+          "public_score_source": "evidence/artifact-delivery/ART01/豆包办公/score.json",
+          "items": [
+            {
+              "id": "ART01-1",
+              "name": "包内文件、结构与清单对应",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": "四个包内条目、载荷和清单符合合同，公开九份原件和工具逐项指纹不变。"
+            },
+            {
+              "id": "ART01-2",
+              "name": "用户取得的包可实际使用",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": "原生发布路径与本轮文件对应，用户确认实际取件；可信载荷指纹核对后独立解包运行通过。"
+            }
+          ]
+        },
+        {
+          "case": "ART02",
+          "task_name": "电子档案筛选与移交包交付",
+          "max_score": 2,
+          "confirmed_score": 1,
+          "known_failed_score": 1,
+          "unknown_score": 0,
+          "public_score_source": "evidence/artifact-delivery/ART02/豆包办公/score.json",
+          "items": [
+            {
+              "id": "ART02-2",
+              "name": "清单对应实物",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": "实际九份成果完整；三份记录路径、元数据、字节和摘要与清单对应，回执引用摘要匹配，暂存树无额外记录。"
+            },
+            {
+              "id": "ART02-4",
+              "name": "成果齐全且可取",
+              "allocation": 1,
+              "score": 0,
+              "verdict": "fail_original_reply_entry_unusable_user_confirmed",
+              "reason": "用户明确确认district_boundary_map.tif无法从回复取得，需自行到文件夹找到。文件存在及可定位不能代替任务要求的交付入口；清单对应实物项仍通过，不重复扣分。"
+            }
+          ]
+        },
+        {
+          "case": "ART04",
+          "task_name": "三文件修订与多轮交付首轮",
+          "max_score": 4,
+          "confirmed_score": 2,
+          "known_failed_score": 1,
+          "unknown_score": 1,
+          "public_score_source": "evidence/artifact-delivery/ART04/豆包办公/score.json",
+          "items": [
+            {
+              "id": "ART04-1",
+              "name": "首轮最终版保存",
+              "allocation": 1,
+              "score": 0,
+              "verdict": "fail",
+              "reason": "XLSX两版本、PPT末页、Word首页已更新；112页PPT页脚仍为Working draft | management review | September 2026，既定版本同步检查未通过。"
+            },
+            {
+              "id": "ART04-2",
+              "name": "首轮三文件齐全且对应",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": "原名三份Office成品齐全、有实际修改，output无额外文件，六份输入与原件字节一致。"
+            },
+            {
+              "id": "ART04-3",
+              "name": "首轮结构和非目标内容保留",
+              "allocation": 1,
+              "score": null,
+              "verdict": "unknown_task_scope_ambiguity",
+              "reason": "统一适用既有授权范围与原保留名单冲突；原程序失败保持原样，不当作确定产品损坏，也不改写为通过。"
+            },
+            {
+              "id": "ART04-4",
+              "name": "首轮实际取件",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass_user_confirmed",
+              "reason": "原生发布三份成品；用户确认两款本轮三份文件均能取得。"
+            }
+          ]
+        },
+        {
+          "case": "ART05",
+          "task_name": "已定稿报告包的多轮交付",
+          "max_score": 2,
+          "confirmed_score": 1,
+          "known_failed_score": 1,
+          "unknown_score": 0,
+          "public_score_source": "evidence/artifact-delivery/ART05/豆包办公/score.json",
+          "items": [
+            {
+              "id": "ART05-1",
+              "name": "后续修改保存且原成果保留",
+              "allocation": 1,
+              "score": 0,
+              "verdict": "fail",
+              "reason": "Change_Log的新row r=93被写入row r=92内部，未作为sheetData下独立行追加。ZIP和XML良构、库读取成功及值核对通过不能消除此结构错误；原程序通过报告保持原样。"
+            },
+            {
+              "id": "ART05-2",
+              "name": "再次交付对应当前最新版",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": "用户确认本轮三个入口均已取得；原生present_files调用及返回对象三路径与独立验版的本地output三文件逐一对应，当前摘要仍匹配第二轮稳定快照。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "元宝专家模式",
+      "max_score": 10,
+      "confirmed_score": 4,
+      "known_failed_score": 2,
+      "unknown_score": 4,
+      "possible_confirmed_score_range": [
+        4,
+        8
+      ],
+      "cases": [
+        {
+          "case": "ART01",
+          "task_name": "技能包整理与可用性交付",
+          "max_score": 2,
+          "confirmed_score": 1,
+          "known_failed_score": 0,
+          "unknown_score": 1,
+          "public_score_source": "evidence/artifact-delivery/ART01/元宝专家模式/score.json",
+          "items": [
+            {
+              "id": "ART01-1",
+              "name": "包内文件、结构与清单对应",
+              "allocation": 1,
+              "score": null,
+              "verdict": "unknown_cloud_input_integrity",
+              "reason": "实际取得的ZIP各包内检查通过，但云端九份原件与工具是否保持原样未独立取得决定性证据。"
+            },
+            {
+              "id": "ART01-2",
+              "name": "用户取得的包可实际使用",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": "实际最终入口取得本轮正确ZIP，可信载荷指纹核对后独立解包运行退出0，输出三条正确事项。"
+            }
+          ]
+        },
+        {
+          "case": "ART02",
+          "task_name": "电子档案筛选与移交包交付",
+          "max_score": 2,
+          "confirmed_score": 2,
+          "known_failed_score": 0,
+          "unknown_score": 0,
+          "public_score_source": "evidence/artifact-delivery/ART02/元宝专家模式/score.json",
+          "items": [
+            {
+              "id": "ART02-2",
+              "name": "清单对应实物",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": "实际九份成果完整；三份记录路径、元数据、字节和摘要与清单对应，回执引用摘要匹配，暂存树无额外记录。"
+            },
+            {
+              "id": "ART02-4",
+              "name": "成果齐全且可取",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": "元宝原生最终ZIP入口已由评测助手实际下载；包内九份成果完整，清单与实际记录对应。"
+            }
+          ]
+        },
+        {
+          "case": "ART04",
+          "task_name": "三文件修订与多轮交付首轮",
+          "max_score": 4,
+          "confirmed_score": 0,
+          "known_failed_score": 1,
+          "unknown_score": 3,
+          "public_score_source": "evidence/artifact-delivery/ART04/元宝专家模式/score.json",
+          "items": [
+            {
+              "id": "ART04-1",
+              "name": "首轮最终版保存",
+              "allocation": 1,
+              "score": null,
+              "verdict": "unknown_no_cloud_artifact",
+              "reason": "未取得实际成品或云端保存现场，无法核对版本；不把无回复解释为内部从未保存。"
+            },
+            {
+              "id": "ART04-2",
+              "name": "首轮三文件齐全且对应",
+              "allocation": 1,
+              "score": null,
+              "verdict": "unknown_no_cloud_artifact",
+              "reason": "界面没有成品；未取得云端output与input，无法独立判定三文件是否保存及输入是否原样。"
+            },
+            {
+              "id": "ART04-3",
+              "name": "首轮结构和非目标内容保留",
+              "allocation": 1,
+              "score": null,
+              "verdict": "unknown_task_scope_and_no_artifact",
+              "reason": "共同任务授权范围歧义保留，另缺实际成品，不能核对结构。"
+            },
+            {
+              "id": "ART04-4",
+              "name": "首轮实际取件",
+              "allocation": 1,
+              "score": 0,
+              "verdict": "fail_no_entry_at_observation",
+              "reason": "用户报告本轮最后没有输出；原生界面仍只有正在处理，没有任何交付入口，当前用户未取得三份成果。依据是未交付事实，不是等待时长。"
+            }
+          ]
+        },
+        {
+          "case": "ART05",
+          "task_name": "已定稿报告包的多轮交付",
+          "max_score": 2,
+          "confirmed_score": 1,
+          "known_failed_score": 1,
+          "unknown_score": 0,
+          "public_score_source": "evidence/artifact-delivery/ART05/元宝专家模式/score.json",
+          "items": [
+            {
+              "id": "ART05-1",
+              "name": "后续修改保存且原成果保留",
+              "allocation": 1,
+              "score": 0,
+              "verdict": "fail",
+              "reason": "首轮经最终卡片实际下载的三份文件均新增docProps/custom.xml并改写两处包引用，与题面要求的原始字节不同，完整保留链的必要条件已明确不满足。第二轮指定修改全部正确，不再重复扣分；差异来自云端保存还是预览下载尚不能定位。"
+            },
+            {
+              "id": "ART05-2",
+              "name": "再次交付对应当前最新版",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": "评测助手从本轮最终三个卡片经原生预览下载取得三份Office实际文件，逐份确认D1版本及本轮日志/备注/副标题；不是首轮旧副本。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Codex",
+      "max_score": 10,
+      "confirmed_score": 9,
+      "known_failed_score": 0,
+      "unknown_score": 1,
+      "possible_confirmed_score_range": [
+        9,
+        10
+      ],
+      "cases": [
+        {
+          "case": "ART01",
+          "task_name": "技能包整理与可用性交付",
+          "max_score": 2,
+          "confirmed_score": 2,
+          "known_failed_score": 0,
+          "unknown_score": 0,
+          "public_score_source": "evidence/artifact-delivery/ART01/Codex/score.json",
+          "items": [
+            {
+              "id": "ART01-1",
+              "name": "包内文件、结构与清单对应",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": "1754字节ZIP恰好四项，三份载荷与清单指纹符合既定合同，九份输入与工具保持原样；无额外工作区文件。"
+            },
+            {
+              "id": "ART01-2",
+              "name": "用户取得的包可实际使用",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass_user_confirmed",
+              "reason": "用户确认已实际点击本轮最终ZIP入口且能够取得；原生链接对应本轮归档文件，可信载荷指纹核对后独立解包运行通过。"
+            }
+          ]
+        },
+        {
+          "case": "ART02",
+          "task_name": "电子档案筛选与移交包交付",
+          "max_score": 2,
+          "confirmed_score": 2,
+          "known_failed_score": 0,
+          "unknown_score": 0,
+          "public_score_source": "evidence/artifact-delivery/ART02/Codex/score.json",
+          "items": [
+            {
+              "id": "ART02-2",
+              "name": "清单对应实物",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": "九份必要成果完整；三份记录实际副本、路径、元数据、字节和SHA-256对应，规范化JSON回执引用摘要匹配；暂存树无额外记录；13份原件未改。"
+            },
+            {
+              "id": "ART02-4",
+              "name": "成果齐全且可取",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass_user_confirmed_native_rendered_entry",
+              "reason": "九份必要成果齐全，用户明确更正：三份记录相对路径在原生界面已渲染为可点击查看的链接。结合原生最终回复与交接说明完整路径及独立文件对应检查，原入口成立，不以Markdown源码格式否定界面实际能力。"
+            }
+          ]
+        },
+        {
+          "case": "ART04",
+          "task_name": "三文件修订与多轮交付首轮",
+          "max_score": 4,
+          "confirmed_score": 3,
+          "known_failed_score": 0,
+          "unknown_score": 1,
+          "public_score_source": "evidence/artifact-delivery/ART04/Codex/score.json",
+          "items": [
+            {
+              "id": "ART04-1",
+              "name": "首轮最终版保存",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass_after_shared_validator_scope_review",
+              "reason": "Dashboard、Assumptions、PPT末页标记、Word首页均已保存批准版本；112/112页脚实际包含2026.11-R3A4。原程序把整句模板措辞作为版本要求，超出签署附件；原0/112保留，补充观察单列。同法复核另三款实际成品，它们页脚无新版，既有失败不变。"
+            },
+            {
+              "id": "ART04-2",
+              "name": "首轮三文件齐全且对应",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": "三份原名成品齐全、有实际修改，output仅三份；OOXML包完整；六份输入未改，归档后九份输入输出仍与快照一致。"
+            },
+            {
+              "id": "ART04-3",
+              "name": "首轮结构和非目标内容保留",
+              "allocation": 1,
+              "score": null,
+              "verdict": "unknown_task_scope_ambiguity",
+              "reason": "与所有产品共同适用既有授权范围歧义：任务要求与原保留名单存在冲突。原程序保留性80分及失败逐项原样留存，不据此认定确定损坏或全部保留。"
+            },
+            {
+              "id": "ART04-4",
+              "name": "首轮实际取件",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass_user_confirmed",
+              "reason": "本次用户明确确认ART04三份文件均已点击取得；原生日志三条最终链接对应本轮实际成品。没有以ART05取件确认代替本题确认。"
+            }
+          ]
+        },
+        {
+          "case": "ART05",
+          "task_name": "已定稿报告包的多轮交付",
+          "max_score": 2,
+          "confirmed_score": 2,
+          "known_failed_score": 0,
+          "unknown_score": 0,
+          "public_score_source": "evidence/artifact-delivery/ART05/Codex/score.json",
+          "items": [
+            {
+              "id": "ART05-1",
+              "name": "后续修改保存且原成果保留",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass",
+              "reason": "首轮三份逐字节对应输入；第二轮三个文件均实际更新，仅改指定位置。CHG-0092为独立第93行，91条历史数据记录（含表头92行）完整保留；非目标XML条目及公式不变，两轮input未变。"
+            },
+            {
+              "id": "ART05-2",
+              "name": "再次交付对应当前最新版",
+              "allocation": 1,
+              "score": 1,
+              "verdict": "pass_user_confirmed",
+              "reason": "原生第二轮最终三条链接均对应本轮output原名文件；当前SHA-256与稳定二轮归档一致且均不同于首轮；用户直接确认三份新版都已取得。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pending_items": [
+    {
+      "product": "DSH",
+      "case": "ART04",
+      "task_name": "三文件修订与多轮交付",
+      "item_id": "ART04-3",
+      "item_name": "首轮结构和非目标内容保留",
+      "allocation": 1,
+      "verdict": "unknown",
+      "kind": "common_task_authorization_ambiguity",
+      "reason": "已复现同步Word控制表版本仍被原程序判非目标变化；其他修改的授权边界仍不唯一，最终无法判断，不补分也不记确定失败。",
+      "audit_action": "已重读共同复核结论、签署要求及原程序冲突说明；不在看过答案后扩张允许修改位置。",
+      "what_would_resolve": "须先明确授权对象、期间与修改名单；同题现有证据无法唯一判断，重新设计应作为新运行。"
+    },
+    {
+      "product": "WorkBuddy",
+      "case": "ART04",
+      "task_name": "三文件修订与多轮交付首轮",
+      "item_id": "ART04-3",
+      "item_name": "首轮结构和非目标内容保留",
+      "allocation": 1,
+      "verdict": "unknown",
+      "kind": "common_task_authorization_ambiguity",
+      "reason": "统一适用既有授权范围与原保留名单冲突；原程序失败保持原样，不当作确定产品损坏，也不改写为通过。",
+      "audit_action": "已重读共同复核结论、签署要求及原程序冲突说明；不在看过答案后扩张允许修改位置。",
+      "what_would_resolve": "须先明确授权对象、期间与修改名单；同题现有证据无法唯一判断，重新设计应作为新运行。"
+    },
+    {
+      "product": "豆包办公",
+      "case": "ART04",
+      "task_name": "三文件修订与多轮交付首轮",
+      "item_id": "ART04-3",
+      "item_name": "首轮结构和非目标内容保留",
+      "allocation": 1,
+      "verdict": "unknown",
+      "kind": "common_task_authorization_ambiguity",
+      "reason": "统一适用既有授权范围与原保留名单冲突；原程序失败保持原样，不当作确定产品损坏，也不改写为通过。",
+      "audit_action": "已重读共同复核结论、签署要求及原程序冲突说明；不在看过答案后扩张允许修改位置。",
+      "what_would_resolve": "须先明确授权对象、期间与修改名单；同题现有证据无法唯一判断，重新设计应作为新运行。"
+    },
+    {
+      "product": "元宝专家模式",
+      "case": "ART01",
+      "task_name": "技能包整理与可用性交付",
+      "item_id": "ART01-1",
+      "item_name": "包内文件、结构与清单对应",
+      "allocation": 1,
+      "verdict": "unknown",
+      "kind": "cloud_input_integrity_missing",
+      "reason": "实际取得的ZIP各包内检查通过，但云端九份原件与工具是否保持原样未独立取得决定性证据。",
+      "audit_action": "已复查本地归档及原生界面观察；未取得新的云端输入或成品。当前元宝应用打开ART05，不将其内容冒充本题现场。",
+      "what_would_resolve": "原云端九份输入及工具的逐项实际哈希/清单返回，或可信原工作区快照；成品ZIP正确和模型自报不够。"
+    },
+    {
+      "product": "元宝专家模式",
+      "case": "ART04",
+      "task_name": "三文件修订与多轮交付首轮",
+      "item_id": "ART04-1",
+      "item_name": "首轮最终版保存",
+      "allocation": 1,
+      "verdict": "unknown",
+      "kind": "cloud_output_or_completion_evidence_missing",
+      "reason": "未取得实际成品或云端保存现场，无法核对版本；不把无回复解释为内部从未保存。",
+      "audit_action": "已复查本地归档及原生界面观察；未取得新的云端输入或成品。当前元宝应用打开ART05，不将其内容冒充本题现场。",
+      "what_would_resolve": "原会话实际当前成品及云端input/output现场，或完整保存/完成记录；本机准备目录不能替代。"
+    },
+    {
+      "product": "元宝专家模式",
+      "case": "ART04",
+      "task_name": "三文件修订与多轮交付首轮",
+      "item_id": "ART04-2",
+      "item_name": "首轮三文件齐全且对应",
+      "allocation": 1,
+      "verdict": "unknown",
+      "kind": "cloud_output_or_completion_evidence_missing",
+      "reason": "界面没有成品；未取得云端output与input，无法独立判定三文件是否保存及输入是否原样。",
+      "audit_action": "已复查本地归档及原生界面观察；未取得新的云端输入或成品。当前元宝应用打开ART05，不将其内容冒充本题现场。",
+      "what_would_resolve": "原会话实际当前成品及云端input/output现场，或完整保存/完成记录；本机准备目录不能替代。"
+    },
+    {
+      "product": "元宝专家模式",
+      "case": "ART04",
+      "task_name": "三文件修订与多轮交付首轮",
+      "item_id": "ART04-3",
+      "item_name": "首轮结构和非目标内容保留",
+      "allocation": 1,
+      "verdict": "unknown",
+      "kind": "common_task_authorization_ambiguity",
+      "reason": "共同任务授权范围歧义保留，另缺实际成品，不能核对结构。",
+      "audit_action": "已重读共同复核结论、签署要求及原程序冲突说明；不在看过答案后扩张允许修改位置。",
+      "what_would_resolve": "须先明确授权对象、期间与修改名单；同题现有证据无法唯一判断，重新设计应作为新运行。"
+    },
+    {
+      "product": "Codex",
+      "case": "ART04",
+      "task_name": "三文件修订与多轮交付首轮",
+      "item_id": "ART04-3",
+      "item_name": "首轮结构和非目标内容保留",
+      "allocation": 1,
+      "verdict": "unknown",
+      "kind": "common_task_authorization_ambiguity",
+      "reason": "与所有产品共同适用既有授权范围歧义：任务要求与原保留名单存在冲突。原程序保留性80分及失败逐项原样留存，不据此认定确定损坏或全部保留。",
+      "audit_action": "已重读共同复核结论、签署要求及原程序冲突说明；不在看过答案后扩张允许修改位置。",
+      "what_would_resolve": "须先明确授权对象、期间与修改名单；同题现有证据无法唯一判断，重新设计应作为新运行。"
+    }
+  ],
+  "changes": [
+    {
+      "product": "Codex",
+      "case": "ART04",
+      "item": "首轮实际取件",
+      "before": "Unknown",
+      "after": "pass",
+      "score_change": 1
+    },
+    {
+      "product": "豆包办公",
+      "case": "ART02",
+      "item": "成果齐全且可取",
+      "before": "Unknown",
+      "after": "fail",
+      "score_change": 0
+    }
+  ],
+  "limits": [
+    "仅各自原生配置一次试测，不是统一模型条件下的Harness单组件因果实验。",
+    "Unknown不按0分或满分计；区间仅表示待定分全部不通过/全部通过的边界，不是置信区间。",
+    "DSH ART04旧6分和ART02业务选择/异常两项属于历史口径，已排除；ART03不计分。"
+  ]
+}

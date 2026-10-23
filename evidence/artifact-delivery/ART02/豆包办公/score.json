@@ -6,8 +6,8 @@
   "product_runs": 1,
   "max_score": 2,
   "confirmed_score": 1,
-  "known_failed_score": 0,
-  "unknown_score": 1,
+  "known_failed_score": 1,
+  "unknown_score": 0,
   "formal_score": null,
   "is_pure_harness_causal_score": false,
   "items": [
@@ -26,11 +26,13 @@
       "id": "ART02-4",
       "name": "成果齐全且可取",
       "allocation": 1,
-      "score": null,
-      "verdict": "unknown",
-      "reason": "发布调用与返回均包含九份成果，但窗口地图位置显示暂不支持查看，实际取件尚待确认。",
+      "score": 0,
+      "verdict": "fail_original_reply_entry_unusable_user_confirmed",
+      "reason": "用户明确确认district_boundary_map.tif无法从回复取得，需自行到文件夹找到。文件存在及可定位不能代替任务要求的交付入口；清单对应实物项仍通过，不重复扣分。",
       "evidence": [
-        "用户入口确认.json"
+        "用户入口确认-限时复核补充.json",
+        "用户入口确认.json",
+        "产品最终回复-原生日志提取.md"
       ]
     }
   ],

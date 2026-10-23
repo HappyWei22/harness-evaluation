@@ -1,0 +1,82 @@
+{
+  "case_id": "ART02",
+  "task_name": "电子档案筛选与移交包交付",
+  "product": "Codex",
+  "date": "2026-10-23",
+  "rule_version": "0.1.1-scope-audit",
+  "product_runs": 1,
+  "max_score": 2,
+  "confirmed_score": 2,
+  "known_failed_score": 0,
+  "unknown_score": 0,
+  "formal_score": null,
+  "is_pure_harness_causal_score": false,
+  "items": [
+    {
+      "id": "ART02-2",
+      "name": "清单对应实物",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "九份必要成果完整；三份记录实际副本、路径、元数据、字节和SHA-256对应，规范化JSON回执引用摘要匹配；暂存树无额外记录；13份原件未改。",
+      "evidence": [
+        "阶段01-首次交付/文件集合与对应独立核对.json",
+        "阶段01-首次交付/交付物独立核对.json"
+      ]
+    },
+    {
+      "id": "ART02-4",
+      "name": "成果齐全且可取",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass_user_confirmed_native_rendered_entry",
+      "reason": "九份必要成果齐全，用户明确更正：三份记录相对路径在原生界面已渲染为可点击查看的链接。结合原生最终回复与交接说明完整路径及独立文件对应检查，原入口成立，不以Markdown源码格式否定界面实际能力。",
+      "evidence": [
+        "产品最终回复-原生日志提取.md",
+        "交接说明-产品原文.md",
+        "轨迹与交接入口核对.json",
+        "用户入口确认.json"
+      ]
+    }
+  ],
+  "excluded_business_items": [
+    {
+      "id": "ART02-1",
+      "name": "交付选择有依据",
+      "dimension_score": null
+    },
+    {
+      "id": "ART02-3",
+      "name": "异常处理完整",
+      "dimension_score": null
+    }
+  ],
+  "actual_model": "gpt-6.1-sol",
+  "actual_reasoning": "high",
+  "native_outer_call_pairs": 12,
+  "native_inner_exec_commands": 14,
+  "separate_findings": [
+    {
+      "kind": "self_check_json_digest_method_mismatch",
+      "observed": "一次终检把manifest及quarantine的文件字节摘要与回执中的规范化JSON摘要比较，失败exit1；阅读原工具digest_json后修正自检并通过。原初比较仍留在audit/receipt_hash_comparison.json。",
+      "effect": "原件和工具输出未改，未观察到apply/verify失败；不把自检口径修正写成修复保存根因。",
+      "evidence": "轨迹与交接入口核对.json:failure_analysis"
+    },
+    {
+      "kind": "evaluator_entry_rendering_assumption_corrected",
+      "initial_observation": "交接Markdown源码中三份记录路径没有显式链接标记。",
+      "correction": "用户确认原生界面自动将路径渲染为可点击查看链接；源码格式不足以判定原生入口不可用，入口项通过。",
+      "prior_record_preserved": "评分与归因-原生链接确认前.json",
+      "evidence": "用户入口确认.json"
+    }
+  ],
+  "product_outputs_modified_by_evaluator": false,
+  "original_verifier_modified": false,
+  "raw_upstream_handoff_check": "fail，英文关键词检查原结果保留，交接说明语义另人工核对，不用关键字失败替代当前维度入口判断",
+  "limits": [
+    "只计当前维度保留两项，原业务两项移出，不把原4分带回。",
+    "原文件是模拟载荷，不声称独立解码PDF/TIFF/WAV。",
+    "实际原生路径入口按用户所见可点击查看事实确认；未另存下载副本，不声称下载字节比较。",
+    "仅一次原生配置；不能推出稳定性或纯Harness因果。"
+  ]
+}

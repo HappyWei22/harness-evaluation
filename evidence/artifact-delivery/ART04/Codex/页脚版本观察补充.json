@@ -1,0 +1,59 @@
+{
+  "source_kind": "supplemental_evaluator_scope_review",
+  "raw_observation_unchanged": "文件独立核对.json:version_observation",
+  "shared_review": "../../../评测者材料/页脚版本整句匹配范围复核-2026-10-23.json",
+  "codex_result": {
+    "native_footer_count": 112,
+    "footer_text_counts": {
+      "Working draft | 2026-11 review | 2026.11-R3A4": 112
+    },
+    "raw_full_sentence_matches": 0,
+    "approved_version_token_matches": 112,
+    "all_footer_versions_current": true,
+    "other_version_observation_results": [
+      {
+        "id": "xlsx:0",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "更新仪表盘版本",
+        "actual": {
+          "value": "2026.11-R3A4",
+          "formula": null
+        }
+      },
+      {
+        "id": "xlsx:1",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "同步版本假设",
+        "actual": {
+          "value": "2026.11-R3A4",
+          "formula": null
+        }
+      },
+      {
+        "id": "ppt:0",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "更新末页版本",
+        "actual": "2026.11-R3A4"
+      },
+      {
+        "id": "docx:0",
+        "passed": true,
+        "weight": 1,
+        "category": "semantic",
+        "message": "更新报告版本",
+        "actual": "Version 2026.11-R3A4"
+      }
+    ],
+    "all_other_declared_version_positions_current": true,
+    "output_pptx_sha256": "c940abdd56172cd857ee609eea0c5701b7a6e26f7284d095cd51c5ae57e29a57",
+    "version_save_observation_passed": true
+  },
+  "dimension_version_save_pass": true,
+  "not_original_upstream_pass": true
+}

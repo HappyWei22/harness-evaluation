@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-23",
+  "case": "ART02",
+  "product": "豆包办公",
+  "question": "限时核查需要补两项实际取件事实：① Codex 第三题“三文件修订”（会话 <conversation-id>）的三份文件是否都已点击取得？② 豆包“电子档案移交”中的 district_boundary_map.tif，能否从原回复入口或交接说明入口打开/取得，而非仅自行去文件夹找到？请分别回答；未验证就写未验证。",
+  "answer": "①已取得②无法从回复取得，要去文件夹才能找到",
+  "interpretation": "②无法从回复取得，要去文件夹才能找到；原交付入口未满足",
+  "original_reply_entry_retrievable": false,
+  "local_file_exists_is_not_retrieval_entry": true,
+  "source": "direct_user_async_question_reply"
+}

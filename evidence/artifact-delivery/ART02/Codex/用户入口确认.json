@@ -1,0 +1,16 @@
+{
+  "case_id": "ART02",
+  "product": "Codex",
+  "date": "2026-10-23",
+  "source": "用户对原回复/交接说明记录路径呈现方式的直接更正",
+  "user_message": "但是这个路径在界面中就是渲染成了可以点进去查看的链接",
+  "scope": "针对评测者所述三份记录副本相对路径，用户确认原生界面将其渲染为可点击查看的入口",
+  "original_reply_entry_route_confirmed": true,
+  "user_confirmed_open_or_view": true,
+  "all_required_record_entry_availability_confirmed": true,
+  "source_kind": "human_observation_of_native_rendered_links",
+  "not_inferred_from_markdown_source": true,
+  "separate_download_copy_hash_compared": false,
+  "evaluator_error_corrected": "评测者先前只依据Markdown源码无显式链接标记，未计入界面自动识别路径的能力；保留此前待判记录，不新增Markdown语法门槛。",
+  "limits": "依据用户所见的原生界面可点击查看事实；没有另存下载副本或独立截图，不声称下载副本字节比较。"
+}

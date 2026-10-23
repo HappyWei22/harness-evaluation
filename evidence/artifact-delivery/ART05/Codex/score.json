@@ -1,0 +1,81 @@
+{
+  "case_id": "ART05",
+  "task_name": "已定稿报告包的多轮交付",
+  "date": "2026-10-23",
+  "execution_date": "2026-10-23",
+  "rule_version": "art05-1.0.0-preflight",
+  "product": "Codex",
+  "product_runs": 1,
+  "turns_completed": 2,
+  "first_release_score": 0,
+  "max_score": 2,
+  "confirmed_score": 2,
+  "known_failed_score": 0,
+  "unknown_score": 0,
+  "formal_score": null,
+  "is_pure_harness_causal_score": false,
+  "items": [
+    {
+      "id": "ART05-1",
+      "name": "后续修改保存且原成果保留",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "首轮三份逐字节对应输入；第二轮三个文件均实际更新，仅改指定位置。CHG-0092为独立第93行，91条历史数据记录（含表头92行）完整保留；非目标XML条目及公式不变，两轮input未变。",
+      "evidence": [
+        "阶段01-原包交付/文件独立核对.json",
+        "阶段02-修改后交付/文件独立核对.json",
+        "阶段02-修改后交付/条目与指定位置独立核对.json"
+      ]
+    },
+    {
+      "id": "ART05-2",
+      "name": "再次交付对应当前最新版",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass_user_confirmed",
+      "reason": "原生第二轮最终三条链接均对应本轮output原名文件；当前SHA-256与稳定二轮归档一致且均不同于首轮；用户直接确认三份新版都已取得。",
+      "evidence": [
+        "原生入口版本核对.json",
+        "第二轮用户入口确认.json",
+        "产品第二轮最终回复-原生日志提取.md"
+      ]
+    }
+  ],
+  "actual_model": "gpt-6.1-sol",
+  "actual_reasoning": "high",
+  "product_outputs_modified_by_evaluator": false,
+  "product_code_executed_by_evaluator": false,
+  "original_verifier_modified": false,
+  "read_isolation_verified": false,
+  "raw_generic_adapter": {
+    "passed": false,
+    "score": 85.45,
+    "semantic_score": 81.82,
+    "preservation_score": 100.0
+  },
+  "existing_scoped_adapter_passed": true,
+  "separate_findings": [
+    {
+      "kind": "historical_row_count_convention",
+      "observation": "91条历史数据记录，另含1行表头；追加后93行，92个唯一Change ID。",
+      "effect": "计数口径一致，不是缺失历史。"
+    },
+    {
+      "kind": "native_chart_count_blind_spot",
+      "observation": "产品临时验证报告按常见目录检测出0个图表；实际14个部件位于ppt/slides/charts；评测者逐条目确认14个部件及原生表格保留。",
+      "effect": "保留核对通过，另外记录产品自检漏计，不重复扣维度分。"
+    },
+    {
+      "kind": "intermediate_errors_preserved",
+      "observation": "第二轮31条命令中2条非零退出；一次为rg未找到AGENTS文件，一次为渲染比较缺fitz。早期包探针曾抛出路径KeyError但外层命令exit0；后续探针和图像比较成功。",
+      "effect": "原始错误保留，不把最终成功说成所有调用均成功或依赖根因已修复。"
+    }
+  ],
+  "limits": [
+    "每项仅此配置一次两轮执行，不推断稳定性或纯Harness因果。",
+    "Word渲染前后86页；独立像素比较仅第1、2页变化。PPT前后112页，差异在原页脚及末页标记框内。图像由产品生成；未独立重渲染或逐页视觉验收。",
+    "未在Microsoft Office原生打开；用户下载副本未另存作字节比较。",
+    "首轮取件未单独收到用户明确确认；首轮0分且不以复制加分，二轮实际取件已确认。"
+  ]
+}

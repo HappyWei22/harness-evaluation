@@ -1,0 +1,12 @@
+{
+  "case": "ART01",
+  "product": "Codex",
+  "date": "2026-10-23",
+  "question": "Codex 第一题最终回复里的 ZIP 入口，你是否已实际点击并能取得文件？",
+  "user_answer": "已点击，能够取得",
+  "source": "本评测对话中用户对request_user_input_async的直接回复",
+  "user_confirmed_open_or_download": true,
+  "artifact": "output/calendar_briefing_skill.zip",
+  "separate_download_copy_hash_compared": false,
+  "limits": "取件操作以用户确认留证；不把工作目录文件的存在或同路径复算哈希说成实际下载副本比较。"
+}

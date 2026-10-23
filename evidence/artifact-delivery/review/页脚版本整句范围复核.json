@@ -1,0 +1,228 @@
+{
+  "date": "2026-10-23",
+  "scope": "原有首轮最终版保存1分中的页脚版本观察，不新增位置或权重，不调整既定非目标保留Unknown",
+  "approved_version": "2026.11-R3A4",
+  "authority_quote": "Synchronize workbook, deck and report to the amendment version.",
+  "approved_record_sha256": "43c4b8911ce7d08d9639c32d05500ded6a4523e8f391d7b97a9a683ec77fa459",
+  "frozen_dimension_criterion_quote": "三文件保存后的关键版本位置进入原题批准版本",
+  "raw_original_footer_match_requires": "Internal management review | 2026-11 | 2026.11-R3A4",
+  "raw_result_retained": true,
+  "defect": "原程序将批准版本同步与整句模板措辞一致绑定；本次文件证明整句不等仍可在全部已声明页脚位置明确保存批准版本。正文业务措辞、门禁和来源行另列，不混入该保存分。",
+  "correction_method": "只在原声明的footer形状位置识别完整批准版本标记，拒绝带-C1/-D1等后缀的其他版本；其他原声明版本观察保持不变。",
+  "same_method_applied_to_all_available_saved_products": true,
+  "products": {
+    "DSH": {
+      "native_footer_count": 112,
+      "footer_text_counts": {
+        "Working draft | management review | September 2026": 112
+      },
+      "raw_full_sentence_matches": 0,
+      "approved_version_token_matches": 0,
+      "all_footer_versions_current": false,
+      "other_version_observation_results": [
+        {
+          "id": "xlsx:0",
+          "passed": true,
+          "weight": 1,
+          "category": "semantic",
+          "message": "更新仪表盘版本",
+          "actual": {
+            "value": "2026.11-R3A4",
+            "formula": null
+          }
+        },
+        {
+          "id": "xlsx:1",
+          "passed": true,
+          "weight": 1,
+          "category": "semantic",
+          "message": "同步版本假设",
+          "actual": {
+            "value": "2026.11-R3A4",
+            "formula": null
+          }
+        },
+        {
+          "id": "ppt:0",
+          "passed": true,
+          "weight": 1,
+          "category": "semantic",
+          "message": "更新末页版本",
+          "actual": "2026.11-R3A4"
+        },
+        {
+          "id": "docx:0",
+          "passed": true,
+          "weight": 1,
+          "category": "semantic",
+          "message": "更新报告版本",
+          "actual": "Version 2026.11-R3A4"
+        }
+      ],
+      "all_other_declared_version_positions_current": true,
+      "output_pptx_sha256": "97cca8a966631fa1965cc1cbe64e8d96cc11179b094816ddc4c16245fa7407c7",
+      "version_save_observation_passed": false
+    },
+    "WorkBuddy": {
+      "native_footer_count": 112,
+      "footer_text_counts": {
+        "Working draft | management review | September 2026": 112
+      },
+      "raw_full_sentence_matches": 0,
+      "approved_version_token_matches": 0,
+      "all_footer_versions_current": false,
+      "other_version_observation_results": [
+        {
+          "id": "xlsx:0",
+          "passed": true,
+          "weight": 1,
+          "category": "semantic",
+          "message": "更新仪表盘版本",
+          "actual": {
+            "value": "2026.11-R3A4",
+            "formula": null
+          }
+        },
+        {
+          "id": "xlsx:1",
+          "passed": true,
+          "weight": 1,
+          "category": "semantic",
+          "message": "同步版本假设",
+          "actual": {
+            "value": "2026.11-R3A4",
+            "formula": null
+          }
+        },
+        {
+          "id": "ppt:0",
+          "passed": true,
+          "weight": 1,
+          "category": "semantic",
+          "message": "更新末页版本",
+          "actual": "2026.11-R3A4"
+        },
+        {
+          "id": "docx:0",
+          "passed": true,
+          "weight": 1,
+          "category": "semantic",
+          "message": "更新报告版本",
+          "actual": "Version 2026.11-R3A4"
+        }
+      ],
+      "all_other_declared_version_positions_current": true,
+      "output_pptx_sha256": "bf24e52bbe672f8a8dffd59065b1660444c9723db0af69a94b8e816ddd3ffdc5",
+      "version_save_observation_passed": false
+    },
+    "豆包办公": {
+      "native_footer_count": 112,
+      "footer_text_counts": {
+        "Working draft | management review | September 2026": 112
+      },
+      "raw_full_sentence_matches": 0,
+      "approved_version_token_matches": 0,
+      "all_footer_versions_current": false,
+      "other_version_observation_results": [
+        {
+          "id": "xlsx:0",
+          "passed": true,
+          "weight": 1,
+          "category": "semantic",
+          "message": "更新仪表盘版本",
+          "actual": {
+            "value": "2026.11-R3A4",
+            "formula": null
+          }
+        },
+        {
+          "id": "xlsx:1",
+          "passed": true,
+          "weight": 1,
+          "category": "semantic",
+          "message": "同步版本假设",
+          "actual": {
+            "value": "2026.11-R3A4",
+            "formula": null
+          }
+        },
+        {
+          "id": "ppt:0",
+          "passed": true,
+          "weight": 1,
+          "category": "semantic",
+          "message": "更新末页版本",
+          "actual": "2026.11-R3A4"
+        },
+        {
+          "id": "docx:0",
+          "passed": true,
+          "weight": 1,
+          "category": "semantic",
+          "message": "更新报告版本",
+          "actual": "Version 2026.11-R3A4"
+        }
+      ],
+      "all_other_declared_version_positions_current": true,
+      "output_pptx_sha256": "f9207e6870d7b0a6ea8c92d3c884bfb0db738411c799c4cbedfccc5d983bf7a7",
+      "version_save_observation_passed": false
+    },
+    "Codex": {
+      "native_footer_count": 112,
+      "footer_text_counts": {
+        "Working draft | 2026-11 review | 2026.11-R3A4": 112
+      },
+      "raw_full_sentence_matches": 0,
+      "approved_version_token_matches": 112,
+      "all_footer_versions_current": true,
+      "other_version_observation_results": [
+        {
+          "id": "xlsx:0",
+          "passed": true,
+          "weight": 1,
+          "category": "semantic",
+          "message": "更新仪表盘版本",
+          "actual": {
+            "value": "2026.11-R3A4",
+            "formula": null
+          }
+        },
+        {
+          "id": "xlsx:1",
+          "passed": true,
+          "weight": 1,
+          "category": "semantic",
+          "message": "同步版本假设",
+          "actual": {
+            "value": "2026.11-R3A4",
+            "formula": null
+          }
+        },
+        {
+          "id": "ppt:0",
+          "passed": true,
+          "weight": 1,
+          "category": "semantic",
+          "message": "更新末页版本",
+          "actual": "2026.11-R3A4"
+        },
+        {
+          "id": "docx:0",
+          "passed": true,
+          "weight": 1,
+          "category": "semantic",
+          "message": "更新报告版本",
+          "actual": "Version 2026.11-R3A4"
+        }
+      ],
+      "all_other_declared_version_positions_current": true,
+      "output_pptx_sha256": "c940abdd56172cd857ee609eea0c5701b7a6e26f7284d095cd51c5ae57e29a57",
+      "version_save_observation_passed": true
+    }
+  },
+  "yuanbao": "此前ART04未取得云端成品，不能以本机输入或后续ART05成果替代，原Unknown不变",
+  "score_effect": "Codex版本保存通过；DSH/WorkBuddy/豆包实际旧页脚不含批准版本，原失败不变。原程序数值和失败不覆盖。",
+  "product_files_modified": false,
+  "original_validator_modified": false,
+  "new_product_runs": 0
+}

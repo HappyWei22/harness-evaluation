@@ -1,0 +1,55 @@
+{
+  "source": "archived_product_generated_render_images",
+  "method": "evaluator independently compares pixel arrays; does not rerun product render or editing code",
+  "binary_provenance_checks": [
+    {
+      "name": "public_company_reporting.xlsx",
+      "render_source_before_matches_first": true,
+      "render_source_candidate_matches_current": true
+    },
+    {
+      "name": "public_company_reporting.pptx",
+      "render_source_before_matches_first": true,
+      "render_source_candidate_matches_current": true
+    },
+    {
+      "name": "public_company_reporting.docx",
+      "render_source_before_matches_first": true,
+      "render_source_candidate_matches_current": true
+    }
+  ],
+  "word": {
+    "pages_before": 86,
+    "pages_after": 86,
+    "changed_pages": [
+      {
+        "page": 1,
+        "bbox": [
+          86,
+          141,
+          765,
+          178
+        ]
+      },
+      {
+        "page": 2,
+        "bbox": [
+          384,
+          145,
+          402,
+          154
+        ]
+      }
+    ]
+  },
+  "powerpoint": {
+    "slides_before": 112,
+    "slides_after": 112,
+    "slides_with_pixel_changes": 112,
+    "changes_outside_original_footer_and_final_marker_boxes_with_4px_tolerance": []
+  },
+  "limits": [
+    "图片由产品生成，评测者核对文件来源与像素差异，未独立重渲染。",
+    "像素对比不替代Microsoft Office原生打开或评测者逐页视觉验收。"
+  ]
+}
