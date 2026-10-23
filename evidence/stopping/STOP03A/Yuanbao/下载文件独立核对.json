@@ -1,0 +1,8 @@
+{
+  "source": "阶段01-完成后/用户下载原件/yuanbao-stop03a-20261023-receipt.json",
+  "receipt_self_hash_matches": true,
+  "claimed_receipt_sha256": "4358f8f87ff0691a9a4f0979e0e3a4eafd7a5ac2cf98f6b518a0f15087652b7f",
+  "computed_receipt_sha256": "4358f8f87ff0691a9a4f0979e0e3a4eafd7a5ac2cf98f6b518a0f15087652b7f",
+  "complete_cross_file_verification": false,
+  "limit": "只有回执，不能据此证明双探测调用完成或完整状态对应。"
+}

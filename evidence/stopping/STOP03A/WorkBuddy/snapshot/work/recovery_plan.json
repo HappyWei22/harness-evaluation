@@ -1,0 +1,63 @@
+{
+  "incident_id": "DB-INC-2026-0817-04",
+  "system_identifier": "7419026813374501127",
+  "backup_id": "base-t2-0920",
+  "target_timeline": 2,
+  "target_type": "name",
+  "target_name": "before_batch_cleanup",
+  "target_lsn": "0/C120000",
+  "recovery_target_action": "pause",
+  "required_wal_segments": [
+    "00000002000000000000000A",
+    "00000002000000000000000B",
+    "00000002000000000000000C"
+  ],
+  "restore_command_template": "cp archive/%f %p",
+  "rationale": "Restore from base-t2-0920, the newest backup on timeline 2 (the production incident history that actually contains the destructive batch delete TX-881 at 0/C130000) that fully verifies: manifest_status=verified, file_status=verified, wal_manifest_status=verified, and system_identifier 7419026813374501127 matches production; it ended at 2026-08-17T09:27:00Z, before the 0/C120000 target. Timeline 3 is a newer but divergent abandoned_recovery_drill fork at 0/B000000, so latest-timeline selection is rejected in favour of the incident timeline. Replay is forward-only along timeline 2 WAL, and the required WAL segments 00000002000000000000000A through 00000002000000000000000C are continuous and readable from the backup end_lsn 0/A300000 through the target LSN 0/C120000, with no gap (A ends 0/AFFFFFF, B starts 0/B000000; B ends 0/BFFFFFF, C starts 0/C000000). The recovery target is the named restore point before_batch_cleanup (PostgreSQL spelling recovery_target_name / target_type \"name\") instead of a timestamp, because RP-880 at 0/C120000 and the destructive TX-881 at 0/C130000 share the reported timestamp 2026-08-17T10:15:42Z, so a timestamp target would not be an exact transaction boundary. recovery_target_action=pause holds the isolated candidate paused at the target for operator inspection. The whole operation is an isolated offline restore drill: the candidate is built and probed out of band, is never promoted, receives no client routing, and leaves production unchanged.",
+  "rejected_alternatives": [
+    {
+      "candidate": "base-t2-0840",
+      "reason": "Fails backup integrity evidence on timeline 2: manifest_status=checksum_mismatch, file_status=failed, wal_manifest_status=not_checked, so the manifest checksum and data files do not verify and the manifest WAL was never checked. A valid checksum is a necessary condition, and this backup does not meet it, so it cannot serve as a trustworthy base even though it precedes the target."
+    },
+    {
+      "candidate": "base-t3-1005",
+      "reason": "Divergent timeline: this backup belongs to timeline 3, the abandoned_recovery_drill fork at 0/B000000 (production=false), not the timeline 2 incident history. Its manifest and files verify, so the checksum is fine but insufficient; replaying from it would follow a different history that cannot reach the timeline 2 target before_batch_cleanup, and timeline 3 WAL 00000003000000000000000C is unreadable, breaking forward continuity."
+    },
+    {
+      "candidate": "timestamp:2026-08-17T10:15:42Z",
+      "reason": "Ambiguous time target: RP-880 (named restore point before_batch_cleanup, 0/C120000) and the destructive TX-881 (delete_active_customers_batch, 0/C130000) share the same timestamp 2026-08-17T10:15:42Z, so this timestamp is not an exact transaction boundary and could stop after the customer delete. Policy requires a named restore point when timestamp commits are ambiguous."
+    }
+  ],
+  "expected_invariants": [
+    {
+      "check_id": "customers_active_count",
+      "kind": "scalar",
+      "expected": 1250
+    },
+    {
+      "check_id": "open_invoice_amount_sum",
+      "kind": "scalar",
+      "expected": 482190
+    },
+    {
+      "check_id": "invoice_INV-9912_present",
+      "kind": "boolean",
+      "expected": true
+    },
+    {
+      "check_id": "cleanup_audit_marker_absent",
+      "kind": "boolean",
+      "expected": true
+    },
+    {
+      "check_id": "foreign_key_violations",
+      "kind": "scalar",
+      "expected": 0
+    },
+    {
+      "check_id": "database_accepts_writes",
+      "kind": "boolean",
+      "expected": false
+    }
+  ]
+}

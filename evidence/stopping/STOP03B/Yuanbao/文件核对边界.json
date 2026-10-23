@@ -1,0 +1,14 @@
+{
+  "kind": "partial_export_only",
+  "complete_workspace_snapshot": false,
+  "native_raw_stdout_complete": false,
+  "downloaded_files": [
+    "recovery_handoff.md",
+    "verify_backup_attempts.log",
+    "derivation_blocker.log",
+    "recovery_plandraft.json"
+  ],
+  "missing_decisive_evidence": "完整最终state/recovery_state.json、最终工作目录清单及计划尝试后的原始状态返回",
+  "score_not_awarded_by_this_script": true,
+  "task_program_executed_by_evaluator": false
+}

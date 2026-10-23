@@ -1,0 +1,307 @@
+{
+  "repository": "Qihoo360/harness-bench",
+  "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+  "files": [
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/design.md",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/design.md",
+      "git_blob_sha1": "e45d1d25549cdb45aa796a569acb1b25989b7930",
+      "sha256": "6c054491e7b1eac408232231b98fc3325b0643cf642b6fc4946fcf35048d3876",
+      "bytes": 11181,
+      "local_archive": "评测者材料/公开原题/design.md"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/environment/verify_environment.py",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/environment/verify_environment.py",
+      "git_blob_sha1": "37d45d5bc74cfefe59233f9f22e12bd20b460745",
+      "sha256": "4fa58fe60110b52a4831fc139cb03eba9e327f2f6e0826ffdd98c66d198be144",
+      "bytes": 1086,
+      "local_archive": "评测者材料/公开原题/environment/verify_environment.py"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/instruction.md",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/instruction.md",
+      "git_blob_sha1": "ec920306a05cfcf220d99bf9e802c0dfb5bf2466",
+      "sha256": "49b012f7a995e7474df089fd33fbe50ee479b28e0a0bf7c2898e1d80bd35814a",
+      "bytes": 2109,
+      "local_archive": "评测者材料/公开原题/instruction.md"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/task.yaml",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/task.yaml",
+      "git_blob_sha1": "c3d6509d2891593e34dc30318703b2b5a5a7b68e",
+      "sha256": "0b8928850d07ef77c6a675806407f17eff7ba557070d4efc79f12bfa61a14854",
+      "bytes": 2029,
+      "local_archive": "评测者材料/公开原题/task.yaml"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/tests/cases.yaml",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/tests/cases.yaml",
+      "git_blob_sha1": "41f40a1b068bd4f2248c18eecffe1c5ad92065f3",
+      "sha256": "0cdb91394834afdc914b9992e395ddce657bf4f7981cfcfd49838299d4651caf",
+      "bytes": 1444,
+      "local_archive": "评测者材料/公开原题/tests/cases.yaml"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/tests/ground_truth/semantic_judge.yaml",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/tests/ground_truth/semantic_judge.yaml",
+      "git_blob_sha1": "0e1151af961be48b822ae3c9cf108f1c37856544",
+      "sha256": "1841995f9dd5406a7e149394c5d27ffe76a63d6430785767c734cc1bd03356d9",
+      "bytes": 561,
+      "local_archive": "评测者材料/公开原题/tests/ground_truth/semantic_judge.yaml"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/tests/ground_truth/test_006_digital_record_transfer_staging_contract.py",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/tests/ground_truth/test_006_digital_record_transfer_staging_contract.py",
+      "git_blob_sha1": "7346eac3b6dfe2be931eb6ce988671bf71651626",
+      "sha256": "6c76ee852f1eca657c395b6c09f9c30072d835abcf814a85ad1ad5a7548014a6",
+      "bytes": 4050,
+      "local_archive": "评测者材料/公开原题/tests/ground_truth/test_006_digital_record_transfer_staging_contract.py"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/tests/reference/quarantine.json",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/tests/reference/quarantine.json",
+      "git_blob_sha1": "d049976fb31bc483a849fa783d12111b44cf1d8e",
+      "sha256": "62e3296fe09d46b4d194698fb22b366a09ca4c1f54f062b43a9c7524ddaab89e",
+      "bytes": 181,
+      "local_archive": "评测者材料/公开原题/tests/reference/quarantine.json"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/tests/reference/records_handoff.md",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/tests/reference/records_handoff.md",
+      "git_blob_sha1": "05742d7d4cc1e0d501cf06d5fec683c70884cb6c",
+      "sha256": "01b477760f82ff6254af67abe2f4816a7888a5cf0b4fbd83821cf2826fc00046",
+      "bytes": 1336,
+      "local_archive": "评测者材料/公开原题/tests/reference/records_handoff.md"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/tests/reference/staged_transfer/checksums.sha256",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/tests/reference/staged_transfer/checksums.sha256",
+      "git_blob_sha1": "6f051a06d4a5bcbcc3d5a353aa844d5738c25061",
+      "sha256": "034cf558d77975ba2b3083029439a515730bcb31bda7b0d0895a85606e9df08e",
+      "bytes": 326,
+      "local_archive": "评测者材料/公开原题/tests/reference/staged_transfer/checksums.sha256"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/tests/reference/staged_transfer/manifest.json",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/tests/reference/staged_transfer/manifest.json",
+      "git_blob_sha1": "a74b2963fc69526644d5c3857ffe35a3b92663b1",
+      "sha256": "a705c331a1dbfee958ed23d4cd11747967d27d4a740d1edc5d67a2fe5e2134fa",
+      "bytes": 1212,
+      "local_archive": "评测者材料/公开原题/tests/reference/staged_transfer/manifest.json"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/tests/reference/staged_transfer/records/REC-001/january_council_minutes.pdf",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/tests/reference/staged_transfer/records/REC-001/january_council_minutes.pdf",
+      "git_blob_sha1": "77824d590fda1a2571b21ae30da66c97a0c38f25",
+      "sha256": "9b0314eb15925911a8e0a3a9b39e5d4ae3b8c398268a3f98f419f1dfd1bf4f44",
+      "bytes": 101,
+      "local_archive": "评测者材料/公开原题/tests/reference/staged_transfer/records/REC-001/january_council_minutes.pdf"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/tests/reference/staged_transfer/records/REC-002/district_boundary_map.tif",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/tests/reference/staged_transfer/records/REC-002/district_boundary_map.tif",
+      "git_blob_sha1": "29add13953d713b2a2af0ec9b46e704ccf409200",
+      "sha256": "ad9d51f2deeed4ef283b3227604bb08ca72dfab67bbaf2ba55faccbad4f3d8ff",
+      "bytes": 80,
+      "local_archive": "评测者材料/公开原题/tests/reference/staged_transfer/records/REC-002/district_boundary_map.tif"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/tests/reference/staged_transfer/records/REC-003/public_budget_hearing.wav",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/tests/reference/staged_transfer/records/REC-003/public_budget_hearing.wav",
+      "git_blob_sha1": "458ecfeff7671a8547f0c8e615725167b0015baa",
+      "sha256": "722b21e1a901f19f1c5b387365d39fb3039f4a5f5864cb3c01c99d78e80e8515",
+      "bytes": 81,
+      "local_archive": "评测者材料/公开原题/tests/reference/staged_transfer/records/REC-003/public_budget_hearing.wav"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/tests/reference/transfer_plan.json",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/tests/reference/transfer_plan.json",
+      "git_blob_sha1": "73fce0ab4f47da2dafcdc99f0c79429473442b9b",
+      "sha256": "506580762a5fe68e928094deda23092935f73ed25b9ba8d782d61c5fda674ad9",
+      "bytes": 443,
+      "local_archive": "评测者材料/公开原题/tests/reference/transfer_plan.json"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/tests/reference/validation_receipt.json",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/tests/reference/validation_receipt.json",
+      "git_blob_sha1": "4a24383f67aed9ec05a42596ef5d93d0335e63b4",
+      "sha256": "af981fe708477abb7f4ede4c457460cf2051079884d41a3b482ba1e273322baf",
+      "bytes": 520,
+      "local_archive": "评测者材料/公开原题/tests/reference/validation_receipt.json"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/tests/test_outcome.py",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/tests/test_outcome.py",
+      "git_blob_sha1": "6b5195702ea32ffb4be0834d253d2bc445643157",
+      "sha256": "a9d73f9b875d3315d8591edd4d4d167158c928d82377d6a9b8aca4546efb6eaf",
+      "bytes": 8356,
+      "local_archive": "评测者材料/公开原题/tests/test_outcome.py"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/workspace/checksum_register.json",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/workspace/checksum_register.json",
+      "git_blob_sha1": "057ada232f47e031e3b2232f655fe76975f6520c",
+      "sha256": "411c18969cc66269f695ac0adb9d8da9b26c1242e40847e853a753d9a82c9922",
+      "bytes": 811,
+      "local_archive": "评测者材料/公开原题/workspace/checksum_register.json"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/workspace/format_policy.json",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/workspace/format_policy.json",
+      "git_blob_sha1": "5de7ffc6be9c7997b6053f9134104c975ab312ce",
+      "sha256": "3edf47c91fd72aea257def9d98a4bb82b7bc4a417cd100c62995c94ed00040e4",
+      "bytes": 751,
+      "local_archive": "评测者材料/公开原题/workspace/format_policy.json"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/workspace/inventory.json",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/workspace/inventory.json",
+      "git_blob_sha1": "3da91d60fd50cff91f1544a943a01be7db1b153f",
+      "sha256": "24db900ba8cd924c73feadc8bf3310faff3a194316a8ec7fb8860d347100adf4",
+      "bytes": 837,
+      "local_archive": "评测者材料/公开原题/workspace/inventory.json"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/workspace/metadata.json",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/workspace/metadata.json",
+      "git_blob_sha1": "afc165fc6e99660b6e553c6cada101a8a23cef90",
+      "sha256": "29ae15fbcd089c17d2a3a2817361b9d9fe972c8ef9bc7e2b52f17325a49e6f7a",
+      "bytes": 779,
+      "local_archive": "评测者材料/公开原题/workspace/metadata.json"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/workspace/qc_results.json",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/workspace/qc_results.json",
+      "git_blob_sha1": "5f7eebcf669b67d65c8fb7798c0ebaf15d0ae9d8",
+      "sha256": "1a39fb813f3fb12ba7e7b50cedec163e4744554c09bf94f9e5541a4e15e35035",
+      "bytes": 649,
+      "local_archive": "评测者材料/公开原题/workspace/qc_results.json"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/workspace/source/audio/hearing_access.wav",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/workspace/source/audio/hearing_access.wav",
+      "git_blob_sha1": "31808a424776f84e1c6285aab815cecb8b10393b",
+      "sha256": "ba491a044743b82bc642ffb5114f49acf0b5e6a2377a214226d2b17ecad2e095",
+      "bytes": 79,
+      "local_archive": "评测者材料/公开原题/workspace/source/audio/hearing_access.wav"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/workspace/source/audio/hearing_preservation.wav",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/workspace/source/audio/hearing_preservation.wav",
+      "git_blob_sha1": "458ecfeff7671a8547f0c8e615725167b0015baa",
+      "sha256": "722b21e1a901f19f1c5b387365d39fb3039f4a5f5864cb3c01c99d78e80e8515",
+      "bytes": 81,
+      "local_archive": "评测者材料/公开原题/workspace/source/audio/hearing_preservation.wav"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/workspace/source/data/budget_ledger.csv",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/workspace/source/data/budget_ledger.csv",
+      "git_blob_sha1": "3fe51c3f30976d6d776c8e6bd3517ffcd963914d",
+      "sha256": "b320dc201ea827f2a5e425af36a9f10c71fcd4a5536d8bc9c2536d869c2183d7",
+      "bytes": 57,
+      "local_archive": "评测者材料/公开原题/workspace/source/data/budget_ledger.csv"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/workspace/source/image/map_scan_rescan.tif",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/workspace/source/image/map_scan_rescan.tif",
+      "git_blob_sha1": "29add13953d713b2a2af0ec9b46e704ccf409200",
+      "sha256": "ad9d51f2deeed4ef283b3227604bb08ca72dfab67bbaf2ba55faccbad4f3d8ff",
+      "bytes": 80,
+      "local_archive": "评测者材料/公开原题/workspace/source/image/map_scan_rescan.tif"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/workspace/source/image/map_scan_v1.tif",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/workspace/source/image/map_scan_v1.tif",
+      "git_blob_sha1": "6e38bf0d8d632f94cb233fddd23e073218b93562",
+      "sha256": "85cfbd8c9677406ef1703d6f675a6dcc051bf3e8410c1a0d38027239e1d5ee51",
+      "bytes": 75,
+      "local_archive": "评测者材料/公开原题/workspace/source/image/map_scan_v1.tif"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/workspace/source/text/council_minutes_2025-01.pdf",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/workspace/source/text/council_minutes_2025-01.pdf",
+      "git_blob_sha1": "77824d590fda1a2571b21ae30da66c97a0c38f25",
+      "sha256": "9b0314eb15925911a8e0a3a9b39e5d4ae3b8c398268a3f98f419f1dfd1bf4f44",
+      "bytes": 101,
+      "local_archive": "评测者材料/公开原题/workspace/source/text/council_minutes_2025-01.pdf"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/workspace/transfer_request.json",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/workspace/transfer_request.json",
+      "git_blob_sha1": "23a0703b147fc9e649e9f76b9487b01478226c15",
+      "sha256": "5305c7d103043b50ee75b89df7179fc6f386218fb5d6bd4a9ce9b588be7178f8",
+      "bytes": 403,
+      "local_archive": "评测者材料/公开原题/workspace/transfer_request.json"
+    },
+    {
+      "repository": "Qihoo360/harness-bench",
+      "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+      "path": "tasks/006-digital-record-transfer-staging/workspace/transferctl.py",
+      "source_url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/006-digital-record-transfer-staging/workspace/transferctl.py",
+      "git_blob_sha1": "91d0e0a4964cbc528d8cdc9d65b317ebda6ddfcc",
+      "sha256": "62315111fb74a4dff50ac48f7ed94a4afd0f6a7f25a188a5e581ee16d196c4f9",
+      "bytes": 12377,
+      "local_archive": "评测者材料/公开原题/workspace/transferctl.py"
+    }
+  ],
+  "publication_scope": "提供固定来源和公开输入指纹；本批不重复发布第三方任务媒体附件、参考成品或完整原判定器。"
+}

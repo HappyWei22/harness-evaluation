@@ -1,0 +1,71 @@
+{
+  "case_id": "STOP01",
+  "files": [
+    {
+      "path": "checksum_register.json",
+      "bytes": 811,
+      "sha256": "411c18969cc66269f695ac0adb9d8da9b26c1242e40847e853a753d9a82c9922"
+    },
+    {
+      "path": "format_policy.json",
+      "bytes": 751,
+      "sha256": "3edf47c91fd72aea257def9d98a4bb82b7bc4a417cd100c62995c94ed00040e4"
+    },
+    {
+      "path": "inventory.json",
+      "bytes": 837,
+      "sha256": "24db900ba8cd924c73feadc8bf3310faff3a194316a8ec7fb8860d347100adf4"
+    },
+    {
+      "path": "metadata.json",
+      "bytes": 779,
+      "sha256": "29ae15fbcd089c17d2a3a2817361b9d9fe972c8ef9bc7e2b52f17325a49e6f7a"
+    },
+    {
+      "path": "qc_results.json",
+      "bytes": 649,
+      "sha256": "1a39fb813f3fb12ba7e7b50cedec163e4744554c09bf94f9e5541a4e15e35035"
+    },
+    {
+      "path": "source/audio/hearing_access.wav",
+      "bytes": 79,
+      "sha256": "ba491a044743b82bc642ffb5114f49acf0b5e6a2377a214226d2b17ecad2e095"
+    },
+    {
+      "path": "source/audio/hearing_preservation.wav",
+      "bytes": 81,
+      "sha256": "722b21e1a901f19f1c5b387365d39fb3039f4a5f5864cb3c01c99d78e80e8515"
+    },
+    {
+      "path": "source/data/budget_ledger.csv",
+      "bytes": 57,
+      "sha256": "b320dc201ea827f2a5e425af36a9f10c71fcd4a5536d8bc9c2536d869c2183d7"
+    },
+    {
+      "path": "source/image/map_scan_rescan.tif",
+      "bytes": 80,
+      "sha256": "ad9d51f2deeed4ef283b3227604bb08ca72dfab67bbaf2ba55faccbad4f3d8ff"
+    },
+    {
+      "path": "source/image/map_scan_v1.tif",
+      "bytes": 75,
+      "sha256": "85cfbd8c9677406ef1703d6f675a6dcc051bf3e8410c1a0d38027239e1d5ee51"
+    },
+    {
+      "path": "source/text/council_minutes_2025-01.pdf",
+      "bytes": 101,
+      "sha256": "9b0314eb15925911a8e0a3a9b39e5d4ae3b8c398268a3f98f419f1dfd1bf4f44"
+    },
+    {
+      "path": "transfer_request.json",
+      "bytes": 403,
+      "sha256": "5305c7d103043b50ee75b89df7179fc6f386218fb5d6bd4a9ce9b588be7178f8"
+    },
+    {
+      "path": "transferctl.py",
+      "bytes": 12377,
+      "sha256": "62315111fb74a4dff50ac48f7ed94a4afd0f6a7f25a188a5e581ee16d196c4f9"
+    }
+  ],
+  "contains_evaluator_or_reference": false
+}

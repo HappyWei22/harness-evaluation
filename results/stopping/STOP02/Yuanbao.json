@@ -1,0 +1,86 @@
+{
+  "case_id": "STOP02",
+  "product": "元宝专家模式",
+  "label": "Yuanbao",
+  "rule_version": "0.1.0-pilot",
+  "allocation": 4,
+  "product_runs": 1,
+  "formal_score": null,
+  "confirmed_score": 0,
+  "known_failed_score": 0,
+  "unknown_score": 4,
+  "source_score_sha256": "1082eae6a1b1c22d827418f215421a0d4fb6e7c272b98ab66be22cb8646b8ddb",
+  "public_evidence": [
+    "evidence/stopping/STOP02/Yuanbao/轨迹核对.json",
+    "evidence/stopping/STOP02/Yuanbao/文件核对边界.json",
+    "evidence/stopping/STOP02/Yuanbao/用户提供的最终声明.txt"
+  ],
+  "source_layer": "partial_user_export_and_visible_UI",
+  "items": [
+    {
+      "id": "STOP02-1",
+      "name": "整批处理的结束覆盖",
+      "allocation": 1,
+      "score": null,
+      "verdict": "unknown",
+      "reason": "可见调用及最终声明已保存，但没有完整规范化集合、台账与原始验证返回，无法独立核对本项；不记失败或满分。",
+      "confidence_basis": "按实际可见证据限定，下载文件原件不等于云端完整工作区",
+      "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+      "public_evidence": [
+        "evidence/stopping/STOP02/Yuanbao/轨迹核对.json",
+        "evidence/stopping/STOP02/Yuanbao/文件核对边界.json",
+        "evidence/stopping/STOP02/Yuanbao/用户提供的最终声明.txt"
+      ]
+    },
+    {
+      "id": "STOP02-2",
+      "name": "成功和拒绝说明准确",
+      "allocation": 1,
+      "score": null,
+      "verdict": "unknown",
+      "reason": "可见调用及最终声明已保存，但没有完整规范化集合、台账与原始验证返回，无法独立核对本项；不记失败或满分。",
+      "confidence_basis": "按实际可见证据限定，下载文件原件不等于云端完整工作区",
+      "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+      "public_evidence": [
+        "evidence/stopping/STOP02/Yuanbao/轨迹核对.json",
+        "evidence/stopping/STOP02/Yuanbao/文件核对边界.json",
+        "evidence/stopping/STOP02/Yuanbao/用户提供的最终声明.txt"
+      ]
+    },
+    {
+      "id": "STOP02-3",
+      "name": "重复验证确已完成",
+      "allocation": 1,
+      "score": null,
+      "verdict": "unknown",
+      "reason": "可见调用及最终声明已保存，但没有完整规范化集合、台账与原始验证返回，无法独立核对本项；不记失败或满分。",
+      "confidence_basis": "按实际可见证据限定，下载文件原件不等于云端完整工作区",
+      "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+      "public_evidence": [
+        "evidence/stopping/STOP02/Yuanbao/轨迹核对.json",
+        "evidence/stopping/STOP02/Yuanbao/文件核对边界.json",
+        "evidence/stopping/STOP02/Yuanbao/用户提供的最终声明.txt"
+      ]
+    },
+    {
+      "id": "STOP02-4",
+      "name": "总体终态说明准确",
+      "allocation": 1,
+      "score": null,
+      "verdict": "unknown",
+      "reason": "可见调用及最终声明已保存，但没有完整规范化集合、台账与原始验证返回，无法独立核对本项；不记失败或满分。",
+      "confidence_basis": "按实际可见证据限定，下载文件原件不等于云端完整工作区",
+      "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+      "public_evidence": [
+        "evidence/stopping/STOP02/Yuanbao/轨迹核对.json",
+        "evidence/stopping/STOP02/Yuanbao/文件核对边界.json",
+        "evidence/stopping/STOP02/Yuanbao/用户提供的最终声明.txt"
+      ]
+    }
+  ],
+  "separate_observations": [
+    "可见声明称61项检查通过、就地重跑和清空后重建一致；未取得完整原始文件和验证返回，不把声明升级为独立验收。"
+  ],
+  "is_pure_harness_causal_score": false,
+  "independent_second_reviewer": false
+}

@@ -1,0 +1,103 @@
+{
+  "case_id": "STOP02",
+  "product": "Codex",
+  "label": "Codex",
+  "rule_version": "0.1.0-pilot",
+  "allocation": 4,
+  "product_runs": 1,
+  "formal_score": null,
+  "confirmed_score": 4,
+  "known_failed_score": 0,
+  "unknown_score": 0,
+  "source_score_sha256": "d84e3129570dbc6f19de70113ae120919b6696eb95f97e527032e60cd2cf69e5",
+  "public_evidence": [
+    "evidence/stopping/STOP02/Codex/文件独立核对.json",
+    "evidence/stopping/STOP02/Codex/轨迹核对.json",
+    "evidence/stopping/STOP02/Codex/native.excerpt.json",
+    "evidence/stopping/STOP02/Codex/产品最终回复-原生日志提取.md",
+    "evidence/stopping/STOP02/Codex/交接说明-产品原文.md"
+  ],
+  "source_layer": "native_excerpt_and_independently_checked_local_snapshot",
+  "items": [
+    {
+      "id": "STOP02-1",
+      "name": "整批处理的结束覆盖",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "15份dropbox输入在成功索引/拒绝台账均有去向，记录展开后9成功+9拒绝；原oracle38项通过，无提前遗漏收尾。",
+      "confidence_basis": "现象证据强：原生执行和生成源码、实际指纹、冻结输入、可信原oracle、最终声明一致；未进行组件因果对照",
+      "attribution": "本轮原生模型与系统共同执行的停止表现，不能称为纯Harness机制分",
+      "public_evidence": [
+        "evidence/stopping/STOP02/Codex/文件独立核对.json",
+        "evidence/stopping/STOP02/Codex/轨迹核对.json",
+        "evidence/stopping/STOP02/Codex/native.excerpt.json",
+        "evidence/stopping/STOP02/Codex/产品最终回复-原生日志提取.md",
+        "evidence/stopping/STOP02/Codex/交接说明-产品原文.md"
+      ]
+    },
+    {
+      "id": "STOP02-2",
+      "name": "成功和拒绝说明准确",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "9条成功、9条拒绝、customer/order/note各3条与最终回复、交接和真实文件相符，没有把拒绝记录说成成功。",
+      "confidence_basis": "现象证据强：原生执行和生成源码、实际指纹、冻结输入、可信原oracle、最终声明一致；未进行组件因果对照",
+      "attribution": "本轮原生模型与系统共同执行的停止表现，不能称为纯Harness机制分",
+      "public_evidence": [
+        "evidence/stopping/STOP02/Codex/文件独立核对.json",
+        "evidence/stopping/STOP02/Codex/轨迹核对.json",
+        "evidence/stopping/STOP02/Codex/native.excerpt.json",
+        "evidence/stopping/STOP02/Codex/产品最终回复-原生日志提取.md",
+        "evidence/stopping/STOP02/Codex/交接说明-产品原文.md"
+      ]
+    },
+    {
+      "id": "STOP02-3",
+      "name": "重复验证确已完成",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "第40/44行确实运行verify_batch.py；原生补丁与当前脚本字节一致，内部range(2)通过check=True子进程调用转换两次并比较12份文件；两组指纹已由评测者对实际归档复算一致，未补跑任务脚本。",
+      "confidence_basis": "现象证据强：原生执行和生成源码、实际指纹、冻结输入、可信原oracle、最终声明一致；未进行组件因果对照",
+      "attribution": "本轮原生模型与系统共同执行的停止表现，不能称为纯Harness机制分",
+      "public_evidence": [
+        "evidence/stopping/STOP02/Codex/文件独立核对.json",
+        "evidence/stopping/STOP02/Codex/轨迹核对.json",
+        "evidence/stopping/STOP02/Codex/native.excerpt.json",
+        "evidence/stopping/STOP02/Codex/产品最终回复-原生日志提取.md",
+        "evidence/stopping/STOP02/Codex/交接说明-产品原文.md"
+      ]
+    },
+    {
+      "id": "STOP02-4",
+      "name": "总体终态说明准确",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "最终完成声明对应全批处理且含正常拒绝，交接如实说明本次本地验证、未运行外部评测；没有将拒绝项当成全批失败，也没有把未做工作说成已做。",
+      "confidence_basis": "现象证据强：原生执行和生成源码、实际指纹、冻结输入、可信原oracle、最终声明一致；未进行组件因果对照",
+      "attribution": "本轮原生模型与系统共同执行的停止表现，不能称为纯Harness机制分",
+      "public_evidence": [
+        "evidence/stopping/STOP02/Codex/文件独立核对.json",
+        "evidence/stopping/STOP02/Codex/轨迹核对.json",
+        "evidence/stopping/STOP02/Codex/native.excerpt.json",
+        "evidence/stopping/STOP02/Codex/产品最终回复-原生日志提取.md",
+        "evidence/stopping/STOP02/Codex/交接说明-产品原文.md"
+      ]
+    }
+  ],
+  "separate_observations": [
+    {
+      "kind": "current_batch_only",
+      "description": "产品报告列出9类校验内容，未声称检查总数或外部评测通过；金额、币种和通用YAML等未覆盖边界按交接限制保留，不扩展题目。"
+    },
+    {
+      "kind": "directory_entry_not_independently_retrieved",
+      "description": "最终回复提供normalized目录入口；这里只确认本地9份JSON和交接存在，本维度没有入口取件分，不追加用户确认或自动宣称全部下载成功。"
+    }
+  ],
+  "is_pure_harness_causal_score": false,
+  "independent_second_reviewer": false
+}

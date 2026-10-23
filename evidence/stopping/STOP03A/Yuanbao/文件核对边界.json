@@ -1,0 +1,11 @@
+{
+  "kind": "partial_export_only",
+  "complete_workspace_snapshot": false,
+  "native_raw_stdout_complete": false,
+  "downloaded_files": [
+    "yuanbao-stop03a-20261023-receipt.json"
+  ],
+  "missing_decisive_evidence": "正确新会话的完整计划、探测报告与状态；回执自哈希不证明全部命令成功",
+  "score_not_awarded_by_this_script": true,
+  "task_program_executed_by_evaluator": false
+}

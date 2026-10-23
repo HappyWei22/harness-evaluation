@@ -3305,6 +3305,1161 @@
       "original_sha256": "e83765de0fc16de2bf2a366804505cf50db174e5a585e8bfa4dbd6fe34d5b6cf",
       "transformation": "公开必要JSON；移除会话标识及完整调用内容，替换本机路径；不含原附件、完整原生日志或模型思考",
       "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/STOP01/用例与判分规则.md",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/用例与判分规则.md",
+      "original_sha256": "caf8b146f23397c0e02aaa07f9f7090c3eefc2cb1767012bda666213df4c8d4f",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/STOP01/提示词/01-开始任务.md",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/提示词/01-开始任务.md",
+      "original_sha256": "9b762e69ef4c7498102d27b8d4e80477dfc7546eeab2c0c0d9fc45dace885888",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/STOP01/输入指纹.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/输入指纹.json",
+      "original_sha256": "2327ca0ed8e31c13d25d6ec4b14c256f238264e59a3ca1a01f5cc95bce7a29ee",
+      "transformation": "生成的公开整理材料",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/STOP01/来源.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/来源清单.json",
+      "original_sha256": "6b6484e9b188da5477335e019be86e3f07975344c3d02406242f018aba972f2a",
+      "transformation": "只选上游任务说明与输入来源，排除参考答案、测试/设计材料列表",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP01/DSH/文件独立核对.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/DSH-a01/阶段01-完成后/文件独立核对.json",
+      "original_sha256": "3850c368f9c4174a9eb2fac668603c69db5efb362b0c4e47257900e4e737e4b2",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP01/DSH/轨迹核对.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/DSH-a01/轨迹与声明核对.json",
+      "original_sha256": "114b179b2b3c056059459fa8720d1d70b608fcf43a67d2b00b0763aa55eae29e",
+      "transformation": "公开评测者过程核对字段；省略线程、私有来源和重复评分，不冒充原生日志",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP01/DSH/native.excerpt.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/DSH-a01/阶段01-完成后/原生日志/session.v4.jsonl",
+      "original_sha256": "37a0fce2ebf66e72ba22f257e2615e1e04d6c9e58770d7039fa4b6793d3bcd01",
+      "transformation": "提取工具与必要结束事件，省略模型推理/系统/账户包络，替换本机路径、分享入口和模拟邮箱",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP01/DSH/产品最终回复-原生日志提取.md",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/DSH-a01/产品最终回复-原生日志提取.md",
+      "original_sha256": "b68a4e51c6e1f5714114f5bedaf26165cf53043aa02aeae9b09865386a6b15f0",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹；原消息本地附件链接改为路径文字，避免伪装为公开附件入口",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP01/DSH/交接说明-产品原文.md",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/DSH-a01/交接说明-产品原文.md",
+      "original_sha256": "33f5dc544de3c6f5d6a166ecc0ae7393972a4a6a0a364127584b94a645c47ed0",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "results/stopping/STOP01/DSH.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/DSH-a01/评分与归因.json",
+      "original_sha256": "039ce56040aad758b98af3355d803b033efc5ec2422f326e8fc9c135cc71c125",
+      "transformation": "依据原逐项评分生成公开记录，原证据路径换为实际公开索引；未知保持null，不改分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP01/Codex/文件独立核对.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/Codex-a01/阶段01-完成后/文件独立核对.json",
+      "original_sha256": "8bff688767c55a4529905a3058a7b34baac6869bbdce3045a849a211d10eb8fd",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP01/Codex/轨迹核对.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/Codex-a01/轨迹与声明核对.json",
+      "original_sha256": "3544dd77663538fee1902b99b8f08fc41dda0e614195385feff41d9b54bc0a87",
+      "transformation": "公开评测者过程核对字段；省略线程、私有来源和重复评分，不冒充原生日志",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP01/Codex/native.excerpt.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/Codex-a01/阶段01-完成后/原生日志/session.jsonl",
+      "original_sha256": "86a5560ec5bbe8f34f74e8d27f7fbe6a6eda569048e2403848f5b41ba4ff653d",
+      "transformation": "提取工具与必要结束事件，省略模型推理/系统/账户包络，替换本机路径、分享入口和模拟邮箱",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP01/Codex/产品最终回复-原生日志提取.md",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/Codex-a01/产品最终回复-原生日志提取.md",
+      "original_sha256": "f67dfcdfa339a13ac3ac223b16284662dd4f5b69bfebb75db9bf0667f40b2aec",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹；原消息本地附件链接改为路径文字，避免伪装为公开附件入口",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP01/Codex/交接说明-产品原文.md",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/Codex-a01/交接说明-产品原文.md",
+      "original_sha256": "de25238b3180182b800f9f91c0eb41533622f38421b058b2f7c6556de349e43d",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹；原消息本地附件链接改为路径文字，避免伪装为公开附件入口",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/stopping/STOP01/Codex.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/Codex-a01/评分与归因.json",
+      "original_sha256": "53ed3131afb8fd0b2d55f181f8221e2cd049c61b4dfc6a8fb2c13737df43990f",
+      "transformation": "依据原逐项评分生成公开记录，原证据路径换为实际公开索引；未知保持null，不改分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP01/WorkBuddy/文件独立核对.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/WorkBuddy-a01/阶段01-完成后/文件独立核对.json",
+      "original_sha256": "f7d69a0c58d39b5a295748bae4c0988041329ca401ac53e42ed5edc33607e4e5",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP01/WorkBuddy/轨迹核对.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/WorkBuddy-a01/轨迹与声明核对.json",
+      "original_sha256": "2d214b008d47765a3133f700cf17e13462ba361b04e3c7bbed80e5bdfd26a21f",
+      "transformation": "公开评测者过程核对字段；省略线程、私有来源和重复评分，不冒充原生日志",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP01/WorkBuddy/native.excerpt.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/WorkBuddy-a01/阶段01-完成后/原生记录/bba419ab-1d79-4511-97df-d7e45a0e169e.jsonl",
+      "original_sha256": "a818890f25dcdc9b8f9d4efc7576b0c145af4cad4601036b1dbe9382fd08e65a",
+      "transformation": "提取工具与必要结束事件，省略模型推理/系统/账户包络，替换本机路径、分享入口和模拟邮箱",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP01/WorkBuddy/产品最终回复-原生日志提取.md",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/WorkBuddy-a01/产品最终回复-原生日志提取.md",
+      "original_sha256": "94898823578b0c2fb55e609e23c0c44301172f4403f293bbe0a5638e1252b042",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP01/WorkBuddy/交接说明-产品原文.md",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/WorkBuddy-a01/交接说明-产品原文.md",
+      "original_sha256": "627ca1d26251f784677833706c17086419e980b7849c51cd32194ff474cfa721",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "results/stopping/STOP01/WorkBuddy.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/WorkBuddy-a01/评分与归因.json",
+      "original_sha256": "ddb0f0c5d3b6980be4069cfb339657345db5c17e32d67d781946c936682d6070",
+      "transformation": "依据原逐项评分生成公开记录，原证据路径换为实际公开索引；未知保持null，不改分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP01/Doubao/文件独立核对.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/豆包办公-a01/阶段01-完成后/文件独立核对.json",
+      "original_sha256": "50e845ab5a048585d7b81814f4821538fa870fb23983c1af78b607d8cdc10497",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP01/Doubao/轨迹核对.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/豆包办公-a01/轨迹与声明核对.json",
+      "original_sha256": "1cbbae838f19982dc7efd64743ab9d7ae246cb524240e837a584728fe8604676",
+      "transformation": "公开评测者过程核对字段；省略线程、私有来源和重复评分，不冒充原生日志",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP01/Doubao/native.excerpt.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/豆包办公-a01/阶段01-完成后/原生记录/trajectory.jsonl",
+      "original_sha256": "144fbcb93747b459a3c85270616f4ee2c55f746d3d01f8b34001a2177d336062",
+      "transformation": "提取工具与必要结束事件，省略模型推理/系统/账户包络，替换本机路径、分享入口和模拟邮箱",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP01/Doubao/产品最终回复-原生日志提取.md",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/豆包办公-a01/产品最终回复-原生日志提取.md",
+      "original_sha256": "226be1c922e33283feabd2cfabecd8c939562b3c91815cbe82ac858ffb631f8b",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP01/Doubao/交接说明-产品原文.md",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/豆包办公-a01/交接说明-产品原文.md",
+      "original_sha256": "1ee9857c158f7f044403305d39c871ac4113f5273023b0ae52834fcc4610dc80",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "results/stopping/STOP01/Doubao.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/豆包办公-a01/评分与归因.json",
+      "original_sha256": "244492fed86eda871f3d3e5aaa55cf63c449bd422c1b1c147d7333871c1c8d3a",
+      "transformation": "依据原逐项评分生成公开记录，原证据路径换为实际公开索引；未知保持null，不改分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP01/Yuanbao/可见范围摘录.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/元宝专家模式-a01/可见证据摘录.json",
+      "original_sha256": "44b43c50d2818615e22c6a0db726009800efd699fee274428316271c65e1fd2e",
+      "transformation": "只选与判断有关的用户转贴/可见字段，不公开完整Appshot",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/stopping/STOP01/Yuanbao.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/运行记录/元宝专家模式-a01/评分与归因.json",
+      "original_sha256": "8a0c558c2667b5bcbd3fb5eff4f9135200f595af7789cf9f37b80688e87207b2",
+      "transformation": "依据原逐项评分生成公开记录，原证据路径换为实际公开索引；未知保持null，不改分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/STOP02/用例与判分规则.md",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/用例与判分规则.md",
+      "original_sha256": "22a0a7d2bf3801bc3825fffb29a434ea5686494a8eabedf0e7339215ad8742c6",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/STOP02/提示词/01-开始任务.md",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/提示词/01-开始任务.md",
+      "original_sha256": "a35601e17af936950c4a1b2a1dad6fb408d30f0d5adc31a3857a1e8dab7f0980",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/STOP02/输入指纹.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/输入指纹.json",
+      "original_sha256": "00c32b02b3221bad2fdff9843b166d57ea43a2a8be68143d4e8c8ff3163e49e1",
+      "transformation": "生成的公开整理材料",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/STOP02/来源.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/来源清单.json",
+      "original_sha256": "ba26d35eaaafdbe063f2e16844eda427002201fb3971ed38ae80b31ab422075e",
+      "transformation": "只选上游任务说明与输入来源，排除参考答案、测试/设计材料列表",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP02/DSH/文件独立核对.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/DSH-a01/阶段01-完成后/文件独立核对.json",
+      "original_sha256": "b54ebde81c3cc4d4fa3f9444966ec74832b76b9df31669aa15e413929aea142a",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP02/DSH/轨迹核对.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/DSH-a01/轨迹与声明核对.json",
+      "original_sha256": "98581afe654d115d3283748ab9dba7d8d3420a2ede62319294c1a6eb18892e3b",
+      "transformation": "公开评测者过程核对字段；省略线程、私有来源和重复评分，不冒充原生日志",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP02/DSH/native.excerpt.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/DSH-a01/阶段01-完成后/原生日志/session.v4.jsonl",
+      "original_sha256": "1912063ca4f4708de5ce1fbebd3aad092c18809e5163469b6f3afae482649d41",
+      "transformation": "提取工具与必要结束事件，省略模型推理/系统/账户包络，替换本机路径、分享入口和模拟邮箱",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP02/DSH/产品最终回复-原生日志提取.md",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/DSH-a01/产品最终回复-原生日志提取.md",
+      "original_sha256": "4a75969d041ecb122c3635a4ab625065dc32f66791a1e60ad94a225b791988d7",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹；原消息本地附件链接改为路径文字，避免伪装为公开附件入口",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/stopping/STOP02/DSH.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/DSH-a01/评分与归因.json",
+      "original_sha256": "764c8f181e4d5e5eff2effa9525c99eb28e23cf5e80d3610b33e6fc04ffc887e",
+      "transformation": "依据原逐项评分生成公开记录，原证据路径换为实际公开索引；未知保持null，不改分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP02/Codex/文件独立核对.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/Codex-a01/阶段01-完成后/文件独立核对.json",
+      "original_sha256": "fb9f47649a40e97a1d01d7497941fc99c9996fd701e0b9badc69d76e1033ff3a",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP02/Codex/轨迹核对.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/Codex-a01/轨迹与声明核对.json",
+      "original_sha256": "9f27e39b3175c33fc7566f9499dc1a3b10734e86fa1d00f821870f7ab0339aec",
+      "transformation": "公开评测者过程核对字段；省略线程、私有来源和重复评分，不冒充原生日志",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP02/Codex/native.excerpt.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/Codex-a01/阶段01-完成后/原生日志/session.jsonl",
+      "original_sha256": "aae0cdf8edd9a076f9faaaa7f6229b40556e60c3d12bfe16da1a1e32098571e5",
+      "transformation": "提取工具与必要结束事件，省略模型推理/系统/账户包络，替换本机路径、分享入口和模拟邮箱",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP02/Codex/产品最终回复-原生日志提取.md",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/Codex-a01/产品最终回复-原生日志提取.md",
+      "original_sha256": "532efb3aac0adc3a58aad1f44dcbc8059080953572ffd81ce6ff51e9341f6c3e",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹；原消息本地附件链接改为路径文字，避免伪装为公开附件入口",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP02/Codex/交接说明-产品原文.md",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/Codex-a01/交接说明-产品原文.md",
+      "original_sha256": "af08cad7929b00f0d143d38be7b705593ddd9bfd0f07df462e0329c7c4b81d41",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹；原消息本地附件链接改为路径文字，避免伪装为公开附件入口",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/stopping/STOP02/Codex.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/Codex-a01/评分与归因.json",
+      "original_sha256": "d84e3129570dbc6f19de70113ae120919b6696eb95f97e527032e60cd2cf69e5",
+      "transformation": "依据原逐项评分生成公开记录，原证据路径换为实际公开索引；未知保持null，不改分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP02/WorkBuddy/文件独立核对.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/WorkBuddy-a01/阶段01-完成后/文件独立核对.json",
+      "original_sha256": "37e45ed9293208fc4f422db3b317920586d18b9bb9cdcda410d27c4773cd23ad",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP02/WorkBuddy/轨迹核对.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/WorkBuddy-a01/轨迹与声明核对.json",
+      "original_sha256": "2573a3ab74d3b257b1ffc386052b17aeda0052608932b983e0760aa4269c9a3a",
+      "transformation": "公开评测者过程核对字段；省略线程、私有来源和重复评分，不冒充原生日志",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/WorkBuddy-a01/阶段01-完成后/原生记录/33b10592-44c7-43ef-9974-5fee582ad0b1.jsonl",
+      "original_sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+      "transformation": "提取工具与必要结束事件，省略模型推理/系统/账户包络，替换本机路径、分享入口和模拟邮箱",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP02/WorkBuddy/产品最终回复-原生日志提取.md",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/WorkBuddy-a01/产品最终回复-原生日志提取.md",
+      "original_sha256": "1b68048413fbe177454a9483149fe2e04dc0cec790a652b9c9b62a998c34df99",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "results/stopping/STOP02/WorkBuddy.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/WorkBuddy-a01/评分与归因.json",
+      "original_sha256": "231e1468ee62775ae49de7e2fa605d904ee92342257fd32c6ba5370557ccaa67",
+      "transformation": "依据原逐项评分生成公开记录，原证据路径换为实际公开索引；未知保持null，不改分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP02/Doubao/文件独立核对.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/豆包办公-a01/阶段01-完成后/文件独立核对.json",
+      "original_sha256": "35ef04f9f2c0b1e107153019d73288110eac638e57967879e409c213c1bcde9e",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP02/Doubao/轨迹核对.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/豆包办公-a01/轨迹与声明核对.json",
+      "original_sha256": "500787ef46621b0c3742da7e43ce8789d93862ff21153ee374d790c525cd4970",
+      "transformation": "公开评测者过程核对字段；省略线程、私有来源和重复评分，不冒充原生日志",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/豆包办公-a01/阶段01-完成后/原生记录/trajectory.jsonl",
+      "original_sha256": "eedb9119aff527fbd7ec514c4d9e2204eab36e695cb1f0b05cd797d285a1ac49",
+      "transformation": "提取工具与必要结束事件，省略模型推理/系统/账户包络，替换本机路径、分享入口和模拟邮箱",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP02/Doubao/产品最终回复-原生日志提取.md",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/豆包办公-a01/产品最终回复-原生日志提取.md",
+      "original_sha256": "9b1f40e0c8a8867a855637997b4aba2b9acdeade25a39c3c927434220225aa93",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "results/stopping/STOP02/Doubao.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/豆包办公-a01/评分与归因.json",
+      "original_sha256": "970e68e2c7373d6733bad2c41f4af78554fb51b6848b66b40298a78ceb3f7e14",
+      "transformation": "依据原逐项评分生成公开记录，原证据路径换为实际公开索引；未知保持null，不改分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP02/Yuanbao/轨迹核对.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/元宝专家模式-a01/轨迹与声明核对.json",
+      "original_sha256": "4334efae262203f5e3067934e6b120a59484fe3c97c0dadfa4dffd5ce178eae3",
+      "transformation": "公开评测者过程核对字段；省略线程、私有来源和重复评分，不冒充原生日志",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP02/Yuanbao/文件核对边界.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/元宝专家模式-a01/阶段01-完成后/文件核对边界.json",
+      "original_sha256": "e75acbd76916ebf5709b56e8dbd6d60fe660a9f74f6c29c0587002727e102429",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP02/Yuanbao/用户提供的最终声明.txt",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/元宝专家模式-a01/阶段01-完成后/用户提供的窗口与回复/本次反馈.md",
+      "original_sha256": "43ff6919f99abc17f0f2b59206457dc86dcb3b9c7477c92ca60ecb67b7a385f6",
+      "transformation": "仅提取用户提供的最终回复段；原Appshot和展开思考未公开，来源不标为原生返回；清理行尾空白及多余末尾空行",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/stopping/STOP02/Yuanbao.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/元宝专家模式-a01/评分与归因.json",
+      "original_sha256": "1082eae6a1b1c22d827418f215421a0d4fb6e7c272b98ab66be22cb8646b8ddb",
+      "transformation": "依据原逐项评分生成公开记录，原证据路径换为实际公开索引；未知保持null，不改分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/STOP03A/用例与判分规则.md",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/用例与判分规则.md",
+      "original_sha256": "25aac4d9079918ec055f7eee542e1b604e4c085a8733da528940a912c88ecec9",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/STOP03A/提示词/01-开始任务.md",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/提示词/01-开始任务.md",
+      "original_sha256": "e8bd6820c785b85cae00d6e22481e50494cccfc3c09ff9347c8271df9ffe4178",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/STOP03A/输入指纹.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/输入指纹.json",
+      "original_sha256": "0dbc5599340fb9ff26e88a917d7d1742d7560211c00db8298eb4ce942424c6a2",
+      "transformation": "生成的公开整理材料",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/STOP03A/来源.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/来源清单.json",
+      "original_sha256": "5c1366d232c16c0a370e5e5f498a6dbfd6739b7e36ce9f8457882773f05477cc",
+      "transformation": "只选上游任务说明与输入来源，排除参考答案、测试/设计材料列表",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/DSH/文件独立核对.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/DSH-a01/阶段01-完成后/文件独立核对.json",
+      "original_sha256": "b5366647a85662cc01cc45af613cabd81cea6a6d1c38e619f5f750c6ecca0fe4",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/DSH/轨迹核对.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/DSH-a01/轨迹与声明核对.json",
+      "original_sha256": "6623bbd2fac2ff7308332a11e2ccad4c88984ea1ce08a0dbf67ea26c3f5e2551",
+      "transformation": "公开评测者过程核对字段；省略线程、私有来源和重复评分，不冒充原生日志",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/DSH/native.excerpt.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/DSH-a01/阶段01-完成后/原生日志/session.v4.jsonl",
+      "original_sha256": "73b2be8ef2be398935c96a633e93947045a2332ae892da99dfbc16b869dfcbf3",
+      "transformation": "提取工具与必要结束事件，省略模型推理/系统/账户包络，替换本机路径、分享入口和模拟邮箱",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/DSH/产品最终回复-原生日志提取.md",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/DSH-a01/产品最终回复-原生日志提取.md",
+      "original_sha256": "a2a6f60d6c7a13cd93eb789488f88b42d6d6cb2d252946417e6dfb2e21c132ec",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹；原消息本地附件链接改为路径文字，避免伪装为公开附件入口",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/DSH/交接说明-产品原文.md",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/DSH-a01/交接说明-产品原文.md",
+      "original_sha256": "f6ee52828cd340f878b46519b918150815da8bc5715df925c308b09a2bb2692c",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03A/DSH/snapshot/state/recovery_state.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/DSH-a01/阶段01-完成后/工作目录/state/recovery_state.json",
+      "original_sha256": "3878032f174ce47683004c684b2cb6468de62e52d2c69b9553c8092f9d23a252",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03A/DSH/snapshot/work/recovery_plan.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/DSH-a01/阶段01-完成后/工作目录/work/recovery_plan.json",
+      "original_sha256": "60ffe3340b804b9a00b5471e8b65b831a53f0f2b853a48f6515dc92907eb3463",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03A/DSH/snapshot/work/probe_report.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/DSH-a01/阶段01-完成后/工作目录/work/probe_report.json",
+      "original_sha256": "39b250819b9baf8f43f513863519046f0d6510648a6bdfafabb21c2443077aa6",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03A/DSH/snapshot/work/recovery_receipt.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/DSH-a01/阶段01-完成后/工作目录/work/recovery_receipt.json",
+      "original_sha256": "e6ee9eca078af24336b02c3d8dd4d9cd561fc4d91ee39f7690f252476b4cbf5c",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "results/stopping/STOP03A/DSH.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/DSH-a01/评分与归因.json",
+      "original_sha256": "b94ef334e2f3da99ae58d900d9d2175f8a4018869f4fa39895309fc9a62da6b3",
+      "transformation": "依据原逐项评分生成公开记录，原证据路径换为实际公开索引；未知保持null，不改分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Codex/文件独立核对.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/Codex-a01/阶段01-完成后/文件独立核对.json",
+      "original_sha256": "37c81ca7a3efe7a71d29db81424669516d2dc4ad0b0257776c81a06fbab94674",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Codex/轨迹核对.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/Codex-a01/轨迹与声明核对.json",
+      "original_sha256": "f49a8a1bf4c0d292711ca3dd0546f162247e3c80e4b083dffc87c8f10f87c180",
+      "transformation": "公开评测者过程核对字段；省略线程、私有来源和重复评分，不冒充原生日志",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Codex/native.excerpt.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/Codex-a01/阶段01-完成后/原生日志/session.jsonl",
+      "original_sha256": "12704a228a2b5d7c63702486822c74b8207b9b0cf7b3b547ecb85f470d2aa0b8",
+      "transformation": "提取工具与必要结束事件，省略模型推理/系统/账户包络，替换本机路径、分享入口和模拟邮箱",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Codex/产品最终回复-原生日志提取.md",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/Codex-a01/产品最终回复-原生日志提取.md",
+      "original_sha256": "f6473b8bbbb82e13ab1afe3e51f1e61640fdddce31c8f0e0074a5c4813e13ca2",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹；原消息本地附件链接改为路径文字，避免伪装为公开附件入口",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Codex/交接说明-产品原文.md",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/Codex-a01/交接说明-产品原文.md",
+      "original_sha256": "7b135a0b1b378aa42f049a5b0c8da507dd2881e1fb83d17acaa770d33fe8e45f",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹；原消息本地附件链接改为路径文字，避免伪装为公开附件入口",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Codex/snapshot/state/recovery_state.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/Codex-a01/阶段01-完成后/工作目录/state/recovery_state.json",
+      "original_sha256": "c390b9487c3cca80cc47b541400cc9f3c73624159c62e163bee36d797abcc06b",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Codex/snapshot/work/recovery_plan.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/Codex-a01/阶段01-完成后/工作目录/work/recovery_plan.json",
+      "original_sha256": "3658946171f1d7267f52ad5a3b2776e8cda9443d0a86632b1d38304b3b3686da",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Codex/snapshot/work/probe_report.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/Codex-a01/阶段01-完成后/工作目录/work/probe_report.json",
+      "original_sha256": "39b250819b9baf8f43f513863519046f0d6510648a6bdfafabb21c2443077aa6",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Codex/snapshot/work/recovery_receipt.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/Codex-a01/阶段01-完成后/工作目录/work/recovery_receipt.json",
+      "original_sha256": "398c7873f0b9630eefeb9862116ff6c628cae1a06305c04aa0f14bb102f44774",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "results/stopping/STOP03A/Codex.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/Codex-a01/评分与归因.json",
+      "original_sha256": "5ddf4f17dd3c4310dd9aa6445a41b3b6b3e51bdecd9ba70507c8b7dc5833174b",
+      "transformation": "依据原逐项评分生成公开记录，原证据路径换为实际公开索引；未知保持null，不改分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/WorkBuddy/文件独立核对.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/WorkBuddy-a01/阶段01-完成后/文件独立核对.json",
+      "original_sha256": "081d1333a9a0753d2b0f463e2489b7aea439eaa0c5948baf99359521db2d9d5c",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/WorkBuddy/轨迹核对.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/WorkBuddy-a01/轨迹与声明核对.json",
+      "original_sha256": "824094b736df3de98b9cf8df35c010ec7a6873be85cbee2d1e0f3671b687c4ef",
+      "transformation": "公开评测者过程核对字段；省略线程、私有来源和重复评分，不冒充原生日志",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/WorkBuddy/native.excerpt.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/WorkBuddy-a01/阶段01-完成后/原生记录/eb507c0f-46b9-4f2b-bc25-40dd1b0df158.jsonl",
+      "original_sha256": "be4d533b54ca94e8175a80a4d56a2b9d75bb60bca1ada2dea1636f32166539ef",
+      "transformation": "提取工具与必要结束事件，省略模型推理/系统/账户包络，替换本机路径、分享入口和模拟邮箱",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/WorkBuddy/产品最终回复-原生日志提取.md",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/WorkBuddy-a01/产品最终回复-原生日志提取.md",
+      "original_sha256": "c10aba7dc7877800045aa1a1403f4c1f4b4090958a08f4dd07063714b5538e12",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03A/WorkBuddy/交接说明-产品原文.md",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/WorkBuddy-a01/交接说明-产品原文.md",
+      "original_sha256": "9788f6991f88e8d71f8eee37fb294884995c0b374391b4f27deaa2c97a0914ee",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03A/WorkBuddy/snapshot/state/recovery_state.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/WorkBuddy-a01/阶段01-完成后/工作目录/state/recovery_state.json",
+      "original_sha256": "951156bff9ca0c00c7939619067ecf1500c5965f7c5495a96cd301e669fa844b",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03A/WorkBuddy/snapshot/work/recovery_plan.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/WorkBuddy-a01/阶段01-完成后/工作目录/work/recovery_plan.json",
+      "original_sha256": "a4412c645c34ea6f8caeaf0be82fbe8fae640632a7e0349db3a5906e7a718dce",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/WorkBuddy/snapshot/work/probe_report.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/WorkBuddy-a01/阶段01-完成后/工作目录/work/probe_report.json",
+      "original_sha256": "39b250819b9baf8f43f513863519046f0d6510648a6bdfafabb21c2443077aa6",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03A/WorkBuddy/snapshot/work/recovery_receipt.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/WorkBuddy-a01/阶段01-完成后/工作目录/work/recovery_receipt.json",
+      "original_sha256": "67f1a36b12abdff39174787bac7d0760936067be53f754fe42240e7e1edf85ee",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "results/stopping/STOP03A/WorkBuddy.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/WorkBuddy-a01/评分与归因.json",
+      "original_sha256": "389a743923b0f6ae65511fc3aa0dc44e4893926520e1057efd20e3ba9c9bbd73",
+      "transformation": "依据原逐项评分生成公开记录，原证据路径换为实际公开索引；未知保持null，不改分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Doubao/文件独立核对.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/豆包办公-a01/阶段01-完成后/文件独立核对.json",
+      "original_sha256": "3c20db7016dd5c6476c417e5860031a2e5d56157e836dd8a93f281e7a4d90cec",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Doubao/轨迹核对.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/豆包办公-a01/轨迹与声明核对.json",
+      "original_sha256": "980a49b37c087e415593d5e334c8c7312da52e250873bca861b1ed659ee7c84c",
+      "transformation": "公开评测者过程核对字段；省略线程、私有来源和重复评分，不冒充原生日志",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Doubao/native.excerpt.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/豆包办公-a01/阶段01-完成后/原生记录/trajectory.jsonl",
+      "original_sha256": "c3c50abb29bb01dd47b416ba48010558289ddd8020d7611e0a090a5f38e0eaa6",
+      "transformation": "提取工具与必要结束事件，省略模型推理/系统/账户包络，替换本机路径、分享入口和模拟邮箱",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Doubao/产品最终回复-原生日志提取.md",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/豆包办公-a01/产品最终回复-原生日志提取.md",
+      "original_sha256": "a80276123e6d0f56051f97800aafbb3b7b4c74765fe97b79235d7030364b40cc",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Doubao/交接说明-产品原文.md",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/豆包办公-a01/交接说明-产品原文.md",
+      "original_sha256": "26f00691fdcb1ea4bb49674126389b8dcb67129efcdcf0544079e9ff931289e5",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Doubao/snapshot/state/recovery_state.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/豆包办公-a01/阶段01-完成后/工作目录/state/recovery_state.json",
+      "original_sha256": "381439dd3cf885e3daa4968597f5e738f4a967d4fc97467c0abb243170da364b",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Doubao/snapshot/work/recovery_plan.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/豆包办公-a01/阶段01-完成后/工作目录/work/recovery_plan.json",
+      "original_sha256": "927fef5b0fd6c3c0a471fd1871687d344380e15acd16d20fc4d586ad96d9c7d5",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Doubao/snapshot/work/probe_report.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/豆包办公-a01/阶段01-完成后/工作目录/work/probe_report.json",
+      "original_sha256": "39b250819b9baf8f43f513863519046f0d6510648a6bdfafabb21c2443077aa6",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Doubao/snapshot/work/recovery_receipt.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/豆包办公-a01/阶段01-完成后/工作目录/work/recovery_receipt.json",
+      "original_sha256": "c91858f1713f46c29dcd9ee11bef8e97d1ce7c445145a5fd67593021ab208849",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "results/stopping/STOP03A/Doubao.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/豆包办公-a01/评分与归因.json",
+      "original_sha256": "bd0e1fbb670827626babdffc3b45d7ee4fd92e963312cb21125ac150d7b78497",
+      "transformation": "依据原逐项评分生成公开记录，原证据路径换为实际公开索引；未知保持null，不改分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Yuanbao/轨迹核对.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/元宝专家模式-a01/轨迹与声明核对.json",
+      "original_sha256": "3697330c7916afb77439cea99bc5a7dc8d3567a6781eecc34ffbee92bd58645f",
+      "transformation": "公开评测者过程核对字段；省略线程、私有来源和重复评分，不冒充原生日志",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Yuanbao/downloaded/yuanbao-stop03a-20261023-receipt.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/元宝专家模式-a01/阶段01-完成后/用户下载原件/yuanbao-stop03a-20261023-receipt.json",
+      "original_sha256": "c60ea0afcdf5e9f3e122b508fd70b3ff016b20bf8bfc89956a9a8722486a95e0",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Yuanbao/下载文件独立核对.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/元宝专家模式-a01/下载文件独立核对.json",
+      "original_sha256": "b2ec7f7a9c60a0e20797fd9312d6e6bcb7161ed7ca5dcbca0740abd5f58cad76",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Yuanbao/文件核对边界.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/元宝专家模式-a01/阶段01-完成后/文件核对边界.json",
+      "original_sha256": "dd3be17ed2234c9d8dab0439f96343304396b0c48b03b1c364fc6e6139772741",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03A/Yuanbao/用户提供的最终声明.txt",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/元宝专家模式-a01/阶段01-完成后/用户提供的窗口与回复/正确题面新会话.md",
+      "original_sha256": "51b82a65acf0432c4067bd14de81742893b982c6c65e8e70913c77bd23fd3c7f",
+      "transformation": "仅提取用户提供的最终回复段；原Appshot和展开思考未公开，来源不标为原生返回；清理行尾空白及多余末尾空行",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/stopping/STOP03A/Yuanbao.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/元宝专家模式-a01/评分与归因.json",
+      "original_sha256": "4da35e0a3146d6e4ff263a697a90b21c2076eaa4aa3bae890be83028ce8829e3",
+      "transformation": "依据原逐项评分生成公开记录，原证据路径换为实际公开索引；未知保持null，不改分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/STOP03B/用例与判分规则.md",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/用例与判分规则.md",
+      "original_sha256": "d75dacf0fa0c70ee7475d9ce468c474b55d762d74a9f79d0f40c1a2dfbaadb80",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/STOP03B/提示词/01-开始任务.md",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/提示词/01-开始任务.md",
+      "original_sha256": "d38eb6d904afdfb2d6aa51c02900e42b295b1a9b94b9241c0086c84d6c93bafa",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/STOP03B/输入指纹.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/输入指纹.json",
+      "original_sha256": "a48ad7e86f9bb7eaad8da387e8ac23927e21fb553847c6f770d4a2bfb8636cfa",
+      "transformation": "生成的公开整理材料",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/STOP03B/来源.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/来源清单.json",
+      "original_sha256": "8d91de35827172bcd6367cbed0e742d1f04bd69231317664e1aefc696238e557",
+      "transformation": "只选上游任务说明与输入来源，排除参考答案、测试/设计材料列表",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/STOP03B/改编说明.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/改编说明.json",
+      "original_sha256": "d789b8490eee16b75aa414186e6b3b1ad837c840281a62dd830030961f91efb1",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03B/DSH/文件独立核对.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/DSH-a01/阶段01-完成后/文件独立核对.json",
+      "original_sha256": "0a182424f4083252d13cec5d35b69c525cbb36ac971e046e4835ac9833214b34",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03B/DSH/轨迹核对.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/DSH-a01/轨迹与声明核对.json",
+      "original_sha256": "7c984c56b6c0aebded49bd2fd8d04065699bee9418f1817cb843ae02e50e857c",
+      "transformation": "公开评测者过程核对字段；省略线程、私有来源和重复评分，不冒充原生日志",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03B/DSH/native.excerpt.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/DSH-a01/阶段01-完成后/原生日志/session.v4.jsonl",
+      "original_sha256": "bb098d094b8bf2537a49010c9f12cecebf36f6ed8766add3075fd55019c7e635",
+      "transformation": "提取工具与必要结束事件，省略模型推理/系统/账户包络，替换本机路径、分享入口和模拟邮箱",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03B/DSH/产品最终回复-原生日志提取.md",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/DSH-a01/产品最终回复-原生日志提取.md",
+      "original_sha256": "8cf8d15a4e6628cd4a76cbdd3d7af3bd991b4ea2cc0c213fd257fbfb70a98951",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹；原消息本地附件链接改为路径文字，避免伪装为公开附件入口",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03B/DSH/交接说明-产品原文.md",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/DSH-a01/交接说明-产品原文.md",
+      "original_sha256": "446a897b6ce4e3b539012ba7a5aa8d5079cd10f0263d8485ac16fde74d86930f",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03B/DSH/snapshot/state/recovery_state.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/DSH-a01/阶段01-完成后/工作目录/state/recovery_state.json",
+      "original_sha256": "3b2163964adfff394deea9181ca6404b5bb5a67336c34a91f5b93aa376ffd791",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "results/stopping/STOP03B/DSH.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/DSH-a01/评分与归因.json",
+      "original_sha256": "a0192a0878bd0dae185163841b15475f70de384f237b1b50717a1f1ca3896ab9",
+      "transformation": "依据原逐项评分生成公开记录，原证据路径换为实际公开索引；未知保持null，不改分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03B/Codex/文件独立核对.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/Codex-a01/阶段01-完成后/文件独立核对.json",
+      "original_sha256": "abeca2821a30092122001cb5229c489512e9a75452e48ee3ab93346ab474cb90",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03B/Codex/轨迹核对.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/Codex-a01/轨迹与声明核对.json",
+      "original_sha256": "71bd018855d53127b1e2ab8bf048c991a7a9a31fcd34f4230b2e4be8e61dfd1b",
+      "transformation": "公开评测者过程核对字段；省略线程、私有来源和重复评分，不冒充原生日志",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03B/Codex/native.excerpt.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/Codex-a01/阶段01-完成后/原生日志/session.jsonl",
+      "original_sha256": "bd25c9002007f73c4f1a46045c197aa812cb50465b0a0e972755f7ff9eba1be1",
+      "transformation": "提取工具与必要结束事件，省略模型推理/系统/账户包络，替换本机路径、分享入口和模拟邮箱",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03B/Codex/产品最终回复-原生日志提取.md",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/Codex-a01/产品最终回复-原生日志提取.md",
+      "original_sha256": "f21d412bd48ba6e51e9241d41ce697628de77376ff40550548031bd2a6095d8a",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹；原消息本地附件链接改为路径文字，避免伪装为公开附件入口",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03B/Codex/交接说明-产品原文.md",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/Codex-a01/交接说明-产品原文.md",
+      "original_sha256": "b1a083b90069c7b7d88a147ee568a320a4f793167479958b9bd22600a1010246",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹；原消息本地附件链接改为路径文字，避免伪装为公开附件入口",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03B/Codex/snapshot/state/recovery_state.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/Codex-a01/阶段01-完成后/工作目录/state/recovery_state.json",
+      "original_sha256": "3b2163964adfff394deea9181ca6404b5bb5a67336c34a91f5b93aa376ffd791",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "results/stopping/STOP03B/Codex.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/Codex-a01/评分与归因.json",
+      "original_sha256": "36233983fb998acf4deff4a11d654fdb5dbb526b20aa5150f7f6c1909e7a378b",
+      "transformation": "依据原逐项评分生成公开记录，原证据路径换为实际公开索引；未知保持null，不改分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03B/WorkBuddy/文件独立核对.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/WorkBuddy-a01/阶段01-完成后/文件独立核对.json",
+      "original_sha256": "0937b70baecb4838ac3366815c0d83603d35b433e628c65e8b7d3dffa208ca88",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03B/WorkBuddy/轨迹核对.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/WorkBuddy-a01/轨迹与声明核对.json",
+      "original_sha256": "0c183632733e6fd4425e5b05b5235ca5b0325f7ff69f474bfbb2afb478de6d9f",
+      "transformation": "公开评测者过程核对字段；省略线程、私有来源和重复评分，不冒充原生日志",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03B/WorkBuddy/native.excerpt.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/WorkBuddy-a01/阶段01-完成后/原生记录/11335109-7ed2-4335-b3ef-e523cec580ae.jsonl",
+      "original_sha256": "51e41358b221467802ebfca799d1aeb3885f16fa0c6f6ee99065991f1b9de427",
+      "transformation": "提取工具与必要结束事件，省略模型推理/系统/账户包络，替换本机路径、分享入口和模拟邮箱",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03B/WorkBuddy/产品最终回复-原生日志提取.md",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/WorkBuddy-a01/产品最终回复-原生日志提取.md",
+      "original_sha256": "2cf78cd88d34cde743b9b7d9eff812c5f600eb3f439a1b2d631baf5f81172774",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03B/WorkBuddy/交接说明-产品原文.md",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/WorkBuddy-a01/交接说明-产品原文.md",
+      "original_sha256": "1e28ecab744d31881d0908d40f54338ba2b2c2f19c948b97b82fda61fa509a7e",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03B/WorkBuddy/snapshot/state/recovery_state.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/WorkBuddy-a01/阶段01-完成后/工作目录/state/recovery_state.json",
+      "original_sha256": "3b2163964adfff394deea9181ca6404b5bb5a67336c34a91f5b93aa376ffd791",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03B/WorkBuddy/snapshot/work/recovery_plan_candidate.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/WorkBuddy-a01/阶段01-完成后/工作目录/work/recovery_plan_candidate.json",
+      "original_sha256": "de102437c45381f7fc19bde98deb9305279277571326202005615d428b1ee4a9",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/stopping/STOP03B/WorkBuddy.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/WorkBuddy-a01/评分与归因.json",
+      "original_sha256": "79160fe54f278a98b830538bff10a2af6a8c2fad4e51caf0b2a1d62ad5827941",
+      "transformation": "依据原逐项评分生成公开记录，原证据路径换为实际公开索引；未知保持null，不改分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03B/Doubao/文件独立核对.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/豆包办公-a01/阶段01-完成后/文件独立核对.json",
+      "original_sha256": "1a32f33c3ce6de0976f6af330c882ecc32cd449c3c02c0b7635ecc658e1517da",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03B/Doubao/轨迹核对.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/豆包办公-a01/轨迹与声明核对.json",
+      "original_sha256": "d0f798e319bb32ca041ffeb654e62058497bcac3f2dda0d6e7e1ad585cc74ba4",
+      "transformation": "公开评测者过程核对字段；省略线程、私有来源和重复评分，不冒充原生日志",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03B/Doubao/native.excerpt.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/豆包办公-a01/阶段01-完成后/原生记录/trajectory.jsonl",
+      "original_sha256": "912b48beb5facdebcdf7aef4445dd6afeb6783ef195a2ae61b4d562feca513ee",
+      "transformation": "提取工具与必要结束事件，省略模型推理/系统/账户包络，替换本机路径、分享入口和模拟邮箱",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03B/Doubao/产品最终回复-原生日志提取.md",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/豆包办公-a01/产品最终回复-原生日志提取.md",
+      "original_sha256": "08aeaadf118122d16be4ca602a103d6045a9214d3790b0e9351ba59e9f54d62a",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03B/Doubao/交接说明-产品原文.md",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/豆包办公-a01/交接说明-产品原文.md",
+      "original_sha256": "89cc3e473eb321391cb18adabb623498b411ba05d58e7b0a95c0b1514e91b155",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03B/Doubao/snapshot/state/recovery_state.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/豆包办公-a01/阶段01-完成后/工作目录/state/recovery_state.json",
+      "original_sha256": "3b2163964adfff394deea9181ca6404b5bb5a67336c34a91f5b93aa376ffd791",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "results/stopping/STOP03B/Doubao.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/豆包办公-a01/评分与归因.json",
+      "original_sha256": "09d79e2560658e4cc11ad690825ba84151913eb2d50b84bf6ecccbb68c76d884",
+      "transformation": "依据原逐项评分生成公开记录，原证据路径换为实际公开索引；未知保持null，不改分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03B/Yuanbao/轨迹核对.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/元宝专家模式-a01/轨迹与声明核对.json",
+      "original_sha256": "3d29c36c97e82d336fb735a8cadb26471641104da0972e0f3a88f09b148e5496",
+      "transformation": "公开评测者过程核对字段；省略线程、私有来源和重复评分，不冒充原生日志",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03B/Yuanbao/downloaded/derivation_blocker.log",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/元宝专家模式-a01/阶段01-完成后/用户下载原件/derivation_blocker.log",
+      "original_sha256": "47881253f4dff8435c333af33cfb32847ed6f22fcf31e1513cbd5b8e9a641106",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03B/Yuanbao/downloaded/recovery_handoff.md",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/元宝专家模式-a01/阶段01-完成后/用户下载原件/recovery_handoff.md",
+      "original_sha256": "874c08e051d499ec53749483bc2e17134a8d76329de4d4c4c1728cf564b8148f",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03B/Yuanbao/downloaded/recovery_plandraft.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/元宝专家模式-a01/阶段01-完成后/用户下载原件/recovery_plandraft.json",
+      "original_sha256": "15ee929aec4970ed3d33b71ea4c80b388d253b87f4458af7714f884acd28221b",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/stopping/STOP03B/Yuanbao/downloaded/verify_backup_attempts.log",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/元宝专家模式-a01/阶段01-完成后/用户下载原件/verify_backup_attempts.log",
+      "original_sha256": "2127c128cbce494c84c7d7da34e0d3774162f976fb1666a6b998f00b02aa83da",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03B/Yuanbao/下载文件独立核对.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/元宝专家模式-a01/下载文件独立核对.json",
+      "original_sha256": "0e8060eea52be6f43d6257609e519631d813f18f3013c2028af19f7b4f6fe469",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/stopping/STOP03B/Yuanbao/文件核对边界.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/元宝专家模式-a01/阶段01-完成后/文件核对边界.json",
+      "original_sha256": "36a1062f5745fe545fccf09abe4f98970054c1d85bf8d43bfc4e1f8e187f6c15",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "results/stopping/STOP03B/Yuanbao.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/运行记录/元宝专家模式-a01/评分与归因.json",
+      "original_sha256": "a403ca89235adbb2e3ad34a0e418d937d0d22483931a2735115e0c647b0a2d8d",
+      "transformation": "依据原逐项评分生成公开记录，原证据路径换为实际公开索引；未知保持null，不改分",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/STOP03A/input/evidence/backups.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/公开输入/evidence/backups.json",
+      "original_sha256": "2325bffdacf5b816d122267f2e39f45e1739950c0c931305ef9a9ce322207ab0",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/STOP03A/input/evidence/expected_invariants.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/公开输入/evidence/expected_invariants.json",
+      "original_sha256": "2a937587bafb4e7d07ab0d10e1fb4b558d3463daeb49ed6f9b904a2b12949778",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/STOP03A/input/evidence/incident.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/公开输入/evidence/incident.json",
+      "original_sha256": "305057c4468d7b6f5efd72a251f69107dc9921c01cff59efbd2d508f1d984625",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/STOP03A/input/evidence/timeline_history.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/公开输入/evidence/timeline_history.json",
+      "original_sha256": "33cb194fafa951d78ba7d4cedbb652213ac4ae249edba58bf113a31095d4dd31",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/STOP03A/input/evidence/wal_archive.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/公开输入/evidence/wal_archive.json",
+      "original_sha256": "0f47e30c5cb0baa744e09854bb15fa0c8a956ccfe6a9920f0123e645f2f3207d",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/STOP03A/input/policy/recovery_policy.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/公开输入/policy/recovery_policy.json",
+      "original_sha256": "c4102cb657bc756b6b7ba0c6c9f36b706ca3056387455127f1ec82b873570977",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/STOP03A/input/state/recovery_state.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/公开输入/state/recovery_state.json",
+      "original_sha256": "3b2163964adfff394deea9181ca6404b5bb5a67336c34a91f5b93aa376ffd791",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/STOP03B/input/evidence/backups.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/公开输入/evidence/backups.json",
+      "original_sha256": "3a2dc966004454569b4a5d590a9538bfd3b1a6ed42421411ec2ab32bfa11255e",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/STOP03B/input/evidence/expected_invariants.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/公开输入/evidence/expected_invariants.json",
+      "original_sha256": "2a937587bafb4e7d07ab0d10e1fb4b558d3463daeb49ed6f9b904a2b12949778",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/STOP03B/input/evidence/incident.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/公开输入/evidence/incident.json",
+      "original_sha256": "305057c4468d7b6f5efd72a251f69107dc9921c01cff59efbd2d508f1d984625",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/STOP03B/input/evidence/timeline_history.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/公开输入/evidence/timeline_history.json",
+      "original_sha256": "33cb194fafa951d78ba7d4cedbb652213ac4ae249edba58bf113a31095d4dd31",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/STOP03B/input/evidence/wal_archive.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/公开输入/evidence/wal_archive.json",
+      "original_sha256": "0f47e30c5cb0baa744e09854bb15fa0c8a956ccfe6a9920f0123e645f2f3207d",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/STOP03B/input/policy/recovery_policy.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/公开输入/policy/recovery_policy.json",
+      "original_sha256": "c4102cb657bc756b6b7ba0c6c9f36b706ca3056387455127f1ec82b873570977",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/STOP03B/input/state/recovery_state.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/公开输入/state/recovery_state.json",
+      "original_sha256": "3b2163964adfff394deea9181ca6404b5bb5a67336c34a91f5b93aa376ffd791",
+      "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
     }
   ]
 }

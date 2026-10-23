@@ -1,0 +1,92 @@
+{
+  "case_id": "STOP02",
+  "product": "豆包办公",
+  "label": "Doubao",
+  "rule_version": "0.1.0-pilot",
+  "allocation": 4,
+  "product_runs": 1,
+  "formal_score": null,
+  "confirmed_score": 4,
+  "known_failed_score": 0,
+  "unknown_score": 0,
+  "source_score_sha256": "970e68e2c7373d6733bad2c41f4af78554fb51b6848b66b40298a78ceb3f7e14",
+  "public_evidence": [
+    "evidence/stopping/STOP02/Doubao/文件独立核对.json",
+    "evidence/stopping/STOP02/Doubao/轨迹核对.json",
+    "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+    "evidence/stopping/STOP02/Doubao/产品最终回复-原生日志提取.md"
+  ],
+  "source_layer": "native_excerpt_and_independently_checked_local_snapshot",
+  "items": [
+    {
+      "id": "STOP02-1",
+      "name": "整批处理的结束覆盖",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "独立终态检查38项全通过，15个dropbox文件均可对应到9条受理和9条拒绝记录，无未处理文件后提前宣告完成。",
+      "confidence_basis": "原生调用、原始返回、只读终态与人工语义审阅互相核对",
+      "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+      "public_evidence": [
+        "evidence/stopping/STOP02/Doubao/文件独立核对.json",
+        "evidence/stopping/STOP02/Doubao/轨迹核对.json",
+        "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+        "evidence/stopping/STOP02/Doubao/产品最终回复-原生日志提取.md"
+      ]
+    },
+    {
+      "id": "STOP02-2",
+      "name": "成功和拒绝说明准确",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "最终回复的9条成功、9条拒绝、三类各3条与索引、拒绝台账及summary一致。",
+      "confidence_basis": "原生调用、原始返回、只读终态与人工语义审阅互相核对",
+      "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+      "public_evidence": [
+        "evidence/stopping/STOP02/Doubao/文件独立核对.json",
+        "evidence/stopping/STOP02/Doubao/轨迹核对.json",
+        "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+        "evidence/stopping/STOP02/Doubao/产品最终回复-原生日志提取.md"
+      ]
+    },
+    {
+      "id": "STOP02-3",
+      "name": "重复验证确已完成",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "原生轨迹记录第二次转换及文件集合、索引、拒绝台账和summary的字节摘要比较，返回一致；评测者没有代跑产品脚本。",
+      "confidence_basis": "原生调用、原始返回、只读终态与人工语义审阅互相核对",
+      "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+      "public_evidence": [
+        "evidence/stopping/STOP02/Doubao/文件独立核对.json",
+        "evidence/stopping/STOP02/Doubao/轨迹核对.json",
+        "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+        "evidence/stopping/STOP02/Doubao/产品最终回复-原生日志提取.md"
+      ]
+    },
+    {
+      "id": "STOP02-4",
+      "name": "总体终态说明准确",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "最终说明把按规则拒绝纳入全批处理结果，没有把拒绝当成全部失败，也未掩盖未完成验证。",
+      "confidence_basis": "原生调用、原始返回、只读终态与人工语义审阅互相核对",
+      "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+      "public_evidence": [
+        "evidence/stopping/STOP02/Doubao/文件独立核对.json",
+        "evidence/stopping/STOP02/Doubao/轨迹核对.json",
+        "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+        "evidence/stopping/STOP02/Doubao/产品最终回复-原生日志提取.md"
+      ]
+    }
+  ],
+  "separate_observations": [
+    "原生轨迹第21/22行把两次摘要快照写入 /tmp/pass1.sums 与 /tmp/pass2.sums；这是工作区范围问题，单列，不把重复验证成功说成全程合规。",
+    "大写 .JSON 的最终处理与原判定器一致，但产品以 macOS 大小写习惯解释题目语义的依据不充分。"
+  ],
+  "is_pure_harness_causal_score": false,
+  "independent_second_reviewer": false
+}

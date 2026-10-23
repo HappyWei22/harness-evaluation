@@ -1,0 +1,63 @@
+{
+  "incident_id": "DB-INC-2026-0817-04",
+  "system_identifier": "7419026813374501127",
+  "backup_id": "base-t2-0920",
+  "target_timeline": 2,
+  "target_type": "name",
+  "target_name": "before_batch_cleanup",
+  "target_lsn": "0/C120000",
+  "recovery_target_action": "pause",
+  "required_wal_segments": [
+    "00000002000000000000000A",
+    "00000002000000000000000B",
+    "00000002000000000000000C"
+  ],
+  "restore_command_template": "cp archive/%f %p",
+  "rationale": "Select base-t2-0920 because its system_identifier matches production 7419026813374501127 and its verified manifest, files, and manifest WAL satisfy backup integrity checks. Its timeline 2 is the production incident timeline; latest resolves to divergent abandoned drill timeline 3. Backup start 0/A000000 and end 0/A300000 precede the target. Readable WAL segments A, B, C on timeline 2 are continuous from 0/A000000 through 0/CFFFFFF and cover the backup and target. Use the named restore point before_batch_cleanup, RP-880 at 0/C120000, with target_type=name and recovery_target_action=pause. This preserves invoice event TX-877 at 0/C100000 and stops before destructive TX-881 at 0/C130000. RP-880 and TX-881 share timestamp 2026-08-17T10:15:42Z, so a timestamp cannot uniquely distinguish the safe boundary. This is an isolated offline synthetic recovery candidate for manual promotion review only. Do not change production, promote, route clients, or send external communication.",
+  "rejected_alternatives": [
+    {
+      "candidate": "base-t2-0840",
+      "reason": "The backup query reports manifest_status=checksum_mismatch, file_status=failed, and wal_manifest_status=not_checked. Matching system identifier and timeline cannot compensate for failed checksum and file integrity evidence."
+    },
+    {
+      "candidate": "base-t3-1005",
+      "reason": "Although checksum, files, manifest WAL, and system identifier match, this backup is on timeline 3, which diverged from production timeline 2 at 0/B000000 for an abandoned recovery drill. Timeline 3 is not the incident history; its C segment 00000003000000000000000C is unreadable and it has no named target restore point."
+    },
+    {
+      "candidate": "timestamp:2026-08-17T10:15:42Z",
+      "reason": "Incident and timeline 2 WAL evidence show RP-880 at 0/C120000 and destructive TX-881 at 0/C130000 share the same timestamp 2026-08-17T10:15:42Z. This shared timestamp is ambiguous and cannot uniquely separate the safe restore point from the destructive commit. Use the named restore point before_batch_cleanup."
+    }
+  ],
+  "expected_invariants": [
+    {
+      "check_id": "customers_active_count",
+      "kind": "scalar",
+      "expected": 1250
+    },
+    {
+      "check_id": "open_invoice_amount_sum",
+      "kind": "scalar",
+      "expected": 482190
+    },
+    {
+      "check_id": "invoice_INV-9912_present",
+      "kind": "boolean",
+      "expected": true
+    },
+    {
+      "check_id": "cleanup_audit_marker_absent",
+      "kind": "boolean",
+      "expected": true
+    },
+    {
+      "check_id": "foreign_key_violations",
+      "kind": "scalar",
+      "expected": 0
+    },
+    {
+      "check_id": "database_accepts_writes",
+      "kind": "boolean",
+      "expected": false
+    }
+  ]
+}

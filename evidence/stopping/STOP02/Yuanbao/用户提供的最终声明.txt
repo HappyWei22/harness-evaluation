@@ -1,0 +1,53 @@
+元宝：
+
+
+
+RUN_REPORT.md
+
+
+
+
+
+index.csv
+
+
+
+
+
+reject_ledger.csv
+
+
+
+
+
+STOP02-a01_deliverables.zip
+
+
+
+## 部署确认
+
+在 `/data/workspace` 下执行附件并指定全新路径，输出 `status = inputs_restored_only`、`task_executed = false`，workspace 为 **`/data/workspace/STOP02-a01`**（15 个 dropbox 输入 + `normalization_rules.yaml`，sha256 与部署清单逐项一致）。部署脚本留在工作区外，未依据预览文字重建任何输入。
+
+## 实际完成范围
+
+递归扫描 `dropbox/` 全部 15 个文件，按工作区相对路径升序处理，产出：
+
+- **`normalized/`**&#x200B; 9 个文件：`customer_C-001/C-002/C-003.json`、`note_CASE-500/501/502.json`、`order_O-100/O-101/O-102.json`，文件名走规则里的 `{record_type}_{record_id}.json`
+- **`index.csv`**&#x200B; 9 行，status 全部用域状态（active/inactive/pending/open/closed），无失败态混入
+- **`reject_ledger.csv`**&#x200B; 9 行：`paused` → invalid_status、C-004 空 email → missing_required_field、C-002 与 O-100 → duplicate_record_id、`.md`/`.png` → unsupported_extension、`case_bad.txt` 缺 Case → missing_required_field、`amount="many"` → invalid_amount、缺 currency → missing_required_field
+- **`batch_summary.json`**：`success_count=9`、`reject_count=9`、`by_type={customer:3, order:3, note:3}`
+
+顺序语义已落实：被拒记录不占 ID（customers_bad 的 C-003 被拒后，customers_extra 的 C-003 pending 正常接受）；order_bad.json 先判金额再判重复。
+
+## 验证结果
+
+`verify_batch.py` 为第二套独立实现（os.walk + 手工解析，不经 csv 模块），**61 项检查全部通过**：文件集合与内容逐字节一致、键集合精确匹配、amount 为 JSON 数字、订单 status=active、两本台账排序与表头正确、summary 计数自洽。幂等性三重确认：就地第二遍重跑、清空后重建均与首次产物 sha256 完全一致，产物文件数恒为 9+3，无重复输出；输入文件 sha256 全程未变。
+
+## 需你知悉的判断口径（详见报告）
+
+1. `order_101.JSON` 按扩展名不区分大小写接受，若评测要求大写判为 unsupported_extension，该行会改判——这是唯一可能改变计数的一处。
+2. 状态取值统一取规则表 5 个值，故 customer/note 的 `pending` 合法；若按类型收窄状态域，C-003 与 CASE-502 会转为 invalid_status。
+3. 缺 Key 的 TXT 归 `missing_required_field`，仅完全无 `Key: value` 行才算 malformed_file；currency 只校验存在性（错误类型表中无 invalid_currency）。
+4. 规范化记录额外携带 `source_path`（契约允许的唯一下限外字段）。
+
+未完成/未验证项：无——上述口径属于规范未明确处的取值选择，已在报告与代码中固定并可一键复现（`python3 normalize_batch.py --clean && python3 verify_batch.py`）。

@@ -1,0 +1,63 @@
+{
+  "incident_id": "DB-INC-2026-0817-04",
+  "system_identifier": "7419026813374501127",
+  "backup_id": "base-t2-0920",
+  "target_timeline": 2,
+  "target_type": "name",
+  "target_name": "before_batch_cleanup",
+  "target_lsn": "0/C120000",
+  "recovery_target_action": "pause",
+  "required_wal_segments": [
+    "00000002000000000000000A",
+    "00000002000000000000000B",
+    "00000002000000000000000C"
+  ],
+  "restore_command_template": "cp archive/%f %p",
+  "rationale": "The incident history is timeline 2, the production timeline, not the newer divergent timeline 3 created by the abandoned recovery drill. The only backup that matches the production system_identifier 7419026813374501127, belongs to timeline 2, has a verified manifest, verified files, and verified manifest WAL, and ends before the last known safe restore point is base-t2-0920 (end_lsn 0/A300000, ended_at 2026-08-17T09:27:00Z). Recovery stops at the named restore point before_batch_cleanup at LSN 0/C120000, which sits before the first destructive event TX-881 at 0/C130000. A named target is required because RP-880 and TX-881 share timestamp 2026-08-17T10:15:42Z, so a timestamp target would be ambiguous and could stop at the destructive commit. The required wal segments 00000002000000000000000A, 00000002000000000000000B, and 00000002000000000000000C form a continuous, readable timeline-2 chain from the backup end LSN 0/A300000 through the target LSN 0/C120000. The restore is isolated and offline: production is not restored or changed, nothing is promoted, and recovery_target_action pause keeps the candidate stopped for manual promotion review.",
+  "rejected_alternatives": [
+    {
+      "candidate": "base-t2-0840",
+      "reason": "Manifest checksum mismatch, failed file verification, and wal_manifest_status not_checked: the backup is corrupt and cannot serve as a restore base even though it claims timeline 2."
+    },
+    {
+      "candidate": "base-t3-1005",
+      "reason": "Backup belongs to divergent timeline 3, the abandoned recovery drill that forked from timeline 2 at 0/B000000; timeline 3 is not the production incident history, and its timeline-3 WAL segment 00000003000000000000000C is unreadable, so it cannot reach the incident target."
+    },
+    {
+      "candidate": "timestamp:2026-08-17T10:15:42Z",
+      "reason": "Ambiguous: RP-880 at 0/C120000 and the destructive TX-881 at 0/C130000 share the same timestamp 2026-08-17T10:15:42Z, so a timestamp target does not identify an exact transaction boundary and could stop after the damaging commit."
+    }
+  ],
+  "expected_invariants": [
+    {
+      "check_id": "customers_active_count",
+      "kind": "scalar",
+      "expected": 1250
+    },
+    {
+      "check_id": "open_invoice_amount_sum",
+      "kind": "scalar",
+      "expected": 482190
+    },
+    {
+      "check_id": "invoice_INV-9912_present",
+      "kind": "boolean",
+      "expected": true
+    },
+    {
+      "check_id": "cleanup_audit_marker_absent",
+      "kind": "boolean",
+      "expected": true
+    },
+    {
+      "check_id": "foreign_key_violations",
+      "kind": "scalar",
+      "expected": 0
+    },
+    {
+      "check_id": "database_accepts_writes",
+      "kind": "boolean",
+      "expected": false
+    }
+  ]
+}

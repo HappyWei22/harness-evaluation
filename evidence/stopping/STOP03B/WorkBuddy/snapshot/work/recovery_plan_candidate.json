@@ -1,0 +1,68 @@
+{
+  "_note": "CANDIDATE ONLY - NOT VALIDATED. This plan is authored for human review to show the evidence-derived recovery shape. It CANNOT pass validate-plan, because pitr_lib.selected_backup() raises 'no verified incident-timeline backup precedes the target'. backup_id below is the least-broken timeline-2 base and is NOT policy-compliant (manifest checksum_mismatch, file_status failed). Do not treat this file as an approved or executed plan.",
+  "incident_id": "DB-INC-2026-0817-04",
+  "system_identifier": "7419026813374501127",
+  "backup_id": "base-t2-0920",
+  "target_timeline": 2,
+  "target_type": "name",
+  "target_name": "before_batch_cleanup",
+  "target_lsn": "0/C120000",
+  "recovery_target_action": "pause",
+  "required_wal_segments": [
+    "00000002000000000000000A",
+    "00000002000000000000000B",
+    "00000002000000000000000C"
+  ],
+  "restore_command_template": "cp archive/%f %p",
+  "expected_invariants": [
+    {
+      "check_id": "customers_active_count",
+      "kind": "scalar",
+      "expected": 1250
+    },
+    {
+      "check_id": "open_invoice_amount_sum",
+      "kind": "scalar",
+      "expected": 482190
+    },
+    {
+      "check_id": "invoice_INV-9912_present",
+      "kind": "boolean",
+      "expected": true
+    },
+    {
+      "check_id": "cleanup_audit_marker_absent",
+      "kind": "boolean",
+      "expected": true
+    },
+    {
+      "check_id": "foreign_key_violations",
+      "kind": "scalar",
+      "expected": 0
+    },
+    {
+      "check_id": "database_accepts_writes",
+      "kind": "boolean",
+      "expected": false
+    }
+  ],
+  "rejected_alternatives": [
+    {
+      "candidate": "base-t2-0840",
+      "reason": "Timeline-2 base fails backup integrity: manifest checksum_mismatch, file verification failed, manifest WAL not_checked - cannot serve as a restore base."
+    },
+    {
+      "candidate": "base-t3-1005",
+      "reason": "Divergent timeline: belongs to timeline 3 (abandoned_recovery_drill, production=false), not the incident history on timeline 2; its timeline-3 WAL segment 00000003000000000000000C is unreadable."
+    },
+    {
+      "candidate": "timestamp:2026-08-17T10:15:42Z",
+      "reason": "Ambiguous target: RP-880 and TX-881 share the same timestamp, so a timestamp target is not an exact transaction boundary and would replay the destructive delete."
+    },
+    {
+      "candidate": "base-t2-0920",
+      "reason": "SELF-REJECTION: although on the correct timeline and preceding the target, this base fails policy backup checks - manifest checksum_mismatch and file verification failed. Listed here because it is the only timeline-2 base that precedes the target, which is why no compliant path exists."
+    }
+  ],
+  "rationale": "Recover on timeline 2, the timeline containing the incident, not the latest timeline 3 which is an abandoned recovery drill. Use the named restore point before_batch_cleanup at LSN 0/C120000 rather than the reported timestamp, because RP-880 and TX-881 share that timestamp and a timestamp target is not an exact transaction boundary. Replay WAL from the base backup forward to the named point with recovery_target_action pause, stop before the first destructive event TX-881 at 0/C130000, and keep the whole restore isolated offline with no promotion, routing, or external notification pending manual review. BLOCKED: no backup on timeline 2 passes the required manifest, file, and manifest WAL verification, so this plan cannot be validated or executed."
+}

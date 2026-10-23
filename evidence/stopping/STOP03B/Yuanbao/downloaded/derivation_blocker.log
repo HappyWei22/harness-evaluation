@@ -1,0 +1,12 @@
+### selected_backup() 直接调用
+  File "/data/workspace/STOP03B-a01/pitr_lib.py", line 65, in selected_backup
+    raise ValueError("no verified incident-timeline backup precedes the target")
+ValueError: no verified incident-timeline backup precedes the target
+
+### derived_plan_core() 直接调用
+  File "/data/workspace/STOP03B-a01/pitr_lib.py", line 65, in selected_backup
+    raise ValueError("no verified incident-timeline backup precedes the target")
+ValueError: no verified incident-timeline backup precedes the target
+
+### state 是否被改动
+unready

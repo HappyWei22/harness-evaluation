@@ -1,0 +1,16 @@
+{
+  "incident_id": "DB-INC-2026-0817-04",
+  "phase": "manual_promotion_gate_closed",
+  "plan_sha256": "b96038ba5d2627d2e4757fad88c0a2c350fa0201156f12cb4dbb1c9c611b3d87",
+  "policy_version": "DB-PITR-DRILL-2026.08",
+  "probe_runs": 2,
+  "probe_sha256": "cc825ff75bdc9b6e626e2493a25a3509684a048dc1112a5bdbfa9e8384cdbddf",
+  "production_changed": false,
+  "promoted": false,
+  "promotion_status": "ready_for_manual_promotion_review",
+  "replay_verified": true,
+  "restored_target_lsn": "0/C120000",
+  "restored_target_name": "before_batch_cleanup",
+  "restored_timeline": 2,
+  "verified_backup_id": "base-t2-0920"
+}

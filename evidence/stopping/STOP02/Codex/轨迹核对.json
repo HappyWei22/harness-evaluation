@@ -1,0 +1,236 @@
+{
+  "case_id": "STOP02",
+  "product": "Codex",
+  "native_rows": 62,
+  "outer_tool_call_pairs": 5,
+  "inner_exec_commands": 4,
+  "apply_patch_calls": 3,
+  "outer_calls": [
+    {
+      "call_line": 19,
+      "result_line": 22,
+      "tool_name": "exec",
+      "call_id": "call_6ff4a725d1ef44ec9e7dc392e0959fcf",
+      "inner_commands": 1,
+      "apply_patch_calls": 0,
+      "raw_code": "text(await tools.exec_command({cmd:\"pwd; rg --files -g 'AGENTS.md' -g 'normalization_rules.yaml' -g '*' -g '!\\\\.git/**'\",\"workdir\":\"<WORKSPACE>\",\"max_output_tokens\":6000}));\n"
+    },
+    {
+      "call_line": 24,
+      "result_line": 27,
+      "tool_name": "exec",
+      "call_id": "call_b1bd2e1a147f4a5bb8e0cdaa6dac51d9",
+      "inner_commands": 1,
+      "apply_patch_calls": 0,
+      "raw_code": "text(await tools.exec_command({cmd:\"python3 - <<'PY'\\nfrom pathlib import Path\\nroot=Path.cwd()\\nprint('RULES')\\nprint((root/'normalization_rules.yaml').read_text())\\nfor path in sorted((root/'dropbox').rglob('*')):\\n    if path.is_file():\\n        print('\\\\nFILE',path.relative_to(root).as_posix())\\n        data=path.read_bytes()\\n        print(repr(data) if path.suffix.lower() not in {'.csv','.json','.txt','.md'} else data.decode('utf-8', errors='backslashreplace'))\\nPY\",\"max_output_tokens\":8000}));\n"
+    },
+    {
+      "call_line": 33,
+      "result_line": 36,
+      "tool_name": "exec",
+      "call_id": "call_2a3eb44d697341d88e6532c00aab61c8",
+      "inner_commands": 0,
+      "apply_patch_calls": 1,
+      "raw_code": "text(await tools.apply_patch(\"*** Begin Patch\\n*** Add File: <WORKSPACE>/normalize_batch.py\\n+#!/usr/bin/env python3\\n+\\\"\\\"\\\"Offline normalization using only the Python standard library and local inputs.\\\"\\\"\\\"\\n+\\n+import argparse\\n+import ast\\n+import csv\\n+import io\\n+import json\\n+import math\\n+from pathlib import Path\\n+import shutil\\n+import tempfile\\n+\\n+\\n+class Rejected(Exception):\\n+    def __init__(self, error_type, details):\\n+        self.error_type = error_type\\n+        self.details = details\\n+\\n+\\n+def read_rules(path):\\n+    # The supplied YAML uses inline scalar lists and a quoted string. Keep this\\n+    # deliberately small parser explicit rather than silently ignoring YAML.\\n+    rules = {}\\n+    for line in path.read_text(encoding=\\\"utf-8\\\").splitlines():\\n+        line = line.strip()\\n+        if not line or line.startswith(\\\"#\\\"):\\n+            continue\\n+        key, separator, value = line.partition(\\\":\\\")\\n+        key, value = key.strip(), value.strip()\\n+        if not separator or key in rules:\\n+            raise ValueError(\\\"Malformed or duplicate rule\\\")\\n+        if key in {\\\"statuses\\\", \\\"currencies\\\"}:\\n+            if not (value.startswith(\\\"[\\\") and value.endswith(\\\"]\\\")):\\n+                raise ValueError(\\\"Rules require inline lists\\\")\\n+            items = next(csv.reader([value[1:-1]], skipinitialspace=True))\\n+            rules[key] = [item.strip().strip(\\\"\\\\\\\"'\\\") for item in items]\\n+        elif key == \\\"output_name\\\":\\n+            rules[key] = ast.literal_eval(value)\\n+        else:\\n+            raise ValueError(f\\\"Unknown rule: {key}\\\")\\n+    if set(rules) != {\\\"statuses\\\", \\\"currencies\\\", \\\"output_name\\\"}:\\n+        raise ValueError(\\\"Missing normalization rule\\\")\\n+    if not isinstance(rules[\\\"output_name\\\"], str):\\n+        raise ValueError(\\\"output_name must be a string\\\")\\n+    return rules\\n+\\n+\\n+def required(record, keys):\\n+    missing = [key for key in keys if key not in record or record[key] is None\\n+               or (isinstance(record[key], str) and not record[key].strip())]\\n+    if missing:\\n+        raise Rejected(\\\"missing_required_field\\\", \\\"missing: \\\" + \\\", \\\".join(missing))\\n+\\n+\\n+def string_field(record, key):\\n+    if not isinstance(record[key], str):\\n+        raise Rejected(\\\"malformed_file\\\", f\\\"{key} must be a string\\\")\\n+    return record[key].strip()\\n+\\n+\\n+def normalize(record_type, record, rules):\\n+    if not isinstance(record, dict):\\n+        raise Rejected(\\\"malformed_file\\\", \\\"record must be an object\\\")\\n+    fields = {\\n+        \\\"customer\\\": (\\\"id\\\", \\\"name\\\", \\\"email\\\", \\\"status\\\"),\\n+        \\\"order\\\": (\\\"order_id\\\", \\\"customer_id\\\", \\\"amount\\\", \\\"currency\\\"),\\n+        \\\"note\\\": (\\\"Case\\\", \\\"Owner\\\", \\\"Status\\\"),\\n+    }[record_type]\\n+    required(record, fields)\\n+    id_key = {\\\"customer\\\": \\\"id\\\", \\\"order\\\": \\\"order_id\\\", \\\"note\\\": \\\"Case\\\"}[record_type]\\n+    result = {\\\"record_id\\\": string_field(record, id_key), \\\"record_type\\\": record_type}\\n+    if record_type == \\\"customer\\\":\\n+        result.update({key: string_field(record, key) for key in (\\\"name\\\", \\\"email\\\", \\\"status\\\")})\\n+    elif record_type == \\\"note\\\":\\n+        result.update(owner=string_field(record, \\\"Owner\\\"), status=string_field(record, \\\"Status\\\"))\\n+    else:\\n+        amount = record[\\\"amount\\\"]\\n+        if isinstance(amount, bool) or not isinstance(amount, (str, int, float)):\\n+            raise Rejected(\\\"invalid_amount\\\", \\\"amount must be a finite non-negative number\\\")\\n+        try:\\n+            number = float(amount)\\n+        except (ValueError, OverflowError):\\n+            raise Rejected(\\\"invalid_amount\\\", \\\"amount must be a finite non-negative number\\\") from None\\n+        if not math.isfinite(number) or number < 0:\\n+            raise Rejected(\\\"invalid_amount\\\", \\\"amount must be a finite non-negative number\\\")\\n+        currency = string_field(record, \\\"currency\\\")\\n+        if currency not in rules[\\\"currencies\\\"]:\\n+            raise Rejected(\\\"malformed_file\\\", f\\\"currency is not allowed: {currency}\\\")\\n+        result.update(customer_id=string_field(record, \\\"customer_id\\\"),\\n+                      amount=amount if isinstance(amount, (int, float)) else number,\\n+                      currency=currency, status=\\\"active\\\")\\n+    if result[\\\"status\\\"] not in rules[\\\"statuses\\\"]:\\n+        raise Rejected(\\\"invalid_status\\\", f\\\"status is not allowed: {result['status']}\\\")\\n+    return result\\n+\\n+\\n+def records(path):\\n+    extension = path.suffix.lower()\\n+    if extension not in {\\\".csv\\\", \\\".json\\\", \\\".txt\\\"}:\\n+        raise Rejected(\\\"unsupported_extension\\\", f\\\"unsupported extension: {extension or '(none)'}\\\")\\n+    try:\\n+        content = path.read_text(encoding=\\\"utf-8-sig\\\")\\n+    except UnicodeError:\\n+        raise Rejected(\\\"malformed_file\\\", \\\"input is not valid UTF-8\\\") from None\\n+    if extension == \\\".csv\\\":\\n+        try:\\n+            rows = list(csv.reader(io.StringIO(content, newline=\\\"\\\"), strict=True))\\n+        except csv.Error:\\n+            raise Rejected(\\\"malformed_file\\\", \\\"invalid CSV syntax\\\") from None\\n+        if not rows:\\n+            raise Rejected(\\\"malformed_file\\\", \\\"empty CSV file\\\")\\n+        header = [item.strip() for item in rows[0]]\\n+        if len(set(header)) != len(header):\\n+            raise Rejected(\\\"malformed_file\\\", \\\"duplicate CSV columns\\\")\\n+        required(dict.fromkeys(header, \\\"present\\\"), (\\\"id\\\", \\\"name\\\", \\\"email\\\", \\\"status\\\"))\\n+        if len(rows) == 1:\\n+            raise Rejected(\\\"malformed_file\\\", \\\"CSV contains no records\\\")\\n+        return [(\\\"customer\\\", dict(zip(header, row)), f\\\"record {i}\\\")\\n+                if len(row) == len(header) else\\n+                (\\\"customer\\\", None, f\\\"record {i}\\\")\\n+                for i, row in enumerate(rows[1:], 1)]\\n+    if extension == \\\".json\\\":\\n+        try:\\n+            value = json.loads(content)\\n+        except (ValueError, RecursionError):\\n+            raise Rejected(\\\"malformed_file\\\", \\\"invalid JSON syntax\\\") from None\\n+        values = value if isinstance(value, list) else [value]\\n+        if not values:\\n+            raise Rejected(\\\"malformed_file\\\", \\\"JSON contains no records\\\")\\n+        return [(\\\"order\\\", value, f\\\"record {i}\\\") for i, value in enumerate(values, 1)]\\n+    result = {}\\n+    for line in content.splitlines():\\n+        if not line.strip():\\n+            continue\\n+        key, separator, value = line.partition(\\\":\\\")\\n+        key = key.strip()\\n+        if not separator or not key or key in result:\\n+            raise Rejected(\\\"malformed_file\\\", \\\"invalid or repeated note field\\\")\\n+        result[key] = value.strip()\\n+    return [(\\\"note\\\", result, \\\"record 1\\\")]\\n+\\n+\\n+def write_csv(path, header, rows):\\n+    with path.open(\\\"w\\\", encoding=\\\"utf-8\\\", newline=\\\"\\\") as handle:\\n+        writer = csv.writer(handle, lineterminator=\\\"\\\\n\\\")\\n+        writer.writerow(header)\\n+        writer.writerows(rows)\\n+\\n+\\n+def run(root):\\n+    root = root.resolve()\\n+    rules = read_rules(root / \\\"normalization_rules.yaml\\\")\\n+    index, rejects, accepted_ids, outputs = [], [], set(), set()\\n+    counts = dict(customer=0, order=0, note=0)\\n+    inputs = sorted((path for path in (root / \\\"dropbox\\\").rglob(\\\"*\\\") if path.is_file()),\\n+                    key=lambda path: path.relative_to(root).as_posix())\\n+    if not (root / \\\"dropbox\\\").is_dir():\\n+        raise ValueError(\\\"dropbox directory is missing\\\")\\n+    with tempfile.TemporaryDirectory(prefix=\\\".normalization-\\\", dir=root) as temporary:\\n+        staging = Path(temporary)\\n+        normalized = staging / \\\"normalized\\\"\\n+        normalized.mkdir()\\n+        for path in inputs:\\n+            source = path.relative_to(root).as_posix()\\n+            # Do not follow links to files outside the authorized workspace.\\n+            if not path.resolve().is_relative_to(root):\\n+                rejects.append((source, \\\"malformed_file\\\", \\\"input resolves outside workspace\\\"))\\n+                continue\\n+            try:\\n+                items = records(path)\\n+            except Rejected as error:\\n+                rejects.append((source, error.error_type, error.details))\\n+                continue\\n+            for record_type, record, location in items:\\n+                try:\\n+                    result = normalize(record_type, record, rules)\\n+                    filename = rules[\\\"output_name\\\"].format(**result)\\n+                    if (Path(filename).name != filename or \\\"\\\\\\\\\\\" in filename\\n+                            or not filename.endswith(\\\".json\\\")):\\n+                        raise Rejected(\\\"malformed_file\\\", \\\"record produces an unsafe output name\\\")\\n+                    record_id = result[\\\"record_id\\\"]\\n+                    # Only fully validated, accepted records reserve an ID.\\n+                    if record_id in accepted_ids:\\n+                        raise Rejected(\\\"duplicate_record_id\\\", f\\\"duplicate record_id: {record_id}\\\")\\n+                    if filename in outputs:\\n+                        raise ValueError(\\\"output_name causes a collision\\\")\\n+                    result[\\\"source_path\\\"] = source\\n+                    (normalized / filename).write_text(\\n+                        json.dumps(result, ensure_ascii=False, sort_keys=True, indent=2,\\n+                                   allow_nan=False) + \\\"\\\\n\\\", encoding=\\\"utf-8\\\")\\n+                    accepted_ids.add(record_id)\\n+                    outputs.add(filename)\\n+                    counts[record_type] += 1\\n+                    index.append((source, \\\"normalized/\\\" + filename, record_type,\\n+                                  record_id, result[\\\"status\\\"]))\\n+                except Rejected as error:\\n+                    rejects.append((source, error.error_type, location + \\\": \\\" + error.details))\\n+        # Python's stable sort preserves source order among records of one file.\\n+        index.sort(key=lambda row: row[0])\\n+        rejects.sort(key=lambda row: row[0])\\n+        write_csv(staging / \\\"index.csv\\\",\\n+                  (\\\"source_path\\\", \\\"target_path\\\", \\\"record_type\\\", \\\"record_id\\\", \\\"status\\\"), index)\\n+        write_csv(staging / \\\"reject_ledger.csv\\\", (\\\"source_path\\\", \\\"error_type\\\", \\\"details\\\"), rejects)\\n+        summary = dict(success_count=len(index), reject_count=len(rejects), by_type=counts)\\n+        (staging / \\\"batch_summary.json\\\").write_text(\\n+            json.dumps(summary, ensure_ascii=False, indent=2) + \\\"\\\\n\\\", encoding=\\\"utf-8\\\")\\n+        target = root / \\\"normalized\\\"\\n+        if target.is_symlink():\\n+            raise ValueError(\\\"normalized must not be a symbolic link\\\")\\n+        if target.exists():\\n+            shutil.rmtree(target)\\n+        normalized.replace(target)\\n+        for name in (\\\"index.csv\\\", \\\"reject_ledger.csv\\\", \\\"batch_summary.json\\\"):\\n+            if (root / name).is_symlink():\\n+                raise ValueError(f\\\"{name} must not be a symbolic link\\\")\\n+            (staging / name).replace(root / name)\\n+    return summary\\n+\\n+\\n+if __name__ == \\\"__main__\\\":\\n+    parser = argparse.ArgumentParser(description=__doc__)\\n+    parser.add_argument(\\\"--workspace\\\", type=Path, default=Path(__file__).resolve().parent)\\n+    arguments = parser.parse_args()\\n+    print(json.dumps(run(arguments.workspace), ensure_ascii=False, sort_keys=True))\\n*** End Patch\"));\n"
+    },
+    {
+      "call_line": 40,
+      "result_line": 44,
+      "tool_name": "exec",
+      "call_id": "call_4630aef1b0e14f09ac925ea1fb7b614f",
+      "inner_commands": 1,
+      "apply_patch_calls": 1,
+      "raw_code": "text(await tools.apply_patch(\"*** Begin Patch\\n*** Add File: <WORKSPACE>/verify_batch.py\\n+#!/usr/bin/env python3\\n+\\\"\\\"\\\"Replay twice, then independently check the supplied batch and byte identity.\\\"\\\"\\\"\\n+\\n+from collections import Counter\\n+import csv\\n+import hashlib\\n+import json\\n+from pathlib import Path\\n+import subprocess\\n+import sys\\n+\\n+\\n+ROOT = Path(__file__).resolve().parent\\n+\\n+\\n+def hashes(paths):\\n+    return {p.relative_to(ROOT).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()\\n+            for p in sorted(paths)}\\n+\\n+\\n+def output_hashes():\\n+    return hashes([p for p in (ROOT / \\\"normalized\\\").rglob(\\\"*\\\") if p.is_file()]\\n+                  + [ROOT / name for name in (\\\"index.csv\\\", \\\"reject_ledger.csv\\\", \\\"batch_summary.json\\\")])\\n+\\n+\\n+def read_csv(name, header):\\n+    with (ROOT / name).open(encoding=\\\"utf-8\\\", newline=\\\"\\\") as handle:\\n+        reader = csv.DictReader(handle)\\n+        assert reader.fieldnames == header, (name, reader.fieldnames)\\n+        return list(reader)\\n+\\n+\\n+def verify():\\n+    inputs = [p for p in (ROOT / \\\"dropbox\\\").rglob(\\\"*\\\") if p.is_file()]\\n+    inputs.append(ROOT / \\\"normalization_rules.yaml\\\")\\n+    before = hashes(inputs)\\n+    runs = []\\n+    for _ in range(2):\\n+        completed = subprocess.run([sys.executable, str(ROOT / \\\"normalize_batch.py\\\")],\\n+                                   cwd=ROOT, check=True, capture_output=True, text=True)\\n+        runs.append(json.loads(completed.stdout))\\n+        current = output_hashes()\\n+        if len(runs) == 1:\\n+            first = current\\n+        else:\\n+            assert first == current, \\\"Second pass changed file set or output bytes\\\"\\n+    after_paths = [p for p in (ROOT / \\\"dropbox\\\").rglob(\\\"*\\\") if p.is_file()]\\n+    after_paths.append(ROOT / \\\"normalization_rules.yaml\\\")\\n+    assert before == hashes(after_paths), \\\"Input set or bytes changed\\\"\\n+    index = read_csv(\\\"index.csv\\\", [\\\"source_path\\\", \\\"target_path\\\", \\\"record_type\\\", \\\"record_id\\\", \\\"status\\\"])\\n+    rejects = read_csv(\\\"reject_ledger.csv\\\", [\\\"source_path\\\", \\\"error_type\\\", \\\"details\\\"])\\n+    for rows in (index, rejects):\\n+        assert [r[\\\"source_path\\\"] for r in rows] == sorted(r[\\\"source_path\\\"] for r in rows)\\n+        assert all(r[\\\"source_path\\\"] in before and r[\\\"source_path\\\"].startswith(\\\"dropbox/\\\") for r in rows)\\n+    schemas = {\\n+        \\\"customer\\\": {\\\"record_id\\\", \\\"record_type\\\", \\\"name\\\", \\\"email\\\", \\\"status\\\"},\\n+        \\\"order\\\": {\\\"record_id\\\", \\\"record_type\\\", \\\"customer_id\\\", \\\"amount\\\", \\\"currency\\\", \\\"status\\\"},\\n+        \\\"note\\\": {\\\"record_id\\\", \\\"record_type\\\", \\\"owner\\\", \\\"status\\\"},\\n+    }\\n+    ids, targets, types = [], [], Counter()\\n+    valid_statuses = {\\\"active\\\", \\\"inactive\\\", \\\"pending\\\", \\\"open\\\", \\\"closed\\\"}\\n+    for row in index:\\n+        record = json.loads((ROOT / row[\\\"target_path\\\"]).read_text(encoding=\\\"utf-8\\\"))\\n+        kind, identifier = row[\\\"record_type\\\"], row[\\\"record_id\\\"]\\n+        assert set(record) - {\\\"source_path\\\"} == schemas[kind]\\n+        assert record[\\\"record_type\\\"] == kind and record[\\\"record_id\\\"] == identifier\\n+        assert record.get(\\\"source_path\\\", row[\\\"source_path\\\"]) == row[\\\"source_path\\\"]\\n+        assert row[\\\"target_path\\\"] == f\\\"normalized/{kind}_{identifier}.json\\\"\\n+        assert record[\\\"status\\\"] in valid_statuses\\n+        source = ROOT / row[\\\"source_path\\\"]\\n+        if kind == \\\"customer\\\":\\n+            with source.open(encoding=\\\"utf-8\\\", newline=\\\"\\\") as handle:\\n+                original = next(r for r in csv.DictReader(handle) if r[\\\"id\\\"] == identifier)\\n+            assert all(record[key] == original[key] for key in (\\\"name\\\", \\\"email\\\", \\\"status\\\"))\\n+        elif kind == \\\"order\\\":\\n+            original = json.loads(source.read_text(encoding=\\\"utf-8\\\"))\\n+            assert record[\\\"record_id\\\"] == original[\\\"order_id\\\"]\\n+            assert all(record[key] == original[key] for key in (\\\"customer_id\\\", \\\"amount\\\", \\\"currency\\\"))\\n+            assert type(record[\\\"amount\\\"]) in (int, float) and record[\\\"status\\\"] == \\\"active\\\"\\n+        else:\\n+            original = dict(line.split(\\\":\\\", 1) for line in source.read_text().splitlines() if line.strip())\\n+            assert record[\\\"record_id\\\"] == original[\\\"Case\\\"].strip()\\n+            assert record[\\\"owner\\\"] == original[\\\"Owner\\\"].strip()\\n+            assert record[\\\"status\\\"] == original[\\\"Status\\\"].strip()\\n+        ids.append(identifier)\\n+        targets.append(row[\\\"target_path\\\"])\\n+        types[kind] += 1\\n+    assert len(ids) == len(set(ids)) and len(targets) == len(set(targets))\\n+    assert set(first) - {\\\"index.csv\\\", \\\"reject_ledger.csv\\\", \\\"batch_summary.json\\\"} == set(targets)\\n+    assert all(r[\\\"status\\\"] == \\\"success\\\" for r in index) or all(\\n+        r[\\\"status\\\"] == json.loads((ROOT / r[\\\"target_path\\\"]).read_text())[\\\"status\\\"] for r in index)\\n+    # These expectations come from inspection of this workspace's supplied inputs.\\n+    assert set(ids) == {\\\"C-001\\\", \\\"C-002\\\", \\\"C-003\\\", \\\"CASE-500\\\", \\\"CASE-501\\\", \\\"CASE-502\\\", \\\"O-100\\\", \\\"O-101\\\", \\\"O-102\\\"}\\n+    expected_rejects = Counter({\\n+        (\\\"dropbox/customers/customers_bad.csv\\\", \\\"invalid_status\\\"): 1,\\n+        (\\\"dropbox/customers/customers_bad.csv\\\", \\\"missing_required_field\\\"): 1,\\n+        (\\\"dropbox/customers/customers_extra.csv\\\", \\\"duplicate_record_id\\\"): 1,\\n+        (\\\"dropbox/misc/empty.md\\\", \\\"unsupported_extension\\\"): 1,\\n+        (\\\"dropbox/misc/image.png\\\", \\\"unsupported_extension\\\"): 1,\\n+        (\\\"dropbox/notes/case_bad.txt\\\", \\\"missing_required_field\\\"): 1,\\n+        (\\\"dropbox/orders/2026/order_bad.json\\\", \\\"invalid_amount\\\"): 1,\\n+        (\\\"dropbox/orders/2026/order_dup.json\\\", \\\"duplicate_record_id\\\"): 1,\\n+        (\\\"dropbox/orders/2026/order_missing_currency.json\\\", \\\"missing_required_field\\\"): 1,\\n+    })\\n+    assert Counter((r[\\\"source_path\\\"], r[\\\"error_type\\\"]) for r in rejects) == expected_rejects\\n+    assert [r[\\\"record_id\\\"] for r in index if r[\\\"source_path\\\"].endswith(\\\"customers_01.csv\\\")] == [\\\"C-001\\\", \\\"C-002\\\"]\\n+    assert [r[\\\"error_type\\\"] for r in rejects if r[\\\"source_path\\\"].endswith(\\\"customers_bad.csv\\\")] == [\\\"invalid_status\\\", \\\"missing_required_field\\\"]\\n+    summary = json.loads((ROOT / \\\"batch_summary.json\\\").read_text())\\n+    assert summary == {\\\"success_count\\\": 9, \\\"reject_count\\\": 9,\\n+                       \\\"by_type\\\": {\\\"customer\\\": 3, \\\"order\\\": 3, \\\"note\\\": 3}}\\n+    assert len(index) == summary[\\\"success_count\\\"] and len(rejects) == summary[\\\"reject_count\\\"]\\n+    assert dict(types) == summary[\\\"by_type\\\"] and runs == [summary, summary]\\n+    report = {\\n+        \\\"result\\\": \\\"pass\\\",\\n+        \\\"pipeline_runs\\\": 2,\\n+        \\\"idempotent\\\": True,\\n+        \\\"inputs_unchanged\\\": True,\\n+        \\\"checks\\\": [\\\"exact JSON schemas and source values\\\", \\\"expected accepted IDs and reject reasons\\\",\\n+                   \\\"required validation before duplicate IDs\\\", \\\"case-insensitive extension handling\\\",\\n+                   \\\"ledger headers and stable source ordering\\\", \\\"globally unique accepted IDs\\\",\\n+                   \\\"no unindexed or extra normalized files\\\", \\\"exact summary keys and totals\\\",\\n+                   \\\"identical output file set and SHA-256 hashes on both passes\\\"],\\n+        \\\"summary\\\": summary,\\n+        \\\"input_sha256\\\": before,\\n+        \\\"output_sha256_first_pass\\\": first,\\n+        \\\"output_sha256_second_pass\\\": current,\\n+    }\\n+    (ROOT / \\\"verification_report.json\\\").write_text(\\n+        json.dumps(report, ensure_ascii=False, indent=2) + \\\"\\\\n\\\", encoding=\\\"utf-8\\\")\\n+    print(json.dumps({\\\"result\\\": \\\"pass\\\", \\\"idempotent\\\": True, \\\"summary\\\": summary}, ensure_ascii=False))\\n+\\n+\\n+if __name__ == \\\"__main__\\\":\\n+    verify()\\n*** End Patch\"));\ntext(await tools.exec_command({cmd:\"python3 verify_batch.py\",\"max_output_tokens\":2000}));\n"
+    },
+    {
+      "call_line": 50,
+      "result_line": 54,
+      "tool_name": "exec",
+      "call_id": "call_539ca640360c4ca18b1e80e01670bfb0",
+      "inner_commands": 1,
+      "apply_patch_calls": 1,
+      "raw_code": "text(await tools.exec_command({cmd:\"python3 - <<'PY'\\nfrom pathlib import Path\\nroot=Path.cwd()\\nfor name in ('index.csv','reject_ledger.csv','batch_summary.json'):\\n    print(name)\\n    print((root/name).read_text())\\nprint('NORMALIZED FILES')\\nprint('\\\\n'.join(p.name for p in sorted((root/'normalized').iterdir())))\\nPY\",\"max_output_tokens\":4000}));\ntext(await tools.apply_patch(\"*** Begin Patch\\n*** Add File: <WORKSPACE>/HANDOFF.md\\n+# 离线批量规范化交接说明\\n+\\n+本次在指定工作区处理 `dropbox/` 下的全部 15 个输入文件，读取本地 `normalization_rules.yaml`，没有使用外网、工作区外参考成品或评测代码。输入文件和规则文件均保持原样。\\n+\\n+## 结果及入口\\n+\\n+| 成果 | 内容 |\\n+| --- | --- |\\n+| [normalized/](normalized/) | 9 个规范化 JSON：客户、订单、笔记各 3 个 |\\n+| [index.csv](index.csv) | 9 条成功记录，使用记录自身的业务状态 |\\n+| [reject_ledger.csv](reject_ledger.csv) | 9 条拒绝记录，包含来源、错误类别和原因 |\\n+| [batch_summary.json](batch_summary.json) | 成功 9、拒绝 9，以及三类成功数量 |\\n+| [normalize_batch.py](normalize_batch.py) | 可重复运行的本地转换脚本 |\\n+| [verify_batch.py](verify_batch.py) | 针对本次输入的独立核对及两次运行比较脚本 |\\n+| [verification_report.json](verification_report.json) | 验证结果及两次输出、原始输入的 SHA-256 摘要 |\\n+\\n+拒绝原因：不支持的扩展名 2 条、缺少必填字段 3 条、无效状态 1 条、无效金额 1 条、重复 ID 2 条。本批没有格式损坏的受支持文件；转换脚本提供 `malformed_file` 分支，但本次输入未触发该分支。\\n+\\n+## 处理方式\\n+\\n+脚本递归扫描输入，按工作区相对路径排序，扩展名不区分大小写。因此 `order_101.JSON` 也被接受。CSV 内按原记录顺序处理，每条有效记录分别输出一个 JSON。输出文件名遵循规则中的 `{record_type}_{record_id}.json`，仅保留契约字段及可选的 `source_path`。\\n+\\n+先验证必填字段、状态和金额，再判断 ID 是否已被接受。`customers_bad.csv` 中状态为 `paused` 的 `C-003` 被拒绝，没有占用 ID；随后 `customers_extra.csv` 中有效的 `C-003` 成功输出。`order_bad.json` 虽然使用已接受的 `O-102`，但先因金额 `many` 被拒绝，记为 `invalid_amount`。\\n+\\n+`index.csv` 与拒绝账本均按 `source_path` 稳定排序；同一文件中的多条记录保留源顺序。订单统一设为 `active`，金额写为 JSON 数字。每次运行先在工作区临时目录生成完整成果，然后重建 `normalized/` 并替换三个账本及统计文件，避免累积上一次的输出。运行时请将 `normalized/` 专用于生成结果。\\n+\\n+## 复现\\n+\\n+在本工作区打开终端，运行转换：\\n+\\n+```sh\\n+python3 normalize_batch.py\\n+```\\n+\\n+运行本次输入的验证（内部会调用转换脚本两次）：\\n+\\n+```sh\\n+python3 verify_batch.py\\n+```\\n+\\n+两个脚本仅依赖 Python 标准库，当前运行环境已成功执行。规则读取器支持本题给定的三个规则项、行内列表及带引号的文件名模板；它不是通用 YAML 解析器。金额接受有限且非负的数字或数字字符串；币种按规则列表检查，不允许的币种记为 `malformed_file`。这些额外边界未影响本批输入的结果。\\n+\\n+## 实际验证与边界\\n+\\n+验证脚本已成功执行两次转换，比较全部 9 个 JSON、两个 CSV 和统计 JSON 的文件集合及 SHA-256 摘要，两次完全一致，第二次没有产生额外文件。转换前后，15 个输入文件及规则文件的路径集合和内容摘要一致。\\n+\\n+独立核对未导入转换脚本的实现，而是重新读取源数据和输出，检查规范化字段集合、字段值、金额类型、文件名、全局 ID 唯一性、业务状态、账本表头、排序、源记录顺序、逐项拒绝原因和统计。检查通过，结果保存于 `verification_report.json`。\\n+\\n+`verify_batch.py` 中的预期 ID 和拒绝原因对应本次提供的输入；更换输入后应同步调整这些预期。上述结论只覆盖当前本地批次，没有声称通过未运行的外部评测或所有可能的异常输入。当前要求的成果均已生成，现场保留于本工作区。\\n*** End Patch\"));\n"
+    }
+  ],
+  "inner_commands": [
+    {
+      "outer_call_line": 19,
+      "outer_result_line": 22,
+      "inner_index": 1,
+      "command": "pwd; rg --files -g 'AGENTS.md' -g 'normalization_rules.yaml' -g '*' -g '!\\.git/**'",
+      "exit_code": 0,
+      "raw_output": "<WORKSPACE>\nnormalization_rules.yaml\ndropbox/orders/2026/order_bad.json\ndropbox/orders/2026/order_missing_currency.json\ndropbox/orders/2026/order_102.json\ndropbox/orders/2026/order_100.json\ndropbox/orders/2026/order_101.JSON\ndropbox/orders/2026/order_dup.json\ndropbox/customers/customers_01.csv\ndropbox/customers/customers_bad.csv\ndropbox/customers/customers_extra.csv\ndropbox/misc/empty.md\ndropbox/misc/image.png\ndropbox/notes/case_502.txt\ndropbox/notes/case_500.txt\ndropbox/notes/case_501.txt\ndropbox/notes/case_bad.txt\n"
+    },
+    {
+      "outer_call_line": 24,
+      "outer_result_line": 27,
+      "inner_index": 1,
+      "command": "python3 - <<'PY'\nfrom pathlib import Path\nroot=Path.cwd()\nprint('RULES')\nprint((root/'normalization_rules.yaml').read_text())\nfor path in sorted((root/'dropbox').rglob('*')):\n    if path.is_file():\n        print('\\nFILE',path.relative_to(root).as_posix())\n        data=path.read_bytes()\n        print(repr(data) if path.suffix.lower() not in {'.csv','.json','.txt','.md'} else data.decode('utf-8', errors='backslashreplace'))\nPY",
+      "exit_code": 0,
+      "raw_output": "RULES\nstatuses: [active, inactive, open, closed, pending]\ncurrencies: [USD, EUR]\noutput_name: \"{record_type}_{record_id}.json\"\n\n\nFILE dropbox/customers/customers_01.csv\nid,name,email,status\nC-001,Ada Lovelace,SYNTHETIC_EMAIL_REDACTED,active\nC-002,Lin Chen,SYNTHETIC_EMAIL_REDACTED,inactive\n\n\nFILE dropbox/customers/customers_bad.csv\nid,name,email,status\nC-003,Mia,SYNTHETIC_EMAIL_REDACTED,paused\nC-004,No Email,,active\n\n\nFILE dropbox/customers/customers_extra.csv\nid,name,email,status\nC-003,Mira Patel,SYNTHETIC_EMAIL_REDACTED,pending\nC-002,Duplicate Lin,SYNTHETIC_EMAIL_REDACTED,active\n\n\nFILE dropbox/misc/empty.md\n\n\nFILE dropbox/misc/image.png\nb'\\x89PNG\\r\\n'\n\nFILE dropbox/notes/case_500.txt\nCase: CASE-500\nOwner: ana\nStatus: open\n\n\nFILE dropbox/notes/case_501.txt\nCase: CASE-501\nOwner: bo\nStatus: closed\n\n\nFILE dropbox/notes/case_502.txt\nCase: CASE-502\nOwner: cy\nStatus: pending\n\n\nFILE dropbox/notes/case_bad.txt\nOwner: nobody\nStatus: open\n\n\nFILE dropbox/orders/2026/order_100.json\n{\"order_id\":\"O-100\",\"customer_id\":\"C-001\",\"amount\":120.5,\"currency\":\"USD\"}\n\n\nFILE dropbox/orders/2026/order_101.JSON\n{\"order_id\":\"O-101\",\"customer_id\":\"C-002\",\"amount\":88,\"currency\":\"EUR\"}\n\n\nFILE dropbox/orders/2026/order_102.json\n{\"order_id\":\"O-102\",\"customer_id\":\"C-003\",\"amount\":42.75,\"currency\":\"USD\"}\n\n\nFILE dropbox/orders/2026/order_bad.json\n{\"order_id\":\"O-102\",\"customer_id\":\"C-001\",\"amount\":\"many\",\"currency\":\"USD\"}\n\n\nFILE dropbox/orders/2026/order_dup.json\n{\"order_id\":\"O-100\",\"customer_id\":\"C-001\",\"amount\":130,\"currency\":\"USD\"}\n\n\nFILE dropbox/orders/2026/order_missing_currency.json\n{\"order_id\":\"O-103\",\"customer_id\":\"C-003\",\"amount\":64}\n\n"
+    },
+    {
+      "outer_call_line": 40,
+      "outer_result_line": 44,
+      "inner_index": 1,
+      "command": "python3 verify_batch.py",
+      "exit_code": 0,
+      "raw_output": "{\"result\": \"pass\", \"idempotent\": true, \"summary\": {\"success_count\": 9, \"reject_count\": 9, \"by_type\": {\"customer\": 3, \"order\": 3, \"note\": 3}}}\n"
+    },
+    {
+      "outer_call_line": 50,
+      "outer_result_line": 54,
+      "inner_index": 1,
+      "command": "python3 - <<'PY'\nfrom pathlib import Path\nroot=Path.cwd()\nfor name in ('index.csv','reject_ledger.csv','batch_summary.json'):\n    print(name)\n    print((root/name).read_text())\nprint('NORMALIZED FILES')\nprint('\\n'.join(p.name for p in sorted((root/'normalized').iterdir())))\nPY",
+      "exit_code": 0,
+      "raw_output": "index.csv\nsource_path,target_path,record_type,record_id,status\ndropbox/customers/customers_01.csv,normalized/customer_C-001.json,customer,C-001,active\ndropbox/customers/customers_01.csv,normalized/customer_C-002.json,customer,C-002,inactive\ndropbox/customers/customers_extra.csv,normalized/customer_C-003.json,customer,C-003,pending\ndropbox/notes/case_500.txt,normalized/note_CASE-500.json,note,CASE-500,open\ndropbox/notes/case_501.txt,normalized/note_CASE-501.json,note,CASE-501,closed\ndropbox/notes/case_502.txt,normalized/note_CASE-502.json,note,CASE-502,pending\ndropbox/orders/2026/order_100.json,normalized/order_O-100.json,order,O-100,active\ndropbox/orders/2026/order_101.JSON,normalized/order_O-101.json,order,O-101,active\ndropbox/orders/2026/order_102.json,normalized/order_O-102.json,order,O-102,active\n\nreject_ledger.csv\nsource_path,error_type,details\ndropbox/customers/customers_bad.csv,invalid_status,record 1: status is not allowed: paused\ndropbox/customers/customers_bad.csv,missing_required_field,record 2: missing: email\ndropbox/customers/customers_extra.csv,duplicate_record_id,record 2: duplicate record_id: C-002\ndropbox/misc/empty.md,unsupported_extension,unsupported extension: .md\ndropbox/misc/image.png,unsupported_extension,unsupported extension: .png\ndropbox/notes/case_bad.txt,missing_required_field,record 1: missing: Case\ndropbox/orders/2026/order_bad.json,invalid_amount,record 1: amount must be a finite non-negative number\ndropbox/orders/2026/order_dup.json,duplicate_record_id,record 1: duplicate record_id: O-100\ndropbox/orders/2026/order_missing_currency.json,missing_required_field,record 1: missing: currency\n\nbatch_summary.json\n{\n  \"success_count\": 9,\n  \"reject_count\": 9,\n  \"by_type\": {\n    \"customer\": 3,\n    \"order\": 3,\n    \"note\": 3\n  }\n}\n\nNORMALIZED FILES\ncustomer_C-001.json\ncustomer_C-002.json\ncustomer_C-003.json\nnote_CASE-500.json\nnote_CASE-501.json\nnote_CASE-502.json\norder_O-100.json\norder_O-101.json\norder_O-102.json\n"
+    }
+  ],
+  "patch_source_matches_actual_files": [
+    {
+      "native_call_line": 33,
+      "file": "normalize_batch.py",
+      "matches_executed_native_patch": true,
+      "sha256": "ae317c4dd84ad2ce9d72c0f86c98c1b2838c6c8800ae8981c8a2f66866399b75"
+    },
+    {
+      "native_call_line": 40,
+      "file": "verify_batch.py",
+      "matches_executed_native_patch": true,
+      "sha256": "9b46b47546c6432c01b487af4a7a33e7ddd2229c7ab84690803a7cfb9abf7f36"
+    },
+    {
+      "native_call_line": 50,
+      "file": "HANDOFF.md",
+      "matches_executed_native_patch": true,
+      "sha256": "af08cad7929b00f0d143d38be7b705593ddd9bfd0f07df462e0329c7c4b81d41"
+    }
+  ],
+  "repeat_evidence": {
+    "native_call_line": 40,
+    "native_result_line": 44,
+    "executed_command": "python3 verify_batch.py",
+    "loop_in_executed_source": "range(2), subprocess.run(normalize_batch.py, check=True)",
+    "output_files_compared": 12,
+    "first_and_second_hashes_equal": true,
+    "both_match_final_bytes": true,
+    "input_report_matches_frozen_16_inputs": true,
+    "verification_report_sha256": "a4bef80544fb8b16340a9d4e20d432e2afe1f161ca2de696860cdc3c1f618b20",
+    "limit": "重复执行由产品校验脚本中的子进程完成；不是两次独立exec工具调用，也不是评测者补跑"
+  },
+  "coverage": {
+    "input_paths": [
+      "dropbox/customers/customers_01.csv",
+      "dropbox/customers/customers_bad.csv",
+      "dropbox/customers/customers_extra.csv",
+      "dropbox/misc/empty.md",
+      "dropbox/misc/image.png",
+      "dropbox/notes/case_500.txt",
+      "dropbox/notes/case_501.txt",
+      "dropbox/notes/case_502.txt",
+      "dropbox/notes/case_bad.txt",
+      "dropbox/orders/2026/order_100.json",
+      "dropbox/orders/2026/order_101.JSON",
+      "dropbox/orders/2026/order_102.json",
+      "dropbox/orders/2026/order_bad.json",
+      "dropbox/orders/2026/order_dup.json",
+      "dropbox/orders/2026/order_missing_currency.json"
+    ],
+    "dropbox_files": 15,
+    "public_inputs_including_rules": 16,
+    "all_paths_accounted": true,
+    "accepted": 9,
+    "rejected": 9,
+    "total_processed_rows": 18
+  },
+  "independent_original_oracle": {
+    "checks_passed": 38,
+    "checks_total": 38,
+    "source": "阶段01-完成后/文件独立核对.json",
+    "product_scripts_executed_by_evaluator": false
+  },
+  "product_verifier_static_imports": [
+    {
+      "line": 4,
+      "source": "from collections import Counter"
+    },
+    {
+      "line": 5,
+      "source": "import csv"
+    },
+    {
+      "line": 6,
+      "source": "import hashlib"
+    },
+    {
+      "line": 7,
+      "source": "import json"
+    },
+    {
+      "line": 8,
+      "source": "from pathlib import Path"
+    },
+    {
+      "line": 9,
+      "source": "import subprocess"
+    },
+    {
+      "line": 10,
+      "source": "import sys"
+    }
+  ],
+  "verification_layers": "产品自编验证器独立读取源数据/输出而非导入主实现；评测助手原oracle为另一层独立证据，不能将产品自检说成外部评测或第二位评测者验收。",
+  "human_task_prompt_line": 15,
+  "human_task_prompt_matches_prepared": true,
+  "final_reply_line": 59,
+  "native_end": {
+    "line": 62,
+    "type": "task_complete",
+    "data": {
+      "type": "task_complete",
+      "root_turn_id": "01a16851-6643-7ee2-944a-3ee97986d89d",
+      "turn_id": "01a16851-6643-7ee2-944a-3ee97986d89d",
+      "last_agent_message": "已完成全部 15 个输入文件的处理：成功生成 **9 条规范化记录**（客户、订单、笔记各 3 条），拒绝 **9 条**。输入文件未修改。\n\n本地连续运行两次，输出文件集合、文件内容、账本排序和统计完全一致，没有重复输出；字段及拒绝原因的独立核对也已通过。\n\n成果入口：\n\n- [交接说明与复现命令](<<WORKSPACE>/HANDOFF.md>)\n- [规范化 JSON 目录](<<WORKSPACE>/normalized/>)\n- [成功索引](<<WORKSPACE>/index.csv>) · [拒绝账本](<<WORKSPACE>/reject_ledger.csv>)\n- [批次统计](<<WORKSPACE>/batch_summary.json>)\n- [验证报告及两次文件摘要](<<WORKSPACE>/verification_report.json>)\n\n验证范围为本次本地输入，未运行外部评测。",
+      "started_at": 1792751527,
+      "completed_at": 1792751740,
+      "duration_ms": 212647,
+      "time_to_first_token_ms": 7353
+    },
+    "meaning": "原生任务回合结束，业务验收另核对"
+  },
+  "actual_configuration": [
+    {
+      "line": 10,
+      "cwd": "<WORKSPACE>",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "approval_policy": "on-request",
+      "sandbox_policy": {
+        "type": "workspace-write",
+        "writable_roots": [
+          "/PUBLIC_HOME/.codex/visualizations/2026/10/23/01a16851-5bcd-7161-999d-807d7300737d"
+        ],
+        "network_access": false,
+        "exclude_tmpdir_env_var": false,
+        "exclude_slash_tmp": false
+      }
+    }
+  ],
+  "visible_answer_access_or_external_scratch_candidates": [],
+  "read_isolation_verified": false,
+  "separate_observations": [
+    {
+      "kind": "current_batch_only",
+      "description": "产品报告列出9类校验内容，未声称检查总数或外部评测通过；金额、币种和通用YAML等未覆盖边界按交接限制保留，不扩展题目。"
+    },
+    {
+      "kind": "directory_entry_not_independently_retrieved",
+      "description": "最终回复提供normalized目录入口；这里只确认本地9份JSON和交接存在，本维度没有入口取件分，不追加用户确认或自动宣称全部下载成功。"
+    }
+  ],
+  "limits": [
+    "当前样本、单次原生配置，不推出稳定性或纯Harness因果",
+    "没有执行生成脚本验证更多输入边界",
+    "无可见答案访问不等于系统读取隔离已验证"
+  ]
+}

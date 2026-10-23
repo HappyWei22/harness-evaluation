@@ -1,0 +1,304 @@
+{
+  "case_id": "STOP02",
+  "workspace": "/PUBLIC_PROJECT/维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/豆包办公-a01/阶段01-完成后/工作目录",
+  "score": null,
+  "is_product_run": null,
+  "model_completion_claim_verified": null,
+  "native_end_state_verified": null,
+  "trace_required": "原生调用顺序、原始返回及结束事件须另行核对，不能用终态文件证明执行过两遍",
+  "manual_review_required": true,
+  "symlinks": [],
+  "input_integrity": {
+    "pass": true,
+    "detail": []
+  },
+  "upstream_original_oracle": {
+    "task": "051-smallfile-batch-reject-ledger",
+    "workspace": "/PUBLIC_PROJECT/维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/豆包办公-a01/阶段01-完成后/工作目录",
+    "checks": [
+      {
+        "id": "content_customer_C-001.json",
+        "label": "customer_C-001.json contains the normalized source record",
+        "pass": true,
+        "weight": 0.044444444444444446,
+        "detail": null
+      },
+      {
+        "id": "content_customer_C-002.json",
+        "label": "customer_C-002.json contains the normalized source record",
+        "pass": true,
+        "weight": 0.044444444444444446,
+        "detail": null
+      },
+      {
+        "id": "content_note_CASE-500.json",
+        "label": "note_CASE-500.json contains the normalized source record",
+        "pass": true,
+        "weight": 0.044444444444444446,
+        "detail": null
+      },
+      {
+        "id": "content_note_CASE-501.json",
+        "label": "note_CASE-501.json contains the normalized source record",
+        "pass": true,
+        "weight": 0.044444444444444446,
+        "detail": null
+      },
+      {
+        "id": "content_order_O-100.json",
+        "label": "order_O-100.json contains the normalized source record",
+        "pass": true,
+        "weight": 0.044444444444444446,
+        "detail": null
+      },
+      {
+        "id": "content_order_O-101.json",
+        "label": "order_O-101.json contains the normalized source record",
+        "pass": true,
+        "weight": 0.044444444444444446,
+        "detail": null
+      },
+      {
+        "id": "content_customer_C-003.json",
+        "label": "customer_C-003.json contains the normalized source record",
+        "pass": true,
+        "weight": 0.044444444444444446,
+        "detail": null
+      },
+      {
+        "id": "content_note_CASE-502.json",
+        "label": "note_CASE-502.json contains the normalized source record",
+        "pass": true,
+        "weight": 0.044444444444444446,
+        "detail": null
+      },
+      {
+        "id": "content_order_O-102.json",
+        "label": "order_O-102.json contains the normalized source record",
+        "pass": true,
+        "weight": 0.044444444444444446,
+        "detail": null
+      },
+      {
+        "id": "file_set",
+        "label": "normalized file set is closed: no missing or extra records",
+        "pass": true,
+        "weight": 0.05,
+        "detail": null
+      },
+      {
+        "id": "index_header",
+        "label": "index.csv uses the published header",
+        "pass": true,
+        "weight": 0.03,
+        "detail": null
+      },
+      {
+        "id": "index_C-001",
+        "label": "index contains C-001",
+        "pass": true,
+        "weight": 0.022222222222222223,
+        "detail": null
+      },
+      {
+        "id": "index_C-002",
+        "label": "index contains C-002",
+        "pass": true,
+        "weight": 0.022222222222222223,
+        "detail": null
+      },
+      {
+        "id": "index_C-003",
+        "label": "index contains C-003",
+        "pass": true,
+        "weight": 0.022222222222222223,
+        "detail": null
+      },
+      {
+        "id": "index_CASE-500",
+        "label": "index contains CASE-500",
+        "pass": true,
+        "weight": 0.022222222222222223,
+        "detail": null
+      },
+      {
+        "id": "index_CASE-501",
+        "label": "index contains CASE-501",
+        "pass": true,
+        "weight": 0.022222222222222223,
+        "detail": null
+      },
+      {
+        "id": "index_CASE-502",
+        "label": "index contains CASE-502",
+        "pass": true,
+        "weight": 0.022222222222222223,
+        "detail": null
+      },
+      {
+        "id": "index_O-100",
+        "label": "index contains O-100",
+        "pass": true,
+        "weight": 0.022222222222222223,
+        "detail": null
+      },
+      {
+        "id": "index_O-101",
+        "label": "index contains O-101",
+        "pass": true,
+        "weight": 0.022222222222222223,
+        "detail": null
+      },
+      {
+        "id": "index_O-102",
+        "label": "index contains O-102",
+        "pass": true,
+        "weight": 0.022222222222222223,
+        "detail": null
+      },
+      {
+        "id": "index_closed_and_sorted",
+        "label": "index has exactly the successful rows in source-path order",
+        "pass": true,
+        "weight": 0.05,
+        "detail": null
+      },
+      {
+        "id": "index_rows",
+        "label": "all exact index rows are present without extras",
+        "pass": true,
+        "weight": 0.0,
+        "detail": null
+      },
+      {
+        "id": "reject_header",
+        "label": "reject_ledger.csv uses the published header",
+        "pass": true,
+        "weight": 0.03,
+        "detail": null
+      },
+      {
+        "id": "reject_01",
+        "label": "reject ledger contains dropbox/customers/customers_bad.csv as invalid_status",
+        "pass": true,
+        "weight": 0.016666666666666666,
+        "detail": null
+      },
+      {
+        "id": "reject_02",
+        "label": "reject ledger contains dropbox/customers/customers_bad.csv as missing_required_field",
+        "pass": true,
+        "weight": 0.016666666666666666,
+        "detail": null
+      },
+      {
+        "id": "reject_03",
+        "label": "reject ledger contains dropbox/customers/customers_extra.csv as duplicate_record_id",
+        "pass": true,
+        "weight": 0.016666666666666666,
+        "detail": null
+      },
+      {
+        "id": "reject_04",
+        "label": "reject ledger contains dropbox/misc/empty.md as unsupported_extension",
+        "pass": true,
+        "weight": 0.016666666666666666,
+        "detail": null
+      },
+      {
+        "id": "reject_05",
+        "label": "reject ledger contains dropbox/misc/image.png as unsupported_extension",
+        "pass": true,
+        "weight": 0.016666666666666666,
+        "detail": null
+      },
+      {
+        "id": "reject_06",
+        "label": "reject ledger contains dropbox/notes/case_bad.txt as missing_required_field",
+        "pass": true,
+        "weight": 0.016666666666666666,
+        "detail": null
+      },
+      {
+        "id": "reject_07",
+        "label": "reject ledger contains dropbox/orders/2026/order_bad.json as invalid_amount",
+        "pass": true,
+        "weight": 0.016666666666666666,
+        "detail": null
+      },
+      {
+        "id": "reject_08",
+        "label": "reject ledger contains dropbox/orders/2026/order_dup.json as duplicate_record_id",
+        "pass": true,
+        "weight": 0.016666666666666666,
+        "detail": null
+      },
+      {
+        "id": "reject_09",
+        "label": "reject ledger contains dropbox/orders/2026/order_missing_currency.json as missing_required_field",
+        "pass": true,
+        "weight": 0.016666666666666666,
+        "detail": null
+      },
+      {
+        "id": "rejects_closed_and_sorted",
+        "label": "reject ledger is an exact multiset in source-path order",
+        "pass": true,
+        "weight": 0.04,
+        "detail": null
+      },
+      {
+        "id": "reject_rows",
+        "label": "all expected rejects are present without extras",
+        "pass": true,
+        "weight": 0.0,
+        "detail": null
+      },
+      {
+        "id": "summary_success_count",
+        "label": "batch summary success_count matches the output ledgers",
+        "pass": true,
+        "weight": 0.0125,
+        "detail": null
+      },
+      {
+        "id": "summary_reject_count",
+        "label": "batch summary reject_count matches the output ledgers",
+        "pass": true,
+        "weight": 0.0125,
+        "detail": null
+      },
+      {
+        "id": "summary_by_type",
+        "label": "batch summary by_type matches the output ledgers",
+        "pass": true,
+        "weight": 0.0125,
+        "detail": null
+      },
+      {
+        "id": "summary_closed_schema",
+        "label": "batch summary closed_schema matches the output ledgers",
+        "pass": true,
+        "weight": 0.0125,
+        "detail": null
+      }
+    ],
+    "outcome_score": 1.0
+  },
+  "actual_counts": {
+    "index_rows": 9,
+    "reject_rows": 9,
+    "normalized_files": 9,
+    "declared_summary": {
+      "success_count": 9,
+      "reject_count": 9,
+      "by_type": {
+        "customer": 3,
+        "order": 3,
+        "note": 3
+      }
+    }
+  },
+  "repeat_execution_proven": null,
+  "source_workspace": "<WORKSPACE>"
+}

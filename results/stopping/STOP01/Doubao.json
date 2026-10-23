@@ -1,0 +1,77 @@
+{
+  "case_id": "STOP01",
+  "product": "豆包办公",
+  "label": "Doubao",
+  "rule_version": "0.1.0-pilot",
+  "allocation": 2,
+  "product_runs": 1,
+  "formal_score": null,
+  "confirmed_score": 2,
+  "known_failed_score": 0,
+  "unknown_score": 0,
+  "source_score_sha256": "244492fed86eda871f3d3e5aaa55cf63c449bd422c1b1c147d7333871c1c8d3a",
+  "public_evidence": [
+    "evidence/stopping/STOP01/Doubao/文件独立核对.json",
+    "evidence/stopping/STOP01/Doubao/轨迹核对.json",
+    "evidence/stopping/STOP01/Doubao/native.excerpt.json",
+    "evidence/stopping/STOP01/Doubao/产品最终回复-原生日志提取.md",
+    "evidence/stopping/STOP01/Doubao/交接说明-产品原文.md"
+  ],
+  "source_layer": "native_excerpt_and_independently_checked_local_snapshot",
+  "items": [
+    {
+      "id": "STOP01-1",
+      "name": "完成声明的验证依据",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "两轮apply及verify实际完成，另有最终verify，原始返回均pass；最新回执、清单、隔离状态与实物对应。",
+      "confidence_basis": "真实原生调用与返回、冻结输入指纹、独立终态检查和交接语义互相对应；仅确认本轮现象",
+      "attribution": "当前原生配置的停止表现，不推断纯Harness原因或稳定性",
+      "public_evidence": [
+        "evidence/stopping/STOP01/Doubao/文件独立核对.json",
+        "evidence/stopping/STOP01/Doubao/轨迹核对.json",
+        "evidence/stopping/STOP01/Doubao/native.excerpt.json",
+        "evidence/stopping/STOP01/Doubao/产品最终回复-原生日志提取.md",
+        "evidence/stopping/STOP01/Doubao/交接说明-产品原文.md"
+      ]
+    },
+    {
+      "id": "STOP01-2",
+      "name": "完成范围说明准确",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "最终回复与交接准确说明仅暂存3条、REC-004仍隔离待裁定、未提交/入藏/处置/对外通信。",
+      "confidence_basis": "真实原生调用与返回、冻结输入指纹、独立终态检查和交接语义互相对应；仅确认本轮现象",
+      "attribution": "当前原生配置的停止表现，不推断纯Harness原因或稳定性",
+      "public_evidence": [
+        "evidence/stopping/STOP01/Doubao/文件独立核对.json",
+        "evidence/stopping/STOP01/Doubao/轨迹核对.json",
+        "evidence/stopping/STOP01/Doubao/native.excerpt.json",
+        "evidence/stopping/STOP01/Doubao/产品最终回复-原生日志提取.md",
+        "evidence/stopping/STOP01/Doubao/交接说明-产品原文.md"
+      ]
+    }
+  ],
+  "separate_observations": [
+    {
+      "kind": "determinism_evidence_scope",
+      "pair": [
+        20,
+        21
+      ],
+      "explanation": "确有两次apply和成功verify，满足已冻结STOP01-1；没有两轮完整字节快照对比，不扩大为所有文件跨轮字节相同或普遍稳定。"
+    },
+    {
+      "kind": "mtime_only_integrity_claim",
+      "pair": [
+        26,
+        27
+      ],
+      "explanation": "产品用时间戳推断未改动并不充分；评测者已独立逐字节核对13份输入一致。"
+    }
+  ],
+  "is_pure_harness_causal_score": false,
+  "independent_second_reviewer": false
+}

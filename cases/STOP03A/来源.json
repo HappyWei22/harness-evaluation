@@ -1,0 +1,103 @@
+{
+  "repository": "Qihoo360/harness-bench",
+  "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+  "files": [
+    {
+      "repository_path": "tasks/007-database-point-in-time-recovery-drill/environment/verify_environment.py",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/007-database-point-in-time-recovery-drill/environment/verify_environment.py",
+      "git_blob_sha1": "062877a679ebd5455fc4419eae91e851446c53e8",
+      "sha256": "80ae787f07ee44b51bf6c897f88fdaa73d0c622ef9d4ee169da8b853363d5b31",
+      "bytes": 1084,
+      "local_archive": "评测者材料/公开原题/environment/verify_environment.py"
+    },
+    {
+      "repository_path": "tasks/007-database-point-in-time-recovery-drill/instruction.md",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/007-database-point-in-time-recovery-drill/instruction.md",
+      "git_blob_sha1": "f25701a14138e20ca0dde259ea839b49c4aee330",
+      "sha256": "debb4a5b19aebaa662b16645615f81adb8e8619c43134c02d53a3b53df05c25f",
+      "bytes": 2928,
+      "local_archive": "评测者材料/公开原题/instruction.md"
+    },
+    {
+      "repository_path": "tasks/007-database-point-in-time-recovery-drill/task.yaml",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/007-database-point-in-time-recovery-drill/task.yaml",
+      "git_blob_sha1": "bd5b6d9e271af05e1b4dae4f045779ae85749a0e",
+      "sha256": "cb6c34a02480acae0cf77ad6c2431417dbfbf652a218383c695eaeceaae4573e",
+      "bytes": 1875,
+      "local_archive": "评测者材料/公开原题/task.yaml"
+    },
+    {
+      "repository_path": "tasks/007-database-point-in-time-recovery-drill/workspace/evidence/backups.json",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/007-database-point-in-time-recovery-drill/workspace/evidence/backups.json",
+      "git_blob_sha1": "7bfcac0d8b1d8fd9a212b9246b76c745df549395",
+      "sha256": "2325bffdacf5b816d122267f2e39f45e1739950c0c931305ef9a9ce322207ab0",
+      "bytes": 1185,
+      "local_archive": "评测者材料/公开原题/workspace/evidence/backups.json"
+    },
+    {
+      "repository_path": "tasks/007-database-point-in-time-recovery-drill/workspace/evidence/expected_invariants.json",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/007-database-point-in-time-recovery-drill/workspace/evidence/expected_invariants.json",
+      "git_blob_sha1": "b51ddc13d82841e7fb717bf9e8d6db8ee8b8172f",
+      "sha256": "2a937587bafb4e7d07ab0d10e1fb4b558d3463daeb49ed6f9b904a2b12949778",
+      "bytes": 603,
+      "local_archive": "评测者材料/公开原题/workspace/evidence/expected_invariants.json"
+    },
+    {
+      "repository_path": "tasks/007-database-point-in-time-recovery-drill/workspace/evidence/incident.json",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/007-database-point-in-time-recovery-drill/workspace/evidence/incident.json",
+      "git_blob_sha1": "1c8d53fafd9ada681f4ce6bfdb6d9aa5bdc912e0",
+      "sha256": "305057c4468d7b6f5efd72a251f69107dc9921c01cff59efbd2d508f1d984625",
+      "bytes": 563,
+      "local_archive": "评测者材料/公开原题/workspace/evidence/incident.json"
+    },
+    {
+      "repository_path": "tasks/007-database-point-in-time-recovery-drill/workspace/evidence/timeline_history.json",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/007-database-point-in-time-recovery-drill/workspace/evidence/timeline_history.json",
+      "git_blob_sha1": "17366fb198630ad8dc059b15e885fa2f5205f3e8",
+      "sha256": "33cb194fafa951d78ba7d4cedbb652213ac4ae249edba58bf113a31095d4dd31",
+      "bytes": 531,
+      "local_archive": "评测者材料/公开原题/workspace/evidence/timeline_history.json"
+    },
+    {
+      "repository_path": "tasks/007-database-point-in-time-recovery-drill/workspace/evidence/wal_archive.json",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/007-database-point-in-time-recovery-drill/workspace/evidence/wal_archive.json",
+      "git_blob_sha1": "4d1b7234149bfc3dde68a6e4667b0322794a615f",
+      "sha256": "0f47e30c5cb0baa744e09854bb15fa0c8a956ccfe6a9920f0123e645f2f3207d",
+      "bytes": 1601,
+      "local_archive": "评测者材料/公开原题/workspace/evidence/wal_archive.json"
+    },
+    {
+      "repository_path": "tasks/007-database-point-in-time-recovery-drill/workspace/pitr_lib.py",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/007-database-point-in-time-recovery-drill/workspace/pitr_lib.py",
+      "git_blob_sha1": "925f003d6cce0686370ccb8211fd75e3e034fa58",
+      "sha256": "b0ef3e0733e863013ba45392025dc8c80ddd91e766cafcf9d42a8c072c40d544",
+      "bytes": 8727,
+      "local_archive": "评测者材料/公开原题/workspace/pitr_lib.py"
+    },
+    {
+      "repository_path": "tasks/007-database-point-in-time-recovery-drill/workspace/pitrctl.py",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/007-database-point-in-time-recovery-drill/workspace/pitrctl.py",
+      "git_blob_sha1": "0c021b0623b2675ed3d0b653b2f32f395b950ce3",
+      "sha256": "b90318cb3454da6d212d78b57e5ab66b86959de8f983230cae6d6d49a0b56f74",
+      "bytes": 8438,
+      "local_archive": "评测者材料/公开原题/workspace/pitrctl.py"
+    },
+    {
+      "repository_path": "tasks/007-database-point-in-time-recovery-drill/workspace/policy/recovery_policy.json",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/007-database-point-in-time-recovery-drill/workspace/policy/recovery_policy.json",
+      "git_blob_sha1": "61bbbb30bb7c15557f5b4732f795b2301e5893bb",
+      "sha256": "c4102cb657bc756b6b7ba0c6c9f36b706ca3056387455127f1ec82b873570977",
+      "bytes": 681,
+      "local_archive": "评测者材料/公开原题/workspace/policy/recovery_policy.json"
+    },
+    {
+      "repository_path": "tasks/007-database-point-in-time-recovery-drill/workspace/state/recovery_state.json",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/007-database-point-in-time-recovery-drill/workspace/state/recovery_state.json",
+      "git_blob_sha1": "aecceac80be55099ab53a71461309d1d264327e3",
+      "sha256": "3b2163964adfff394deea9181ca6404b5bb5a67336c34a91f5b93aa376ffd791",
+      "bytes": 416,
+      "local_archive": "评测者材料/公开原题/workspace/state/recovery_state.json"
+    }
+  ],
+  "publication_scope": "提供固定来源和公开输入指纹；本批不重复发布第三方任务媒体附件、参考成品或完整原判定器。"
+}

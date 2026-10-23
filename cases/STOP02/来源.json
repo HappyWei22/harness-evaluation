@@ -1,0 +1,159 @@
+{
+  "repository": "Qihoo360/harness-bench",
+  "commit": "b8d89634c6f445fcc68ceb6744a59bef6cdf4863",
+  "files": [
+    {
+      "repository_path": "tasks/051-smallfile-batch-reject-ledger/environment/verify_environment.py",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/051-smallfile-batch-reject-ledger/environment/verify_environment.py",
+      "git_blob_sha1": "a00b98dc567ed3377365eca313929a30cfab2530",
+      "sha256": "c83b20af0b234862589a6ccffc8c95ece3f4f83da6154f05f3263c9af254ecd7",
+      "bytes": 1386,
+      "local_archive": "评测者材料/公开原题/environment/verify_environment.py"
+    },
+    {
+      "repository_path": "tasks/051-smallfile-batch-reject-ledger/instruction.md",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/051-smallfile-batch-reject-ledger/instruction.md",
+      "git_blob_sha1": "7cfac8b0f4282fb2c748debbbe2984e9f5994488",
+      "sha256": "37ab48910d68e5a7c471f4f22e08949c2e7bf9661a108fd35d1ab67307d11e74",
+      "bytes": 3035,
+      "local_archive": "评测者材料/公开原题/instruction.md"
+    },
+    {
+      "repository_path": "tasks/051-smallfile-batch-reject-ledger/task.yaml",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/051-smallfile-batch-reject-ledger/task.yaml",
+      "git_blob_sha1": "043127eb4537cedf0a0a3acd2fee647f9dcdb04f",
+      "sha256": "57304180212da0fad06494f888aac067c044436a934efae5bbd5b8e374b4bfe7",
+      "bytes": 1178,
+      "local_archive": "评测者材料/公开原题/task.yaml"
+    },
+    {
+      "repository_path": "tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/customers/customers_01.csv",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/customers/customers_01.csv",
+      "git_blob_sha1": "de228b5e4050f0d983951c7461485d68f6b82d94",
+      "sha256": "44d4a2a4781827c5403b118016ccfaedcbce3b6703467781ae06c34793b06388",
+      "bytes": 103,
+      "local_archive": "评测者材料/公开原题/workspace/dropbox/customers/customers_01.csv"
+    },
+    {
+      "repository_path": "tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/customers/customers_bad.csv",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/customers/customers_bad.csv",
+      "git_blob_sha1": "f3fd783793d3bcc7cbde49d4295f9b5dc74d47ac",
+      "sha256": "d60a0d2cea3738e21ddbd3ab5c71f2549c509f93f2fe9eeb3498678d079bf629",
+      "bytes": 77,
+      "local_archive": "评测者材料/公开原题/workspace/dropbox/customers/customers_bad.csv"
+    },
+    {
+      "repository_path": "tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/customers/customers_extra.csv",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/customers/customers_extra.csv",
+      "git_blob_sha1": "0e6c3b2b3d9c8a2af311d8d7edd02f139ba9d919",
+      "sha256": "43776e710c925f8925f4f83a0ba6c0f311b218ed8193acb7da15842b265733b3",
+      "bytes": 107,
+      "local_archive": "评测者材料/公开原题/workspace/dropbox/customers/customers_extra.csv"
+    },
+    {
+      "repository_path": "tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/misc/image.png",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/misc/image.png",
+      "git_blob_sha1": "3e501c10d037331cb717c7d6b644438fa7fa80c0",
+      "sha256": "823ceb99fcef5252333ede1b2202341c3b287b6d47571963e6b0ddf393a24f82",
+      "bytes": 6,
+      "local_archive": "评测者材料/公开原题/workspace/dropbox/misc/image.png"
+    },
+    {
+      "repository_path": "tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/notes/case_500.txt",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/notes/case_500.txt",
+      "git_blob_sha1": "8308f1c630ff0540afe99b836988573161c3a698",
+      "sha256": "2153ba4799a8c5e47bca9294cf8990e0e85d0c9f541596378f647b4680779812",
+      "bytes": 39,
+      "local_archive": "评测者材料/公开原题/workspace/dropbox/notes/case_500.txt"
+    },
+    {
+      "repository_path": "tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/notes/case_501.txt",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/notes/case_501.txt",
+      "git_blob_sha1": "1df8f7807550d504516c84eab7337a365b0cbc90",
+      "sha256": "abe39dc3f5a3ee0ee1fa310d5dffe8ebeaf068e4548f3a6e06680a490577a6ac",
+      "bytes": 40,
+      "local_archive": "评测者材料/公开原题/workspace/dropbox/notes/case_501.txt"
+    },
+    {
+      "repository_path": "tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/notes/case_502.txt",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/notes/case_502.txt",
+      "git_blob_sha1": "787dba4d05b48248750fc7064e0e85aaa915431c",
+      "sha256": "c50e147a220e0a464bc97b56ab20b7fae52853abcb5c4f6fb192996b8d2391fa",
+      "bytes": 41,
+      "local_archive": "评测者材料/公开原题/workspace/dropbox/notes/case_502.txt"
+    },
+    {
+      "repository_path": "tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/notes/case_bad.txt",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/notes/case_bad.txt",
+      "git_blob_sha1": "3c874b8187f26ff5dd915df7cf72f18af4c0c65c",
+      "sha256": "d74fec6d931bebff30cb6c59d12e867b9374e9d0790652c0b8d1ecee4fb6a1a7",
+      "bytes": 27,
+      "local_archive": "评测者材料/公开原题/workspace/dropbox/notes/case_bad.txt"
+    },
+    {
+      "repository_path": "tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/orders/2026/order_100.json",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/orders/2026/order_100.json",
+      "git_blob_sha1": "df577405231315d45d31d4988a7e5c67124ecb50",
+      "sha256": "6eefbeb14faf7650f9cbfe356dbe766f004bba3902f245ccad21e47d39f54877",
+      "bytes": 75,
+      "local_archive": "评测者材料/公开原题/workspace/dropbox/orders/2026/order_100.json"
+    },
+    {
+      "repository_path": "tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/orders/2026/order_101.JSON",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/orders/2026/order_101.JSON",
+      "git_blob_sha1": "d59269d244e5420dbd84cd4eb7904c4f299bd19f",
+      "sha256": "f6fe2322b7279840b19157999efee8c68654f594b5d9e934eafabb4809b68a71",
+      "bytes": 72,
+      "local_archive": "评测者材料/公开原题/workspace/dropbox/orders/2026/order_101.JSON"
+    },
+    {
+      "repository_path": "tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/orders/2026/order_102.json",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/orders/2026/order_102.json",
+      "git_blob_sha1": "070634bf5d037c0a9583bbf5f37f4fb0ce88a902",
+      "sha256": "10a1dc8f882cf577a2aea68e8f7afcbf60793fe5a6e90c365f9a4e3f772ebfe6",
+      "bytes": 75,
+      "local_archive": "评测者材料/公开原题/workspace/dropbox/orders/2026/order_102.json"
+    },
+    {
+      "repository_path": "tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/orders/2026/order_bad.json",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/orders/2026/order_bad.json",
+      "git_blob_sha1": "1a1f8f89924d7356410c454900a684605d4105d8",
+      "sha256": "adb62ee1ff26a833fea1526f6b2805fa1c58028ed21e69b74e94994411d0a19a",
+      "bytes": 76,
+      "local_archive": "评测者材料/公开原题/workspace/dropbox/orders/2026/order_bad.json"
+    },
+    {
+      "repository_path": "tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/orders/2026/order_dup.json",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/orders/2026/order_dup.json",
+      "git_blob_sha1": "92ff4865ae2f77e3f3fbe0cc4a740f9bdf120e99",
+      "sha256": "a976a0b9cc4cb752b0d44597ec48ab6f93d874d5706ecd3ccaeed61520671a1e",
+      "bytes": 73,
+      "local_archive": "评测者材料/公开原题/workspace/dropbox/orders/2026/order_dup.json"
+    },
+    {
+      "repository_path": "tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/orders/2026/order_missing_currency.json",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/orders/2026/order_missing_currency.json",
+      "git_blob_sha1": "ba903dd574acbce560d4bc831a19a36edcb88245",
+      "sha256": "95708df25e4515b1b054f685861294ea771cca635ed370f5c1bb37927533d60b",
+      "bytes": 55,
+      "local_archive": "评测者材料/公开原题/workspace/dropbox/orders/2026/order_missing_currency.json"
+    },
+    {
+      "repository_path": "tasks/051-smallfile-batch-reject-ledger/workspace/normalization_rules.yaml",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/051-smallfile-batch-reject-ledger/workspace/normalization_rules.yaml",
+      "git_blob_sha1": "b253d802d5a206d1b1675e8d0d163a706627f46f",
+      "sha256": "62ff13524368bab2e99ab499d9e7ffd11c7733e2e1939c11200bd4027229a081",
+      "bytes": 121,
+      "local_archive": "评测者材料/公开原题/workspace/normalization_rules.yaml"
+    },
+    {
+      "repository_path": "tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/misc/empty.md",
+      "url": "https://raw.githubusercontent.com/Qihoo360/harness-bench/b8d89634c6f445fcc68ceb6744a59bef6cdf4863/tasks/051-smallfile-batch-reject-ledger/workspace/dropbox/misc/empty.md",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "local_archive": "评测者材料/公开原题/workspace/dropbox/misc/empty.md"
+    }
+  ],
+  "publication_scope": "提供固定来源和公开输入指纹；本批不重复发布第三方任务媒体附件、参考成品或完整原判定器。"
+}

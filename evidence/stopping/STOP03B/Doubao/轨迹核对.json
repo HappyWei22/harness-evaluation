@@ -1,0 +1,9 @@
+{
+  "case_id": "STOP03B",
+  "product": "豆包办公",
+  "separate_observations": [
+    "交接备份表将base-t2-0840 end_lsn写成0/830000，冻结证据实际为0/8300000，属于转写错误，未改变本次受阻判断。",
+    "后续条件、命名目标和排除时间线应同时满足；交接的“任一条件满足”及“replay按需”说法不够准确，当前没有声称已完成恢复或重放。"
+  ],
+  "task_program_executed_by_evaluator": false
+}

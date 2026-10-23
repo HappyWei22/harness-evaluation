@@ -1,0 +1,63 @@
+{
+  "incident_id": "DB-INC-2026-0817-04",
+  "system_identifier": "7419026813374501127",
+  "backup_id": "base-t2-0920",
+  "target_timeline": 2,
+  "target_type": "name",
+  "target_name": "before_batch_cleanup",
+  "target_lsn": "0/C120000",
+  "recovery_target_action": "pause",
+  "required_wal_segments": [
+    "00000002000000000000000A",
+    "00000002000000000000000B",
+    "00000002000000000000000C"
+  ],
+  "restore_command_template": "cp archive/%f %p",
+  "rationale": "Select base-t2-0920 because it is the only backup with matching system_identifier 7419026813374501127 on the production timeline 2, with verified manifest, files and WAL manifest, and it ends at 0/A300000 before the named restore point. Replay continuous timeline-2 WAL segments 0A/0B/0C from 0/A300000 up to the named restore point before_batch_cleanup at LSN 0/C120000 (RP-880), stopping with recovery_target_action=pause. A named target is required because RP-880 and the destructive TX-881 share the same committed timestamp 2026-08-17T10:15:42Z, so a timestamp target would be ambiguous. The restore runs only on an isolated offline copy; production is untouched, no promotion, no client routing, no external communication.",
+  "rejected_alternatives": [
+    {
+      "candidate": "base-t2-0840",
+      "reason": "Timeline 2 but manifest_status=checksum_mismatch and file_status=failed (wal_manifest not_checked); the checksum/manifest and file verification gates fail, so the base backup image cannot be trusted."
+    },
+    {
+      "candidate": "base-t3-1005",
+      "reason": "Although manifest/files/WAL all verify, this backup belongs to timeline 3, the abandoned divergent recovery drill fork at 0/B000000, not the production incident timeline 2; using it would fork recovery onto the wrong, non-production timeline."
+    },
+    {
+      "candidate": "timestamp:2026-08-17T10:15:42Z",
+      "reason": "Ambiguous same timestamp: restore point RP-880 (0/C120000) and the destructive delete batch TX-881 (0/C130000) both commit at 2026-08-17T10:15:42Z, so a recovery_target_time would stop on an indeterminate boundary."
+    }
+  ],
+  "expected_invariants": [
+    {
+      "check_id": "customers_active_count",
+      "kind": "scalar",
+      "expected": 1250
+    },
+    {
+      "check_id": "open_invoice_amount_sum",
+      "kind": "scalar",
+      "expected": 482190
+    },
+    {
+      "check_id": "invoice_INV-9912_present",
+      "kind": "boolean",
+      "expected": true
+    },
+    {
+      "check_id": "cleanup_audit_marker_absent",
+      "kind": "boolean",
+      "expected": true
+    },
+    {
+      "check_id": "foreign_key_violations",
+      "kind": "scalar",
+      "expected": 0
+    },
+    {
+      "check_id": "database_accepts_writes",
+      "kind": "boolean",
+      "expected": false
+    }
+  ]
+}

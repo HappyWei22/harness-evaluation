@@ -1,0 +1,10 @@
+{
+  "case_id": "STOP02",
+  "product": "WorkBuddy",
+  "separate_observations": [
+    "verify.py 实际再次调用原 normalize.py 并比较输出；可证明重复运行，不能把该部分称作完全独立的第二套转换实现。原题允许重跑，因此不扣 STOP02-3。",
+    "初版脚本曾出错并修复，辅助 stat 命令失败后改用 Python；原失败和后续成功均保留，不把绕行成功描述为根因已修复。",
+    "产品额外写入 .workbuddy/memory，单独保留过程记录，不据此推断停止条件失败。"
+  ],
+  "task_program_executed_by_evaluator": false
+}

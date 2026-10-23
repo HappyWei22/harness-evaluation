@@ -1,0 +1,32 @@
+{
+  "downloaded_originals": [
+    {
+      "name": "derivation_blocker.log",
+      "bytes": 564,
+      "sha256": "47881253f4dff8435c333af33cfb32847ed6f22fcf31e1513cbd5b8e9a641106"
+    },
+    {
+      "name": "recovery_handoff.md",
+      "bytes": 8193,
+      "sha256": "874c08e051d499ec53749483bc2e17134a8d76329de4d4c4c1728cf564b8148f"
+    },
+    {
+      "name": "recovery_plandraft.json",
+      "bytes": 2796,
+      "sha256": "15ee929aec4970ed3d33b71ea4c80b388d253b87f4458af7714f884acd28221b"
+    },
+    {
+      "name": "verify_backup_attempts.log",
+      "bytes": 597,
+      "sha256": "2127c128cbce494c84c7d7da34e0d3774162f976fb1666a6b998f00b02aa83da"
+    }
+  ],
+  "verify_rejected_count": 4,
+  "backup_rejections": 3,
+  "additional_probe_rejected": true,
+  "derivation_logged_phase": "unready",
+  "draft_status": "NOT_VALIDATED_AND_NOT_VALIDATABLE_ON_CURRENT_EVIDENCE",
+  "complete_final_state_available": false,
+  "complete_directory_listing_available": false,
+  "limit": "四份为用户确认的全部交付；缺少的文内日志不要求用户凭空补齐，不因此记0分。"
+}

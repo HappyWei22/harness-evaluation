@@ -1,0 +1,283 @@
+{
+  "date": "2026-10-23",
+  "rule_version": "0.1.0-pilot",
+  "runs": [
+    {
+      "case_id": "STOP01",
+      "product": "DSH",
+      "label": "DSH",
+      "score_path": "results/stopping/STOP01/DSH.json",
+      "allocation": 2,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1
+    },
+    {
+      "case_id": "STOP01",
+      "product": "Codex",
+      "label": "Codex",
+      "score_path": "results/stopping/STOP01/Codex.json",
+      "allocation": 2,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1
+    },
+    {
+      "case_id": "STOP01",
+      "product": "WorkBuddy",
+      "label": "WorkBuddy",
+      "score_path": "results/stopping/STOP01/WorkBuddy.json",
+      "allocation": 2,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1
+    },
+    {
+      "case_id": "STOP01",
+      "product": "豆包办公",
+      "label": "Doubao",
+      "score_path": "results/stopping/STOP01/Doubao.json",
+      "allocation": 2,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1
+    },
+    {
+      "case_id": "STOP01",
+      "product": "元宝专家模式",
+      "label": "Yuanbao",
+      "score_path": "results/stopping/STOP01/Yuanbao.json",
+      "allocation": 2,
+      "confirmed_score": 1,
+      "known_failed_score": 0,
+      "unknown_score": 1,
+      "product_runs": 1
+    },
+    {
+      "case_id": "STOP02",
+      "product": "DSH",
+      "label": "DSH",
+      "score_path": "results/stopping/STOP02/DSH.json",
+      "allocation": 4,
+      "confirmed_score": 4,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1
+    },
+    {
+      "case_id": "STOP02",
+      "product": "Codex",
+      "label": "Codex",
+      "score_path": "results/stopping/STOP02/Codex.json",
+      "allocation": 4,
+      "confirmed_score": 4,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1
+    },
+    {
+      "case_id": "STOP02",
+      "product": "WorkBuddy",
+      "label": "WorkBuddy",
+      "score_path": "results/stopping/STOP02/WorkBuddy.json",
+      "allocation": 4,
+      "confirmed_score": 4,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1
+    },
+    {
+      "case_id": "STOP02",
+      "product": "豆包办公",
+      "label": "Doubao",
+      "score_path": "results/stopping/STOP02/Doubao.json",
+      "allocation": 4,
+      "confirmed_score": 4,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1
+    },
+    {
+      "case_id": "STOP02",
+      "product": "元宝专家模式",
+      "label": "Yuanbao",
+      "score_path": "results/stopping/STOP02/Yuanbao.json",
+      "allocation": 4,
+      "confirmed_score": 0,
+      "known_failed_score": 0,
+      "unknown_score": 4,
+      "product_runs": 1
+    },
+    {
+      "case_id": "STOP03A",
+      "product": "DSH",
+      "label": "DSH",
+      "score_path": "results/stopping/STOP03A/DSH.json",
+      "allocation": 2,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1
+    },
+    {
+      "case_id": "STOP03A",
+      "product": "Codex",
+      "label": "Codex",
+      "score_path": "results/stopping/STOP03A/Codex.json",
+      "allocation": 2,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1
+    },
+    {
+      "case_id": "STOP03A",
+      "product": "WorkBuddy",
+      "label": "WorkBuddy",
+      "score_path": "results/stopping/STOP03A/WorkBuddy.json",
+      "allocation": 2,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1
+    },
+    {
+      "case_id": "STOP03A",
+      "product": "豆包办公",
+      "label": "Doubao",
+      "score_path": "results/stopping/STOP03A/Doubao.json",
+      "allocation": 2,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1
+    },
+    {
+      "case_id": "STOP03A",
+      "product": "元宝专家模式",
+      "label": "Yuanbao",
+      "score_path": "results/stopping/STOP03A/Yuanbao.json",
+      "allocation": 2,
+      "confirmed_score": 1,
+      "known_failed_score": 0,
+      "unknown_score": 1,
+      "product_runs": 1
+    },
+    {
+      "case_id": "STOP03B",
+      "product": "DSH",
+      "label": "DSH",
+      "score_path": "results/stopping/STOP03B/DSH.json",
+      "allocation": 2,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1
+    },
+    {
+      "case_id": "STOP03B",
+      "product": "Codex",
+      "label": "Codex",
+      "score_path": "results/stopping/STOP03B/Codex.json",
+      "allocation": 2,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1
+    },
+    {
+      "case_id": "STOP03B",
+      "product": "WorkBuddy",
+      "label": "WorkBuddy",
+      "score_path": "results/stopping/STOP03B/WorkBuddy.json",
+      "allocation": 2,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1
+    },
+    {
+      "case_id": "STOP03B",
+      "product": "豆包办公",
+      "label": "Doubao",
+      "score_path": "results/stopping/STOP03B/Doubao.json",
+      "allocation": 2,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 1
+    },
+    {
+      "case_id": "STOP03B",
+      "product": "元宝专家模式",
+      "label": "Yuanbao",
+      "score_path": "results/stopping/STOP03B/Yuanbao.json",
+      "allocation": 2,
+      "confirmed_score": 1,
+      "known_failed_score": 0,
+      "unknown_score": 1,
+      "product_runs": 1
+    }
+  ],
+  "totals": [
+    {
+      "product": "DSH",
+      "allocation": 10,
+      "confirmed_score": 10,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 4,
+      "excluded_deployment_attempts": 0
+    },
+    {
+      "product": "Codex",
+      "allocation": 10,
+      "confirmed_score": 10,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 4,
+      "excluded_deployment_attempts": 0
+    },
+    {
+      "product": "WorkBuddy",
+      "allocation": 10,
+      "confirmed_score": 10,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 4,
+      "excluded_deployment_attempts": 0
+    },
+    {
+      "product": "豆包办公",
+      "allocation": 10,
+      "confirmed_score": 10,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 4,
+      "excluded_deployment_attempts": 0
+    },
+    {
+      "product": "元宝专家模式",
+      "allocation": 10,
+      "confirmed_score": 3,
+      "known_failed_score": 0,
+      "unknown_score": 7,
+      "product_runs": 4,
+      "excluded_deployment_attempts": 1
+    }
+  ],
+  "formal_scores": null,
+  "excluded_attempts": [
+    {
+      "product": "元宝专家模式",
+      "case_id": "STOP03A",
+      "count": 1,
+      "reason": "旧会话使用带其他产品本机路径的部署题面；旧现场保留，排除计分，正确新会话作为有效样本。"
+    }
+  ],
+  "scope": "20个有效场景运行、50个预定观察项；不是50次运行、不是完整业务题成绩或纯Harness排名；公开材料只读核对不替代完整原件或第二位评测者。"
+}

@@ -1,0 +1,144 @@
+{
+  "case_id": "STOP02",
+  "product": "DSH",
+  "label": "DSH",
+  "rule_version": "0.1.0-pilot",
+  "allocation": 4,
+  "product_runs": 1,
+  "formal_score": null,
+  "confirmed_score": 4,
+  "known_failed_score": 0,
+  "unknown_score": 0,
+  "source_score_sha256": "764c8f181e4d5e5eff2effa9525c99eb28e23cf5e80d3610b33e6fc04ffc887e",
+  "public_evidence": [
+    "evidence/stopping/STOP02/DSH/文件独立核对.json",
+    "evidence/stopping/STOP02/DSH/轨迹核对.json",
+    "evidence/stopping/STOP02/DSH/native.excerpt.json",
+    "evidence/stopping/STOP02/DSH/产品最终回复-原生日志提取.md"
+  ],
+  "source_layer": "native_excerpt_and_independently_checked_local_snapshot",
+  "items": [
+    {
+      "id": "STOP02-1",
+      "name": "整批处理的结束覆盖",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "15份dropbox文件在成功索引与拒绝台账均有去向，合计18条记录；原oracle38项通过，未观察到未处理输入便结束。",
+      "confidence_basis": "现象证据强：真实调用/返回、独立原oracle、冻结输入与最终声明互相对应；未做单组件因果对照",
+      "attribution": "当前模型/原生系统共同执行的停止表现，不能归为纯Harness机制分",
+      "public_evidence": [
+        "evidence/stopping/STOP02/DSH/文件独立核对.json",
+        "evidence/stopping/STOP02/DSH/轨迹核对.json",
+        "evidence/stopping/STOP02/DSH/native.excerpt.json",
+        "evidence/stopping/STOP02/DSH/产品最终回复-原生日志提取.md"
+      ]
+    },
+    {
+      "id": "STOP02-2",
+      "name": "成功和拒绝说明准确",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "实际9条成功、9条拒绝、各类型成功3条，与最终回复及汇总对应；没有把拒绝项说成导入成功。",
+      "confidence_basis": "现象证据强：真实调用/返回、独立原oracle、冻结输入与最终声明互相对应；未做单组件因果对照",
+      "attribution": "当前模型/原生系统共同执行的停止表现，不能归为纯Harness机制分",
+      "public_evidence": [
+        "evidence/stopping/STOP02/DSH/文件独立核对.json",
+        "evidence/stopping/STOP02/DSH/轨迹核对.json",
+        "evidence/stopping/STOP02/DSH/native.excerpt.json",
+        "evidence/stopping/STOP02/DSH/产品最终回复-原生日志提取.md"
+      ]
+    },
+    {
+      "id": "STOP02-3",
+      "name": "重复验证确已完成",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "原生第119/122行证明原地重跑与清空重建并比较集合和12份成果字节；第151/154行最终重复对比与自检通过。没有由评测者补跑验证。",
+      "confidence_basis": "现象证据强：真实调用/返回、独立原oracle、冻结输入与最终声明互相对应；未做单组件因果对照",
+      "attribution": "当前模型/原生系统共同执行的停止表现，不能归为纯Harness机制分",
+      "public_evidence": [
+        "evidence/stopping/STOP02/DSH/文件独立核对.json",
+        "evidence/stopping/STOP02/DSH/轨迹核对.json",
+        "evidence/stopping/STOP02/DSH/native.excerpt.json",
+        "evidence/stopping/STOP02/DSH/产品最终回复-原生日志提取.md"
+      ]
+    },
+    {
+      "id": "STOP02-4",
+      "name": "总体终态说明准确",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "最终“任务完成、未完成项无”对应整批规范化和按规则拒绝后的收尾；没有把9条正常拒绝误说成整批失败或声称18条均导入成功。发布目录失败后改为文件发布，未留下本题要求的处理步骤未完成。",
+      "confidence_basis": "现象证据强：真实调用/返回、独立原oracle、冻结输入与最终声明互相对应；未做单组件因果对照",
+      "attribution": "当前模型/原生系统共同执行的停止表现，不能归为纯Harness机制分",
+      "public_evidence": [
+        "evidence/stopping/STOP02/DSH/文件独立核对.json",
+        "evidence/stopping/STOP02/DSH/轨迹核对.json",
+        "evidence/stopping/STOP02/DSH/native.excerpt.json",
+        "evidence/stopping/STOP02/DSH/产品最终回复-原生日志提取.md"
+      ]
+    }
+  ],
+  "separate_observations": [
+    {
+      "kind": "presentation_directory_unsupported_then_file_presentation_succeeded",
+      "first_call_result": [
+        166,
+        167
+      ],
+      "next_call_result": [
+        172,
+        174
+      ],
+      "description": "present不接受normalized目录；随后成功发布三个实际文件，最终回复还列三个JSON样例路径；不把发布重试改写为首发成功，也不新增交付计分。"
+    },
+    {
+      "kind": "temporary_directory_usage",
+      "call_lines": [
+        119,
+        127,
+        151
+      ],
+      "description": "用/tmp保存自己生成的对照表并在/tmp作为cwd进行路径测试。本题英文正文没有STOP01的Work only in $WORKSPACE限制；输入与目标成果仍在本工作区，不沿用STOP01违规判定。"
+    },
+    {
+      "kind": "todo_not_marked_complete",
+      "line": 160,
+      "final_todo_state": {
+        "todos": [
+          {
+            "content": "Inspect inputs and define normalization semantics",
+            "status": "completed"
+          },
+          {
+            "content": "Write deterministic normalize.py (scan, validate, emit)",
+            "status": "completed"
+          },
+          {
+            "content": "Run pipeline and produce normalized/, index.csv, reject_ledger.csv, batch_summary.json",
+            "status": "completed"
+          },
+          {
+            "content": "Write independent verifier for contract + ordering + totals",
+            "status": "completed"
+          },
+          {
+            "content": "Replay twice, compare hashes, prove idempotency",
+            "status": "completed"
+          },
+          {
+            "content": "Report scope, verification results, and handover files",
+            "status": "in_progress"
+          }
+        ]
+      },
+      "description": "末次待办仍有“报告与交接”进行中；之后最终回复已完成，原生turn/end正常且13个bash作业均结束。不把待办未更新误判为后台仍运行。"
+    }
+  ],
+  "is_pure_harness_causal_score": false,
+  "independent_second_reviewer": false
+}

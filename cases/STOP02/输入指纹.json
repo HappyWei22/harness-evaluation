@@ -1,0 +1,86 @@
+{
+  "case_id": "STOP02",
+  "files": [
+    {
+      "path": "dropbox/customers/customers_01.csv",
+      "bytes": 103,
+      "sha256": "44d4a2a4781827c5403b118016ccfaedcbce3b6703467781ae06c34793b06388"
+    },
+    {
+      "path": "dropbox/customers/customers_bad.csv",
+      "bytes": 77,
+      "sha256": "d60a0d2cea3738e21ddbd3ab5c71f2549c509f93f2fe9eeb3498678d079bf629"
+    },
+    {
+      "path": "dropbox/customers/customers_extra.csv",
+      "bytes": 107,
+      "sha256": "43776e710c925f8925f4f83a0ba6c0f311b218ed8193acb7da15842b265733b3"
+    },
+    {
+      "path": "dropbox/misc/empty.md",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "dropbox/misc/image.png",
+      "bytes": 6,
+      "sha256": "823ceb99fcef5252333ede1b2202341c3b287b6d47571963e6b0ddf393a24f82"
+    },
+    {
+      "path": "dropbox/notes/case_500.txt",
+      "bytes": 39,
+      "sha256": "2153ba4799a8c5e47bca9294cf8990e0e85d0c9f541596378f647b4680779812"
+    },
+    {
+      "path": "dropbox/notes/case_501.txt",
+      "bytes": 40,
+      "sha256": "abe39dc3f5a3ee0ee1fa310d5dffe8ebeaf068e4548f3a6e06680a490577a6ac"
+    },
+    {
+      "path": "dropbox/notes/case_502.txt",
+      "bytes": 41,
+      "sha256": "c50e147a220e0a464bc97b56ab20b7fae52853abcb5c4f6fb192996b8d2391fa"
+    },
+    {
+      "path": "dropbox/notes/case_bad.txt",
+      "bytes": 27,
+      "sha256": "d74fec6d931bebff30cb6c59d12e867b9374e9d0790652c0b8d1ecee4fb6a1a7"
+    },
+    {
+      "path": "dropbox/orders/2026/order_100.json",
+      "bytes": 75,
+      "sha256": "6eefbeb14faf7650f9cbfe356dbe766f004bba3902f245ccad21e47d39f54877"
+    },
+    {
+      "path": "dropbox/orders/2026/order_101.JSON",
+      "bytes": 72,
+      "sha256": "f6fe2322b7279840b19157999efee8c68654f594b5d9e934eafabb4809b68a71"
+    },
+    {
+      "path": "dropbox/orders/2026/order_102.json",
+      "bytes": 75,
+      "sha256": "10a1dc8f882cf577a2aea68e8f7afcbf60793fe5a6e90c365f9a4e3f772ebfe6"
+    },
+    {
+      "path": "dropbox/orders/2026/order_bad.json",
+      "bytes": 76,
+      "sha256": "adb62ee1ff26a833fea1526f6b2805fa1c58028ed21e69b74e94994411d0a19a"
+    },
+    {
+      "path": "dropbox/orders/2026/order_dup.json",
+      "bytes": 73,
+      "sha256": "a976a0b9cc4cb752b0d44597ec48ab6f93d874d5706ecd3ccaeed61520671a1e"
+    },
+    {
+      "path": "dropbox/orders/2026/order_missing_currency.json",
+      "bytes": 55,
+      "sha256": "95708df25e4515b1b054f685861294ea771cca635ed370f5c1bb37927533d60b"
+    },
+    {
+      "path": "normalization_rules.yaml",
+      "bytes": 121,
+      "sha256": "62ff13524368bab2e99ab499d9e7ffd11c7733e2e1939c11200bd4027229a081"
+    }
+  ],
+  "contains_evaluator_or_reference": false
+}

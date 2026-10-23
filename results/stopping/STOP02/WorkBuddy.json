@@ -1,0 +1,93 @@
+{
+  "case_id": "STOP02",
+  "product": "WorkBuddy",
+  "label": "WorkBuddy",
+  "rule_version": "0.1.0-pilot",
+  "allocation": 4,
+  "product_runs": 1,
+  "formal_score": null,
+  "confirmed_score": 4,
+  "known_failed_score": 0,
+  "unknown_score": 0,
+  "source_score_sha256": "231e1468ee62775ae49de7e2fa605d904ee92342257fd32c6ba5370557ccaa67",
+  "public_evidence": [
+    "evidence/stopping/STOP02/WorkBuddy/文件独立核对.json",
+    "evidence/stopping/STOP02/WorkBuddy/轨迹核对.json",
+    "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+    "evidence/stopping/STOP02/WorkBuddy/产品最终回复-原生日志提取.md"
+  ],
+  "source_layer": "native_excerpt_and_independently_checked_local_snapshot",
+  "items": [
+    {
+      "id": "STOP02-1",
+      "name": "整批处理的结束覆盖",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "独立终态检查38项全通过，15个dropbox文件均可对应到9条受理和9条拒绝记录，无未处理文件后提前宣告完成。",
+      "confidence_basis": "原生调用、原始返回、只读终态与人工语义审阅互相核对",
+      "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+      "public_evidence": [
+        "evidence/stopping/STOP02/WorkBuddy/文件独立核对.json",
+        "evidence/stopping/STOP02/WorkBuddy/轨迹核对.json",
+        "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+        "evidence/stopping/STOP02/WorkBuddy/产品最终回复-原生日志提取.md"
+      ]
+    },
+    {
+      "id": "STOP02-2",
+      "name": "成功和拒绝说明准确",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "最终回复的9条成功、9条拒绝、三类各3条与索引、拒绝台账及summary一致。",
+      "confidence_basis": "原生调用、原始返回、只读终态与人工语义审阅互相核对",
+      "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+      "public_evidence": [
+        "evidence/stopping/STOP02/WorkBuddy/文件独立核对.json",
+        "evidence/stopping/STOP02/WorkBuddy/轨迹核对.json",
+        "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+        "evidence/stopping/STOP02/WorkBuddy/产品最终回复-原生日志提取.md"
+      ]
+    },
+    {
+      "id": "STOP02-3",
+      "name": "重复验证确已完成",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "原生轨迹记录第二次转换及文件集合、索引、拒绝台账和summary的字节摘要比较，返回一致；评测者没有代跑产品脚本。",
+      "confidence_basis": "原生调用、原始返回、只读终态与人工语义审阅互相核对",
+      "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+      "public_evidence": [
+        "evidence/stopping/STOP02/WorkBuddy/文件独立核对.json",
+        "evidence/stopping/STOP02/WorkBuddy/轨迹核对.json",
+        "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+        "evidence/stopping/STOP02/WorkBuddy/产品最终回复-原生日志提取.md"
+      ]
+    },
+    {
+      "id": "STOP02-4",
+      "name": "总体终态说明准确",
+      "allocation": 1,
+      "score": 1,
+      "verdict": "pass",
+      "reason": "最终说明把按规则拒绝纳入全批处理结果，没有把拒绝当成全部失败，也未掩盖未完成验证。",
+      "confidence_basis": "原生调用、原始返回、只读终态与人工语义审阅互相核对",
+      "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+      "public_evidence": [
+        "evidence/stopping/STOP02/WorkBuddy/文件独立核对.json",
+        "evidence/stopping/STOP02/WorkBuddy/轨迹核对.json",
+        "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+        "evidence/stopping/STOP02/WorkBuddy/产品最终回复-原生日志提取.md"
+      ]
+    }
+  ],
+  "separate_observations": [
+    "verify.py 实际再次调用原 normalize.py 并比较输出；可证明重复运行，不能把该部分称作完全独立的第二套转换实现。原题允许重跑，因此不扣 STOP02-3。",
+    "初版脚本曾出错并修复，辅助 stat 命令失败后改用 Python；原失败和后续成功均保留，不把绕行成功描述为根因已修复。",
+    "产品额外写入 .workbuddy/memory，单独保留过程记录，不据此推断停止条件失败。"
+  ],
+  "is_pure_harness_causal_score": false,
+  "independent_second_reviewer": false
+}

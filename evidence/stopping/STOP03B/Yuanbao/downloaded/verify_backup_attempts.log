@@ -1,0 +1,35 @@
+### verify-backup --id base-t2-0840
+{
+  "status": "rejected",
+  "errors": [
+    "backup manifest, files, and manifest WAL must all verify"
+  ]
+}
+exit=2
+
+### verify-backup --id base-t2-0920
+{
+  "status": "rejected",
+  "errors": [
+    "backup manifest, files, and manifest WAL must all verify"
+  ]
+}
+exit=2
+
+### verify-backup --id base-t3-1005
+{
+  "status": "rejected",
+  "errors": [
+    "backup belongs to a divergent timeline, not the incident history"
+  ]
+}
+exit=2
+
+### probe (no restore yet)
+{
+  "status": "rejected",
+  "errors": [
+    "probe requires a completed isolated restore"
+  ]
+}
+exit=2
