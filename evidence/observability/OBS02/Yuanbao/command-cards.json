@@ -1,0 +1,140 @@
+[
+  {
+    "json_path": "$.props.pageProps.fullChatShareData.chat.convs[1].speechesV2[0].content[0].contents[1]",
+    "data": {
+      "cmpid": "3",
+      "type": "toolCall",
+      "tcname": "bash",
+      "status": 2,
+      "icon": {
+        "iconId": "icon_bash"
+      },
+      "title": "已检查附件与目标目录状态",
+      "items": [
+        {
+          "id": "item_1",
+          "type": "markdown",
+          "text": "``````bash\nls -l /data/inputs/observability_task.py; ls -ld /data/workspace/OBS02-a02\n``````"
+        }
+      ],
+      "groupId": "dbfm39uv6cnmsddstbb0"
+    }
+  },
+  {
+    "json_path": "$.props.pageProps.fullChatShareData.chat.convs[1].speechesV2[0].content[0].contents[3]",
+    "data": {
+      "cmpid": "5",
+      "type": "toolCall",
+      "tcname": "bash",
+      "status": 2,
+      "icon": {
+        "iconId": "icon_bash"
+      },
+      "title": "已建目录并原样复制附件",
+      "items": [
+        {
+          "id": "item_1",
+          "type": "markdown",
+          "text": "``````bash\nmkdir -p /data/workspace/OBS02-a02 && cp -p /data/inputs/observability_task.py /data/workspace/OBS02-a02/observability_task.py && ls -l /data/workspace/OBS02-a02/\n``````"
+        }
+      ],
+      "groupId": "dbfm39uv6cnmsddstbb0"
+    }
+  },
+  {
+    "json_path": "$.props.pageProps.fullChatShareData.chat.convs[1].speechesV2[0].content[0].contents[6]",
+    "data": {
+      "cmpid": "8",
+      "type": "toolCall",
+      "tcname": "bash",
+      "status": 2,
+      "icon": {
+        "iconId": "icon_bash"
+      },
+      "title": "已首次导出（指定格式 legacy-json）",
+      "items": [
+        {
+          "id": "item_1",
+          "type": "markdown",
+          "text": "``````bash\ncd /data/workspace/OBS02-a02 && python3 observability_task.py --case OBS02 export --format legacy-json\n``````"
+        }
+      ],
+      "groupId": "3"
+    }
+  },
+  {
+    "json_path": "$.props.pageProps.fullChatShareData.chat.convs[1].speechesV2[0].content[0].contents[9]",
+    "data": {
+      "cmpid": "11",
+      "type": "toolCall",
+      "tcname": "bash",
+      "status": 2,
+      "icon": {
+        "iconId": "icon_bash"
+      },
+      "title": "已更正格式后重新导出",
+      "items": [
+        {
+          "id": "item_1",
+          "type": "markdown",
+          "text": "``````bash\ncd /data/workspace/OBS02-a02 && python3 observability_task.py --case OBS02 export --format json\n``````"
+        }
+      ],
+      "groupId": "4"
+    }
+  },
+  {
+    "json_path": "$.props.pageProps.fullChatShareData.chat.convs[1].speechesV2[0].content[0].contents[11]",
+    "data": {
+      "cmpid": "13",
+      "type": "toolCall",
+      "tcname": "bash",
+      "status": 2,
+      "icon": {
+        "iconId": "icon_bash"
+      },
+      "title": "已核对导出文件内容",
+      "items": [
+        {
+          "id": "item_1",
+          "type": "markdown",
+          "text": "``````bash\ncd /data/workspace/OBS02-a02 && python3 observability_task.py --case OBS02 verify\n``````"
+        }
+      ],
+      "groupId": "5"
+    }
+  },
+  {
+    "json_path": "$.props.pageProps.fullChatShareData.chat.convs[1].speechesV2[0].content[0].contents[13]",
+    "data": {
+      "cmpid": "15",
+      "type": "toolCall",
+      "tcname": "bash",
+      "status": 2,
+      "icon": {
+        "iconId": "icon_bash"
+      },
+      "title": "已确认交付产物存在",
+      "items": [
+        {
+          "id": "item_1",
+          "type": "markdown",
+          "text": "``````bash\nls -l /data/workspace/OBS02-a02/outputs/\n``````"
+        }
+      ],
+      "groupId": "5"
+    }
+  },
+  {
+    "json_path": "$.props.pageProps.fullChatShareData.chat.convs[1].speechesV2[0].content[0].contents[14]",
+    "data": {
+      "cmpid": "16",
+      "type": "toolCall",
+      "tcname": "present_files",
+      "status": 2,
+      "icon": {},
+      "title": "已准备文件",
+      "groupId": "5"
+    }
+  }
+]

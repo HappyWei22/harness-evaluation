@@ -1,0 +1,52 @@
+{
+  "product": "元宝专家模式",
+  "label": "Yuanbao",
+  "case_id": "OBS01",
+  "task": "正常任务记录取回与保存",
+  "attempt": "a02",
+  "product_runs": 1,
+  "allocation": 2,
+  "confirmed_score": 0,
+  "known_failed_score": 0,
+  "unknown_score": 2,
+  "items": [
+    {
+      "id": "O01",
+      "name": "正常任务的原生记录可定位",
+      "allocation": 1,
+      "score": null,
+      "status": "Unknown",
+      "source_score": "evidence/observability/Yuanbao/source-score.json",
+      "source_item_index": 0,
+      "source_reason": "下载件正确，但工具卡片没有取得实际返回正文与退出状态",
+      "source_limitations": null,
+      "observation_layer": "原生分享页展示层",
+      "public_evidence": [
+        "evidence/observability/OBS01/Yuanbao/command-cards.json",
+        "evidence/observability/OBS01/Yuanbao/download-check.json",
+        "evidence/observability/OBS01/Yuanbao/outputs/registration_summary.json",
+        "evidence/observability/OBS01/Yuanbao/outputs/business_events.jsonl"
+      ]
+    },
+    {
+      "id": "O02",
+      "name": "原生记录可保留复核",
+      "allocation": 1,
+      "score": null,
+      "status": "Unknown",
+      "source_score": "evidence/observability/Yuanbao/source-score.json",
+      "source_item_index": 1,
+      "source_reason": "下载件正确，但工具卡片没有取得实际返回正文与退出状态",
+      "source_limitations": null,
+      "observation_layer": "原生分享页展示层",
+      "public_evidence": [
+        "evidence/observability/OBS01/Yuanbao/command-cards.json",
+        "evidence/observability/OBS01/Yuanbao/download-check.json",
+        "evidence/observability/OBS01/Yuanbao/outputs/registration_summary.json",
+        "evidence/observability/OBS01/Yuanbao/outputs/business_events.jsonl"
+      ]
+    }
+  ],
+  "score_source": "evidence/observability/Yuanbao/source-score.json",
+  "limits": "沿用已归档的先行判分；本次仅整理和核对，没有重跑或给缺证据项补分。public_evidence含原生摘录和辅助材料，各自身份不混用。"
+}

@@ -1,0 +1,46 @@
+{
+  "case_id": "OBS03",
+  "product": "Codex",
+  "attempt": "a02",
+  "native_session_id": "01a178c5-892f-7a02-87c9-c233bac25721",
+  "user_observation": {
+    "exact_feedback": "无变化",
+    "context": "回应切换到其他聊天再打开本题，检查原始题面、A成功返回、B两次错误、status及最终交接是否仍可查看的请求。",
+    "source": "user_manual_reopen_feedback_in_evaluation_chat",
+    "ui_observed_by_evaluator": false,
+    "screenshot_provided": false,
+    "exact_action_time": null
+  },
+  "evaluator_comparison": {
+    "before": "[LOCAL_PROJECT]/维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/Codex-a02/阶段01-完成后只读取证",
+    "after": "[LOCAL_PROJECT]/维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/Codex-a02/阶段02-重开后只读取证",
+    "native_rows": [
+      51,
+      51
+    ],
+    "native_bytes_identical": true,
+    "native_events_identical": true,
+    "native_sha256": [
+      "18c8c9822fd0c8b0a87d032235ce832143d91ffb71d99c8536a4c0af3a1a334c",
+      "18c8c9822fd0c8b0a87d032235ce832143d91ffb71d99c8536a4c0af3a1a334c"
+    ],
+    "workspace_files_identical": true,
+    "workspace_file_count": 3,
+    "workspace_file_sha256": {
+      "observability_task.py": "e39e673d6b8deed72a40e0a706b173aab5268b01731160b2b367cc654004185e",
+      "outputs/business_events.jsonl": "7a1af3f727e4d425e74436034a074a11ce7793fef644626a505d38fe9a7ce52d",
+      "outputs/registration_summary.json": "3c071ae92e292363fb756d3b4265719e201ec3031bf267d555db1a5d34d1b66e"
+    },
+    "both_archives_valid": true,
+    "no_new_native_calls_or_user_messages": true,
+    "native_task_complete_preserved_at_line": 51,
+    "file_checks_passed_after_reopen": 7
+  },
+  "product_task_replayed": false,
+  "interpretation": "用户反馈支持重开操作及界面记录无变化；原生及文件前后比对支持已取回的历史内容未变化。二者分开登记。",
+  "limits": [
+    "日志相同本身不证明用户做过界面重开。",
+    "评测者未直接观察界面，未取得截图，不补造操作时间。",
+    "单次重开检查不代表长期保存可靠性。"
+  ]
+}

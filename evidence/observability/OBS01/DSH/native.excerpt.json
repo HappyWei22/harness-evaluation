@@ -1,0 +1,574 @@
+{
+  "format": "native-event-excerpt-v1",
+  "original_line_count": 74,
+  "original_sha256": "7bcb77a3af0b1562f26e4da52a7a9a165fdacac43070f267b657a42d6ff5f7ee",
+  "scope": "仅必要工具输入、返回及可取得的结束事件；上下文、系统指令、思考、重放和不相关字段不公开；有原始行号不表示完整会话。",
+  "records": [
+    {
+      "source_line": 6,
+      "event": {
+        "type": "turn/start",
+        "seq": 4,
+        "time": 1793024745397,
+        "data": {
+          "turn": 1
+        }
+      }
+    },
+    {
+      "source_line": 22,
+      "event": {
+        "type": "tool/call",
+        "seq": 20,
+        "time": 1793024746894,
+        "data": {
+          "turn": 1,
+          "step": 1,
+          "callId": "call_00_ET_Ql6oAl2QTHfkvCjxQjUa3416",
+          "name": "bash",
+          "arguments": "{\"command\": \"pwd && ls -la && ls -la outputs 2>/dev/null\", \"description\": \"Verify working directory and list contents\"}"
+        }
+      }
+    },
+    {
+      "source_line": 24,
+      "event": {
+        "type": "job/settled",
+        "seq": 22,
+        "time": 1793024746934,
+        "data": {
+          "jobId": "bash-fca467a8fa65477f",
+          "owner": "session-d6fab479-1ff5-47a4-9e97-6c79a03725a2",
+          "kind": "bash",
+          "label": "pwd && ls -la && ls -la outputs 2>/dev/null",
+          "startedAt": 1793024746907,
+          "toolCall": {
+            "callId": "call_00_ET_Ql6oAl2QTHfkvCjxQjUa3416",
+            "rootCallId": "call_00_ET_Ql6oAl2QTHfkvCjxQjUa3416"
+          },
+          "finishedAt": 1793024746934,
+          "status": "completed",
+          "cause": "producer",
+          "producerReported": true,
+          "detail": "exit code: 1"
+        }
+      }
+    },
+    {
+      "source_line": 25,
+      "event": {
+        "type": "tool/result",
+        "seq": 23,
+        "time": 1793024746936,
+        "data": {
+          "turn": 1,
+          "step": 1,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_ET_Ql6oAl2QTHfkvCjxQjUa3416"
+            },
+            "toolCallId": "call_00_ET_Ql6oAl2QTHfkvCjxQjUa3416",
+            "content": [
+              {
+                "type": "text",
+                "text": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02\ntotal 16\ndrwxr-xr-x@  3 USER  staff    96 Oct 26 21:38 .\ndrwxr-xr-x@ 28 USER  staff   896 Oct 26 21:38 ..\n-rw-r--r--@  1 USER  staff  7923 Oct 26 21:38 observability_task.py\n[exit code: 1]"
+              }
+            ],
+            "isError": false,
+            "id": "12ab3546-6a06-4a0d-a650-2ae590741fe4"
+          },
+          "meta": {
+            "cwd": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02"
+          }
+        },
+        "sourceEventSeqs": [
+          20
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 30,
+      "event": {
+        "type": "tool/call",
+        "seq": 28,
+        "time": 1793024748539,
+        "data": {
+          "turn": 1,
+          "step": 2,
+          "callId": "call_00_qtYjOFcDjNHPYZlOX8ni1061",
+          "name": "bash",
+          "arguments": "{\"command\": \"python3 observability_task.py --case OBS01 summary\", \"description\": \"Run OBS01 summary case\", \"workdir\": \"[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02\"}"
+        }
+      }
+    },
+    {
+      "source_line": 32,
+      "event": {
+        "type": "job/settled",
+        "seq": 30,
+        "time": 1793024748657,
+        "data": {
+          "jobId": "bash-dfd6e1104dd14d27",
+          "owner": "session-d6fab479-1ff5-47a4-9e97-6c79a03725a2",
+          "kind": "bash",
+          "label": "python3 observability_task.py --case OBS01 summary",
+          "startedAt": 1793024748548,
+          "toolCall": {
+            "callId": "call_00_qtYjOFcDjNHPYZlOX8ni1061",
+            "rootCallId": "call_00_qtYjOFcDjNHPYZlOX8ni1061"
+          },
+          "finishedAt": 1793024748657,
+          "status": "completed",
+          "cause": "producer",
+          "producerReported": true,
+          "detail": "exit code: 0"
+        }
+      }
+    },
+    {
+      "source_line": 33,
+      "event": {
+        "type": "tool/result",
+        "seq": 31,
+        "time": 1793024748657,
+        "data": {
+          "turn": 1,
+          "step": 2,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_qtYjOFcDjNHPYZlOX8ni1061"
+            },
+            "toolCallId": "call_00_qtYjOFcDjNHPYZlOX8ni1061",
+            "content": [
+              {
+                "type": "text",
+                "text": "CASE_ID=OBS01\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=361dd0c8-d733-4dbd-ab83-f176c527b424\nACTION=summary\nBUSINESS_STATUS=OK\nOUTPUT_PATH=outputs/registration_summary.json\nACTIVITY_COUNT=3\nTOTAL_PARTICIPANTS=39\n"
+              }
+            ],
+            "isError": false,
+            "id": "e04a970b-4a19-4731-99dd-8ca2a3810647"
+          },
+          "meta": {
+            "cwd": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02"
+          }
+        },
+        "sourceEventSeqs": [
+          28
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 38,
+      "event": {
+        "type": "tool/call",
+        "seq": 36,
+        "time": 1793024750280,
+        "data": {
+          "turn": 1,
+          "step": 3,
+          "callId": "call_00_2nJSfREBYzUZmGHEDDkq6412",
+          "name": "bash",
+          "arguments": "{\"command\": \"python3 observability_task.py --case OBS01 verify\", \"description\": \"Run OBS01 verify case\", \"workdir\": \"[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02\"}"
+        }
+      }
+    },
+    {
+      "source_line": 40,
+      "event": {
+        "type": "job/settled",
+        "seq": 38,
+        "time": 1793024750335,
+        "data": {
+          "jobId": "bash-6e2277ca583c4e35",
+          "owner": "session-d6fab479-1ff5-47a4-9e97-6c79a03725a2",
+          "kind": "bash",
+          "label": "python3 observability_task.py --case OBS01 verify",
+          "startedAt": 1793024750290,
+          "toolCall": {
+            "callId": "call_00_2nJSfREBYzUZmGHEDDkq6412",
+            "rootCallId": "call_00_2nJSfREBYzUZmGHEDDkq6412"
+          },
+          "finishedAt": 1793024750335,
+          "status": "completed",
+          "cause": "producer",
+          "producerReported": true,
+          "detail": "exit code: 0"
+        }
+      }
+    },
+    {
+      "source_line": 41,
+      "event": {
+        "type": "tool/result",
+        "seq": 39,
+        "time": 1793024750336,
+        "data": {
+          "turn": 1,
+          "step": 3,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_2nJSfREBYzUZmGHEDDkq6412"
+            },
+            "toolCallId": "call_00_2nJSfREBYzUZmGHEDDkq6412",
+            "content": [
+              {
+                "type": "text",
+                "text": "CASE_ID=OBS01\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=c23318fb-95ed-4d2a-b2d6-923b913d2378\nACTION=verify\nBUSINESS_STATUS=OK\nCHECKED_PATH=outputs/registration_summary.json\nCONTENT_MATCH=true\n"
+              }
+            ],
+            "isError": false,
+            "id": "0b12dd6e-6a79-4a6c-8855-bb2222a6dd9d"
+          },
+          "meta": {
+            "cwd": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02"
+          }
+        },
+        "sourceEventSeqs": [
+          36
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 46,
+      "event": {
+        "type": "tool/call",
+        "seq": 44,
+        "time": 1793024752039,
+        "data": {
+          "turn": 1,
+          "step": 4,
+          "callId": "call_00_QspjnKbmc4JcFvdHd0dI5143",
+          "name": "bash",
+          "arguments": "{\"command\": \"ls -la outputs\", \"description\": \"List generated output files\", \"workdir\": \"[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02\"}"
+        }
+      }
+    },
+    {
+      "source_line": 48,
+      "event": {
+        "type": "job/settled",
+        "seq": 46,
+        "time": 1793024752065,
+        "data": {
+          "jobId": "bash-477d1e2995a44439",
+          "owner": "session-d6fab479-1ff5-47a4-9e97-6c79a03725a2",
+          "kind": "bash",
+          "label": "ls -la outputs",
+          "startedAt": 1793024752049,
+          "toolCall": {
+            "callId": "call_00_QspjnKbmc4JcFvdHd0dI5143",
+            "rootCallId": "call_00_QspjnKbmc4JcFvdHd0dI5143"
+          },
+          "finishedAt": 1793024752065,
+          "status": "completed",
+          "cause": "producer",
+          "producerReported": true,
+          "detail": "exit code: 0"
+        }
+      }
+    },
+    {
+      "source_line": 49,
+      "event": {
+        "type": "tool/result",
+        "seq": 47,
+        "time": 1793024752065,
+        "data": {
+          "turn": 1,
+          "step": 4,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_QspjnKbmc4JcFvdHd0dI5143"
+            },
+            "toolCallId": "call_00_QspjnKbmc4JcFvdHd0dI5143",
+            "content": [
+              {
+                "type": "text",
+                "text": "total 16\ndrwxr-xr-x@ 4 USER  staff  128 Oct 26 22:25 .\ndrwxr-xr-x@ 4 USER  staff  128 Oct 26 22:25 ..\n-rw-r--r--@ 1 USER  staff  620 Oct 26 22:25 business_events.jsonl\n-rw-r--r--@ 1 USER  staff  350 Oct 26 22:25 registration_summary.json\n"
+              }
+            ],
+            "isError": false,
+            "id": "3f3be591-599e-45aa-8f76-2328df7c8f34"
+          },
+          "meta": {
+            "cwd": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02"
+          }
+        },
+        "sourceEventSeqs": [
+          44
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 54,
+      "event": {
+        "type": "tool/call",
+        "seq": 52,
+        "time": 1793024753378,
+        "data": {
+          "turn": 1,
+          "step": 5,
+          "callId": "call_00_ET_UlPTtpnaEB8TSBRT9HOv4881",
+          "name": "read",
+          "arguments": "{\"file_path\": \"[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02/outputs/registration_summary.json\"}"
+        }
+      }
+    },
+    {
+      "source_line": 55,
+      "event": {
+        "type": "tool/result",
+        "seq": 53,
+        "time": 1793024753400,
+        "data": {
+          "turn": 1,
+          "step": 5,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_ET_UlPTtpnaEB8TSBRT9HOv4881"
+            },
+            "toolCallId": "call_00_ET_UlPTtpnaEB8TSBRT9HOv4881",
+            "content": [
+              {
+                "type": "text",
+                "text": "<path>[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02/outputs/registration_summary.json</path>\n<type>file</type>\n<content>\n1: {\n2:   \"activities\": [\n3:     {\n4:       \"activity_id\": \"ACT-51\",\n5:       \"participants\": 18\n6:     },\n7:     {\n8:       \"activity_id\": \"ACT-52\",\n9:       \"participants\": 12\n10:     },\n11:     {\n12:       \"activity_id\": \"ACT-53\",\n13:       \"participants\": 9\n14:     }\n15:   ],\n16:   \"activity_count\": 3,\n17:   \"case_id\": \"OBS01\",\n18:   \"material_version\": \"0.3.1-portable-pilot\",\n19:   \"total_participants\": 39\n20: }\n\n(End of file - total 20 lines)\n</content>"
+              }
+            ],
+            "isError": false,
+            "id": "01f0123c-50b0-4290-8133-ead51d015f1e"
+          },
+          "meta": {
+            "path": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02/outputs/registration_summary.json",
+            "offset": 1,
+            "lines": [
+              {
+                "number": 1,
+                "text": "{"
+              },
+              {
+                "number": 2,
+                "text": "  \"activities\": ["
+              },
+              {
+                "number": 3,
+                "text": "    {"
+              },
+              {
+                "number": 4,
+                "text": "      \"activity_id\": \"ACT-51\","
+              },
+              {
+                "number": 5,
+                "text": "      \"participants\": 18"
+              },
+              {
+                "number": 6,
+                "text": "    },"
+              },
+              {
+                "number": 7,
+                "text": "    {"
+              },
+              {
+                "number": 8,
+                "text": "      \"activity_id\": \"ACT-52\","
+              },
+              {
+                "number": 9,
+                "text": "      \"participants\": 12"
+              },
+              {
+                "number": 10,
+                "text": "    },"
+              },
+              {
+                "number": 11,
+                "text": "    {"
+              },
+              {
+                "number": 12,
+                "text": "      \"activity_id\": \"ACT-53\","
+              },
+              {
+                "number": 13,
+                "text": "      \"participants\": 9"
+              },
+              {
+                "number": 14,
+                "text": "    }"
+              },
+              {
+                "number": 15,
+                "text": "  ],"
+              },
+              {
+                "number": 16,
+                "text": "  \"activity_count\": 3,"
+              },
+              {
+                "number": 17,
+                "text": "  \"case_id\": \"OBS01\","
+              },
+              {
+                "number": 18,
+                "text": "  \"material_version\": \"0.3.1-portable-pilot\","
+              },
+              {
+                "number": 19,
+                "text": "  \"total_participants\": 39"
+              },
+              {
+                "number": 20,
+                "text": "}"
+              }
+            ],
+            "totalLines": 20,
+            "lang": "json"
+          }
+        },
+        "sourceEventSeqs": [
+          52
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 60,
+      "event": {
+        "type": "tool/call",
+        "seq": 58,
+        "time": 1793024754592,
+        "data": {
+          "turn": 1,
+          "step": 6,
+          "callId": "call_00_ET_f4Hz62GaryAn0alVWBRo7008",
+          "name": "read",
+          "arguments": "{\"file_path\": \"[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02/outputs/business_events.jsonl\"}"
+        }
+      }
+    },
+    {
+      "source_line": 61,
+      "event": {
+        "type": "tool/result",
+        "seq": 59,
+        "time": 1793024754603,
+        "data": {
+          "turn": 1,
+          "step": 6,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_ET_f4Hz62GaryAn0alVWBRo7008"
+            },
+            "toolCallId": "call_00_ET_f4Hz62GaryAn0alVWBRo7008",
+            "content": [
+              {
+                "type": "text",
+                "text": "<path>[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02/outputs/business_events.jsonl</path>\n<type>file</type>\n<content>\n1: {\"action\": \"summary\", \"case_id\": \"OBS01\", \"error_code\": null, \"exit_code\": 0, \"fields\": {\"ACTIVITY_COUNT\": 3, \"OUTPUT_PATH\": \"outputs/registration_summary.json\", \"TOTAL_PARTICIPANTS\": 39}, \"format\": null, \"invocation_id\": \"361dd0c8-d733-4dbd-ab83-f176c527b424\", \"source_kind\": \"writable_business_ledger_not_native_trace\"}\n2: {\"action\": \"verify\", \"case_id\": \"OBS01\", \"error_code\": null, \"exit_code\": 0, \"fields\": {\"CHECKED_PATH\": \"outputs/registration_summary.json\", \"CONTENT_MATCH\": true}, \"format\": null, \"invocation_id\": \"c23318fb-95ed-4d2a-b2d6-923b913d2378\", \"source_kind\": \"writable_business_ledger_not_native_trace\"}\n\n(End of file - total 2 lines)\n</content>"
+              }
+            ],
+            "isError": false,
+            "id": "9d5f2ed6-5e84-4ba0-9318-cf57860070a4"
+          },
+          "meta": {
+            "path": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02/outputs/business_events.jsonl",
+            "offset": 1,
+            "lines": [
+              {
+                "number": 1,
+                "text": "{\"action\": \"summary\", \"case_id\": \"OBS01\", \"error_code\": null, \"exit_code\": 0, \"fields\": {\"ACTIVITY_COUNT\": 3, \"OUTPUT_PATH\": \"outputs/registration_summary.json\", \"TOTAL_PARTICIPANTS\": 39}, \"format\": null, \"invocation_id\": \"361dd0c8-d733-4dbd-ab83-f176c527b424\", \"source_kind\": \"writable_business_ledger_not_native_trace\"}"
+              },
+              {
+                "number": 2,
+                "text": "{\"action\": \"verify\", \"case_id\": \"OBS01\", \"error_code\": null, \"exit_code\": 0, \"fields\": {\"CHECKED_PATH\": \"outputs/registration_summary.json\", \"CONTENT_MATCH\": true}, \"format\": null, \"invocation_id\": \"c23318fb-95ed-4d2a-b2d6-923b913d2378\", \"source_kind\": \"writable_business_ledger_not_native_trace\"}"
+              }
+            ],
+            "totalLines": 2,
+            "lang": "json"
+          }
+        },
+        "sourceEventSeqs": [
+          58
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 66,
+      "event": {
+        "type": "tool/call",
+        "seq": 64,
+        "time": 1793024755973,
+        "data": {
+          "turn": 1,
+          "step": 7,
+          "callId": "call_00_ET_vZBm7sy8AJugdxa2NI590682",
+          "name": "present",
+          "arguments": "{\"files\": [{\"path\": \"outputs/registration_summary.json\", \"description\": \"OBS01 报名汇总结果（3 个活动、共 39 人）\"}, {\"path\": \"outputs/business_events.jsonl\", \"description\": \"程序自动产生的业务事件台账（summary、verify 两条）\"}]}"
+        }
+      }
+    },
+    {
+      "source_line": 68,
+      "event": {
+        "type": "tool/result",
+        "seq": 66,
+        "time": 1793024755980,
+        "data": {
+          "turn": 1,
+          "step": 7,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_ET_vZBm7sy8AJugdxa2NI590682"
+            },
+            "toolCallId": "call_00_ET_vZBm7sy8AJugdxa2NI590682",
+            "content": [
+              {
+                "type": "text",
+                "text": "Presented [LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02/outputs/registration_summary.json\nPresented [LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02/outputs/business_events.jsonl"
+              }
+            ],
+            "isError": false,
+            "id": "35b0911c-28a0-4485-a4c8-fe490ebc9912"
+          }
+        },
+        "sourceEventSeqs": [
+          64
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 74,
+      "event": {
+        "type": "turn/end",
+        "seq": 72,
+        "time": 1793024758656,
+        "data": {
+          "turn": 1,
+          "reason": {
+            "kind": "completed"
+          }
+        }
+      }
+    }
+  ]
+}

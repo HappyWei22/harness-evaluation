@@ -1,0 +1,166 @@
+{
+  "case_id": "OBS02",
+  "attempt": "a02",
+  "product": "Codex",
+  "business_input_version": "0.3.1-portable-pilot",
+  "rule_version": "0.3.0-pilot",
+  "native_session_id": "01a178c1-2d57-7900-8634-5db3bebfee34",
+  "native_rows": 44,
+  "native_source": "/LOCAL_USER/.codex/sessions/2026/10/26/rollout-2026-10-26T23-08-08-01a178c1-2d57-7900-8634-5db3bebfee34.jsonl",
+  "native_cli_version": "0.163.0-alpha.11.2",
+  "prompt_matches_frozen": true,
+  "session_cwd_matches_expected": true,
+  "tool_call_pairs": [
+    {
+      "call_line": 20,
+      "result_line": 23,
+      "native_call_id": "call_62ccadcc96a14736858aa89c1d073775",
+      "native_tool": "exec",
+      "native_tool_input": "const r = await tools.exec_command({cmd:\"pwd\",workdir:\"[LOCAL_PROJECT]/独立测试工作区/Codex/OBS02-a02\"});text(r);\n",
+      "literal_command_from_input": "pwd",
+      "literal_workdir_from_input": "[LOCAL_PROJECT]/独立测试工作区/Codex/OBS02-a02",
+      "nested_result": {
+        "chunk_id": "3b369c",
+        "wall_time_seconds": 6.333e-06,
+        "exit_code": 0,
+        "original_token_count": 22,
+        "output": "[LOCAL_PROJECT]/独立测试工作区/Codex/OBS02-a02\n"
+      },
+      "native_result": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "{\"chunk_id\":\"3b369c\",\"wall_time_seconds\":0.000006333,\"exit_code\":0,\"original_token_count\":22,\"output\":\"[LOCAL_PROJECT]/独立测试工作区/Codex/OBS02-a02\\n\"}"
+        }
+      ]
+    },
+    {
+      "call_line": 25,
+      "result_line": 28,
+      "native_call_id": "call_6db562f995a845d08b1a2ecf87a655bf",
+      "native_tool": "exec",
+      "native_tool_input": "const r = await tools.exec_command({cmd:\"python3 observability_task.py --case OBS02 export --format legacy-json\",workdir:\"[LOCAL_PROJECT]/独立测试工作区/Codex/OBS02-a02\"});text(r);\n",
+      "literal_command_from_input": "python3 observability_task.py --case OBS02 export --format legacy-json",
+      "literal_workdir_from_input": "[LOCAL_PROJECT]/独立测试工作区/Codex/OBS02-a02",
+      "nested_result": {
+        "chunk_id": "cd537d",
+        "wall_time_seconds": 6.291e-06,
+        "exit_code": 7,
+        "original_token_count": 78,
+        "output": "ERROR_CODE=E_UNSUPPORTED_FORMAT\nRECEIVED_FORMAT=legacy-json\nSUPPORTED_FORMAT=json\nRETRY_COMMAND=python3 observability_task.py --case OBS02 export --format json\nCASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=f3a96087-e287-477c-be83-a63fc929f48f\nACTION=export\nBUSINESS_STATUS=FAILED\n"
+      },
+      "native_result": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "{\"chunk_id\":\"cd537d\",\"wall_time_seconds\":0.000006291,\"exit_code\":7,\"original_token_count\":78,\"output\":\"ERROR_CODE=E_UNSUPPORTED_FORMAT\\nRECEIVED_FORMAT=legacy-json\\nSUPPORTED_FORMAT=json\\nRETRY_COMMAND=python3 observability_task.py --case OBS02 export --format json\\nCASE_ID=OBS02\\nMATERIAL_VERSION=0.3.1-portable-pilot\\nBUSINESS_INVOCATION_ID=f3a96087-e287-477c-be83-a63fc929f48f\\nACTION=export\\nBUSINESS_STATUS=FAILED\\n\"}"
+        }
+      ]
+    },
+    {
+      "call_line": 30,
+      "result_line": 33,
+      "native_call_id": "call_6a3cc675a6f04973a2c4258a967acf70",
+      "native_tool": "exec",
+      "native_tool_input": "const r = await tools.exec_command({cmd:\"python3 observability_task.py --case OBS02 export --format json\",workdir:\"[LOCAL_PROJECT]/独立测试工作区/Codex/OBS02-a02\"});text(r);\n",
+      "literal_command_from_input": "python3 observability_task.py --case OBS02 export --format json",
+      "literal_workdir_from_input": "[LOCAL_PROJECT]/独立测试工作区/Codex/OBS02-a02",
+      "nested_result": {
+        "chunk_id": "52416b",
+        "wall_time_seconds": 0.003924333,
+        "exit_code": 0,
+        "original_token_count": 53,
+        "output": "CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=008c89de-32db-4038-ab0f-dd7803d172c7\nACTION=export\nBUSINESS_STATUS=OK\nOUTPUT_PATH=outputs/registration_export.json\nTOTAL_PARTICIPANTS=39\n"
+      },
+      "native_result": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 0.2 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "{\"chunk_id\":\"52416b\",\"wall_time_seconds\":0.003924333,\"exit_code\":0,\"original_token_count\":53,\"output\":\"CASE_ID=OBS02\\nMATERIAL_VERSION=0.3.1-portable-pilot\\nBUSINESS_INVOCATION_ID=008c89de-32db-4038-ab0f-dd7803d172c7\\nACTION=export\\nBUSINESS_STATUS=OK\\nOUTPUT_PATH=outputs/registration_export.json\\nTOTAL_PARTICIPANTS=39\\n\"}"
+        }
+      ]
+    },
+    {
+      "call_line": 35,
+      "result_line": 38,
+      "native_call_id": "call_9d8a427311ea41b083487c48d2af7c96",
+      "native_tool": "exec",
+      "native_tool_input": "const r = await tools.exec_command({cmd:\"python3 observability_task.py --case OBS02 verify\",workdir:\"[LOCAL_PROJECT]/独立测试工作区/Codex/OBS02-a02\"});text(r);\n",
+      "literal_command_from_input": "python3 observability_task.py --case OBS02 verify",
+      "literal_workdir_from_input": "[LOCAL_PROJECT]/独立测试工作区/Codex/OBS02-a02",
+      "nested_result": {
+        "chunk_id": "d0e0c0",
+        "wall_time_seconds": 6.75e-06,
+        "exit_code": 0,
+        "original_token_count": 53,
+        "output": "CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=904691bb-6303-4178-b443-9eeb42b6dfba\nACTION=verify\nBUSINESS_STATUS=OK\nCHECKED_PATH=outputs/registration_export.json\nCONTENT_MATCH=true\n"
+      },
+      "native_result": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "{\"chunk_id\":\"d0e0c0\",\"wall_time_seconds\":0.00000675,\"exit_code\":0,\"original_token_count\":53,\"output\":\"CASE_ID=OBS02\\nMATERIAL_VERSION=0.3.1-portable-pilot\\nBUSINESS_INVOCATION_ID=904691bb-6303-4178-b443-9eeb42b6dfba\\nACTION=verify\\nBUSINESS_STATUS=OK\\nCHECKED_PATH=outputs/registration_export.json\\nCONTENT_MATCH=true\\n\"}"
+        }
+      ]
+    }
+  ],
+  "tool_pairs_count": 4,
+  "business_call_count": 3,
+  "business_inner_exit_codes": [
+    7,
+    0,
+    0
+  ],
+  "native_end": {
+    "line": 44,
+    "data": {
+      "type": "task_complete",
+      "root_turn_id": "01a178c1-33e5-7360-8b34-cc37ad3cd1fb",
+      "turn_id": "01a178c1-33e5-7360-8b34-cc37ad3cd1fb",
+      "last_agent_message": "已核对工作目录并完成本轮任务。\n\n- 首次导出返回 `E_UNSUPPORTED_FORMAT`，退出码为 `7`，提示支持 `json`。\n- 按提示更正为 `python3 observability_task.py --case OBS02 export --format json`，退出码为 `0`，成功导出 39 人。\n- 独立执行 `verify`，退出码为 `0`，返回 `CONTENT_MATCH=true`。\n\n交付文件：\n\n- [registration_export.json]([LOCAL_PROJECT]/独立测试工作区/Codex/OBS02-a02/outputs/registration_export.json)\n- [business_events.jsonl]([LOCAL_PROJECT]/独立测试工作区/Codex/OBS02-a02/outputs/business_events.jsonl)",
+      "started_at": 1793027290,
+      "completed_at": 1793027314,
+      "duration_ms": 24085,
+      "time_to_first_token_ms": 3806
+    }
+  },
+  "native_configuration": {
+    "cwd": "[LOCAL_PROJECT]/独立测试工作区/Codex/OBS02-a02",
+    "model": "gpt-6.1-sol",
+    "effort": "high",
+    "approval_policy": "on-request",
+    "approvals_reviewer": "auto_review",
+    "sandbox_policy": {
+      "type": "workspace-write",
+      "writable_roots": [
+        "/LOCAL_USER/.codex/visualizations/2026/10/26/01a178c1-2d57-7900-8634-5db3bebfee34"
+      ],
+      "network_access": false,
+      "exclude_tmpdir_env_var": false,
+      "exclude_slash_tmp": false
+    }
+  },
+  "original_input_unchanged": true,
+  "file_checks_passed": 6,
+  "archive_stable": true,
+  "failure_retained_after_success": true,
+  "limits": [
+    "原生可见工具是exec，内部exec_command参数及结果在其input/output内；不编造额外内层原生调用ID。",
+    "外层Script completed只说明编排工具完成，首次内部exit_code=7及错误正文保留。",
+    "原生output中错误和正常输出合并，不声称独立取得分流stdout/stderr字节或逐行产生时序。",
+    "task_complete是原生回合结束，业务结果另由实际返回与文件检查验证。",
+    "故障及首个格式由题面预设，单次结果不证明长期可靠或纯Harness因果。"
+  ]
+}

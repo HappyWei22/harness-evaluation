@@ -1,0 +1,367 @@
+{
+  "dimension": "可观测性",
+  "rule_version": "0.3.0-pilot",
+  "date": "2026-10-26",
+  "state": "新版三题已完成并归档",
+  "purpose": "五产品同版DSH新版实测，旧版成绩不复用",
+  "product": "DSH",
+  "model_display_name": null,
+  "product_version": null,
+  "account_permissions": null,
+  "rules": "../../评测设计.md",
+  "max_score": 10,
+  "basic_max_score": 2,
+  "complex_max_score": 8,
+  "summary": {
+    "confirmed_pass_points": 10,
+    "confirmed_fail_points": 0,
+    "unknown_points": 0,
+    "not_triggered_points": 0,
+    "not_run_points": 0
+  },
+  "items": [
+    {
+      "id": "O01",
+      "name": "正常任务的原生记录可定位",
+      "group": "OBS01",
+      "category": "基础",
+      "max_score": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_run_id": "DSH-OBS01-a02",
+      "native_evidence": [
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:30",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:32",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:33",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:38",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:40",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:41",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:74"
+      ],
+      "independent_reference": [
+        "运行前快照.json",
+        "阶段01-完成后只读取证/文件独立核对.json"
+      ],
+      "capture_method": "复制产品本地自动持久化日志并解压复读",
+      "observation_layer": "本地原生会话记录",
+      "reason": "原生题面与新版冻结提示词一致，第30/33行summary和38/41行verify独立配对，原生作业退出0；第74行记录completed，文件6项检查通过。",
+      "limitations": "单次先行试测；界面未额外重开，本题不以此为必要条件；保留额外预检失败与stderr重定向事实。",
+      "evidence_base": "../../OBS01-正常任务记录取回与保存/运行记录/DSH-a02"
+    },
+    {
+      "id": "O02",
+      "name": "原生记录可保留复核",
+      "group": "OBS01",
+      "category": "基础",
+      "max_score": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_run_id": "DSH-OBS01-a02",
+      "native_evidence": [
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl.zstd",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl",
+        "阶段01-完成后只读取证/归档清单.json"
+      ],
+      "independent_reference": [
+        "运行前快照.json",
+        "阶段01-完成后只读取证/文件独立核对.json"
+      ],
+      "capture_method": "复制产品本地自动持久化日志并解压复读",
+      "observation_layer": "本地原生会话记录",
+      "reason": "DSH自动持久化的压缩原生日志已原样归档并解压复读，题面、输入、返回及终态仍可取回；源日志与工作区归档前后指纹一致。按规则的保存副本路径判定，不要求第一题额外重开。",
+      "limitations": "单次先行试测；界面未额外重开，本题不以此为必要条件；保留额外预检失败与stderr重定向事实。",
+      "evidence_base": "../../OBS01-正常任务记录取回与保存/运行记录/DSH-a02"
+    },
+    {
+      "id": "O03",
+      "name": "失败调用的实际输入可查",
+      "group": "OBS02",
+      "category": "复杂",
+      "max_score": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_run_id": "DSH-OBS02-a02",
+      "native_evidence": [
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:30",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:33"
+      ],
+      "independent_reference": [
+        "运行前快照.json",
+        "阶段01-完成后只读取证/文件独立核对.json"
+      ],
+      "capture_method": "原样保存本地自动持久化原生日志，解压复读",
+      "observation_layer": "本地原生会话记录",
+      "reason": "第30行保留首次实际调用legacy-json参数、工具名及a02工作目录。",
+      "limitations": "仅本次受控场景的记录可复核能力，不推广到长期稳定或纯Harness归因。",
+      "evidence_base": "../../OBS02-报错与重试过程追踪/运行记录/DSH-a02"
+    },
+    {
+      "id": "O04",
+      "name": "原始失败结果可查",
+      "group": "OBS02",
+      "category": "复杂",
+      "max_score": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_run_id": "DSH-OBS02-a02",
+      "native_evidence": [
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:32",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:33"
+      ],
+      "independent_reference": [
+        "运行前快照.json",
+        "阶段01-完成后只读取证/文件独立核对.json"
+      ],
+      "capture_method": "原样保存本地自动持久化原生日志，解压复读",
+      "observation_layer": "本地原生会话记录",
+      "reason": "第33行保留失败状态、格式错误、接收参数、合法格式、更正命令及退出7，第32行作业确认退出7。",
+      "limitations": "仅本次受控场景的记录可复核能力，不推广到长期稳定或纯Harness归因。",
+      "evidence_base": "../../OBS02-报错与重试过程追踪/运行记录/DSH-a02"
+    },
+    {
+      "id": "O05",
+      "name": "不同尝试可区分",
+      "group": "OBS02",
+      "category": "复杂",
+      "max_score": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_run_id": "DSH-OBS02-a02",
+      "native_evidence": [
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:30",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:33",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:38",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:41"
+      ],
+      "independent_reference": [
+        "运行前快照.json",
+        "阶段01-完成后只读取证/文件独立核对.json"
+      ],
+      "capture_method": "原样保存本地自动持久化原生日志，解压复读",
+      "observation_layer": "本地原生会话记录",
+      "reason": "30/33行与38/41行属于不同callId，两次输入与顺序明确；先前失败未被后续成功覆盖。",
+      "limitations": "仅本次受控场景的记录可复核能力，不推广到长期稳定或纯Harness归因。",
+      "evidence_base": "../../OBS02-报错与重试过程追踪/运行记录/DSH-a02"
+    },
+    {
+      "id": "O06",
+      "name": "调用与结果可对应",
+      "group": "OBS02",
+      "category": "复杂",
+      "max_score": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_run_id": "DSH-OBS02-a02",
+      "native_evidence": [
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:30",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:32",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:33",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:38",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:40",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:41",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:46",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:48",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:49",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:62",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:64"
+      ],
+      "independent_reference": [
+        "运行前快照.json",
+        "阶段01-完成后只读取证/文件独立核对.json"
+      ],
+      "capture_method": "原样保存本地自动持久化原生日志，解压复读",
+      "observation_layer": "本地原生会话记录",
+      "reason": "全部6组调用与返回可按callId对应；三次关键业务调用分别为30/33、38/41、46/49行，作业退出7/0/0，输出由present与实物核对支持。",
+      "limitations": "仅本次受控场景的记录可复核能力，不推广到长期稳定或纯Harness归因。",
+      "evidence_base": "../../OBS02-报错与重试过程追踪/运行记录/DSH-a02"
+    },
+    {
+      "id": "O07",
+      "name": "部分成功与连续失败链可还原",
+      "group": "OBS03",
+      "category": "复杂",
+      "max_score": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_run_id": "DSH-OBS03-a02",
+      "native_evidence": [
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:36",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:38",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:39",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:44",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:46",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:47",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:52",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:54",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:55"
+      ],
+      "independent_reference": [
+        "运行前快照.json",
+        "阶段01-完成后只读取证/文件独立核对.json",
+        "轨迹与声明核对.json"
+      ],
+      "capture_method": "原样保存DSH本地持久化日志并解压复读",
+      "observation_layer": "本地原生会话记录",
+      "reason": "A的36/39行成功、B的44/47与52/55两次失败均有独立调用和返回，关联作业退出0/7/9，顺序、输入和产物归属可还原。",
+      "limitations": "仅本轮已核对执行范围；不声称证明所有隐藏后台未执行C。",
+      "evidence_base": "../../OBS03-部分完成与受阻结束追踪/运行记录/DSH-a02"
+    },
+    {
+      "id": "O08",
+      "name": "后续步骤执行状态可区分",
+      "group": "OBS03",
+      "category": "复杂",
+      "max_score": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_run_id": "DSH-OBS03-a02",
+      "native_evidence": [
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:21",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:24",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:30",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:31",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:36",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:39",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:44",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:47",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:52",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:55",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:60",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:63",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:68",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:71",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:76",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:78",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:84"
+      ],
+      "independent_reference": [
+        "运行前快照.json",
+        "阶段01-完成后只读取证/文件独立核对.json",
+        "轨迹与声明核对.json"
+      ],
+      "capture_method": "原样保存DSH本地持久化日志并解压复读",
+      "observation_layer": "本地原生会话记录",
+      "reason": "枚举本轮连续seq 0—82中全部8组调用及闭合6个作业，没有package请求；与初态快照、未改写的无隐式C执行程序及终态实物交叉核对，支持已覆盖本轮执行链内C未开始，不是只凭账本没有C或文件不存在。",
+      "limitations": "仅本轮已核对执行范围；不声称证明所有隐藏后台未执行C。",
+      "evidence_base": "../../OBS03-部分完成与受阻结束追踪/运行记录/DSH-a02"
+    },
+    {
+      "id": "O09",
+      "name": "受阻结束的原生状态可追溯",
+      "group": "OBS03",
+      "category": "复杂",
+      "max_score": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_run_id": "DSH-OBS03-a02",
+      "native_evidence": [
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:36",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:39",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:44",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:47",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:52",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:55",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:60",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:63",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:82",
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl:84"
+      ],
+      "independent_reference": [
+        "运行前快照.json",
+        "阶段01-完成后只读取证/文件独立核对.json",
+        "轨迹与声明核对.json"
+      ],
+      "capture_method": "原样保存DSH本地持久化日志并解压复读",
+      "observation_layer": "本地原生会话记录",
+      "reason": "第84行原生turn/end=completed，归属当前任务；A成功与B错误7/9、C当前执行范围内未开始、status仅业务状态可分别查到，不把回合结束混成业务成功。",
+      "limitations": "仅本轮已核对执行范围；不声称证明所有隐藏后台未执行C。",
+      "evidence_base": "../../OBS03-部分完成与受阻结束追踪/运行记录/DSH-a02"
+    },
+    {
+      "id": "O10",
+      "name": "重新打开后复杂历史仍完整",
+      "group": "OBS03",
+      "category": "复杂",
+      "max_score": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_run_id": "DSH-OBS03-a02",
+      "native_evidence": [
+        "阶段01-完成后只读取证/原生记录/session.v4.jsonl",
+        "阶段02-重开后只读取证/原生记录/session.v4.jsonl",
+        "阶段02-重开后只读取证/归档清单.json"
+      ],
+      "independent_reference": [
+        "重开人工观察与前后核对.json"
+      ],
+      "capture_method": "原样保存DSH本地持久化日志并解压复读",
+      "observation_layer": "本地原生会话记录",
+      "reason": "用户确认切换并重开后内容与先前一致；反馈后原生记录仍为84行，事件逐项一致，原始题面、A成功、B两次失败、C状态依据及原生终态均保留，3份工作区文件指纹不变。",
+      "limitations": "界面操作与可见性依据用户人工反馈，助手未直接查看；日志一致性由评测助手只读核对，不冒充独立第二位复核。",
+      "evidence_base": "../../OBS03-部分完成与受阻结束追踪/运行记录/DSH-a02"
+    }
+  ],
+  "note": "复用历史运行需填写用途和原运行ID；未知、未触发和未运行不得填0或换算为完整总分。记录忠实与预定场景是否覆盖分别登记；原生运行终态与业务受阻状态分开。",
+  "groups": [
+    {
+      "id": "OBS01",
+      "name": "正常任务记录取回与保存",
+      "max_score": 2,
+      "expected_outcome": "正常完成"
+    },
+    {
+      "id": "OBS02",
+      "name": "报错与重试过程追踪",
+      "max_score": 4,
+      "expected_outcome": "重试后完成"
+    },
+    {
+      "id": "OBS03",
+      "name": "部分完成与受阻结束追踪",
+      "max_score": 4,
+      "expected_outcome": "A成功、B重试仍失败、C依赖B未开始，结束当前执行并交接受阻情况"
+    }
+  ],
+  "native_run_state": null,
+  "business_state": null,
+  "expected_outcome_coverage": null,
+  "business_input_version": "0.3.1-portable-pilot",
+  "product_runs": 3,
+  "formal_score": null,
+  "is_pure_harness_causal_score": false,
+  "case_results": [
+    {
+      "case_id": "OBS01",
+      "attempt": "a02",
+      "product_runs": 1,
+      "confirmed_pass_points": 2,
+      "source": "../../OBS01-正常任务记录取回与保存/运行记录/DSH-a02/评分与归因.json"
+    },
+    {
+      "case_id": "OBS02",
+      "attempt": "a02",
+      "product_runs": 1,
+      "confirmed_pass_points": 4,
+      "source": "../../OBS02-报错与重试过程追踪/运行记录/DSH-a02/评分与归因.json"
+    },
+    {
+      "case_id": "OBS03",
+      "attempt": "a02",
+      "product_runs": 1,
+      "confirmed_pass_points": 4,
+      "unknown_points": 0,
+      "source": "../../OBS03-部分完成与受阻结束追踪/运行记录/DSH-a02/评分与归因.json",
+      "ui_reopen_observed": true,
+      "ui_reopen_observation_source": "用户反馈＋原生记录前后对照"
+    }
+  ],
+  "old_scores_reused": false,
+  "limits": [
+    "输入0.3.1-portable-pilot，评分0.3.0-pilot，三题各一次新版运行。",
+    "10分表示本轮10项记录可复核性通过，不证明业务全成功、所有约束均遵守、长期稳定或纯Harness组件优势。",
+    "OBS01额外预检退出1和stderr重定向仍保留为单独观察。",
+    "OBS03的C未开始结论限定本轮已核对的执行链，不证明不可见后台全局未执行。",
+    "O10界面重开可见性来自用户人工反馈，助手未直接查看；原生记录一致性由助手只读核对。",
+    "没有第二位独立复核或系统性原生评分样例校准。"
+  ]
+}

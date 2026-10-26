@@ -1,0 +1,29 @@
+{
+  "source_url": "[REDACTED_URL]",
+  "main_html_bytes": 164254,
+  "native_tool_cards": 6,
+  "think_blocks": 4,
+  "downloaded_summary_matches_expected": true,
+  "downloaded_ledger_sequence": [
+    [
+      "summary",
+      0
+    ],
+    [
+      "verify",
+      0
+    ]
+  ],
+  "business_invocation_ids": [
+    "273bd895-ed35-44eb-9376-fc4ea8374515",
+    "76effa57-47bd-45e3-8c32-24543a872518"
+  ],
+  "ids_appear_in_final_reply": true,
+  "original_tool_result_bodies_in_saved_cards": false,
+  "cloud_script_hash_independently_verified": false,
+  "limits": [
+    "原始下载件的内容已核对；它们不是产品原生工具返回",
+    "卡片cmpid不是原生tool_call_id；status不是进程退出码",
+    "思考和最终总结不能替代原始返回；不执行网页脚本，不访问远程页面"
+  ]
+}

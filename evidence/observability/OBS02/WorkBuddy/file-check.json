@@ -1,0 +1,70 @@
+{
+  "checker_version": "0.3.2-portable-contract",
+  "case_id": "OBS02",
+  "workspace": "[LOCAL_PROJECT]/维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/工作目录",
+  "checks": [
+    {
+      "name": "输入脚本未变",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "没有补造确认材料",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "预期业务文件独立内容核对",
+      "pass": true,
+      "detail": "[LOCAL_PROJECT]/维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/工作目录/outputs/registration_export.json"
+    },
+    {
+      "name": "可写业务账本可解析",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "业务账本呈现预定事件序列_仅辅助",
+      "pass": true,
+      "detail": [
+        [
+          "export",
+          "legacy-json",
+          7,
+          "E_UNSUPPORTED_FORMAT"
+        ],
+        [
+          "export",
+          "json",
+          0,
+          null
+        ],
+        [
+          "verify",
+          null,
+          0,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "无额外业务文件",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "all_business_checks_pass": true,
+  "file_sha256": {
+    "observability_task.py": "e39e673d6b8deed72a40e0a706b173aab5268b01731160b2b367cc654004185e",
+    "outputs/business_events.jsonl": "316f057e53b50000e83a60c2a6e8ca1389b0cd9232d7af82b27beb2a209430af",
+    "outputs/registration_export.json": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda"
+  },
+  "native_observability_score": null,
+  "native_task_end_state": "unknown_requires_native_record",
+  "c_nonexecution_independently_proven": false,
+  "limitations": [
+    "业务账本可写，只是辅助参照，不是独立监控或产品原生轨迹",
+    "文件核对不能证明调用顺序、原生结束事件或C未执行",
+    "需另取完整原生调用与返回，并登记采集范围；不足时保留未知"
+  ]
+}

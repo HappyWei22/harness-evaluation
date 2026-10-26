@@ -1,0 +1,237 @@
+{
+  "format": "native-event-excerpt-v1",
+  "original_line_count": 39,
+  "original_sha256": "c5f3822c1bd004f7dcd0bd0fcc7d3a88fb1efaeaff444856aaa7a7870893b78b",
+  "scope": "仅必要工具输入、返回及可取得的结束事件；上下文、系统指令、思考、重放和不相关字段不公开；有原始行号不表示完整会话。",
+  "records": [
+    {
+      "source_line": 1,
+      "event": {
+        "type": "session_meta",
+        "payload": {
+          "id": "01a178bb-b9b1-7e52-9252-edcf89f7dfc8",
+          "cwd": "[LOCAL_PROJECT]/独立测试工作区/Codex/OBS01-a02",
+          "cli_version": "0.163.0-alpha.11.2",
+          "originator": "Codex Desktop",
+          "source": "vscode",
+          "model_provider": "openai"
+        }
+      }
+    },
+    {
+      "source_line": 2,
+      "event": {
+        "timestamp": "2026-10-26T15:02:13.021Z",
+        "ordinal": 1,
+        "type": "event_msg",
+        "payload": {
+          "type": "task_started",
+          "turn_attribution": {
+            "turn_id": "01a178bb-c113-71f3-8a5f-d0fc41e338b6",
+            "turn_trigger": "composer",
+            "parent_turn_id": null,
+            "initiating_agent_path": null,
+            "root_turn_id": "01a178bb-c113-71f3-8a5f-d0fc41e338b6"
+          },
+          "turn_id": "01a178bb-c113-71f3-8a5f-d0fc41e338b6",
+          "root_turn_id": "01a178bb-c113-71f3-8a5f-d0fc41e338b6",
+          "started_at": 1793026933,
+          "model_context_window": 475000,
+          "collaboration_mode_kind": "default"
+        }
+      }
+    },
+    {
+      "source_line": 10,
+      "event": {
+        "type": "turn_context",
+        "payload": {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "approval_policy": "on-request",
+          "approvals_reviewer": "auto_review",
+          "sandbox_policy": {
+            "type": "workspace-write",
+            "writable_roots": [
+              "/LOCAL_USER/.codex/visualizations/2026/10/26/01a178bb-b9b1-7e52-9252-edcf89f7dfc8"
+            ],
+            "network_access": false,
+            "exclude_tmpdir_env_var": false,
+            "exclude_slash_tmp": false
+          }
+        }
+      }
+    },
+    {
+      "source_line": 20,
+      "event": {
+        "timestamp": "2026-10-26T15:02:19.799Z",
+        "ordinal": 19,
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_06476f0f65a50dc0016adf6b7afc488191be2265e621a75bb8",
+          "status": "completed",
+          "call_id": "call_8a6ffe55cea04b429f22bb42ead6313c",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"pwd\",workdir:\"[LOCAL_PROJECT]/独立测试工作区/Codex/OBS01-a02\",max_output_tokens:10000});text(r);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a178bb-c113-71f3-8a5f-d0fc41e338b6",
+            "create_time": 1793026938.992503
+          }
+        }
+      }
+    },
+    {
+      "source_line": 23,
+      "event": {
+        "timestamp": "2026-10-26T15:02:19.984Z",
+        "ordinal": 22,
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a178bb-dc50-75e2-87f3-29a8a351f60c",
+          "call_id": "call_8a6ffe55cea04b429f22bb42ead6313c",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"chunk_id\":\"646a01\",\"wall_time_seconds\":0.000009417,\"exit_code\":0,\"original_token_count\":22,\"output\":\"[LOCAL_PROJECT]/独立测试工作区/Codex/OBS01-a02\\n\"}"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a178bb-c113-71f3-8a5f-d0fc41e338b6",
+            "create_time": 1793026939.984679
+          }
+        },
+        "metadata": {
+          "client_authored": false,
+          "fallback_token_limit_override": 12000
+        }
+      }
+    },
+    {
+      "source_line": 25,
+      "event": {
+        "timestamp": "2026-10-26T15:02:43.808Z",
+        "ordinal": 24,
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_06476f0f65a50dc0016adf6b92b3ec81919c8d3274070b8f0a",
+          "status": "completed",
+          "call_id": "call_2e2c481572fe46c0852f9e98931e8527",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"python3 observability_task.py --case OBS01 summary\",workdir:\"[LOCAL_PROJECT]/独立测试工作区/Codex/OBS01-a02\",max_output_tokens:10000});text(r);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a178bb-c113-71f3-8a5f-d0fc41e338b6",
+            "create_time": 1793026962.712892
+          }
+        }
+      }
+    },
+    {
+      "source_line": 28,
+      "event": {
+        "timestamp": "2026-10-26T15:02:44.049Z",
+        "ordinal": 27,
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a178bc-3a51-7341-ada4-f323e11727ba",
+          "call_id": "call_2e2c481572fe46c0852f9e98931e8527",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.2 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"chunk_id\":\"21b7c8\",\"wall_time_seconds\":0.013581208,\"exit_code\":0,\"original_token_count\":58,\"output\":\"CASE_ID=OBS01\\nMATERIAL_VERSION=0.3.1-portable-pilot\\nBUSINESS_INVOCATION_ID=b6ae4baf-8d07-4022-be2c-d792f1984975\\nACTION=summary\\nBUSINESS_STATUS=OK\\nOUTPUT_PATH=outputs/registration_summary.json\\nACTIVITY_COUNT=3\\nTOTAL_PARTICIPANTS=39\\n\"}"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a178bb-c113-71f3-8a5f-d0fc41e338b6",
+            "create_time": 1793026964.049033
+          }
+        },
+        "metadata": {
+          "client_authored": false,
+          "fallback_token_limit_override": 12000
+        }
+      }
+    },
+    {
+      "source_line": 30,
+      "event": {
+        "timestamp": "2026-10-26T15:02:48.126Z",
+        "ordinal": 29,
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_06476f0f65a50dc0016adf6b974f488191a9129c643c27c564",
+          "status": "completed",
+          "call_id": "call_b92eedbf5dbd4aa891a98d4a144f1ffb",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"python3 observability_task.py --case OBS01 verify\",workdir:\"[LOCAL_PROJECT]/独立测试工作区/Codex/OBS01-a02\",max_output_tokens:10000});text(r);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a178bb-c113-71f3-8a5f-d0fc41e338b6",
+            "create_time": 1793026967.3191202
+          }
+        }
+      }
+    },
+    {
+      "source_line": 33,
+      "event": {
+        "timestamp": "2026-10-26T15:02:48.249Z",
+        "ordinal": 32,
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a178bc-4ab8-7482-8704-729385b6c1d5",
+          "call_id": "call_b92eedbf5dbd4aa891a98d4a144f1ffb",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"chunk_id\":\"a492bf\",\"wall_time_seconds\":0.000006292,\"exit_code\":0,\"original_token_count\":53,\"output\":\"CASE_ID=OBS01\\nMATERIAL_VERSION=0.3.1-portable-pilot\\nBUSINESS_INVOCATION_ID=efef949a-e9a6-47c1-835c-97d83efeaa6a\\nACTION=verify\\nBUSINESS_STATUS=OK\\nCHECKED_PATH=outputs/registration_summary.json\\nCONTENT_MATCH=true\\n\"}"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a178bb-c113-71f3-8a5f-d0fc41e338b6",
+            "create_time": 1793026968.248965
+          }
+        },
+        "metadata": {
+          "client_authored": false,
+          "fallback_token_limit_override": 12000
+        }
+      }
+    },
+    {
+      "source_line": 39,
+      "event": {
+        "timestamp": "2026-10-26T15:02:53.449Z",
+        "ordinal": 38,
+        "type": "event_msg",
+        "payload": {
+          "type": "task_complete",
+          "root_turn_id": "01a178bb-c113-71f3-8a5f-d0fc41e338b6",
+          "turn_id": "01a178bb-c113-71f3-8a5f-d0fc41e338b6",
+          "last_agent_message": "已核对工作目录，并依次独立执行两条命令，均退出码为 `0`、`BUSINESS_STATUS=OK`。汇总为 3 项活动、39 名参与者；核验返回 `CONTENT_MATCH=true`。\n\n交付文件：\n\n- [registration_summary.json]([LOCAL_PROJECT]/独立测试工作区/Codex/OBS01-a02/outputs/registration_summary.json)\n- [business_events.jsonl]([LOCAL_PROJECT]/独立测试工作区/Codex/OBS01-a02/outputs/business_events.jsonl)",
+          "started_at": 1793026933,
+          "completed_at": 1793026973,
+          "duration_ms": 40429,
+          "time_to_first_token_ms": 5231
+        }
+      }
+    }
+  ]
+}

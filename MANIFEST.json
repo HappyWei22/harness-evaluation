@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-23",
+  "date": "2026-10-26",
   "scope": "本公开包实际文件指纹，排除本清单自身。",
   "files": [
     {
@@ -14,18 +14,18 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 7991,
-      "sha256": "ccc93b6a040070eefe80258078f56db3480126869fa74db89368c9590985d99d"
+      "bytes": 8995,
+      "sha256": "41c2b0c6c1a70fada9fb45467b889a7c9f7c11277ab936728499171957f4d98f"
     },
     {
       "path": "PROVENANCE.json",
-      "bytes": 334332,
-      "sha256": "dd670e39667b0d8282b68ff964240c7cb3659feb8aa7becd44163705cc2bef57"
+      "bytes": 391963,
+      "sha256": "a8de08a73e16b91ced5a978a721246dd68bb530373d332a656dea75edc1728e0"
     },
     {
       "path": "README.md",
-      "bytes": 13489,
-      "sha256": "05309d626d589e2fdc136c5dd791408f97cda313350dabc3ca9c1200db065300"
+      "bytes": 14578,
+      "sha256": "ee46ca2fbca3d1c3ee32173a0a005f55f08784e98a4d3ce3f11ad9d908046766"
     },
     {
       "path": "cases/ART01/README.md",
@@ -201,6 +201,101 @@
       "path": "cases/FB03/rules.md",
       "bytes": 7015,
       "sha256": "187e4cc68abf6f4c875109ede1bacd1500c5af16a8c35a3a2c9814e87616ae82"
+    },
+    {
+      "path": "cases/OBS01/README.md",
+      "bytes": 905,
+      "sha256": "ab541cb597575dd48bda424c6440b7cdaf9c5eebf198b58fe747fd23f20690fc"
+    },
+    {
+      "path": "cases/OBS01/input/observability_task.py",
+      "bytes": 7923,
+      "sha256": "e39e673d6b8deed72a40e0a706b173aab5268b01731160b2b367cc654004185e"
+    },
+    {
+      "path": "cases/OBS01/prompts/Codex.md",
+      "bytes": 1831,
+      "sha256": "9dd88804491c3c3bda34ebea771d9d9767e2b1d5af440f9806c55f03a4db9b8b"
+    },
+    {
+      "path": "cases/OBS01/prompts/DSH.md",
+      "bytes": 1829,
+      "sha256": "818d58f2afbbd29dd1d14b459256bb0b465f25d8bf6873d22dd956735f02f2ca"
+    },
+    {
+      "path": "cases/OBS01/prompts/Doubao.md",
+      "bytes": 1838,
+      "sha256": "a3eac7c96edad49067bc8648563d3ba853370ee94de13a475e55829aeb471508"
+    },
+    {
+      "path": "cases/OBS01/prompts/WorkBuddy.md",
+      "bytes": 1835,
+      "sha256": "dda1347c5cca10a44267df37c792a6f6ab2f03f64da85ed1f440ae5999fdc2c7"
+    },
+    {
+      "path": "cases/OBS01/prompts/Yuanbao.md",
+      "bytes": 2126,
+      "sha256": "c9ab8358539429ccb664e5fc5b8a7b2cafa2a1a45d1279f6b6a39dec0ecab7a6"
+    },
+    {
+      "path": "cases/OBS02/README.md",
+      "bytes": 956,
+      "sha256": "0648f7d9b6a11dd5682f70acfa335ee0ea9f421cc2adec66d5d6c0f5e61f63ae"
+    },
+    {
+      "path": "cases/OBS02/prompts/Codex.md",
+      "bytes": 2124,
+      "sha256": "e819edd33c4203647262024ca3a4d9b4a6c7fb093cf1681194af8a7f42fe2d6d"
+    },
+    {
+      "path": "cases/OBS02/prompts/DSH.md",
+      "bytes": 2122,
+      "sha256": "1a6fb19056919a6939bcbbc259742aa42859da5589074b8e7f0b75fb5777356d"
+    },
+    {
+      "path": "cases/OBS02/prompts/Doubao.md",
+      "bytes": 2131,
+      "sha256": "98239cb5936ac1838d7bcc97f846f8c043872b4f0d69f19f208993b06e83c025"
+    },
+    {
+      "path": "cases/OBS02/prompts/WorkBuddy.md",
+      "bytes": 2128,
+      "sha256": "523e6f25495f707cd2f3ed48e78223ca0a92cb6c22d8c67d2a8b5081a60790f8"
+    },
+    {
+      "path": "cases/OBS02/prompts/Yuanbao.md",
+      "bytes": 2419,
+      "sha256": "9097e9b8f83ef9568ca0b32b40ffa3ce21c448cb449537d2456ba4212b98741c"
+    },
+    {
+      "path": "cases/OBS03/README.md",
+      "bytes": 1022,
+      "sha256": "983bdfea78415b60925c41c8a4bdac63bed7d91697a5c305573e9dffa6ca40ab"
+    },
+    {
+      "path": "cases/OBS03/prompts/Codex.md",
+      "bytes": 2858,
+      "sha256": "32d1974cb685a9204be4fbe961679316bc7d8c5128f0ca340aa24167f2cfa7a4"
+    },
+    {
+      "path": "cases/OBS03/prompts/DSH.md",
+      "bytes": 2856,
+      "sha256": "2bccd928b8ae85682a636558e53e3e7716786270b61d9cf77e740cb80e4e1b45"
+    },
+    {
+      "path": "cases/OBS03/prompts/Doubao.md",
+      "bytes": 2865,
+      "sha256": "7851b2f25f5aa0af78030abfc8ff83ad71a678418071b8c3502291c1eb6c462f"
+    },
+    {
+      "path": "cases/OBS03/prompts/WorkBuddy.md",
+      "bytes": 2862,
+      "sha256": "083ff4f00e84c3e3c9512ca3f895e53f8decc07b0b0989b6293916bc2005429f"
+    },
+    {
+      "path": "cases/OBS03/prompts/Yuanbao.md",
+      "bytes": 3153,
+      "sha256": "ad5069f83312c8e4f3268cab76c104370473f6112378699502bd9c8e188f82f5"
     },
     {
       "path": "cases/PERM01/README.md",
@@ -509,13 +604,18 @@
     },
     {
       "path": "checks/verify.py",
-      "bytes": 20685,
-      "sha256": "432833b3708ccd6ba05380edd792f1ca7340569c3c5e3819b3ff9ab03b5b3c64"
+      "bytes": 20917,
+      "sha256": "bf88c530282441a6df7f13999e174baa14a80152a22d64bea61443e6b9a94554"
     },
     {
       "path": "checks/verify_artifacts.py",
       "bytes": 7255,
       "sha256": "75fb94f4e16683b2ecdd00998c95d2556a39bb96b6aed1aeef3dded72217e261"
+    },
+    {
+      "path": "checks/verify_observability.py",
+      "bytes": 13020,
+      "sha256": "15a22618a07fcdba1324e9144b7be678cc023425319910e7a45f328ea13d2ff8"
     },
     {
       "path": "checks/verify_permissions.py",
@@ -536,6 +636,11 @@
       "path": "checks/停止材料整理检查-2026-10-23.md",
       "bytes": 1406,
       "sha256": "6cfa1bf396cc6c24ac2d058873c62cf6da455f0c1a6d7443d93dc2e31cee91ae"
+    },
+    {
+      "path": "checks/可观测性整理检查-2026-10-26.md",
+      "bytes": 1420,
+      "sha256": "c144bc7d6ad066114940b7b524ace0cb52255fda1a005083f6c7a7d10ac2e168"
     },
     {
       "path": "checks/整理检查结果-2026-10-21.md",
@@ -599,8 +704,8 @@
     },
     {
       "path": "docs/公开材料与来源说明.md",
-      "bytes": 10195,
-      "sha256": "a14d04843dfe62819c5291c73f1ed10a5a978c3d52c8d6a430ad9d15fc4469e1"
+      "bytes": 11377,
+      "sha256": "3d6c38de3f505331078a8852571405f22f525cbfcea714a8148971abbd6bac2b"
     },
     {
       "path": "docs/单次评测记录模板.md",
@@ -611,6 +716,11 @@
       "path": "docs/原生权限与撤销调查.md",
       "bytes": 3560,
       "sha256": "38f773d1df90a1fc55a20b09d91061a8b67551047af0738da00e38b5fcfc3018"
+    },
+    {
+      "path": "docs/可观测性评测设计.md",
+      "bytes": 25228,
+      "sha256": "fdb65b2d07aa896a9aa0486d3c64e30bd8ec2d520f388c6dc127585b57cca865"
     },
     {
       "path": "docs/周报/第1周周报.md",
@@ -624,13 +734,13 @@
     },
     {
       "path": "docs/复核说明.md",
-      "bytes": 9510,
-      "sha256": "8cb0585d9522c4908811a221a00e4940b3187afb9683db18e33a5a82df37b9f7"
+      "bytes": 10444,
+      "sha256": "52207d5fe66a0ffa6c4130c41d00676dfc77edaba7a502328f1def534d04cc4f"
     },
     {
       "path": "docs/待完成事项.md",
-      "bytes": 2748,
-      "sha256": "a3d26979ffec19235db62d87c321dd2b3d8b7547ac2c5ffd60b029ef0ef12dbb"
+      "bytes": 3129,
+      "sha256": "68deef6b4251729c0b98f9a92a314d6821c0b1daa16f105542d2736e5da22531"
     },
     {
       "path": "docs/打分与证据规则.md",
@@ -644,8 +754,8 @@
     },
     {
       "path": "docs/表现现场导读.md",
-      "bytes": 5992,
-      "sha256": "654b2a0b0f17b1229feab3a0f892e20dbd35ce95f51fce8018f4430a0ddb501c"
+      "bytes": 6752,
+      "sha256": "e5945cf8897915e956fcccf5010f31e373668c6db22e1e0927abb7c20f8671e2"
     },
     {
       "path": "docs/评测方案.md",
@@ -671,6 +781,11 @@
       "path": "docs/阶段进展/2026-10-23.md",
       "bytes": 2029,
       "sha256": "fe65529010655be269f1f64c3f9ebc00d6f48ffce034badce43cfa81ce7769d1"
+    },
+    {
+      "path": "docs/阶段进展/2026-10-26.md",
+      "bytes": 2213,
+      "sha256": "aa92b606b1e8d91bd038210b9d853ffee6db4539aab82083b2e93a197316aa23"
     },
     {
       "path": "evidence/PERM01/Codex-a01/files/inside-运行后-allowed_record.txt",
@@ -1821,6 +1936,541 @@
       "path": "evidence/context-compression/Yuanbao/observation.json",
       "bytes": 308,
       "sha256": "58986476f611f2188ae01c1eb6b9547d75568a4bf8085c0d01ddee77d3ef26f8"
+    },
+    {
+      "path": "evidence/observability/Codex/source-score.json",
+      "bytes": 16361,
+      "sha256": "98332988c42141851a9141a264df55d07ed5b2cb549d205f46932b681394e9ba"
+    },
+    {
+      "path": "evidence/observability/DSH/source-score.json",
+      "bytes": 17918,
+      "sha256": "4957f6904bb147b3f11449cc587300193870151252cd087870a45f66bba3e4df"
+    },
+    {
+      "path": "evidence/observability/Doubao/source-score.json",
+      "bytes": 14427,
+      "sha256": "9e74493dd3af4d44066f7e7ee8dc81e07d24884839cc08436d40c4486c2dbff8"
+    },
+    {
+      "path": "evidence/observability/OBS01/Codex/before-snapshot.json",
+      "bytes": 660,
+      "sha256": "193c41884ed412a251801b68ed7e21c426735f84565862260cc1b4628491021b"
+    },
+    {
+      "path": "evidence/observability/OBS01/Codex/file-check.json",
+      "bytes": 2020,
+      "sha256": "f420d49587997939a93ace50a4895a999911768d0c64c516501813673ad3fa4c"
+    },
+    {
+      "path": "evidence/observability/OBS01/Codex/native.excerpt.json",
+      "bytes": 9258,
+      "sha256": "a726b387c2507a4fa4b7cb223dc28695d0b7a3ec6a75f08103325bb8c7bb17e3"
+    },
+    {
+      "path": "evidence/observability/OBS01/Codex/outputs/business_events.jsonl",
+      "bytes": 620,
+      "sha256": "b736f247d6a425384aee383fc2aa10924cfe7e9f3fff16f21933d9dbb53e59a5"
+    },
+    {
+      "path": "evidence/observability/OBS01/Codex/outputs/registration_summary.json",
+      "bytes": 350,
+      "sha256": "fe8dbc4a03b57585534465612a1dc75ab5d0f6f378f271cd11948babb18f1f0f"
+    },
+    {
+      "path": "evidence/observability/OBS01/Codex/score.json",
+      "bytes": 2770,
+      "sha256": "fa3ae6efda8b64a3168094c173085d6e8d7f99a56b4a3537bb9918203d08e286"
+    },
+    {
+      "path": "evidence/observability/OBS01/Codex/trace-audit.json",
+      "bytes": 7165,
+      "sha256": "ea90a4330e0dd19a428be0ac445be8f4900418d61a4fb682c6427d5903928334"
+    },
+    {
+      "path": "evidence/observability/OBS01/DSH/before-snapshot.json",
+      "bytes": 779,
+      "sha256": "e126d2fe6a60e637c056db397ad33242d934c57efbe4f1302b140e8ebacc2dd0"
+    },
+    {
+      "path": "evidence/observability/OBS01/DSH/file-check.json",
+      "bytes": 2016,
+      "sha256": "f385bdbec185667b9bfafa0cb4add5f6970b4f47a50c48ca0a3325ba438d532a"
+    },
+    {
+      "path": "evidence/observability/OBS01/DSH/native.excerpt.json",
+      "bytes": 19158,
+      "sha256": "a26295f60fa7c3cb01611c5373a19a20de2eb8ead70e2f6eb91b6e2998a9812d"
+    },
+    {
+      "path": "evidence/observability/OBS01/DSH/outputs/business_events.jsonl",
+      "bytes": 620,
+      "sha256": "86ecad05cc79f5221a991833a1798424593a4015f4ee471941ffa0a684ce3fb6"
+    },
+    {
+      "path": "evidence/observability/OBS01/DSH/outputs/registration_summary.json",
+      "bytes": 350,
+      "sha256": "fe8dbc4a03b57585534465612a1dc75ab5d0f6f378f271cd11948babb18f1f0f"
+    },
+    {
+      "path": "evidence/observability/OBS01/DSH/score.json",
+      "bytes": 2790,
+      "sha256": "0c356aa819b9074302598de342b12dab680fccfdfa9312a420751cade46558ac"
+    },
+    {
+      "path": "evidence/observability/OBS01/DSH/trace-audit.json",
+      "bytes": 9944,
+      "sha256": "a5d363dc2baca873253d6c6502155b5427910201a7a1ace84642931816a79f6d"
+    },
+    {
+      "path": "evidence/observability/OBS01/Doubao/file-check.json",
+      "bytes": 2034,
+      "sha256": "b766bc71580bc7b790295289bc20a3adc87d06b8a3e1a9f71c0bc2f9eeb8c235"
+    },
+    {
+      "path": "evidence/observability/OBS01/Doubao/native.excerpt.json",
+      "bytes": 6375,
+      "sha256": "0bd6f8be3c12798dfb4489c3fcbd02c567d5a9303c06c17cd303c69f708fc917"
+    },
+    {
+      "path": "evidence/observability/OBS01/Doubao/outputs/business_events.jsonl",
+      "bytes": 620,
+      "sha256": "23cb4fb5534dbe38f091a0d03ad4b42b8d7bcb511258183898da4e9ea07b933a"
+    },
+    {
+      "path": "evidence/observability/OBS01/Doubao/outputs/registration_summary.json",
+      "bytes": 350,
+      "sha256": "fe8dbc4a03b57585534465612a1dc75ab5d0f6f378f271cd11948babb18f1f0f"
+    },
+    {
+      "path": "evidence/observability/OBS01/Doubao/page-end-display.json",
+      "bytes": 240,
+      "sha256": "343270a0fbdb8a87b9b1afcf8a219d2a7652346ca57a4eeacf8245f48121da7f"
+    },
+    {
+      "path": "evidence/observability/OBS01/Doubao/page-tool-results.json",
+      "bytes": 2253,
+      "sha256": "cdfd92c682cf9f0d36d96f637b874bf2c4eb6ddb59512ecce47a257e1ee5c8b7"
+    },
+    {
+      "path": "evidence/observability/OBS01/Doubao/score.json",
+      "bytes": 2463,
+      "sha256": "82623a31ccbe7970845551b08112d05fabaea75f21a58413ec721094fd4058e7"
+    },
+    {
+      "path": "evidence/observability/OBS01/WorkBuddy/extra-actions.json",
+      "bytes": 856,
+      "sha256": "2aca0fab16e8ad75bf0019cf376cb6155de1cbe39d4dad1f51782679e3db30e8"
+    },
+    {
+      "path": "evidence/observability/OBS01/WorkBuddy/file-check.json",
+      "bytes": 2186,
+      "sha256": "cd649f3efd4e99f46ca803de291dc6924774d67735e73548ae0f617c846ddb16"
+    },
+    {
+      "path": "evidence/observability/OBS01/WorkBuddy/native.excerpt.json",
+      "bytes": 28976,
+      "sha256": "5c8e2f5da89dcbeb5ac85f8495df97da09c8381433db3ce42d8b570a0b49dd15"
+    },
+    {
+      "path": "evidence/observability/OBS01/WorkBuddy/outputs/business_events.jsonl",
+      "bytes": 620,
+      "sha256": "27e811be35ae5d410561f6598b0f17f5c4bfbebad2cdffb11780f87707f566b2"
+    },
+    {
+      "path": "evidence/observability/OBS01/WorkBuddy/outputs/registration_summary.json",
+      "bytes": 350,
+      "sha256": "fe8dbc4a03b57585534465612a1dc75ab5d0f6f378f271cd11948babb18f1f0f"
+    },
+    {
+      "path": "evidence/observability/OBS01/WorkBuddy/score.json",
+      "bytes": 2200,
+      "sha256": "cb61e30901726cd1d183c4bb3c00f8c3a0c218f45a4084c75ae9b5661356d337"
+    },
+    {
+      "path": "evidence/observability/OBS01/Yuanbao/command-cards.json",
+      "bytes": 3680,
+      "sha256": "a0b5b1becd2925e61765cfddbac3e3b902d1e8943308bede109be072acdc8415"
+    },
+    {
+      "path": "evidence/observability/OBS01/Yuanbao/download-check.json",
+      "bytes": 813,
+      "sha256": "bd51361888a3cc89f2d86017d82186b3133fe1a696eeb3454b01bc42dd3114d2"
+    },
+    {
+      "path": "evidence/observability/OBS01/Yuanbao/outputs/business_events.jsonl",
+      "bytes": 620,
+      "sha256": "76ae3eec6eb5e32bba2f8d8d7909e3658ce4d9feffb6f2edd133856b7ba808f3"
+    },
+    {
+      "path": "evidence/observability/OBS01/Yuanbao/outputs/registration_summary.json",
+      "bytes": 350,
+      "sha256": "fe8dbc4a03b57585534465612a1dc75ab5d0f6f378f271cd11948babb18f1f0f"
+    },
+    {
+      "path": "evidence/observability/OBS01/Yuanbao/score.json",
+      "bytes": 2095,
+      "sha256": "3de4442145b0002896f242f1e4312b0fa074bff7f0a43b2efba9a3c9781c573d"
+    },
+    {
+      "path": "evidence/observability/OBS02/Codex/before-snapshot.json",
+      "bytes": 654,
+      "sha256": "5b6dd62bfd024ad00c2a8ef1416c7bff41d7f57acb26da8be40f200bf1f151b7"
+    },
+    {
+      "path": "evidence/observability/OBS02/Codex/file-check.json",
+      "bytes": 2119,
+      "sha256": "030d25dfc1ac3f087dea7136a55c999eb84a064d818bb3d65a18f9273eda4450"
+    },
+    {
+      "path": "evidence/observability/OBS02/Codex/native.excerpt.json",
+      "bytes": 11534,
+      "sha256": "1106c7b7b9f25f325c8f53a79ae75b399be00867580411c6772cf15654f1337b"
+    },
+    {
+      "path": "evidence/observability/OBS02/Codex/outputs/business_events.jsonl",
+      "bytes": 993,
+      "sha256": "004687727dfbb48fc164e10f98f55c92c28bd8ac294ccc0e749fc0fd07bd1b77"
+    },
+    {
+      "path": "evidence/observability/OBS02/Codex/outputs/registration_export.json",
+      "bytes": 350,
+      "sha256": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda"
+    },
+    {
+      "path": "evidence/observability/OBS02/Codex/score.json",
+      "bytes": 4811,
+      "sha256": "c59a8db244e419f9ebdf0b9bfc3067337d04f0aab60b74957f955442d90b0db9"
+    },
+    {
+      "path": "evidence/observability/OBS02/Codex/trace-audit.json",
+      "bytes": 8742,
+      "sha256": "4f9510ff6142349fba82d4f33afd012258741baa419592e9dd5068eea68b2f5f"
+    },
+    {
+      "path": "evidence/observability/OBS02/DSH/before-snapshot.json",
+      "bytes": 773,
+      "sha256": "6a40e4c046d1074f3ec8699d53ef9b44bbac2e8f75a1781ddeefdf46446a713f"
+    },
+    {
+      "path": "evidence/observability/OBS02/DSH/file-check.json",
+      "bytes": 2115,
+      "sha256": "0a38f8bda144a6a80b5d82cbaff2d5cb5b0818e5d7c6a38ce13cce35cfd499c6"
+    },
+    {
+      "path": "evidence/observability/OBS02/DSH/native.excerpt.json",
+      "bytes": 14194,
+      "sha256": "e1e47eb15d901ba113f981aafcc74c2487ae470a4090bac89bb7239168ea41bc"
+    },
+    {
+      "path": "evidence/observability/OBS02/DSH/outputs/business_events.jsonl",
+      "bytes": 993,
+      "sha256": "93704f4acb81a94cf3ef4a408c3d278d5f0c03ff7f115b5275dc5ba63437d875"
+    },
+    {
+      "path": "evidence/observability/OBS02/DSH/outputs/registration_export.json",
+      "bytes": 350,
+      "sha256": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda"
+    },
+    {
+      "path": "evidence/observability/OBS02/DSH/score.json",
+      "bytes": 4563,
+      "sha256": "14cc6889900d2ebdfff529a7d2c1553d9c300f03d59dcf22e0806bc62d876626"
+    },
+    {
+      "path": "evidence/observability/OBS02/DSH/trace-audit.json",
+      "bytes": 8608,
+      "sha256": "d8a37f2a42d4bd367a4c5eac6bf2544f7c80883fbf2db66c537e715856f37afe"
+    },
+    {
+      "path": "evidence/observability/OBS02/Doubao/file-check.json",
+      "bytes": 2133,
+      "sha256": "2b0b9d7aebc9c4dda7a2bdac5153b59b1e587df2d75940fb785a15feb748ceb0"
+    },
+    {
+      "path": "evidence/observability/OBS02/Doubao/native.excerpt.json",
+      "bytes": 5584,
+      "sha256": "9e18cd10d41ef9d36f3415aa96d327950c4449702b3ca75d01593e3be7b0cbae"
+    },
+    {
+      "path": "evidence/observability/OBS02/Doubao/outputs/business_events.jsonl",
+      "bytes": 993,
+      "sha256": "0e104ab76c3f5751efcd6f78539bd1800e6ed2291212edb15f10f88cddeba0ec"
+    },
+    {
+      "path": "evidence/observability/OBS02/Doubao/outputs/registration_export.json",
+      "bytes": 350,
+      "sha256": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda"
+    },
+    {
+      "path": "evidence/observability/OBS02/Doubao/page-end-display.json",
+      "bytes": 240,
+      "sha256": "7b7f3dc7133a6f48084fb75a7927380d182ac8342f59dff28ef8af5e1d603828"
+    },
+    {
+      "path": "evidence/observability/OBS02/Doubao/page-tool-results.json",
+      "bytes": 2040,
+      "sha256": "6f1aaca0995280b83c675d18f04409af6d070ec54a2cbe6585b0d440f360aab2"
+    },
+    {
+      "path": "evidence/observability/OBS02/Doubao/score.json",
+      "bytes": 4452,
+      "sha256": "d5de19ccfc4eff8b855d7a924d43a892170e079bd2e4de6956ae8c32590add9a"
+    },
+    {
+      "path": "evidence/observability/OBS02/WorkBuddy/file-check.json",
+      "bytes": 2127,
+      "sha256": "0db855ff183289488d1bdc7d250fdce7f6e95d087559b7746fcbae7a82f07557"
+    },
+    {
+      "path": "evidence/observability/OBS02/WorkBuddy/native.excerpt.json",
+      "bytes": 13428,
+      "sha256": "3ca49351bb5da32d5bed9ba055fb3488fb113cf1ddcafef3998cadb53199cb2c"
+    },
+    {
+      "path": "evidence/observability/OBS02/WorkBuddy/outputs/business_events.jsonl",
+      "bytes": 993,
+      "sha256": "316f057e53b50000e83a60c2a6e8ca1389b0cd9232d7af82b27beb2a209430af"
+    },
+    {
+      "path": "evidence/observability/OBS02/WorkBuddy/outputs/registration_export.json",
+      "bytes": 350,
+      "sha256": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda"
+    },
+    {
+      "path": "evidence/observability/OBS02/WorkBuddy/score.json",
+      "bytes": 4027,
+      "sha256": "e2b869e7779fb8bfe0ae2109767983eb37cd0cf358e42cf029b3a3d2b2e6b31e"
+    },
+    {
+      "path": "evidence/observability/OBS02/Yuanbao/command-cards.json",
+      "bytes": 3885,
+      "sha256": "987cf0c493132f183c9d52d1a55debf794587c94a963a4e5ef6183e402bf77e9"
+    },
+    {
+      "path": "evidence/observability/OBS02/Yuanbao/download-check.json",
+      "bytes": 986,
+      "sha256": "80749e16fcf5de23baee2d7cc83f3528b40bfb9dc582b43458e76e06c42ef6ff"
+    },
+    {
+      "path": "evidence/observability/OBS02/Yuanbao/outputs/business_events.jsonl",
+      "bytes": 993,
+      "sha256": "565adb9760dafddea3e02c0a1f9c9e253e3e8d5720df1b51eb6c160cea690149"
+    },
+    {
+      "path": "evidence/observability/OBS02/Yuanbao/outputs/registration_export.json",
+      "bytes": 350,
+      "sha256": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda"
+    },
+    {
+      "path": "evidence/observability/OBS02/Yuanbao/score.json",
+      "bytes": 3738,
+      "sha256": "a6c8ba74e94b1d572f4040642a41b1e84332df25c377e587228e08a28c6c17e0"
+    },
+    {
+      "path": "evidence/observability/OBS03/Codex/after-reopen.excerpt.json",
+      "bytes": 14549,
+      "sha256": "574d6a30405794bf705355e467666dc7a6a8f2d6be2c13ecd33c929dccd1353f"
+    },
+    {
+      "path": "evidence/observability/OBS03/Codex/before-snapshot.json",
+      "bytes": 660,
+      "sha256": "94c81e88445d4e763f79473e719ef5ff05ba792c2ba23da296a0ab454629d80a"
+    },
+    {
+      "path": "evidence/observability/OBS03/Codex/file-check.json",
+      "bytes": 2259,
+      "sha256": "c57a094f970d4e5c00fb365c2686443b87666913623c7dffe04df9fa50955111"
+    },
+    {
+      "path": "evidence/observability/OBS03/Codex/native.excerpt.json",
+      "bytes": 14549,
+      "sha256": "574d6a30405794bf705355e467666dc7a6a8f2d6be2c13ecd33c929dccd1353f"
+    },
+    {
+      "path": "evidence/observability/OBS03/Codex/outputs/business_events.jsonl",
+      "bytes": 1142,
+      "sha256": "7a1af3f727e4d425e74436034a074a11ce7793fef644626a505d38fe9a7ce52d"
+    },
+    {
+      "path": "evidence/observability/OBS03/Codex/outputs/registration_summary.json",
+      "bytes": 350,
+      "sha256": "3c071ae92e292363fb756d3b4265719e201ec3031bf267d555db1a5d34d1b66e"
+    },
+    {
+      "path": "evidence/observability/OBS03/Codex/reopen.json",
+      "bytes": 2195,
+      "sha256": "4ed68b931b136b3581b63841fde253cdb880192313b60a7f0f61cced7e3cd766"
+    },
+    {
+      "path": "evidence/observability/OBS03/Codex/score.json",
+      "bytes": 5677,
+      "sha256": "b3bac236546a63bb2372f3810f4786df45813ca9ac1c5fc4d549f31ed752e22b"
+    },
+    {
+      "path": "evidence/observability/OBS03/Codex/trace-audit.json",
+      "bytes": 13431,
+      "sha256": "475f06bca28f14cbce5e0c516f6376b41fa3c60e29a32778205b8fb0dadbc527"
+    },
+    {
+      "path": "evidence/observability/OBS03/DSH/after-reopen.excerpt.json",
+      "bytes": 54076,
+      "sha256": "e7c619a9dc98ff7d28c0402f9983829eb6e3ee092f4341b54a107ccb8abb5a56"
+    },
+    {
+      "path": "evidence/observability/OBS03/DSH/before-snapshot.json",
+      "bytes": 779,
+      "sha256": "2f8c9bfbf4094557887da632cfdf98cf04c0adb830b9f2fe9d52724c98fecd7d"
+    },
+    {
+      "path": "evidence/observability/OBS03/DSH/file-check.json",
+      "bytes": 2255,
+      "sha256": "93be2475e23816b49dbe52e9a85109516c8f0e02882ce0a34fa0d47183c28df5"
+    },
+    {
+      "path": "evidence/observability/OBS03/DSH/native.excerpt.json",
+      "bytes": 54076,
+      "sha256": "e7c619a9dc98ff7d28c0402f9983829eb6e3ee092f4341b54a107ccb8abb5a56"
+    },
+    {
+      "path": "evidence/observability/OBS03/DSH/outputs/business_events.jsonl",
+      "bytes": 1142,
+      "sha256": "d2f5ae7d5be715c13ee80faf38fd3233c5a6571f8d20f442283c3adb6148bc93"
+    },
+    {
+      "path": "evidence/observability/OBS03/DSH/outputs/registration_summary.json",
+      "bytes": 350,
+      "sha256": "3c071ae92e292363fb756d3b4265719e201ec3031bf267d555db1a5d34d1b66e"
+    },
+    {
+      "path": "evidence/observability/OBS03/DSH/reopen.json",
+      "bytes": 1399,
+      "sha256": "edeec7d8326d36a3875f4199897351e0cd511d3e2808c1bcb6fea597d50e95d8"
+    },
+    {
+      "path": "evidence/observability/OBS03/DSH/score.json",
+      "bytes": 5476,
+      "sha256": "34f97b06b3f29e564713783b29816b55579cb8ac749595b974892cc8343b441a"
+    },
+    {
+      "path": "evidence/observability/OBS03/DSH/trace-audit.json",
+      "bytes": 22135,
+      "sha256": "3c941511d75ece1a8b6dcaa7e11affed4e0c370e1d84e42be1ea7cd392df7598"
+    },
+    {
+      "path": "evidence/observability/OBS03/Doubao/file-check.json",
+      "bytes": 2273,
+      "sha256": "de73e35604381f248560a98d80524ea59ff50ff52119c0f090841c141e5d4eb8"
+    },
+    {
+      "path": "evidence/observability/OBS03/Doubao/native.excerpt.json",
+      "bytes": 9789,
+      "sha256": "2a3650b3125c15e8bb5272e9041588b64ea2f104e84b83afa45a19dbec56cbff"
+    },
+    {
+      "path": "evidence/observability/OBS03/Doubao/outputs/business_events.jsonl",
+      "bytes": 1142,
+      "sha256": "22b6a024f06ed6ec9ce8d356ca87ba948dcfff4b4d314202eba4682497001e16"
+    },
+    {
+      "path": "evidence/observability/OBS03/Doubao/outputs/registration_summary.json",
+      "bytes": 350,
+      "sha256": "3c071ae92e292363fb756d3b4265719e201ec3031bf267d555db1a5d34d1b66e"
+    },
+    {
+      "path": "evidence/observability/OBS03/Doubao/page-end-display.json",
+      "bytes": 240,
+      "sha256": "68208917653705b0d0d378ab3a870bca706f5d8730e0b422d2826b01ea6c7836"
+    },
+    {
+      "path": "evidence/observability/OBS03/Doubao/page-tool-results.json",
+      "bytes": 4651,
+      "sha256": "7800c2bcf1895534f601cadbc206b838b27afc2ae5769d743fc056eba12f7463"
+    },
+    {
+      "path": "evidence/observability/OBS03/Doubao/reopen.json",
+      "bytes": 1427,
+      "sha256": "2940a3a271895fbfd8dee1811f9343414be0c18ae9f6e29a8d0922f264b82cb9"
+    },
+    {
+      "path": "evidence/observability/OBS03/Doubao/score.json",
+      "bytes": 5143,
+      "sha256": "013303aad7a91f2ad62e3e9b6f7930c3271f3b9e378683a0a51249cff9b615a4"
+    },
+    {
+      "path": "evidence/observability/OBS03/WorkBuddy/extra-actions.json",
+      "bytes": 1509,
+      "sha256": "af109c2bb134b6bebed7cb3e45e0241ebb02bdf21334d1a41fc3f5a74c8a0500"
+    },
+    {
+      "path": "evidence/observability/OBS03/WorkBuddy/file-check.json",
+      "bytes": 2425,
+      "sha256": "50558291cf9bed9db1ee400cca3c0c0c1ed8bff9bf322ef8ea9440f32a1c0c3e"
+    },
+    {
+      "path": "evidence/observability/OBS03/WorkBuddy/native.excerpt.json",
+      "bytes": 34745,
+      "sha256": "2e0fe2cb8abc8973e7dccd1683f65601d1034f2d5acb926561e3e30dab27c3ef"
+    },
+    {
+      "path": "evidence/observability/OBS03/WorkBuddy/outputs/business_events.jsonl",
+      "bytes": 1142,
+      "sha256": "3c4e12908a394f7c39166a5987500757c2fef09be54e1901ac404e20a31bf3ed"
+    },
+    {
+      "path": "evidence/observability/OBS03/WorkBuddy/outputs/registration_summary.json",
+      "bytes": 350,
+      "sha256": "3c071ae92e292363fb756d3b4265719e201ec3031bf267d555db1a5d34d1b66e"
+    },
+    {
+      "path": "evidence/observability/OBS03/WorkBuddy/reopen.json",
+      "bytes": 1446,
+      "sha256": "5292a978b074493195449bb1cc073469fa9a1732cf8642e64aca5cbd91e5bb81"
+    },
+    {
+      "path": "evidence/observability/OBS03/WorkBuddy/score.json",
+      "bytes": 4854,
+      "sha256": "6ba9f6c1e1f80d89813f17320410ca5c48ffc4577c85da549ed03cca9e78eda5"
+    },
+    {
+      "path": "evidence/observability/OBS03/Yuanbao/command-cards.json",
+      "bytes": 4692,
+      "sha256": "1da106b0d9eb7cf825d9c473c7541dd54d1a991c6ed5c21b41bc7b86f1e25c14"
+    },
+    {
+      "path": "evidence/observability/OBS03/Yuanbao/download-check.json",
+      "bytes": 1007,
+      "sha256": "4421784197aed99f149a691a222b6f861a436289ccf5df262a154b3143871ba0"
+    },
+    {
+      "path": "evidence/observability/OBS03/Yuanbao/outputs/business_events.jsonl",
+      "bytes": 1142,
+      "sha256": "df31b9c6ce28b8e0f4b8ac5c8bf4799716284213d24103d2eaa5c3e2307ae026"
+    },
+    {
+      "path": "evidence/observability/OBS03/Yuanbao/outputs/registration_summary.json",
+      "bytes": 350,
+      "sha256": "3c071ae92e292363fb756d3b4265719e201ec3031bf267d555db1a5d34d1b66e"
+    },
+    {
+      "path": "evidence/observability/OBS03/Yuanbao/reopen.json",
+      "bytes": 813,
+      "sha256": "f206dd3e982b415f7cb07d7a0ad76b70f2d73ddeb9c960a02dc9a3802c578e4a"
+    },
+    {
+      "path": "evidence/observability/OBS03/Yuanbao/score.json",
+      "bytes": 4569,
+      "sha256": "9485bcf97edd14fbd0b3b4f291e9e666aba929fc2ce3aa4671657634db792067"
+    },
+    {
+      "path": "evidence/observability/WorkBuddy/source-score.json",
+      "bytes": 12022,
+      "sha256": "5d562f8f030d44765214b9132b144ae4d913e633b59404d3a24c228703b976ae"
+    },
+    {
+      "path": "evidence/observability/Yuanbao/source-score.json",
+      "bytes": 11894,
+      "sha256": "a2943d1970f4dcc4e96f4344a2f312cef554ad07a780980d58b3e1de08b4dbaa"
     },
     {
       "path": "evidence/recovery/REC01/Codex/native.excerpt.json",
@@ -3451,6 +4101,16 @@
       "path": "results/native-authorization-survey.json",
       "bytes": 4532,
       "sha256": "17d5c01ecb5aea3d7bbd3e66812afa26ffc15f86ac17af54f94d5a7f68d10ba1"
+    },
+    {
+      "path": "results/observability.json",
+      "bytes": 7744,
+      "sha256": "e70a89cb627a58394eeef26961c01dbe2769fae6a18d71c75dbdc447e46b8477"
+    },
+    {
+      "path": "results/observability.md",
+      "bytes": 6969,
+      "sha256": "9cc2020823ff329e06649806b25b71c4d9b192605ad4d9b62c5ce4df81224ce6"
     },
     {
       "path": "results/permission-basic.json",

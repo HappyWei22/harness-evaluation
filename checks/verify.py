@@ -342,6 +342,10 @@ def main():
     if not args.item:
         from verify_stopping import verify_all as verify_stopping
         stopping = verify_stopping()
+    observability = None
+    if not args.item:
+        from verify_observability import verify_all as verify_observability
+        observability = verify_observability()
     print(json.dumps({'scope': '公开副本核对，不重跑产品，不代表全部表现通过或内部根因已验证。',
                      'public_files_checked': files, 'feedback_judgments_checked': len(selected),
                      'feedback_states': dict(Counter(r['review_state'] for r in selected)),
@@ -349,7 +353,8 @@ def main():
                      'groups': groups, 'context_products': ctx,
                      'recent_evidence': recent, 'permission_evidence': permissions,
                      'artifact_delivery_evidence': artifacts,
-                     'stopping_condition_evidence': stopping}, ensure_ascii=False, indent=2))
+                     'stopping_condition_evidence': stopping,
+                     'observability_evidence': observability}, ensure_ascii=False, indent=2))
     return 0
 
 

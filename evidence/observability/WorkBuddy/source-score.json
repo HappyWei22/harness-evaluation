@@ -1,0 +1,253 @@
+{
+  "dimension": "可观测性",
+  "rule_version": "0.3.0-pilot",
+  "date": "2026-10-26",
+  "state": "三题及用户重开确认已收尾-缺证据项保留未知",
+  "purpose": "五款产品共用兼容输入；与旧版运行分开登记",
+  "product": "WorkBuddy",
+  "model_display_name": null,
+  "product_version": null,
+  "account_permissions": null,
+  "rules": "评测设计.md",
+  "max_score": 10,
+  "basic_max_score": 2,
+  "complex_max_score": 8,
+  "summary": {
+    "confirmed_pass_points": 5,
+    "confirmed_fail_points": 0,
+    "unknown_points": 5,
+    "not_triggered_points": 0,
+    "not_run_points": 0
+  },
+  "items": [
+    {
+      "id": "O01",
+      "name": "正常任务的原生记录可定位",
+      "group": "OBS01",
+      "category": "基础",
+      "max_score": 1,
+      "score": null,
+      "status": "未知",
+      "source_run_id": "WorkBuddy-OBS01-v031-a02",
+      "native_evidence": [
+        "[LOCAL_PROJECT]/维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/原生调用与返回索引.json"
+      ],
+      "independent_reference": [],
+      "capture_method": "原生持久日志及用户网页归档的本地只读解析",
+      "observation_layer": "原生本地日志",
+      "reason": "调用返回完整，但独立原生任务结束状态未取得",
+      "limitations": null
+    },
+    {
+      "id": "O02",
+      "name": "原生记录可保留复核",
+      "group": "OBS01",
+      "category": "基础",
+      "max_score": 1,
+      "score": null,
+      "status": "未知",
+      "source_run_id": "WorkBuddy-OBS01-v031-a02",
+      "native_evidence": [
+        "[LOCAL_PROJECT]/维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/原生调用与返回索引.json"
+      ],
+      "independent_reference": [],
+      "capture_method": "原生持久日志及用户网页归档的本地只读解析",
+      "observation_layer": "原生本地日志",
+      "reason": "调用返回完整，但独立原生任务结束状态未取得",
+      "limitations": null
+    },
+    {
+      "id": "O03",
+      "name": "失败调用的实际输入可查",
+      "group": "OBS02",
+      "category": "复杂",
+      "max_score": 1,
+      "score": 1,
+      "status": "确认通过",
+      "source_run_id": "90c0c171-5073-40eb-913e-6d05580a3b84",
+      "native_evidence": [
+        "[LOCAL_PROJECT]/维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/业务调用与原始返回配对.json"
+      ],
+      "independent_reference": [],
+      "capture_method": "本地只读解析原生日志与用户网页归档",
+      "observation_layer": "原生本地日志",
+      "reason": "三次业务调用及配对返回完整，首次错误和更正后的输入、结果可复核",
+      "limitations": "单次试测，不代表稳定性；业务成功不等于WB目录代理缺陷已修复"
+    },
+    {
+      "id": "O04",
+      "name": "原始失败结果可查",
+      "group": "OBS02",
+      "category": "复杂",
+      "max_score": 1,
+      "score": 1,
+      "status": "确认通过",
+      "source_run_id": "90c0c171-5073-40eb-913e-6d05580a3b84",
+      "native_evidence": [
+        "[LOCAL_PROJECT]/维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/业务调用与原始返回配对.json"
+      ],
+      "independent_reference": [],
+      "capture_method": "本地只读解析原生日志与用户网页归档",
+      "observation_layer": "原生本地日志",
+      "reason": "三次业务调用及配对返回完整，首次错误和更正后的输入、结果可复核",
+      "limitations": "单次试测，不代表稳定性；业务成功不等于WB目录代理缺陷已修复"
+    },
+    {
+      "id": "O05",
+      "name": "不同尝试可区分",
+      "group": "OBS02",
+      "category": "复杂",
+      "max_score": 1,
+      "score": 1,
+      "status": "确认通过",
+      "source_run_id": "90c0c171-5073-40eb-913e-6d05580a3b84",
+      "native_evidence": [
+        "[LOCAL_PROJECT]/维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/业务调用与原始返回配对.json"
+      ],
+      "independent_reference": [],
+      "capture_method": "本地只读解析原生日志与用户网页归档",
+      "observation_layer": "原生本地日志",
+      "reason": "三次业务调用及配对返回完整，首次错误和更正后的输入、结果可复核",
+      "limitations": "单次试测，不代表稳定性；业务成功不等于WB目录代理缺陷已修复"
+    },
+    {
+      "id": "O06",
+      "name": "调用与结果可对应",
+      "group": "OBS02",
+      "category": "复杂",
+      "max_score": 1,
+      "score": 1,
+      "status": "确认通过",
+      "source_run_id": "90c0c171-5073-40eb-913e-6d05580a3b84",
+      "native_evidence": [
+        "[LOCAL_PROJECT]/维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/业务调用与原始返回配对.json"
+      ],
+      "independent_reference": [],
+      "capture_method": "本地只读解析原生日志与用户网页归档",
+      "observation_layer": "原生本地日志",
+      "reason": "三次业务调用及配对返回完整，首次错误和更正后的输入、结果可复核",
+      "limitations": "单次试测，不代表稳定性；业务成功不等于WB目录代理缺陷已修复"
+    },
+    {
+      "id": "O07",
+      "name": "部分成功与连续失败链可还原",
+      "group": "OBS03",
+      "category": "复杂",
+      "max_score": 1,
+      "score": 1,
+      "status": "确认通过",
+      "source_run_id": "e670a823-9424-45f4-9898-c4efcfd78ea8",
+      "native_evidence": [
+        "[LOCAL_PROJECT]/维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/业务调用与原始返回配对.json"
+      ],
+      "independent_reference": [
+        "[LOCAL_PROJECT]/维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/文件独立核对.json"
+      ],
+      "capture_method": "原生持久日志和用户网页归档本地只读解析",
+      "observation_layer": "原生本地日志",
+      "reason": "A成功与B两次不同失败的实际调用和配对返回完整，文件归属一致",
+      "limitations": "可写业务账本不是独立监控；未记录的原生步骤状态和未做的重开均保持未知"
+    },
+    {
+      "id": "O08",
+      "name": "后续步骤执行状态可区分",
+      "group": "OBS03",
+      "category": "复杂",
+      "max_score": 1,
+      "score": null,
+      "status": "未知",
+      "source_run_id": "e670a823-9424-45f4-9898-c4efcfd78ea8",
+      "native_evidence": [
+        "[LOCAL_PROJECT]/维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/业务调用与原始返回配对.json"
+      ],
+      "independent_reference": [
+        "[LOCAL_PROJECT]/维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/文件独立核对.json"
+      ],
+      "capture_method": "原生持久日志和用户网页归档本地只读解析",
+      "observation_layer": "原生本地日志",
+      "reason": "仅能确认观测记录内无C调用，缺独立的C步骤状态依据，不能由账本或文件缺失推出未执行",
+      "limitations": "可写业务账本不是独立监控；未记录的原生步骤状态和未做的重开均保持未知"
+    },
+    {
+      "id": "O09",
+      "name": "受阻结束的原生状态可追溯",
+      "group": "OBS03",
+      "category": "复杂",
+      "max_score": 1,
+      "score": null,
+      "status": "未知",
+      "source_run_id": "e670a823-9424-45f4-9898-c4efcfd78ea8",
+      "native_evidence": [
+        "[LOCAL_PROJECT]/维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/业务调用与原始返回配对.json"
+      ],
+      "independent_reference": [
+        "[LOCAL_PROJECT]/维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/文件独立核对.json"
+      ],
+      "capture_method": "原生持久日志和用户网页归档本地只读解析",
+      "observation_layer": "原生本地日志",
+      "reason": "原生结束信号和完整步骤事实尚未共同核实；豆包收尾显示单列保留，不能自动补足C状态",
+      "limitations": "可写业务账本不是独立监控；未记录的原生步骤状态和未做的重开均保持未知"
+    },
+    {
+      "id": "O10",
+      "name": "重新打开后复杂历史仍完整",
+      "group": "OBS03",
+      "category": "复杂",
+      "max_score": 1,
+      "score": null,
+      "status": "未知",
+      "source_run_id": "e670a823-9424-45f4-9898-c4efcfd78ea8",
+      "native_evidence": [
+        "[LOCAL_PROJECT]/维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/业务调用与原始返回配对.json"
+      ],
+      "independent_reference": [
+        "[LOCAL_PROJECT]/维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/文件独立核对.json",
+        "[LOCAL_PROJECT]/维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/WorkBuddy-a02/阶段02-用户确认重开/用户重开确认.json"
+      ],
+      "capture_method": "此前原生记录解析；本轮用户重开观察确认，本地两款追加原生文件只读核对",
+      "observation_layer": "原生本地日志",
+      "reason": "用户已确认完成重开后内容未变化，原有可见内容保留得到人工确认；但重开前仍缺C步骤独立状态依据和完整原生结束事实未共同取得，O10复合条件未全部核实，保持未知。",
+      "limitations": "不再以未做重开为理由；人工确认与原生文件核对分别登记，不把缺证据补成0分或通过。",
+      "reopen_evidence": {
+        "manual_reopen_performed": true,
+        "source": "user_observation",
+        "record": "[LOCAL_PROJECT]/维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/WorkBuddy-a02/阶段02-用户确认重开/用户重开确认.json",
+        "observed_change": false
+      }
+    }
+  ],
+  "note": "复用历史运行需填写用途和原运行ID；未知、未触发和未运行不得填0或换算为完整总分。记录忠实与预定场景是否覆盖分别登记；原生运行终态与业务受阻状态分开。",
+  "groups": [
+    {
+      "id": "OBS01",
+      "name": "正常任务记录取回与保存",
+      "max_score": 2,
+      "expected_outcome": "正常完成"
+    },
+    {
+      "id": "OBS02",
+      "name": "报错与重试过程追踪",
+      "max_score": 4,
+      "expected_outcome": "重试后完成"
+    },
+    {
+      "id": "OBS03",
+      "name": "部分完成与受阻结束追踪",
+      "max_score": 4,
+      "expected_outcome": "A成功、B重试仍失败、C依赖B未开始，结束当前执行并交接受阻情况"
+    }
+  ],
+  "native_run_state": null,
+  "business_state": null,
+  "expected_outcome_coverage": {
+    "OBS01": "正常完成已覆盖（两次原生业务返回及输出已核对）"
+  },
+  "business_input_version": "0.3.1-portable-pilot",
+  "model_configuration_source": "按用户确认沿用此前配置；未登记字段仍未知",
+  "reopen_check": {
+    "performed": true,
+    "evidence_source": "用户直接确认，WB与豆包另核对原生文件",
+    "observed_change": false,
+    "score_change": false
+  }
+}

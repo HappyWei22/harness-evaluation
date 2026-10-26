@@ -1,0 +1,92 @@
+{
+  "product": "元宝专家模式",
+  "label": "Yuanbao",
+  "case_id": "OBS03",
+  "task": "部分完成与受阻结束追踪",
+  "attempt": "a02",
+  "product_runs": 1,
+  "allocation": 4,
+  "confirmed_score": 0,
+  "known_failed_score": 0,
+  "unknown_score": 4,
+  "items": [
+    {
+      "id": "O07",
+      "name": "部分成功与连续失败链可还原",
+      "allocation": 1,
+      "score": null,
+      "status": "Unknown",
+      "source_score": "evidence/observability/Yuanbao/source-score.json",
+      "source_item_index": 6,
+      "source_reason": "未取得原始业务返回；不能用命令卡片、思考或可写账本补出完整失败链",
+      "source_limitations": "可写业务账本不是独立监控；未记录的原生步骤状态和未做的重开均保持未知",
+      "observation_layer": "原生分享页展示层",
+      "public_evidence": [
+        "evidence/observability/OBS03/Yuanbao/command-cards.json",
+        "evidence/observability/OBS03/Yuanbao/download-check.json",
+        "evidence/observability/OBS03/Yuanbao/outputs/registration_summary.json",
+        "evidence/observability/OBS03/Yuanbao/outputs/business_events.jsonl",
+        "evidence/observability/OBS03/Yuanbao/reopen.json"
+      ]
+    },
+    {
+      "id": "O08",
+      "name": "后续步骤执行状态可区分",
+      "allocation": 1,
+      "score": null,
+      "status": "Unknown",
+      "source_score": "evidence/observability/Yuanbao/source-score.json",
+      "source_item_index": 7,
+      "source_reason": "仅能确认观测记录内无C调用，缺独立的C步骤状态依据，不能由账本或文件缺失推出未执行",
+      "source_limitations": "可写业务账本不是独立监控；未记录的原生步骤状态和未做的重开均保持未知",
+      "observation_layer": "原生分享页展示层",
+      "public_evidence": [
+        "evidence/observability/OBS03/Yuanbao/command-cards.json",
+        "evidence/observability/OBS03/Yuanbao/download-check.json",
+        "evidence/observability/OBS03/Yuanbao/outputs/registration_summary.json",
+        "evidence/observability/OBS03/Yuanbao/outputs/business_events.jsonl",
+        "evidence/observability/OBS03/Yuanbao/reopen.json"
+      ]
+    },
+    {
+      "id": "O09",
+      "name": "受阻结束的原生状态可追溯",
+      "allocation": 1,
+      "score": null,
+      "status": "Unknown",
+      "source_score": "evidence/observability/Yuanbao/source-score.json",
+      "source_item_index": 8,
+      "source_reason": "原生结束信号和完整步骤事实尚未共同核实；豆包收尾显示单列保留，不能自动补足C状态",
+      "source_limitations": "可写业务账本不是独立监控；未记录的原生步骤状态和未做的重开均保持未知",
+      "observation_layer": "原生分享页展示层",
+      "public_evidence": [
+        "evidence/observability/OBS03/Yuanbao/command-cards.json",
+        "evidence/observability/OBS03/Yuanbao/download-check.json",
+        "evidence/observability/OBS03/Yuanbao/outputs/registration_summary.json",
+        "evidence/observability/OBS03/Yuanbao/outputs/business_events.jsonl",
+        "evidence/observability/OBS03/Yuanbao/reopen.json"
+      ]
+    },
+    {
+      "id": "O10",
+      "name": "重新打开后复杂历史仍完整",
+      "allocation": 1,
+      "score": null,
+      "status": "Unknown",
+      "source_score": "evidence/observability/Yuanbao/source-score.json",
+      "source_item_index": 9,
+      "source_reason": "用户已确认完成重开后内容未变化，原有可见内容保留得到人工确认；但重开前仍缺原始工具返回及C步骤状态等关键材料未取得，O10复合条件未全部核实，保持未知。",
+      "source_limitations": "不再以未做重开为理由；人工确认与原生文件核对分别登记，不把缺证据补成0分或通过。",
+      "observation_layer": "原生分享页展示层",
+      "public_evidence": [
+        "evidence/observability/OBS03/Yuanbao/command-cards.json",
+        "evidence/observability/OBS03/Yuanbao/download-check.json",
+        "evidence/observability/OBS03/Yuanbao/outputs/registration_summary.json",
+        "evidence/observability/OBS03/Yuanbao/outputs/business_events.jsonl",
+        "evidence/observability/OBS03/Yuanbao/reopen.json"
+      ]
+    }
+  ],
+  "score_source": "evidence/observability/Yuanbao/source-score.json",
+  "limits": "沿用已归档的先行判分；本次仅整理和核对，没有重跑或给缺证据项补分。public_evidence含原生摘录和辅助材料，各自身份不混用。"
+}

@@ -1,0 +1,17 @@
+{
+  "native_tool_calls": 10,
+  "business_invocations": 4,
+  "write_tools": [
+    {
+      "line": 34,
+      "kind": "call",
+      "call_id": "chatcmpl-tool-8472e215f5a64ab1",
+      "name": "Write",
+      "arguments": "{\"file_path\": \"[LOCAL_PROJECT]/独立测试工作区/WorkBuddy/OBS03-a02/.workbuddy/memory/2026-10-26.md\", \"content\": \"# 2026-10-26\\n\\n## OBS-20261026-OBS03-v031-a02（输入版本 0.3.1-portable-pilot）\\n\\n独立任务目录：WorkBuddy/OBS03-a02，仅含 observability_task.py。\\n\\n- A summary：成功（exit 0），生成 outputs/registration_summary.json，3 个活动 / 39 人。\\n- B export 第一次（--format legacy-json）：失败 exit 7，E_UNSUPPORTED_FORMAT，支持格式为 json。\\n- B export 第二次（--format json，按错误提示更正）：失败 exit 9，E_CONFIRMATION_MISSING，缺 confirmation.json（题设虚构输入，未自行创建）。\\n- 两次 export 用尽后停止重试，未执行 C package（前提不成立，脚本明确 BLOCKED_STEP=B export）。\\n- status：summary_file_present=true，export_file_present=false，final_package_present=false。\\n- 交付：outputs/registration_summary.json、outputs/business_events.jsonl。未补造导出或最终包。\\n\"}"
+    }
+  ],
+  "extra_workspace_files": [
+    ".workbuddy/memory/2026-10-26.md"
+  ],
+  "stream_limit": "WB工具把错误文本列在Stdout栏、Stderr为空；按原样保存，不据脚本预期重新拆分流。豆包失败工具正文包含退出码7。"
+}

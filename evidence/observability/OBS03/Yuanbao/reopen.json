@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-26",
+  "product": "元宝专家模式",
+  "case_id": "OBS03",
+  "input_version": "0.3.1-portable-pilot",
+  "user_statement_verbatim": "三款产品操作后，都未出现任何变化，与我之前发给你的状态一致",
+  "source": "本轮用户聊天直接确认，承接上一轮三款重开检查说明",
+  "manual_reopen_performed": true,
+  "user_observed_change": false,
+  "exact_navigation_method": "用户未进一步细分，不编造客户端历史与分享页入口",
+  "new_after_reopen_webarchive_provided": false,
+  "new_after_reopen_screenshot_provided": false,
+  "limitations": "人工观察确认不能补成新的原生截图或网页归档；此前未取得的原始返回、C步骤状态和原生结束事实不据此补齐",
+  "native_file_after_user_report": null
+}

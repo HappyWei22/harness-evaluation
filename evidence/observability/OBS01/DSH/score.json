@@ -1,0 +1,56 @@
+{
+  "product": "DSH",
+  "label": "DSH",
+  "case_id": "OBS01",
+  "task": "正常任务记录取回与保存",
+  "attempt": "a02",
+  "product_runs": 1,
+  "allocation": 2,
+  "confirmed_score": 2,
+  "known_failed_score": 0,
+  "unknown_score": 0,
+  "items": [
+    {
+      "id": "O01",
+      "name": "正常任务的原生记录可定位",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/DSH/source-score.json",
+      "source_item_index": 0,
+      "source_reason": "原生题面与新版冻结提示词一致，第30/33行summary和38/41行verify独立配对，原生作业退出0；第74行记录completed，文件6项检查通过。",
+      "source_limitations": "单次先行试测；界面未额外重开，本题不以此为必要条件；保留额外预检失败与stderr重定向事实。",
+      "observation_layer": "本地原生会话记录",
+      "public_evidence": [
+        "evidence/observability/OBS01/DSH/native.excerpt.json",
+        "evidence/observability/OBS01/DSH/file-check.json",
+        "evidence/observability/OBS01/DSH/trace-audit.json",
+        "evidence/observability/OBS01/DSH/before-snapshot.json",
+        "evidence/observability/OBS01/DSH/outputs/registration_summary.json",
+        "evidence/observability/OBS01/DSH/outputs/business_events.jsonl"
+      ]
+    },
+    {
+      "id": "O02",
+      "name": "原生记录可保留复核",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/DSH/source-score.json",
+      "source_item_index": 1,
+      "source_reason": "DSH自动持久化的压缩原生日志已原样归档并解压复读，题面、输入、返回及终态仍可取回；源日志与工作区归档前后指纹一致。按规则的保存副本路径判定，不要求第一题额外重开。",
+      "source_limitations": "单次先行试测；界面未额外重开，本题不以此为必要条件；保留额外预检失败与stderr重定向事实。",
+      "observation_layer": "本地原生会话记录",
+      "public_evidence": [
+        "evidence/observability/OBS01/DSH/native.excerpt.json",
+        "evidence/observability/OBS01/DSH/file-check.json",
+        "evidence/observability/OBS01/DSH/trace-audit.json",
+        "evidence/observability/OBS01/DSH/before-snapshot.json",
+        "evidence/observability/OBS01/DSH/outputs/registration_summary.json",
+        "evidence/observability/OBS01/DSH/outputs/business_events.jsonl"
+      ]
+    }
+  ],
+  "score_source": "evidence/observability/DSH/source-score.json",
+  "limits": "沿用已归档的先行判分；本次仅整理和核对，没有重跑或给缺证据项补分。public_evidence含原生摘录和辅助材料，各自身份不混用。"
+}

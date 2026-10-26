@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-26",
+  "product": "WorkBuddy",
+  "case_id": "OBS03",
+  "input_version": "0.3.1-portable-pilot",
+  "user_statement_verbatim": "三款产品操作后，都未出现任何变化，与我之前发给你的状态一致",
+  "source": "本轮用户聊天直接确认，承接上一轮三款重开检查说明",
+  "manual_reopen_performed": true,
+  "user_observed_change": false,
+  "exact_navigation_method": "用户未进一步细分，不编造客户端历史与分享页入口",
+  "new_after_reopen_webarchive_provided": false,
+  "new_after_reopen_screenshot_provided": false,
+  "limitations": "人工观察确认不能补成新的原生截图或网页归档；此前未取得的原始返回、C步骤状态和原生结束事实不据此补齐",
+  "native_file_after_user_report": {
+    "source": "/LOCAL_USER/.workbuddy/projects/Users-USER-Documents-项目-Harness evaluation-独立测试工作区-WorkBuddy-OBS03-a02/e670a823-9424-45f4-9898-c4efcfd78ea8.jsonl",
+    "archive": "[LOCAL_PROJECT]/维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/WorkBuddy-a02/阶段02-用户确认重开/重开后只读取得的原生文件/e670a823-9424-45f4-9898-c4efcfd78ea8.jsonl",
+    "sha256": "e68a54347258400ca2704ce6934c6a722ba6aa23f5214d0d9c547c2019b33734",
+    "matches_before": true,
+    "scope": "原生持久文件在本次确认后仍可读，字节一致不冒充界面逐字段截图对照"
+  }
+}

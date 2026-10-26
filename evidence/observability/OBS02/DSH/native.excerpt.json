@@ -1,0 +1,450 @@
+{
+  "format": "native-event-excerpt-v1",
+  "original_line_count": 70,
+  "original_sha256": "71c70a638db0163bfd9c9e2454ae3e799e4353a8ad5452863a93516b1064eabb",
+  "scope": "仅必要工具输入、返回及可取得的结束事件；上下文、系统指令、思考、重放和不相关字段不公开；有原始行号不表示完整会话。",
+  "records": [
+    {
+      "source_line": 6,
+      "event": {
+        "type": "turn/start",
+        "seq": 4,
+        "time": 1793025431774,
+        "data": {
+          "turn": 1
+        }
+      }
+    },
+    {
+      "source_line": 22,
+      "event": {
+        "type": "tool/call",
+        "seq": 20,
+        "time": 1793025436260,
+        "data": {
+          "turn": 1,
+          "step": 1,
+          "callId": "call_00_EiPQ1vEd73xlv4NFOWHI6949",
+          "name": "bash",
+          "arguments": "{\"command\": \"pwd && ls -la\", \"description\": \"Check current task directory contents\", \"workdir\": \"[LOCAL_PROJECT]/独立测试工作区/DSH/OBS02-a02\"}"
+        }
+      }
+    },
+    {
+      "source_line": 24,
+      "event": {
+        "type": "job/settled",
+        "seq": 22,
+        "time": 1793025436285,
+        "data": {
+          "jobId": "bash-11a21a33e23b474f",
+          "owner": "session-92acab3e-f070-4aa1-a41e-1d83b5596590",
+          "kind": "bash",
+          "label": "pwd && ls -la",
+          "startedAt": 1793025436268,
+          "toolCall": {
+            "callId": "call_00_EiPQ1vEd73xlv4NFOWHI6949",
+            "rootCallId": "call_00_EiPQ1vEd73xlv4NFOWHI6949"
+          },
+          "finishedAt": 1793025436285,
+          "status": "completed",
+          "cause": "producer",
+          "producerReported": true,
+          "detail": "exit code: 0"
+        }
+      }
+    },
+    {
+      "source_line": 25,
+      "event": {
+        "type": "tool/result",
+        "seq": 23,
+        "time": 1793025436286,
+        "data": {
+          "turn": 1,
+          "step": 1,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_EiPQ1vEd73xlv4NFOWHI6949"
+            },
+            "toolCallId": "call_00_EiPQ1vEd73xlv4NFOWHI6949",
+            "content": [
+              {
+                "type": "text",
+                "text": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS02-a02\ntotal 16\ndrwxr-xr-x@  3 USER  staff    96 Oct 26 21:38 .\ndrwxr-xr-x@ 28 USER  staff   896 Oct 26 21:38 ..\n-rw-r--r--@  1 USER  staff  7923 Oct 26 21:38 observability_task.py\n"
+              }
+            ],
+            "isError": false,
+            "id": "a3f3a47d-0f19-4b82-88fe-c6fd58148c04"
+          },
+          "meta": {
+            "cwd": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS02-a02"
+          }
+        },
+        "sourceEventSeqs": [
+          20
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 30,
+      "event": {
+        "type": "tool/call",
+        "seq": 28,
+        "time": 1793025437546,
+        "data": {
+          "turn": 1,
+          "step": 2,
+          "callId": "call_00_hI9Dpe9GyLCEmnQN2INB7556",
+          "name": "bash",
+          "arguments": "{\"command\": \"python3 observability_task.py --case OBS02 export --format legacy-json\", \"description\": \"Run first export with legacy-json format\", \"workdir\": \"[LOCAL_PROJECT]/独立测试工作区/DSH/OBS02-a02\"}"
+        }
+      }
+    },
+    {
+      "source_line": 32,
+      "event": {
+        "type": "job/settled",
+        "seq": 30,
+        "time": 1793025437637,
+        "data": {
+          "jobId": "bash-30b7f356c119493d",
+          "owner": "session-92acab3e-f070-4aa1-a41e-1d83b5596590",
+          "kind": "bash",
+          "label": "python3 observability_task.py --case OBS02 export --format legacy-json",
+          "startedAt": 1793025437551,
+          "toolCall": {
+            "callId": "call_00_hI9Dpe9GyLCEmnQN2INB7556",
+            "rootCallId": "call_00_hI9Dpe9GyLCEmnQN2INB7556"
+          },
+          "finishedAt": 1793025437637,
+          "status": "completed",
+          "cause": "producer",
+          "producerReported": true,
+          "detail": "exit code: 7"
+        }
+      }
+    },
+    {
+      "source_line": 33,
+      "event": {
+        "type": "tool/result",
+        "seq": 31,
+        "time": 1793025437637,
+        "data": {
+          "turn": 1,
+          "step": 2,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_hI9Dpe9GyLCEmnQN2INB7556"
+            },
+            "toolCallId": "call_00_hI9Dpe9GyLCEmnQN2INB7556",
+            "content": [
+              {
+                "type": "text",
+                "text": "CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=d6f70409-3c41-44b0-8450-7df1dcaa64e3\nACTION=export\nBUSINESS_STATUS=FAILED\n[stderr]\nERROR_CODE=E_UNSUPPORTED_FORMAT\nRECEIVED_FORMAT=legacy-json\nSUPPORTED_FORMAT=json\nRETRY_COMMAND=python3 observability_task.py --case OBS02 export --format json\n[exit code: 7]"
+              }
+            ],
+            "isError": false,
+            "id": "5b5a9487-a2af-4d46-b3ca-2a8788980f75"
+          },
+          "meta": {
+            "cwd": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS02-a02"
+          }
+        },
+        "sourceEventSeqs": [
+          28
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 38,
+      "event": {
+        "type": "tool/call",
+        "seq": 36,
+        "time": 1793025439059,
+        "data": {
+          "turn": 1,
+          "step": 3,
+          "callId": "call_00_RXv8d6TTDV5YMolnpVJN4165",
+          "name": "bash",
+          "arguments": "{\"command\": \"python3 observability_task.py --case OBS02 export --format json\", \"description\": \"Retry export with supported json format\", \"workdir\": \"[LOCAL_PROJECT]/独立测试工作区/DSH/OBS02-a02\"}"
+        }
+      }
+    },
+    {
+      "source_line": 40,
+      "event": {
+        "type": "job/settled",
+        "seq": 38,
+        "time": 1793025439110,
+        "data": {
+          "jobId": "bash-a53845befa284891",
+          "owner": "session-92acab3e-f070-4aa1-a41e-1d83b5596590",
+          "kind": "bash",
+          "label": "python3 observability_task.py --case OBS02 export --format json",
+          "startedAt": 1793025439066,
+          "toolCall": {
+            "callId": "call_00_RXv8d6TTDV5YMolnpVJN4165",
+            "rootCallId": "call_00_RXv8d6TTDV5YMolnpVJN4165"
+          },
+          "finishedAt": 1793025439110,
+          "status": "completed",
+          "cause": "producer",
+          "producerReported": true,
+          "detail": "exit code: 0"
+        }
+      }
+    },
+    {
+      "source_line": 41,
+      "event": {
+        "type": "tool/result",
+        "seq": 39,
+        "time": 1793025439111,
+        "data": {
+          "turn": 1,
+          "step": 3,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_RXv8d6TTDV5YMolnpVJN4165"
+            },
+            "toolCallId": "call_00_RXv8d6TTDV5YMolnpVJN4165",
+            "content": [
+              {
+                "type": "text",
+                "text": "CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=0d35af01-ee5f-4a0c-9925-a4e81eb4af78\nACTION=export\nBUSINESS_STATUS=OK\nOUTPUT_PATH=outputs/registration_export.json\nTOTAL_PARTICIPANTS=39\n"
+              }
+            ],
+            "isError": false,
+            "id": "e7103ed2-cb77-41e4-8ca8-61df0c0be8a7"
+          },
+          "meta": {
+            "cwd": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS02-a02"
+          }
+        },
+        "sourceEventSeqs": [
+          36
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 46,
+      "event": {
+        "type": "tool/call",
+        "seq": 44,
+        "time": 1793025440612,
+        "data": {
+          "turn": 1,
+          "step": 4,
+          "callId": "call_00_TfyaWOLNQ3Jt04joeMFj2525",
+          "name": "bash",
+          "arguments": "{\"command\": \"python3 observability_task.py --case OBS02 verify\", \"description\": \"Verify exported registration data\", \"workdir\": \"[LOCAL_PROJECT]/独立测试工作区/DSH/OBS02-a02\"}"
+        }
+      }
+    },
+    {
+      "source_line": 48,
+      "event": {
+        "type": "job/settled",
+        "seq": 46,
+        "time": 1793025440665,
+        "data": {
+          "jobId": "bash-7c46bb170ba348a0",
+          "owner": "session-92acab3e-f070-4aa1-a41e-1d83b5596590",
+          "kind": "bash",
+          "label": "python3 observability_task.py --case OBS02 verify",
+          "startedAt": 1793025440618,
+          "toolCall": {
+            "callId": "call_00_TfyaWOLNQ3Jt04joeMFj2525",
+            "rootCallId": "call_00_TfyaWOLNQ3Jt04joeMFj2525"
+          },
+          "finishedAt": 1793025440665,
+          "status": "completed",
+          "cause": "producer",
+          "producerReported": true,
+          "detail": "exit code: 0"
+        }
+      }
+    },
+    {
+      "source_line": 49,
+      "event": {
+        "type": "tool/result",
+        "seq": 47,
+        "time": 1793025440665,
+        "data": {
+          "turn": 1,
+          "step": 4,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_TfyaWOLNQ3Jt04joeMFj2525"
+            },
+            "toolCallId": "call_00_TfyaWOLNQ3Jt04joeMFj2525",
+            "content": [
+              {
+                "type": "text",
+                "text": "CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=a08256b0-e791-41a8-b6de-2c4ebb08e6d0\nACTION=verify\nBUSINESS_STATUS=OK\nCHECKED_PATH=outputs/registration_export.json\nCONTENT_MATCH=true\n"
+              }
+            ],
+            "isError": false,
+            "id": "315b0317-ade7-4552-a42c-e6106d792051"
+          },
+          "meta": {
+            "cwd": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS02-a02"
+          }
+        },
+        "sourceEventSeqs": [
+          44
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 54,
+      "event": {
+        "type": "tool/call",
+        "seq": 52,
+        "time": 1793025442923,
+        "data": {
+          "turn": 1,
+          "step": 5,
+          "callId": "call_00_QQDWyjFRlKRK9kb2wP6z5360",
+          "name": "bash",
+          "arguments": "{\"command\": \"ls -la outputs\", \"description\": \"List generated output files\", \"workdir\": \"[LOCAL_PROJECT]/独立测试工作区/DSH/OBS02-a02\"}"
+        }
+      }
+    },
+    {
+      "source_line": 56,
+      "event": {
+        "type": "job/settled",
+        "seq": 54,
+        "time": 1793025442946,
+        "data": {
+          "jobId": "bash-d6977edc37a0457a",
+          "owner": "session-92acab3e-f070-4aa1-a41e-1d83b5596590",
+          "kind": "bash",
+          "label": "ls -la outputs",
+          "startedAt": 1793025442931,
+          "toolCall": {
+            "callId": "call_00_QQDWyjFRlKRK9kb2wP6z5360",
+            "rootCallId": "call_00_QQDWyjFRlKRK9kb2wP6z5360"
+          },
+          "finishedAt": 1793025442946,
+          "status": "completed",
+          "cause": "producer",
+          "producerReported": true,
+          "detail": "exit code: 0"
+        }
+      }
+    },
+    {
+      "source_line": 57,
+      "event": {
+        "type": "tool/result",
+        "seq": 55,
+        "time": 1793025442946,
+        "data": {
+          "turn": 1,
+          "step": 5,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_QQDWyjFRlKRK9kb2wP6z5360"
+            },
+            "toolCallId": "call_00_QQDWyjFRlKRK9kb2wP6z5360",
+            "content": [
+              {
+                "type": "text",
+                "text": "total 16\ndrwxr-xr-x@ 4 USER  staff  128 Oct 26 22:37 .\ndrwxr-xr-x@ 4 USER  staff  128 Oct 26 22:37 ..\n-rw-r--r--@ 1 USER  staff  993 Oct 26 22:37 business_events.jsonl\n-rw-r--r--@ 1 USER  staff  350 Oct 26 22:37 registration_export.json\n"
+              }
+            ],
+            "isError": false,
+            "id": "53024c57-1dde-4190-b1c0-83740f5c984e"
+          },
+          "meta": {
+            "cwd": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS02-a02"
+          }
+        },
+        "sourceEventSeqs": [
+          52
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 62,
+      "event": {
+        "type": "tool/call",
+        "seq": 60,
+        "time": 1793025444417,
+        "data": {
+          "turn": 1,
+          "step": 6,
+          "callId": "call_00_Npecr2BqZuxx4En0tqx00800",
+          "name": "present",
+          "arguments": "{\"files\": [{\"path\": \"outputs/registration_export.json\", \"description\": \"OBS02 报名数据导出文件\"}, {\"path\": \"outputs/business_events.jsonl\", \"description\": \"程序自动产生的业务事件日志\"}]}"
+        }
+      }
+    },
+    {
+      "source_line": 64,
+      "event": {
+        "type": "tool/result",
+        "seq": 62,
+        "time": 1793025444424,
+        "data": {
+          "turn": 1,
+          "step": 6,
+          "message": {
+            "role": "tool",
+            "source": {
+              "kind": "tool",
+              "callId": "call_00_Npecr2BqZuxx4En0tqx00800"
+            },
+            "toolCallId": "call_00_Npecr2BqZuxx4En0tqx00800",
+            "content": [
+              {
+                "type": "text",
+                "text": "Presented [LOCAL_PROJECT]/独立测试工作区/DSH/OBS02-a02/outputs/registration_export.json\nPresented [LOCAL_PROJECT]/独立测试工作区/DSH/OBS02-a02/outputs/business_events.jsonl"
+              }
+            ],
+            "isError": false,
+            "id": "35a5ccac-08d9-4ace-b913-63c765c347eb"
+          }
+        },
+        "sourceEventSeqs": [
+          60
+        ],
+        "surfaceOp": "append"
+      }
+    },
+    {
+      "source_line": 70,
+      "event": {
+        "type": "turn/end",
+        "seq": 68,
+        "time": 1793025446759,
+        "data": {
+          "turn": 1,
+          "reason": {
+            "kind": "completed"
+          }
+        }
+      }
+    }
+  ]
+}

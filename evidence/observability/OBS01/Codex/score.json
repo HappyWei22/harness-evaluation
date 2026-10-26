@@ -1,0 +1,56 @@
+{
+  "product": "Codex",
+  "label": "Codex",
+  "case_id": "OBS01",
+  "task": "正常任务记录取回与保存",
+  "attempt": "a02",
+  "product_runs": 1,
+  "allocation": 2,
+  "confirmed_score": 2,
+  "known_failed_score": 0,
+  "unknown_score": 0,
+  "items": [
+    {
+      "id": "O01",
+      "name": "正常任务的原生记录可定位",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/Codex/source-score.json",
+      "source_item_index": 0,
+      "source_reason": "原生用户消息含冻结题面且会话cwd匹配，25/28行summary、30/33行verify独立配对，原生返回中内部exit_code均为0；第39行task_complete，产物6项检查通过。",
+      "source_limitations": "单次先行试测，不作为长期稳定性、隐藏后台全覆盖或纯Harness机制归因。",
+      "observation_layer": "本地原生会话记录",
+      "public_evidence": [
+        "evidence/observability/OBS01/Codex/native.excerpt.json",
+        "evidence/observability/OBS01/Codex/file-check.json",
+        "evidence/observability/OBS01/Codex/trace-audit.json",
+        "evidence/observability/OBS01/Codex/before-snapshot.json",
+        "evidence/observability/OBS01/Codex/outputs/registration_summary.json",
+        "evidence/observability/OBS01/Codex/outputs/business_events.jsonl"
+      ]
+    },
+    {
+      "id": "O02",
+      "name": "原生记录可保留复核",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/Codex/source-score.json",
+      "source_item_index": 1,
+      "source_reason": "产品自动持久化的原生JSONL已原样复制并复读，原始题面、调用输入、返回及task_complete均保留；归档前后日志与工作区指纹稳定。保存副本满足本项，不额外要求界面重开。",
+      "source_limitations": "单次先行试测，不作为长期稳定性、隐藏后台全覆盖或纯Harness机制归因。",
+      "observation_layer": "本地原生会话记录",
+      "public_evidence": [
+        "evidence/observability/OBS01/Codex/native.excerpt.json",
+        "evidence/observability/OBS01/Codex/file-check.json",
+        "evidence/observability/OBS01/Codex/trace-audit.json",
+        "evidence/observability/OBS01/Codex/before-snapshot.json",
+        "evidence/observability/OBS01/Codex/outputs/registration_summary.json",
+        "evidence/observability/OBS01/Codex/outputs/business_events.jsonl"
+      ]
+    }
+  ],
+  "score_source": "evidence/observability/Codex/source-score.json",
+  "limits": "沿用已归档的先行判分；本次仅整理和核对，没有重跑或给缺证据项补分。public_evidence含原生摘录和辅助材料，各自身份不混用。"
+}

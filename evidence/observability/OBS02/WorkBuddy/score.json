@@ -1,0 +1,88 @@
+{
+  "product": "WorkBuddy",
+  "label": "WorkBuddy",
+  "case_id": "OBS02",
+  "task": "报错与重试过程追踪",
+  "attempt": "a02",
+  "product_runs": 1,
+  "allocation": 4,
+  "confirmed_score": 4,
+  "known_failed_score": 0,
+  "unknown_score": 0,
+  "items": [
+    {
+      "id": "O03",
+      "name": "失败调用的实际输入可查",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/WorkBuddy/source-score.json",
+      "source_item_index": 2,
+      "source_reason": "三次业务调用及配对返回完整，首次错误和更正后的输入、结果可复核",
+      "source_limitations": "单次试测，不代表稳定性；业务成功不等于WB目录代理缺陷已修复",
+      "observation_layer": "原生本地日志",
+      "public_evidence": [
+        "evidence/observability/OBS02/WorkBuddy/native.excerpt.json",
+        "evidence/observability/OBS02/WorkBuddy/file-check.json",
+        "evidence/observability/OBS02/WorkBuddy/outputs/registration_export.json",
+        "evidence/observability/OBS02/WorkBuddy/outputs/business_events.jsonl"
+      ]
+    },
+    {
+      "id": "O04",
+      "name": "原始失败结果可查",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/WorkBuddy/source-score.json",
+      "source_item_index": 3,
+      "source_reason": "三次业务调用及配对返回完整，首次错误和更正后的输入、结果可复核",
+      "source_limitations": "单次试测，不代表稳定性；业务成功不等于WB目录代理缺陷已修复",
+      "observation_layer": "原生本地日志",
+      "public_evidence": [
+        "evidence/observability/OBS02/WorkBuddy/native.excerpt.json",
+        "evidence/observability/OBS02/WorkBuddy/file-check.json",
+        "evidence/observability/OBS02/WorkBuddy/outputs/registration_export.json",
+        "evidence/observability/OBS02/WorkBuddy/outputs/business_events.jsonl"
+      ]
+    },
+    {
+      "id": "O05",
+      "name": "不同尝试可区分",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/WorkBuddy/source-score.json",
+      "source_item_index": 4,
+      "source_reason": "三次业务调用及配对返回完整，首次错误和更正后的输入、结果可复核",
+      "source_limitations": "单次试测，不代表稳定性；业务成功不等于WB目录代理缺陷已修复",
+      "observation_layer": "原生本地日志",
+      "public_evidence": [
+        "evidence/observability/OBS02/WorkBuddy/native.excerpt.json",
+        "evidence/observability/OBS02/WorkBuddy/file-check.json",
+        "evidence/observability/OBS02/WorkBuddy/outputs/registration_export.json",
+        "evidence/observability/OBS02/WorkBuddy/outputs/business_events.jsonl"
+      ]
+    },
+    {
+      "id": "O06",
+      "name": "调用与结果可对应",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/WorkBuddy/source-score.json",
+      "source_item_index": 5,
+      "source_reason": "三次业务调用及配对返回完整，首次错误和更正后的输入、结果可复核",
+      "source_limitations": "单次试测，不代表稳定性；业务成功不等于WB目录代理缺陷已修复",
+      "observation_layer": "原生本地日志",
+      "public_evidence": [
+        "evidence/observability/OBS02/WorkBuddy/native.excerpt.json",
+        "evidence/observability/OBS02/WorkBuddy/file-check.json",
+        "evidence/observability/OBS02/WorkBuddy/outputs/registration_export.json",
+        "evidence/observability/OBS02/WorkBuddy/outputs/business_events.jsonl"
+      ]
+    }
+  ],
+  "score_source": "evidence/observability/WorkBuddy/source-score.json",
+  "limits": "沿用已归档的先行判分；本次仅整理和核对，没有重跑或给缺证据项补分。public_evidence含原生摘录和辅助材料，各自身份不混用。"
+}

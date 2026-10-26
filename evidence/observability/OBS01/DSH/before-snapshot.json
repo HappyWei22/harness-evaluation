@@ -1,0 +1,19 @@
+{
+  "case_id": "OBS01",
+  "attempt": "a02",
+  "product": "DSH",
+  "business_input_version": "0.3.1-portable-pilot",
+  "rule_version": "0.3.0-pilot",
+  "workspace": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02",
+  "files": [
+    {
+      "path": "observability_task.py",
+      "bytes": 7923,
+      "sha256": "e39e673d6b8deed72a40e0a706b173aab5268b01731160b2b367cc654004185e"
+    }
+  ],
+  "prompt": "[LOCAL_PROJECT]/维度评测/07-可观测性/五产品兼容试测-0.3.1/DSH/01-OBS01-正常任务记录取回与保存.md",
+  "prompt_sha256": "e40738a0800b3d524b7ee51e3adef7f66d7ff81f2c9dfac689fb98dec50c24de",
+  "read_isolation_verified": false,
+  "note": "接续已准备且未产生业务输出的新版目录；只读核对，没有在产品工作区执行脚本。"
+}

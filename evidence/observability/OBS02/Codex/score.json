@@ -1,0 +1,96 @@
+{
+  "product": "Codex",
+  "label": "Codex",
+  "case_id": "OBS02",
+  "task": "报错与重试过程追踪",
+  "attempt": "a02",
+  "product_runs": 1,
+  "allocation": 4,
+  "confirmed_score": 4,
+  "known_failed_score": 0,
+  "unknown_score": 0,
+  "items": [
+    {
+      "id": "O03",
+      "name": "失败调用的实际输入可查",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/Codex/source-score.json",
+      "source_item_index": 2,
+      "source_reason": "第25行exec输入保留实际首次命令legacy-json参数与本题a02工作目录。",
+      "source_limitations": "只对本次已核对记录层判定，不把外层完成当内层成功，不宣称隐藏后台全覆盖或长期可靠。",
+      "observation_layer": "本地原生会话记录",
+      "public_evidence": [
+        "evidence/observability/OBS02/Codex/native.excerpt.json",
+        "evidence/observability/OBS02/Codex/file-check.json",
+        "evidence/observability/OBS02/Codex/trace-audit.json",
+        "evidence/observability/OBS02/Codex/before-snapshot.json",
+        "evidence/observability/OBS02/Codex/outputs/registration_export.json",
+        "evidence/observability/OBS02/Codex/outputs/business_events.jsonl"
+      ]
+    },
+    {
+      "id": "O04",
+      "name": "原始失败结果可查",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/Codex/source-score.json",
+      "source_item_index": 3,
+      "source_reason": "第28行原生返回的内部exit_code=7，正文保留错误、接收格式、合法格式、更正命令和业务失败状态；不以外层Script completed误判成功。",
+      "source_limitations": "只对本次已核对记录层判定，不把外层完成当内层成功，不宣称隐藏后台全覆盖或长期可靠。",
+      "observation_layer": "本地原生会话记录",
+      "public_evidence": [
+        "evidence/observability/OBS02/Codex/native.excerpt.json",
+        "evidence/observability/OBS02/Codex/file-check.json",
+        "evidence/observability/OBS02/Codex/trace-audit.json",
+        "evidence/observability/OBS02/Codex/before-snapshot.json",
+        "evidence/observability/OBS02/Codex/outputs/registration_export.json",
+        "evidence/observability/OBS02/Codex/outputs/business_events.jsonl"
+      ]
+    },
+    {
+      "id": "O05",
+      "name": "不同尝试可区分",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/Codex/source-score.json",
+      "source_item_index": 4,
+      "source_reason": "25/28行失败与30/33行成功属于不同call_id，格式从legacy-json变为json，首次结果先于更正调用，失败未被覆盖。",
+      "source_limitations": "只对本次已核对记录层判定，不把外层完成当内层成功，不宣称隐藏后台全覆盖或长期可靠。",
+      "observation_layer": "本地原生会话记录",
+      "public_evidence": [
+        "evidence/observability/OBS02/Codex/native.excerpt.json",
+        "evidence/observability/OBS02/Codex/file-check.json",
+        "evidence/observability/OBS02/Codex/trace-audit.json",
+        "evidence/observability/OBS02/Codex/before-snapshot.json",
+        "evidence/observability/OBS02/Codex/outputs/registration_export.json",
+        "evidence/observability/OBS02/Codex/outputs/business_events.jsonl"
+      ]
+    },
+    {
+      "id": "O06",
+      "name": "调用与结果可对应",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/Codex/source-score.json",
+      "source_item_index": 5,
+      "source_reason": "全部4组原生调用返回按call_id对应，三次业务事件25/28、30/33、35/38行清晰，内层退出码7/0/0；输出路径和文件实物匹配。",
+      "source_limitations": "只对本次已核对记录层判定，不把外层完成当内层成功，不宣称隐藏后台全覆盖或长期可靠。",
+      "observation_layer": "本地原生会话记录",
+      "public_evidence": [
+        "evidence/observability/OBS02/Codex/native.excerpt.json",
+        "evidence/observability/OBS02/Codex/file-check.json",
+        "evidence/observability/OBS02/Codex/trace-audit.json",
+        "evidence/observability/OBS02/Codex/before-snapshot.json",
+        "evidence/observability/OBS02/Codex/outputs/registration_export.json",
+        "evidence/observability/OBS02/Codex/outputs/business_events.jsonl"
+      ]
+    }
+  ],
+  "score_source": "evidence/observability/Codex/source-score.json",
+  "limits": "沿用已归档的先行判分；本次仅整理和核对，没有重跑或给缺证据项补分。public_evidence含原生摘录和辅助材料，各自身份不混用。"
+}

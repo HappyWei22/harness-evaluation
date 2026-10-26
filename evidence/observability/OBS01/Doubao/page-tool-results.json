@@ -1,0 +1,34 @@
+[
+  {
+    "json_path": "data-fn-args[0][2].data.message_snapshot.message_list[1].content_block[5].content.file_operation_block.display_content",
+    "display_content": {
+      "operation": "cd \"[LOCAL_PROJECT]/独立测试工作区/豆包工作/OBS01-a02\" && ls -la",
+      "result": "total 16\ndrwxr-xr-x@  3 USER  staff    96 Oct 26 21:38 .\ndrwxr-xr-x@ 15 USER  staff   480 Oct 26 21:38 ..\n-rw-r--r--@  1 USER  staff  7923 Oct 26 21:38 observability_task.py\n",
+      "exit_code": 0
+    }
+  },
+  {
+    "json_path": "data-fn-args[0][2].data.message_snapshot.message_list[1].content_block[9].content.file_operation_block.display_content",
+    "display_content": {
+      "operation": "cd \"[LOCAL_PROJECT]/独立测试工作区/豆包工作/OBS01-a02\" && python3 observability_task.py --case OBS01 summary",
+      "result": "CASE_ID=OBS01\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=e2177e33-9365-4b92-a0a3-c9f3c44dd874\nACTION=summary\nBUSINESS_STATUS=OK\nOUTPUT_PATH=outputs/registration_summary.json\nACTIVITY_COUNT=3\nTOTAL_PARTICIPANTS=39\n",
+      "exit_code": 0
+    }
+  },
+  {
+    "json_path": "data-fn-args[0][2].data.message_snapshot.message_list[1].content_block[13].content.file_operation_block.display_content",
+    "display_content": {
+      "operation": "cd \"[LOCAL_PROJECT]/独立测试工作区/豆包工作/OBS01-a02\" && python3 observability_task.py --case OBS01 verify",
+      "result": "CASE_ID=OBS01\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=3caf9c1b-989f-4397-86c1-7fe371c8e845\nACTION=verify\nBUSINESS_STATUS=OK\nCHECKED_PATH=outputs/registration_summary.json\nCONTENT_MATCH=true\n",
+      "exit_code": 0
+    }
+  },
+  {
+    "json_path": "data-fn-args[0][2].data.message_snapshot.message_list[1].content_block[17].content.file_operation_block.display_content",
+    "display_content": {
+      "operation": "ls -la \"[LOCAL_PROJECT]/独立测试工作区/豆包工作/OBS01-a02/outputs/\"",
+      "result": "total 16\ndrwxr-xr-x@ 4 USER  staff  128 Oct 26 21:51 .\ndrwxr-xr-x@ 4 USER  staff  128 Oct 26 21:51 ..\n-rw-r--r--@ 1 USER  staff  620 Oct 26 21:52 business_events.jsonl\n-rw-r--r--@ 1 USER  staff  350 Oct 26 21:51 registration_summary.json\n",
+      "exit_code": 0
+    }
+  }
+]

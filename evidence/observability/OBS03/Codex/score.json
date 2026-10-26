@@ -1,0 +1,104 @@
+{
+  "product": "Codex",
+  "label": "Codex",
+  "case_id": "OBS03",
+  "task": "部分完成与受阻结束追踪",
+  "attempt": "a02",
+  "product_runs": 1,
+  "allocation": 4,
+  "confirmed_score": 4,
+  "known_failed_score": 0,
+  "unknown_score": 0,
+  "items": [
+    {
+      "id": "O07",
+      "name": "部分成功与连续失败链可还原",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/Codex/source-score.json",
+      "source_item_index": 6,
+      "source_reason": "25/28行A成功，30/33与35/38行B两次不同失败，内层退出0/7/9分别保留，输入、先后及产物可还原。",
+      "source_limitations": "仅本轮可访问原生记录覆盖的执行范围，不声称独立证明所有隐藏后台未执行C。",
+      "observation_layer": "本地原生会话记录",
+      "public_evidence": [
+        "evidence/observability/OBS03/Codex/native.excerpt.json",
+        "evidence/observability/OBS03/Codex/file-check.json",
+        "evidence/observability/OBS03/Codex/trace-audit.json",
+        "evidence/observability/OBS03/Codex/before-snapshot.json",
+        "evidence/observability/OBS03/Codex/outputs/registration_summary.json",
+        "evidence/observability/OBS03/Codex/outputs/business_events.jsonl",
+        "evidence/observability/OBS03/Codex/reopen.json",
+        "evidence/observability/OBS03/Codex/after-reopen.excerpt.json"
+      ]
+    },
+    {
+      "id": "O08",
+      "name": "后续步骤执行状态可区分",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/Codex/source-score.json",
+      "source_item_index": 7,
+      "source_reason": "枚举session_meta至task_complete的全部5组原生调用，每个exec输入只有一次已终结的前台exec_command；实际命令为pwd、summary、两次export及status，没有package；结合独立初态、冻结无隐式C执行脚本及终态实物，支持本轮已核对执行链内C未开始。",
+      "source_limitations": "仅本轮可访问原生记录覆盖的执行范围，不声称独立证明所有隐藏后台未执行C。",
+      "observation_layer": "本地原生会话记录",
+      "public_evidence": [
+        "evidence/observability/OBS03/Codex/native.excerpt.json",
+        "evidence/observability/OBS03/Codex/file-check.json",
+        "evidence/observability/OBS03/Codex/trace-audit.json",
+        "evidence/observability/OBS03/Codex/before-snapshot.json",
+        "evidence/observability/OBS03/Codex/outputs/registration_summary.json",
+        "evidence/observability/OBS03/Codex/outputs/business_events.jsonl",
+        "evidence/observability/OBS03/Codex/reopen.json",
+        "evidence/observability/OBS03/Codex/after-reopen.excerpt.json"
+      ]
+    },
+    {
+      "id": "O09",
+      "name": "受阻结束的原生状态可追溯",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/Codex/source-score.json",
+      "source_item_index": 8,
+      "source_reason": "第51行原生task_complete归属当前回合，A成功、B错误7/9与C状态依据可关联；status的0与原生结束、业务受阻三者分开。",
+      "source_limitations": "仅本轮可访问原生记录覆盖的执行范围，不声称独立证明所有隐藏后台未执行C。",
+      "observation_layer": "本地原生会话记录",
+      "public_evidence": [
+        "evidence/observability/OBS03/Codex/native.excerpt.json",
+        "evidence/observability/OBS03/Codex/file-check.json",
+        "evidence/observability/OBS03/Codex/trace-audit.json",
+        "evidence/observability/OBS03/Codex/before-snapshot.json",
+        "evidence/observability/OBS03/Codex/outputs/registration_summary.json",
+        "evidence/observability/OBS03/Codex/outputs/business_events.jsonl",
+        "evidence/observability/OBS03/Codex/reopen.json",
+        "evidence/observability/OBS03/Codex/after-reopen.excerpt.json"
+      ]
+    },
+    {
+      "id": "O10",
+      "name": "重新打开后复杂历史仍完整",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/Codex/source-score.json",
+      "source_item_index": 9,
+      "source_reason": "用户回应重开检查请求“无变化”；前后原生记录均51行、字节及事件完全相同，原题面、5组调用返回和第51行task_complete保留；3个工作文件指纹一致，没有新增调用或用户消息。",
+      "source_limitations": "界面重开及可见性来自用户反馈，评测者未直接观察界面，也没有截图；文件相同本身不证明发生了重开，仅评价本次检查。",
+      "observation_layer": "用户界面观察反馈 + 本地原生会话记录与文件比对",
+      "public_evidence": [
+        "evidence/observability/OBS03/Codex/native.excerpt.json",
+        "evidence/observability/OBS03/Codex/file-check.json",
+        "evidence/observability/OBS03/Codex/trace-audit.json",
+        "evidence/observability/OBS03/Codex/before-snapshot.json",
+        "evidence/observability/OBS03/Codex/outputs/registration_summary.json",
+        "evidence/observability/OBS03/Codex/outputs/business_events.jsonl",
+        "evidence/observability/OBS03/Codex/reopen.json",
+        "evidence/observability/OBS03/Codex/after-reopen.excerpt.json"
+      ]
+    }
+  ],
+  "score_source": "evidence/observability/Codex/source-score.json",
+  "limits": "沿用已归档的先行判分；本次仅整理和核对，没有重跑或给缺证据项补分。public_evidence含原生摘录和辅助材料，各自身份不混用。"
+}

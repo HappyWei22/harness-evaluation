@@ -1,0 +1,144 @@
+{
+  "case_id": "OBS01",
+  "attempt": "a02",
+  "product": "Codex",
+  "business_input_version": "0.3.1-portable-pilot",
+  "rule_version": "0.3.0-pilot",
+  "native_session_id": "01a178bb-b9b1-7e52-9252-edcf89f7dfc8",
+  "native_rows": 39,
+  "native_source": "/LOCAL_USER/.codex/sessions/2026/10/26/rollout-2026-10-26T23-02-11-01a178bb-b9b1-7e52-9252-edcf89f7dfc8.jsonl",
+  "native_session_cwd": "[LOCAL_PROJECT]/独立测试工作区/Codex/OBS01-a02",
+  "native_cli_version": "0.163.0-alpha.11.2",
+  "originator": "Codex Desktop",
+  "frozen_prompt_found_in_native_user_message": true,
+  "tool_call_pairs": [
+    {
+      "call_line": 20,
+      "result_line": 23,
+      "native_call_id": "call_8a6ffe55cea04b429f22bb42ead6313c",
+      "native_tool": "exec",
+      "native_tool_input": "const r = await tools.exec_command({cmd:\"pwd\",workdir:\"[LOCAL_PROJECT]/独立测试工作区/Codex/OBS01-a02\",max_output_tokens:10000});text(r);\n",
+      "visible_nested_tool": "tools.exec_command",
+      "literal_command_from_input": "pwd",
+      "literal_workdir_from_input": "[LOCAL_PROJECT]/独立测试工作区/Codex/OBS01-a02",
+      "nested_result": {
+        "chunk_id": "646a01",
+        "wall_time_seconds": 9.417e-06,
+        "exit_code": 0,
+        "original_token_count": 22,
+        "output": "[LOCAL_PROJECT]/独立测试工作区/Codex/OBS01-a02\n"
+      },
+      "native_result": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "{\"chunk_id\":\"646a01\",\"wall_time_seconds\":0.000009417,\"exit_code\":0,\"original_token_count\":22,\"output\":\"[LOCAL_PROJECT]/独立测试工作区/Codex/OBS01-a02\\n\"}"
+        }
+      ]
+    },
+    {
+      "call_line": 25,
+      "result_line": 28,
+      "native_call_id": "call_2e2c481572fe46c0852f9e98931e8527",
+      "native_tool": "exec",
+      "native_tool_input": "const r = await tools.exec_command({cmd:\"python3 observability_task.py --case OBS01 summary\",workdir:\"[LOCAL_PROJECT]/独立测试工作区/Codex/OBS01-a02\",max_output_tokens:10000});text(r);\n",
+      "visible_nested_tool": "tools.exec_command",
+      "literal_command_from_input": "python3 observability_task.py --case OBS01 summary",
+      "literal_workdir_from_input": "[LOCAL_PROJECT]/独立测试工作区/Codex/OBS01-a02",
+      "nested_result": {
+        "chunk_id": "21b7c8",
+        "wall_time_seconds": 0.013581208,
+        "exit_code": 0,
+        "original_token_count": 58,
+        "output": "CASE_ID=OBS01\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=b6ae4baf-8d07-4022-be2c-d792f1984975\nACTION=summary\nBUSINESS_STATUS=OK\nOUTPUT_PATH=outputs/registration_summary.json\nACTIVITY_COUNT=3\nTOTAL_PARTICIPANTS=39\n"
+      },
+      "native_result": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 0.2 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "{\"chunk_id\":\"21b7c8\",\"wall_time_seconds\":0.013581208,\"exit_code\":0,\"original_token_count\":58,\"output\":\"CASE_ID=OBS01\\nMATERIAL_VERSION=0.3.1-portable-pilot\\nBUSINESS_INVOCATION_ID=b6ae4baf-8d07-4022-be2c-d792f1984975\\nACTION=summary\\nBUSINESS_STATUS=OK\\nOUTPUT_PATH=outputs/registration_summary.json\\nACTIVITY_COUNT=3\\nTOTAL_PARTICIPANTS=39\\n\"}"
+        }
+      ]
+    },
+    {
+      "call_line": 30,
+      "result_line": 33,
+      "native_call_id": "call_b92eedbf5dbd4aa891a98d4a144f1ffb",
+      "native_tool": "exec",
+      "native_tool_input": "const r = await tools.exec_command({cmd:\"python3 observability_task.py --case OBS01 verify\",workdir:\"[LOCAL_PROJECT]/独立测试工作区/Codex/OBS01-a02\",max_output_tokens:10000});text(r);\n",
+      "visible_nested_tool": "tools.exec_command",
+      "literal_command_from_input": "python3 observability_task.py --case OBS01 verify",
+      "literal_workdir_from_input": "[LOCAL_PROJECT]/独立测试工作区/Codex/OBS01-a02",
+      "nested_result": {
+        "chunk_id": "a492bf",
+        "wall_time_seconds": 6.292e-06,
+        "exit_code": 0,
+        "original_token_count": 53,
+        "output": "CASE_ID=OBS01\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=efef949a-e9a6-47c1-835c-97d83efeaa6a\nACTION=verify\nBUSINESS_STATUS=OK\nCHECKED_PATH=outputs/registration_summary.json\nCONTENT_MATCH=true\n"
+      },
+      "native_result": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "{\"chunk_id\":\"a492bf\",\"wall_time_seconds\":0.000006292,\"exit_code\":0,\"original_token_count\":53,\"output\":\"CASE_ID=OBS01\\nMATERIAL_VERSION=0.3.1-portable-pilot\\nBUSINESS_INVOCATION_ID=efef949a-e9a6-47c1-835c-97d83efeaa6a\\nACTION=verify\\nBUSINESS_STATUS=OK\\nCHECKED_PATH=outputs/registration_summary.json\\nCONTENT_MATCH=true\\n\"}"
+        }
+      ]
+    }
+  ],
+  "native_tool_call_pairs_count": 3,
+  "business_calls_count": 2,
+  "business_inner_exit_codes": [
+    0,
+    0
+  ],
+  "native_configuration": {
+    "cwd": "[LOCAL_PROJECT]/独立测试工作区/Codex/OBS01-a02",
+    "model": "gpt-6.1-sol",
+    "effort": "high",
+    "approval_policy": "on-request",
+    "approvals_reviewer": "auto_review",
+    "sandbox_policy": {
+      "type": "workspace-write",
+      "writable_roots": [
+        "/LOCAL_USER/.codex/visualizations/2026/10/26/01a178bb-b9b1-7e52-9252-edcf89f7dfc8"
+      ],
+      "network_access": false,
+      "exclude_tmpdir_env_var": false,
+      "exclude_slash_tmp": false
+    }
+  },
+  "native_end": {
+    "line": 39,
+    "data": {
+      "type": "task_complete",
+      "root_turn_id": "01a178bb-c113-71f3-8a5f-d0fc41e338b6",
+      "turn_id": "01a178bb-c113-71f3-8a5f-d0fc41e338b6",
+      "last_agent_message": "已核对工作目录，并依次独立执行两条命令，均退出码为 `0`、`BUSINESS_STATUS=OK`。汇总为 3 项活动、39 名参与者；核验返回 `CONTENT_MATCH=true`。\n\n交付文件：\n\n- [registration_summary.json]([LOCAL_PROJECT]/独立测试工作区/Codex/OBS01-a02/outputs/registration_summary.json)\n- [business_events.jsonl]([LOCAL_PROJECT]/独立测试工作区/Codex/OBS01-a02/outputs/business_events.jsonl)",
+      "started_at": 1793026933,
+      "completed_at": 1793026973,
+      "duration_ms": 40429,
+      "time_to_first_token_ms": 5231
+    }
+  },
+  "file_checks_passed": 6,
+  "input_unchanged": true,
+  "archive_stable": true,
+  "ui_reopen_required": false,
+  "ui_reopen_observed": false,
+  "limits": [
+    "可见原生工具为exec；其中的exec_command请求及返回在原生input/output内核对，不编造额外内层原生调用ID。",
+    "工具编排结束与内部命令退出状态分别判断；本次内部exit_code均为0。",
+    "task_complete仅证明原生回合结束，业务正确另由原返回和文件核对支持。",
+    "保存副本可读不等于做过界面重开；第一题不额外要求重开。",
+    "仅当前任务和本地原生记录层；不证明隐藏后台全覆盖、长期稳定或纯Harness因果。"
+  ]
+}

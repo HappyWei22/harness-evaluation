@@ -1,0 +1,54 @@
+{
+  "product": "WorkBuddy",
+  "label": "WorkBuddy",
+  "case_id": "OBS01",
+  "task": "正常任务记录取回与保存",
+  "attempt": "a02",
+  "product_runs": 1,
+  "allocation": 2,
+  "confirmed_score": 0,
+  "known_failed_score": 0,
+  "unknown_score": 2,
+  "items": [
+    {
+      "id": "O01",
+      "name": "正常任务的原生记录可定位",
+      "allocation": 1,
+      "score": null,
+      "status": "Unknown",
+      "source_score": "evidence/observability/WorkBuddy/source-score.json",
+      "source_item_index": 0,
+      "source_reason": "调用返回完整，但独立原生任务结束状态未取得",
+      "source_limitations": null,
+      "observation_layer": "原生本地日志",
+      "public_evidence": [
+        "evidence/observability/OBS01/WorkBuddy/native.excerpt.json",
+        "evidence/observability/OBS01/WorkBuddy/file-check.json",
+        "evidence/observability/OBS01/WorkBuddy/extra-actions.json",
+        "evidence/observability/OBS01/WorkBuddy/outputs/registration_summary.json",
+        "evidence/observability/OBS01/WorkBuddy/outputs/business_events.jsonl"
+      ]
+    },
+    {
+      "id": "O02",
+      "name": "原生记录可保留复核",
+      "allocation": 1,
+      "score": null,
+      "status": "Unknown",
+      "source_score": "evidence/observability/WorkBuddy/source-score.json",
+      "source_item_index": 1,
+      "source_reason": "调用返回完整，但独立原生任务结束状态未取得",
+      "source_limitations": null,
+      "observation_layer": "原生本地日志",
+      "public_evidence": [
+        "evidence/observability/OBS01/WorkBuddy/native.excerpt.json",
+        "evidence/observability/OBS01/WorkBuddy/file-check.json",
+        "evidence/observability/OBS01/WorkBuddy/extra-actions.json",
+        "evidence/observability/OBS01/WorkBuddy/outputs/registration_summary.json",
+        "evidence/observability/OBS01/WorkBuddy/outputs/business_events.jsonl"
+      ]
+    }
+  ],
+  "score_source": "evidence/observability/WorkBuddy/source-score.json",
+  "limits": "沿用已归档的先行判分；本次仅整理和核对，没有重跑或给缺证据项补分。public_evidence含原生摘录和辅助材料，各自身份不混用。"
+}

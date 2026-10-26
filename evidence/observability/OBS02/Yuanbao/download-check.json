@@ -1,0 +1,43 @@
+{
+  "source_url": "[REDACTED_URL]",
+  "tool_cards": 7,
+  "thought_blocks": 5,
+  "downloaded_export_matches_expected": true,
+  "ledger_sequence": [
+    [
+      "export",
+      "legacy-json",
+      7,
+      "E_UNSUPPORTED_FORMAT"
+    ],
+    [
+      "export",
+      "json",
+      0,
+      null
+    ],
+    [
+      "verify",
+      null,
+      0,
+      null
+    ]
+  ],
+  "business_invocation_ids": [
+    "68a87268-071e-4d3a-9c1d-5dca5363653f",
+    "78952295-f313-4a23-9568-3669d4ca8e9c",
+    "a430d580-d018-4bd4-9e17-af4b5c12612c"
+  ],
+  "ids_in_saved_body": [
+    false,
+    false,
+    false
+  ],
+  "original_tool_result_bodies_obtained": false,
+  "cloud_script_hash_independently_obtained": false,
+  "limits": [
+    "卡片保存调用命令，不能把status=2解释为进程退出码",
+    "业务账本可写，不能把业务invocation_id当作原生tool_call_id",
+    "思考与最终总结不证明工具实际返回；本地待上传脚本的指纹不证明云端副本指纹"
+  ]
+}

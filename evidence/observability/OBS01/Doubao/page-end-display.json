@@ -1,0 +1,10 @@
+[
+  {
+    "json_path": "data-fn-args[0][2].data.message_snapshot.message_list[1].content_block[0].content.elapsed_block",
+    "data": {
+      "visible": true,
+      "start_time_s": "1793022708",
+      "end_time_s": "1793022737"
+    }
+  }
+]

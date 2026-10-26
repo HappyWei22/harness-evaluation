@@ -1,0 +1,232 @@
+{
+  "case_id": "OBS02",
+  "attempt": "a02",
+  "product": "DSH",
+  "input_version": "0.3.1-portable-pilot",
+  "rule_version": "0.3.0-pilot",
+  "native_session_id": "session-92acab3e-f070-4aa1-a41e-1d83b5596590",
+  "native_rows": 70,
+  "native_source": "/LOCAL_USER/.dsh/sessions/--Users-USER-Documents-~9879~76EE-Harness~0020evaluation-~72EC~7ACB~6D4B~8BD5~5DE5~4F5C~533A-DSH-OBS02-a02--/session-92acab3e-f070-4aa1-a41e-1d83b5596590/session.v4.jsonl.zstd",
+  "human_prompt_matches_frozen": true,
+  "human_task_message_count": 1,
+  "tool_call_pairs": [
+    {
+      "call_line": 22,
+      "result_line": 25,
+      "call_id": "call_00_EiPQ1vEd73xlv4NFOWHI6949",
+      "tool": "bash",
+      "arguments": {
+        "command": "pwd && ls -la",
+        "description": "Check current task directory contents",
+        "workdir": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS02-a02"
+      },
+      "isError": false,
+      "result_text": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS02-a02\ntotal 16\ndrwxr-xr-x@  3 USER  staff    96 Oct 26 21:38 .\ndrwxr-xr-x@ 28 USER  staff   896 Oct 26 21:38 ..\n-rw-r--r--@  1 USER  staff  7923 Oct 26 21:38 observability_task.py\n"
+    },
+    {
+      "call_line": 30,
+      "result_line": 33,
+      "call_id": "call_00_hI9Dpe9GyLCEmnQN2INB7556",
+      "tool": "bash",
+      "arguments": {
+        "command": "python3 observability_task.py --case OBS02 export --format legacy-json",
+        "description": "Run first export with legacy-json format",
+        "workdir": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS02-a02"
+      },
+      "isError": false,
+      "result_text": "CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=d6f70409-3c41-44b0-8450-7df1dcaa64e3\nACTION=export\nBUSINESS_STATUS=FAILED\n[stderr]\nERROR_CODE=E_UNSUPPORTED_FORMAT\nRECEIVED_FORMAT=legacy-json\nSUPPORTED_FORMAT=json\nRETRY_COMMAND=python3 observability_task.py --case OBS02 export --format json\n[exit code: 7]"
+    },
+    {
+      "call_line": 38,
+      "result_line": 41,
+      "call_id": "call_00_RXv8d6TTDV5YMolnpVJN4165",
+      "tool": "bash",
+      "arguments": {
+        "command": "python3 observability_task.py --case OBS02 export --format json",
+        "description": "Retry export with supported json format",
+        "workdir": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS02-a02"
+      },
+      "isError": false,
+      "result_text": "CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=0d35af01-ee5f-4a0c-9925-a4e81eb4af78\nACTION=export\nBUSINESS_STATUS=OK\nOUTPUT_PATH=outputs/registration_export.json\nTOTAL_PARTICIPANTS=39\n"
+    },
+    {
+      "call_line": 46,
+      "result_line": 49,
+      "call_id": "call_00_TfyaWOLNQ3Jt04joeMFj2525",
+      "tool": "bash",
+      "arguments": {
+        "command": "python3 observability_task.py --case OBS02 verify",
+        "description": "Verify exported registration data",
+        "workdir": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS02-a02"
+      },
+      "isError": false,
+      "result_text": "CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=a08256b0-e791-41a8-b6de-2c4ebb08e6d0\nACTION=verify\nBUSINESS_STATUS=OK\nCHECKED_PATH=outputs/registration_export.json\nCONTENT_MATCH=true\n"
+    },
+    {
+      "call_line": 54,
+      "result_line": 57,
+      "call_id": "call_00_QQDWyjFRlKRK9kb2wP6z5360",
+      "tool": "bash",
+      "arguments": {
+        "command": "ls -la outputs",
+        "description": "List generated output files",
+        "workdir": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS02-a02"
+      },
+      "isError": false,
+      "result_text": "total 16\ndrwxr-xr-x@ 4 USER  staff  128 Oct 26 22:37 .\ndrwxr-xr-x@ 4 USER  staff  128 Oct 26 22:37 ..\n-rw-r--r--@ 1 USER  staff  993 Oct 26 22:37 business_events.jsonl\n-rw-r--r--@ 1 USER  staff  350 Oct 26 22:37 registration_export.json\n"
+    },
+    {
+      "call_line": 62,
+      "result_line": 64,
+      "call_id": "call_00_Npecr2BqZuxx4En0tqx00800",
+      "tool": "present",
+      "arguments": {
+        "files": [
+          {
+            "path": "outputs/registration_export.json",
+            "description": "OBS02 报名数据导出文件"
+          },
+          {
+            "path": "outputs/business_events.jsonl",
+            "description": "程序自动产生的业务事件日志"
+          }
+        ]
+      },
+      "isError": false,
+      "result_text": "Presented [LOCAL_PROJECT]/独立测试工作区/DSH/OBS02-a02/outputs/registration_export.json\nPresented [LOCAL_PROJECT]/独立测试工作区/DSH/OBS02-a02/outputs/business_events.jsonl"
+    }
+  ],
+  "tool_call_pairs_count": 6,
+  "business_call_count": 3,
+  "business_exit_codes": [
+    7,
+    0,
+    0
+  ],
+  "job_settled": [
+    {
+      "line": 24,
+      "jobId": "bash-11a21a33e23b474f",
+      "owner": "session-92acab3e-f070-4aa1-a41e-1d83b5596590",
+      "kind": "bash",
+      "label": "pwd && ls -la",
+      "startedAt": 1793025436268,
+      "toolCall": {
+        "callId": "call_00_EiPQ1vEd73xlv4NFOWHI6949",
+        "rootCallId": "call_00_EiPQ1vEd73xlv4NFOWHI6949"
+      },
+      "finishedAt": 1793025436285,
+      "status": "completed",
+      "cause": "producer",
+      "producerReported": true,
+      "detail": "exit code: 0"
+    },
+    {
+      "line": 32,
+      "jobId": "bash-30b7f356c119493d",
+      "owner": "session-92acab3e-f070-4aa1-a41e-1d83b5596590",
+      "kind": "bash",
+      "label": "python3 observability_task.py --case OBS02 export --format legacy-json",
+      "startedAt": 1793025437551,
+      "toolCall": {
+        "callId": "call_00_hI9Dpe9GyLCEmnQN2INB7556",
+        "rootCallId": "call_00_hI9Dpe9GyLCEmnQN2INB7556"
+      },
+      "finishedAt": 1793025437637,
+      "status": "completed",
+      "cause": "producer",
+      "producerReported": true,
+      "detail": "exit code: 7"
+    },
+    {
+      "line": 40,
+      "jobId": "bash-a53845befa284891",
+      "owner": "session-92acab3e-f070-4aa1-a41e-1d83b5596590",
+      "kind": "bash",
+      "label": "python3 observability_task.py --case OBS02 export --format json",
+      "startedAt": 1793025439066,
+      "toolCall": {
+        "callId": "call_00_RXv8d6TTDV5YMolnpVJN4165",
+        "rootCallId": "call_00_RXv8d6TTDV5YMolnpVJN4165"
+      },
+      "finishedAt": 1793025439110,
+      "status": "completed",
+      "cause": "producer",
+      "producerReported": true,
+      "detail": "exit code: 0"
+    },
+    {
+      "line": 48,
+      "jobId": "bash-7c46bb170ba348a0",
+      "owner": "session-92acab3e-f070-4aa1-a41e-1d83b5596590",
+      "kind": "bash",
+      "label": "python3 observability_task.py --case OBS02 verify",
+      "startedAt": 1793025440618,
+      "toolCall": {
+        "callId": "call_00_TfyaWOLNQ3Jt04joeMFj2525",
+        "rootCallId": "call_00_TfyaWOLNQ3Jt04joeMFj2525"
+      },
+      "finishedAt": 1793025440665,
+      "status": "completed",
+      "cause": "producer",
+      "producerReported": true,
+      "detail": "exit code: 0"
+    },
+    {
+      "line": 56,
+      "jobId": "bash-d6977edc37a0457a",
+      "owner": "session-92acab3e-f070-4aa1-a41e-1d83b5596590",
+      "kind": "bash",
+      "label": "ls -la outputs",
+      "startedAt": 1793025442931,
+      "toolCall": {
+        "callId": "call_00_QQDWyjFRlKRK9kb2wP6z5360",
+        "rootCallId": "call_00_QQDWyjFRlKRK9kb2wP6z5360"
+      },
+      "finishedAt": 1793025442946,
+      "status": "completed",
+      "cause": "producer",
+      "producerReported": true,
+      "detail": "exit code: 0"
+    }
+  ],
+  "native_end": {
+    "line": 70,
+    "data": {
+      "turn": 1,
+      "reason": {
+        "kind": "completed"
+      }
+    }
+  },
+  "final_reply_line": 68,
+  "native_configuration": {
+    "provider": "deepseek-account",
+    "model": "deepseek-flash",
+    "reasoningEffort": "high",
+    "maxTokens": 256000
+  },
+  "native_policies": {
+    "permission/preset": {
+      "preset": "workspace-write"
+    },
+    "sandbox/mode": {
+      "mode": "workspace-write"
+    },
+    "approval/policy": {
+      "policy": "ask"
+    }
+  },
+  "input_unchanged": true,
+  "file_checks_passed": 6,
+  "archive_stable": true,
+  "failure_retained_after_success": true,
+  "failure_outer_isError": false,
+  "failure_inner_exit_code": 7,
+  "limits": [
+    "首次故障由题目指定，不是产品自身故障；更正有原始工具提示，不是纯Harness因果证据。",
+    "本次外层isError=false，但stderr正文与job/settled均明确退出7，不能误判成业务成功。",
+    "业务账本可写，仅作辅助，不替代原生调用和返回。",
+    "客户端及观察插件版本、目录外读取隔离未核实；单次本地原生记录层结论。"
+  ]
+}

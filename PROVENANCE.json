@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-23",
+  "date": "2026-10-26",
   "description": "原始来源哈希用于记录来源关系，不代表完整原文件已公开或外部可认证。public文件的实际字节指纹另见MANIFEST.json。",
   "exports": [
     {
@@ -4459,6 +4459,769 @@
       "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/公开输入/state/recovery_state.json",
       "original_sha256": "3b2163964adfff394deea9181ca6404b5bb5a67336c34a91f5b93aa376ffd791",
       "transformation": "仅公开相关数据；路径/会话入口/模拟邮箱占位，JSON格式化，省略不相关字段；原指纹不等于脱敏副本指纹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/Codex/source-score.json",
+      "original_source": "维度评测/07-可观测性/五产品兼容试测-0.3.1/Codex/本维度评分.json",
+      "original_sha256": "98332988c42141851a9141a264df55d07ed5b2cb549d205f46932b681394e9ba",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS01/Codex/native.excerpt.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/Codex-a02/阶段01-完成后只读取证/原生记录/session.jsonl",
+      "original_sha256": "c5f3822c1bd004f7dcd0bd0fcc7d3a88fb1efaeaff444856aaa7a7870893b78b",
+      "transformation": "选必要原生事件与字段，保留source_line及原件总行数；删除系统上下文、推理和请求元数据，替换本机路径/用户名/分享入口；不是原字节或完整会话",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS01/Codex/file-check.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/Codex-a02/阶段01-完成后只读取证/文件独立核对.json",
+      "original_sha256": "fd6b6e3fcadfe1df4f7c3750d7defe91868244ab247cf2670c72d7d9555f2147",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS01/Codex/trace-audit.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/Codex-a02/轨迹与声明核对.json",
+      "original_sha256": "3b61f464beb459b99b06cd3ce7c8ce7958f9cb7f19bbeb3926726a91f955207f",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS01/Codex/before-snapshot.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/Codex-a02/运行前快照.json",
+      "original_sha256": "145fdcb9ba4debdfb87c6d4c2748e4c30ef0f6409d3bc693c80ace8241a1f247",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS01/Codex/outputs/registration_summary.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/Codex-a02/阶段01-完成后只读取证/工作目录/outputs/registration_summary.json",
+      "original_sha256": "fe8dbc4a03b57585534465612a1dc75ab5d0f6f378f271cd11948babb18f1f0f",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS01/Codex/outputs/business_events.jsonl",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/Codex-a02/阶段01-完成后只读取证/工作目录/outputs/business_events.jsonl",
+      "original_sha256": "b736f247d6a425384aee383fc2aa10924cfe7e9f3fff16f21933d9dbb53e59a5",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS02/Codex/native.excerpt.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/Codex-a02/阶段01-完成后只读取证/原生记录/session.jsonl",
+      "original_sha256": "d9151c47638e1a63e8c8cd41fb9076692e8b38279245f6b1c50304fc9fdb9230",
+      "transformation": "选必要原生事件与字段，保留source_line及原件总行数；删除系统上下文、推理和请求元数据，替换本机路径/用户名/分享入口；不是原字节或完整会话",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS02/Codex/file-check.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/Codex-a02/阶段01-完成后只读取证/文件独立核对.json",
+      "original_sha256": "e67ba700134c3a581721cd8651a4618ed42bd13a7095a9b6678e212f3d5245fa",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS02/Codex/trace-audit.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/Codex-a02/轨迹与声明核对.json",
+      "original_sha256": "8b52f589d79bf144bb95104dfa1f87ad95b6e675042b3782cad6446c1a7a271d",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS02/Codex/before-snapshot.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/Codex-a02/运行前快照.json",
+      "original_sha256": "c49a6a4453a6058d54dd3db4595a8d4d89cd7a8a11b3ef81ab34d234bf101c31",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS02/Codex/outputs/registration_export.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/Codex-a02/阶段01-完成后只读取证/工作目录/outputs/registration_export.json",
+      "original_sha256": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS02/Codex/outputs/business_events.jsonl",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/Codex-a02/阶段01-完成后只读取证/工作目录/outputs/business_events.jsonl",
+      "original_sha256": "004687727dfbb48fc164e10f98f55c92c28bd8ac294ccc0e749fc0fd07bd1b77",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS03/Codex/native.excerpt.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/Codex-a02/阶段01-完成后只读取证/原生记录/session.jsonl",
+      "original_sha256": "18c8c9822fd0c8b0a87d032235ce832143d91ffb71d99c8536a4c0af3a1a334c",
+      "transformation": "选必要原生事件与字段，保留source_line及原件总行数；删除系统上下文、推理和请求元数据，替换本机路径/用户名/分享入口；不是原字节或完整会话",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS03/Codex/file-check.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/Codex-a02/阶段01-完成后只读取证/文件独立核对.json",
+      "original_sha256": "a72c583d002bc4a08099f0671cbbe2238c1a9eb2a1d35199149dcbbee486c734",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS03/Codex/trace-audit.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/Codex-a02/轨迹与声明核对.json",
+      "original_sha256": "88670473b5570950358a7968b07f8d2b2c34fa48de2f4ef8852361ae476330c2",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS03/Codex/before-snapshot.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/Codex-a02/运行前快照.json",
+      "original_sha256": "82f75d299ff012346affe3e528a1974aa77ec35481c1e94411249f5cd8480cc5",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS03/Codex/outputs/registration_summary.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/Codex-a02/阶段01-完成后只读取证/工作目录/outputs/registration_summary.json",
+      "original_sha256": "3c071ae92e292363fb756d3b4265719e201ec3031bf267d555db1a5d34d1b66e",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS03/Codex/outputs/business_events.jsonl",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/Codex-a02/阶段01-完成后只读取证/工作目录/outputs/business_events.jsonl",
+      "original_sha256": "7a1af3f727e4d425e74436034a074a11ce7793fef644626a505d38fe9a7ce52d",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS03/Codex/reopen.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/Codex-a02/重开人工观察与前后核对.json",
+      "original_sha256": "100be31e07d0b1b0af3737739760864fb6d4df050e62140bd71a2a27cd752d7e",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS03/Codex/after-reopen.excerpt.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/Codex-a02/阶段02-重开后只读取证/原生记录/session.jsonl",
+      "original_sha256": "18c8c9822fd0c8b0a87d032235ce832143d91ffb71d99c8536a4c0af3a1a334c",
+      "transformation": "重开后原生必要事件摘录；不公开上下文与思考；保留原始行号及来源指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/DSH/source-score.json",
+      "original_source": "维度评测/07-可观测性/五产品兼容试测-0.3.1/DSH/本维度评分.json",
+      "original_sha256": "4957f6904bb147b3f11449cc587300193870151252cd087870a45f66bba3e4df",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS01/DSH/native.excerpt.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/DSH-a02/阶段01-完成后只读取证/原生记录/session.v4.jsonl",
+      "original_sha256": "7bcb77a3af0b1562f26e4da52a7a9a165fdacac43070f267b657a42d6ff5f7ee",
+      "transformation": "选必要原生事件与字段，保留source_line及原件总行数；删除系统上下文、推理和请求元数据，替换本机路径/用户名/分享入口；不是原字节或完整会话",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS01/DSH/file-check.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/DSH-a02/阶段01-完成后只读取证/文件独立核对.json",
+      "original_sha256": "8c20e4b8cbdda9577026791e7ab50ce97ed921b68f0aa1f5553898f794d02fd6",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS01/DSH/trace-audit.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/DSH-a02/轨迹与声明核对.json",
+      "original_sha256": "42ca8381f5154dc90d854c6f8ca929c814fb4390c90aea4bb606e93816e64e18",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS01/DSH/before-snapshot.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/DSH-a02/运行前快照.json",
+      "original_sha256": "b056862e357771cedd8767c78abf20906ca84ed12e34268996ccd0efb8089ab6",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS01/DSH/outputs/registration_summary.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/DSH-a02/阶段01-完成后只读取证/工作目录/outputs/registration_summary.json",
+      "original_sha256": "fe8dbc4a03b57585534465612a1dc75ab5d0f6f378f271cd11948babb18f1f0f",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS01/DSH/outputs/business_events.jsonl",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/DSH-a02/阶段01-完成后只读取证/工作目录/outputs/business_events.jsonl",
+      "original_sha256": "86ecad05cc79f5221a991833a1798424593a4015f4ee471941ffa0a684ce3fb6",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS02/DSH/native.excerpt.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/DSH-a02/阶段01-完成后只读取证/原生记录/session.v4.jsonl",
+      "original_sha256": "71c70a638db0163bfd9c9e2454ae3e799e4353a8ad5452863a93516b1064eabb",
+      "transformation": "选必要原生事件与字段，保留source_line及原件总行数；删除系统上下文、推理和请求元数据，替换本机路径/用户名/分享入口；不是原字节或完整会话",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS02/DSH/file-check.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/DSH-a02/阶段01-完成后只读取证/文件独立核对.json",
+      "original_sha256": "929bca94cda869e55c704717c3a7ca3f7d125ec73c6e6244721386015039e485",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS02/DSH/trace-audit.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/DSH-a02/轨迹与声明核对.json",
+      "original_sha256": "2214adf80774a61c1e5f7c8b3c2857e964f4e5cb5e34b81a4b086e0f097d6159",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS02/DSH/before-snapshot.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/DSH-a02/运行前快照.json",
+      "original_sha256": "0bb269dbb3c7db2bf2f4c73ead9c70cdfdc852285e2f9c53217351ed5a329305",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS02/DSH/outputs/registration_export.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/DSH-a02/阶段01-完成后只读取证/工作目录/outputs/registration_export.json",
+      "original_sha256": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS02/DSH/outputs/business_events.jsonl",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/DSH-a02/阶段01-完成后只读取证/工作目录/outputs/business_events.jsonl",
+      "original_sha256": "93704f4acb81a94cf3ef4a408c3d278d5f0c03ff7f115b5275dc5ba63437d875",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS03/DSH/native.excerpt.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/DSH-a02/阶段01-完成后只读取证/原生记录/session.v4.jsonl",
+      "original_sha256": "cadf13e021962f75acf488ac3d0609caa24e82d337679ee41c8f2f66ebbe5aee",
+      "transformation": "选必要原生事件与字段，保留source_line及原件总行数；删除系统上下文、推理和请求元数据，替换本机路径/用户名/分享入口；不是原字节或完整会话",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS03/DSH/file-check.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/DSH-a02/阶段01-完成后只读取证/文件独立核对.json",
+      "original_sha256": "35ab7637b0ff3e38e73dd06955104858043cace58fece5614321b8be88b8aa23",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS03/DSH/trace-audit.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/DSH-a02/轨迹与声明核对.json",
+      "original_sha256": "c684ffb755cfa7f47a1585ebca97ab858c2c4e041d367c4917a04dd5423ce7e0",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS03/DSH/before-snapshot.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/DSH-a02/运行前快照.json",
+      "original_sha256": "126ff6e4558a08c70974f6e46eca1cdb9496502e8e42ff46a5743c1992e06fce",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS03/DSH/outputs/registration_summary.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/DSH-a02/阶段01-完成后只读取证/工作目录/outputs/registration_summary.json",
+      "original_sha256": "3c071ae92e292363fb756d3b4265719e201ec3031bf267d555db1a5d34d1b66e",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS03/DSH/outputs/business_events.jsonl",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/DSH-a02/阶段01-完成后只读取证/工作目录/outputs/business_events.jsonl",
+      "original_sha256": "d2f5ae7d5be715c13ee80faf38fd3233c5a6571f8d20f442283c3adb6148bc93",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS03/DSH/reopen.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/DSH-a02/重开人工观察与前后核对.json",
+      "original_sha256": "edeec7d8326d36a3875f4199897351e0cd511d3e2808c1bcb6fea597d50e95d8",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS03/DSH/after-reopen.excerpt.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/DSH-a02/阶段02-重开后只读取证/原生记录/session.v4.jsonl",
+      "original_sha256": "cadf13e021962f75acf488ac3d0609caa24e82d337679ee41c8f2f66ebbe5aee",
+      "transformation": "重开后原生必要事件摘录；不公开上下文与思考；保留原始行号及来源指纹",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/Doubao/source-score.json",
+      "original_source": "维度评测/07-可观测性/五产品兼容试测-0.3.1/豆包工作/评分待填.json",
+      "original_sha256": "ebee290c315908a9f0a8c20fb97cb1582350767334952c5b3d560caa32f01afc",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS01/Doubao/native.excerpt.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/豆包工作-a02/阶段01-完成后只读取证/原生记录/trajectory.jsonl",
+      "original_sha256": "bda45b8a0930c73016215488fa3f579b16ac7b2cbf55a3fcc19bd6d534dd51da",
+      "transformation": "选必要原生事件与字段，保留source_line及原件总行数；删除系统上下文、推理和请求元数据，替换本机路径/用户名/分享入口；不是原字节或完整会话",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS01/Doubao/file-check.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/豆包工作-a02/阶段01-完成后只读取证/文件独立核对.json",
+      "original_sha256": "faea6eba78eeb6503618e345f198ce079366c6fb2a26f742afb00765374adb84",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS01/Doubao/page-end-display.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/豆包工作-a02/阶段01-完成后只读取证/原生分享页结束显示提取.json",
+      "original_sha256": "343270a0fbdb8a87b9b1afcf8a219d2a7652346ca57a4eeacf8245f48121da7f",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS01/Doubao/page-tool-results.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/豆包工作-a02/阶段01-完成后只读取证/原生分享页工具返回提取.json",
+      "original_sha256": "b3eaae1d3b94ecaa06d04230269b9f5f6d50590ce7e93938d56500069451bf2c",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS01/Doubao/outputs/registration_summary.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/豆包工作-a02/阶段01-完成后只读取证/工作目录/outputs/registration_summary.json",
+      "original_sha256": "fe8dbc4a03b57585534465612a1dc75ab5d0f6f378f271cd11948babb18f1f0f",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS01/Doubao/outputs/business_events.jsonl",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/豆包工作-a02/阶段01-完成后只读取证/工作目录/outputs/business_events.jsonl",
+      "original_sha256": "23cb4fb5534dbe38f091a0d03ad4b42b8d7bcb511258183898da4e9ea07b933a",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS02/Doubao/native.excerpt.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/原生记录/trajectory.jsonl",
+      "original_sha256": "8ba73475336632346358d3181ead9f21360d1a8e7cfc77c1204884f5b9a8eda6",
+      "transformation": "选必要原生事件与字段，保留source_line及原件总行数；删除系统上下文、推理和请求元数据，替换本机路径/用户名/分享入口；不是原字节或完整会话",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS02/Doubao/file-check.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/文件独立核对.json",
+      "original_sha256": "a8b3921601dbc1bea40afc25a00b5eecd19ccf391952615131cc1ce9b2028950",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS02/Doubao/page-end-display.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/原生分享页结束显示提取.json",
+      "original_sha256": "7b7f3dc7133a6f48084fb75a7927380d182ac8342f59dff28ef8af5e1d603828",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS02/Doubao/page-tool-results.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/原生分享页工具返回提取.json",
+      "original_sha256": "cd2b5752b95d0e3d3c58571d2e828e101e399fef198ec5d40fd3d4f227c1bdcb",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS02/Doubao/outputs/registration_export.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/工作目录/outputs/registration_export.json",
+      "original_sha256": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS02/Doubao/outputs/business_events.jsonl",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/工作目录/outputs/business_events.jsonl",
+      "original_sha256": "0e104ab76c3f5751efcd6f78539bd1800e6ed2291212edb15f10f88cddeba0ec",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS03/Doubao/native.excerpt.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/原生记录/trajectory.jsonl",
+      "original_sha256": "b5ef38175f14eaf027397030f9ea8a1eafca5466cf617548137cd42f91088923",
+      "transformation": "选必要原生事件与字段，保留source_line及原件总行数；删除系统上下文、推理和请求元数据，替换本机路径/用户名/分享入口；不是原字节或完整会话",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS03/Doubao/file-check.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/文件独立核对.json",
+      "original_sha256": "d913c4e44e937de93b3e43c2847150a034c7428e00353b1b2ed6f8511989747a",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS03/Doubao/page-end-display.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/原生分享页结束显示提取.json",
+      "original_sha256": "68208917653705b0d0d378ab3a870bca706f5d8730e0b422d2826b01ea6c7836",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS03/Doubao/page-tool-results.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/原生分享页工具返回提取.json",
+      "original_sha256": "4d50b27d747e7ef2ca95cccdf98c9301b97da7053fd99441c4494b4ee54bc560",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS03/Doubao/outputs/registration_summary.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/工作目录/outputs/registration_summary.json",
+      "original_sha256": "3c071ae92e292363fb756d3b4265719e201ec3031bf267d555db1a5d34d1b66e",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS03/Doubao/outputs/business_events.jsonl",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/工作目录/outputs/business_events.jsonl",
+      "original_sha256": "22b6a024f06ed6ec9ce8d356ca87ba948dcfff4b4d314202eba4682497001e16",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS03/Doubao/reopen.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/豆包工作-a02/阶段02-用户确认重开/用户重开确认.json",
+      "original_sha256": "2b8767d94956bfd6905942f89675c489280344831b909f1bfa11db5da8e113d3",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/WorkBuddy/source-score.json",
+      "original_source": "维度评测/07-可观测性/五产品兼容试测-0.3.1/WorkBuddy/评分待填.json",
+      "original_sha256": "92e86fdd21f1d538df784d0b3a7c7e2c59a97632768ed289aa3076431f3760ad",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS01/WorkBuddy/native.excerpt.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/原生记录/3e2630e1-ff00-434e-9d90-65a6a45a426a.jsonl",
+      "original_sha256": "2e2d498b6579cacffb0be9b18b14e58690ddcaf2902251f7d92b4ebbc4f34a0d",
+      "transformation": "选必要原生事件与字段，保留source_line及原件总行数；删除系统上下文、推理和请求元数据，替换本机路径/用户名/分享入口；不是原字节或完整会话",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS01/WorkBuddy/file-check.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/文件独立核对.json",
+      "original_sha256": "851624029ba73c5e03f99edb67cd6d49167f404c4ddb4da999c221437d6fb9c1",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS01/WorkBuddy/extra-actions.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/额外写入与证据边界.json",
+      "original_sha256": "2aca0fab16e8ad75bf0019cf376cb6155de1cbe39d4dad1f51782679e3db30e8",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS01/WorkBuddy/outputs/registration_summary.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/工作目录/outputs/registration_summary.json",
+      "original_sha256": "fe8dbc4a03b57585534465612a1dc75ab5d0f6f378f271cd11948babb18f1f0f",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS01/WorkBuddy/outputs/business_events.jsonl",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/工作目录/outputs/business_events.jsonl",
+      "original_sha256": "27e811be35ae5d410561f6598b0f17f5c4bfbebad2cdffb11780f87707f566b2",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS02/WorkBuddy/native.excerpt.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/原生记录/90c0c171-5073-40eb-913e-6d05580a3b84.jsonl",
+      "original_sha256": "2ac32298f5c36d110e9c3bfbd7e712cf8c8758056f0a7c3766496799a79bfdf4",
+      "transformation": "选必要原生事件与字段，保留source_line及原件总行数；删除系统上下文、推理和请求元数据，替换本机路径/用户名/分享入口；不是原字节或完整会话",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS02/WorkBuddy/file-check.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/文件独立核对.json",
+      "original_sha256": "a782766d8513a4303b98cb0876e33d6b2fd8787a4777bc23edabcd97fa80f1e3",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS02/WorkBuddy/outputs/registration_export.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/工作目录/outputs/registration_export.json",
+      "original_sha256": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS02/WorkBuddy/outputs/business_events.jsonl",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/工作目录/outputs/business_events.jsonl",
+      "original_sha256": "316f057e53b50000e83a60c2a6e8ca1389b0cd9232d7af82b27beb2a209430af",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS03/WorkBuddy/native.excerpt.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/原生记录/e670a823-9424-45f4-9898-c4efcfd78ea8.jsonl",
+      "original_sha256": "e68a54347258400ca2704ce6934c6a722ba6aa23f5214d0d9c547c2019b33734",
+      "transformation": "选必要原生事件与字段，保留source_line及原件总行数；删除系统上下文、推理和请求元数据，替换本机路径/用户名/分享入口；不是原字节或完整会话",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS03/WorkBuddy/file-check.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/文件独立核对.json",
+      "original_sha256": "eae29164125063238143975f71b4047477a96bd8cbebb570fda39ed7a3677777",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS03/WorkBuddy/extra-actions.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/额外动作核对.json",
+      "original_sha256": "00208b53f232ddfe2648a247a48ea0b58d2d641ce51d401dd0c7306f7ad57be7",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS03/WorkBuddy/outputs/registration_summary.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/工作目录/outputs/registration_summary.json",
+      "original_sha256": "3c071ae92e292363fb756d3b4265719e201ec3031bf267d555db1a5d34d1b66e",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS03/WorkBuddy/outputs/business_events.jsonl",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/工作目录/outputs/business_events.jsonl",
+      "original_sha256": "3c4e12908a394f7c39166a5987500757c2fef09be54e1901ac404e20a31bf3ed",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS03/WorkBuddy/reopen.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/WorkBuddy-a02/阶段02-用户确认重开/用户重开确认.json",
+      "original_sha256": "fcea320d10d2a6fd28b20e3c8b6fdbd3993a63d5a97717994d46b2713d1bff72",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/Yuanbao/source-score.json",
+      "original_source": "维度评测/07-可观测性/五产品兼容试测-0.3.1/元宝专家模式/评分待填.json",
+      "original_sha256": "ba915fe2f79ea437099a3c949ef1092521d0b78cda99983633aa5ee256f47d0e",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS01/Yuanbao/command-cards.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/元宝专家模式-a02/阶段01-完成后只读取证/原生分享页工具卡片提取.json",
+      "original_sha256": "a0b5b1becd2925e61765cfddbac3e3b902d1e8943308bede109be072acdc8415",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS01/Yuanbao/download-check.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/元宝专家模式-a02/阶段01-完成后只读取证/网页与下载件核对.json",
+      "original_sha256": "61d6ee628e9fe578e5a027498bc412fef7ea087073a94fb8b97bf1ce84372d2c",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS01/Yuanbao/outputs/registration_summary.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/元宝专家模式-a02/阶段01-完成后只读取证/用户原件/registration_summary.json",
+      "original_sha256": "fe8dbc4a03b57585534465612a1dc75ab5d0f6f378f271cd11948babb18f1f0f",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS01/Yuanbao/outputs/business_events.jsonl",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/元宝专家模式-a02/阶段01-完成后只读取证/用户原件/business_events.jsonl",
+      "original_sha256": "76ae3eec6eb5e32bba2f8d8d7909e3658ce4d9feffb6f2edd133856b7ba808f3",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS02/Yuanbao/command-cards.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/元宝专家模式-a02/阶段01-完成后只读取证/原生分享页工具卡片提取.json",
+      "original_sha256": "987cf0c493132f183c9d52d1a55debf794587c94a963a4e5ef6183e402bf77e9",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS02/Yuanbao/download-check.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/元宝专家模式-a02/阶段01-完成后只读取证/网页与下载件核对.json",
+      "original_sha256": "0930f8e7ff97061ae2fb2913fd8a547dc2cddecc6cc3b5e8fbf60b11cee216b8",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS02/Yuanbao/outputs/registration_export.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/元宝专家模式-a02/阶段01-完成后只读取证/用户原件/registration_export.json",
+      "original_sha256": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS02/Yuanbao/outputs/business_events.jsonl",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/元宝专家模式-a02/阶段01-完成后只读取证/用户原件/business_events.jsonl",
+      "original_sha256": "565adb9760dafddea3e02c0a1f9c9e253e3e8d5720df1b51eb6c160cea690149",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS03/Yuanbao/command-cards.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/元宝专家模式-a02/阶段01-完成后只读取证/原生分享页工具卡片提取.json",
+      "original_sha256": "1da106b0d9eb7cf825d9c473c7541dd54d1a991c6ed5c21b41bc7b86f1e25c14",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS03/Yuanbao/download-check.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/元宝专家模式-a02/阶段01-完成后只读取证/网页与下载件核对.json",
+      "original_sha256": "c80676eeddc7df2814b3ffddc0057e5d9bac89f8e7cb4e8724cc1e7514ae4fa9",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability/OBS03/Yuanbao/outputs/registration_summary.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/元宝专家模式-a02/阶段01-完成后只读取证/用户原件/registration_summary.json",
+      "original_sha256": "3c071ae92e292363fb756d3b4265719e201ec3031bf267d555db1a5d34d1b66e",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS03/Yuanbao/outputs/business_events.jsonl",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/元宝专家模式-a02/阶段01-完成后只读取证/用户原件/business_events.jsonl",
+      "original_sha256": "df31b9c6ce28b8e0f4b8ac5c8bf4799716284213d24103d2eaa5c3e2307ae026",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability/OBS03/Yuanbao/reopen.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/元宝专家模式-a02/阶段02-用户确认重开/用户重开确认.json",
+      "original_sha256": "f206dd3e982b415f7cb07d7a0ad76b70f2d73ddeb9c960a02dc9a3802c578e4a",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/OBS01/input/observability_task.py",
+      "original_source": "维度评测/07-可观测性/五产品兼容试测-0.3.1/输入/observability_task.py",
+      "original_sha256": "e39e673d6b8deed72a40e0a706b173aab5268b01731160b2b367cc654004185e",
+      "transformation": "无内容替换",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/OBS01/prompts/Codex.md",
+      "original_source": "维度评测/07-可观测性/五产品兼容试测-0.3.1/Codex/01-OBS01-正常任务记录取回与保存.md",
+      "original_sha256": "93c79e03a0edf4bb2c184ee28b3d4c52a1240b0da248904dea90d80f8c1588f8",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/OBS01/prompts/DSH.md",
+      "original_source": "维度评测/07-可观测性/五产品兼容试测-0.3.1/DSH/01-OBS01-正常任务记录取回与保存.md",
+      "original_sha256": "e40738a0800b3d524b7ee51e3adef7f66d7ff81f2c9dfac689fb98dec50c24de",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/OBS01/prompts/Doubao.md",
+      "original_source": "维度评测/07-可观测性/五产品兼容试测-0.3.1/豆包工作/01-OBS01-正常任务记录取回与保存.md",
+      "original_sha256": "fbd393aa92e62ab01dad0833c3cc37740d56d2bfa31f373ef4c0bdcaa90d5356",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/OBS01/prompts/WorkBuddy.md",
+      "original_source": "维度评测/07-可观测性/五产品兼容试测-0.3.1/WorkBuddy/01-OBS01-正常任务记录取回与保存.md",
+      "original_sha256": "9ad287edcea1c63a96ad3e281e1689fa3ca184ff6e05322d80de5e8436256113",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/OBS01/prompts/Yuanbao.md",
+      "original_source": "维度评测/07-可观测性/五产品兼容试测-0.3.1/元宝专家模式/01-OBS01-正常任务记录取回与保存.md",
+      "original_sha256": "c9ab8358539429ccb664e5fc5b8a7b2cafa2a1a45d1279f6b6a39dec0ecab7a6",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/OBS02/prompts/Codex.md",
+      "original_source": "维度评测/07-可观测性/五产品兼容试测-0.3.1/Codex/02-OBS02-报错与重试过程追踪.md",
+      "original_sha256": "44edabc3492ecad9da7d04056a674a3fd6a06791b7693e2181288e71b8d05bfa",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/OBS02/prompts/DSH.md",
+      "original_source": "维度评测/07-可观测性/五产品兼容试测-0.3.1/DSH/02-OBS02-报错与重试过程追踪.md",
+      "original_sha256": "42d400cfcebd7364e7d84717c6404ee47aa4aa0c4a840276306a7e0654ab54c3",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/OBS02/prompts/Doubao.md",
+      "original_source": "维度评测/07-可观测性/五产品兼容试测-0.3.1/豆包工作/02-OBS02-报错与重试过程追踪.md",
+      "original_sha256": "2787835dd95b32037e71dc8a5a681d34c40218b0365459abd8e12649d67f7418",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/OBS02/prompts/WorkBuddy.md",
+      "original_source": "维度评测/07-可观测性/五产品兼容试测-0.3.1/WorkBuddy/02-OBS02-报错与重试过程追踪.md",
+      "original_sha256": "02f72099c8a8a310d46e65f5c0cb05b8c2b5d67a477c5744c67f3908ba126fb3",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/OBS02/prompts/Yuanbao.md",
+      "original_source": "维度评测/07-可观测性/五产品兼容试测-0.3.1/元宝专家模式/02-OBS02-报错与重试过程追踪.md",
+      "original_sha256": "9097e9b8f83ef9568ca0b32b40ffa3ce21c448cb449537d2456ba4212b98741c",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "cases/OBS03/prompts/Codex.md",
+      "original_source": "维度评测/07-可观测性/五产品兼容试测-0.3.1/Codex/03-OBS03-部分完成与受阻结束追踪.md",
+      "original_sha256": "520767ad82e66fde4d0888e2cdbc75e488e2dfa8f2e556c819b95be3a6c7487c",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/OBS03/prompts/DSH.md",
+      "original_source": "维度评测/07-可观测性/五产品兼容试测-0.3.1/DSH/03-OBS03-部分完成与受阻结束追踪.md",
+      "original_sha256": "8f69e1b472d777e4d38d31f83e228a3dd6f6266c618a2906fb8370544a539265",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/OBS03/prompts/Doubao.md",
+      "original_source": "维度评测/07-可观测性/五产品兼容试测-0.3.1/豆包工作/03-OBS03-部分完成与受阻结束追踪.md",
+      "original_sha256": "1e1579e36fbc1e1c9311ab49ebff6b137d37bade6dba57190a39661413bac9c7",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/OBS03/prompts/WorkBuddy.md",
+      "original_source": "维度评测/07-可观测性/五产品兼容试测-0.3.1/WorkBuddy/03-OBS03-部分完成与受阻结束追踪.md",
+      "original_sha256": "4cd0a95b7b307486c3a23ec3a34aa125e393dd52f85801185527cf26e946c563",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "cases/OBS03/prompts/Yuanbao.md",
+      "original_source": "维度评测/07-可观测性/五产品兼容试测-0.3.1/元宝专家模式/03-OBS03-部分完成与受阻结束追踪.md",
+      "original_sha256": "ad5069f83312c8e4f3268cab76c104370473f6112378699502bd9c8e188f82f5",
+      "transformation": "公开副本：路径、用户名和分享入口占位；必要字段选择，移除推理及重放内容；来源指纹与公开指纹分开",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "docs/可观测性评测设计.md",
+      "original_source": "维度评测/07-可观测性/评测设计.md",
+      "original_sha256": "849e7b71733a27f0a179a3c931ddbc49857e5ab462b233cb22a3e67192acac8d",
+      "transformation": "冻结设计文字快照；运行前状态保留并加当前结果入口；未公开参考的Markdown链接转为明确的路径文字",
       "byte_identical_to_original": true
     }
   ]

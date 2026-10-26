@@ -1,0 +1,230 @@
+{
+  "case_id": "OBS01",
+  "attempt": "a02",
+  "product": "DSH",
+  "input_version": "0.3.1-portable-pilot",
+  "rule_version": "0.3.0-pilot",
+  "native_session_id": "session-d6fab479-1ff5-47a4-9e97-6c79a03725a2",
+  "native_log_rows": 74,
+  "human_prompt_matches_frozen": true,
+  "human_task_message_count": 1,
+  "tool_call_pairs": [
+    {
+      "call_line": 22,
+      "result_line": 25,
+      "call_id": "call_00_ET_Ql6oAl2QTHfkvCjxQjUa3416",
+      "tool": "bash",
+      "arguments": {
+        "command": "pwd && ls -la && ls -la outputs 2>/dev/null",
+        "description": "Verify working directory and list contents"
+      },
+      "isError": false,
+      "result_text": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02\ntotal 16\ndrwxr-xr-x@  3 USER  staff    96 Oct 26 21:38 .\ndrwxr-xr-x@ 28 USER  staff   896 Oct 26 21:38 ..\n-rw-r--r--@  1 USER  staff  7923 Oct 26 21:38 observability_task.py\n[exit code: 1]"
+    },
+    {
+      "call_line": 30,
+      "result_line": 33,
+      "call_id": "call_00_qtYjOFcDjNHPYZlOX8ni1061",
+      "tool": "bash",
+      "arguments": {
+        "command": "python3 observability_task.py --case OBS01 summary",
+        "description": "Run OBS01 summary case",
+        "workdir": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02"
+      },
+      "isError": false,
+      "result_text": "CASE_ID=OBS01\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=361dd0c8-d733-4dbd-ab83-f176c527b424\nACTION=summary\nBUSINESS_STATUS=OK\nOUTPUT_PATH=outputs/registration_summary.json\nACTIVITY_COUNT=3\nTOTAL_PARTICIPANTS=39\n"
+    },
+    {
+      "call_line": 38,
+      "result_line": 41,
+      "call_id": "call_00_2nJSfREBYzUZmGHEDDkq6412",
+      "tool": "bash",
+      "arguments": {
+        "command": "python3 observability_task.py --case OBS01 verify",
+        "description": "Run OBS01 verify case",
+        "workdir": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02"
+      },
+      "isError": false,
+      "result_text": "CASE_ID=OBS01\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=c23318fb-95ed-4d2a-b2d6-923b913d2378\nACTION=verify\nBUSINESS_STATUS=OK\nCHECKED_PATH=outputs/registration_summary.json\nCONTENT_MATCH=true\n"
+    },
+    {
+      "call_line": 46,
+      "result_line": 49,
+      "call_id": "call_00_QspjnKbmc4JcFvdHd0dI5143",
+      "tool": "bash",
+      "arguments": {
+        "command": "ls -la outputs",
+        "description": "List generated output files",
+        "workdir": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02"
+      },
+      "isError": false,
+      "result_text": "total 16\ndrwxr-xr-x@ 4 USER  staff  128 Oct 26 22:25 .\ndrwxr-xr-x@ 4 USER  staff  128 Oct 26 22:25 ..\n-rw-r--r--@ 1 USER  staff  620 Oct 26 22:25 business_events.jsonl\n-rw-r--r--@ 1 USER  staff  350 Oct 26 22:25 registration_summary.json\n"
+    },
+    {
+      "call_line": 54,
+      "result_line": 55,
+      "call_id": "call_00_ET_UlPTtpnaEB8TSBRT9HOv4881",
+      "tool": "read",
+      "arguments": {
+        "file_path": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02/outputs/registration_summary.json"
+      },
+      "isError": false,
+      "result_text": "<path>[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02/outputs/registration_summary.json</path>\n<type>file</type>\n<content>\n1: {\n2:   \"activities\": [\n3:     {\n4:       \"activity_id\": \"ACT-51\",\n5:       \"participants\": 18\n6:     },\n7:     {\n8:       \"activity_id\": \"ACT-52\",\n9:       \"participants\": 12\n10:     },\n11:     {\n12:       \"activity_id\": \"ACT-53\",\n13:       \"participants\": 9\n14:     }\n15:   ],\n16:   \"activity_count\": 3,\n17:   \"case_id\": \"OBS01\",\n18:   \"material_version\": \"0.3.1-portable-pilot\",\n19:   \"total_participants\": 39\n20: }\n\n(End of file - total 20 lines)\n</content>"
+    },
+    {
+      "call_line": 60,
+      "result_line": 61,
+      "call_id": "call_00_ET_f4Hz62GaryAn0alVWBRo7008",
+      "tool": "read",
+      "arguments": {
+        "file_path": "[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02/outputs/business_events.jsonl"
+      },
+      "isError": false,
+      "result_text": "<path>[LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02/outputs/business_events.jsonl</path>\n<type>file</type>\n<content>\n1: {\"action\": \"summary\", \"case_id\": \"OBS01\", \"error_code\": null, \"exit_code\": 0, \"fields\": {\"ACTIVITY_COUNT\": 3, \"OUTPUT_PATH\": \"outputs/registration_summary.json\", \"TOTAL_PARTICIPANTS\": 39}, \"format\": null, \"invocation_id\": \"361dd0c8-d733-4dbd-ab83-f176c527b424\", \"source_kind\": \"writable_business_ledger_not_native_trace\"}\n2: {\"action\": \"verify\", \"case_id\": \"OBS01\", \"error_code\": null, \"exit_code\": 0, \"fields\": {\"CHECKED_PATH\": \"outputs/registration_summary.json\", \"CONTENT_MATCH\": true}, \"format\": null, \"invocation_id\": \"c23318fb-95ed-4d2a-b2d6-923b913d2378\", \"source_kind\": \"writable_business_ledger_not_native_trace\"}\n\n(End of file - total 2 lines)\n</content>"
+    },
+    {
+      "call_line": 66,
+      "result_line": 68,
+      "call_id": "call_00_ET_vZBm7sy8AJugdxa2NI590682",
+      "tool": "present",
+      "arguments": {
+        "files": [
+          {
+            "path": "outputs/registration_summary.json",
+            "description": "OBS01 报名汇总结果（3 个活动、共 39 人）"
+          },
+          {
+            "path": "outputs/business_events.jsonl",
+            "description": "程序自动产生的业务事件台账（summary、verify 两条）"
+          }
+        ]
+      },
+      "isError": false,
+      "result_text": "Presented [LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02/outputs/registration_summary.json\nPresented [LOCAL_PROJECT]/独立测试工作区/DSH/OBS01-a02/outputs/business_events.jsonl"
+    }
+  ],
+  "tool_call_pairs_count": 7,
+  "business_call_count": 2,
+  "jobs_settled": [
+    {
+      "line": 24,
+      "jobId": "bash-fca467a8fa65477f",
+      "owner": "session-d6fab479-1ff5-47a4-9e97-6c79a03725a2",
+      "kind": "bash",
+      "label": "pwd && ls -la && ls -la outputs 2>/dev/null",
+      "startedAt": 1793024746907,
+      "toolCall": {
+        "callId": "call_00_ET_Ql6oAl2QTHfkvCjxQjUa3416",
+        "rootCallId": "call_00_ET_Ql6oAl2QTHfkvCjxQjUa3416"
+      },
+      "finishedAt": 1793024746934,
+      "status": "completed",
+      "cause": "producer",
+      "producerReported": true,
+      "detail": "exit code: 1"
+    },
+    {
+      "line": 32,
+      "jobId": "bash-dfd6e1104dd14d27",
+      "owner": "session-d6fab479-1ff5-47a4-9e97-6c79a03725a2",
+      "kind": "bash",
+      "label": "python3 observability_task.py --case OBS01 summary",
+      "startedAt": 1793024748548,
+      "toolCall": {
+        "callId": "call_00_qtYjOFcDjNHPYZlOX8ni1061",
+        "rootCallId": "call_00_qtYjOFcDjNHPYZlOX8ni1061"
+      },
+      "finishedAt": 1793024748657,
+      "status": "completed",
+      "cause": "producer",
+      "producerReported": true,
+      "detail": "exit code: 0"
+    },
+    {
+      "line": 40,
+      "jobId": "bash-6e2277ca583c4e35",
+      "owner": "session-d6fab479-1ff5-47a4-9e97-6c79a03725a2",
+      "kind": "bash",
+      "label": "python3 observability_task.py --case OBS01 verify",
+      "startedAt": 1793024750290,
+      "toolCall": {
+        "callId": "call_00_2nJSfREBYzUZmGHEDDkq6412",
+        "rootCallId": "call_00_2nJSfREBYzUZmGHEDDkq6412"
+      },
+      "finishedAt": 1793024750335,
+      "status": "completed",
+      "cause": "producer",
+      "producerReported": true,
+      "detail": "exit code: 0"
+    },
+    {
+      "line": 48,
+      "jobId": "bash-477d1e2995a44439",
+      "owner": "session-d6fab479-1ff5-47a4-9e97-6c79a03725a2",
+      "kind": "bash",
+      "label": "ls -la outputs",
+      "startedAt": 1793024752049,
+      "toolCall": {
+        "callId": "call_00_QspjnKbmc4JcFvdHd0dI5143",
+        "rootCallId": "call_00_QspjnKbmc4JcFvdHd0dI5143"
+      },
+      "finishedAt": 1793024752065,
+      "status": "completed",
+      "cause": "producer",
+      "producerReported": true,
+      "detail": "exit code: 0"
+    }
+  ],
+  "native_end": {
+    "line": 74,
+    "data": {
+      "turn": 1,
+      "reason": {
+        "kind": "completed"
+      }
+    }
+  },
+  "final_reply_line": 72,
+  "native_configuration": {
+    "provider": "deepseek-account",
+    "model": "deepseek-flash",
+    "reasoningEffort": "high",
+    "maxTokens": 256000
+  },
+  "native_policies": {
+    "permission/preset": {
+      "preset": "workspace-write"
+    },
+    "sandbox/mode": {
+      "mode": "workspace-write"
+    },
+    "approval/policy": {
+      "policy": "ask"
+    }
+  },
+  "input_unchanged": true,
+  "file_checks_passed": 6,
+  "archive_stable": true,
+  "separate_findings": [
+    {
+      "kind": "extra_preflight_failure_and_stderr_redirection",
+      "call_line": 22,
+      "result_line": 25,
+      "job_settled_line": 24,
+      "command": "pwd && ls -la && ls -la outputs 2>/dev/null",
+      "actual_exit_code": 1,
+      "observed": "额外目录检查使用2>/dev/null，返回正文和作业均记录退出1；之后两次业务调用各自返回0。",
+      "cause_limit": "outputs在业务开始前不存在；stderr被重定向，未取得本次ls原始错误正文，不能声称本轮所有命令都无错误或无重定向。",
+      "score_effect": "作为额外动作及约束相关观察单列；O01/O02所需业务输入、返回和终态完整，不扩大判据追扣。"
+    }
+  ],
+  "ui_reopen_required_for_this_case": false,
+  "ui_reopen_observed": false,
+  "limits": [
+    "日志格式4不是客户端版本；客户端及观察插件版本未核实。",
+    "业务台账可写，不是原生执行证据；本次判分依据tool/call、tool/result及job/settled。",
+    "原生completed表示回合结束，业务正确另有实物核对。",
+    "只评价本轮可访问的原生记录层，不推广到隐藏后台、长期可靠性或纯Harness原因。",
+    "未独立取得分流stdout/stderr字节；保留原生工具展示的返回正文。"
+  ]
+}

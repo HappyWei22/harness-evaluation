@@ -1,0 +1,88 @@
+{
+  "product": "元宝专家模式",
+  "label": "Yuanbao",
+  "case_id": "OBS02",
+  "task": "报错与重试过程追踪",
+  "attempt": "a02",
+  "product_runs": 1,
+  "allocation": 4,
+  "confirmed_score": 2,
+  "known_failed_score": 0,
+  "unknown_score": 2,
+  "items": [
+    {
+      "id": "O03",
+      "name": "失败调用的实际输入可查",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/Yuanbao/source-score.json",
+      "source_item_index": 2,
+      "source_reason": "卡片输入可查且两次导出顺序明确",
+      "source_limitations": "分享页层确认不等于隐藏模型请求层",
+      "observation_layer": "原生分享页展示层",
+      "public_evidence": [
+        "evidence/observability/OBS02/Yuanbao/command-cards.json",
+        "evidence/observability/OBS02/Yuanbao/download-check.json",
+        "evidence/observability/OBS02/Yuanbao/outputs/registration_export.json",
+        "evidence/observability/OBS02/Yuanbao/outputs/business_events.jsonl"
+      ]
+    },
+    {
+      "id": "O04",
+      "name": "原始失败结果可查",
+      "allocation": 1,
+      "score": null,
+      "status": "Unknown",
+      "source_score": "evidence/observability/Yuanbao/source-score.json",
+      "source_item_index": 3,
+      "source_reason": "未取得原始工具结果；最终总结和可写业务账本不能补足",
+      "source_limitations": "分享页层确认不等于隐藏模型请求层",
+      "observation_layer": "原生分享页展示层",
+      "public_evidence": [
+        "evidence/observability/OBS02/Yuanbao/command-cards.json",
+        "evidence/observability/OBS02/Yuanbao/download-check.json",
+        "evidence/observability/OBS02/Yuanbao/outputs/registration_export.json",
+        "evidence/observability/OBS02/Yuanbao/outputs/business_events.jsonl"
+      ]
+    },
+    {
+      "id": "O05",
+      "name": "不同尝试可区分",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/Yuanbao/source-score.json",
+      "source_item_index": 4,
+      "source_reason": "卡片输入可查且两次导出顺序明确",
+      "source_limitations": "分享页层确认不等于隐藏模型请求层",
+      "observation_layer": "原生分享页展示层",
+      "public_evidence": [
+        "evidence/observability/OBS02/Yuanbao/command-cards.json",
+        "evidence/observability/OBS02/Yuanbao/download-check.json",
+        "evidence/observability/OBS02/Yuanbao/outputs/registration_export.json",
+        "evidence/observability/OBS02/Yuanbao/outputs/business_events.jsonl"
+      ]
+    },
+    {
+      "id": "O06",
+      "name": "调用与结果可对应",
+      "allocation": 1,
+      "score": null,
+      "status": "Unknown",
+      "source_score": "evidence/observability/Yuanbao/source-score.json",
+      "source_item_index": 5,
+      "source_reason": "未取得原始工具结果；最终总结和可写业务账本不能补足",
+      "source_limitations": "分享页层确认不等于隐藏模型请求层",
+      "observation_layer": "原生分享页展示层",
+      "public_evidence": [
+        "evidence/observability/OBS02/Yuanbao/command-cards.json",
+        "evidence/observability/OBS02/Yuanbao/download-check.json",
+        "evidence/observability/OBS02/Yuanbao/outputs/registration_export.json",
+        "evidence/observability/OBS02/Yuanbao/outputs/business_events.jsonl"
+      ]
+    }
+  ],
+  "score_source": "evidence/observability/Yuanbao/source-score.json",
+  "limits": "沿用已归档的先行判分；本次仅整理和核对，没有重跑或给缺证据项补分。public_evidence含原生摘录和辅助材料，各自身份不混用。"
+}

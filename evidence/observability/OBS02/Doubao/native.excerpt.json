@@ -1,0 +1,127 @@
+{
+  "format": "native-event-excerpt-v1",
+  "original_line_count": 9,
+  "original_sha256": "8ba73475336632346358d3181ead9f21360d1a8e7cfc77c1204884f5b9a8eda6",
+  "scope": "仅必要工具输入、返回及可取得的结束事件；上下文、系统指令、思考、重放和不相关字段不公开；有原始行号不表示完整会话。",
+  "records": [
+    {
+      "source_line": 1,
+      "event": {
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "id": "a67a1650-7160-41df-bb1b-419d4b48b452",
+            "type": "function",
+            "function": {
+              "name": "Bash",
+              "arguments": {
+                "command": "cd \"[LOCAL_PROJECT]/独立测试工作区/豆包工作/OBS02-a02\" && python3 observability_task.py --case OBS02 export --format legacy-json",
+                "description": "First export attempt with legacy-json format",
+                "sandbox_permissions": "use_default"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "source_line": 2,
+      "event": {
+        "role": "tool",
+        "content": "Command 'cd \"[LOCAL_PROJECT]/独立测试工作区/豆包工作/OBS02-a02\" && python3 observability_task.py --case OBS02 export --format legacy-json' exited with code 7. stdout: CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=bf7527e9-4f9e-41ea-907b-3ec8836f7e9f\nACTION=export\nBUSINESS_STATUS=FAILED\nERROR_CODE=E_UNSUPPORTED_FORMAT\nRECEIVED_FORMAT=legacy-json\nSUPPORTED_FORMAT=json\nRETRY_COMMAND=python3 observability_task.py --case OBS02 export --format json\n",
+        "tool_call_id": "a67a1650-7160-41df-bb1b-419d4b48b452"
+      }
+    },
+    {
+      "source_line": 3,
+      "event": {
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "id": "92c581ef-bf4a-4790-97d2-21e208fa4926",
+            "type": "function",
+            "function": {
+              "name": "Bash",
+              "arguments": {
+                "command": "cd \"[LOCAL_PROJECT]/独立测试工作区/豆包工作/OBS02-a02\" && python3 observability_task.py --case OBS02 export --format json",
+                "description": "Second export attempt with corrected json format",
+                "sandbox_permissions": "use_default"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "source_line": 4,
+      "event": {
+        "role": "tool",
+        "content": "Command 'cd \"[LOCAL_PROJECT]/独立测试工作区/豆包工作/OBS02-a02\" && python3 observability_task.py --case OBS02 export --format json' exited with code 0. stdout: CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=0fc7aad6-d646-4b28-b929-fac380b1087f\nACTION=export\nBUSINESS_STATUS=OK\nOUTPUT_PATH=outputs/registration_export.json\nTOTAL_PARTICIPANTS=39\n",
+        "tool_call_id": "92c581ef-bf4a-4790-97d2-21e208fa4926"
+      }
+    },
+    {
+      "source_line": 5,
+      "event": {
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "id": "fb55e315-cdf0-44f5-981e-2321b3325dcc",
+            "type": "function",
+            "function": {
+              "name": "Bash",
+              "arguments": {
+                "command": "cd \"[LOCAL_PROJECT]/独立测试工作区/豆包工作/OBS02-a02\" && python3 observability_task.py --case OBS02 verify",
+                "description": "Run verify to check export integrity",
+                "sandbox_permissions": "use_default"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "source_line": 6,
+      "event": {
+        "role": "tool",
+        "content": "Command 'cd \"[LOCAL_PROJECT]/独立测试工作区/豆包工作/OBS02-a02\" && python3 observability_task.py --case OBS02 verify' exited with code 0. stdout: CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=06e6d59a-1830-4ef5-b742-cb222780390b\nACTION=verify\nBUSINESS_STATUS=OK\nCHECKED_PATH=outputs/registration_export.json\nCONTENT_MATCH=true\n",
+        "tool_call_id": "fb55e315-cdf0-44f5-981e-2321b3325dcc"
+      }
+    },
+    {
+      "source_line": 7,
+      "event": {
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "id": "7251a947-9e64-4603-ab0e-98d48639f013",
+            "type": "function",
+            "function": {
+              "name": "present_files",
+              "arguments": {
+                "artifacts": [
+                  {
+                    "name": "registration_export.json",
+                    "source": "[LOCAL_PROJECT]/独立测试工作区/豆包工作/OBS02-a02/outputs/registration_export.json"
+                  },
+                  {
+                    "name": "business_events.jsonl",
+                    "source": "[LOCAL_PROJECT]/独立测试工作区/豆包工作/OBS02-a02/outputs/business_events.jsonl"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "source_line": 8,
+      "event": {
+        "role": "tool",
+        "content": "{\"type\":\"local_file\",\"local_file\":{\"type\":\"json\",\"name\":\"registration_export.json\",\"path\":\"[LOCAL_PROJECT]/独立测试工作区/豆包工作/OBS02-a02/outputs/registration_export.json\",\"device_id\":\"340215705148491\"}}{\"type\":\"local_file\",\"local_file\":{\"type\":\"jsonl\",\"name\":\"business_events.jsonl\",\"path\":\"[LOCAL_PROJECT]/独立测试工作区/豆包工作/OBS02-a02/outputs/business_events.jsonl\",\"device_id\":\"340215705148491\"}}",
+        "tool_call_id": "7251a947-9e64-4603-ab0e-98d48639f013"
+      }
+    }
+  ]
+}

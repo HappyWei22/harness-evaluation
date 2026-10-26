@@ -1,0 +1,20 @@
+{
+  "activities": [
+    {
+      "activity_id": "ACT-51",
+      "participants": 18
+    },
+    {
+      "activity_id": "ACT-52",
+      "participants": 12
+    },
+    {
+      "activity_id": "ACT-53",
+      "participants": 9
+    }
+  ],
+  "activity_count": 3,
+  "case_id": "OBS01",
+  "material_version": "0.3.1-portable-pilot",
+  "total_participants": 39
+}

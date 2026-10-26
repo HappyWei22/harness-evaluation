@@ -1,0 +1,25 @@
+[
+  {
+    "json_path": "data-fn-args[0][2].data.message_snapshot.message_list[1].content_block[5].content.file_operation_block.display_content",
+    "display_content": {
+      "operation": "cd \"[LOCAL_PROJECT]/独立测试工作区/豆包工作/OBS02-a02\" && python3 observability_task.py --case OBS02 export --format legacy-json",
+      "result": "Command 'cd \"[LOCAL_PROJECT]/独立测试工作区/豆包工作/OBS02-a02\" && python3 observability_task.py --case OBS02 export --format legacy-json' exited with code 7. stdout: CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=bf7527e9-4f9e-41ea-907b-3ec8836f7e9f\nACTION=export\nBUSINESS_STATUS=FAILED\nERROR_CODE=E_UNSUPPORTED_FORMAT\nRECEIVED_FORMAT=legacy-json\nSUPPORTED_FORMAT=json\nRETRY_COMMAND=python3 observability_task.py --case OBS02 export --format json\n"
+    }
+  },
+  {
+    "json_path": "data-fn-args[0][2].data.message_snapshot.message_list[1].content_block[9].content.file_operation_block.display_content",
+    "display_content": {
+      "operation": "cd \"[LOCAL_PROJECT]/独立测试工作区/豆包工作/OBS02-a02\" && python3 observability_task.py --case OBS02 export --format json",
+      "result": "CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=0fc7aad6-d646-4b28-b929-fac380b1087f\nACTION=export\nBUSINESS_STATUS=OK\nOUTPUT_PATH=outputs/registration_export.json\nTOTAL_PARTICIPANTS=39\n",
+      "exit_code": 0
+    }
+  },
+  {
+    "json_path": "data-fn-args[0][2].data.message_snapshot.message_list[1].content_block[13].content.file_operation_block.display_content",
+    "display_content": {
+      "operation": "cd \"[LOCAL_PROJECT]/独立测试工作区/豆包工作/OBS02-a02\" && python3 observability_task.py --case OBS02 verify",
+      "result": "CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=06e6d59a-1830-4ef5-b742-cb222780390b\nACTION=verify\nBUSINESS_STATUS=OK\nCHECKED_PATH=outputs/registration_export.json\nCONTENT_MATCH=true\n",
+      "exit_code": 0
+    }
+  }
+]

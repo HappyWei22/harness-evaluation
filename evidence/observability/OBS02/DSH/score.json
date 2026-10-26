@@ -1,0 +1,96 @@
+{
+  "product": "DSH",
+  "label": "DSH",
+  "case_id": "OBS02",
+  "task": "报错与重试过程追踪",
+  "attempt": "a02",
+  "product_runs": 1,
+  "allocation": 4,
+  "confirmed_score": 4,
+  "known_failed_score": 0,
+  "unknown_score": 0,
+  "items": [
+    {
+      "id": "O03",
+      "name": "失败调用的实际输入可查",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/DSH/source-score.json",
+      "source_item_index": 2,
+      "source_reason": "第30行保留首次实际调用legacy-json参数、工具名及a02工作目录。",
+      "source_limitations": "仅本次受控场景的记录可复核能力，不推广到长期稳定或纯Harness归因。",
+      "observation_layer": "本地原生会话记录",
+      "public_evidence": [
+        "evidence/observability/OBS02/DSH/native.excerpt.json",
+        "evidence/observability/OBS02/DSH/file-check.json",
+        "evidence/observability/OBS02/DSH/trace-audit.json",
+        "evidence/observability/OBS02/DSH/before-snapshot.json",
+        "evidence/observability/OBS02/DSH/outputs/registration_export.json",
+        "evidence/observability/OBS02/DSH/outputs/business_events.jsonl"
+      ]
+    },
+    {
+      "id": "O04",
+      "name": "原始失败结果可查",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/DSH/source-score.json",
+      "source_item_index": 3,
+      "source_reason": "第33行保留失败状态、格式错误、接收参数、合法格式、更正命令及退出7，第32行作业确认退出7。",
+      "source_limitations": "仅本次受控场景的记录可复核能力，不推广到长期稳定或纯Harness归因。",
+      "observation_layer": "本地原生会话记录",
+      "public_evidence": [
+        "evidence/observability/OBS02/DSH/native.excerpt.json",
+        "evidence/observability/OBS02/DSH/file-check.json",
+        "evidence/observability/OBS02/DSH/trace-audit.json",
+        "evidence/observability/OBS02/DSH/before-snapshot.json",
+        "evidence/observability/OBS02/DSH/outputs/registration_export.json",
+        "evidence/observability/OBS02/DSH/outputs/business_events.jsonl"
+      ]
+    },
+    {
+      "id": "O05",
+      "name": "不同尝试可区分",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/DSH/source-score.json",
+      "source_item_index": 4,
+      "source_reason": "30/33行与38/41行属于不同callId，两次输入与顺序明确；先前失败未被后续成功覆盖。",
+      "source_limitations": "仅本次受控场景的记录可复核能力，不推广到长期稳定或纯Harness归因。",
+      "observation_layer": "本地原生会话记录",
+      "public_evidence": [
+        "evidence/observability/OBS02/DSH/native.excerpt.json",
+        "evidence/observability/OBS02/DSH/file-check.json",
+        "evidence/observability/OBS02/DSH/trace-audit.json",
+        "evidence/observability/OBS02/DSH/before-snapshot.json",
+        "evidence/observability/OBS02/DSH/outputs/registration_export.json",
+        "evidence/observability/OBS02/DSH/outputs/business_events.jsonl"
+      ]
+    },
+    {
+      "id": "O06",
+      "name": "调用与结果可对应",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/DSH/source-score.json",
+      "source_item_index": 5,
+      "source_reason": "全部6组调用与返回可按callId对应；三次关键业务调用分别为30/33、38/41、46/49行，作业退出7/0/0，输出由present与实物核对支持。",
+      "source_limitations": "仅本次受控场景的记录可复核能力，不推广到长期稳定或纯Harness归因。",
+      "observation_layer": "本地原生会话记录",
+      "public_evidence": [
+        "evidence/observability/OBS02/DSH/native.excerpt.json",
+        "evidence/observability/OBS02/DSH/file-check.json",
+        "evidence/observability/OBS02/DSH/trace-audit.json",
+        "evidence/observability/OBS02/DSH/before-snapshot.json",
+        "evidence/observability/OBS02/DSH/outputs/registration_export.json",
+        "evidence/observability/OBS02/DSH/outputs/business_events.jsonl"
+      ]
+    }
+  ],
+  "score_source": "evidence/observability/DSH/source-score.json",
+  "limits": "沿用已归档的先行判分；本次仅整理和核对，没有重跑或给缺证据项补分。public_evidence含原生摘录和辅助材料，各自身份不混用。"
+}

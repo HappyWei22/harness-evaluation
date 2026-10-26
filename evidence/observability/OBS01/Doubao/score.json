@@ -1,0 +1,56 @@
+{
+  "product": "豆包工作",
+  "label": "Doubao",
+  "case_id": "OBS01",
+  "task": "正常任务记录取回与保存",
+  "attempt": "a02",
+  "product_runs": 1,
+  "allocation": 2,
+  "confirmed_score": 2,
+  "known_failed_score": 0,
+  "unknown_score": 0,
+  "items": [
+    {
+      "id": "O01",
+      "name": "正常任务的原生记录可定位",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/Doubao/source-score.json",
+      "source_item_index": 0,
+      "source_reason": "原生调用返回完整；分享页保存实际返回及退出码、原生收尾显示，保存副本可复核",
+      "source_limitations": null,
+      "observation_layer": "原生本地日志与原生分享页展示层",
+      "public_evidence": [
+        "evidence/observability/OBS01/Doubao/native.excerpt.json",
+        "evidence/observability/OBS01/Doubao/file-check.json",
+        "evidence/observability/OBS01/Doubao/page-end-display.json",
+        "evidence/observability/OBS01/Doubao/page-tool-results.json",
+        "evidence/observability/OBS01/Doubao/outputs/registration_summary.json",
+        "evidence/observability/OBS01/Doubao/outputs/business_events.jsonl"
+      ]
+    },
+    {
+      "id": "O02",
+      "name": "原生记录可保留复核",
+      "allocation": 1,
+      "score": 1,
+      "status": "Evidence Pass",
+      "source_score": "evidence/observability/Doubao/source-score.json",
+      "source_item_index": 1,
+      "source_reason": "原生调用返回完整；分享页保存实际返回及退出码、原生收尾显示，保存副本可复核",
+      "source_limitations": null,
+      "observation_layer": "原生本地日志与原生分享页展示层",
+      "public_evidence": [
+        "evidence/observability/OBS01/Doubao/native.excerpt.json",
+        "evidence/observability/OBS01/Doubao/file-check.json",
+        "evidence/observability/OBS01/Doubao/page-end-display.json",
+        "evidence/observability/OBS01/Doubao/page-tool-results.json",
+        "evidence/observability/OBS01/Doubao/outputs/registration_summary.json",
+        "evidence/observability/OBS01/Doubao/outputs/business_events.jsonl"
+      ]
+    }
+  ],
+  "score_source": "evidence/observability/Doubao/source-score.json",
+  "limits": "沿用已归档的先行判分；本次仅整理和核对，没有重跑或给缺证据项补分。public_evidence含原生摘录和辅助材料，各自身份不混用。"
+}
