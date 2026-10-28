@@ -1,0 +1,81 @@
+{
+  "format": "native-event-excerpt-v1",
+  "synthetic": true,
+  "product_runs": 0,
+  "original_line_count": 5,
+  "records": [
+    {
+      "source_line": 1,
+      "event": {
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call",
+          "name": "exec",
+          "call_id": "synthetic-A",
+          "input": "const r = await tools.exec_command({cmd:\"python3 observability_task.py --case OBS03 summary\",workdir:\"SYNTHETIC_WORKSPACE\"});text(r);"
+        }
+      }
+    },
+    {
+      "source_line": 2,
+      "event": {
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "call_id": "synthetic-A",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"exit_code\": 0, \"output\": \"CASE_ID=OBS03\\nACTION=verify\\nBUSINESS_STATUS=OK\\nCONTENT_MATCH=true\\n\"}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_line": 3,
+      "event": {
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call",
+          "name": "exec",
+          "call_id": "synthetic-verify",
+          "input": "const r = await tools.exec_command({cmd:\"python3 observability_task.py --case OBS03 verify\",workdir:\"SYNTHETIC_WORKSPACE\"});text(r);"
+        }
+      }
+    },
+    {
+      "source_line": 4,
+      "event": {
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "call_id": "synthetic-verify",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"exit_code\": 0, \"output\": \"CASE_ID=OBS03\\nACTION=summary\\nBUSINESS_STATUS=OK\\nTOTAL_PARTICIPANTS=39\\n\"}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_line": 5,
+      "event": {
+        "type": "event_msg",
+        "payload": {
+          "type": "task_complete"
+        }
+      }
+    }
+  ]
+}

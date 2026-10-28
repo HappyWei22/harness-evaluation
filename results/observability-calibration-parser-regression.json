@@ -1,0 +1,75 @@
+{
+  "old_parser": {
+    "code_sha256": "15a22618a07fcdba1324e9144b7be678cc023425319910e7a45f328ea13d2ff8",
+    "results": [
+      {
+        "case_id": "CAL05",
+        "parser_rejected": false,
+        "parsed_business_actions": [
+          "summary",
+          "verify"
+        ],
+        "parsed_business_count": 2,
+        "observed_native_calls": 3
+      },
+      {
+        "case_id": "CAL06",
+        "parser_rejected": false,
+        "parsed_business_actions": [
+          "summary",
+          "verify"
+        ],
+        "parsed_business_count": 2,
+        "observed_native_calls": 2
+      },
+      {
+        "case_id": "CAL08",
+        "parser_rejected": false,
+        "parsed_business_actions": [
+          "summary",
+          "export",
+          "export",
+          "status"
+        ],
+        "parsed_business_count": 4,
+        "observed_native_calls": 5
+      }
+    ],
+    "product_runs": 0,
+    "interpretation": "这里只测试旧原生解析函数；旧归档程序不是完整语义判卷器，不把它未提供的三态判断冒充误判。"
+  },
+  "fixed_parser": {
+    "code_sha256": "79c71d35d1b70441129101d5fed1680001e70033e48ce5515933554de1c417dd",
+    "results": [
+      {
+        "case_id": "CAL05",
+        "parser_rejected": true,
+        "error": "重复原生调用ID：synthetic-A"
+      },
+      {
+        "case_id": "CAL06",
+        "parser_rejected": true,
+        "error": "重复原生返回ID：synthetic-A"
+      },
+      {
+        "case_id": "CAL08",
+        "parser_rejected": false,
+        "parsed_business_actions": [
+          "summary",
+          "export",
+          "export",
+          "package",
+          "status"
+        ],
+        "parsed_business_count": 5,
+        "observed_native_calls": 5
+      }
+    ],
+    "frozen_fixtures_and_expectations_unchanged": true,
+    "product_runs": 0
+  },
+  "limits": "对同一批冻结合成样例仅改变解析代码，复现并验证两类解析问题；不代表原15次产品评分有错，不是产品或模型根因实验。",
+  "old_parser_source_revision": "fa7fabd677943507b142f98cad9b48641c5bc5cd",
+  "old_parser_source_path": "checks/verify_observability.py",
+  "old_code_matches_git_baseline": true
+}

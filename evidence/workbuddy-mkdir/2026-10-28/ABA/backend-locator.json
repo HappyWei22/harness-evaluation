@@ -1,0 +1,112 @@
+{
+  "source_bytes_at_capture": 560521,
+  "source_sha256_at_capture": "db7e30e612d9ae912b69d3464c2102aab3dc84cc46bec512728a42326f123396",
+  "ranges_inclusive": [
+    [
+      2346,
+      2351
+    ],
+    [
+      2365,
+      2370
+    ],
+    [
+      2372,
+      2377
+    ]
+  ],
+  "records": [
+    {
+      "line_number": 2346,
+      "text": "[10/28/2026, 3:54:27 PM.618] [Info] [pid=PUBLIC_PID] [cbc-kw=SUBPROCESS] [SandboxPolicy] loadConfig resolved: enabled=true, allowUnsandboxedCommands=false, autoAllowBashIfSandboxed=true, host=workbuddy-desktop",
+      "line_bytes_sha256": "6c4d87c285428827fa3f1131617579906c4e3edbee8d1caf7cf7882e747f75d0"
+    },
+    {
+      "line_number": 2347,
+      "text": "[10/28/2026, 3:54:27 PM.618] [Info] [pid=PUBLIC_PID] [BrokeredShell] phase=ipc-host-op | operation=mkdir | sessionMatch=true | brokerTraceId=broker-PRIVATE_SESSION_REDACTED | toolCallId=set | runtime=python | reportPath=resolved | result=dispatch",
+      "line_bytes_sha256": "f4513a96bbc78d987ba0bcca23a6cf0135ced840accf271ffb370a8c7dc78b05"
+    },
+    {
+      "line_number": 2348,
+      "text": "[10/28/2026, 3:54:27 PM.621] [Info] [pid=PUBLIC_PID] [BrokeredShell] phase=host-policy | operation=mkdir | decision=grant-token | expectedDecision=grant-token | matchedRuleSource=user-allowlist | approvedByUser=false | result=approved",
+      "line_bytes_sha256": "21bf9bcccefde02f79a7e6d8a3616d862f252f11d536d3ef64bd11ba12cc6ec7"
+    },
+    {
+      "line_number": 2349,
+      "text": "[10/28/2026, 3:54:27 PM.622] [Warning] [pid=PUBLIC_PID] [BrokeredShell] phase=host-op | event=complete | operation=mkdir | path=/PUBLIC_WORKSPACE/MKDIR-ABA-a01/fixtures/target_existing | ok=false | decision=host-op | durationMs=5 | error=EEXIST: file already exists, mkdir '/PUBLIC_WORKSPACE/MKDIR-ABA-a01/fixtures/target_existing'",
+      "line_bytes_sha256": "4d0ea1fbb1741e16f8049cda2728271cce11d9f6f0b5cb4c80b725ce93591580"
+    },
+    {
+      "line_number": 2350,
+      "text": "[10/28/2026, 3:54:27 PM.622] [Info] [pid=PUBLIC_PID] [BrokeredShell] phase=ipc-host-op-complete | operation=mkdir | brokerTraceId=broker-PRIVATE_SESSION_REDACTED | toolCallId=set | runtime=python | decision=host-op | ok=false",
+      "line_bytes_sha256": "d56f1e0d98f829f619a0bcb0bb7512ae33416e299e5aafcdbdc721f4ab550c09"
+    },
+    {
+      "line_number": 2351,
+      "text": "[10/28/2026, 3:54:27 PM.623] [Info] [pid=PUBLIC_PID] [BrokeredSandboxIpc] connection closed | connectionId=PUBLIC_PID-106 | firstFrame: request=HostFileOperation | sessionId=PRIVATE_SESSION_REDACTED | toolCallId=WB-ABA-CALL-1 | reason=peer-close | durationMs=8 | received=1 | responded=1 | unfinished=0",
+      "line_bytes_sha256": "7dd42d4ef5fef0ce5d2380964317944c802eaee2e6cc12288c565927e8498737"
+    },
+    {
+      "line_number": 2365,
+      "text": "[10/28/2026, 3:54:27 PM.653] [Info] [pid=PUBLIC_PID] [cbc-kw=SUBPROCESS] [SandboxPolicy] loadConfig resolved: enabled=true, allowUnsandboxedCommands=false, autoAllowBashIfSandboxed=true, host=workbuddy-desktop",
+      "line_bytes_sha256": "fbd990e11e86a197ee2b4bcd79a1984da3eeecc31ffb1d93e2d09c35448b74e2"
+    },
+    {
+      "line_number": 2366,
+      "text": "[10/28/2026, 3:54:27 PM.653] [Info] [pid=PUBLIC_PID] [BrokeredShell] phase=ipc-host-op | operation=mkdir | sessionMatch=true | brokerTraceId=broker-PRIVATE_SESSION_REDACTED | toolCallId=set | runtime=python | reportPath=resolved | result=dispatch",
+      "line_bytes_sha256": "982b9a17aa9e19f1479f5af7abdb73dd1724d3342a4594babf4cf83a8e1fca03"
+    },
+    {
+      "line_number": 2367,
+      "text": "[10/28/2026, 3:54:27 PM.654] [Info] [pid=PUBLIC_PID] [BrokeredShell] phase=host-policy | operation=mkdir | decision=grant-token | expectedDecision=grant-token | matchedRuleSource=user-allowlist | approvedByUser=false | result=approved",
+      "line_bytes_sha256": "4c47563a638998c3dadd459caa0a6bb030452b7983fcdd41f0a3265f55bafe3f"
+    },
+    {
+      "line_number": 2368,
+      "text": "[10/28/2026, 3:54:27 PM.655] [Warning] [pid=PUBLIC_PID] [BrokeredShell] phase=host-op | event=complete | operation=mkdir | path=/PUBLIC_WORKSPACE/MKDIR-ABA-a01/fixtures/target_existing | ok=false | decision=host-op | durationMs=2 | error=EEXIST: file already exists, mkdir '/PUBLIC_WORKSPACE/MKDIR-ABA-a01/fixtures/target_existing'",
+      "line_bytes_sha256": "202c8131430c50904745631746297fb5d2b38422596f00390b45eda943ccc305"
+    },
+    {
+      "line_number": 2369,
+      "text": "[10/28/2026, 3:54:27 PM.655] [Info] [pid=PUBLIC_PID] [BrokeredShell] phase=ipc-host-op-complete | operation=mkdir | brokerTraceId=broker-PRIVATE_SESSION_REDACTED | toolCallId=set | runtime=python | decision=host-op | ok=false",
+      "line_bytes_sha256": "1850974038e56e400f03270856ef0134c1e271554143e2a5ca388e2170b81176"
+    },
+    {
+      "line_number": 2370,
+      "text": "[10/28/2026, 3:54:27 PM.656] [Info] [pid=PUBLIC_PID] [BrokeredSandboxIpc] connection closed | connectionId=PUBLIC_PID-110 | firstFrame: request=HostFileOperation | sessionId=PRIVATE_SESSION_REDACTED | toolCallId=WB-ABA-CALL-1 | reason=peer-close | durationMs=6 | received=1 | responded=1 | unfinished=0",
+      "line_bytes_sha256": "30be63a476d2590a46bfabcb001a5d5f055bc2b647969e4f26280f0ed5e365e0"
+    },
+    {
+      "line_number": 2372,
+      "text": "[10/28/2026, 3:54:27 PM.658] [Info] [pid=PUBLIC_PID] [cbc-kw=SUBPROCESS] [SandboxPolicy] loadConfig resolved: enabled=true, allowUnsandboxedCommands=false, autoAllowBashIfSandboxed=true, host=workbuddy-desktop",
+      "line_bytes_sha256": "147cb0f84559c5deb1013c654eacd0ec207a4e29fa130c5553aa04c38958807f"
+    },
+    {
+      "line_number": 2373,
+      "text": "[10/28/2026, 3:54:27 PM.658] [Info] [pid=PUBLIC_PID] [BrokeredShell] phase=ipc-host-op | operation=mkdir | sessionMatch=true | brokerTraceId=broker-PRIVATE_SESSION_REDACTED | toolCallId=set | runtime=python | reportPath=resolved | result=dispatch",
+      "line_bytes_sha256": "423660820df3237cafd192294ce4aa442cf956ec009973c8602f304772c86ea0"
+    },
+    {
+      "line_number": 2374,
+      "text": "[10/28/2026, 3:54:27 PM.658] [Info] [pid=PUBLIC_PID] [BrokeredShell] phase=host-policy | operation=mkdir | decision=grant-token | expectedDecision=grant-token | matchedRuleSource=user-allowlist | approvedByUser=false | result=approved",
+      "line_bytes_sha256": "1c51d084be521822cd3d4411871ede95eadf5439f17dcf577230264ca250d052"
+    },
+    {
+      "line_number": 2375,
+      "text": "[10/28/2026, 3:54:27 PM.658] [Warning] [pid=PUBLIC_PID] [BrokeredShell] phase=host-op | event=complete | operation=mkdir | path=/PUBLIC_WORKSPACE/MKDIR-ABA-a01/fixtures/target_existing | ok=false | decision=host-op | durationMs=0 | error=EEXIST: file already exists, mkdir '/PUBLIC_WORKSPACE/MKDIR-ABA-a01/fixtures/target_existing'",
+      "line_bytes_sha256": "afc11d7e0c82be71ab3c88c6fabb79f84bb15770e0220e833995843011ff92a3"
+    },
+    {
+      "line_number": 2376,
+      "text": "[10/28/2026, 3:54:27 PM.658] [Info] [pid=PUBLIC_PID] [BrokeredShell] phase=ipc-host-op-complete | operation=mkdir | brokerTraceId=broker-PRIVATE_SESSION_REDACTED | toolCallId=set | runtime=python | decision=host-op | ok=false",
+      "line_bytes_sha256": "83fa32fb6ad81ad9c025dec8105e4c5f6789b75c7ba3d682d75da5da831d6312"
+    },
+    {
+      "line_number": 2377,
+      "text": "[10/28/2026, 3:54:27 PM.659] [Info] [pid=PUBLIC_PID] [BrokeredSandboxIpc] connection closed | connectionId=PUBLIC_PID-111 | firstFrame: request=HostFileOperation | sessionId=PRIVATE_SESSION_REDACTED | toolCallId=WB-ABA-CALL-1 | reason=peer-close | durationMs=3 | received=1 | responded=1 | unfinished=0",
+      "line_bytes_sha256": "fb8bcd56439455e128c8d80acb023764fd925020c7e2b5d010a46e19303e875d"
+    }
+  ],
+  "phase_mapping": "同一工具内唯一三次同目标mkdir请求的顺序对应A1/B/A2；phase不是后端原生字段。",
+  "log_may_append": true
+}

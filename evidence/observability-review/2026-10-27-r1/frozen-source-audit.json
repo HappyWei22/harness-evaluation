@@ -1,0 +1,20 @@
+{
+  "sha256": "e39e673d6b8deed72a40e0a706b173aab5268b01731160b2b367cc654004185e",
+  "imports": [
+    "argparse",
+    "hashlib",
+    "json",
+    "pathlib",
+    "sys",
+    "uuid"
+  ],
+  "action_dispatch_branches": [
+    "summary",
+    "export",
+    "verify",
+    "package",
+    "status"
+  ],
+  "dangerous_dynamic_execution_calls": [],
+  "manual_source_check": "每次argparse选择一个动作；package只有显式分支，无自动重试、线程或子进程。此结论还经逐段阅读，不从业务账本自述推导。"
+}

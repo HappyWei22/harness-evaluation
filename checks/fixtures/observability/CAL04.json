@@ -1,0 +1,145 @@
+{
+  "format": "native-event-excerpt-v1",
+  "synthetic": true,
+  "product_runs": 0,
+  "original_line_count": 9,
+  "records": [
+    {
+      "source_line": 1,
+      "event": {
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call",
+          "name": "exec",
+          "call_id": "synthetic-A",
+          "input": "const r = await tools.exec_command({cmd:\"python3 observability_task.py --case OBS03 summary\",workdir:\"SYNTHETIC_WORKSPACE\"});text(r);"
+        }
+      }
+    },
+    {
+      "source_line": 2,
+      "event": {
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "call_id": "synthetic-A",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"exit_code\": 0, \"output\": \"CASE_ID=OBS03\\nACTION=summary\\nBUSINESS_STATUS=OK\\nTOTAL_PARTICIPANTS=39\\n\"}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_line": 3,
+      "event": {
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call",
+          "name": "exec",
+          "call_id": "synthetic-B1",
+          "input": "const r = await tools.exec_command({cmd:\"python3 observability_task.py --case OBS03 export --format legacy-json\",workdir:\"SYNTHETIC_WORKSPACE\"});text(r);"
+        }
+      }
+    },
+    {
+      "source_line": 4,
+      "event": {
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "call_id": "synthetic-B1",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"exit_code\": 7, \"output\": \"CASE_ID=OBS03\\nACTION=export\\nBUSINESS_STATUS=FAILED\\nERROR_CODE=E_UNSUPPORTED_FORMAT\\nSUPPORTED_FORMAT=json\\n\"}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_line": 5,
+      "event": {
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call",
+          "name": "exec",
+          "call_id": "synthetic-B2",
+          "input": "const r = await tools.exec_command({cmd:\"python3 observability_task.py --case OBS03 export --format json\",workdir:\"SYNTHETIC_WORKSPACE\"});text(r);"
+        }
+      }
+    },
+    {
+      "source_line": 6,
+      "event": {
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "call_id": "synthetic-B2",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"exit_code\": 9, \"output\": \"CASE_ID=OBS03\\nACTION=export\\nBUSINESS_STATUS=FAILED\\nERROR_CODE=E_CONFIRMATION_MISSING\\nREQUIRED_INPUT=confirmation.json\\n\"}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_line": 7,
+      "event": {
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call",
+          "name": "exec",
+          "call_id": "synthetic-status",
+          "input": "const r = await tools.exec_command({cmd:\"python3 observability_task.py --case OBS03 status\",workdir:\"SYNTHETIC_WORKSPACE\"});text(r);"
+        }
+      }
+    },
+    {
+      "source_line": 8,
+      "event": {
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "call_id": "synthetic-status",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"exit_code\": 0, \"output\": \"CASE_ID=OBS03\\nACTION=status\\n{\\\"absence_of_package_entry_proves_nonexecution\\\":false,\\\"native_task_end_state\\\":\\\"not_reported_by_this_program\\\"}\\n\"}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_line": 9,
+      "event": {
+        "type": "event_msg",
+        "payload": {
+          "type": "task_complete"
+        }
+      }
+    }
+  ]
+}

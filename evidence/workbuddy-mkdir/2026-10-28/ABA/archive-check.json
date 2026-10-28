@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "native_tool_calls": 1,
+  "directory_probe_executions_this_run": 1,
+  "observed_mkdir_calls_this_run": 3,
+  "normal_returns": [
+    false,
+    true,
+    false
+  ],
+  "same_selected_request_and_response_fields": true,
+  "backend_approved_then_EEXIST_events": 3,
+  "target_state_unchanged": true,
+  "restoration_passed": true,
+  "strict_single_call_execution_requirement_met": true,
+  "verbatim_final_reporting_requirement_met": false,
+  "bounded_causal_validation_complete_for_this_case": true,
+  "unique_root_cause_proven": false,
+  "installed_product_repaired": false,
+  "prior_material_files_unchanged": 126,
+  "archive_files_checked": 22,
+  "links_checked": 14,
+  "evaluator_product_probe_reruns": 0
+}

@@ -1,0 +1,24 @@
+{
+  "workspace_files": {
+    "initial_conditions.json": "5e2fbcdd576efa3378361ba735c8f9ad87a2f3e9e77e2d9951a4b0ae4cdb9e01",
+    "scoped_mkdir_intervention.py": "b211dd6d18a8288071cda1b4d1a80380e0c520f16a2efd4658cbe3b403828ed1",
+    "probe_mkdir_aba.py": "2d0484b31bc601cbfefdf2169561f9a9f6d9854faf304e2d15b71cb289bd47b4"
+  },
+  "workspace_snapshot_matches_source": true,
+  "preparation_manifest_files_unchanged": 11,
+  "no_extra_workspace_files_or_directories_observed": true,
+  "target_current_state": {
+    "is_directory": true,
+    "is_symlink": false,
+    "device": "PUBLIC_DEVICE",
+    "inode": "PUBLIC_TARGET_INODE",
+    "mode": 16877,
+    "uid": "PUBLIC_USER",
+    "gid": "PUBLIC_GROUP",
+    "mtime_ns": 1793171245035267298,
+    "ctime_ns": 1793171245035285881,
+    "entries": []
+  },
+  "target_matches_preparation_and_three_phase_states": true,
+  "no_cleanup_or_reset_performed": true
+}

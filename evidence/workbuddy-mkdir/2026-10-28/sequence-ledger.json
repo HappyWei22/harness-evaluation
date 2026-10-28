@@ -1,0 +1,129 @@
+{
+  "as_of": "2026-10-28",
+  "scope": "10月28日WorkBuddy目录异常引导诊断过程；不包含更早原任务、评测端自检、准备、静态检查、离线归档及后续其他测试。",
+  "definitions": {
+    "submitted_session": "实际发出题目并有原生会话记录；未进入工具的排队尝试仍单列。",
+    "directory_probe_execution": "实际执行一次预设目录诊断脚本；一个脚本内的多个CASE不是多个独立产品运行。",
+    "loading_auxiliary_execution": "只检查临时绑定和恢复；与目录因果样例分开。",
+    "purpose_validity": "根据前提和证据能否回答该次问题判断；预设错误被观察到不等于运行无效。",
+    "execution_contract": "单次调用及无额外操作是否满足；加载技术结果可用与执行偏离并列。",
+    "unexpected_business_failure_or_unknown": "不由总退出码直接推出；21可能表示探针捕捉了预设异常，缺原生证据保留未知，不混入成功或失败。"
+  },
+  "counts": {
+    "submitted_sessions": 6,
+    "directory_probe_executions": 4,
+    "loading_auxiliary_executions": 1,
+    "native_tool_calls": 8,
+    "native_Bash_calls": 7,
+    "native_Write_calls": 1,
+    "actual_CASE_RESULT_records": 9
+  },
+  "unexecuted_queue_sessions": 1,
+  "distinct_actual_script_executions_including_auxiliary": 5,
+  "runs": [
+    {
+      "title": "首轮目录初态对照",
+      "kind": "directory_condition_probe",
+      "submitted_sessions": 1,
+      "directory_probe_executions": 1,
+      "loading_auxiliary_executions": 0,
+      "native_tool_calls": 1,
+      "native_Bash_calls": 1,
+      "native_Write_calls": 0,
+      "actual_CASE_RESULT_records": 2,
+      "tool_exit_codes": [
+        21
+      ],
+      "execution_contract_exact": true,
+      "classification_note": "固定脚本内每个CASE为预定观察，不按CASE数增加产品运行次数",
+      "source_access": "完整原会话留本地；公开必要条件、加载及A→B→A证据，未公开部分不可独立认证。"
+    },
+    {
+      "title": "路径名称基准组",
+      "kind": "directory_condition_probe",
+      "submitted_sessions": 1,
+      "directory_probe_executions": 1,
+      "loading_auxiliary_executions": 0,
+      "native_tool_calls": 1,
+      "native_Bash_calls": 1,
+      "native_Write_calls": 0,
+      "actual_CASE_RESULT_records": 2,
+      "tool_exit_codes": [
+        21
+      ],
+      "execution_contract_exact": true,
+      "classification_note": "固定脚本内每个CASE为预定观察，不按CASE数增加产品运行次数",
+      "source_access": "完整原会话留本地；公开必要条件、加载及A→B→A证据，未公开部分不可独立认证。"
+    },
+    {
+      "title": "交换组排队受阻尝试",
+      "kind": "submitted_without_tool_execution",
+      "submitted_sessions": 1,
+      "directory_probe_executions": 0,
+      "loading_auxiliary_executions": 0,
+      "native_tool_calls": 0,
+      "native_Bash_calls": 0,
+      "native_Write_calls": 0,
+      "actual_CASE_RESULT_records": 0,
+      "tool_exit_codes": [],
+      "execution_contract_exact": null,
+      "classification_note": "发题后出现排队文字，未进入工具，不计目录失败或运行",
+      "source_access": "完整原会话留本地；公开必要条件、加载及A→B→A证据，未公开部分不可独立认证。"
+    },
+    {
+      "title": "路径名称交换组",
+      "kind": "directory_condition_probe",
+      "submitted_sessions": 1,
+      "directory_probe_executions": 1,
+      "loading_auxiliary_executions": 0,
+      "native_tool_calls": 1,
+      "native_Bash_calls": 1,
+      "native_Write_calls": 0,
+      "actual_CASE_RESULT_records": 2,
+      "tool_exit_codes": [
+        21
+      ],
+      "execution_contract_exact": true,
+      "classification_note": "固定脚本内每个CASE为预定观察，不按CASE数增加产品运行次数",
+      "source_access": "完整原会话留本地；公开必要条件、加载及A→B→A证据，未公开部分不可独立认证。"
+    },
+    {
+      "title": "局部包装加载检查",
+      "kind": "loading_auxiliary_probe",
+      "submitted_sessions": 1,
+      "directory_probe_executions": 0,
+      "loading_auxiliary_executions": 1,
+      "native_tool_calls": 4,
+      "native_Bash_calls": 3,
+      "native_Write_calls": 1,
+      "actual_CASE_RESULT_records": 0,
+      "tool_exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "execution_contract_exact": false,
+      "classification_note": "技术加载结果可用，额外三次工具调用及写入单列",
+      "source_access": "完整原会话留本地；公开必要条件、加载及A→B→A证据，未公开部分不可独立认证。"
+    },
+    {
+      "title": "已有目录A→B→A单环节对照",
+      "kind": "directory_intervention_probe",
+      "submitted_sessions": 1,
+      "directory_probe_executions": 1,
+      "loading_auxiliary_executions": 0,
+      "native_tool_calls": 1,
+      "native_Bash_calls": 1,
+      "native_Write_calls": 0,
+      "actual_CASE_RESULT_records": 3,
+      "tool_exit_codes": [
+        0
+      ],
+      "execution_contract_exact": true,
+      "classification_note": "固定脚本内每个CASE为预定观察，不按CASE数增加产品运行次数",
+      "source_access": "完整原会话留本地；公开必要条件、加载及A→B→A证据，未公开部分不可独立认证。"
+    }
+  ],
+  "historical_114_ledger_modified": false,
+  "no_cross_product_ranking_or_failure_rate_derived": true
+}

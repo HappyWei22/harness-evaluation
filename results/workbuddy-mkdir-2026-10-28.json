@@ -1,0 +1,30 @@
+{
+  "as_of": "2026-10-28",
+  "run_id": "WB-MKDIR-ABA-20261028-a01",
+  "plan_item_6_status": "completed_for_this_real_case_and_error_interpretation_link",
+  "single_component_intervention_completed": true,
+  "bounded_causal_validation_complete_for_this_case": true,
+  "claim": "在同一进程、同一已有空目录、同参数及相同后端错误反馈下，只切换候选错误解释，观察到失败→成功→失败。改变该环节足以改变本例调用结果。",
+  "actual_native_model": "hy4-preview",
+  "app_version_reported_at_start": "5.8.3",
+  "python_version": "3.13.12",
+  "native_calls": 1,
+  "actual_directory_probe_runs_this_case": 1,
+  "prearranged_mkdir_observations": 3,
+  "unique_root_cause_proven": false,
+  "installed_product_repaired": false,
+  "all_mkdir_compatibility_verified": false,
+  "backend_protocol_fix_verified": false,
+  "old_OBS01_unique_cause_proven": false,
+  "uncovered": [
+    "不存在目录等边界的本轮兼容性",
+    "普通文件和拒绝操作",
+    "符号链接、并发修改和其他parents设置",
+    "完整权限规则快照与推理强度配置"
+  ],
+  "execution_contract_exact": true,
+  "final_report_verbatim": false,
+  "no_evaluator_product_probe_rerun": true,
+  "experiment_closed": true,
+  "next": "将限定范围的验证案例作为阶段成果补充；不继续同类复现，不自动提交或推送。"
+}

@@ -1,0 +1,49 @@
+{
+  "format": "native-event-excerpt-v1",
+  "synthetic": true,
+  "product_runs": 0,
+  "original_line_count": 3,
+  "records": [
+    {
+      "source_line": 1,
+      "event": {
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call",
+          "name": "exec",
+          "call_id": "synthetic-B1",
+          "input": "const r = await tools.exec_command({cmd:\"python3 observability_task.py --case OBS03 export --format legacy-json\",workdir:\"SYNTHETIC_WORKSPACE\"});text(r);"
+        }
+      }
+    },
+    {
+      "source_line": 2,
+      "event": {
+        "type": "response_item",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "call_id": "synthetic-B1",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"exit_code\": 7, \"output\": \"CASE_ID=OBS03\\nACTION=export\\nBUSINESS_STATUS=FAILED\\nERROR_CODE=E_UNSUPPORTED_FORMAT\\nSUPPORTED_FORMAT=json\\n\"}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_line": 3,
+      "event": {
+        "type": "event_msg",
+        "payload": {
+          "type": "task_complete"
+        }
+      }
+    }
+  ]
+}

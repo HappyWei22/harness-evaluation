@@ -1,0 +1,17 @@
+{
+  "suite_sha256": "018b4cc8a0692bb7d6484fa113f5ede78ba0557dbdcd67601ef18c927ec77bde",
+  "cases": {
+    "checks/fixtures/observability/CAL01.json": "4e37477a00b32e60419ab94e86e2d1cfd9e15d32da8930aa1be35b80e7efa77f",
+    "checks/fixtures/observability/CAL02.json": "ec21822e69af3e1ef211385b6738c4f5e53d025a4270c1dfc2fda53aecff6588",
+    "checks/fixtures/observability/CAL03.json": "ef013694fd2f521bd41362720680ed376854e90c919843678038efc7db461893",
+    "checks/fixtures/observability/CAL04.json": "9f7b687e6a6927c1bb91ae45409345e7731935c99cf46e91186f13184842c1bd",
+    "checks/fixtures/observability/CAL05.json": "597898afa8d07936541e2635f7567cf43f1c46ba8cd37555b77bdc8b39bbe5b2",
+    "checks/fixtures/observability/CAL06.json": "be3645c570f7f4fc75307cc83085c23d0f99c5fe30f3f79bb1c2d435fcae0457",
+    "checks/fixtures/observability/CAL07.json": "02219d652a56488303b650670953e87562a1dbfe17072b4bfb28c738ea980539",
+    "checks/fixtures/observability/CAL08.json": "fb44e49c6fc73138a451c3f7e5d0d0deedd01da7d660e231e5056460bd6dac08",
+    "checks/fixtures/observability/CAL09.json": "9f7b687e6a6927c1bb91ae45409345e7731935c99cf46e91186f13184842c1bd"
+  },
+  "expected_outcomes_written_before_candidate_rule_execution": true,
+  "independent_human_reviewer": false,
+  "limits": "预期由本轮单个评测者依据既有规则编写，不是第二位人工评委验证或产品真实执行。"
+}

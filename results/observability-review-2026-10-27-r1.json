@@ -1,0 +1,345 @@
+{
+  "dimension": "可观测性",
+  "date": "2026-10-27",
+  "rule_version": "0.3.0-pilot",
+  "business_input_version": "0.3.1-portable-pilot",
+  "product_runs": 15,
+  "observation_items": 50,
+  "formal_score": null,
+  "ranking": null,
+  "runs": [
+    {
+      "product": "Codex",
+      "label": "Codex",
+      "case_id": "OBS01",
+      "task": "正常任务记录取回与保存",
+      "attempt": "a02",
+      "product_runs": 1,
+      "allocation": 2,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "score_path": "evidence/observability/OBS01/Codex/score.json"
+    },
+    {
+      "product": "Codex",
+      "label": "Codex",
+      "case_id": "OBS02",
+      "task": "报错与重试过程追踪",
+      "attempt": "a02",
+      "product_runs": 1,
+      "allocation": 4,
+      "confirmed_score": 4,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "score_path": "evidence/observability/OBS02/Codex/score.json"
+    },
+    {
+      "product": "Codex",
+      "label": "Codex",
+      "case_id": "OBS03",
+      "task": "部分完成与受阻结束追踪",
+      "attempt": "a02",
+      "product_runs": 1,
+      "allocation": 4,
+      "confirmed_score": 4,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "score_path": "evidence/observability-review/2026-10-27-r1/Codex/score.json"
+    },
+    {
+      "product": "DSH",
+      "label": "DSH",
+      "case_id": "OBS01",
+      "task": "正常任务记录取回与保存",
+      "attempt": "a02",
+      "product_runs": 1,
+      "allocation": 2,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "score_path": "evidence/observability/OBS01/DSH/score.json"
+    },
+    {
+      "product": "DSH",
+      "label": "DSH",
+      "case_id": "OBS02",
+      "task": "报错与重试过程追踪",
+      "attempt": "a02",
+      "product_runs": 1,
+      "allocation": 4,
+      "confirmed_score": 4,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "score_path": "evidence/observability/OBS02/DSH/score.json"
+    },
+    {
+      "product": "DSH",
+      "label": "DSH",
+      "case_id": "OBS03",
+      "task": "部分完成与受阻结束追踪",
+      "attempt": "a02",
+      "product_runs": 1,
+      "allocation": 4,
+      "confirmed_score": 4,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "score_path": "evidence/observability-review/2026-10-27-r1/DSH/score.json"
+    },
+    {
+      "product": "豆包工作",
+      "label": "Doubao",
+      "case_id": "OBS01",
+      "task": "正常任务记录取回与保存",
+      "attempt": "a02",
+      "product_runs": 1,
+      "allocation": 2,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "score_path": "evidence/observability/OBS01/Doubao/score.json"
+    },
+    {
+      "product": "豆包工作",
+      "label": "Doubao",
+      "case_id": "OBS02",
+      "task": "报错与重试过程追踪",
+      "attempt": "a02",
+      "product_runs": 1,
+      "allocation": 4,
+      "confirmed_score": 4,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "score_path": "evidence/observability/OBS02/Doubao/score.json"
+    },
+    {
+      "product": "豆包工作",
+      "label": "Doubao",
+      "case_id": "OBS03",
+      "task": "部分完成与受阻结束追踪",
+      "attempt": "a02",
+      "product_runs": 1,
+      "allocation": 4,
+      "confirmed_score": 4,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "score_path": "evidence/observability-review/2026-10-27-r1/Doubao/score.json"
+    },
+    {
+      "product": "WorkBuddy",
+      "label": "WorkBuddy",
+      "case_id": "OBS01",
+      "task": "正常任务记录取回与保存",
+      "attempt": "a02",
+      "product_runs": 1,
+      "allocation": 2,
+      "confirmed_score": 0,
+      "known_failed_score": 0,
+      "unknown_score": 2,
+      "score_path": "evidence/observability/OBS01/WorkBuddy/score.json"
+    },
+    {
+      "product": "WorkBuddy",
+      "label": "WorkBuddy",
+      "case_id": "OBS02",
+      "task": "报错与重试过程追踪",
+      "attempt": "a02",
+      "product_runs": 1,
+      "allocation": 4,
+      "confirmed_score": 4,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "score_path": "evidence/observability/OBS02/WorkBuddy/score.json"
+    },
+    {
+      "product": "WorkBuddy",
+      "label": "WorkBuddy",
+      "case_id": "OBS03",
+      "task": "部分完成与受阻结束追踪",
+      "attempt": "a02",
+      "product_runs": 1,
+      "allocation": 4,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 2,
+      "score_path": "evidence/observability-review/2026-10-27-r1/WorkBuddy/score.json"
+    },
+    {
+      "product": "元宝专家模式",
+      "label": "Yuanbao",
+      "case_id": "OBS01",
+      "task": "正常任务记录取回与保存",
+      "attempt": "a02",
+      "product_runs": 1,
+      "allocation": 2,
+      "confirmed_score": 0,
+      "known_failed_score": 0,
+      "unknown_score": 2,
+      "score_path": "evidence/observability/OBS01/Yuanbao/score.json"
+    },
+    {
+      "product": "元宝专家模式",
+      "label": "Yuanbao",
+      "case_id": "OBS02",
+      "task": "报错与重试过程追踪",
+      "attempt": "a02",
+      "product_runs": 1,
+      "allocation": 4,
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 2,
+      "score_path": "evidence/observability/OBS02/Yuanbao/score.json"
+    },
+    {
+      "product": "元宝专家模式",
+      "label": "Yuanbao",
+      "case_id": "OBS03",
+      "task": "部分完成与受阻结束追踪",
+      "attempt": "a02",
+      "product_runs": 1,
+      "allocation": 4,
+      "confirmed_score": 0,
+      "known_failed_score": 0,
+      "unknown_score": 4,
+      "score_path": "evidence/observability-review/2026-10-27-r1/Yuanbao/score.json"
+    }
+  ],
+  "totals": [
+    {
+      "product": "Codex",
+      "label": "Codex",
+      "confirmed_score": 10,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 3,
+      "full_pilot_score": 10,
+      "formal_score": null,
+      "historical_source_score": "evidence/observability/Codex/source-score.json",
+      "score_sources": [
+        "evidence/observability/OBS01/Codex/score.json",
+        "evidence/observability/OBS02/Codex/score.json",
+        "evidence/observability-review/2026-10-27-r1/Codex/score.json"
+      ]
+    },
+    {
+      "product": "DSH",
+      "label": "DSH",
+      "confirmed_score": 10,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 3,
+      "full_pilot_score": 10,
+      "formal_score": null,
+      "historical_source_score": "evidence/observability/DSH/source-score.json",
+      "score_sources": [
+        "evidence/observability/OBS01/DSH/score.json",
+        "evidence/observability/OBS02/DSH/score.json",
+        "evidence/observability-review/2026-10-27-r1/DSH/score.json"
+      ]
+    },
+    {
+      "product": "豆包工作",
+      "label": "Doubao",
+      "confirmed_score": 10,
+      "known_failed_score": 0,
+      "unknown_score": 0,
+      "product_runs": 3,
+      "full_pilot_score": 10,
+      "formal_score": null,
+      "historical_source_score": "evidence/observability/Doubao/source-score.json",
+      "score_sources": [
+        "evidence/observability/OBS01/Doubao/score.json",
+        "evidence/observability/OBS02/Doubao/score.json",
+        "evidence/observability-review/2026-10-27-r1/Doubao/score.json"
+      ]
+    },
+    {
+      "product": "WorkBuddy",
+      "label": "WorkBuddy",
+      "confirmed_score": 6,
+      "known_failed_score": 0,
+      "unknown_score": 4,
+      "product_runs": 3,
+      "full_pilot_score": null,
+      "formal_score": null,
+      "historical_source_score": "evidence/observability/WorkBuddy/source-score.json",
+      "score_sources": [
+        "evidence/observability/OBS01/WorkBuddy/score.json",
+        "evidence/observability/OBS02/WorkBuddy/score.json",
+        "evidence/observability-review/2026-10-27-r1/WorkBuddy/score.json"
+      ]
+    },
+    {
+      "product": "元宝专家模式",
+      "label": "Yuanbao",
+      "confirmed_score": 2,
+      "known_failed_score": 0,
+      "unknown_score": 8,
+      "product_runs": 3,
+      "full_pilot_score": null,
+      "formal_score": null,
+      "historical_source_score": "evidence/observability/Yuanbao/source-score.json",
+      "score_sources": [
+        "evidence/observability/OBS01/Yuanbao/score.json",
+        "evidence/observability/OBS02/Yuanbao/score.json",
+        "evidence/observability-review/2026-10-27-r1/Yuanbao/score.json"
+      ]
+    }
+  ],
+  "limits": [
+    "每题仅一次受控先行试测，正式分和排名为空。",
+    "本轮评分变化来自同标准重阅，新增产品运行0；旧版34通过/16未知完整保留。",
+    "原生运行器终态与产品展示层终态的证据深度不同，另列观察层。",
+    "界面重开来自用户反馈，评测者未亲见；豆包无新增重开后网页归档。",
+    "尚无第二位独立人工评委；程序通过不等于人工语义判分已独立验证。"
+  ],
+  "review_version": "2026-10-27-r1",
+  "historical_result": "results/observability.json",
+  "new_product_runs": 0,
+  "independent_human_reviewer": false,
+  "changes": [
+    {
+      "label": "Doubao",
+      "product": "豆包工作",
+      "case_id": "OBS03",
+      "item": "O08",
+      "name": "后续步骤执行状态可区分",
+      "old_score": null,
+      "new_score": 1,
+      "reason": "复核同次已取回主执行链全部请求和配对返回，结合独立准备指纹、冻结单动作程序、初态与末态，支持该范围内C未开始；不推断不可见后台。"
+    },
+    {
+      "label": "Doubao",
+      "product": "豆包工作",
+      "case_id": "OBS03",
+      "item": "O09",
+      "name": "受阻结束的原生状态可追溯",
+      "old_score": null,
+      "new_score": 1,
+      "reason": "原生任务收尾状态与同任务A成功、B两次实际失败及O08的C状态依据可关联；运行结束与业务受阻分别读取。 本次接受产品原生展示层收尾，不宣称取得运行器专用结束事件。"
+    },
+    {
+      "label": "Doubao",
+      "product": "豆包工作",
+      "case_id": "OBS03",
+      "item": "O10",
+      "name": "重新打开后复杂历史仍完整",
+      "old_score": null,
+      "new_score": 1,
+      "reason": "用户按既有明确重开要求操作并直接反馈无变化；前后原生文件一致，原始任务、A/B链、C状态依据及原生收尾均有对应来源。界面来自人工观察，文件来自只读比对。 收尾显示保持由用户反馈支持；没有新的重开后网页归档。"
+    },
+    {
+      "label": "WorkBuddy",
+      "product": "WorkBuddy",
+      "case_id": "OBS03",
+      "item": "O08",
+      "name": "后续步骤执行状态可区分",
+      "old_score": null,
+      "new_score": 1,
+      "reason": "复核同次已取回主执行链全部请求和配对返回，结合独立准备指纹、冻结单动作程序、初态与末态，支持该范围内C未开始；不推断不可见后台。"
+    }
+  ],
+  "review_policy": "evidence/observability-review/2026-10-27-r1/policy.json",
+  "confirmed_items": 38,
+  "unknown_items": 12
+}

@@ -1,0 +1,23 @@
+{
+  "captured_at_local": "2026-10-28T15:59:54.422174+08:00",
+  "native_record_sha256": "e9a564ec96b37078839c9b6ff4b5789c96df50890f891fd639aad74176f36e06",
+  "native_record_copy_sha256": "e9a564ec96b37078839c9b6ff4b5789c96df50890f891fd639aad74176f36e06",
+  "rollback_sha256": "098ca96027234fccb3a56d5b8e6d30720c00e8410ba68f1d92bb0f71c9d419e9",
+  "installed_app_version_at_capture": "5.8.3",
+  "probe_reported_version_at_start": "5.8.3",
+  "probe_environment_after": {
+    "installed_app_version_matches": true,
+    "installed_backend_hash_matches": true,
+    "installed_shim_hash_matches": true
+  },
+  "installed_shim_sha256": "88759743859626ba51120851b4344bdb9755a96e1b3ebd58fa7d5e0d8676baa2",
+  "installed_backend_sha256": "9eacdcdaaf3d53877ca4eac53836a446770b9a40f5dc6382b43230c73fdc5448",
+  "same_as_preparation": true,
+  "complete_runtime_memory_modules_fingerprinted": false,
+  "complete_permission_rules_snapshot_obtained": false,
+  "same_run_policy_approved_events": 3,
+  "native_model": "hy4-preview",
+  "reasoning_effort_independently_verified": false,
+  "protected_existing_material_files": 126,
+  "evaluator_new_product_runs": 0
+}

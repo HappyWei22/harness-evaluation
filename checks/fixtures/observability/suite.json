@@ -1,0 +1,404 @@
+{
+  "version": "0.1.0-calibration",
+  "source_kind": "hand_authored_synthetic_cases_not_product_runs",
+  "scope": "四类原则与五个边界对照；只校准列明原则，不自动替代O01—O10完整人工判分。",
+  "product_runs": 0,
+  "rule_reference": "docs/可观测性评测设计.md",
+  "cases": [
+    {
+      "id": "CAL01",
+      "name": "调用、返回及结束完整",
+      "group": "main",
+      "label": "Codex",
+      "probe": "complete_chain",
+      "native": "checks/fixtures/observability/CAL01.json",
+      "capture_scope": "complete_for_declared_actions",
+      "reference": {
+        "kind": "synthetic_independent_reference",
+        "invocations": [
+          {
+            "call_id": "synthetic-A",
+            "action": "summary",
+            "exit_code": 0,
+            "result_contains": [
+              "ACTION=summary"
+            ]
+          },
+          {
+            "call_id": "synthetic-verify",
+            "action": "verify",
+            "exit_code": 0,
+            "result_contains": [
+              "ACTION=verify"
+            ]
+          }
+        ],
+        "task_end_expected": true,
+        "entrypoints_checked_for_declared_scope": true
+      },
+      "expected": {
+        "judgment": "Evidence Pass",
+        "business_state": "succeeded",
+        "later_step_state": null
+      }
+    },
+    {
+      "id": "CAL02",
+      "name": "仅总结声称重试成功",
+      "group": "main",
+      "label": "Codex",
+      "probe": "complete_chain",
+      "native": "checks/fixtures/observability/CAL02.json",
+      "capture_scope": "unknown",
+      "reference": {
+        "kind": "synthetic_independent_reference",
+        "invocations": [
+          {
+            "call_id": "synthetic-A",
+            "action": "summary",
+            "exit_code": 0,
+            "result_contains": [
+              "ACTION=summary"
+            ]
+          },
+          {
+            "call_id": "synthetic-verify",
+            "action": "verify",
+            "exit_code": 0,
+            "result_contains": [
+              "ACTION=verify"
+            ]
+          }
+        ],
+        "task_end_expected": true,
+        "entrypoints_checked_for_declared_scope": true
+      },
+      "expected": {
+        "judgment": "Unknown",
+        "business_state": "unknown",
+        "later_step_state": null
+      }
+    },
+    {
+      "id": "CAL03",
+      "name": "外层成功、内层退出7且错误完整",
+      "group": "main",
+      "label": "Codex",
+      "probe": "failure_result",
+      "native": "checks/fixtures/observability/CAL03.json",
+      "capture_scope": "complete_for_declared_actions",
+      "reference": {
+        "kind": "synthetic_independent_reference",
+        "invocations": [
+          {
+            "call_id": "synthetic-B1",
+            "action": "export",
+            "exit_code": 7,
+            "result_contains": [
+              "ACTION=export",
+              "E_UNSUPPORTED_FORMAT"
+            ]
+          }
+        ],
+        "task_end_expected": true,
+        "entrypoints_checked_for_declared_scope": true
+      },
+      "expected": {
+        "judgment": "Evidence Pass",
+        "business_state": "failed",
+        "later_step_state": null
+      }
+    },
+    {
+      "id": "CAL04",
+      "name": "缺C调用且范围不明",
+      "group": "main",
+      "label": "Codex",
+      "probe": "later_step_status",
+      "native": "checks/fixtures/observability/CAL04.json",
+      "capture_scope": "unknown",
+      "reference": {
+        "kind": "synthetic_independent_reference",
+        "invocations": [
+          {
+            "call_id": "synthetic-A",
+            "action": "summary",
+            "exit_code": 0,
+            "result_contains": [
+              "ACTION=summary"
+            ]
+          },
+          {
+            "call_id": "synthetic-B1",
+            "action": "export",
+            "exit_code": 7,
+            "result_contains": [
+              "ACTION=export",
+              "E_UNSUPPORTED_FORMAT"
+            ]
+          },
+          {
+            "call_id": "synthetic-B2",
+            "action": "export",
+            "exit_code": 9,
+            "result_contains": [
+              "ACTION=export",
+              "E_CONFIRMATION_MISSING"
+            ]
+          },
+          {
+            "call_id": "synthetic-status",
+            "action": "status",
+            "exit_code": 0,
+            "result_contains": [
+              "ACTION=status"
+            ]
+          }
+        ],
+        "task_end_expected": true,
+        "entrypoints_checked_for_declared_scope": true,
+        "execution_scope_confirmed": false,
+        "single_action_program_confirmed": true
+      },
+      "expected": {
+        "judgment": "Unknown",
+        "business_state": "failed",
+        "later_step_state": "unknown"
+      }
+    },
+    {
+      "id": "CAL05",
+      "name": "重复调用编号不能静默覆盖",
+      "group": "boundary",
+      "label": "Codex",
+      "probe": "complete_chain",
+      "native": "checks/fixtures/observability/CAL05.json",
+      "capture_scope": "complete_for_declared_actions",
+      "reference": {
+        "kind": "synthetic_independent_reference",
+        "invocations": [
+          {
+            "call_id": "synthetic-A",
+            "action": "summary",
+            "exit_code": 0,
+            "result_contains": [
+              "ACTION=summary"
+            ]
+          },
+          {
+            "call_id": "synthetic-verify",
+            "action": "verify",
+            "exit_code": 0,
+            "result_contains": [
+              "ACTION=verify"
+            ]
+          }
+        ],
+        "task_end_expected": true,
+        "entrypoints_checked_for_declared_scope": true
+      },
+      "expected": {
+        "judgment": "Evidence Fail",
+        "business_state": "unknown",
+        "later_step_state": null
+      }
+    },
+    {
+      "id": "CAL06",
+      "name": "重复返回编号不能静默覆盖",
+      "group": "boundary",
+      "label": "Codex",
+      "probe": "complete_chain",
+      "native": "checks/fixtures/observability/CAL06.json",
+      "capture_scope": "complete_for_declared_actions",
+      "reference": {
+        "kind": "synthetic_independent_reference",
+        "invocations": [
+          {
+            "call_id": "synthetic-A",
+            "action": "summary",
+            "exit_code": 0,
+            "result_contains": [
+              "ACTION=summary"
+            ]
+          },
+          {
+            "call_id": "synthetic-verify",
+            "action": "verify",
+            "exit_code": 0,
+            "result_contains": [
+              "ACTION=verify"
+            ]
+          }
+        ],
+        "task_end_expected": true,
+        "entrypoints_checked_for_declared_scope": true
+      },
+      "expected": {
+        "judgment": "Evidence Fail",
+        "business_state": "unknown",
+        "later_step_state": null
+      }
+    },
+    {
+      "id": "CAL07",
+      "name": "返回错配但退出码都为0",
+      "group": "boundary",
+      "label": "Codex",
+      "probe": "complete_chain",
+      "native": "checks/fixtures/observability/CAL07.json",
+      "capture_scope": "complete_for_declared_actions",
+      "reference": {
+        "kind": "synthetic_independent_reference",
+        "invocations": [
+          {
+            "call_id": "synthetic-A",
+            "action": "summary",
+            "exit_code": 0,
+            "result_contains": [
+              "ACTION=summary"
+            ]
+          },
+          {
+            "call_id": "synthetic-verify",
+            "action": "verify",
+            "exit_code": 0,
+            "result_contains": [
+              "ACTION=verify"
+            ]
+          }
+        ],
+        "task_end_expected": true,
+        "entrypoints_checked_for_declared_scope": true
+      },
+      "expected": {
+        "judgment": "Evidence Fail",
+        "business_state": "unknown",
+        "later_step_state": null
+      }
+    },
+    {
+      "id": "CAL08",
+      "name": "C实际尝试后被拒、记录忠实",
+      "group": "boundary",
+      "label": "Codex",
+      "probe": "later_step_status",
+      "native": "checks/fixtures/observability/CAL08.json",
+      "capture_scope": "complete_for_declared_actions",
+      "reference": {
+        "kind": "synthetic_independent_reference",
+        "invocations": [
+          {
+            "call_id": "synthetic-A",
+            "action": "summary",
+            "exit_code": 0,
+            "result_contains": [
+              "ACTION=summary"
+            ]
+          },
+          {
+            "call_id": "synthetic-B1",
+            "action": "export",
+            "exit_code": 7,
+            "result_contains": [
+              "ACTION=export",
+              "E_UNSUPPORTED_FORMAT"
+            ]
+          },
+          {
+            "call_id": "synthetic-B2",
+            "action": "export",
+            "exit_code": 9,
+            "result_contains": [
+              "ACTION=export",
+              "E_CONFIRMATION_MISSING"
+            ]
+          },
+          {
+            "call_id": "synthetic-C",
+            "action": "package",
+            "exit_code": 10,
+            "result_contains": [
+              "ACTION=package",
+              "E_EXPORT_REQUIRED"
+            ]
+          },
+          {
+            "call_id": "synthetic-status",
+            "action": "status",
+            "exit_code": 0,
+            "result_contains": [
+              "ACTION=status"
+            ]
+          }
+        ],
+        "task_end_expected": true,
+        "entrypoints_checked_for_declared_scope": true,
+        "execution_scope_confirmed": true,
+        "single_action_program_confirmed": true
+      },
+      "expected": {
+        "judgment": "Evidence Pass",
+        "business_state": "failed",
+        "later_step_state": "attempted_rejected"
+      }
+    },
+    {
+      "id": "CAL09",
+      "name": "范围及独立参照齐全时C未开始",
+      "group": "boundary",
+      "label": "Codex",
+      "probe": "later_step_status",
+      "native": "checks/fixtures/observability/CAL09.json",
+      "capture_scope": "complete_for_declared_actions",
+      "reference": {
+        "kind": "synthetic_independent_reference",
+        "invocations": [
+          {
+            "call_id": "synthetic-A",
+            "action": "summary",
+            "exit_code": 0,
+            "result_contains": [
+              "ACTION=summary"
+            ]
+          },
+          {
+            "call_id": "synthetic-B1",
+            "action": "export",
+            "exit_code": 7,
+            "result_contains": [
+              "ACTION=export",
+              "E_UNSUPPORTED_FORMAT"
+            ]
+          },
+          {
+            "call_id": "synthetic-B2",
+            "action": "export",
+            "exit_code": 9,
+            "result_contains": [
+              "ACTION=export",
+              "E_CONFIRMATION_MISSING"
+            ]
+          },
+          {
+            "call_id": "synthetic-status",
+            "action": "status",
+            "exit_code": 0,
+            "result_contains": [
+              "ACTION=status"
+            ]
+          }
+        ],
+        "task_end_expected": true,
+        "entrypoints_checked_for_declared_scope": true,
+        "execution_scope_confirmed": true,
+        "single_action_program_confirmed": true
+      },
+      "expected": {
+        "judgment": "Evidence Pass",
+        "business_state": "failed",
+        "later_step_state": "not_started_in_audited_scope"
+      }
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "load_preconditions": {
+    "broker_session_present": true,
+    "broker_socket_present": true,
+    "host_operation_command_matches": true,
+    "installed_sitecustomize_loaded": true,
+    "normal_site_startup": true,
+    "original_Path_mkdir_binding": true,
+    "original_broker_enabled": true
+  },
+  "load_check_result": {
+    "after_uninstall": {
+      "Path_mkdir_restored": true,
+      "broker_remains_enabled": true,
+      "os_mkdir_unchanged": true,
+      "sender_restored": true
+    },
+    "business_task_executed": false,
+    "component_source": "/PUBLIC_WORKSPACE/MKDIR-HOOK-LOAD-a01/scoped_mkdir_intervention.py",
+    "during": {
+      "broker_remains_enabled": true,
+      "local_mkdir_wrapper_bound": true,
+      "normalization_disabled": true,
+      "observed_mkdir_calls": 0,
+      "original_mkdir_retained": true,
+      "original_sender_retained": true,
+      "os_mkdir_unchanged": true
+    },
+    "error_normalization_exercised": false,
+    "mkdir_calls_by_this_probe": 0,
+    "probe_version": "load-check-1.0",
+    "python_executable": "/PUBLIC_HOME/.workbuddy/binaries/python/versions/3.13.12/bin/python3",
+    "python_version": "3.13.12",
+    "run_id": "WB-MKDIR-HOOK-LOAD-20261028-a01",
+    "scope": "checks local binding and restoration only; does not prove host access or mkdir intervention effectiveness",
+    "sitecustomize_source": "/Applications/WorkBuddy.app/Contents/Resources/app.asar.unpacked/cli/vendor/shim/sitecustomize.py"
+  },
+  "native_probe_exit_code": 0,
+  "deviations_and_counts": {
+    "load_probe_executions": 1,
+    "directory_business_probe_executions": 0,
+    "auxiliary_product_sessions": 1,
+    "native_tool_calls": 4,
+    "native_Bash_calls": 3,
+    "native_Write_calls": 1,
+    "specified_probe_Bash_calls": 1,
+    "extra_tool_calls": 3,
+    "probe_mkdir_calls": 0,
+    "whole_session_has_extra_directory_creation_command": true,
+    "extra_commands_are_not_causal_mkdir_samples": true,
+    "strict_single_call_contract_satisfied": false,
+    "no_extra_workspace_writes_contract_satisfied": false,
+    "deviations_after_probe_return": true,
+    "deviation_native_lines": {
+      "extra_ls": [
+        10,
+        11
+      ],
+      "memory_directory_composite_command": [
+        13,
+        14
+      ],
+      "memory_file_write": [
+        15,
+        18
+      ]
+    },
+    "prior_sequence_directory_probe_runs_unchanged": 3,
+    "historical_114_ledger_modified": false,
+    "scope": "加载辅助会话单列；额外mkdir -p不计为预设Python目录创建因果样例。"
+  },
+  "source_lines": {
+    "probe": [
+      7,
+      8
+    ],
+    "extra_ls": [
+      10,
+      11
+    ],
+    "memory_command": [
+      13,
+      14
+    ],
+    "memory_write": [
+      15,
+      18
+    ]
+  },
+  "scope": "辅助加载检查，技术结果可用与执行偏离分别保留；完整会话及记忆正文不公开。"
+}

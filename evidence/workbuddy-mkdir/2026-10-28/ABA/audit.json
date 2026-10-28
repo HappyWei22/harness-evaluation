@@ -1,0 +1,340 @@
+{
+  "native_lines": 10,
+  "request_line": 7,
+  "result_line": 8,
+  "native_tool_calls": 1,
+  "native_Bash_calls": 1,
+  "native_models": [
+    "hy4-preview"
+  ],
+  "arguments": {
+    "command": "python3 probe_mkdir_aba.py"
+  },
+  "raw_response_metadata": {
+    "exitCode": 0,
+    "signal": null,
+    "interrupted": false,
+    "sandboxDenied": false,
+    "stderrBytesTruncated": 0,
+    "stdoutBytesTruncated": 0,
+    "tool_error_code": "0"
+  },
+  "extracted_outputs": {
+    "RUN_ENVIRONMENT": [
+      {
+        "component_sha256": "b211dd6d18a8288071cda1b4d1a80380e0c520f16a2efd4658cbe3b403828ed1",
+        "cwd": "/PUBLIC_WORKSPACE/MKDIR-ABA-a01",
+        "installed_app_version_at_start": "5.8.3",
+        "installed_backend_sha256": "9eacdcdaaf3d53877ca4eac53836a446770b9a40f5dc6382b43230c73fdc5448",
+        "probe_sha256": "2d0484b31bc601cbfefdf2169561f9a9f6d9854faf304e2d15b71cb289bd47b4",
+        "probe_version": "mkdir-aba-1.0",
+        "python_executable": "/PUBLIC_HOME/.workbuddy/binaries/python/versions/3.13.12/bin/python3",
+        "python_version": "3.13.12",
+        "run_id": "WB-MKDIR-ABA-20261028-a01",
+        "sitecustomize_source": "/Applications/WorkBuddy.app/Contents/Resources/app.asar.unpacked/cli/vendor/shim/sitecustomize.py",
+        "target": "/PUBLIC_WORKSPACE/MKDIR-ABA-a01/fixtures/target_existing"
+      }
+    ],
+    "PRECONDITION_VALID": [
+      {
+        "checks": {
+          "broker_enabled": true,
+          "broker_session_present": true,
+          "broker_socket_present": true,
+          "bytecode_writes_disabled": true,
+          "component_sha256_matches": true,
+          "fixtures_entries_match": true,
+          "host_command_matches": true,
+          "installed_app_version_matches": true,
+          "installed_backend_sha256_matches": true,
+          "installed_shim_sha256_matches": true,
+          "installed_shim_source_matches": true,
+          "normal_site_startup": true,
+          "original_Path_mkdir_binding": true,
+          "probe_sha256_matches": true,
+          "python_executable_matches": true,
+          "python_version_matches": true,
+          "run_id_matches": true,
+          "target_has_no_symlink_alias": true,
+          "target_initial_state_matches": true,
+          "target_is_empty_directory": true,
+          "target_matches": true,
+          "version_matches": true,
+          "workspace_entries_match": true
+        },
+        "target_initial_state": {
+          "ctime_ns": 1793171245035285881,
+          "device": "PUBLIC_DEVICE",
+          "entries": [],
+          "gid": "PUBLIC_GROUP",
+          "inode": "PUBLIC_TARGET_INODE",
+          "is_directory": true,
+          "is_symlink": false,
+          "mode": 16877,
+          "mtime_ns": 1793171245035267298,
+          "uid": "PUBLIC_USER"
+        },
+        "valid": true
+      }
+    ],
+    "CASE_RESULT": [
+      {
+        "exception_text": "EEXIST: file already exists, mkdir '/PUBLIC_WORKSPACE/MKDIR-ABA-a01/fixtures/target_existing'",
+        "exception_type": "PermissionError",
+        "expected_outcome_is_design_not_evidence": false,
+        "intervention_enabled": false,
+        "mkdir_attempts": 1,
+        "observed_event": {
+          "eligible_existing_directory_error": true,
+          "intervention_enabled": false,
+          "matching_responses": [
+            {
+              "request_has_exist_ok": false,
+              "request_operation": "mkdir",
+              "request_path": "/PUBLIC_WORKSPACE/MKDIR-ABA-a01/fixtures/target_existing",
+              "request_recursive": false,
+              "response_decision": "host-op",
+              "response_error": "EEXIST: file already exists, mkdir '/PUBLIC_WORKSPACE/MKDIR-ABA-a01/fixtures/target_existing'",
+              "response_ok": false
+            }
+          ],
+          "normalized": false,
+          "target": "/PUBLIC_WORKSPACE/MKDIR-ABA-a01/fixtures/target_existing"
+        },
+        "phase": "A1_original",
+        "requested_parameters": {
+          "exist_ok": true,
+          "mode": 511,
+          "parents": false
+        },
+        "response_and_state_checks": {
+          "backend_decision_host_op": true,
+          "backend_error_EEXIST": true,
+          "backend_response_ok_false": true,
+          "eligible_existing_directory_error": true,
+          "normalization_flag_matches": true,
+          "one_matching_response": true,
+          "one_observed_mkdir": true,
+          "request_operation_mkdir": true,
+          "request_still_omits_exist_ok": true,
+          "same_nonrecursive_request": true,
+          "same_recorded_response_fields_as_A1": true,
+          "same_target": true,
+          "target_state_unchanged": true
+        },
+        "returned_normally": false,
+        "target_after": {
+          "ctime_ns": 1793171245035285881,
+          "device": "PUBLIC_DEVICE",
+          "entries": [],
+          "gid": "PUBLIC_GROUP",
+          "inode": "PUBLIC_TARGET_INODE",
+          "is_directory": true,
+          "is_symlink": false,
+          "mode": 16877,
+          "mtime_ns": 1793171245035267298,
+          "uid": "PUBLIC_USER"
+        },
+        "target_before": {
+          "ctime_ns": 1793171245035285881,
+          "device": "PUBLIC_DEVICE",
+          "entries": [],
+          "gid": "PUBLIC_GROUP",
+          "inode": "PUBLIC_TARGET_INODE",
+          "is_directory": true,
+          "is_symlink": false,
+          "mode": 16877,
+          "mtime_ns": 1793171245035267298,
+          "uid": "PUBLIC_USER"
+        }
+      },
+      {
+        "exception_text": null,
+        "exception_type": null,
+        "expected_outcome_is_design_not_evidence": true,
+        "intervention_enabled": true,
+        "mkdir_attempts": 1,
+        "observed_event": {
+          "eligible_existing_directory_error": true,
+          "intervention_enabled": true,
+          "matching_responses": [
+            {
+              "request_has_exist_ok": false,
+              "request_operation": "mkdir",
+              "request_path": "/PUBLIC_WORKSPACE/MKDIR-ABA-a01/fixtures/target_existing",
+              "request_recursive": false,
+              "response_decision": "host-op",
+              "response_error": "EEXIST: file already exists, mkdir '/PUBLIC_WORKSPACE/MKDIR-ABA-a01/fixtures/target_existing'",
+              "response_ok": false
+            }
+          ],
+          "normalized": true,
+          "target": "/PUBLIC_WORKSPACE/MKDIR-ABA-a01/fixtures/target_existing"
+        },
+        "phase": "B_normalize",
+        "requested_parameters": {
+          "exist_ok": true,
+          "mode": 511,
+          "parents": false
+        },
+        "response_and_state_checks": {
+          "backend_decision_host_op": true,
+          "backend_error_EEXIST": true,
+          "backend_response_ok_false": true,
+          "eligible_existing_directory_error": true,
+          "normalization_flag_matches": true,
+          "one_matching_response": true,
+          "one_observed_mkdir": true,
+          "request_operation_mkdir": true,
+          "request_still_omits_exist_ok": true,
+          "same_nonrecursive_request": true,
+          "same_recorded_response_fields_as_A1": true,
+          "same_target": true,
+          "target_state_unchanged": true
+        },
+        "returned_normally": true,
+        "target_after": {
+          "ctime_ns": 1793171245035285881,
+          "device": "PUBLIC_DEVICE",
+          "entries": [],
+          "gid": "PUBLIC_GROUP",
+          "inode": "PUBLIC_TARGET_INODE",
+          "is_directory": true,
+          "is_symlink": false,
+          "mode": 16877,
+          "mtime_ns": 1793171245035267298,
+          "uid": "PUBLIC_USER"
+        },
+        "target_before": {
+          "ctime_ns": 1793171245035285881,
+          "device": "PUBLIC_DEVICE",
+          "entries": [],
+          "gid": "PUBLIC_GROUP",
+          "inode": "PUBLIC_TARGET_INODE",
+          "is_directory": true,
+          "is_symlink": false,
+          "mode": 16877,
+          "mtime_ns": 1793171245035267298,
+          "uid": "PUBLIC_USER"
+        }
+      },
+      {
+        "exception_text": "EEXIST: file already exists, mkdir '/PUBLIC_WORKSPACE/MKDIR-ABA-a01/fixtures/target_existing'",
+        "exception_type": "PermissionError",
+        "expected_outcome_is_design_not_evidence": false,
+        "intervention_enabled": false,
+        "mkdir_attempts": 1,
+        "observed_event": {
+          "eligible_existing_directory_error": true,
+          "intervention_enabled": false,
+          "matching_responses": [
+            {
+              "request_has_exist_ok": false,
+              "request_operation": "mkdir",
+              "request_path": "/PUBLIC_WORKSPACE/MKDIR-ABA-a01/fixtures/target_existing",
+              "request_recursive": false,
+              "response_decision": "host-op",
+              "response_error": "EEXIST: file already exists, mkdir '/PUBLIC_WORKSPACE/MKDIR-ABA-a01/fixtures/target_existing'",
+              "response_ok": false
+            }
+          ],
+          "normalized": false,
+          "target": "/PUBLIC_WORKSPACE/MKDIR-ABA-a01/fixtures/target_existing"
+        },
+        "phase": "A2_original",
+        "requested_parameters": {
+          "exist_ok": true,
+          "mode": 511,
+          "parents": false
+        },
+        "response_and_state_checks": {
+          "backend_decision_host_op": true,
+          "backend_error_EEXIST": true,
+          "backend_response_ok_false": true,
+          "eligible_existing_directory_error": true,
+          "normalization_flag_matches": true,
+          "one_matching_response": true,
+          "one_observed_mkdir": true,
+          "request_operation_mkdir": true,
+          "request_still_omits_exist_ok": true,
+          "same_nonrecursive_request": true,
+          "same_recorded_response_fields_as_A1": true,
+          "same_target": true,
+          "target_state_unchanged": true
+        },
+        "returned_normally": false,
+        "target_after": {
+          "ctime_ns": 1793171245035285881,
+          "device": "PUBLIC_DEVICE",
+          "entries": [],
+          "gid": "PUBLIC_GROUP",
+          "inode": "PUBLIC_TARGET_INODE",
+          "is_directory": true,
+          "is_symlink": false,
+          "mode": 16877,
+          "mtime_ns": 1793171245035267298,
+          "uid": "PUBLIC_USER"
+        },
+        "target_before": {
+          "ctime_ns": 1793171245035285881,
+          "device": "PUBLIC_DEVICE",
+          "entries": [],
+          "gid": "PUBLIC_GROUP",
+          "inode": "PUBLIC_TARGET_INODE",
+          "is_directory": true,
+          "is_symlink": false,
+          "mode": 16877,
+          "mtime_ns": 1793171245035267298,
+          "uid": "PUBLIC_USER"
+        }
+      }
+    ],
+    "RESTORATION_RESULT": [
+      {
+        "Path_mkdir_restored": true,
+        "broker_enabled": true,
+        "os_mkdir_unchanged": true,
+        "sender_restored": true
+      }
+    ],
+    "RUN_RESULT": [
+      {
+        "ABA_pattern_observed": true,
+        "all_backend_response_checks_passed": true,
+        "complete_case_records": 3,
+        "executed_mkdir_calls": 3,
+        "exit_code": 0,
+        "expected_order": [
+          "A1_original",
+          "B_normalize",
+          "A2_original"
+        ],
+        "installed_environment_after": {
+          "installed_app_version_matches": true,
+          "installed_backend_hash_matches": true,
+          "installed_shim_hash_matches": true
+        },
+        "observed_normal_returns": [
+          false,
+          true,
+          false
+        ],
+        "restoration": {
+          "Path_mkdir_restored": true,
+          "broker_enabled": true,
+          "os_mkdir_unchanged": true,
+          "sender_restored": true
+        },
+        "run_id": "WB-MKDIR-ABA-20261028-a01",
+        "scope": "one-process diagnostic compensation contrast; not a deployed product fix or proof of a unique root cause",
+        "stop_reason": null
+      }
+    ],
+    "RUN_STOP": []
+  },
+  "extra_tool_calls_observed": 0,
+  "strict_single_call_execution_requirement_met": true,
+  "final_reply_verbatim_reporting_requirement_met": false,
+  "reporting_note": "最终回复将PRECONDITION_VALID和CASE_RESULT等改为摘要、将A2调用栈描述为相同；完整原生输出另存，不用摘要代替。",
+  "no_required_raw_outputs_missing_in_archive": true
+}

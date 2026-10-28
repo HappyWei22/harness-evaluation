@@ -1,0 +1,22 @@
+{
+  "review_version": "2026-10-27-r1",
+  "rule_version": "0.3.0-pilot",
+  "business_input_version": "0.3.1-portable-pilot",
+  "scope": "五款同次OBS03部分完成与受阻结束追踪；沿用已完成O08审阅，分别审O09/O10，其他项不扩评。",
+  "O09": "同任务原生结束或等待状态可定位，并能与A成功、B两次失败及C实际状态依据关联；不要求blocked字段，也不要求特定后台事件名。",
+  "O10": "实际离开并返回的人工观察与归档前后对照共同支持关键历史保留；原始要求、A、B两次、C状态依据和原生终态须齐备。",
+  "accepted_native_layers": [
+    "原生运行事件",
+    "产品自身任务收尾显示；只得出展示层结论"
+  ],
+  "manual_observation_policy": "用户承接具体重开检查要求的直接反馈可作界面观察。无截图本身不否决；不伪称评测者亲见，不虚构具体导航方式和时间。",
+  "exclusions": [
+    "模型最终总结不能独立作终态",
+    "消息completed不直接等于任务结束",
+    "文件相同不能单独证明重开",
+    "可写账本不证明C未执行"
+  ],
+  "new_product_runs": 0,
+  "independent_human_reviewer": false,
+  "decision_kind": "同一评测者依据冻结规则重新审阅；检查程序核对结构和来源，不独立判定语义正确性。"
+}

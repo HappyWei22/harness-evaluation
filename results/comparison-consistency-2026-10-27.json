@@ -1,0 +1,287 @@
+{
+  "as_of": "2026-10-27",
+  "checks": [
+    {
+      "id": "C01",
+      "dimension": "01",
+      "topic": "原生日志保存与实际模型输入",
+      "difference_checked": "WorkBuddy较长结果存在完整output.text与另一份过大保存提示；模型实际看到哪种表示未核验。",
+      "finding": "原规则明确按日志层判断指定字段；8分只支持该层，不能写模型首次输入完整。",
+      "disposition": "按既定观察层保留",
+      "follow_up_condition": "只有同次实际模型请求自然取得，才可追加该层判断，不改旧日志层得分。",
+      "sources": [
+        "LOCAL_ONLY: 维度评测/01-信息回传/FB02-较长结果回传/用例与判分规则.md",
+        "LOCAL_ONLY: 维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/评分记录.md"
+      ],
+      "source_scores_changed": false,
+      "scope": "对照所列规则及已有结论，不是逐条重审全部原生轨迹或独立人工复评。"
+    },
+    {
+      "id": "C02",
+      "dimension": "01",
+      "topic": "字段正确与严格字节保存",
+      "difference_checked": "FB02统一CRLF/LF后比较正文，FB03却因多2058个回车导致保存项失败。",
+      "finding": "前者计四字段回传，全文比较为补充；后者运行前明确要求字节数和SHA-256一致。不同目标可以有不同门槛。",
+      "disposition": "任务合同差异可解释，保留原判",
+      "follow_up_condition": "不移除回车来补FB03满分；未来若改为语义一致，应新版本并对所有产品共同采用。",
+      "sources": [
+        "LOCAL_ONLY: 维度评测/01-信息回传/FB02-较长结果回传/用例与判分规则.md",
+        "LOCAL_ONLY: 维度评测/01-信息回传/FB03-完整结果获取/用例与判分规则.md",
+        "LOCAL_ONLY: 维度评测/01-信息回传/第一维-结果与归因说明.md"
+      ],
+      "source_scores_changed": false,
+      "scope": "对照所列规则及已有结论，不是逐条重审全部原生轨迹或独立人工复评。"
+    },
+    {
+      "id": "C03",
+      "dimension": "01",
+      "topic": "追加命令、回执提前失败与未有效测试",
+      "difference_checked": "WorkBuddy基础题两次尝试命令和保存阶段不同，不能挑两轮有利项拼成完整成绩。",
+      "finding": "第二轮正常两项有效；错误模式未产生预设字段。提前失败不是字段在回传中丢失。",
+      "disposition": "保留部分有效与独立轮次",
+      "follow_up_condition": "正式补测必须另立运行，当前不运行；新成功不能覆盖旧现场。",
+      "sources": [
+        "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a01/评分记录.md",
+        "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/评分记录.md"
+      ],
+      "source_scores_changed": false,
+      "scope": "对照所列规则及已有结论，不是逐条重审全部原生轨迹或独立人工复评。"
+    },
+    {
+      "id": "C04",
+      "dimension": "01",
+      "topic": "DSH旧正常状态与后来可观测性状态证据",
+      "difference_checked": "旧FB01正常状态1分未知；后来可观测性可按内层退出码和任务事件判定，不能直接把后题语义移回旧返回。",
+      "finding": "仍缺旧运行该返回类型与同版本状态约定的对应；现有材料不足以自动补判。",
+      "disposition": "同次材料专项复核候选，当前未开展",
+      "follow_up_condition": "仅在同次原生返回及同版本适用协议定义可取得时核对；否则保留未知，不重跑。",
+      "sources": [
+        "LOCAL_ONLY: 维度评测/01-信息回传/第一维-逐项判断与复核.json",
+        "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/评分记录.md",
+        "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/共同判据.json"
+      ],
+      "source_scores_changed": false,
+      "scope": "对照所列规则及已有结论，不是逐条重审全部原生轨迹或独立人工复评。"
+    },
+    {
+      "id": "C05",
+      "dimension": "02",
+      "topic": "短对话的中间回复汇总与粘贴差异",
+      "difference_checked": "部分产品第二轮主动汇总全部四值，WorkBuddy粘贴带代码块标记；最终答题难度不完全相同。",
+      "finding": "原规则评价三轮有效要求与最终四值，不因中间复述扣分；只支持短对话表现，输入按内容等价接受。",
+      "disposition": "保留基础结果并说明难度限制",
+      "follow_up_condition": "不因全通过临时改标准；更强上下文实验另立。",
+      "sources": [
+        "LOCAL_ONLY: 维度评测/02-上下文管理/CTX01-多轮要求更新/CTX01-五款结果汇总.md",
+        "LOCAL_ONLY: 维度评测/02-上下文管理/CTX01-多轮要求更新/用例与判分规则.md"
+      ],
+      "source_scores_changed": false,
+      "scope": "对照所列规则及已有结论，不是逐条重审全部原生轨迹或独立人工复评。"
+    },
+    {
+      "id": "C06",
+      "dimension": "02",
+      "topic": "压缩是否发生及前后证据",
+      "difference_checked": "三款确认手动压缩，两款未确认；保留原文、摘要可读性和最终请求捕获程度也不同。",
+      "finding": "内容16项符合是探索事实，不足以建立正式共同复杂16分。",
+      "disposition": "正式共同比较条件缺口",
+      "follow_up_condition": "先确认触发、压缩事件、前后信息与允许策略；新测试另存，不能回填旧分。",
+      "sources": [
+        "LOCAL_ONLY: 维度评测/02-上下文管理/进度保留-2026-10-20.md"
+      ],
+      "source_scores_changed": false,
+      "scope": "对照所列规则及已有结论，不是逐条重审全部原生轨迹或独立人工复评。"
+    },
+    {
+      "id": "C07",
+      "dimension": "03",
+      "topic": "元宝最终文件正确与恢复基础项未知",
+      "difference_checked": "REC01下载件正确但三项仍未知；看似与其他最终文件题门槛不同。",
+      "finding": "原规则还要求原版脚本来源、预设失败及更正调用对应；缺来源返回不否认文件正确，也不自动满足复合恢复项。",
+      "disposition": "规则要求可解释，保留文件事实与未知",
+      "follow_up_condition": "仅同次返回和脚本指纹能补证；模型后续转述不作原始证据。",
+      "sources": [
+        "cases/REC01/用例与判分规则.md",
+        "LOCAL_ONLY: 维度评测/03-失败恢复/REC01-参数报错后继续导出/运行记录/元宝-a01/本次试测结果.md"
+      ],
+      "source_scores_changed": false,
+      "scope": "对照所列规则及已有结论，不是逐条重审全部原生轨迹或独立人工复评。"
+    },
+    {
+      "id": "C08",
+      "dimension": "03",
+      "topic": "元宝恢复题不同过程项的证据门槛",
+      "difference_checked": "REC02的P3未重生成A由命令、事件、计数与字节交叉支持；P4/P5/P8仍要求原生操作返回。",
+      "finding": "现记录说明了不同观察目标和置信度；但不能仅凭“都有文件和账本”就断言门槛一致或不一致。需按运行前逐项要求核对。",
+      "disposition": "同次材料专项复核候选，当前未开展",
+      "follow_up_condition": "若开展，仅对P3/P4/P5/P8列“原定证据—实际材料—缺口”，保留原判另存审阅；不为对齐而补分或重跑。",
+      "sources": [
+        "cases/REC02/用例与判分规则.md",
+        "LOCAL_ONLY: 维度评测/03-失败恢复/REC02-批量导出中断后续做/运行记录/元宝-a01/本次试测结果.md"
+      ],
+      "source_scores_changed": false,
+      "scope": "对照所列规则及已有结论，不是逐条重审全部原生轨迹或独立人工复评。"
+    },
+    {
+      "id": "C09",
+      "dimension": "04",
+      "topic": "默认权限、精确规则、人工批准与自动审核",
+      "difference_checked": "WorkBuddy复杂题人工加精确规则，DSH和豆包人工允许一次，Codex走自动审核；元宝未建受限目标。",
+      "finding": "前提不相同，不能按候选分直接比较默认安全性或相加15分；WorkBuddy基础反例保留。",
+      "disposition": "正式共同比较条件缺口",
+      "follow_up_condition": "先建立真正可比的允许／禁止与审批条件；不能用目录名或脚本自拦截替代。",
+      "sources": [
+        "results/permission-boundary.md"
+      ],
+      "source_scores_changed": false,
+      "scope": "对照所列规则及已有结论，不是逐条重审全部原生轨迹或独立人工复评。"
+    },
+    {
+      "id": "C10",
+      "dimension": "04",
+      "topic": "一次允许、规则变化与持续许可撤销",
+      "difference_checked": "前两段、WorkBuddy询问→允许→询问补充实验与原第三段含义不同。",
+      "finding": "没有验证已记住的持续许可通过原生入口撤回；第三段未测或当前接口不适用。",
+      "disposition": "分块保留，不补第三段",
+      "follow_up_condition": "取得真实持续许可与撤销入口后另设计，不把改规则当撤销已验证。",
+      "sources": [
+        "results/permission-boundary.md"
+      ],
+      "source_scores_changed": false,
+      "scope": "对照所列规则及已有结论，不是逐条重审全部原生轨迹或独立人工复评。"
+    },
+    {
+      "id": "C11",
+      "dimension": "05",
+      "topic": "产物计分范围与旧追加项",
+      "difference_checked": "早期ART02为4、ART04候选6，现行范围改为2＋2＋4＋2；ART03只有准备。",
+      "finding": "业务选择和异常处置移出保存交付；旧追加两分由独立ART05替代，不重复占额度。",
+      "disposition": "采用现行共同范围，旧版保留",
+      "follow_up_condition": "报告只引用现行50项计分明细；不把准备目录或首次复制当新增得分。",
+      "sources": [
+        "LOCAL_ONLY: 维度评测/05-产物保存与交付/汇总与待定复核-2026-10-23/本维度五产品分数与待定复核.md",
+        "LOCAL_ONLY: 维度评测/05-产物保存与交付/跨产品当前计分状态.json"
+      ],
+      "source_scores_changed": false,
+      "scope": "对照所列规则及已有结论，不是逐条重审全部原生轨迹或独立人工复评。"
+    },
+    {
+      "id": "C12",
+      "dimension": "05",
+      "topic": "ART04授权范围歧义的统一处理",
+      "difference_checked": "同步版本与保留非目标名单冲突，元宝还缺成品。",
+      "finding": "五款对应项各留1分未知；旧程序失败与现行未知分列，未选择性豁免某款。",
+      "disposition": "既有共同范围复核已应用",
+      "follow_up_condition": "新任务明确对象、期间与修改名单；旧题不靠扩大名单解决。",
+      "sources": [
+        "LOCAL_ONLY: 维度评测/05-产物保存与交付/汇总与待定复核-2026-10-23/本维度五产品分数与待定复核.md",
+        "LOCAL_ONLY: 维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/运行记录/DSH-a01/评测范围复核/复核结论.md"
+      ],
+      "source_scores_changed": false,
+      "scope": "对照所列规则及已有结论，不是逐条重审全部原生轨迹或独立人工复评。"
+    },
+    {
+      "id": "C13",
+      "dimension": "05",
+      "topic": "页脚整句匹配与实际批准版本",
+      "difference_checked": "Codex原整句检查0／112，但既定位置已出现批准版本；其他三款确无新版本。",
+      "finding": "同一批准版本识别方法已回查所有取得成品的产品；元宝缺成品不补判。原整句检查保留。",
+      "disposition": "既有同法复核已应用",
+      "follow_up_condition": "不新增检查位置或权重；没有实物不能套用其他款结论。",
+      "sources": [
+        "evidence/artifact-delivery/review/页脚版本整句范围复核.json",
+        "LOCAL_ONLY: 维度评测/05-产物保存与交付/汇总与待定复核-2026-10-23/本维度五产品分数与待定复核.md"
+      ],
+      "source_scores_changed": false,
+      "scope": "对照所列规则及已有结论，不是逐条重审全部原生轨迹或独立人工复评。"
+    },
+    {
+      "id": "C14",
+      "dimension": "05",
+      "topic": "文件存在、入口可用与后补取件事实",
+      "difference_checked": "Codex补取件反馈后通过，豆包补反馈后入口失败；另有元宝无成果入口但后台状态未知。",
+      "finding": "按同次实际取件事实分别更新；本地文件存在不替代回复入口，无固定15分钟超时规则。",
+      "disposition": "采用既有事实复核，保留观察时点",
+      "follow_up_condition": "同会话迟到成果只追加版本；不把等待或拿别题下载件当本次成功。",
+      "sources": [
+        "LOCAL_ONLY: 维度评测/05-产物保存与交付/汇总与待定复核-2026-10-23/本维度五产品分数与待定复核.md"
+      ],
+      "source_scores_changed": false,
+      "scope": "对照所列规则及已有结论，不是逐条重审全部原生轨迹或独立人工复评。"
+    },
+    {
+      "id": "C15",
+      "dimension": "06",
+      "topic": "原题英文检查、中文交接和正确受阻",
+      "difference_checked": "部分原题交接英文子串检查失败，但人工按中文含义确认停止项；受阻题也可通过停止项。",
+      "finding": "预定规则要求人工语义判断并分列原题成绩；本维度检查结束声明与实际状态，不要求虚构业务成功。",
+      "disposition": "任务目标与预定判据可解释",
+      "follow_up_condition": "需保留原检查失败与人工依据，不写官方整题满分或全程合规；第二位人工独立复核仍缺。",
+      "sources": [
+        "cases/STOP03A/用例与判分规则.md",
+        "LOCAL_ONLY: 维度评测/06-停止条件/STOP03A-恢复演练正常收尾/运行记录/Codex-a01/本次试测结果.md",
+        "LOCAL_ONLY: 维度评测/06-停止条件/停止条件本轮结果汇总-2026-10-23.md"
+      ],
+      "source_scores_changed": false,
+      "scope": "对照所列规则及已有结论，不是逐条重审全部原生轨迹或独立人工复评。"
+    },
+    {
+      "id": "C16",
+      "dimension": "07",
+      "topic": "第三题执行链、原生终态与重开观察",
+      "difference_checked": "豆包采用自身收尾展示和有来源的用户反馈；WorkBuddy消息completed不足以证明任务终态。",
+      "finding": "已按共同要求复核O08/O09/O10；不强求相同字段名，也不把消息结束、业务账本或文件相同当任务终态。",
+      "disposition": "已有专项复核，引用新版38／12",
+      "follow_up_condition": "两款已有重开事实，当前不重复追查。仅同次新增原生依据触发另存复核。",
+      "sources": [
+        "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/共同判据.json",
+        "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/复核报告.md",
+        "GitHub待上传/harness-evaluation/results/observability-review-2026-10-27-r1.md"
+      ],
+      "source_scores_changed": false,
+      "scope": "对照所列规则及已有结论，不是逐条重审全部原生轨迹或独立人工复评。"
+    },
+    {
+      "id": "C17",
+      "dimension": "全部",
+      "topic": "材料版本和运行数引用",
+      "difference_checked": "旧README、校准收尾仍保留较早分数与未复核状态；旧输入、修订输入和同次重审不能混合。",
+      "finding": "当前采用七维总表、台账和可观测性r1；校准时34／16是历史快照，当前38／12仍引用新版15次。",
+      "disposition": "新报告明确版本，原文不覆盖",
+      "follow_up_condition": "任何后续变动另存来源及变更原因；不能将重审当产品能力提升或新运行。",
+      "sources": [
+        "results/seven-dimensions-2026-10-27.json",
+        "results/run-ledger-2026-10-27.json",
+        "LOCAL_ONLY: 维度评测/07-可观测性/判分方法验证-2026-10-27/验证收尾.json",
+        "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/复核报告.md"
+      ],
+      "source_scores_changed": false,
+      "scope": "对照所列规则及已有结论，不是逐条重审全部原生轨迹或独立人工复评。"
+    },
+    {
+      "id": "C18",
+      "dimension": "全部",
+      "topic": "模型、技能、读取隔离及独立人工审阅",
+      "difference_checked": "五款原生模型与技能不统一；未证实任务外答案不可读；已有核对主要由同一评测者完成。",
+      "finding": "固定命令可减少干扰，却不能分离组件因果；首批9项合成验证也不等于全评分器或独立人工复核完成。",
+      "disposition": "共同限制明确保留",
+      "follow_up_condition": "结论限固定配置样本；若要提高归因强度和审阅独立性，应另定控制与复核范围，当前不宣称已做。",
+      "sources": [
+        "Harness竞品评测-七维能力与分值表.md",
+        "cases/STOP03A/用例与判分规则.md",
+        "LOCAL_ONLY: 维度评测/07-可观测性/判分方法验证-2026-10-27/验证报告.md"
+      ],
+      "source_scores_changed": false,
+      "scope": "对照所列规则及已有结论，不是逐条重审全部原生轨迹或独立人工复评。"
+    }
+  ],
+  "candidate_reviews_not_performed": [
+    "C04",
+    "C08"
+  ],
+  "all_native_traces_regraded": false,
+  "independent_human_review": false,
+  "scores_changed": 0,
+  "new_product_runs": 0,
+  "public_scope_note": "source_pointer是原始本地资料中的定位，不保证适用于脱敏公开摘要。完整来源并非全部公开。"
+}

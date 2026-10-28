@@ -1,0 +1,84 @@
+{
+  "actual_probe_runs": 3,
+  "groups": [
+    {
+      "group": "initial",
+      "case_results": [
+        {
+          "case": "A_initially_absent",
+          "exception_text": null,
+          "exception_type": null,
+          "final_exists": true,
+          "final_is_dir": true,
+          "initial_exists": false,
+          "mkdir_attempts": 1,
+          "returned_normally": true
+        },
+        {
+          "case": "B_preexisting_directory",
+          "exception_text": "EEXIST: file already exists, mkdir '/PUBLIC_WORKSPACE/MKDIR-CONDITIONS-a01/fixtures/target_existing'",
+          "exception_type": "PermissionError",
+          "final_exists": true,
+          "final_is_dir": true,
+          "initial_exists": true,
+          "mkdir_attempts": 1,
+          "returned_normally": false
+        }
+      ],
+      "original_source_sha256": "00fc5354853a536c05eedbd38e618b4bf88d11a07d184f059bc67f9b87c9ca1f"
+    },
+    {
+      "group": "BASE",
+      "case_results": [
+        {
+          "exception_text": null,
+          "exception_type": null,
+          "final_exists": true,
+          "final_is_dir": true,
+          "initial_exists": false,
+          "mkdir_attempts": 1,
+          "returned_normally": true,
+          "slot": "slot_A"
+        },
+        {
+          "exception_text": "EEXIST: file already exists, mkdir '/PUBLIC_WORKSPACE/MKDIR-PATH-BASE-a01/fixtures/slot_B'",
+          "exception_type": "PermissionError",
+          "final_exists": true,
+          "final_is_dir": true,
+          "initial_exists": true,
+          "mkdir_attempts": 1,
+          "returned_normally": false,
+          "slot": "slot_B"
+        }
+      ],
+      "original_source_sha256": "095099d940e8f91230d253e72fba279477b167d2147756cd3389ab38f6cdd052"
+    },
+    {
+      "group": "SWAP",
+      "case_results": [
+        {
+          "exception_text": "EEXIST: file already exists, mkdir '/PUBLIC_WORKSPACE/MKDIR-PATH-SWAP-a01/fixtures/slot_A'",
+          "exception_type": "PermissionError",
+          "final_exists": true,
+          "final_is_dir": true,
+          "initial_exists": true,
+          "mkdir_attempts": 1,
+          "returned_normally": false,
+          "slot": "slot_A"
+        },
+        {
+          "exception_text": null,
+          "exception_type": null,
+          "final_exists": true,
+          "final_is_dir": true,
+          "initial_exists": false,
+          "mkdir_attempts": 1,
+          "returned_normally": true,
+          "slot": "slot_B"
+        }
+      ],
+      "original_source_sha256": "feddd02df0b3d50464fb5c8acab4ac88129e5a9248ed4c15c571e68de4c9495a"
+    }
+  ],
+  "scope": "已有目录与不存在目录的条件对照；不同会话和绝对路径差异仍保留。"
+}

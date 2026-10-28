@@ -1,0 +1,14 @@
+{
+  "persisted_file_sha256": "a776b6a559069cd7929b4c833c0eedbd77d5361bb36e27956ae1a477a58f2230",
+  "persisted_content_equals_native_output_text": true,
+  "persisted_renderer_equals_stdout_after_outer_whitespace_trim": true,
+  "stdoutBytesTruncated": 0,
+  "stderrBytesTruncated": 0,
+  "native_metadata_contains_persisted_output_notice": true,
+  "persisted_file_is_representation_not_another_tool_run": true,
+  "three_CASE_RESULT_records_complete": true,
+  "two_TRACEBACK_CASE_markers_present": true,
+  "output_channel_note": "脚本向sys.stderr写调用栈；原生工具将其列在Stdout段且Stderr显示(empty)，不推断具体合并层。",
+  "python_source_line_fold_preserved": "...<2 lines>...保留，不视为工具字节截断。",
+  "user_paste_equals_native_final_reply_after_outer_whitespace_trim": true
+}

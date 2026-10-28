@@ -1,3 +1,5 @@
 # 两份冻结提示词原本含末尾空行；保留原字节，仅关闭这两份材料的EOF空行提示。
 cases/CTX02/提示词/04-执行背景1.md whitespace=-blank-at-eof
 cases/CTX02/提示词/05-执行背景2.md whitespace=-blank-at-eof
+# 工具返回含混合LF/CRLF；脱敏公开副本也保留其换行，避免Git自动转换破坏核对。
+evidence/workbuddy-mkdir/2026-10-28/ABA/tool-return.txt -text whitespace=cr-at-eol

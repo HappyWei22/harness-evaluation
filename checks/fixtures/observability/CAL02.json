@@ -1,0 +1,24 @@
+{
+  "format": "native-event-excerpt-v1",
+  "synthetic": true,
+  "product_runs": 0,
+  "original_line_count": 1,
+  "records": [
+    {
+      "source_line": 1,
+      "event": {
+        "type": "response_item",
+        "payload": {
+          "type": "message",
+          "role": "assistant",
+          "content": [
+            {
+              "type": "output_text",
+              "text": "已重试成功，任务完成。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

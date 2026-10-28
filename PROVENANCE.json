@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-26",
+  "date": "2026-10-28",
   "description": "原始来源哈希用于记录来源关系，不代表完整原文件已公开或外部可认证。public文件的实际字节指纹另见MANIFEST.json。",
   "exports": [
     {
@@ -5223,6 +5223,285 @@
       "original_sha256": "849e7b71733a27f0a179a3c931ddbc49857e5ab462b233cb22a3e67192acac8d",
       "transformation": "冻结设计文字快照；运行前状态保留并加当前结果入口；未公开参考的Markdown链接转为明确的路径文字",
       "byte_identical_to_original": true
+    },
+    {
+      "path": "results/observability-calibration.json",
+      "original_source": "维度评测/07-可观测性/判分方法验证-2026-10-27/样例实测结果.json",
+      "original_sha256": "d9a13c7b29f2d95fb279bbf6bc2bc8920aa52a865aa945dc4f79616afa6dcbb4",
+      "transformation": "合成样例实际结果原样复制；异常消息中的本机根目录由判定程序替换为PUBLIC_ROOT占位；不是产品轨迹",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "results/observability-calibration-parser-regression.json",
+      "original_source": "维度评测/07-可观测性/判分方法验证-2026-10-27/修正前解析器实测.json",
+      "original_sha256": "ded415ad79c2c108252a357666f52653e8e35016b189e728c57784bfbbf8de16",
+      "transformation": "汇合修正前后同批合成样例实际解析结果，另保留新代码实测来源及旧提交基准",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "checks/fixtures/observability/freeze.json",
+      "original_source": "维度评测/07-可观测性/判分方法验证-2026-10-27/预期冻结登记.json",
+      "original_sha256": "48be1ef0932675314ac2e476b42d85fe32a5701114097c7ec5846ca63c045dbf",
+      "transformation": "合成输入和预期运行前冻结登记原样复制",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/observability-review/2026-10-27-r1/Codex/all-requests.excerpt.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/Codex-a02/阶段01-完成后只读取证/原生记录/session.jsonl",
+      "original_sha256": "18c8c9822fd0c8b0a87d032235ce832143d91ffb71d99c8536a4c0af3a1a334c",
+      "transformation": "按原始行号抽取本轮全部工具请求/返回、必要作业和终态字段；去掉上下文、思考及无关元数据，脱敏路径。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability-review/2026-10-27-r1/Codex/audit.json",
+      "original_source": "维度评测/07-可观测性/终态与重开复核-2026-10-27/Codex-复核.json",
+      "original_sha256": "21b730704d651defce58e6ea85cebb5f6f4716ee0dc4eac2ad8246888abef758",
+      "transformation": "仅保留本轮工具输入返回、终态字段和人工审阅；替换本机路径，移除私人分享入口。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability-review/2026-10-27-r1/DSH/all-requests.excerpt.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/DSH-a02/阶段01-完成后只读取证/原生记录/session.v4.jsonl",
+      "original_sha256": "cadf13e021962f75acf488ac3d0609caa24e82d337679ee41c8f2f66ebbe5aee",
+      "transformation": "按原始行号抽取本轮全部工具请求/返回、必要作业和终态字段；去掉上下文、思考及无关元数据，脱敏路径。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability-review/2026-10-27-r1/DSH/audit.json",
+      "original_source": "维度评测/07-可观测性/终态与重开复核-2026-10-27/DSH-复核.json",
+      "original_sha256": "57d090c67ede6f335435a80301758366f05e6687362b67bf6e06f172a2a2643a",
+      "transformation": "仅保留本轮工具输入返回、终态字段和人工审阅；替换本机路径，移除私人分享入口。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability-review/2026-10-27-r1/Doubao/all-requests.excerpt.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/原生记录/trajectory.jsonl",
+      "original_sha256": "b5ef38175f14eaf027397030f9ea8a1eafca5466cf617548137cd42f91088923",
+      "transformation": "按原始行号抽取本轮全部工具请求/返回、必要作业和终态字段；去掉上下文、思考及无关元数据，脱敏路径。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability-review/2026-10-27-r1/Doubao/audit.json",
+      "original_source": "维度评测/07-可观测性/终态与重开复核-2026-10-27/豆包工作-复核.json",
+      "original_sha256": "a47bcd9c6e5df985053ef7c919bcd6caffea30517c1277a9dc988186ea58f8d2",
+      "transformation": "仅保留本轮工具输入返回、终态字段和人工审阅；替换本机路径，移除私人分享入口。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability-review/2026-10-27-r1/WorkBuddy/all-requests.excerpt.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/原生记录/e670a823-9424-45f4-9898-c4efcfd78ea8.jsonl",
+      "original_sha256": "e68a54347258400ca2704ce6934c6a722ba6aa23f5214d0d9c547c2019b33734",
+      "transformation": "按原始行号抽取本轮全部工具请求/返回、必要作业和终态字段；去掉上下文、思考及无关元数据，脱敏路径。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability-review/2026-10-27-r1/WorkBuddy/audit.json",
+      "original_source": "维度评测/07-可观测性/终态与重开复核-2026-10-27/WorkBuddy-复核.json",
+      "original_sha256": "a61745dd46c4f1d62cb679ef75c3128a236c9228ddd7b5708ea45b0a4b340cb3",
+      "transformation": "仅保留本轮工具输入返回、终态字段和人工审阅；替换本机路径，移除私人分享入口。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability-review/2026-10-27-r1/Yuanbao/audit.json",
+      "original_source": "维度评测/07-可观测性/终态与重开复核-2026-10-27/元宝专家模式-复核.json",
+      "original_sha256": "9071586db8846d662f8dfd196d7af04fa2694a9208c02796a847349deaeca792",
+      "transformation": "仅保留本轮工具输入返回、终态字段和人工审阅；替换本机路径，移除私人分享入口。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/observability-review/2026-10-27-r1/reopen-request.excerpt.txt",
+      "original_source": "维度评测/07-可观测性/五产品兼容试测-0.3.1/用户确认重开前入口/重开说明.md",
+      "original_sha256": "9d22615cdadcf6064de747670539bc56c39af137780d3f9b6733485ef5bc6f4b",
+      "transformation": "仅节选目的及原检查步骤；不含原会话定位表或私人分享入口。 公开副本移除多余末尾空行，原件不改。",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/seven-dimensions-2026-10-27.json",
+      "original_source": "阶段汇总/七维总表与运行台账-2026-10-27/七维结果总表.json",
+      "original_sha256": "5bb76d2a8a22a0ba534eb55971669151eb8d9b350286203dc188ffcbbd0291b9",
+      "transformation": "选择必要字段并脱敏，不公开完整原生会话或第三方安装源码",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/run-ledger-2026-10-27.json",
+      "original_source": "阶段汇总/七维总表与运行台账-2026-10-27/跨维度运行台账.json",
+      "original_sha256": "2cd19396f48b35a7256e2872bd1e5ddd8bec74e03c47d3a2fe0d9baa3dd5b228",
+      "transformation": "选择必要字段并脱敏，不公开完整原生会话或第三方安装源码",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/comparison-consistency-2026-10-27.json",
+      "original_source": "阶段汇总/七维阶段报告-2026-10-27/比较项一致性检查.json",
+      "original_sha256": "2209a59cb68b8eb7f200aa5adfca2e0cb6eebed8b468e22c1be022108f28d1ae",
+      "transformation": "选择必要字段并脱敏，不公开完整原生会话或第三方安装源码",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unknown-disposition-2026-10-27.json",
+      "original_source": "阶段汇总/七维阶段报告-2026-10-27/未知项与覆盖缺口处理清单.json",
+      "original_sha256": "2d22e49af95f37adf40e862464867e4c837b1f8fcbc7c64e412cb73d4d1e83ff",
+      "transformation": "选择必要字段并脱敏，不公开完整原生会话或第三方安装源码",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/workbuddy-mkdir-2026-10-28.json",
+      "original_source": "故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/阶段结论.json",
+      "original_sha256": "9440471e7a897c20ad44a9b7083713bc70cf48554bd5d4f969300defefcc2d20",
+      "transformation": "选择必要字段并脱敏，不公开完整原生会话或第三方安装源码",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-10-28/ABA/tool-return.txt",
+      "original_source": "故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原始工具返回.txt",
+      "original_sha256": "4423df1b7a3c8f776b47cd0fc7824f3cf2441723fa5f89d4d3ec7b0e95cb7f5c",
+      "transformation": "选择必要字段并脱敏，不公开完整原生会话或第三方安装源码",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-10-28/ABA/archive-check.json",
+      "original_source": "故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/归档核对结果.json",
+      "original_sha256": "889d3ed56ecb45135fb56602c34c110aa43274aff5acce71be1dcd8e695ccd9a",
+      "transformation": "选择必要字段并脱敏，不公开完整原生会话或第三方安装源码",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-10-28/ABA/native.excerpt.json",
+      "original_source": "故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+      "original_sha256": "e9a564ec96b37078839c9b6ff4b5789c96df50890f891fd639aad74176f36e06",
+      "transformation": "选择必要字段并脱敏，不公开完整原生会话或第三方安装源码",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-10-28/ABA/audit.json",
+      "original_source": "故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生调用与结果核对.json",
+      "original_sha256": "1b79287e3e974a88d616d183bbc9a67bb5a12fe7044ff2471e6262d9f280c365",
+      "transformation": "选择必要字段并脱敏，不公开完整原生会话或第三方安装源码",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-10-28/ABA/environment.json",
+      "original_source": "故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/来源与环境核对.json",
+      "original_sha256": "0295ef1b10861a150ee7257a70da3a03ccb1eaf0ac92cda2aad0fd9b66ea33cb",
+      "transformation": "选择必要字段并脱敏，不公开完整原生会话或第三方安装源码",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-10-28/ABA/state.json",
+      "original_source": "故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/工作区与输入保持核对.json",
+      "original_sha256": "e6e23b8d8c25a89d1f260b6313fae76ea029db6ace6afb354ca21ca596e0627c",
+      "transformation": "选择必要字段并脱敏，不公开完整原生会话或第三方安装源码",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-10-28/ABA/output-preservation.json",
+      "original_source": "故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/输出保存与展示核对.json",
+      "original_sha256": "28053e3b157985faaec191eec3b1829d66ac7a4c28b758c1e6ee8a2c09eda824",
+      "transformation": "选择必要字段并脱敏，不公开完整原生会话或第三方安装源码",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-10-28/ABA/backend-locator.json",
+      "original_source": "故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/后端日志/摘录定位.json",
+      "original_sha256": "d61bd8de22467cb0b5c6567746beedd0d96d0f4677395c9dee3e3d5fccfa95de",
+      "transformation": "选择必要字段并脱敏，不公开完整原生会话或第三方安装源码",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-10-28/ABA/backend.txt",
+      "original_source": "故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/后端日志/三次目录操作.txt",
+      "original_sha256": "eaaa2c4e2fc5b0f747c122ce461fa3c20ac7f046ab57b1d02a62bee89863496a",
+      "transformation": "选择必要字段并脱敏，不公开完整原生会话或第三方安装源码",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-10-28/loading-check.json",
+      "original_source": "故障归因/WorkBuddy目录创建-2026-10-28/单环节对照准备-未运行/阶段01-运行后只读取证/原生调用与结果核对.json",
+      "original_sha256": "1ac9ba64ecc4401bb6dabe9a7b613efba840f1c95a6fc79718e0e752229cd42e",
+      "transformation": "选择必要字段并脱敏，不公开完整原生会话或第三方安装源码",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-10-28/conditions.json",
+      "original_source": "故障归因/WorkBuddy目录创建-2026-10-28/路径名称配套对照/配套比较核对.json",
+      "original_sha256": "69488b3364e899fef6e31c93f8cb9781cb35b2021b8a6c52417833afd1849b43",
+      "transformation": "选择必要字段并脱敏，不公开完整原生会话或第三方安装源码",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-10-28/sequence-ledger.json",
+      "original_source": "故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/诊断运行台账.json",
+      "original_sha256": "1a6fe1212dc9bf65a3d06147ba86d72e95d3103e3a2cf188a63db9e346974bf6",
+      "transformation": "选择必要字段并脱敏，不公开完整原生会话或第三方安装源码",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/seven-dimensions-2026-10-27.md",
+      "original_source": "阶段汇总/七维总表与运行台账-2026-10-27/五款七维结果总表.md",
+      "original_sha256": "45440ea87cab85c67775d1be271d950d58888fd1874e001dad102476916000d9",
+      "transformation": "保留正文与原计分单位；更新为公开入口，标明未公开原件；添加历史快照说明，脱敏路径与会话定位",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/run-ledger-2026-10-27.md",
+      "original_source": "阶段汇总/七维总表与运行台账-2026-10-27/跨维度运行台账.md",
+      "original_sha256": "65ebd4ca2becfe741330b947a73e80f4e738e14d3d398236080e2c418f98c4ce",
+      "transformation": "保留正文与原计分单位；更新为公开入口，标明未公开原件；添加历史快照说明，脱敏路径与会话定位",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "docs/七维评测阶段报告-2026-10-27.md",
+      "original_source": "阶段汇总/七维阶段报告-2026-10-27/七维评测阶段报告.md",
+      "original_sha256": "b0b4d8b663f258a4ad70f64dd81d402bfa82817efa1a66d0a3ebbb2c7560a62b",
+      "transformation": "保留正文与原计分单位；更新为公开入口，标明未公开原件；添加历史快照说明，脱敏路径与会话定位",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "docs/比较项一致性检查-2026-10-27.md",
+      "original_source": "阶段汇总/七维阶段报告-2026-10-27/比较项一致性检查.md",
+      "original_sha256": "84f027acb84cbd5c3ed2ddc9bb896f420fe95e94c23efa6346b17a7338c6595f",
+      "transformation": "保留正文与原计分单位；更新为公开入口，标明未公开原件；添加历史快照说明，脱敏路径与会话定位",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "docs/未知项与覆盖缺口处理清单-2026-10-27.md",
+      "original_source": "阶段汇总/七维阶段报告-2026-10-27/未知项与覆盖缺口处理清单.md",
+      "original_sha256": "62e5486047f6950ea406dcf0f6ea591e23b80b6a572ce7507817e3a4c5d28cee",
+      "transformation": "保留正文与原计分单位；更新为公开入口，标明未公开原件；添加历史快照说明，脱敏路径与会话定位",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "docs/故障归因/WorkBuddy目录创建异常原因验证总结.md",
+      "original_source": "故障归因/WorkBuddy目录创建-2026-10-28/WorkBuddy目录创建异常原因验证总结.md",
+      "original_sha256": "315d833878351e5a153c4448060b36174d0010f5a25488072af99be318bf7cc6",
+      "transformation": "保留正文与原计分单位；更新为公开入口，标明未公开原件；添加历史快照说明，脱敏路径与会话定位",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/workbuddy-mkdir-2026-10-28.md",
+      "original_source": "故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/对照结果与阶段结论.md",
+      "original_sha256": "91ec47a1d3e2bff23da8e9c51b0c95a96507f5c8b927b6769e3959beda5f44e1",
+      "transformation": "保留正文与原计分单位；更新为公开入口，标明未公开原件；添加历史快照说明，脱敏路径与会话定位",
+      "byte_identical_to_original": false
+    }
+  ],
+  "authored_batches": [
+    {
+      "date": "2026-10-27",
+      "scope": "checks/fixtures/observability/CAL*.json、suite.json和checks/calibrate_observability.py为本项目新编合成校准材料。",
+      "reference_kind": "同一评测者依据冻结规则编写，不是实际产品执行或第二位评委。",
+      "product_runs": 0
+    },
+    {
+      "date": "2026-10-27",
+      "scope": "可观测性第三题同标准复核2026-10-27-r1；新增5款审阅、新版评分及当前指针，旧版保留。",
+      "reference_kind": "同一评测者对同次归档重新审阅；非第二位独立评委，非新增产品表现。",
+      "product_runs": 0
+    },
+    {
+      "date": "2026-10-28",
+      "scope": "七维总表、114次登记台账、93次当前引用、阶段报告及附件；WorkBuddy已有目录单环节对照的必要脱敏证据。",
+      "reference_kind": "公开副本是选择与脱敏后的证据，不是完整会话或第三方源码；10月28日目录诊断与10月27日历史台账分开。",
+      "new_product_runs_from_export": 0
     }
   ]
 }

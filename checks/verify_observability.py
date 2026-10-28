@@ -19,6 +19,12 @@ def require(ok, message):
         raise ValueError(message)
 
 
+def put_unique(mapping, call_id, value, kind):
+    require(isinstance(call_id, str) and bool(call_id), '缺有效原生' + kind + 'ID')
+    require(call_id not in mapping, '重复原生' + kind + 'ID：' + call_id)
+    mapping[call_id] = value
+
+
 def native(path, label):
     doc = load(path)
     require(doc['format'] == 'native-event-excerpt-v1', '原生摘录格式不符')
@@ -29,23 +35,23 @@ def native(path, label):
         e = row['event']; kind = e.get('type'); p = e.get('payload', {})
         if label == 'Codex':
             if kind == 'response_item' and p.get('type') in {'custom_tool_call', 'function_call'}:
-                calls[p['call_id']] = (row['source_line'], p.get('input', p.get('arguments')), p['name'])
+                put_unique(calls, p['call_id'], (row['source_line'], p.get('input', p.get('arguments')), p['name']), '调用')
             elif kind == 'response_item' and p.get('type') in {'custom_tool_call_output', 'function_call_output'}:
-                results[p['call_id']] = (row['source_line'], p['output'])
+                put_unique(results, p['call_id'], (row['source_line'], p['output']), '返回')
             elif kind == 'event_msg' and p.get('type') in {'task_complete', 'task_aborted'}:
                 ends.append(p)
         elif label == 'DSH':
             d = e.get('data', {})
-            if kind == 'tool/call': calls[d['callId']] = (row['source_line'], d['arguments'], d['name'])
-            elif kind == 'tool/result': results[d['message']['toolCallId']] = (row['source_line'], d['message']['content'])
+            if kind == 'tool/call': put_unique(calls, d['callId'], (row['source_line'], d['arguments'], d['name']), '调用')
+            elif kind == 'tool/result': put_unique(results, d['message']['toolCallId'], (row['source_line'], d['message']['content']), '返回')
             elif kind == 'job/settled': jobs[d['toolCall']['callId']] = d
             elif kind == 'turn/end': ends.append(d)
         elif label == 'WorkBuddy':
-            if kind == 'function_call': calls[e['callId']] = (row['source_line'], e['arguments'], e['name'])
-            elif kind == 'function_call_result': results[e['callId']] = (row['source_line'], e['output'])
+            if kind == 'function_call': put_unique(calls, e['callId'], (row['source_line'], e['arguments'], e['name']), '调用')
+            elif kind == 'function_call_result': put_unique(results, e['callId'], (row['source_line'], e['output']), '返回')
         elif label == 'Doubao':
-            for c in e.get('tool_calls', []): calls[c['id']] = (row['source_line'], c['function']['arguments'], c['function']['name'])
-            if e.get('role') == 'tool': results[e['tool_call_id']] = (row['source_line'], e['content'])
+            for c in e.get('tool_calls', []): put_unique(calls, c['id'], (row['source_line'], c['function']['arguments'], c['function']['name']), '调用')
+            if e.get('role') == 'tool': put_unique(results, e['tool_call_id'], (row['source_line'], e['content']), '返回')
     require(calls and set(calls) == set(results), '公开调用和返回未配对：' + str(path))
     business = []
     for call_id, (call_line, arguments, tool) in calls.items():
@@ -56,7 +62,7 @@ def native(path, label):
         else:
             try: command = json.loads(arguments).get('command', '')
             except (ValueError, TypeError): command = str(arguments)
-        action = re.search(r'python3\s+observability_task\.py\s+--case\s+(OBS0[123])\s+(summary|export|verify|status)\b', command)
+        action = re.search(r'python3\s+observability_task\.py\s+--case\s+(OBS0[123])\s+(summary|export|verify|status|package)\b', command)
         if not action: continue
         result_line, output = results[call_id]
         require(call_line < result_line, '返回顺序错误')
@@ -81,7 +87,8 @@ def native(path, label):
                 match = re.search(r'(?:Exit Code:\s*|exited with code\s+)(\d+)', text)
                 require(match is not None, '原始返回未找到退出码')
             code = int(match[1])
-        business.append({'case': action[1], 'action': action[2], 'code': code, 'text': text, 'command': command})
+        business.append({'case': action[1], 'action': action[2], 'code': code, 'text': text, 'command': command,
+                         'native_call_id': call_id, 'call_line': call_line, 'result_line': result_line})
     return doc, business, ends
 
 

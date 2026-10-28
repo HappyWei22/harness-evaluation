@@ -1,0 +1,184 @@
+{
+  "calibration_version": "0.1.0-calibration",
+  "suite_sha256": "018b4cc8a0692bb7d6484fa113f5ede78ba0557dbdcd67601ef18c927ec77bde",
+  "synthetic_cases": 9,
+  "main_cases": 4,
+  "boundary_cases": 5,
+  "matched_expectations": 9,
+  "product_runs": 0,
+  "independent_human_review": false,
+  "results": [
+    {
+      "id": "CAL01",
+      "name": "调用、返回及结束完整",
+      "group": "main",
+      "expected": {
+        "judgment": "Evidence Pass",
+        "business_state": "succeeded",
+        "later_step_state": null
+      },
+      "actual": {
+        "judgment": "Evidence Pass",
+        "business_state": "succeeded",
+        "later_step_state": null,
+        "reason": "声明的调用、结果及原生结束均与独立参照一致",
+        "scope": "仅本人工样例的声明动作与参照，不代表O01—O10完整评分或隐藏后台全覆盖"
+      },
+      "matches_expectation": true,
+      "native_sha256": "4e37477a00b32e60419ab94e86e2d1cfd9e15d32da8930aa1be35b80e7efa77f"
+    },
+    {
+      "id": "CAL02",
+      "name": "仅总结声称重试成功",
+      "group": "main",
+      "expected": {
+        "judgment": "Unknown",
+        "business_state": "unknown",
+        "later_step_state": null
+      },
+      "actual": {
+        "judgment": "Unknown",
+        "business_state": "unknown",
+        "later_step_state": null,
+        "reason": "原生材料无法无歧义配对：公开调用和返回未配对：[PUBLIC_ROOT]/checks/fixtures/observability/CAL02.json",
+        "scope": "仅本人工样例的声明动作与参照，不代表O01—O10完整评分或隐藏后台全覆盖"
+      },
+      "matches_expectation": true,
+      "native_sha256": "ec21822e69af3e1ef211385b6738c4f5e53d025a4270c1dfc2fda53aecff6588"
+    },
+    {
+      "id": "CAL03",
+      "name": "外层成功、内层退出7且错误完整",
+      "group": "main",
+      "expected": {
+        "judgment": "Evidence Pass",
+        "business_state": "failed",
+        "later_step_state": null
+      },
+      "actual": {
+        "judgment": "Evidence Pass",
+        "business_state": "failed",
+        "later_step_state": null,
+        "reason": "内层失败状态及错误正文与独立参照一致；外层完成不改写业务失败",
+        "scope": "仅本人工样例的声明动作与参照，不代表O01—O10完整评分或隐藏后台全覆盖"
+      },
+      "matches_expectation": true,
+      "native_sha256": "ef013694fd2f521bd41362720680ed376854e90c919843678038efc7db461893"
+    },
+    {
+      "id": "CAL04",
+      "name": "缺C调用且范围不明",
+      "group": "main",
+      "expected": {
+        "judgment": "Unknown",
+        "business_state": "failed",
+        "later_step_state": "unknown"
+      },
+      "actual": {
+        "judgment": "Unknown",
+        "business_state": "failed",
+        "later_step_state": "unknown",
+        "reason": "没有C记录不足以证明未执行；声明范围或独立执行依据不完整",
+        "scope": "仅本人工样例的声明动作与参照，不代表O01—O10完整评分或隐藏后台全覆盖"
+      },
+      "matches_expectation": true,
+      "native_sha256": "9f7b687e6a6927c1bb91ae45409345e7731935c99cf46e91186f13184842c1bd"
+    },
+    {
+      "id": "CAL05",
+      "name": "重复调用编号不能静默覆盖",
+      "group": "boundary",
+      "expected": {
+        "judgment": "Evidence Fail",
+        "business_state": "unknown",
+        "later_step_state": null
+      },
+      "actual": {
+        "judgment": "Evidence Fail",
+        "business_state": "unknown",
+        "later_step_state": null,
+        "reason": "原生材料无法无歧义配对：重复原生调用ID：synthetic-A",
+        "scope": "仅本人工样例的声明动作与参照，不代表O01—O10完整评分或隐藏后台全覆盖"
+      },
+      "matches_expectation": true,
+      "native_sha256": "597898afa8d07936541e2635f7567cf43f1c46ba8cd37555b77bdc8b39bbe5b2"
+    },
+    {
+      "id": "CAL06",
+      "name": "重复返回编号不能静默覆盖",
+      "group": "boundary",
+      "expected": {
+        "judgment": "Evidence Fail",
+        "business_state": "unknown",
+        "later_step_state": null
+      },
+      "actual": {
+        "judgment": "Evidence Fail",
+        "business_state": "unknown",
+        "later_step_state": null,
+        "reason": "原生材料无法无歧义配对：重复原生返回ID：synthetic-A",
+        "scope": "仅本人工样例的声明动作与参照，不代表O01—O10完整评分或隐藏后台全覆盖"
+      },
+      "matches_expectation": true,
+      "native_sha256": "be3645c570f7f4fc75307cc83085c23d0f99c5fe30f3f79bb1c2d435fcae0457"
+    },
+    {
+      "id": "CAL07",
+      "name": "返回错配但退出码都为0",
+      "group": "boundary",
+      "expected": {
+        "judgment": "Evidence Fail",
+        "business_state": "unknown",
+        "later_step_state": null
+      },
+      "actual": {
+        "judgment": "Evidence Fail",
+        "business_state": "unknown",
+        "later_step_state": null,
+        "reason": "原始返回内容与独立参照不符，可能串配或缺失",
+        "scope": "仅本人工样例的声明动作与参照，不代表O01—O10完整评分或隐藏后台全覆盖"
+      },
+      "matches_expectation": true,
+      "native_sha256": "02219d652a56488303b650670953e87562a1dbfe17072b4bfb28c738ea980539"
+    },
+    {
+      "id": "CAL08",
+      "name": "C实际尝试后被拒、记录忠实",
+      "group": "boundary",
+      "expected": {
+        "judgment": "Evidence Pass",
+        "business_state": "failed",
+        "later_step_state": "attempted_rejected"
+      },
+      "actual": {
+        "judgment": "Evidence Pass",
+        "business_state": "failed",
+        "later_step_state": "attempted_rejected",
+        "reason": "C的实际调用和终结返回可查；额外尝试另记为场景偏差，不抹去忠实记录",
+        "scope": "仅本人工样例的声明动作与参照，不代表O01—O10完整评分或隐藏后台全覆盖"
+      },
+      "matches_expectation": true,
+      "native_sha256": "fb44e49c6fc73138a451c3f7e5d0d0deedd01da7d660e231e5056460bd6dac08"
+    },
+    {
+      "id": "CAL09",
+      "name": "范围及独立参照齐全时C未开始",
+      "group": "boundary",
+      "expected": {
+        "judgment": "Evidence Pass",
+        "business_state": "failed",
+        "later_step_state": "not_started_in_audited_scope"
+      },
+      "actual": {
+        "judgment": "Evidence Pass",
+        "business_state": "failed",
+        "later_step_state": "not_started_in_audited_scope",
+        "reason": "完整声明范围、独立动作参照和单动作程序依据共同支持本范围内C未开始",
+        "scope": "仅本人工样例的声明动作与参照，不代表O01—O10完整评分或隐藏后台全覆盖"
+      },
+      "matches_expectation": true,
+      "native_sha256": "9f7b687e6a6927c1bb91ae45409345e7731935c99cf46e91186f13184842c1bd"
+    }
+  ],
+  "limits": "单个评测者编写参照和程序，仅验证列明样例；不自动改真实分数，不表示完整评分器已校准或独立判卷准确率。"
+}

@@ -346,6 +346,18 @@ def main():
     if not args.item:
         from verify_observability import verify_all as verify_observability
         observability = verify_observability()
+    calibration = None
+    if not args.item:
+        from calibrate_observability import verify_all as verify_calibration
+        calibration = verify_calibration()
+    observability_review = None
+    if not args.item:
+        from verify_observability_review import verify_all as verify_observability_review
+        observability_review = verify_observability_review()
+    stage_progress = None
+    if not args.item:
+        from verify_stage_progress import verify_all as verify_stage_progress
+        stage_progress = verify_stage_progress()
     print(json.dumps({'scope': '公开副本核对，不重跑产品，不代表全部表现通过或内部根因已验证。',
                      'public_files_checked': files, 'feedback_judgments_checked': len(selected),
                      'feedback_states': dict(Counter(r['review_state'] for r in selected)),
@@ -354,7 +366,10 @@ def main():
                      'recent_evidence': recent, 'permission_evidence': permissions,
                      'artifact_delivery_evidence': artifacts,
                      'stopping_condition_evidence': stopping,
-                     'observability_evidence': observability}, ensure_ascii=False, indent=2))
+                     'observability_evidence': observability,
+                     'observability_synthetic_calibration': calibration,
+                     'observability_current_review': observability_review,
+                     'stage_progress_2026_10_28': stage_progress}, ensure_ascii=False, indent=2))
     return 0
 
 
