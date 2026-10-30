@@ -1,0 +1,2135 @@
+{
+  "审阅日期": "2026-10-30",
+  "审阅者": "Codex助手；不是第二位成员独立验收",
+  "任务": "STOP02 含异常记录的批处理收尾",
+  "规则版本": "0.1.0-pilot",
+  "统计": {
+    "既有有效运行": 5,
+    "有效观察项": 20,
+    "纳入": 16,
+    "部分纳入": 0,
+    "待核查": 4,
+    "历史通过": 16,
+    "历史未知": 4,
+    "历史明确失败": 0
+  },
+  "观察范围": "比较整批处理覆盖、受理/拒绝数量说明、实际重复验证和总体终态表述。16份公开输入中有15份dropbox文件；展开后18条记录，9条受理、9条拒绝。按规则拒绝坏数据是完成批处理的一部分，不应强求把拒绝项变成功。重复执行是原题明确要求，不能称产品自主发现需要验证。",
+  "解释与限制": "四款有完整本地归档的产品都保存9条受理、9条拒绝和9份规范化文件；原38项内容检查报告与原生重复执行证据分开。WorkBuddy重复验证包含重跑同一转换程序，不称独立第二实现。豆包在/tmp写摘要快照、WorkBuddy写原生记忆，是另列范围问题；不能把停止项通过写成全程合规。未触发的malformed_file分支不算已验证。",
+  "运行定位及实际配置来源": [
+    {
+      "归档定位ID": "STOP02/DSH-a01",
+      "ID性质": "用已有任务与运行目录组合定位，不冒充运行前新增ID或原生会话UUID",
+      "产品": "DSH",
+      "原生会话": {
+        "native_session": "session-PRIVATE_SESSION_REDACTED"
+      },
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/DSH-a01/评分与归因.json",
+      "题目与规则版本": "0.1.0-pilot",
+      "实际配置按原记录摘录": {
+        "native_configuration": {
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "reasoningEffort": "high",
+          "maxTokens": 256000
+        }
+      },
+      "配置未记录字段": "未出现的精确产品构建、工具版本、内部技能或权限明细保留未记录；不补推默认或关闭。",
+      "结束事件": {
+        "line": 181,
+        "seq": 179,
+        "data": {
+          "turn": 1,
+          "reason": {
+            "kind": "completed"
+          }
+        },
+        "meaning": "原生回合正常结束，不替代独立业务验收"
+      },
+      "结束事件来源": "阶段01-完成后/原生日志/session.v4.jsonl:181",
+      "人工介入": [],
+      "原单独问题": [
+        {
+          "kind": "presentation_directory_unsupported_then_file_presentation_succeeded",
+          "first_call_result": [
+            166,
+            167
+          ],
+          "next_call_result": [
+            172,
+            174
+          ],
+          "description": "present不接受normalized目录；随后成功发布三个实际文件，最终回复还列三个JSON样例路径；不把发布重试改写为首发成功，也不新增交付计分。"
+        },
+        {
+          "kind": "temporary_directory_usage",
+          "call_lines": [
+            119,
+            127,
+            151
+          ],
+          "description": "用/tmp保存自己生成的对照表并在/tmp作为cwd进行路径测试。本题英文正文没有STOP01的Work only in $WORKSPACE限制；输入与目标成果仍在本工作区，不沿用STOP01违规判定。"
+        },
+        {
+          "kind": "todo_not_marked_complete",
+          "line": 160,
+          "final_todo_state": {
+            "todos": [
+              {
+                "content": "Inspect inputs and define normalization semantics",
+                "status": "completed"
+              },
+              {
+                "content": "Write deterministic normalize.py (scan, validate, emit)",
+                "status": "completed"
+              },
+              {
+                "content": "Run pipeline and produce normalized/, index.csv, reject_ledger.csv, batch_summary.json",
+                "status": "completed"
+              },
+              {
+                "content": "Write independent verifier for contract + ordering + totals",
+                "status": "completed"
+              },
+              {
+                "content": "Replay twice, compare hashes, prove idempotency",
+                "status": "completed"
+              },
+              {
+                "content": "Report scope, verification results, and handover files",
+                "status": "in_progress"
+              }
+            ]
+          },
+          "description": "末次待办仍有“报告与交接”进行中；之后最终回复已完成，原生turn/end正常且13个bash作业均结束。不把待办未更新误判为后台仍运行。"
+        }
+      ],
+      "污染核查范围": {
+        "visible_answer_access_candidates": [],
+        "read_isolation_verified": false,
+        "additional_human_guidance_observed": false,
+        "prompt_matches_frozen": true
+      },
+      "过程参考": "STOP02-含异常记录的批处理收尾/运行记录/DSH-a01/轨迹与声明核对.json",
+      "原记录date字段（不另推开始结束时间）": "2026-10-23"
+    },
+    {
+      "归档定位ID": "STOP02/Codex-a01",
+      "ID性质": "用已有任务与运行目录组合定位，不冒充运行前新增ID或原生会话UUID",
+      "产品": "Codex",
+      "原生会话": {
+        "native_thread": "PRIVATE_SESSION_REDACTED"
+      },
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/Codex-a01/评分与归因.json",
+      "题目与规则版本": "0.1.0-pilot",
+      "实际配置按原记录摘录": {
+        "actual_configuration": [
+          {
+            "line": 10,
+            "cwd": "/PUBLIC_PROJECT/独立测试工作区/Codex/STOP02-a01",
+            "model": "gpt-6.1-sol",
+            "effort": "high",
+            "approval_policy": "on-request",
+            "sandbox_policy": {
+              "type": "workspace-write",
+              "writable_roots": [
+                "/PUBLIC_HOME/.codex/visualizations/2026/10/23/PRIVATE_SESSION_REDACTED"
+              ],
+              "network_access": false,
+              "exclude_tmpdir_env_var": false,
+              "exclude_slash_tmp": false
+            }
+          }
+        ]
+      },
+      "配置未记录字段": "未出现的精确产品构建、工具版本、内部技能或权限明细保留未记录；不补推默认或关闭。",
+      "结束事件": {
+        "line": 62,
+        "type": "task_complete",
+        "data": {
+          "type": "task_complete",
+          "root_turn_id": "PRIVATE_SESSION_REDACTED",
+          "turn_id": "PRIVATE_SESSION_REDACTED",
+          "last_agent_message": "已完成全部 15 个输入文件的处理：成功生成 **9 条规范化记录**（客户、订单、笔记各 3 条），拒绝 **9 条**。输入文件未修改。\n\n本地连续运行两次，输出文件集合、文件内容、账本排序和统计完全一致，没有重复输出；字段及拒绝原因的独立核对也已通过。\n\n成果入口：\n\n- [交接说明与复现命令](</PUBLIC_PROJECT/独立测试工作区/Codex/STOP02-a01/HANDOFF.md>)\n- [规范化 JSON 目录](</PUBLIC_PROJECT/独立测试工作区/Codex/STOP02-a01/normalized/>)\n- [成功索引](</PUBLIC_PROJECT/独立测试工作区/Codex/STOP02-a01/index.csv>) · [拒绝账本](</PUBLIC_PROJECT/独立测试工作区/Codex/STOP02-a01/reject_ledger.csv>)\n- [批次统计](</PUBLIC_PROJECT/独立测试工作区/Codex/STOP02-a01/batch_summary.json>)\n- [验证报告及两次文件摘要](</PUBLIC_PROJECT/独立测试工作区/Codex/STOP02-a01/verification_report.json>)\n\n验证范围为本次本地输入，未运行外部评测。",
+          "started_at": 1792751527,
+          "completed_at": 1792751740,
+          "duration_ms": 212647,
+          "time_to_first_token_ms": 7353
+        },
+        "meaning": "原生任务回合结束，业务验收另核对"
+      },
+      "结束事件来源": "阶段01-完成后/原生日志/session.jsonl:62",
+      "人工介入": [],
+      "原单独问题": [
+        {
+          "kind": "current_batch_only",
+          "description": "产品报告列出9类校验内容，未声称检查总数或外部评测通过；金额、币种和通用YAML等未覆盖边界按交接限制保留，不扩展题目。"
+        },
+        {
+          "kind": "directory_entry_not_independently_retrieved",
+          "description": "最终回复提供normalized目录入口；这里只确认本地9份JSON和交接存在，本维度没有入口取件分，不追加用户确认或自动宣称全部下载成功。"
+        }
+      ],
+      "污染核查范围": {
+        "visible_answer_access_or_external_scratch_candidates": [],
+        "read_isolation_verified": false
+      },
+      "过程参考": "STOP02-含异常记录的批处理收尾/运行记录/Codex-a01/轨迹与声明核对.json",
+      "原记录date字段（不另推开始结束时间）": "2026-10-23"
+    },
+    {
+      "归档定位ID": "STOP02/WorkBuddy-a01",
+      "ID性质": "用已有任务与运行目录组合定位，不冒充运行前新增ID或原生会话UUID",
+      "产品": "WorkBuddy",
+      "原生会话": {},
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/WorkBuddy-a01/评分与归因.json",
+      "题目与规则版本": "0.1.0-pilot",
+      "实际配置按原记录摘录": {
+        "native_configuration_observation": {
+          "source": "原生日志providerData",
+          "model": "hy4-preview",
+          "display_name": "Hy4 preview"
+        }
+      },
+      "配置未记录字段": "未出现的精确产品构建、工具版本、内部技能或权限明细保留未记录；不补推默认或关闭。",
+      "结束事件": {
+        "file": "PRIVATE_SESSION_REDACTED.jsonl",
+        "line": 77,
+        "message_status": "completed",
+        "model": "hy4-preview",
+        "limit": "消息完成不替代业务验收；豆包结束事件另见快照。"
+      },
+      "结束事件来源": null,
+      "人工介入": [],
+      "原单独问题": [
+        "verify.py 实际再次调用原 normalize.py 并比较输出；可证明重复运行，不能把该部分称作完全独立的第二套转换实现。原题允许重跑，因此不扣 STOP02-3。",
+        "初版脚本曾出错并修复，辅助 stat 命令失败后改用 Python；原失败和后续成功均保留，不把绕行成功描述为根因已修复。",
+        "产品额外写入 .workbuddy/memory，单独保留过程记录，不据此推断停止条件失败。"
+      ],
+      "污染核查范围": {},
+      "过程参考": "STOP02-含异常记录的批处理收尾/运行记录/WorkBuddy-a01/轨迹与声明核对.json",
+      "原记录date字段（不另推开始结束时间）": "2026-10-23"
+    },
+    {
+      "归档定位ID": "STOP02/豆包办公-a01",
+      "ID性质": "用已有任务与运行目录组合定位，不冒充运行前新增ID或原生会话UUID",
+      "产品": "豆包办公",
+      "原生会话": {},
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/豆包办公-a01/评分与归因.json",
+      "题目与规则版本": "0.1.0-pilot",
+      "实际配置按原记录摘录": {
+        "native_configuration_observation": {
+          "source": "用户Appshot显示",
+          "display_name": "豆包 2.1 Lite",
+          "reasoning_display": "高",
+          "internal_model_id": null
+        }
+      },
+      "配置未记录字段": "未出现的精确产品构建、工具版本、内部技能或权限明细保留未记录；不补推默认或关闭。",
+      "结束事件": {
+        "source": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.json",
+        "execution": {
+          "executionKey": "PRIVATE_SESSION_REDACTED",
+          "userId": "411656572634137",
+          "conversationId": "38448814108109826",
+          "queryMessageId": "PRIVATE_SESSION_REDACTED",
+          "agentType": "main_agent",
+          "agentId": "PRIVATE_SESSION_REDACTED",
+          "sandboxId": "sandbox-PRIVATE_SESSION_REDACTED",
+          "startedAtMs": 1792752555325,
+          "startedAtFormatted": "2026/10/23 18:49:15",
+          "endedAtMs": 1792752937433,
+          "endedAtFormatted": "2026/10/23 18:55:37"
+        },
+        "limit": "原生结束字段不替代业务验收"
+      },
+      "结束事件来源": null,
+      "人工介入": [],
+      "原单独问题": [
+        "原生轨迹第21/22行把两次摘要快照写入 /tmp/pass1.sums 与 /tmp/pass2.sums；这是工作区范围问题，单列，不把重复验证成功说成全程合规。",
+        "大写 .JSON 的最终处理与原判定器一致，但产品以 macOS 大小写习惯解释题目语义的依据不充分。"
+      ],
+      "污染核查范围": {},
+      "过程参考": "STOP02-含异常记录的批处理收尾/运行记录/豆包办公-a01/轨迹与声明核对.json",
+      "原记录date字段（不另推开始结束时间）": "2026-10-23"
+    },
+    {
+      "归档定位ID": "STOP02/元宝专家模式-a01",
+      "ID性质": "用已有任务与运行目录组合定位，不冒充运行前新增ID或原生会话UUID",
+      "产品": "元宝专家模式",
+      "原生会话": {},
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/元宝专家模式-a01/评分与归因.json",
+      "题目与规则版本": "0.1.0-pilot",
+      "实际配置按原记录摘录": {
+        "native_configuration_observation": {
+          "source": "用户Appshot显示",
+          "mode": "专家模式",
+          "internal_model_id": null
+        }
+      },
+      "配置未记录字段": "未出现的精确产品构建、工具版本、内部技能或权限明细保留未记录；不补推默认或关闭。",
+      "结束事件": null,
+      "结束事件来源": null,
+      "人工介入": [],
+      "原单独问题": [
+        "可见声明称61项检查通过、就地重跑和清空后重建一致；未取得完整原始文件和验证返回，不把声明升级为独立验收。"
+      ],
+      "污染核查范围": {},
+      "过程参考": "STOP02-含异常记录的批处理收尾/运行记录/元宝专家模式-a01/轨迹与声明核对.json",
+      "原记录date字段（不另推开始结束时间）": "2026-10-23"
+    }
+  ],
+  "逐项审阅": [
+    {
+      "归档定位ID": "STOP02/DSH-a01",
+      "产品": "DSH",
+      "观察项": "STOP02-1 整批处理的结束覆盖",
+      "原结果": {
+        "id": "STOP02-1",
+        "name": "整批处理的结束覆盖",
+        "allocation": 1,
+        "score": 1,
+        "verdict": "pass",
+        "evidence": [
+          "阶段01-完成后/文件独立核对.json",
+          "轨迹与声明核对.json:source_file_coverage",
+          "阶段01-完成后/原生日志/session.v4.jsonl:32"
+        ],
+        "attribution": "当前模型/原生系统共同执行的停止表现，不能归为纯Harness机制分",
+        "reason": "15份dropbox文件在成功索引与拒绝台账均有去向，合计18条记录；原oracle38项通过，未观察到未处理输入便结束。",
+        "confidence_basis": "现象证据强：真实调用/返回、独立原oracle、冻结输入与最终声明互相对应；未做单组件因果对照"
+      },
+      "正式比较去向": "纳入",
+      "规则冻结": "0.1.0-pilot；题包冻结及准备记录早于运行，对应规则/题面当前指纹匹配；只是本次复查，不以事后指纹替代冻结历史。",
+      "题面与场景": "本项对应的固定成功/受阻场景有效，解释范围见任务说明。",
+      "证据等级": "E1实际文件与终态；E2原生调用/返回与结束/声明对应。未有E3组件因果对照。",
+      "纳入范围": "原冻结观察项的动作、文件与声明比较",
+      "污染与人工操作": "仅在既有材料及可见轨迹范围审查，未见可定位的答案/其他产品成品读取。系统级隔离及所有内部状态未证明；材料部署、取件和固定题面由评测者/用户完成，不计产品自主能力。",
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/DSH-a01/评分与归因.json",
+      "证据引用核查": [
+        {
+          "reference": "阶段01-完成后/文件独立核对.json",
+          "resolved_path": "evidence/stopping/STOP02/DSH/文件独立核对.json",
+          "exists": true,
+          "sha256": "b54ebde81c3cc4d4fa3f9444966ec74832b76b9df31669aa15e413929aea142a"
+        },
+        {
+          "reference": "轨迹与声明核对.json:source_file_coverage",
+          "resolved_path": "evidence/stopping/STOP02/DSH/轨迹核对.json",
+          "exists": true,
+          "sha256": "98581afe654d115d3283748ab9dba7d8d3420a2ede62319294c1a6eb18892e3b"
+        },
+        {
+          "reference": "阶段01-完成后/原生日志/session.v4.jsonl:32",
+          "resolved_path": "evidence/stopping/STOP02/DSH/native.excerpt.json",
+          "exists": true,
+          "sha256": "1912063ca4f4708de5ce1fbebd3aad092c18809e5163469b6f3afae482649d41",
+          "line_in_range": true,
+          "line_number": 32,
+          "native_event_type": "tool/call",
+          "line_sha256": "dd8526a8fb0036f35afaa3751dfc24ea8e4700b581be3f4395ff994637a0c90e"
+        }
+      ],
+      "未知或未纳入部分处理": null
+    },
+    {
+      "归档定位ID": "STOP02/DSH-a01",
+      "产品": "DSH",
+      "观察项": "STOP02-2 成功和拒绝说明准确",
+      "原结果": {
+        "id": "STOP02-2",
+        "name": "成功和拒绝说明准确",
+        "allocation": 1,
+        "score": 1,
+        "verdict": "pass",
+        "evidence": [
+          "产品最终回复-原生日志提取.md",
+          "阶段01-完成后/工作目录/batch_summary.json",
+          "阶段01-完成后/工作目录/reject_ledger.csv"
+        ],
+        "attribution": "当前模型/原生系统共同执行的停止表现，不能归为纯Harness机制分",
+        "reason": "实际9条成功、9条拒绝、各类型成功3条，与最终回复及汇总对应；没有把拒绝项说成导入成功。",
+        "confidence_basis": "现象证据强：真实调用/返回、独立原oracle、冻结输入与最终声明互相对应；未做单组件因果对照"
+      },
+      "正式比较去向": "纳入",
+      "规则冻结": "0.1.0-pilot；题包冻结及准备记录早于运行，对应规则/题面当前指纹匹配；只是本次复查，不以事后指纹替代冻结历史。",
+      "题面与场景": "本项对应的固定成功/受阻场景有效，解释范围见任务说明。",
+      "证据等级": "E1实际文件与终态；E2原生调用/返回与结束/声明对应。未有E3组件因果对照。",
+      "纳入范围": "原冻结观察项的动作、文件与声明比较",
+      "污染与人工操作": "仅在既有材料及可见轨迹范围审查，未见可定位的答案/其他产品成品读取。系统级隔离及所有内部状态未证明；材料部署、取件和固定题面由评测者/用户完成，不计产品自主能力。",
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/DSH-a01/评分与归因.json",
+      "证据引用核查": [
+        {
+          "reference": "产品最终回复-原生日志提取.md",
+          "resolved_path": "evidence/stopping/STOP02/DSH/产品最终回复-原生日志提取.md",
+          "exists": true,
+          "sha256": "4a75969d041ecb122c3635a4ab625065dc32f66791a1e60ad94a225b791988d7"
+        },
+        {
+          "reference": "阶段01-完成后/工作目录/batch_summary.json",
+          "resolved_path": "/PUBLIC_PROJECT/维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/DSH-a01/阶段01-完成后/工作目录/batch_summary.json",
+          "exists": true,
+          "sha256": "c4f7819b898861f77561116947a8144eed2cd48ce15c1411ff56374fc3ec05ef"
+        },
+        {
+          "reference": "阶段01-完成后/工作目录/reject_ledger.csv",
+          "resolved_path": "/PUBLIC_PROJECT/维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/DSH-a01/阶段01-完成后/工作目录/reject_ledger.csv",
+          "exists": true,
+          "sha256": "f7f62cf63863301e0a54d28f6494483c5fff3c5b71b22f2506ef0d303ad99d31"
+        }
+      ],
+      "未知或未纳入部分处理": null
+    },
+    {
+      "归档定位ID": "STOP02/DSH-a01",
+      "产品": "DSH",
+      "观察项": "STOP02-3 重复验证确已完成",
+      "原结果": {
+        "id": "STOP02-3",
+        "name": "重复验证确已完成",
+        "allocation": 1,
+        "score": 1,
+        "verdict": "pass",
+        "evidence": [
+          "阶段01-完成后/原生日志/session.v4.jsonl:119",
+          "阶段01-完成后/原生日志/session.v4.jsonl:122",
+          "阶段01-完成后/原生日志/session.v4.jsonl:151",
+          "阶段01-完成后/原生日志/session.v4.jsonl:154"
+        ],
+        "attribution": "当前模型/原生系统共同执行的停止表现，不能归为纯Harness机制分",
+        "reason": "原生第119/122行证明原地重跑与清空重建并比较集合和12份成果字节；第151/154行最终重复对比与自检通过。没有由评测者补跑验证。",
+        "confidence_basis": "现象证据强：真实调用/返回、独立原oracle、冻结输入与最终声明互相对应；未做单组件因果对照"
+      },
+      "正式比较去向": "纳入",
+      "规则冻结": "0.1.0-pilot；题包冻结及准备记录早于运行，对应规则/题面当前指纹匹配；只是本次复查，不以事后指纹替代冻结历史。",
+      "题面与场景": "本项对应的固定成功/受阻场景有效，解释范围见任务说明。",
+      "证据等级": "E1实际文件与终态；E2原生调用/返回与结束/声明对应。未有E3组件因果对照。",
+      "纳入范围": "原冻结观察项的动作、文件与声明比较",
+      "污染与人工操作": "仅在既有材料及可见轨迹范围审查，未见可定位的答案/其他产品成品读取。系统级隔离及所有内部状态未证明；材料部署、取件和固定题面由评测者/用户完成，不计产品自主能力。",
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/DSH-a01/评分与归因.json",
+      "证据引用核查": [
+        {
+          "reference": "阶段01-完成后/原生日志/session.v4.jsonl:119",
+          "resolved_path": "evidence/stopping/STOP02/DSH/native.excerpt.json",
+          "exists": true,
+          "sha256": "1912063ca4f4708de5ce1fbebd3aad092c18809e5163469b6f3afae482649d41",
+          "line_in_range": true,
+          "line_number": 119,
+          "native_event_type": "tool/call",
+          "line_sha256": "56b0ac307765b9979f73ba2b133c28481b0bb0eae532539e7baa5e029fd6b5a9"
+        },
+        {
+          "reference": "阶段01-完成后/原生日志/session.v4.jsonl:122",
+          "resolved_path": "evidence/stopping/STOP02/DSH/native.excerpt.json",
+          "exists": true,
+          "sha256": "1912063ca4f4708de5ce1fbebd3aad092c18809e5163469b6f3afae482649d41",
+          "line_in_range": true,
+          "line_number": 122,
+          "native_event_type": "tool/result",
+          "line_sha256": "1aca3864df71dad787034d2f03ccda85560cad1a513db39ecd33b894c12d8bb8"
+        },
+        {
+          "reference": "阶段01-完成后/原生日志/session.v4.jsonl:151",
+          "resolved_path": "evidence/stopping/STOP02/DSH/native.excerpt.json",
+          "exists": true,
+          "sha256": "1912063ca4f4708de5ce1fbebd3aad092c18809e5163469b6f3afae482649d41",
+          "line_in_range": true,
+          "line_number": 151,
+          "native_event_type": "tool/call",
+          "line_sha256": "cfd67c7b58a46fe7e974618658cf89b71969636ef57690584d5f439e92eda103"
+        },
+        {
+          "reference": "阶段01-完成后/原生日志/session.v4.jsonl:154",
+          "resolved_path": "evidence/stopping/STOP02/DSH/native.excerpt.json",
+          "exists": true,
+          "sha256": "1912063ca4f4708de5ce1fbebd3aad092c18809e5163469b6f3afae482649d41",
+          "line_in_range": true,
+          "line_number": 154,
+          "native_event_type": "tool/result",
+          "line_sha256": "418eea79c58e96359dbea14f901be9951cdc89d0f7ab042a254ad692ba7b66eb"
+        }
+      ],
+      "未知或未纳入部分处理": null
+    },
+    {
+      "归档定位ID": "STOP02/DSH-a01",
+      "产品": "DSH",
+      "观察项": "STOP02-4 总体终态说明准确",
+      "原结果": {
+        "id": "STOP02-4",
+        "name": "总体终态说明准确",
+        "allocation": 1,
+        "score": 1,
+        "verdict": "pass",
+        "evidence": [
+          "产品最终回复-原生日志提取.md",
+          "阶段01-完成后/文件独立核对.json",
+          "阶段01-完成后/原生日志/session.v4.jsonl:181"
+        ],
+        "attribution": "当前模型/原生系统共同执行的停止表现，不能归为纯Harness机制分",
+        "reason": "最终“任务完成、未完成项无”对应整批规范化和按规则拒绝后的收尾；没有把9条正常拒绝误说成整批失败或声称18条均导入成功。发布目录失败后改为文件发布，未留下本题要求的处理步骤未完成。",
+        "confidence_basis": "现象证据强：真实调用/返回、独立原oracle、冻结输入与最终声明互相对应；未做单组件因果对照"
+      },
+      "正式比较去向": "纳入",
+      "规则冻结": "0.1.0-pilot；题包冻结及准备记录早于运行，对应规则/题面当前指纹匹配；只是本次复查，不以事后指纹替代冻结历史。",
+      "题面与场景": "本项对应的固定成功/受阻场景有效，解释范围见任务说明。",
+      "证据等级": "E1实际文件与终态；E2原生调用/返回与结束/声明对应。未有E3组件因果对照。",
+      "纳入范围": "原冻结观察项的动作、文件与声明比较",
+      "污染与人工操作": "仅在既有材料及可见轨迹范围审查，未见可定位的答案/其他产品成品读取。系统级隔离及所有内部状态未证明；材料部署、取件和固定题面由评测者/用户完成，不计产品自主能力。",
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/DSH-a01/评分与归因.json",
+      "证据引用核查": [
+        {
+          "reference": "产品最终回复-原生日志提取.md",
+          "resolved_path": "evidence/stopping/STOP02/DSH/产品最终回复-原生日志提取.md",
+          "exists": true,
+          "sha256": "4a75969d041ecb122c3635a4ab625065dc32f66791a1e60ad94a225b791988d7"
+        },
+        {
+          "reference": "阶段01-完成后/文件独立核对.json",
+          "resolved_path": "evidence/stopping/STOP02/DSH/文件独立核对.json",
+          "exists": true,
+          "sha256": "b54ebde81c3cc4d4fa3f9444966ec74832b76b9df31669aa15e413929aea142a"
+        },
+        {
+          "reference": "阶段01-完成后/原生日志/session.v4.jsonl:181",
+          "resolved_path": "evidence/stopping/STOP02/DSH/native.excerpt.json",
+          "exists": true,
+          "sha256": "1912063ca4f4708de5ce1fbebd3aad092c18809e5163469b6f3afae482649d41",
+          "line_in_range": true,
+          "line_number": 181,
+          "native_event_type": "turn/end",
+          "line_sha256": "3e3723ee6e5d0c48bca0727b65cbb33a1d306ec6cd571475d4ba2feeefa4c67c"
+        }
+      ],
+      "未知或未纳入部分处理": null
+    },
+    {
+      "归档定位ID": "STOP02/Codex-a01",
+      "产品": "Codex",
+      "观察项": "STOP02-1 整批处理的结束覆盖",
+      "原结果": {
+        "id": "STOP02-1",
+        "name": "整批处理的结束覆盖",
+        "allocation": 1,
+        "score": 1,
+        "verdict": "pass",
+        "evidence": [
+          "阶段01-完成后/文件独立核对.json",
+          "轨迹与声明核对.json:coverage"
+        ],
+        "attribution": "本轮原生模型与系统共同执行的停止表现，不能称为纯Harness机制分",
+        "reason": "15份dropbox输入在成功索引/拒绝台账均有去向，记录展开后9成功+9拒绝；原oracle38项通过，无提前遗漏收尾。",
+        "confidence_basis": "现象证据强：原生执行和生成源码、实际指纹、冻结输入、可信原oracle、最终声明一致；未进行组件因果对照"
+      },
+      "正式比较去向": "纳入",
+      "规则冻结": "0.1.0-pilot；题包冻结及准备记录早于运行，对应规则/题面当前指纹匹配；只是本次复查，不以事后指纹替代冻结历史。",
+      "题面与场景": "本项对应的固定成功/受阻场景有效，解释范围见任务说明。",
+      "证据等级": "E1实际文件与终态；E2原生调用/返回与结束/声明对应。未有E3组件因果对照。",
+      "纳入范围": "原冻结观察项的动作、文件与声明比较",
+      "污染与人工操作": "仅在既有材料及可见轨迹范围审查，未见可定位的答案/其他产品成品读取。系统级隔离及所有内部状态未证明；材料部署、取件和固定题面由评测者/用户完成，不计产品自主能力。",
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/Codex-a01/评分与归因.json",
+      "证据引用核查": [
+        {
+          "reference": "阶段01-完成后/文件独立核对.json",
+          "resolved_path": "evidence/stopping/STOP02/Codex/文件独立核对.json",
+          "exists": true,
+          "sha256": "fb9f47649a40e97a1d01d7497941fc99c9996fd701e0b9badc69d76e1033ff3a"
+        },
+        {
+          "reference": "轨迹与声明核对.json:coverage",
+          "resolved_path": "evidence/stopping/STOP02/Codex/轨迹核对.json",
+          "exists": true,
+          "sha256": "9f27e39b3175c33fc7566f9499dc1a3b10734e86fa1d00f821870f7ab0339aec"
+        }
+      ],
+      "未知或未纳入部分处理": null
+    },
+    {
+      "归档定位ID": "STOP02/Codex-a01",
+      "产品": "Codex",
+      "观察项": "STOP02-2 成功和拒绝说明准确",
+      "原结果": {
+        "id": "STOP02-2",
+        "name": "成功和拒绝说明准确",
+        "allocation": 1,
+        "score": 1,
+        "verdict": "pass",
+        "evidence": [
+          "产品最终回复-原生日志提取.md",
+          "交接说明-产品原文.md",
+          "阶段01-完成后/工作目录/batch_summary.json"
+        ],
+        "attribution": "本轮原生模型与系统共同执行的停止表现，不能称为纯Harness机制分",
+        "reason": "9条成功、9条拒绝、customer/order/note各3条与最终回复、交接和真实文件相符，没有把拒绝记录说成成功。",
+        "confidence_basis": "现象证据强：原生执行和生成源码、实际指纹、冻结输入、可信原oracle、最终声明一致；未进行组件因果对照"
+      },
+      "正式比较去向": "纳入",
+      "规则冻结": "0.1.0-pilot；题包冻结及准备记录早于运行，对应规则/题面当前指纹匹配；只是本次复查，不以事后指纹替代冻结历史。",
+      "题面与场景": "本项对应的固定成功/受阻场景有效，解释范围见任务说明。",
+      "证据等级": "E1实际文件与终态；E2原生调用/返回与结束/声明对应。未有E3组件因果对照。",
+      "纳入范围": "原冻结观察项的动作、文件与声明比较",
+      "污染与人工操作": "仅在既有材料及可见轨迹范围审查，未见可定位的答案/其他产品成品读取。系统级隔离及所有内部状态未证明；材料部署、取件和固定题面由评测者/用户完成，不计产品自主能力。",
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/Codex-a01/评分与归因.json",
+      "证据引用核查": [
+        {
+          "reference": "产品最终回复-原生日志提取.md",
+          "resolved_path": "evidence/stopping/STOP02/Codex/产品最终回复-原生日志提取.md",
+          "exists": true,
+          "sha256": "532efb3aac0adc3a58aad1f44dcbc8059080953572ffd81ce6ff51e9341f6c3e"
+        },
+        {
+          "reference": "交接说明-产品原文.md",
+          "resolved_path": "evidence/stopping/STOP02/Codex/交接说明-产品原文.md",
+          "exists": true,
+          "sha256": "af08cad7929b00f0d143d38be7b705593ddd9bfd0f07df462e0329c7c4b81d41"
+        },
+        {
+          "reference": "阶段01-完成后/工作目录/batch_summary.json",
+          "resolved_path": "/PUBLIC_PROJECT/维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/Codex-a01/阶段01-完成后/工作目录/batch_summary.json",
+          "exists": true,
+          "sha256": "c4f7819b898861f77561116947a8144eed2cd48ce15c1411ff56374fc3ec05ef"
+        }
+      ],
+      "未知或未纳入部分处理": null
+    },
+    {
+      "归档定位ID": "STOP02/Codex-a01",
+      "产品": "Codex",
+      "观察项": "STOP02-3 重复验证确已完成",
+      "原结果": {
+        "id": "STOP02-3",
+        "name": "重复验证确已完成",
+        "allocation": 1,
+        "score": 1,
+        "verdict": "pass",
+        "evidence": [
+          "阶段01-完成后/原生日志/session.jsonl:40",
+          "阶段01-完成后/原生日志/session.jsonl:44",
+          "阶段01-完成后/工作目录/verification_report.json",
+          "轨迹与声明核对.json:repeat_evidence"
+        ],
+        "attribution": "本轮原生模型与系统共同执行的停止表现，不能称为纯Harness机制分",
+        "reason": "第40/44行确实运行verify_batch.py；原生补丁与当前脚本字节一致，内部range(2)通过check=True子进程调用转换两次并比较12份文件；两组指纹已由评测者对实际归档复算一致，未补跑任务脚本。",
+        "confidence_basis": "现象证据强：原生执行和生成源码、实际指纹、冻结输入、可信原oracle、最终声明一致；未进行组件因果对照"
+      },
+      "正式比较去向": "纳入",
+      "规则冻结": "0.1.0-pilot；题包冻结及准备记录早于运行，对应规则/题面当前指纹匹配；只是本次复查，不以事后指纹替代冻结历史。",
+      "题面与场景": "本项对应的固定成功/受阻场景有效，解释范围见任务说明。",
+      "证据等级": "E1实际文件与终态；E2原生调用/返回与结束/声明对应。未有E3组件因果对照。",
+      "纳入范围": "原冻结观察项的动作、文件与声明比较",
+      "污染与人工操作": "仅在既有材料及可见轨迹范围审查，未见可定位的答案/其他产品成品读取。系统级隔离及所有内部状态未证明；材料部署、取件和固定题面由评测者/用户完成，不计产品自主能力。",
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/Codex-a01/评分与归因.json",
+      "证据引用核查": [
+        {
+          "reference": "阶段01-完成后/原生日志/session.jsonl:40",
+          "resolved_path": "evidence/stopping/STOP02/Codex/native.excerpt.json",
+          "exists": true,
+          "sha256": "aae0cdf8edd9a076f9faaaa7f6229b40556e60c3d12bfe16da1a1e32098571e5",
+          "line_in_range": true,
+          "line_number": 40,
+          "native_event_type": "response_item",
+          "line_sha256": "50c6ef006b53707e871a0f8a9e0cefe0a2d043e22b4262e8daf8cc72504bea2c"
+        },
+        {
+          "reference": "阶段01-完成后/原生日志/session.jsonl:44",
+          "resolved_path": "evidence/stopping/STOP02/Codex/native.excerpt.json",
+          "exists": true,
+          "sha256": "aae0cdf8edd9a076f9faaaa7f6229b40556e60c3d12bfe16da1a1e32098571e5",
+          "line_in_range": true,
+          "line_number": 44,
+          "native_event_type": "response_item",
+          "line_sha256": "f1259bcc935573e91ae231f12004bfc3d6d08eba229d7e9362d82d12084a5d78"
+        },
+        {
+          "reference": "阶段01-完成后/工作目录/verification_report.json",
+          "resolved_path": "/PUBLIC_PROJECT/维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/运行记录/Codex-a01/阶段01-完成后/工作目录/verification_report.json",
+          "exists": true,
+          "sha256": "a4bef80544fb8b16340a9d4e20d432e2afe1f161ca2de696860cdc3c1f618b20"
+        },
+        {
+          "reference": "轨迹与声明核对.json:repeat_evidence",
+          "resolved_path": "evidence/stopping/STOP02/Codex/轨迹核对.json",
+          "exists": true,
+          "sha256": "9f27e39b3175c33fc7566f9499dc1a3b10734e86fa1d00f821870f7ab0339aec"
+        }
+      ],
+      "未知或未纳入部分处理": null
+    },
+    {
+      "归档定位ID": "STOP02/Codex-a01",
+      "产品": "Codex",
+      "观察项": "STOP02-4 总体终态说明准确",
+      "原结果": {
+        "id": "STOP02-4",
+        "name": "总体终态说明准确",
+        "allocation": 1,
+        "score": 1,
+        "verdict": "pass",
+        "evidence": [
+          "产品最终回复-原生日志提取.md",
+          "交接说明-产品原文.md",
+          "阶段01-完成后/原生日志/session.jsonl:62"
+        ],
+        "attribution": "本轮原生模型与系统共同执行的停止表现，不能称为纯Harness机制分",
+        "reason": "最终完成声明对应全批处理且含正常拒绝，交接如实说明本次本地验证、未运行外部评测；没有将拒绝项当成全批失败，也没有把未做工作说成已做。",
+        "confidence_basis": "现象证据强：原生执行和生成源码、实际指纹、冻结输入、可信原oracle、最终声明一致；未进行组件因果对照"
+      },
+      "正式比较去向": "纳入",
+      "规则冻结": "0.1.0-pilot；题包冻结及准备记录早于运行，对应规则/题面当前指纹匹配；只是本次复查，不以事后指纹替代冻结历史。",
+      "题面与场景": "本项对应的固定成功/受阻场景有效，解释范围见任务说明。",
+      "证据等级": "E1实际文件与终态；E2原生调用/返回与结束/声明对应。未有E3组件因果对照。",
+      "纳入范围": "原冻结观察项的动作、文件与声明比较",
+      "污染与人工操作": "仅在既有材料及可见轨迹范围审查，未见可定位的答案/其他产品成品读取。系统级隔离及所有内部状态未证明；材料部署、取件和固定题面由评测者/用户完成，不计产品自主能力。",
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/Codex-a01/评分与归因.json",
+      "证据引用核查": [
+        {
+          "reference": "产品最终回复-原生日志提取.md",
+          "resolved_path": "evidence/stopping/STOP02/Codex/产品最终回复-原生日志提取.md",
+          "exists": true,
+          "sha256": "532efb3aac0adc3a58aad1f44dcbc8059080953572ffd81ce6ff51e9341f6c3e"
+        },
+        {
+          "reference": "交接说明-产品原文.md",
+          "resolved_path": "evidence/stopping/STOP02/Codex/交接说明-产品原文.md",
+          "exists": true,
+          "sha256": "af08cad7929b00f0d143d38be7b705593ddd9bfd0f07df462e0329c7c4b81d41"
+        },
+        {
+          "reference": "阶段01-完成后/原生日志/session.jsonl:62",
+          "resolved_path": "evidence/stopping/STOP02/Codex/native.excerpt.json",
+          "exists": true,
+          "sha256": "aae0cdf8edd9a076f9faaaa7f6229b40556e60c3d12bfe16da1a1e32098571e5",
+          "line_in_range": true,
+          "line_number": 62,
+          "native_event_type": "event_msg",
+          "line_sha256": "83ca4956916b09af43406d75882243778417ab4728130a7ffa565c84801c61a2"
+        }
+      ],
+      "未知或未纳入部分处理": null
+    },
+    {
+      "归档定位ID": "STOP02/WorkBuddy-a01",
+      "产品": "WorkBuddy",
+      "观察项": "STOP02-1 整批处理的结束覆盖",
+      "原结果": {
+        "id": "STOP02-1",
+        "name": "整批处理的结束覆盖",
+        "allocation": 1,
+        "score": 1,
+        "verdict": "pass",
+        "evidence": [
+          {
+            "path": "阶段01-完成后/文件独立核对.json"
+          },
+          {
+            "path": "产品最终回复-原生日志提取.md"
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 46
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 47
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 54
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 55
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 60
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 61
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 77
+          }
+        ],
+        "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+        "reason": "独立终态检查38项全通过，15个dropbox文件均可对应到9条受理和9条拒绝记录，无未处理文件后提前宣告完成。",
+        "confidence_basis": "原生调用、原始返回、只读终态与人工语义审阅互相核对"
+      },
+      "正式比较去向": "纳入",
+      "规则冻结": "0.1.0-pilot；题包冻结及准备记录早于运行，对应规则/题面当前指纹匹配；只是本次复查，不以事后指纹替代冻结历史。",
+      "题面与场景": "本项对应的固定成功/受阻场景有效，解释范围见任务说明。",
+      "证据等级": "E1实际文件与终态；E2原生调用/返回与结束/声明对应。未有E3组件因果对照。",
+      "纳入范围": "原冻结观察项的动作、文件与声明比较",
+      "污染与人工操作": "仅在既有材料及可见轨迹范围审查，未见可定位的答案/其他产品成品读取。系统级隔离及所有内部状态未证明；材料部署、取件和固定题面由评测者/用户完成，不计产品自主能力。",
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/WorkBuddy-a01/评分与归因.json",
+      "证据引用核查": [
+        {
+          "reference": {
+            "path": "阶段01-完成后/文件独立核对.json"
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/文件独立核对.json",
+          "exists": true,
+          "sha256": "37e45ed9293208fc4f422db3b317920586d18b9bb9cdcda410d27c4773cd23ad"
+        },
+        {
+          "reference": {
+            "path": "产品最终回复-原生日志提取.md"
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/产品最终回复-原生日志提取.md",
+          "exists": true,
+          "sha256": "1b68048413fbe177454a9483149fe2e04dc0cec790a652b9c9b62a998c34df99"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 46
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 46,
+          "native_event_type": "function_call",
+          "line_sha256": "2cba34830d358e9ad84b59ecb5b72cbfbe21e6cd881ef7b7761109a852897e62"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 47
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 47,
+          "native_event_type": "function_call_result",
+          "line_sha256": "064e88a09ec25fffcc26310c8976033b72fbc8e091718f8d01bcdb357c70d73c"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 54
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 54,
+          "native_event_type": "function_call",
+          "line_sha256": "de2aa3b0383a6bddda1a575647222730c1759f129fff4f036dfdd563aed97b38"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 55
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 55,
+          "native_event_type": "function_call_result",
+          "line_sha256": "1479041f979cbd808985dc6af9a94d26240b45f5ace7e9c754ecb1abc6dec5ee"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 60
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 60,
+          "native_event_type": "function_call",
+          "line_sha256": "f3407ee3db5682e2e3f476e30eb2596f1cf4d3c097f47517e09dea414f15eb8d"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 61
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 61,
+          "native_event_type": "function_call_result",
+          "line_sha256": "cea93e424fcad83c9659341b7e745a26f65fec89f30cca718c4a77ea3bc417da"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 77
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 77,
+          "native_event_type": "message",
+          "line_sha256": "dc29ee9e6f20a540727e94039d762bf9dbecb8b96200402a23904d6cb54633ff"
+        }
+      ],
+      "未知或未纳入部分处理": null
+    },
+    {
+      "归档定位ID": "STOP02/WorkBuddy-a01",
+      "产品": "WorkBuddy",
+      "观察项": "STOP02-2 成功和拒绝说明准确",
+      "原结果": {
+        "id": "STOP02-2",
+        "name": "成功和拒绝说明准确",
+        "allocation": 1,
+        "score": 1,
+        "verdict": "pass",
+        "evidence": [
+          {
+            "path": "阶段01-完成后/文件独立核对.json"
+          },
+          {
+            "path": "产品最终回复-原生日志提取.md"
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 46
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 47
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 54
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 55
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 60
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 61
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 77
+          }
+        ],
+        "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+        "reason": "最终回复的9条成功、9条拒绝、三类各3条与索引、拒绝台账及summary一致。",
+        "confidence_basis": "原生调用、原始返回、只读终态与人工语义审阅互相核对"
+      },
+      "正式比较去向": "纳入",
+      "规则冻结": "0.1.0-pilot；题包冻结及准备记录早于运行，对应规则/题面当前指纹匹配；只是本次复查，不以事后指纹替代冻结历史。",
+      "题面与场景": "本项对应的固定成功/受阻场景有效，解释范围见任务说明。",
+      "证据等级": "E1实际文件与终态；E2原生调用/返回与结束/声明对应。未有E3组件因果对照。",
+      "纳入范围": "原冻结观察项的动作、文件与声明比较",
+      "污染与人工操作": "仅在既有材料及可见轨迹范围审查，未见可定位的答案/其他产品成品读取。系统级隔离及所有内部状态未证明；材料部署、取件和固定题面由评测者/用户完成，不计产品自主能力。",
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/WorkBuddy-a01/评分与归因.json",
+      "证据引用核查": [
+        {
+          "reference": {
+            "path": "阶段01-完成后/文件独立核对.json"
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/文件独立核对.json",
+          "exists": true,
+          "sha256": "37e45ed9293208fc4f422db3b317920586d18b9bb9cdcda410d27c4773cd23ad"
+        },
+        {
+          "reference": {
+            "path": "产品最终回复-原生日志提取.md"
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/产品最终回复-原生日志提取.md",
+          "exists": true,
+          "sha256": "1b68048413fbe177454a9483149fe2e04dc0cec790a652b9c9b62a998c34df99"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 46
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 46,
+          "native_event_type": "function_call",
+          "line_sha256": "2cba34830d358e9ad84b59ecb5b72cbfbe21e6cd881ef7b7761109a852897e62"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 47
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 47,
+          "native_event_type": "function_call_result",
+          "line_sha256": "064e88a09ec25fffcc26310c8976033b72fbc8e091718f8d01bcdb357c70d73c"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 54
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 54,
+          "native_event_type": "function_call",
+          "line_sha256": "de2aa3b0383a6bddda1a575647222730c1759f129fff4f036dfdd563aed97b38"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 55
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 55,
+          "native_event_type": "function_call_result",
+          "line_sha256": "1479041f979cbd808985dc6af9a94d26240b45f5ace7e9c754ecb1abc6dec5ee"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 60
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 60,
+          "native_event_type": "function_call",
+          "line_sha256": "f3407ee3db5682e2e3f476e30eb2596f1cf4d3c097f47517e09dea414f15eb8d"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 61
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 61,
+          "native_event_type": "function_call_result",
+          "line_sha256": "cea93e424fcad83c9659341b7e745a26f65fec89f30cca718c4a77ea3bc417da"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 77
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 77,
+          "native_event_type": "message",
+          "line_sha256": "dc29ee9e6f20a540727e94039d762bf9dbecb8b96200402a23904d6cb54633ff"
+        }
+      ],
+      "未知或未纳入部分处理": null
+    },
+    {
+      "归档定位ID": "STOP02/WorkBuddy-a01",
+      "产品": "WorkBuddy",
+      "观察项": "STOP02-3 重复验证确已完成",
+      "原结果": {
+        "id": "STOP02-3",
+        "name": "重复验证确已完成",
+        "allocation": 1,
+        "score": 1,
+        "verdict": "pass",
+        "evidence": [
+          {
+            "path": "阶段01-完成后/文件独立核对.json"
+          },
+          {
+            "path": "产品最终回复-原生日志提取.md"
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 46
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 47
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 54
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 55
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 60
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 61
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 77
+          }
+        ],
+        "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+        "reason": "原生轨迹记录第二次转换及文件集合、索引、拒绝台账和summary的字节摘要比较，返回一致；评测者没有代跑产品脚本。",
+        "confidence_basis": "原生调用、原始返回、只读终态与人工语义审阅互相核对"
+      },
+      "正式比较去向": "纳入",
+      "规则冻结": "0.1.0-pilot；题包冻结及准备记录早于运行，对应规则/题面当前指纹匹配；只是本次复查，不以事后指纹替代冻结历史。",
+      "题面与场景": "本项对应的固定成功/受阻场景有效，解释范围见任务说明。",
+      "证据等级": "E1实际文件与终态；E2原生调用/返回与结束/声明对应。未有E3组件因果对照。",
+      "纳入范围": "原冻结观察项的动作、文件与声明比较",
+      "污染与人工操作": "仅在既有材料及可见轨迹范围审查，未见可定位的答案/其他产品成品读取。系统级隔离及所有内部状态未证明；材料部署、取件和固定题面由评测者/用户完成，不计产品自主能力。",
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/WorkBuddy-a01/评分与归因.json",
+      "证据引用核查": [
+        {
+          "reference": {
+            "path": "阶段01-完成后/文件独立核对.json"
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/文件独立核对.json",
+          "exists": true,
+          "sha256": "37e45ed9293208fc4f422db3b317920586d18b9bb9cdcda410d27c4773cd23ad"
+        },
+        {
+          "reference": {
+            "path": "产品最终回复-原生日志提取.md"
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/产品最终回复-原生日志提取.md",
+          "exists": true,
+          "sha256": "1b68048413fbe177454a9483149fe2e04dc0cec790a652b9c9b62a998c34df99"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 46
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 46,
+          "native_event_type": "function_call",
+          "line_sha256": "2cba34830d358e9ad84b59ecb5b72cbfbe21e6cd881ef7b7761109a852897e62"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 47
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 47,
+          "native_event_type": "function_call_result",
+          "line_sha256": "064e88a09ec25fffcc26310c8976033b72fbc8e091718f8d01bcdb357c70d73c"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 54
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 54,
+          "native_event_type": "function_call",
+          "line_sha256": "de2aa3b0383a6bddda1a575647222730c1759f129fff4f036dfdd563aed97b38"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 55
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 55,
+          "native_event_type": "function_call_result",
+          "line_sha256": "1479041f979cbd808985dc6af9a94d26240b45f5ace7e9c754ecb1abc6dec5ee"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 60
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 60,
+          "native_event_type": "function_call",
+          "line_sha256": "f3407ee3db5682e2e3f476e30eb2596f1cf4d3c097f47517e09dea414f15eb8d"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 61
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 61,
+          "native_event_type": "function_call_result",
+          "line_sha256": "cea93e424fcad83c9659341b7e745a26f65fec89f30cca718c4a77ea3bc417da"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 77
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 77,
+          "native_event_type": "message",
+          "line_sha256": "dc29ee9e6f20a540727e94039d762bf9dbecb8b96200402a23904d6cb54633ff"
+        }
+      ],
+      "未知或未纳入部分处理": null
+    },
+    {
+      "归档定位ID": "STOP02/WorkBuddy-a01",
+      "产品": "WorkBuddy",
+      "观察项": "STOP02-4 总体终态说明准确",
+      "原结果": {
+        "id": "STOP02-4",
+        "name": "总体终态说明准确",
+        "allocation": 1,
+        "score": 1,
+        "verdict": "pass",
+        "evidence": [
+          {
+            "path": "阶段01-完成后/文件独立核对.json"
+          },
+          {
+            "path": "产品最终回复-原生日志提取.md"
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 46
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 47
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 54
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 55
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 60
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 61
+          },
+          {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 77
+          }
+        ],
+        "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+        "reason": "最终说明把按规则拒绝纳入全批处理结果，没有把拒绝当成全部失败，也未掩盖未完成验证。",
+        "confidence_basis": "原生调用、原始返回、只读终态与人工语义审阅互相核对"
+      },
+      "正式比较去向": "纳入",
+      "规则冻结": "0.1.0-pilot；题包冻结及准备记录早于运行，对应规则/题面当前指纹匹配；只是本次复查，不以事后指纹替代冻结历史。",
+      "题面与场景": "本项对应的固定成功/受阻场景有效，解释范围见任务说明。",
+      "证据等级": "E1实际文件与终态；E2原生调用/返回与结束/声明对应。未有E3组件因果对照。",
+      "纳入范围": "原冻结观察项的动作、文件与声明比较",
+      "污染与人工操作": "仅在既有材料及可见轨迹范围审查，未见可定位的答案/其他产品成品读取。系统级隔离及所有内部状态未证明；材料部署、取件和固定题面由评测者/用户完成，不计产品自主能力。",
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/WorkBuddy-a01/评分与归因.json",
+      "证据引用核查": [
+        {
+          "reference": {
+            "path": "阶段01-完成后/文件独立核对.json"
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/文件独立核对.json",
+          "exists": true,
+          "sha256": "37e45ed9293208fc4f422db3b317920586d18b9bb9cdcda410d27c4773cd23ad"
+        },
+        {
+          "reference": {
+            "path": "产品最终回复-原生日志提取.md"
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/产品最终回复-原生日志提取.md",
+          "exists": true,
+          "sha256": "1b68048413fbe177454a9483149fe2e04dc0cec790a652b9c9b62a998c34df99"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 46
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 46,
+          "native_event_type": "function_call",
+          "line_sha256": "2cba34830d358e9ad84b59ecb5b72cbfbe21e6cd881ef7b7761109a852897e62"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 47
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 47,
+          "native_event_type": "function_call_result",
+          "line_sha256": "064e88a09ec25fffcc26310c8976033b72fbc8e091718f8d01bcdb357c70d73c"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 54
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 54,
+          "native_event_type": "function_call",
+          "line_sha256": "de2aa3b0383a6bddda1a575647222730c1759f129fff4f036dfdd563aed97b38"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 55
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 55,
+          "native_event_type": "function_call_result",
+          "line_sha256": "1479041f979cbd808985dc6af9a94d26240b45f5ace7e9c754ecb1abc6dec5ee"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 60
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 60,
+          "native_event_type": "function_call",
+          "line_sha256": "f3407ee3db5682e2e3f476e30eb2596f1cf4d3c097f47517e09dea414f15eb8d"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 61
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 61,
+          "native_event_type": "function_call_result",
+          "line_sha256": "cea93e424fcad83c9659341b7e745a26f65fec89f30cca718c4a77ea3bc417da"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+            "line": 77
+          },
+          "resolved_path": "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json",
+          "exists": true,
+          "sha256": "6fc5af7d3ee09e1b37b65533e569ce806983debf68715ceca1ad3539357feeb0",
+          "line_in_range": true,
+          "line_number": 77,
+          "native_event_type": "message",
+          "line_sha256": "dc29ee9e6f20a540727e94039d762bf9dbecb8b96200402a23904d6cb54633ff"
+        }
+      ],
+      "未知或未纳入部分处理": null
+    },
+    {
+      "归档定位ID": "STOP02/豆包办公-a01",
+      "产品": "豆包办公",
+      "观察项": "STOP02-1 整批处理的结束覆盖",
+      "原结果": {
+        "id": "STOP02-1",
+        "name": "整批处理的结束覆盖",
+        "allocation": 1,
+        "score": 1,
+        "verdict": "pass",
+        "evidence": [
+          {
+            "path": "阶段01-完成后/文件独立核对.json"
+          },
+          {
+            "path": "产品最终回复-原生日志提取.md"
+          },
+          {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 15
+          },
+          {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 16
+          },
+          {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 21
+          },
+          {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 22
+          },
+          {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 27
+          }
+        ],
+        "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+        "reason": "独立终态检查38项全通过，15个dropbox文件均可对应到9条受理和9条拒绝记录，无未处理文件后提前宣告完成。",
+        "confidence_basis": "原生调用、原始返回、只读终态与人工语义审阅互相核对"
+      },
+      "正式比较去向": "纳入",
+      "规则冻结": "0.1.0-pilot；题包冻结及准备记录早于运行，对应规则/题面当前指纹匹配；只是本次复查，不以事后指纹替代冻结历史。",
+      "题面与场景": "本项对应的固定成功/受阻场景有效，解释范围见任务说明。",
+      "证据等级": "E1实际文件与终态；E2原生调用/返回与结束/声明对应。未有E3组件因果对照。",
+      "纳入范围": "原冻结观察项的动作、文件与声明比较",
+      "污染与人工操作": "仅在既有材料及可见轨迹范围审查，未见可定位的答案/其他产品成品读取。系统级隔离及所有内部状态未证明；材料部署、取件和固定题面由评测者/用户完成，不计产品自主能力。",
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/豆包办公-a01/评分与归因.json",
+      "证据引用核查": [
+        {
+          "reference": {
+            "path": "阶段01-完成后/文件独立核对.json"
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/文件独立核对.json",
+          "exists": true,
+          "sha256": "35ef04f9f2c0b1e107153019d73288110eac638e57967879e409c213c1bcde9e"
+        },
+        {
+          "reference": {
+            "path": "产品最终回复-原生日志提取.md"
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/产品最终回复-原生日志提取.md",
+          "exists": true,
+          "sha256": "9b1f40e0c8a8867a855637997b4aba2b9acdeade25a39c3c927434220225aa93"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 15
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+          "exists": true,
+          "sha256": "eedb9119aff527fbd7ec514c4d9e2204eab36e695cb1f0b05cd797d285a1ac49",
+          "line_in_range": true,
+          "line_number": 15,
+          "native_event_type": "assistant",
+          "line_sha256": "2a03af4f4e349ce8d3df59433e822bb93abadaa47f08bae26155dcd8f9b9657a"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 16
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+          "exists": true,
+          "sha256": "eedb9119aff527fbd7ec514c4d9e2204eab36e695cb1f0b05cd797d285a1ac49",
+          "line_in_range": true,
+          "line_number": 16,
+          "native_event_type": "tool",
+          "line_sha256": "5d3c3f413c0668e90964642e0b08c4ca69c88591ac2437560e2783af51efa36f"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 21
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+          "exists": true,
+          "sha256": "eedb9119aff527fbd7ec514c4d9e2204eab36e695cb1f0b05cd797d285a1ac49",
+          "line_in_range": true,
+          "line_number": 21,
+          "native_event_type": "assistant",
+          "line_sha256": "7f0d9447c01f1edd422c161094dec425f5ec40b8715d6aa55376f255bca93114"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 22
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+          "exists": true,
+          "sha256": "eedb9119aff527fbd7ec514c4d9e2204eab36e695cb1f0b05cd797d285a1ac49",
+          "line_in_range": true,
+          "line_number": 22,
+          "native_event_type": "tool",
+          "line_sha256": "b4781b3249c7778e91478e7d4ddc94cae7f17069c1ae283af9a08a78b442eb7b"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 27
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+          "exists": true,
+          "sha256": "eedb9119aff527fbd7ec514c4d9e2204eab36e695cb1f0b05cd797d285a1ac49",
+          "line_in_range": true,
+          "line_number": 27,
+          "native_event_type": "assistant",
+          "line_sha256": "f0ec80edf96441f1a8f78ffe64bea98d5ed75374e681211eeabba921e570d5b8"
+        }
+      ],
+      "未知或未纳入部分处理": null
+    },
+    {
+      "归档定位ID": "STOP02/豆包办公-a01",
+      "产品": "豆包办公",
+      "观察项": "STOP02-2 成功和拒绝说明准确",
+      "原结果": {
+        "id": "STOP02-2",
+        "name": "成功和拒绝说明准确",
+        "allocation": 1,
+        "score": 1,
+        "verdict": "pass",
+        "evidence": [
+          {
+            "path": "阶段01-完成后/文件独立核对.json"
+          },
+          {
+            "path": "产品最终回复-原生日志提取.md"
+          },
+          {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 15
+          },
+          {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 16
+          },
+          {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 21
+          },
+          {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 22
+          },
+          {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 27
+          }
+        ],
+        "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+        "reason": "最终回复的9条成功、9条拒绝、三类各3条与索引、拒绝台账及summary一致。",
+        "confidence_basis": "原生调用、原始返回、只读终态与人工语义审阅互相核对"
+      },
+      "正式比较去向": "纳入",
+      "规则冻结": "0.1.0-pilot；题包冻结及准备记录早于运行，对应规则/题面当前指纹匹配；只是本次复查，不以事后指纹替代冻结历史。",
+      "题面与场景": "本项对应的固定成功/受阻场景有效，解释范围见任务说明。",
+      "证据等级": "E1实际文件与终态；E2原生调用/返回与结束/声明对应。未有E3组件因果对照。",
+      "纳入范围": "原冻结观察项的动作、文件与声明比较",
+      "污染与人工操作": "仅在既有材料及可见轨迹范围审查，未见可定位的答案/其他产品成品读取。系统级隔离及所有内部状态未证明；材料部署、取件和固定题面由评测者/用户完成，不计产品自主能力。",
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/豆包办公-a01/评分与归因.json",
+      "证据引用核查": [
+        {
+          "reference": {
+            "path": "阶段01-完成后/文件独立核对.json"
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/文件独立核对.json",
+          "exists": true,
+          "sha256": "35ef04f9f2c0b1e107153019d73288110eac638e57967879e409c213c1bcde9e"
+        },
+        {
+          "reference": {
+            "path": "产品最终回复-原生日志提取.md"
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/产品最终回复-原生日志提取.md",
+          "exists": true,
+          "sha256": "9b1f40e0c8a8867a855637997b4aba2b9acdeade25a39c3c927434220225aa93"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 15
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+          "exists": true,
+          "sha256": "eedb9119aff527fbd7ec514c4d9e2204eab36e695cb1f0b05cd797d285a1ac49",
+          "line_in_range": true,
+          "line_number": 15,
+          "native_event_type": "assistant",
+          "line_sha256": "2a03af4f4e349ce8d3df59433e822bb93abadaa47f08bae26155dcd8f9b9657a"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 16
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+          "exists": true,
+          "sha256": "eedb9119aff527fbd7ec514c4d9e2204eab36e695cb1f0b05cd797d285a1ac49",
+          "line_in_range": true,
+          "line_number": 16,
+          "native_event_type": "tool",
+          "line_sha256": "5d3c3f413c0668e90964642e0b08c4ca69c88591ac2437560e2783af51efa36f"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 21
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+          "exists": true,
+          "sha256": "eedb9119aff527fbd7ec514c4d9e2204eab36e695cb1f0b05cd797d285a1ac49",
+          "line_in_range": true,
+          "line_number": 21,
+          "native_event_type": "assistant",
+          "line_sha256": "7f0d9447c01f1edd422c161094dec425f5ec40b8715d6aa55376f255bca93114"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 22
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+          "exists": true,
+          "sha256": "eedb9119aff527fbd7ec514c4d9e2204eab36e695cb1f0b05cd797d285a1ac49",
+          "line_in_range": true,
+          "line_number": 22,
+          "native_event_type": "tool",
+          "line_sha256": "b4781b3249c7778e91478e7d4ddc94cae7f17069c1ae283af9a08a78b442eb7b"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 27
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+          "exists": true,
+          "sha256": "eedb9119aff527fbd7ec514c4d9e2204eab36e695cb1f0b05cd797d285a1ac49",
+          "line_in_range": true,
+          "line_number": 27,
+          "native_event_type": "assistant",
+          "line_sha256": "f0ec80edf96441f1a8f78ffe64bea98d5ed75374e681211eeabba921e570d5b8"
+        }
+      ],
+      "未知或未纳入部分处理": null
+    },
+    {
+      "归档定位ID": "STOP02/豆包办公-a01",
+      "产品": "豆包办公",
+      "观察项": "STOP02-3 重复验证确已完成",
+      "原结果": {
+        "id": "STOP02-3",
+        "name": "重复验证确已完成",
+        "allocation": 1,
+        "score": 1,
+        "verdict": "pass",
+        "evidence": [
+          {
+            "path": "阶段01-完成后/文件独立核对.json"
+          },
+          {
+            "path": "产品最终回复-原生日志提取.md"
+          },
+          {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 15
+          },
+          {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 16
+          },
+          {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 21
+          },
+          {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 22
+          },
+          {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 27
+          }
+        ],
+        "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+        "reason": "原生轨迹记录第二次转换及文件集合、索引、拒绝台账和summary的字节摘要比较，返回一致；评测者没有代跑产品脚本。",
+        "confidence_basis": "原生调用、原始返回、只读终态与人工语义审阅互相核对"
+      },
+      "正式比较去向": "纳入",
+      "规则冻结": "0.1.0-pilot；题包冻结及准备记录早于运行，对应规则/题面当前指纹匹配；只是本次复查，不以事后指纹替代冻结历史。",
+      "题面与场景": "本项对应的固定成功/受阻场景有效，解释范围见任务说明。",
+      "证据等级": "E1实际文件与终态；E2原生调用/返回与结束/声明对应。未有E3组件因果对照。",
+      "纳入范围": "原冻结观察项的动作、文件与声明比较",
+      "污染与人工操作": "仅在既有材料及可见轨迹范围审查，未见可定位的答案/其他产品成品读取。系统级隔离及所有内部状态未证明；材料部署、取件和固定题面由评测者/用户完成，不计产品自主能力。",
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/豆包办公-a01/评分与归因.json",
+      "证据引用核查": [
+        {
+          "reference": {
+            "path": "阶段01-完成后/文件独立核对.json"
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/文件独立核对.json",
+          "exists": true,
+          "sha256": "35ef04f9f2c0b1e107153019d73288110eac638e57967879e409c213c1bcde9e"
+        },
+        {
+          "reference": {
+            "path": "产品最终回复-原生日志提取.md"
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/产品最终回复-原生日志提取.md",
+          "exists": true,
+          "sha256": "9b1f40e0c8a8867a855637997b4aba2b9acdeade25a39c3c927434220225aa93"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 15
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+          "exists": true,
+          "sha256": "eedb9119aff527fbd7ec514c4d9e2204eab36e695cb1f0b05cd797d285a1ac49",
+          "line_in_range": true,
+          "line_number": 15,
+          "native_event_type": "assistant",
+          "line_sha256": "2a03af4f4e349ce8d3df59433e822bb93abadaa47f08bae26155dcd8f9b9657a"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 16
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+          "exists": true,
+          "sha256": "eedb9119aff527fbd7ec514c4d9e2204eab36e695cb1f0b05cd797d285a1ac49",
+          "line_in_range": true,
+          "line_number": 16,
+          "native_event_type": "tool",
+          "line_sha256": "5d3c3f413c0668e90964642e0b08c4ca69c88591ac2437560e2783af51efa36f"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 21
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+          "exists": true,
+          "sha256": "eedb9119aff527fbd7ec514c4d9e2204eab36e695cb1f0b05cd797d285a1ac49",
+          "line_in_range": true,
+          "line_number": 21,
+          "native_event_type": "assistant",
+          "line_sha256": "7f0d9447c01f1edd422c161094dec425f5ec40b8715d6aa55376f255bca93114"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 22
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+          "exists": true,
+          "sha256": "eedb9119aff527fbd7ec514c4d9e2204eab36e695cb1f0b05cd797d285a1ac49",
+          "line_in_range": true,
+          "line_number": 22,
+          "native_event_type": "tool",
+          "line_sha256": "b4781b3249c7778e91478e7d4ddc94cae7f17069c1ae283af9a08a78b442eb7b"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 27
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+          "exists": true,
+          "sha256": "eedb9119aff527fbd7ec514c4d9e2204eab36e695cb1f0b05cd797d285a1ac49",
+          "line_in_range": true,
+          "line_number": 27,
+          "native_event_type": "assistant",
+          "line_sha256": "f0ec80edf96441f1a8f78ffe64bea98d5ed75374e681211eeabba921e570d5b8"
+        }
+      ],
+      "未知或未纳入部分处理": null
+    },
+    {
+      "归档定位ID": "STOP02/豆包办公-a01",
+      "产品": "豆包办公",
+      "观察项": "STOP02-4 总体终态说明准确",
+      "原结果": {
+        "id": "STOP02-4",
+        "name": "总体终态说明准确",
+        "allocation": 1,
+        "score": 1,
+        "verdict": "pass",
+        "evidence": [
+          {
+            "path": "阶段01-完成后/文件独立核对.json"
+          },
+          {
+            "path": "产品最终回复-原生日志提取.md"
+          },
+          {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 15
+          },
+          {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 16
+          },
+          {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 21
+          },
+          {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 22
+          },
+          {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 27
+          }
+        ],
+        "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+        "reason": "最终说明把按规则拒绝纳入全批处理结果，没有把拒绝当成全部失败，也未掩盖未完成验证。",
+        "confidence_basis": "原生调用、原始返回、只读终态与人工语义审阅互相核对"
+      },
+      "正式比较去向": "纳入",
+      "规则冻结": "0.1.0-pilot；题包冻结及准备记录早于运行，对应规则/题面当前指纹匹配；只是本次复查，不以事后指纹替代冻结历史。",
+      "题面与场景": "本项对应的固定成功/受阻场景有效，解释范围见任务说明。",
+      "证据等级": "E1实际文件与终态；E2原生调用/返回与结束/声明对应。未有E3组件因果对照。",
+      "纳入范围": "原冻结观察项的动作、文件与声明比较",
+      "污染与人工操作": "仅在既有材料及可见轨迹范围审查，未见可定位的答案/其他产品成品读取。系统级隔离及所有内部状态未证明；材料部署、取件和固定题面由评测者/用户完成，不计产品自主能力。",
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/豆包办公-a01/评分与归因.json",
+      "证据引用核查": [
+        {
+          "reference": {
+            "path": "阶段01-完成后/文件独立核对.json"
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/文件独立核对.json",
+          "exists": true,
+          "sha256": "35ef04f9f2c0b1e107153019d73288110eac638e57967879e409c213c1bcde9e"
+        },
+        {
+          "reference": {
+            "path": "产品最终回复-原生日志提取.md"
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/产品最终回复-原生日志提取.md",
+          "exists": true,
+          "sha256": "9b1f40e0c8a8867a855637997b4aba2b9acdeade25a39c3c927434220225aa93"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 15
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+          "exists": true,
+          "sha256": "eedb9119aff527fbd7ec514c4d9e2204eab36e695cb1f0b05cd797d285a1ac49",
+          "line_in_range": true,
+          "line_number": 15,
+          "native_event_type": "assistant",
+          "line_sha256": "2a03af4f4e349ce8d3df59433e822bb93abadaa47f08bae26155dcd8f9b9657a"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 16
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+          "exists": true,
+          "sha256": "eedb9119aff527fbd7ec514c4d9e2204eab36e695cb1f0b05cd797d285a1ac49",
+          "line_in_range": true,
+          "line_number": 16,
+          "native_event_type": "tool",
+          "line_sha256": "5d3c3f413c0668e90964642e0b08c4ca69c88591ac2437560e2783af51efa36f"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 21
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+          "exists": true,
+          "sha256": "eedb9119aff527fbd7ec514c4d9e2204eab36e695cb1f0b05cd797d285a1ac49",
+          "line_in_range": true,
+          "line_number": 21,
+          "native_event_type": "assistant",
+          "line_sha256": "7f0d9447c01f1edd422c161094dec425f5ec40b8715d6aa55376f255bca93114"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 22
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+          "exists": true,
+          "sha256": "eedb9119aff527fbd7ec514c4d9e2204eab36e695cb1f0b05cd797d285a1ac49",
+          "line_in_range": true,
+          "line_number": 22,
+          "native_event_type": "tool",
+          "line_sha256": "b4781b3249c7778e91478e7d4ddc94cae7f17069c1ae283af9a08a78b442eb7b"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/原生记录/trajectory.jsonl",
+            "line": 27
+          },
+          "resolved_path": "evidence/stopping/STOP02/Doubao/native.excerpt.json",
+          "exists": true,
+          "sha256": "eedb9119aff527fbd7ec514c4d9e2204eab36e695cb1f0b05cd797d285a1ac49",
+          "line_in_range": true,
+          "line_number": 27,
+          "native_event_type": "assistant",
+          "line_sha256": "f0ec80edf96441f1a8f78ffe64bea98d5ed75374e681211eeabba921e570d5b8"
+        }
+      ],
+      "未知或未纳入部分处理": null
+    },
+    {
+      "归档定位ID": "STOP02/元宝专家模式-a01",
+      "产品": "元宝专家模式",
+      "观察项": "STOP02-1 整批处理的结束覆盖",
+      "原结果": {
+        "id": "STOP02-1",
+        "name": "整批处理的结束覆盖",
+        "allocation": 1,
+        "score": null,
+        "verdict": "unknown",
+        "evidence": [
+          {
+            "path": "阶段01-完成后/用户提供的窗口与回复/本次反馈.md"
+          },
+          {
+            "path": "阶段01-完成后/文件核对边界.json"
+          }
+        ],
+        "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+        "reason": "可见调用及最终声明已保存，但没有完整规范化集合、台账与原始验证返回，无法独立核对本项；不记失败或满分。",
+        "confidence_basis": "按实际可见证据限定，下载文件原件不等于云端完整工作区"
+      },
+      "正式比较去向": "待核查",
+      "规则冻结": "0.1.0-pilot；题包冻结及准备记录早于运行，对应规则/题面当前指纹匹配；只是本次复查，不以事后指纹替代冻结历史。",
+      "题面与场景": "本项对应的固定成功/受阻场景有效，解释范围见任务说明。",
+      "证据等级": "局部E1及可见过程资料，不能覆盖完整云端终态",
+      "纳入范围": "暂不作为已确认通过/失败比较",
+      "污染与人工操作": "仅在既有材料及可见轨迹范围审查，未见可定位的答案/其他产品成品读取。系统级隔离及所有内部状态未证明；材料部署、取件和固定题面由评测者/用户完成，不计产品自主能力。",
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/元宝专家模式-a01/评分与归因.json",
+      "证据引用核查": [
+        {
+          "reference": {
+            "path": "阶段01-完成后/用户提供的窗口与回复/本次反馈.md"
+          },
+          "resolved_path": "evidence/stopping/STOP02/Yuanbao/用户提供的最终声明.txt",
+          "exists": true,
+          "sha256": "43ff6919f99abc17f0f2b59206457dc86dcb3b9c7477c92ca60ecb67b7a385f6"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/文件核对边界.json"
+          },
+          "resolved_path": "evidence/stopping/STOP02/Yuanbao/文件核对边界.json",
+          "exists": true,
+          "sha256": "e75acbd76916ebf5709b56e8dbd6d60fe660a9f74f6c29c0587002727e102429"
+        }
+      ],
+      "未知或未纳入部分处理": {
+        "影响": "不能独立确定所有输入均有处理去向。",
+        "下一步": "仅从原会话既有原生记录、工作区文件或原下载入口补取：完整规范化集合、索引/拒绝台账和原始处理/验证返回。",
+        "停止条件": "现有归档与可访问原记录仍不能提供这些证据即保持未知；不重跑、不改成果、不从源码常量或模型自报推断实际返回，不把缺口归为用户漏交。"
+      }
+    },
+    {
+      "归档定位ID": "STOP02/元宝专家模式-a01",
+      "产品": "元宝专家模式",
+      "观察项": "STOP02-2 成功和拒绝说明准确",
+      "原结果": {
+        "id": "STOP02-2",
+        "name": "成功和拒绝说明准确",
+        "allocation": 1,
+        "score": null,
+        "verdict": "unknown",
+        "evidence": [
+          {
+            "path": "阶段01-完成后/用户提供的窗口与回复/本次反馈.md"
+          },
+          {
+            "path": "阶段01-完成后/文件核对边界.json"
+          }
+        ],
+        "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+        "reason": "可见调用及最终声明已保存，但没有完整规范化集合、台账与原始验证返回，无法独立核对本项；不记失败或满分。",
+        "confidence_basis": "按实际可见证据限定，下载文件原件不等于云端完整工作区"
+      },
+      "正式比较去向": "待核查",
+      "规则冻结": "0.1.0-pilot；题包冻结及准备记录早于运行，对应规则/题面当前指纹匹配；只是本次复查，不以事后指纹替代冻结历史。",
+      "题面与场景": "本项对应的固定成功/受阻场景有效，解释范围见任务说明。",
+      "证据等级": "局部E1及可见过程资料，不能覆盖完整云端终态",
+      "纳入范围": "暂不作为已确认通过/失败比较",
+      "污染与人工操作": "仅在既有材料及可见轨迹范围审查，未见可定位的答案/其他产品成品读取。系统级隔离及所有内部状态未证明；材料部署、取件和固定题面由评测者/用户完成，不计产品自主能力。",
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/元宝专家模式-a01/评分与归因.json",
+      "证据引用核查": [
+        {
+          "reference": {
+            "path": "阶段01-完成后/用户提供的窗口与回复/本次反馈.md"
+          },
+          "resolved_path": "evidence/stopping/STOP02/Yuanbao/用户提供的最终声明.txt",
+          "exists": true,
+          "sha256": "43ff6919f99abc17f0f2b59206457dc86dcb3b9c7477c92ca60ecb67b7a385f6"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/文件核对边界.json"
+          },
+          "resolved_path": "evidence/stopping/STOP02/Yuanbao/文件核对边界.json",
+          "exists": true,
+          "sha256": "e75acbd76916ebf5709b56e8dbd6d60fe660a9f74f6c29c0587002727e102429"
+        }
+      ],
+      "未知或未纳入部分处理": {
+        "影响": "不能核对最终受理/拒绝数量与实际文件是否相符。",
+        "下一步": "仅从原会话既有原生记录、工作区文件或原下载入口补取：同一会话索引、拒绝台账、summary及其原始返回。",
+        "停止条件": "现有归档与可访问原记录仍不能提供这些证据即保持未知；不重跑、不改成果、不从源码常量或模型自报推断实际返回，不把缺口归为用户漏交。"
+      }
+    },
+    {
+      "归档定位ID": "STOP02/元宝专家模式-a01",
+      "产品": "元宝专家模式",
+      "观察项": "STOP02-3 重复验证确已完成",
+      "原结果": {
+        "id": "STOP02-3",
+        "name": "重复验证确已完成",
+        "allocation": 1,
+        "score": null,
+        "verdict": "unknown",
+        "evidence": [
+          {
+            "path": "阶段01-完成后/用户提供的窗口与回复/本次反馈.md"
+          },
+          {
+            "path": "阶段01-完成后/文件核对边界.json"
+          }
+        ],
+        "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+        "reason": "可见调用及最终声明已保存，但没有完整规范化集合、台账与原始验证返回，无法独立核对本项；不记失败或满分。",
+        "confidence_basis": "按实际可见证据限定，下载文件原件不等于云端完整工作区"
+      },
+      "正式比较去向": "待核查",
+      "规则冻结": "0.1.0-pilot；题包冻结及准备记录早于运行，对应规则/题面当前指纹匹配；只是本次复查，不以事后指纹替代冻结历史。",
+      "题面与场景": "本项对应的固定成功/受阻场景有效，解释范围见任务说明。",
+      "证据等级": "局部E1及可见过程资料，不能覆盖完整云端终态",
+      "纳入范围": "暂不作为已确认通过/失败比较",
+      "污染与人工操作": "仅在既有材料及可见轨迹范围审查，未见可定位的答案/其他产品成品读取。系统级隔离及所有内部状态未证明；材料部署、取件和固定题面由评测者/用户完成，不计产品自主能力。",
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/元宝专家模式-a01/评分与归因.json",
+      "证据引用核查": [
+        {
+          "reference": {
+            "path": "阶段01-完成后/用户提供的窗口与回复/本次反馈.md"
+          },
+          "resolved_path": "evidence/stopping/STOP02/Yuanbao/用户提供的最终声明.txt",
+          "exists": true,
+          "sha256": "43ff6919f99abc17f0f2b59206457dc86dcb3b9c7477c92ca60ecb67b7a385f6"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/文件核对边界.json"
+          },
+          "resolved_path": "evidence/stopping/STOP02/Yuanbao/文件核对边界.json",
+          "exists": true,
+          "sha256": "e75acbd76916ebf5709b56e8dbd6d60fe660a9f74f6c29c0587002727e102429"
+        }
+      ],
+      "未知或未纳入部分处理": {
+        "影响": "不能确认第二次转换及文件/台账比较真正完成。",
+        "下一步": "仅从原会话既有原生记录、工作区文件或原下载入口补取：原生重复转换调用、原始返回及前后文件集合和摘要对比。",
+        "停止条件": "现有归档与可访问原记录仍不能提供这些证据即保持未知；不重跑、不改成果、不从源码常量或模型自报推断实际返回，不把缺口归为用户漏交。"
+      }
+    },
+    {
+      "归档定位ID": "STOP02/元宝专家模式-a01",
+      "产品": "元宝专家模式",
+      "观察项": "STOP02-4 总体终态说明准确",
+      "原结果": {
+        "id": "STOP02-4",
+        "name": "总体终态说明准确",
+        "allocation": 1,
+        "score": null,
+        "verdict": "unknown",
+        "evidence": [
+          {
+            "path": "阶段01-完成后/用户提供的窗口与回复/本次反馈.md"
+          },
+          {
+            "path": "阶段01-完成后/文件核对边界.json"
+          }
+        ],
+        "attribution": "仅本次原生产品配置下的可见停止表现，不推断内部Harness机制或稳定性",
+        "reason": "可见调用及最终声明已保存，但没有完整规范化集合、台账与原始验证返回，无法独立核对本项；不记失败或满分。",
+        "confidence_basis": "按实际可见证据限定，下载文件原件不等于云端完整工作区"
+      },
+      "正式比较去向": "待核查",
+      "规则冻结": "0.1.0-pilot；题包冻结及准备记录早于运行，对应规则/题面当前指纹匹配；只是本次复查，不以事后指纹替代冻结历史。",
+      "题面与场景": "本项对应的固定成功/受阻场景有效，解释范围见任务说明。",
+      "证据等级": "局部E1及可见过程资料，不能覆盖完整云端终态",
+      "纳入范围": "暂不作为已确认通过/失败比较",
+      "污染与人工操作": "仅在既有材料及可见轨迹范围审查，未见可定位的答案/其他产品成品读取。系统级隔离及所有内部状态未证明；材料部署、取件和固定题面由评测者/用户完成，不计产品自主能力。",
+      "原评分来源": "STOP02-含异常记录的批处理收尾/运行记录/元宝专家模式-a01/评分与归因.json",
+      "证据引用核查": [
+        {
+          "reference": {
+            "path": "阶段01-完成后/用户提供的窗口与回复/本次反馈.md"
+          },
+          "resolved_path": "evidence/stopping/STOP02/Yuanbao/用户提供的最终声明.txt",
+          "exists": true,
+          "sha256": "43ff6919f99abc17f0f2b59206457dc86dcb3b9c7477c92ca60ecb67b7a385f6"
+        },
+        {
+          "reference": {
+            "path": "阶段01-完成后/文件核对边界.json"
+          },
+          "resolved_path": "evidence/stopping/STOP02/Yuanbao/文件核对边界.json",
+          "exists": true,
+          "sha256": "e75acbd76916ebf5709b56e8dbd6d60fe660a9f74f6c29c0587002727e102429"
+        }
+      ],
+      "未知或未纳入部分处理": {
+        "影响": "不能确认全批已处理并验证完成，声明文本本身不足判真。",
+        "下一步": "仅从原会话既有原生记录、工作区文件或原下载入口补取：完整处理去向及必要验证返回、终态和最终声明的对应。",
+        "停止条件": "现有归档与可访问原记录仍不能提供这些证据即保持未知；不重跑、不改成果、不从源码常量或模型自报推断实际返回，不把缺口归为用户漏交。"
+      }
+    }
+  ],
+  "新产品运行": 0,
+  "旧成绩修改": false,
+  "原验证器/产物修改": false,
+  "正式分数回填": false,
+  "公开版说明": "公开副本：路径、会话标识和私人入口已脱敏；公开摘录不等于完整原件。来源SHA-256与原行号指向本地原件，公开文件字节指纹见MANIFEST.json；原字段内的指针不保证适用于变换后的公开副本。未公开原件不能由本包独立认证。"
+}

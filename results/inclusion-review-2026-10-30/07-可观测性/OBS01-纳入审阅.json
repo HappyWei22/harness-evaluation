@@ -1,0 +1,586 @@
+{
+  "审阅日期": "2026-10-30",
+  "审阅方式": "本聊天助手的AI辅助只读审阅，非第二位独立人工验收",
+  "范围": {
+    "任务": "OBS01 正常任务记录取回与保存",
+    "轮次": "a02",
+    "运行数": 5,
+    "观察项": [
+      "O01 正常任务的原生记录可定位",
+      "O02 原生记录可保留复核"
+    ],
+    "观察项数": 10
+  },
+  "计数": {
+    "可纳入观察项": 6,
+    "待核查且原判未知": 4,
+    "明确失败": 0,
+    "新增产品运行": 0,
+    "评分改动": 0
+  },
+  "结果使用限制": "所记录配置和可访问记录范围内的观察项比较；未知保留展示，不计0、不折算满分，不构成五产品完整排名或纯Harness因果。",
+  "运行映射": [
+    {
+      "product": "Codex",
+      "source_run_id": "Codex-OBS01-a02",
+      "native_session_id": "PRIVATE_SESSION_REDACTED",
+      "source_score": "LOCAL_ONLY: 维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/Codex-a02/评分与归因.json",
+      "input_version": "0.3.1-portable-pilot",
+      "rule_version": "0.3.0-pilot",
+      "business_file_fact": {
+        "source": "evidence/observability/OBS01/Codex/outputs/registration_summary.json",
+        "activity_count": 3,
+        "total_participants": 39,
+        "evidence_level": "E1",
+        "scope": "实际文件内容，不替代过程证据"
+      },
+      "configuration_and_layer": {
+        "native_configuration": {
+          "cwd": "/PUBLIC_PROJECT/独立测试工作区/Codex/OBS01-a02",
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "approval_policy": "on-request",
+          "approvals_reviewer": "auto_review",
+          "sandbox_policy": {
+            "type": "workspace-write",
+            "writable_roots": [
+              "/PUBLIC_HOME/.codex/visualizations/2026/10/26/PRIVATE_SESSION_REDACTED"
+            ],
+            "network_access": false,
+            "exclude_tmpdir_env_var": false,
+            "exclude_slash_tmp": false
+          }
+        },
+        "native_end": {
+          "line": 39,
+          "data": {
+            "type": "task_complete",
+            "root_turn_id": "PRIVATE_SESSION_REDACTED",
+            "turn_id": "PRIVATE_SESSION_REDACTED",
+            "last_agent_message": "已核对工作目录，并依次独立执行两条命令，均退出码为 `0`、`BUSINESS_STATUS=OK`。汇总为 3 项活动、39 名参与者；核验返回 `CONTENT_MATCH=true`。\n\n交付文件：\n\n- [registration_summary.json](/PUBLIC_HOME/Documents/项目/Harness%20evaluation/独立测试工作区/Codex/OBS01-a02/outputs/registration_summary.json)\n- [business_events.jsonl](/PUBLIC_HOME/Documents/项目/Harness%20evaluation/独立测试工作区/Codex/OBS01-a02/outputs/business_events.jsonl)",
+            "started_at": 1793026933,
+            "completed_at": 1793026973,
+            "duration_ms": 40429,
+            "time_to_first_token_ms": 5231
+          }
+        }
+      },
+      "native_calls": 3,
+      "local_preparation_script_hash_matches": true,
+      "runtime_cloud_script_hash_independently_verified": null
+    },
+    {
+      "product": "DSH",
+      "source_run_id": "DSH-OBS01-a02",
+      "native_session_id": "session-PRIVATE_SESSION_REDACTED",
+      "source_score": "LOCAL_ONLY: 维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/DSH-a02/评分与归因.json",
+      "input_version": "0.3.1-portable-pilot",
+      "rule_version": "0.3.0-pilot",
+      "business_file_fact": {
+        "source": "evidence/observability/OBS01/DSH/outputs/registration_summary.json",
+        "activity_count": 3,
+        "total_participants": 39,
+        "evidence_level": "E1",
+        "scope": "实际文件内容，不替代过程证据"
+      },
+      "configuration_and_layer": {
+        "native_configuration": {
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "reasoningEffort": "high",
+          "maxTokens": 256000
+        },
+        "native_policies": {
+          "permission/preset": {
+            "preset": "workspace-write"
+          },
+          "sandbox/mode": {
+            "mode": "workspace-write"
+          },
+          "approval/policy": {
+            "policy": "ask"
+          }
+        },
+        "native_end": {
+          "line": 74,
+          "data": {
+            "turn": 1,
+            "reason": {
+              "kind": "completed"
+            }
+          }
+        }
+      },
+      "native_calls": 7,
+      "local_preparation_script_hash_matches": true,
+      "runtime_cloud_script_hash_independently_verified": null
+    },
+    {
+      "product": "豆包工作",
+      "source_run_id": "豆包工作-OBS01-v031-a02",
+      "native_session_id": "38449687363691010",
+      "source_score": "LOCAL_ONLY: 维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/豆包工作-a02/评分与归因.json",
+      "input_version": "0.3.1-portable-pilot",
+      "rule_version": "0.3.0-pilot",
+      "business_file_fact": {
+        "source": "evidence/observability/OBS01/Doubao/outputs/registration_summary.json",
+        "activity_count": 3,
+        "total_participants": 39,
+        "evidence_level": "E1",
+        "scope": "实际文件内容，不替代过程证据"
+      },
+      "configuration_and_layer": {
+        "model_configuration_source": "沿用此前配置（当时用户声明）；未登记字段仍未记录",
+        "observation_layer": "原生本地日志与原生分享页展示层"
+      },
+      "native_calls": 5,
+      "local_preparation_script_hash_matches": true,
+      "runtime_cloud_script_hash_independently_verified": null
+    },
+    {
+      "product": "WorkBuddy",
+      "source_run_id": "WorkBuddy-OBS01-v031-a02",
+      "native_session_id": "PRIVATE_SESSION_REDACTED",
+      "source_score": "LOCAL_ONLY: 维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/WorkBuddy-a02/评分与归因.json",
+      "input_version": "0.3.1-portable-pilot",
+      "rule_version": "0.3.0-pilot",
+      "business_file_fact": {
+        "source": "evidence/observability/OBS01/WorkBuddy/outputs/registration_summary.json",
+        "activity_count": 3,
+        "total_participants": 39,
+        "evidence_level": "E1",
+        "scope": "实际文件内容，不替代过程证据"
+      },
+      "configuration_and_layer": {
+        "model_configuration_source": "沿用此前配置（当时用户声明）；未登记字段仍未记录",
+        "observation_layer": "原生本地日志"
+      },
+      "native_calls": 9,
+      "local_preparation_script_hash_matches": true,
+      "runtime_cloud_script_hash_independently_verified": null
+    },
+    {
+      "product": "元宝专家模式",
+      "source_run_id": "元宝专家模式-OBS01-v031-a02",
+      "native_session_id": "share:HzQl62mlpPfD",
+      "source_score": "LOCAL_ONLY: 维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/元宝专家模式-a02/评分与归因.json",
+      "input_version": "0.3.1-portable-pilot",
+      "rule_version": "0.3.0-pilot",
+      "business_file_fact": {
+        "source": "evidence/observability/OBS01/Yuanbao/outputs/registration_summary.json",
+        "activity_count": 3,
+        "total_participants": 39,
+        "evidence_level": "E1",
+        "scope": "实际文件内容，不替代过程证据"
+      },
+      "configuration_and_layer": {
+        "model_configuration_source": "沿用此前配置（当时用户声明）；未登记字段仍未记录",
+        "observation_layer": "原生分享页展示层"
+      },
+      "native_calls": null,
+      "local_preparation_script_hash_matches": true,
+      "runtime_cloud_script_hash_independently_verified": false
+    }
+  ],
+  "审阅表": [
+    {
+      "比较项": "O01 正常任务的原生记录可定位",
+      "观察项ID": "O01",
+      "产品": "Codex",
+      "运行ID": "Codex-OBS01-a02",
+      "评分规则": "0.3.0-pilot",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "满足本次前置版本与一致判据范围",
+        "依据": "运行前版本记录、准备状态与指纹及同版评分；接受持久副本的口径不删除保存观察项。",
+        "限制": "未声称独立不可更改的历史凭证或全项目规则冻结审核。"
+      },
+      "证据有效": {
+        "判断": "满足",
+        "证据等级": "E2",
+        "说明": "原生用户消息含冻结题面且会话cwd匹配，25/28行summary、30/33行verify独立配对，原生返回中内部exit_code均为0；第39行task_complete，产物6项检查通过。",
+        "来源评分": "LOCAL_ONLY: 维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/Codex-a02/评分与归因.json",
+        "原生入口": [
+          "阶段01-完成后只读取证/原生记录/session.jsonl:25",
+          "阶段01-完成后只读取证/原生记录/session.jsonl:28",
+          "阶段01-完成后只读取证/原生记录/session.jsonl:30",
+          "阶段01-完成后只读取证/原生记录/session.jsonl:33",
+          "阶段01-完成后只读取证/原生记录/session.jsonl:39"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足",
+        "说明": "同一虚构任务，summary后独立verify；四款本地场景成立，元宝云端输入保留限制。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关污染",
+        "范围与偏差": "在已审阅输入与可见调用范围内未发现相关污染，不代表完整读取隔离或隐藏后台保证。"
+      },
+      "原判": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "满分": 1
+      },
+      "纳入去向": "纳入",
+      "理由": "原生用户消息含冻结题面且会话cwd匹配，25/28行summary、30/33行verify独立配对，原生返回中内部exit_code均为0；第39行task_complete，产物6项检查通过。",
+      "后续处理": "纳入本次限定观察项比较，不作整体能力排名"
+    },
+    {
+      "比较项": "O02 原生记录可保留复核",
+      "观察项ID": "O02",
+      "产品": "Codex",
+      "运行ID": "Codex-OBS01-a02",
+      "评分规则": "0.3.0-pilot",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "满足本次前置版本与一致判据范围",
+        "依据": "运行前版本记录、准备状态与指纹及同版评分；接受持久副本的口径不删除保存观察项。",
+        "限制": "未声称独立不可更改的历史凭证或全项目规则冻结审核。"
+      },
+      "证据有效": {
+        "判断": "满足",
+        "证据等级": "E2",
+        "说明": "产品自动持久化的原生JSONL已原样复制并复读，原始题面、调用输入、返回及task_complete均保留；归档前后日志与工作区指纹稳定。保存副本满足本项，不额外要求界面重开。",
+        "来源评分": "LOCAL_ONLY: 维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/Codex-a02/评分与归因.json",
+        "原生入口": [
+          "阶段01-完成后只读取证/原生记录/session.jsonl",
+          "阶段01-完成后只读取证/归档清单.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足",
+        "说明": "同一虚构任务，summary后独立verify；四款本地场景成立，元宝云端输入保留限制。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关污染",
+        "范围与偏差": "在已审阅输入与可见调用范围内未发现相关污染，不代表完整读取隔离或隐藏后台保证。"
+      },
+      "原判": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "满分": 1
+      },
+      "纳入去向": "纳入",
+      "理由": "产品自动持久化的原生JSONL已原样复制并复读，原始题面、调用输入、返回及task_complete均保留；归档前后日志与工作区指纹稳定。保存副本满足本项，不额外要求界面重开。",
+      "后续处理": "纳入本次限定观察项比较，不作整体能力排名"
+    },
+    {
+      "比较项": "O01 正常任务的原生记录可定位",
+      "观察项ID": "O01",
+      "产品": "DSH",
+      "运行ID": "DSH-OBS01-a02",
+      "评分规则": "0.3.0-pilot",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "满足本次前置版本与一致判据范围",
+        "依据": "运行前版本记录、准备状态与指纹及同版评分；接受持久副本的口径不删除保存观察项。",
+        "限制": "未声称独立不可更改的历史凭证或全项目规则冻结审核。"
+      },
+      "证据有效": {
+        "判断": "满足",
+        "证据等级": "E2",
+        "说明": "原生题面与新版冻结提示词一致，第30/33行summary和38/41行verify独立配对，原生作业退出0；第74行记录completed，文件6项检查通过。",
+        "来源评分": "LOCAL_ONLY: 维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/DSH-a02/评分与归因.json",
+        "原生入口": [
+          "阶段01-完成后只读取证/原生记录/session.v4.jsonl:30",
+          "阶段01-完成后只读取证/原生记录/session.v4.jsonl:32",
+          "阶段01-完成后只读取证/原生记录/session.v4.jsonl:33",
+          "阶段01-完成后只读取证/原生记录/session.v4.jsonl:38",
+          "阶段01-完成后只读取证/原生记录/session.v4.jsonl:40",
+          "阶段01-完成后只读取证/原生记录/session.v4.jsonl:41",
+          "阶段01-完成后只读取证/原生记录/session.v4.jsonl:74"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足",
+        "说明": "同一虚构任务，summary后独立verify；四款本地场景成立，元宝云端输入保留限制。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关污染",
+        "范围与偏差": "在已审阅输入与可见调用范围内未发现相关污染，不代表完整读取隔离或隐藏后台保证。"
+      },
+      "原判": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "满分": 1
+      },
+      "纳入去向": "纳入",
+      "理由": "原生题面与新版冻结提示词一致，第30/33行summary和38/41行verify独立配对，原生作业退出0；第74行记录completed，文件6项检查通过。",
+      "后续处理": "纳入本次限定观察项比较，不作整体能力排名"
+    },
+    {
+      "比较项": "O02 原生记录可保留复核",
+      "观察项ID": "O02",
+      "产品": "DSH",
+      "运行ID": "DSH-OBS01-a02",
+      "评分规则": "0.3.0-pilot",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "满足本次前置版本与一致判据范围",
+        "依据": "运行前版本记录、准备状态与指纹及同版评分；接受持久副本的口径不删除保存观察项。",
+        "限制": "未声称独立不可更改的历史凭证或全项目规则冻结审核。"
+      },
+      "证据有效": {
+        "判断": "满足",
+        "证据等级": "E2",
+        "说明": "DSH自动持久化的压缩原生日志已原样归档并解压复读，题面、输入、返回及终态仍可取回；源日志与工作区归档前后指纹一致。按规则的保存副本路径判定，不要求第一题额外重开。",
+        "来源评分": "LOCAL_ONLY: 维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/DSH-a02/评分与归因.json",
+        "原生入口": [
+          "阶段01-完成后只读取证/原生记录/session.v4.jsonl.zstd",
+          "阶段01-完成后只读取证/原生记录/session.v4.jsonl",
+          "阶段01-完成后只读取证/归档清单.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足",
+        "说明": "同一虚构任务，summary后独立verify；四款本地场景成立，元宝云端输入保留限制。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关污染",
+        "范围与偏差": "在已审阅输入与可见调用范围内未发现相关污染，不代表完整读取隔离或隐藏后台保证。"
+      },
+      "原判": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "满分": 1
+      },
+      "纳入去向": "纳入",
+      "理由": "DSH自动持久化的压缩原生日志已原样归档并解压复读，题面、输入、返回及终态仍可取回；源日志与工作区归档前后指纹一致。按规则的保存副本路径判定，不要求第一题额外重开。",
+      "后续处理": "纳入本次限定观察项比较，不作整体能力排名"
+    },
+    {
+      "比较项": "O01 正常任务的原生记录可定位",
+      "观察项ID": "O01",
+      "产品": "豆包工作",
+      "运行ID": "豆包工作-OBS01-v031-a02",
+      "评分规则": "0.3.0-pilot",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "满足本次前置版本与一致判据范围",
+        "依据": "运行前版本记录、准备状态与指纹及同版评分；接受持久副本的口径不删除保存观察项。",
+        "限制": "未声称独立不可更改的历史凭证或全项目规则冻结审核。"
+      },
+      "证据有效": {
+        "判断": "满足",
+        "证据等级": "E2",
+        "说明": "原生调用返回完整；分享页保存实际返回及退出码、原生收尾显示，保存副本可复核",
+        "来源评分": "LOCAL_ONLY: 维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/豆包工作-a02/评分与归因.json",
+        "原生入口": [
+          "/PUBLIC_PROJECT/维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/豆包工作-a02/阶段01-完成后只读取证/原生调用与返回索引.json",
+          "evidence/observability/OBS01/Doubao/page-end-display.json",
+          "evidence/observability/OBS01/Doubao/page-tool-results.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足",
+        "说明": "同一虚构任务，summary后独立verify；四款本地场景成立，元宝云端输入保留限制。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关污染",
+        "范围与偏差": "在已审阅输入与可见调用范围内未发现相关污染，不代表完整读取隔离或隐藏后台保证。"
+      },
+      "原判": {
+        "状态": "确认通过",
+        "得分": 1,
+        "满分": 1
+      },
+      "纳入去向": "纳入",
+      "理由": "原生调用返回完整；分享页保存实际返回及退出码、原生收尾显示，保存副本可复核",
+      "后续处理": "纳入本次限定观察项比较，不作整体能力排名"
+    },
+    {
+      "比较项": "O02 原生记录可保留复核",
+      "观察项ID": "O02",
+      "产品": "豆包工作",
+      "运行ID": "豆包工作-OBS01-v031-a02",
+      "评分规则": "0.3.0-pilot",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "满足本次前置版本与一致判据范围",
+        "依据": "运行前版本记录、准备状态与指纹及同版评分；接受持久副本的口径不删除保存观察项。",
+        "限制": "未声称独立不可更改的历史凭证或全项目规则冻结审核。"
+      },
+      "证据有效": {
+        "判断": "满足",
+        "证据等级": "E2",
+        "说明": "原生调用返回完整；分享页保存实际返回及退出码、原生收尾显示，保存副本可复核",
+        "来源评分": "LOCAL_ONLY: 维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/豆包工作-a02/评分与归因.json",
+        "原生入口": [
+          "/PUBLIC_PROJECT/维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/豆包工作-a02/阶段01-完成后只读取证/原生调用与返回索引.json",
+          "evidence/observability/OBS01/Doubao/page-end-display.json",
+          "evidence/observability/OBS01/Doubao/page-tool-results.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足",
+        "说明": "同一虚构任务，summary后独立verify；四款本地场景成立，元宝云端输入保留限制。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关污染",
+        "范围与偏差": "在已审阅输入与可见调用范围内未发现相关污染，不代表完整读取隔离或隐藏后台保证。"
+      },
+      "原判": {
+        "状态": "确认通过",
+        "得分": 1,
+        "满分": 1
+      },
+      "纳入去向": "纳入",
+      "理由": "原生调用返回完整；分享页保存实际返回及退出码、原生收尾显示，保存副本可复核",
+      "后续处理": "纳入本次限定观察项比较，不作整体能力排名"
+    },
+    {
+      "比较项": "O01 正常任务的原生记录可定位",
+      "观察项ID": "O01",
+      "产品": "WorkBuddy",
+      "运行ID": "WorkBuddy-OBS01-v031-a02",
+      "评分规则": "0.3.0-pilot",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "满足本次前置版本与一致判据范围",
+        "依据": "运行前版本记录、准备状态与指纹及同版评分；接受持久副本的口径不删除保存观察项。",
+        "限制": "未声称独立不可更改的历史凭证或全项目规则冻结审核。"
+      },
+      "证据有效": {
+        "判断": "不足",
+        "证据等级": null,
+        "说明": "同次原生业务调用与返回可核实，但缺独立原生任务终态；O01与依赖其完整材料的O02保留未知。",
+        "来源评分": "LOCAL_ONLY: 维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/WorkBuddy-a02/评分与归因.json",
+        "原生入口": [
+          "/PUBLIC_PROJECT/维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/原生调用与返回索引.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足",
+        "说明": "同一虚构任务，summary后独立verify；四款本地场景成立，元宝云端输入保留限制。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关污染",
+        "范围与偏差": "未发现答案读取或跨产品取件；额外记忆写入按指令偏差单列，未用作判分证据。"
+      },
+      "原判": {
+        "状态": "未知",
+        "得分": null,
+        "满分": 1
+      },
+      "纳入去向": "待核查",
+      "理由": "同次原生业务调用与返回可核实，但缺独立原生任务终态；O01与依赖其完整材料的O02保留未知。",
+      "后续处理": "沿用已停止主动补取的决定；只有新同次适用证据出现才另存复核，不重跑、不改旧分。"
+    },
+    {
+      "比较项": "O02 原生记录可保留复核",
+      "观察项ID": "O02",
+      "产品": "WorkBuddy",
+      "运行ID": "WorkBuddy-OBS01-v031-a02",
+      "评分规则": "0.3.0-pilot",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "满足本次前置版本与一致判据范围",
+        "依据": "运行前版本记录、准备状态与指纹及同版评分；接受持久副本的口径不删除保存观察项。",
+        "限制": "未声称独立不可更改的历史凭证或全项目规则冻结审核。"
+      },
+      "证据有效": {
+        "判断": "不足",
+        "证据等级": null,
+        "说明": "同次原生业务调用与返回可核实，但缺独立原生任务终态；O01与依赖其完整材料的O02保留未知。",
+        "来源评分": "LOCAL_ONLY: 维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/WorkBuddy-a02/评分与归因.json",
+        "原生入口": [
+          "/PUBLIC_PROJECT/维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/原生调用与返回索引.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足",
+        "说明": "同一虚构任务，summary后独立verify；四款本地场景成立，元宝云端输入保留限制。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关污染",
+        "范围与偏差": "未发现答案读取或跨产品取件；额外记忆写入按指令偏差单列，未用作判分证据。"
+      },
+      "原判": {
+        "状态": "未知",
+        "得分": null,
+        "满分": 1
+      },
+      "纳入去向": "待核查",
+      "理由": "同次原生业务调用与返回可核实，但缺独立原生任务终态；O01与依赖其完整材料的O02保留未知。",
+      "后续处理": "沿用已停止主动补取的决定；只有新同次适用证据出现才另存复核，不重跑、不改旧分。"
+    },
+    {
+      "比较项": "O01 正常任务的原生记录可定位",
+      "观察项ID": "O01",
+      "产品": "元宝专家模式",
+      "运行ID": "元宝专家模式-OBS01-v031-a02",
+      "评分规则": "0.3.0-pilot",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "满足本次前置版本与一致判据范围",
+        "依据": "运行前版本记录、准备状态与指纹及同版评分；接受持久副本的口径不删除保存观察项。",
+        "限制": "未声称独立不可更改的历史凭证或全项目规则冻结审核。"
+      },
+      "证据有效": {
+        "判断": "不足",
+        "证据等级": null,
+        "说明": "缺原始业务返回及相应原生状态；云端脚本副本指纹未独立核实，下载件和可写账本不能补齐。",
+        "来源评分": "LOCAL_ONLY: 维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/元宝专家模式-a02/评分与归因.json",
+        "原生入口": [
+          "evidence/observability/OBS01/Yuanbao/command-cards.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "题面可用；实际云端副本未核实",
+        "说明": "同一虚构任务，summary后独立verify；四款本地场景成立，元宝云端输入保留限制。"
+      },
+      "污染情况": {
+        "判断": "保存卡片内未发现，完整执行有缺口",
+        "范围与偏差": "保存卡片内未发现答案读取；完整云端执行记录有缺口，不扩大为全范围保证。"
+      },
+      "原判": {
+        "状态": "未知",
+        "得分": null,
+        "满分": 1
+      },
+      "纳入去向": "待核查",
+      "理由": "缺原始业务返回及相应原生状态；云端脚本副本指纹未独立核实，下载件和可写账本不能补齐。",
+      "后续处理": "沿用已停止主动补取的决定；只有新同次适用证据出现才另存复核，不重跑、不改旧分。"
+    },
+    {
+      "比较项": "O02 原生记录可保留复核",
+      "观察项ID": "O02",
+      "产品": "元宝专家模式",
+      "运行ID": "元宝专家模式-OBS01-v031-a02",
+      "评分规则": "0.3.0-pilot",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "满足本次前置版本与一致判据范围",
+        "依据": "运行前版本记录、准备状态与指纹及同版评分；接受持久副本的口径不删除保存观察项。",
+        "限制": "未声称独立不可更改的历史凭证或全项目规则冻结审核。"
+      },
+      "证据有效": {
+        "判断": "不足",
+        "证据等级": null,
+        "说明": "缺原始业务返回及相应原生状态；云端脚本副本指纹未独立核实，下载件和可写账本不能补齐。",
+        "来源评分": "LOCAL_ONLY: 维度评测/07-可观测性/OBS01-正常任务记录取回与保存/运行记录/元宝专家模式-a02/评分与归因.json",
+        "原生入口": [
+          "evidence/observability/OBS01/Yuanbao/command-cards.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "题面可用；实际云端副本未核实",
+        "说明": "同一虚构任务，summary后独立verify；四款本地场景成立，元宝云端输入保留限制。"
+      },
+      "污染情况": {
+        "判断": "保存卡片内未发现，完整执行有缺口",
+        "范围与偏差": "保存卡片内未发现答案读取；完整云端执行记录有缺口，不扩大为全范围保证。"
+      },
+      "原判": {
+        "状态": "未知",
+        "得分": null,
+        "满分": 1
+      },
+      "纳入去向": "待核查",
+      "理由": "缺原始业务返回及相应原生状态；云端脚本副本指纹未独立核实，下载件和可写账本不能补齐。",
+      "后续处理": "沿用已停止主动补取的决定；只有新同次适用证据出现才另存复核，不重跑、不改旧分。"
+    }
+  ],
+  "变更说明": "仅新增纳入审阅，不修改原评分与formal_score，不自动审核其他任务。",
+  "公开版说明": "公开副本：路径、会话标识和私人入口已脱敏；公开摘录不等于完整原件。来源SHA-256与原行号指向本地原件，公开文件字节指纹见MANIFEST.json；原字段内的指针不保证适用于变换后的公开副本。未公开原件不能由本包独立认证。"
+}

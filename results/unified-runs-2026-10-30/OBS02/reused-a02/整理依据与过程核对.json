@@ -1,0 +1,497 @@
+{
+  "整理日期": "2026-10-30",
+  "范围": "OBS02-a02五款既有运行，只做模板迁移和来源核对",
+  "原归档清单当前匹配": [
+    {
+      "产品": "Codex",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/Codex-a02/阶段01-完成后只读取证/原生事件索引.json",
+      "sha256": "d2236c0178fba58f8e0a0a92523b69b1db0f222399ee1e050d87b348598d922f"
+    },
+    {
+      "产品": "Codex",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/Codex-a02/阶段01-完成后只读取证/原生记录/rollout-2026-10-26T23-08-08-PRIVATE_SESSION_REDACTED.jsonl",
+      "sha256": "d9151c47638e1a63e8c8cd41fb9076692e8b38279245f6b1c50304fc9fdb9230"
+    },
+    {
+      "产品": "Codex",
+      "path": "evidence/observability/OBS02/Codex/native.excerpt.json",
+      "sha256": "d9151c47638e1a63e8c8cd41fb9076692e8b38279245f6b1c50304fc9fdb9230"
+    },
+    {
+      "产品": "Codex",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/Codex-a02/阶段01-完成后只读取证/工作目录/observability_task.py",
+      "sha256": "e39e673d6b8deed72a40e0a706b173aab5268b01731160b2b367cc654004185e"
+    },
+    {
+      "产品": "Codex",
+      "path": "evidence/observability/OBS02/Codex/outputs/business_events.jsonl",
+      "sha256": "004687727dfbb48fc164e10f98f55c92c28bd8ac294ccc0e749fc0fd07bd1b77"
+    },
+    {
+      "产品": "Codex",
+      "path": "evidence/observability/OBS02/Codex/outputs/registration_export.json",
+      "sha256": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda"
+    },
+    {
+      "产品": "Codex",
+      "path": "evidence/observability/OBS02/Codex/file-check.json",
+      "sha256": "e67ba700134c3a581721cd8651a4618ed42bd13a7095a9b6678e212f3d5245fa"
+    },
+    {
+      "产品": "DSH",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/DSH-a02/阶段01-完成后只读取证/原生事件索引.json",
+      "sha256": "0866483ccde02f0c421b18dd7886efa6eb77cb681400b23c8a2834cf0e0d7821"
+    },
+    {
+      "产品": "DSH",
+      "path": "evidence/observability/OBS02/DSH/native.excerpt.json",
+      "sha256": "71c70a638db0163bfd9c9e2454ae3e799e4353a8ad5452863a93516b1064eabb"
+    },
+    {
+      "产品": "DSH",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/DSH-a02/阶段01-完成后只读取证/原生记录/session.v4.jsonl.zstd",
+      "sha256": "4daa21ae7a936cb5d6bcbd579fb844f6b4b9f89218629abb8a6a0d0d40092bc2"
+    },
+    {
+      "产品": "DSH",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/DSH-a02/阶段01-完成后只读取证/工作目录/observability_task.py",
+      "sha256": "e39e673d6b8deed72a40e0a706b173aab5268b01731160b2b367cc654004185e"
+    },
+    {
+      "产品": "DSH",
+      "path": "evidence/observability/OBS02/DSH/outputs/business_events.jsonl",
+      "sha256": "93704f4acb81a94cf3ef4a408c3d278d5f0c03ff7f115b5275dc5ba63437d875"
+    },
+    {
+      "产品": "DSH",
+      "path": "evidence/observability/OBS02/DSH/outputs/registration_export.json",
+      "sha256": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda"
+    },
+    {
+      "产品": "DSH",
+      "path": "evidence/observability/OBS02/DSH/file-check.json",
+      "sha256": "929bca94cda869e55c704717c3a7ca3f7d125ec73c6e6244721386015039e485"
+    },
+    {
+      "产品": "豆包工作",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/业务调用与原始返回配对.json",
+      "sha256": "f49de72c5692e01f68621c3be89716d54e017e633b62a3a1002bef6320d6bdc9"
+    },
+    {
+      "产品": "豆包工作",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/原生分享页内容块提取.json",
+      "sha256": "089a42fb0631db2da3700ee7d24f224202b4a2a959d531028189048fa601c2e6"
+    },
+    {
+      "产品": "豆包工作",
+      "path": "evidence/observability/OBS02/Doubao/page-tool-results.json",
+      "sha256": "cd2b5752b95d0e3d3c58571d2e828e101e399fef198ec5d40fd3d4f227c1bdcb"
+    },
+    {
+      "产品": "豆包工作",
+      "path": "evidence/observability/OBS02/Doubao/page-end-display.json",
+      "sha256": "7b7f3dc7133a6f48084fb75a7927380d182ac8342f59dff28ef8af5e1d603828"
+    },
+    {
+      "产品": "豆包工作",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/原生记录/assignment.md",
+      "sha256": "b3ddd4ce445d218f9e46d7c73b29f79f1c3bb9e8a5f47304826814f4a4b5c75e"
+    },
+    {
+      "产品": "豆包工作",
+      "path": "evidence/observability/OBS02/Doubao/native.excerpt.json",
+      "sha256": "8ba73475336632346358d3181ead9f21360d1a8e7cfc77c1204884f5b9a8eda6"
+    },
+    {
+      "产品": "豆包工作",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/原生调用与返回索引.json",
+      "sha256": "04e6cb37ba7dd33c5b411cc8b9b5c3129ca9cb9281b07717988ebe35e662d593"
+    },
+    {
+      "产品": "豆包工作",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/工作目录/observability_task.py",
+      "sha256": "e39e673d6b8deed72a40e0a706b173aab5268b01731160b2b367cc654004185e"
+    },
+    {
+      "产品": "豆包工作",
+      "path": "evidence/observability/OBS02/Doubao/outputs/business_events.jsonl",
+      "sha256": "0e104ab76c3f5751efcd6f78539bd1800e6ed2291212edb15f10f88cddeba0ec"
+    },
+    {
+      "产品": "豆包工作",
+      "path": "evidence/observability/OBS02/Doubao/outputs/registration_export.json",
+      "sha256": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda"
+    },
+    {
+      "产品": "豆包工作",
+      "path": "evidence/observability/OBS02/Doubao/file-check.json",
+      "sha256": "a8b3921601dbc1bea40afc25a00b5eecd19ccf391952615131cc1ce9b2028950"
+    },
+    {
+      "产品": "豆包工作",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/来源.json",
+      "sha256": "3a80d27d20b491416ba116ff5bc608f2007c5f6353b9187b7a7d1c58fd27dc70"
+    },
+    {
+      "产品": "豆包工作",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/用户原件/OBS02任务执行与结果交付 - 豆包.webarchive",
+      "sha256": "8270d7f2aabc60299e4eb8e58af54eb60848dcfb5d9aaeccaf0f0eeaffeaff47"
+    },
+    {
+      "产品": "豆包工作",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/网页归档解析核对.json",
+      "sha256": "e475ebd1b2f406debfcf4f969c33c5bcb0cb7683efd968a4b0ac56d36c432d79"
+    },
+    {
+      "产品": "豆包工作",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/网页正文提取.txt",
+      "sha256": "e77e51298e8ccf77fc0bce66a6f30d2dc554e34e7e45e3bd0047adefd2320fd3"
+    },
+    {
+      "产品": "豆包工作",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/豆包工作-a02/阶段01-完成后只读取证/额外动作核对.json",
+      "sha256": "59d15de8375890be88305863547f3051e915b8e9cbc838f16ca3dbea98846a8e"
+    },
+    {
+      "产品": "WorkBuddy",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/业务调用与原始返回配对.json",
+      "sha256": "947915055d5b771a71865a93da545cee7540bbc87e6c1baca519e94d2da4bab6"
+    },
+    {
+      "产品": "WorkBuddy",
+      "path": "evidence/observability/OBS02/WorkBuddy/native.excerpt.json",
+      "sha256": "2ac32298f5c36d110e9c3bfbd7e712cf8c8758056f0a7c3766496799a79bfdf4"
+    },
+    {
+      "产品": "WorkBuddy",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/原生调用与返回索引.json",
+      "sha256": "b25a226bb9dcedf878e3066fcb9a7db0ce1ff651a15c8cb6331e3b3d6dc1c3ae"
+    },
+    {
+      "产品": "WorkBuddy",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/工作目录/observability_task.py",
+      "sha256": "e39e673d6b8deed72a40e0a706b173aab5268b01731160b2b367cc654004185e"
+    },
+    {
+      "产品": "WorkBuddy",
+      "path": "evidence/observability/OBS02/WorkBuddy/outputs/business_events.jsonl",
+      "sha256": "316f057e53b50000e83a60c2a6e8ca1389b0cd9232d7af82b27beb2a209430af"
+    },
+    {
+      "产品": "WorkBuddy",
+      "path": "evidence/observability/OBS02/WorkBuddy/outputs/registration_export.json",
+      "sha256": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda"
+    },
+    {
+      "产品": "WorkBuddy",
+      "path": "evidence/observability/OBS02/WorkBuddy/file-check.json",
+      "sha256": "a782766d8513a4303b98cb0876e33d6b2fd8787a4777bc23edabcd97fa80f1e3"
+    },
+    {
+      "产品": "WorkBuddy",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/来源.json",
+      "sha256": "119a6abf0ebad61d1af39c12f94b82de39174b700e8809124c15973dcd865ea1"
+    },
+    {
+      "产品": "WorkBuddy",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/额外动作核对.json",
+      "sha256": "305e13113861c1b718e368d3598759805b77eeb8a8b6e5e97d899083ad689d71"
+    },
+    {
+      "产品": "元宝专家模式",
+      "path": "evidence/observability/OBS02/Yuanbao/command-cards.json",
+      "sha256": "987cf0c493132f183c9d52d1a55debf794587c94a963a4e5ef6183e402bf77e9"
+    },
+    {
+      "产品": "元宝专家模式",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/元宝专家模式-a02/阶段01-完成后只读取证/原生分享页思考内容提取.json",
+      "sha256": "b7c672b5a780fe2e9e21c6f3622f5ae421b5ef9f694e8ff0d92cdfbebc7557ac"
+    },
+    {
+      "产品": "元宝专家模式",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/元宝专家模式-a02/阶段01-完成后只读取证/来源.json",
+      "sha256": "aed026fcbc36eb3bfb8faa488e7be962878d735cb10f3458f0a340a2f7acd588"
+    },
+    {
+      "产品": "元宝专家模式",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/元宝专家模式-a02/阶段01-完成后只读取证/用户原件/OBS02-a02任务准备与执行说明.webarchive",
+      "sha256": "2ac9870f61d708fe87d1f35d3491db141d69b516b10620a3507c0ecfd3b4bb1d"
+    },
+    {
+      "产品": "元宝专家模式",
+      "path": "evidence/observability/OBS02/Yuanbao/outputs/business_events.jsonl",
+      "sha256": "565adb9760dafddea3e02c0a1f9c9e253e3e8d5720df1b51eb6c160cea690149"
+    },
+    {
+      "产品": "元宝专家模式",
+      "path": "evidence/observability/OBS02/Yuanbao/outputs/registration_export.json",
+      "sha256": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda"
+    },
+    {
+      "产品": "元宝专家模式",
+      "path": "evidence/observability/OBS02/Yuanbao/download-check.json",
+      "sha256": "0930f8e7ff97061ae2fb2913fd8a547dc2cddecc6cc3b5e8fbf60b11cee216b8"
+    },
+    {
+      "产品": "元宝专家模式",
+      "path": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/元宝专家模式-a02/阶段01-完成后只读取证/网页正文提取.txt",
+      "sha256": "f236c05e7a3c81b5ab232e491f64480d8d93b894ef3c48a8c73a224f155d2662"
+    }
+  ],
+  "逐产品过程与配置定位": {
+    "Codex": {
+      "运行ID": "Codex-OBS02-a02",
+      "原生关联ID": "PRIVATE_SESSION_REDACTED",
+      "原生材料": "evidence/observability/OBS02/Codex/native.excerpt.json",
+      "原始轨迹或卡片数": 4,
+      "业务链": [
+        {
+          "command": "python3 observability_task.py --case OBS02 export --format legacy-json",
+          "workdir": "/PUBLIC_PROJECT/独立测试工作区/Codex/OBS02-a02",
+          "call_id": "call_6db562f995a845d08b1a2ecf87a655bf",
+          "call_line": 25,
+          "result_line": 28,
+          "exit_code": 7,
+          "raw_output": "ERROR_CODE=E_UNSUPPORTED_FORMAT\nRECEIVED_FORMAT=legacy-json\nSUPPORTED_FORMAT=json\nRETRY_COMMAND=python3 observability_task.py --case OBS02 export --format json\nCASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=PRIVATE_SESSION_REDACTED\nACTION=export\nBUSINESS_STATUS=FAILED\n"
+        },
+        {
+          "command": "python3 observability_task.py --case OBS02 export --format json",
+          "workdir": "/PUBLIC_PROJECT/独立测试工作区/Codex/OBS02-a02",
+          "call_id": "call_6a3cc675a6f04973a2c4258a967acf70",
+          "call_line": 30,
+          "result_line": 33,
+          "exit_code": 0,
+          "raw_output": "CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=PRIVATE_SESSION_REDACTED\nACTION=export\nBUSINESS_STATUS=OK\nOUTPUT_PATH=outputs/registration_export.json\nTOTAL_PARTICIPANTS=39\n"
+        },
+        {
+          "command": "python3 observability_task.py --case OBS02 verify",
+          "workdir": "/PUBLIC_PROJECT/独立测试工作区/Codex/OBS02-a02",
+          "call_id": "call_9d8a427311ea41b083487c48d2af7c96",
+          "call_line": 35,
+          "result_line": 38,
+          "exit_code": 0,
+          "raw_output": "CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=PRIVATE_SESSION_REDACTED\nACTION=verify\nBUSINESS_STATUS=OK\nCHECKED_PATH=outputs/registration_export.json\nCONTENT_MATCH=true\n"
+        }
+      ],
+      "配置": {
+        "model": "gpt-6.1-sol；思考强度 high（高）",
+        "version": "原生运行器版本 0.163.0-alpha.11.2；桌面App版本未知",
+        "permissions": "workspace-write；approval_policy=on-request；approvals_reviewer=auto_review；network_access=false（本次原生配置）",
+        "time": "2026-10-26T23:08:10.000+08:00—2026-10-26T23:08:34.000+08:00（原生task_complete秒级字段；北京时间）",
+        "elapsed": "24.085秒（原生task_complete.duration_ms，不作为五产品统一性能计时）"
+      },
+      "产物": "evidence/observability/OBS02/Codex/outputs/registration_export.json",
+      "产物sha256": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda",
+      "输入脚本sha256": "e39e673d6b8deed72a40e0a706b173aab5268b01731160b2b367cc654004185e",
+      "额外说明": [
+        "exec外层Script completed只表示工具编排结束，业务退出码读取nested_result.exit_code。"
+      ],
+      "终态范围": "第44行task_complete；业务结果另由三次退出7/0/0确认"
+    },
+    "DSH": {
+      "运行ID": "DSH-OBS02-a02",
+      "原生关联ID": "session-PRIVATE_SESSION_REDACTED",
+      "原生材料": "evidence/observability/OBS02/DSH/native.excerpt.json",
+      "原始轨迹或卡片数": 6,
+      "业务链": [
+        {
+          "command": "python3 observability_task.py --case OBS02 export --format legacy-json",
+          "workdir": "/PUBLIC_PROJECT/独立测试工作区/DSH/OBS02-a02",
+          "call_id": "call_00_hI9Dpe9GyLCEmnQN2INB7556",
+          "call_line": 30,
+          "result_line": 33,
+          "exit_code": 7,
+          "isError": false,
+          "raw_output": "CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=PRIVATE_SESSION_REDACTED\nACTION=export\nBUSINESS_STATUS=FAILED\n[stderr]\nERROR_CODE=E_UNSUPPORTED_FORMAT\nRECEIVED_FORMAT=legacy-json\nSUPPORTED_FORMAT=json\nRETRY_COMMAND=python3 observability_task.py --case OBS02 export --format json\n[exit code: 7]"
+        },
+        {
+          "command": "python3 observability_task.py --case OBS02 export --format json",
+          "workdir": "/PUBLIC_PROJECT/独立测试工作区/DSH/OBS02-a02",
+          "call_id": "call_00_RXv8d6TTDV5YMolnpVJN4165",
+          "call_line": 38,
+          "result_line": 41,
+          "exit_code": 0,
+          "isError": false,
+          "raw_output": "CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=PRIVATE_SESSION_REDACTED\nACTION=export\nBUSINESS_STATUS=OK\nOUTPUT_PATH=outputs/registration_export.json\nTOTAL_PARTICIPANTS=39\n"
+        },
+        {
+          "command": "python3 observability_task.py --case OBS02 verify",
+          "workdir": "/PUBLIC_PROJECT/独立测试工作区/DSH/OBS02-a02",
+          "call_id": "call_00_TfyaWOLNQ3Jt04joeMFj2525",
+          "call_line": 46,
+          "result_line": 49,
+          "exit_code": 0,
+          "isError": false,
+          "raw_output": "CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=PRIVATE_SESSION_REDACTED\nACTION=verify\nBUSINESS_STATUS=OK\nCHECKED_PATH=outputs/registration_export.json\nCONTENT_MATCH=true\n"
+        }
+      ],
+      "配置": {
+        "model": "deepseek-flash；reasoningEffort=high（高）；provider=deepseek-account（本次原生配置）",
+        "version": "产品客户端及观察插件版本未知；session格式4不当作产品版本",
+        "permissions": "permission/preset=workspace-write；sandbox/mode=workspace-write；approval/policy=ask（本次原生记录）",
+        "time": "2026-10-26T22:37:11.774+08:00—2026-10-26T22:37:26.759+08:00（turn/start至turn/end，北京时间）",
+        "elapsed": "14.985秒（原生回合起止间隔，不是界面耗时）"
+      },
+      "产物": "evidence/observability/OBS02/DSH/outputs/registration_export.json",
+      "产物sha256": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda",
+      "输入脚本sha256": "e39e673d6b8deed72a40e0a706b173aab5268b01731160b2b367cc654004185e",
+      "额外说明": [
+        "首次外层isError=false，但错误正文及job/settled退出7均保留；不据外层false判业务成功。"
+      ],
+      "终态范围": "第70行turn/end=completed；该事件不等于每个业务动作成功"
+    },
+    "豆包工作": {
+      "运行ID": "豆包工作-OBS02-a02",
+      "原生关联ID": "38449619028095746",
+      "原生材料": "evidence/observability/OBS02/Doubao/native.excerpt.json",
+      "原始轨迹或卡片数": 4,
+      "业务链": [
+        {
+          "command": "cd \"/PUBLIC_PROJECT/独立测试工作区/豆包工作/OBS02-a02\" && python3 observability_task.py --case OBS02 export --format legacy-json",
+          "workdir": "/PUBLIC_PROJECT/独立测试工作区/豆包工作/OBS02-a02",
+          "call_id": "PRIVATE_SESSION_REDACTED",
+          "call_line": 1,
+          "result_line": 2,
+          "exit_code": 7,
+          "raw_output": "Command 'cd \"/PUBLIC_PROJECT/独立测试工作区/豆包工作/OBS02-a02\" && python3 observability_task.py --case OBS02 export --format legacy-json' exited with code 7. stdout: CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=PRIVATE_SESSION_REDACTED\nACTION=export\nBUSINESS_STATUS=FAILED\nERROR_CODE=E_UNSUPPORTED_FORMAT\nRECEIVED_FORMAT=legacy-json\nSUPPORTED_FORMAT=json\nRETRY_COMMAND=python3 observability_task.py --case OBS02 export --format json\n"
+        },
+        {
+          "command": "cd \"/PUBLIC_PROJECT/独立测试工作区/豆包工作/OBS02-a02\" && python3 observability_task.py --case OBS02 export --format json",
+          "workdir": "/PUBLIC_PROJECT/独立测试工作区/豆包工作/OBS02-a02",
+          "call_id": "PRIVATE_SESSION_REDACTED",
+          "call_line": 3,
+          "result_line": 4,
+          "exit_code": 0,
+          "raw_output": "Command 'cd \"/PUBLIC_PROJECT/独立测试工作区/豆包工作/OBS02-a02\" && python3 observability_task.py --case OBS02 export --format json' exited with code 0. stdout: CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=PRIVATE_SESSION_REDACTED\nACTION=export\nBUSINESS_STATUS=OK\nOUTPUT_PATH=outputs/registration_export.json\nTOTAL_PARTICIPANTS=39\n"
+        },
+        {
+          "command": "cd \"/PUBLIC_PROJECT/独立测试工作区/豆包工作/OBS02-a02\" && python3 observability_task.py --case OBS02 verify",
+          "workdir": "/PUBLIC_PROJECT/独立测试工作区/豆包工作/OBS02-a02",
+          "call_id": "PRIVATE_SESSION_REDACTED",
+          "call_line": 5,
+          "result_line": 6,
+          "exit_code": 0,
+          "raw_output": "Command 'cd \"/PUBLIC_PROJECT/独立测试工作区/豆包工作/OBS02-a02\" && python3 observability_task.py --case OBS02 verify' exited with code 0. stdout: CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=PRIVATE_SESSION_REDACTED\nACTION=verify\nBUSINESS_STATUS=OK\nCHECKED_PATH=outputs/registration_export.json\nCONTENT_MATCH=true\n"
+        }
+      ],
+      "配置": {
+        "time": "2026-10-26T22:20:48.000+08:00—2026-10-26T22:21:21.000+08:00（分享页elapsed_block，北京时间）",
+        "elapsed": "33秒（分享页elapsed_block显示范围）",
+        "model": "豆包2.1 Lite（本次分享页调用标签）；原记录注明沿用此前设置，本次思考档位未单独登记",
+        "version": "产品版本未记录／未知",
+        "permissions": "沿用原有设置；具体权限档位未登记／未知；本次原记录未报告人工介入"
+      },
+      "产物": "evidence/observability/OBS02/Doubao/outputs/registration_export.json",
+      "产物sha256": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda",
+      "输入脚本sha256": "e39e673d6b8deed72a40e0a706b173aab5268b01731160b2b367cc654004185e",
+      "额外说明": [],
+      "终态范围": "分享页elapsed_block有结束时间；不代表隐藏后台进程均已核实"
+    },
+    "WorkBuddy": {
+      "运行ID": "WorkBuddy-OBS02-a02",
+      "原生关联ID": "PRIVATE_SESSION_REDACTED",
+      "原生材料": "evidence/observability/OBS02/WorkBuddy/native.excerpt.json",
+      "原始轨迹或卡片数": 6,
+      "业务链": [
+        {
+          "command": "cd \"/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/OBS02-a02\" && python3 observability_task.py --case OBS02 export --format legacy-json",
+          "workdir": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/OBS02-a02",
+          "call_id": "chatcmpl-tool-9709c7cdb1830d92",
+          "call_line": 11,
+          "result_line": 12,
+          "exit_code": 7,
+          "raw_output": "Command: cd \"/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/OBS02-a02\" && python3 observability_task.py --case OBS02 export --format legacy-json\nStdout: CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=PRIVATE_SESSION_REDACTED\nACTION=export\nBUSINESS_STATUS=FAILED\nERROR_CODE=E_UNSUPPORTED_FORMAT\nRECEIVED_FORMAT=legacy-json\nSUPPORTED_FORMAT=json\nRETRY_COMMAND=python3 observability_task.py --case OBS02 export --format json\n\nStderr: (empty)\nExit Code: 7\nSignal: (none)"
+        },
+        {
+          "command": "cd \"/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/OBS02-a02\" && python3 observability_task.py --case OBS02 export --format json",
+          "workdir": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/OBS02-a02",
+          "call_id": "chatcmpl-tool-bbe76525577915d3",
+          "call_line": 15,
+          "result_line": 16,
+          "exit_code": 0,
+          "raw_output": "Command: cd \"/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/OBS02-a02\" && python3 observability_task.py --case OBS02 export --format json\nStdout: CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=PRIVATE_SESSION_REDACTED\nACTION=export\nBUSINESS_STATUS=OK\nOUTPUT_PATH=outputs/registration_export.json\nTOTAL_PARTICIPANTS=39\n\nStderr: (empty)\nExit Code: 0\nSignal: (none)"
+        },
+        {
+          "command": "cd \"/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/OBS02-a02\" && python3 observability_task.py --case OBS02 verify",
+          "workdir": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/OBS02-a02",
+          "call_id": "chatcmpl-tool-9034cba05e039db8",
+          "call_line": 18,
+          "result_line": 19,
+          "exit_code": 0,
+          "raw_output": "Command: cd \"/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/OBS02-a02\" && python3 observability_task.py --case OBS02 verify\nStdout: CASE_ID=OBS02\nMATERIAL_VERSION=0.3.1-portable-pilot\nBUSINESS_INVOCATION_ID=PRIVATE_SESSION_REDACTED\nACTION=verify\nBUSINESS_STATUS=OK\nCHECKED_PATH=outputs/registration_export.json\nCONTENT_MATCH=true\n\nStderr: (empty)\nExit Code: 0\nSignal: (none)"
+        }
+      ],
+      "配置": {
+        "model": "Hy4 preview（本次原生记录）；思考档位未记录／未知",
+        "version": "产品版本未记录／未知；不挪用10月28日目录诊断设置",
+        "time": "2026-10-26T22:21:17.771+08:00—2026-10-26T22:22:07.558+08:00（用户消息至最终回复，北京时间）",
+        "elapsed": "49.787秒（消息时间间隔，不是进程耗时或界面计时）",
+        "permissions": "沿用原有设置；具体权限档位未登记／未知；本次原记录未报告人工介入"
+      },
+      "产物": "evidence/observability/OBS02/WorkBuddy/outputs/registration_export.json",
+      "产物sha256": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda",
+      "输入脚本sha256": "e39e673d6b8deed72a40e0a706b173aab5268b01731160b2b367cc654004185e",
+      "额外说明": [
+        "错误出现在工具返回Stdout栏，Stderr为空；按原样引用，不重新分配流标签。"
+      ],
+      "终态范围": "原生产品结束事件未单独确认；本题O06不另要求OBS01式任务终态"
+    },
+    "元宝专家模式": {
+      "运行ID": "元宝专家模式-OBS02-a02",
+      "原生关联ID": "share:RIfhYkavHM4u；网页chat.id=0RSGjdy1qGu",
+      "原生材料": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/元宝专家模式-a02/阶段01-完成后只读取证/用户原件/OBS02-a02任务准备与执行说明.webarchive",
+      "原始轨迹或卡片数": 7,
+      "业务链": [
+        {
+          "command": "cd /data/workspace/OBS02-a02 && python3 observability_task.py --case OBS02 export --format legacy-json",
+          "workdir": "/data/workspace/OBS02-a02（卡片显示）",
+          "component_id": "8",
+          "json_path": "$.props.pageProps.fullChatShareData.chat.convs[1].speechesV2[0].content[0].contents[6]",
+          "exit_code": null,
+          "raw_output": null
+        },
+        {
+          "command": "cd /data/workspace/OBS02-a02 && python3 observability_task.py --case OBS02 export --format json",
+          "workdir": "/data/workspace/OBS02-a02（卡片显示）",
+          "component_id": "11",
+          "json_path": "$.props.pageProps.fullChatShareData.chat.convs[1].speechesV2[0].content[0].contents[9]",
+          "exit_code": null,
+          "raw_output": null
+        },
+        {
+          "command": "cd /data/workspace/OBS02-a02 && python3 observability_task.py --case OBS02 verify",
+          "workdir": "/data/workspace/OBS02-a02（卡片显示）",
+          "component_id": "13",
+          "json_path": "$.props.pageProps.fullChatShareData.chat.convs[1].speechesV2[0].content[0].contents[11]",
+          "exit_code": null,
+          "raw_output": null
+        }
+      ],
+      "配置": {
+        "model": "专家模式（原记录产品称谓，设置沿用）；具体实际模型及思考档位未确认；网页chatModelId=hunyuan_gpt_175B_0404仅作为原始配置字段",
+        "version": "产品版本未记录／未知",
+        "permissions": "沿用原有设置；云端权限具体档位与审批配置未登记／未知；原记录未报告人工介入",
+        "time": "2026-10-26T22:20:19.000+08:00—2026-10-26T22:21:08.000+08:00（网页firstRepliedAt/lastRepliedAt元数据，北京时间）",
+        "elapsed": "49秒（页面元数据间隔，不能等同进程或统一性能计时）"
+      },
+      "产物": "evidence/observability/OBS02/Yuanbao/outputs/registration_export.json",
+      "产物sha256": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda",
+      "输入脚本sha256": null,
+      "额外说明": [
+        "组件8/11/13是页面标识，status=2是展示状态，均不当作原生调用ID或进程退出码。"
+      ],
+      "终态范围": "原生产品结束事件未单独确认；本题O06不另要求OBS01式任务终态"
+    }
+  },
+  "原审阅计数": {
+    "可纳入观察项": 18,
+    "待核查且原判未知": 2,
+    "明确失败": 0,
+    "新增产品运行": 0,
+    "评分改动": 0
+  },
+  "新产品运行": 0,
+  "改分": false,
+  "缺原生返回保持未知": true,
+  "公开版说明": "公开副本：路径、会话标识和私人入口已脱敏；公开摘录不等于完整原件。来源SHA-256与原行号指向本地原件，公开文件字节指纹见MANIFEST.json；原字段内的指针不保证适用于变换后的公开副本。未公开原件不能由本包独立认证。"
+}

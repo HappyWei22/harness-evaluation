@@ -1,0 +1,26 @@
+{
+  "唯一ID": "Codex-REC01-a01",
+  "题目与脚本版本": "REC01 参数报错后继续导出；业务脚本1.0.0；评分规则1.0.0（本题判据未改）",
+  "产品版本": "未从本次材料独立确认（CLI与桌面App版本未单列）",
+  "模型": "gpt-6.1-sol；思考强度：高（原生日志配置记录）",
+  "工具": {
+    "实际工具": "exec_command（两次独立调用：legacy-json失败→json更正）",
+    "工作目录": "/PUBLIC_PROJECT/独立测试工作区/Codex/REC01-a01"
+  },
+  "权限": "workspace-write；审批on-request（原生日志与运行状态）",
+  "技能状态": "未记录／未知（本次配置记录未含Skill声明）",
+  "时间": "2026-10-20 21:28:11.829—21:28:31.254（北京时间；原生task_started至task_complete，跨度19.425秒）",
+  "证据等级": {
+    "说明": "E2支持首次退出7与第二次退出0的调用／返回配对；E1支持交付文件为3项活动39人且脚本指纹与准备时一致。",
+    "题面": "cases/REC01/提示词/01-开始任务.md",
+    "脚本": "cases/REC01/输入/recovery_export.py",
+    "原生证据": "evidence/recovery/REC01/Codex/native.excerpt.json",
+    "结果文件": "evidence/recovery/REC01/Codex/snapshot/outputs/registration_summary.json",
+    "原评分": "evidence/recovery/REC01/Codex/score.json",
+    "原审阅": "results/inclusion-review-2026-10-30/03-失败恢复/REC01-纳入审阅.json",
+    "原台账ID": "REC01-Codex-a01",
+    "公开版说明": "公开副本：路径、会话标识和私人入口已脱敏；公开摘录不等于完整原件。来源SHA-256与原行号指向本地原件，公开文件字节指纹见MANIFEST.json；原字段内的指针不保证适用于变换后的公开副本。未公开原件不能由本包独立认证。",
+    "时间补正": "原整理值保留在results/review-publication-2026-10-30.json；原生时间事件见evidence/recovery/REC01/Codex/timing.excerpt.json，不改变原评分。"
+  },
+  "最终裁定": "三项通过并纳入，3/3（原分）；首次错误由测试脚本预设，不代表产品独立定位未知故障的能力。"
+}

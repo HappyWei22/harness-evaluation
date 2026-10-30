@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-28",
+  "date": "2026-10-30",
   "description": "原始来源哈希用于记录来源关系，不代表完整原文件已公开或外部可认证。public文件的实际字节指纹另见MANIFEST.json。",
   "exports": [
     {
@@ -5482,6 +5482,2827 @@
       "original_sha256": "91ec47a1d3e2bff23da8e9c51b0c95a96507f5c8b927b6769e3959beda5f44e1",
       "transformation": "保留正文与原计分单位；更新为公开入口，标明未公开原件；添加历史快照说明，脱敏路径与会话定位",
       "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/整理依据与原件指纹.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/统一运行记录-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "6ae9fc78c5063104e5d1ebc2ef93372bb71b59c2c10f984132c881b726fa6afd",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/README.md",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/统一运行记录-2026-10-30/README.md",
+      "original_sha256": "1e04eada7d30ada596a190feea8a8a676943f1adb670342cb82b76782d2020ff",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/FB01-五段式任务报告.md",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/统一运行记录-2026-10-30/FB01-五段式任务报告.md",
+      "original_sha256": "6465c7d8c2f6aef3bd1751a2cec77bcaf7883b6b06bc741b9304e9c0dbbabc05",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/豆包办公-FB01-a01.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/统一运行记录-2026-10-30/运行记录/豆包办公-FB01-a01.json",
+      "original_sha256": "11558c6d954d8649998606cefa548eff087bebb796a0f605e030f53d165a465d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/WorkBuddy-FB01-a01.md",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/统一运行记录-2026-10-30/运行记录/WorkBuddy-FB01-a01.md",
+      "original_sha256": "497a6b51362f611d9a1558052098c9c0a1f0cf64c320de53230398e8befbf36a",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/元宝专家模式-FB01-a01.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/统一运行记录-2026-10-30/运行记录/元宝专家模式-FB01-a01.json",
+      "original_sha256": "e27db5aa77248dfc638c441eedc28f228166e3114f4ebbf232a6bc4e8e5c4747",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/DSH-FB01-a01.md",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/统一运行记录-2026-10-30/运行记录/DSH-FB01-a01.md",
+      "original_sha256": "1c078ff901a50ef978fc4c8d18af27c0f0c9b5745faebd900f1c4ae51555325c",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/Codex-FB01-a01.md",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/统一运行记录-2026-10-30/运行记录/Codex-FB01-a01.md",
+      "original_sha256": "046ed7c6f467755fa96b60bfa72986e9d55a0ccdfcc7fb220e0c33fd4988038d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/WorkBuddy-FB01-a01.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/统一运行记录-2026-10-30/运行记录/WorkBuddy-FB01-a01.json",
+      "original_sha256": "713639ef46f0bcf5f95d38e95d721245b527f829ddc6f9fc3ec447ae09077b69",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/豆包办公-FB01-a01.md",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/统一运行记录-2026-10-30/运行记录/豆包办公-FB01-a01.md",
+      "original_sha256": "fbf8f052bbd7b2649f390589ad109f29b9514a9b3200ad4f6bd0d72b20c3e2c9",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/元宝专家模式-FB01-a01.md",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/统一运行记录-2026-10-30/运行记录/元宝专家模式-FB01-a01.md",
+      "original_sha256": "2a85fc53573fbfea3736ee4c1bd670f870ece7d1030a7cdc7a8ca8a57f22e17d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/WorkBuddy-FB01-a02.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/统一运行记录-2026-10-30/运行记录/WorkBuddy-FB01-a02.json",
+      "original_sha256": "e5441bef57c6c86b87b0fad90f733a5a97ce9664a44056d928346ea702e75ce7",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/元宝专家模式-FB01-a02.md",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/统一运行记录-2026-10-30/运行记录/元宝专家模式-FB01-a02.md",
+      "original_sha256": "5636f67f6ba94d907cf396e9cd8aab0d53e58e73942eb80a00352e38a4f0f5c4",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/DSH-FB01-a01.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/统一运行记录-2026-10-30/运行记录/DSH-FB01-a01.json",
+      "original_sha256": "744d4858861c4797d415d5e2ab8b1be5fe2670830ed27c463b5f1e5a57bc57d2",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/Codex-FB01-a01.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/统一运行记录-2026-10-30/运行记录/Codex-FB01-a01.json",
+      "original_sha256": "e28cb2c647dca1779901063c766a6f77b43ae6721a21b9cf0ddef49888292137",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/WorkBuddy-FB01-a02.md",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/统一运行记录-2026-10-30/运行记录/WorkBuddy-FB01-a02.md",
+      "original_sha256": "592f25699b8d2c42090704b248a90dcd2c6c55d6e232a16623501f2927b2e06d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/元宝专家模式-FB01-a02.json",
+      "original_source": "维度评测/01-信息回传/FB01-基础回传/统一运行记录-2026-10-30/运行记录/元宝专家模式-FB01-a02.json",
+      "original_sha256": "a174997a4cf140c14e221805a953593e70645a89b02997f4f6595584adaf799e",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/整理依据与原件指纹.json",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/统一运行记录-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "9f8711fd752fc5f7c99bdab12e9994a27345525edf37ae38f080fcfb083dec0f",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/FB02-五段式任务报告.md",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/统一运行记录-2026-10-30/FB02-五段式任务报告.md",
+      "original_sha256": "e025300e8b11b4eff3d0d6d393cd8265cfcc5eba093f1b077be3c347383866e9",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/README.md",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/统一运行记录-2026-10-30/README.md",
+      "original_sha256": "787e652617e49335ca386d014e52cf2d8a9b298ba529b25a8c331ddd84497c44",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/运行记录/Codex-FB02-a01.json",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/统一运行记录-2026-10-30/运行记录/Codex-FB02-a01.json",
+      "original_sha256": "5c64b798a34c4a4e152bc9d7d523a71e7a4baeea901462162c502f25c83c62cc",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/运行记录/DSH-FB02-a01.json",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/统一运行记录-2026-10-30/运行记录/DSH-FB02-a01.json",
+      "original_sha256": "7c0684bc90c85f77e35f78adbe61877ba7c7e4c7661b3cb785d09381bddb5d6c",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/运行记录/元宝专家模式-FB02-a01.json",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/统一运行记录-2026-10-30/运行记录/元宝专家模式-FB02-a01.json",
+      "original_sha256": "d1ac78bbcd04b65a20293b465e5e550d7c334003597df575288125b01ca179d7",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/运行记录/WorkBuddy-FB02-a01.md",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/统一运行记录-2026-10-30/运行记录/WorkBuddy-FB02-a01.md",
+      "original_sha256": "2c5be71b34f3e880382df3ddef36e3770073719d42f4e97e8577aad21d2772ea",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/运行记录/DSH-FB02-a01.md",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/统一运行记录-2026-10-30/运行记录/DSH-FB02-a01.md",
+      "original_sha256": "876abee63d23d3b91186b04eab575087da296ae8ad0936252c206a1a608e81bc",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/运行记录/豆包办公-FB02-a01.json",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/统一运行记录-2026-10-30/运行记录/豆包办公-FB02-a01.json",
+      "original_sha256": "d0e7a17a95732fc53bfdd0bb6bdcb3e1204f28f167934bb0a1704d5eeaa9da3d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/运行记录/豆包办公-FB02-a01.md",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/统一运行记录-2026-10-30/运行记录/豆包办公-FB02-a01.md",
+      "original_sha256": "bcbf529b5729d00fdc6caf5082319c663b499efe2a3bc04dd71ba0c821c828ea",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/运行记录/元宝专家模式-FB02-a01.md",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/统一运行记录-2026-10-30/运行记录/元宝专家模式-FB02-a01.md",
+      "original_sha256": "a33908b9f469e9f24b08fcd33d122bc3b6f0ff415de0fe301480e1d85f14197c",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/运行记录/WorkBuddy-FB02-a01.json",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/统一运行记录-2026-10-30/运行记录/WorkBuddy-FB02-a01.json",
+      "original_sha256": "baa479c7f45d1134dec188b8f4bbcf07947c61d5fdc4af81d11cc2b7b1a1ad7a",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/运行记录/Codex-FB02-a01.md",
+      "original_source": "维度评测/01-信息回传/FB02-较长结果回传/统一运行记录-2026-10-30/运行记录/Codex-FB02-a01.md",
+      "original_sha256": "b5a0f8a41daa2a5a027f64e5d2a82b2ae36ee6c5fdd0c366f1db78417fcdfa05",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/整理依据与原件指纹.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/统一运行记录-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "fc9c52ea43bffc062a0cbe0250241cdaa4179e7abca55f3dc5d0a45501a22219",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/README.md",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/统一运行记录-2026-10-30/README.md",
+      "original_sha256": "99b0a473ae2c6dfa769682914dae001bf6e98cdbf04caf7d38c066910904f191",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/FB03-五段式任务报告.md",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/统一运行记录-2026-10-30/FB03-五段式任务报告.md",
+      "original_sha256": "f855dbc48ca3ac10e01064eddd59b74ce51046e91b2713037b7321129684c86f",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/运行记录/Codex-FB03-a01.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/统一运行记录-2026-10-30/运行记录/Codex-FB03-a01.json",
+      "original_sha256": "3834aa5572c38570e13036640fcbd2def8a140de53c6eae967ff892463e16b21",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/运行记录/DSH-FB03-a01.md",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/统一运行记录-2026-10-30/运行记录/DSH-FB03-a01.md",
+      "original_sha256": "eb9efa0f64101e4d44a0d985f43a1704d39496a1006e83082479ecf02c4cce3f",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/运行记录/DSH-FB03-a01.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/统一运行记录-2026-10-30/运行记录/DSH-FB03-a01.json",
+      "original_sha256": "4c018d8947c529a64d749690945f0393bfc65878fabbb06a2805612066c5a86a",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/运行记录/WorkBuddy-FB03-a01.md",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/统一运行记录-2026-10-30/运行记录/WorkBuddy-FB03-a01.md",
+      "original_sha256": "4b5049aef77e42071ab5e6c8ddf61101658630c3c3734a8205f7d8437cfa9d79",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/运行记录/元宝专家模式-FB03-a01.md",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/统一运行记录-2026-10-30/运行记录/元宝专家模式-FB03-a01.md",
+      "original_sha256": "55ec9a1a7f2aeab4a106eee2fedec6271db54ffd0748d8c544f3e15a3be9c74f",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/运行记录/豆包办公-FB03-a01.md",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/统一运行记录-2026-10-30/运行记录/豆包办公-FB03-a01.md",
+      "original_sha256": "9a7b169956a6c3ed705bf4dc2577fe5c726748f94b87aa4554d250fd8a76764d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/运行记录/Codex-FB03-a01.md",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/统一运行记录-2026-10-30/运行记录/Codex-FB03-a01.md",
+      "original_sha256": "8977857bb7eb3d1762c624338b69c88c726f81324f776c801f30a874b4770419",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/运行记录/元宝专家模式-FB03-a01.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/统一运行记录-2026-10-30/运行记录/元宝专家模式-FB03-a01.json",
+      "original_sha256": "eb665a9b68fbc74ec426b2b3aeafe47d30c922fb29a85eea373c935b396feed0",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/运行记录/豆包办公-FB03-a01.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/统一运行记录-2026-10-30/运行记录/豆包办公-FB03-a01.json",
+      "original_sha256": "868f090d6b135ab51d6035b7961680eda63a7703985c5e4059e8364e0250e398",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/运行记录/WorkBuddy-FB03-a01.json",
+      "original_source": "维度评测/01-信息回传/FB03-完整结果获取/统一运行记录-2026-10-30/运行记录/WorkBuddy-FB03-a01.json",
+      "original_sha256": "208c0ccdd2e52cd98b278f0c8a82855b246c2de65532c5868681ade95fe1f956",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/整理依据与原件指纹.json",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/统一运行记录-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "a854d9c6114caa9cde73ca1bcbbed97a2ffa6f84f6a0c4b29b18244b79ad15c2",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/CTX01-五段式任务报告.md",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/统一运行记录-2026-10-30/CTX01-五段式任务报告.md",
+      "original_sha256": "f39e23bc1f567e40b7d7def9dd2439c3610c650ab057c8d56a5d469815de4877",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/README.md",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/统一运行记录-2026-10-30/README.md",
+      "original_sha256": "2ab358ec55dc086f5a026c7245b932fc5c9d18e1c4e87e58f8c0b643d54dac97",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/运行记录/豆包办公-CTX01-a01.json",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/统一运行记录-2026-10-30/运行记录/豆包办公-CTX01-a01.json",
+      "original_sha256": "e7e2479c00a9933d2ffa28106770cc16582021082d2072dea3a7279e237b9d9a",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/运行记录/Codex-CTX01-a01.json",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/统一运行记录-2026-10-30/运行记录/Codex-CTX01-a01.json",
+      "original_sha256": "9e74f07c82966a0fe20b2f90928c8b38c7146a4e2a83d3ea54ef188d32e560ed",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/运行记录/WorkBuddy-CTX01-a01.json",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/统一运行记录-2026-10-30/运行记录/WorkBuddy-CTX01-a01.json",
+      "original_sha256": "924eae2ce57957b29543b5e295275b484fb82639ee479ca41dcdcc67885a3f06",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/运行记录/WorkBuddy-CTX01-a01.md",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/统一运行记录-2026-10-30/运行记录/WorkBuddy-CTX01-a01.md",
+      "original_sha256": "5fb1dabea01cd5681948befa601e8e14eab8817e12dca98e7f55dd8e2d372cba",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/运行记录/Codex-CTX01-a01.md",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/统一运行记录-2026-10-30/运行记录/Codex-CTX01-a01.md",
+      "original_sha256": "18cc841598f8814dc18fdad73e35456432feeb007821cb8ee31397a189b9e2ee",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/运行记录/元宝专家模式-CTX01-a01.md",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/统一运行记录-2026-10-30/运行记录/元宝专家模式-CTX01-a01.md",
+      "original_sha256": "5e546254ec48f78f36da28d842707e24ad6d1d66a8d78a600041dc4444f0215a",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/运行记录/DSH-CTX01-a01.md",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/统一运行记录-2026-10-30/运行记录/DSH-CTX01-a01.md",
+      "original_sha256": "d873893138325839805ce75e68652a048a498bbac9f23301bf32b1b0fee83b7d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/运行记录/豆包办公-CTX01-a01.md",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/统一运行记录-2026-10-30/运行记录/豆包办公-CTX01-a01.md",
+      "original_sha256": "60a52f339018f62f7551b43124c66833e483636359cb137a2a565c95213b3506",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/运行记录/DSH-CTX01-a01.json",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/统一运行记录-2026-10-30/运行记录/DSH-CTX01-a01.json",
+      "original_sha256": "299724e5e3deeef66684e0ebde98bfef259466d0651b73665a0473cdd333558e",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/运行记录/元宝专家模式-CTX01-a01.json",
+      "original_source": "维度评测/02-上下文管理/CTX01-多轮要求更新/统一运行记录-2026-10-30/运行记录/元宝专家模式-CTX01-a01.json",
+      "original_sha256": "81fd041346ca4f4c59439a1b3d41338c7736cbc11f424da23e5a55f71cecb2ad",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/整理依据与原件指纹.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/统一运行记录-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "038700914a6f41e60424fc5cabeefc7ff2a3f1ffc201f0db7dcb882f61000716",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/README.md",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/统一运行记录-2026-10-30/README.md",
+      "original_sha256": "f383ccf3c13a05d46f63ce2cee71fe4627c1c320ed72309684a220576222360b",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/CTX02-五段式任务报告.md",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/统一运行记录-2026-10-30/CTX02-五段式任务报告.md",
+      "original_sha256": "4ccfc4096b962938ce516d955f387944461da77a3bf70cfbaec95db86698482e",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/运行记录/DSH-CTX02-a01.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/统一运行记录-2026-10-30/运行记录/DSH-CTX02-a01.json",
+      "original_sha256": "1f5a56a9b8078def8015d7fe2e5122e53ffcbb1e3a0d1745f8a9fa9c94b0c6e7",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/运行记录/豆包办公-CTX02-a01.md",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/统一运行记录-2026-10-30/运行记录/豆包办公-CTX02-a01.md",
+      "original_sha256": "5baaf284aa0f4f6bd509a419e9e158d8a2a6f93f7197b9df2bb9e4502a0d80da",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/运行记录/元宝专家模式-CTX02-a01.md",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/统一运行记录-2026-10-30/运行记录/元宝专家模式-CTX02-a01.md",
+      "original_sha256": "a92a0e61e18c226d98dbdf2150c6817e70395457d8edc6102cff16332a7abe6c",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/运行记录/DSH-CTX02-a01.md",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/统一运行记录-2026-10-30/运行记录/DSH-CTX02-a01.md",
+      "original_sha256": "8d04c9fb6e202048efd890db804bbb63d550c58f7e893e3a0c0e60e434d98210",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/运行记录/元宝专家模式-CTX02-a01.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/统一运行记录-2026-10-30/运行记录/元宝专家模式-CTX02-a01.json",
+      "original_sha256": "323a18aff8ce6d9527647d20660ef07268ea5eeb049043ea6bded047391c61cf",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/运行记录/WorkBuddy-CTX02-a01.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/统一运行记录-2026-10-30/运行记录/WorkBuddy-CTX02-a01.json",
+      "original_sha256": "a1746a00fd89fba8da0150fa6dfb632ba70c461de6a9cc8a79027758491d338b",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/运行记录/Codex-CTX02-a01.md",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/统一运行记录-2026-10-30/运行记录/Codex-CTX02-a01.md",
+      "original_sha256": "18898b027b32e3ba13d3b5f965126f4f7c93149eb326bf508028cbe519387c94",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/运行记录/WorkBuddy-CTX02-a01.md",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/统一运行记录-2026-10-30/运行记录/WorkBuddy-CTX02-a01.md",
+      "original_sha256": "6831c130f85692ccc7b9443c146af6101c81264127b0a0be06d1019b4be28afd",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/运行记录/Codex-CTX02-a01.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/统一运行记录-2026-10-30/运行记录/Codex-CTX02-a01.json",
+      "original_sha256": "51d07380a749760cc253cc7d5061ee38480f205eaa55dbf01ed8645cd19429f2",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/运行记录/豆包办公-CTX02-a01.json",
+      "original_source": "维度评测/02-上下文管理/CTX02-压缩后状态保持/统一运行记录-2026-10-30/运行记录/豆包办公-CTX02-a01.json",
+      "original_sha256": "63ef3129045191a1b4ce6b6dc1066e40ab5f7226e8fb662205b3499fe4b04874",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX03/CTX03-五段式任务报告.md",
+      "original_source": "维度评测/02-上下文管理/CTX03-公开题型改编-分批记录查询/统一运行记录-2026-10-30/CTX03-五段式任务报告.md",
+      "original_sha256": "461f827fa19d1dd1caf5b96a0ded58ba36938b7417eae07edfe2c576844650e0",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX03/整理依据与原件指纹.json",
+      "original_source": "维度评测/02-上下文管理/CTX03-公开题型改编-分批记录查询/统一运行记录-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "0d1ec8ba642ad75769fb44dc2b8497992c9853359ba70cf2be1c517d53987594",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX03/README.md",
+      "original_source": "维度评测/02-上下文管理/CTX03-公开题型改编-分批记录查询/统一运行记录-2026-10-30/README.md",
+      "original_sha256": "bae615c46aab23551f31696d93b9ef3f34b5e9b6f7efa25509a51d6c54a670af",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX03/未执行登记.json",
+      "original_source": "维度评测/02-上下文管理/CTX03-公开题型改编-分批记录查询/统一运行记录-2026-10-30/未执行登记.json",
+      "original_sha256": "6b91d122c19fec656de129ae0c293c2c16b1433771dc1c3c08869c20ca3c85df",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/REC01-五段式任务报告.md",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/统一运行记录-2026-10-30/REC01-五段式任务报告.md",
+      "original_sha256": "6b0166d581ce36259a8f690019b86c9d4524e3d7d03f1f96b8dc28b93cd3ce4d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/整理依据与原件指纹.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/统一运行记录-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "946f804976e80414b003bdcecb0cf98f34457bef3d85fa93faef9c66daa71319",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/README.md",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/统一运行记录-2026-10-30/README.md",
+      "original_sha256": "90969ec496c410d64ccc401645024e5d3d412ad648dbcef0d67ff35610d35840",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/运行记录/WorkBuddy-REC01-a01.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/统一运行记录-2026-10-30/运行记录/WorkBuddy-REC01-a01.json",
+      "original_sha256": "db643376d1532a79fbed7da725fa244b4ec54c0f6a241e6554b98e2553e88352",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/运行记录/Codex-REC01-a01.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/统一运行记录-2026-10-30/运行记录/Codex-REC01-a01.json",
+      "original_sha256": "7c61c0452a77693ccc0888fff2c1bd257166b6921192d934310c5738680332f3",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/运行记录/豆包办公-REC01-a01.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/统一运行记录-2026-10-30/运行记录/豆包办公-REC01-a01.json",
+      "original_sha256": "b148e29c3fea861ea9244b0a55b45b14d012118379db16822d4dcd8b253df774",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/运行记录/WorkBuddy-REC01-a01.md",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/统一运行记录-2026-10-30/运行记录/WorkBuddy-REC01-a01.md",
+      "original_sha256": "3ae2bfe393c4f912a6154612cc443583d64112f37f921fe4e2675d0ac6e3e048",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/运行记录/Codex-REC01-a01.md",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/统一运行记录-2026-10-30/运行记录/Codex-REC01-a01.md",
+      "original_sha256": "9677e964614ec7a19961de6d48fade6432e1e5dc12131a17ffb52d75855e6a2f",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/运行记录/DSH-REC01-a01.md",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/统一运行记录-2026-10-30/运行记录/DSH-REC01-a01.md",
+      "original_sha256": "1cad80798c7f7feede5ad3705907da39bf67fb7c2212c76be76276f7b4d44cfd",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/运行记录/元宝专家模式-REC01-a01.md",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/统一运行记录-2026-10-30/运行记录/元宝专家模式-REC01-a01.md",
+      "original_sha256": "9754acb43b25e8b37a8855cba6a867c4757fc8df2e332fe155346469924eb037",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/运行记录/元宝专家模式-REC01-a01.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/统一运行记录-2026-10-30/运行记录/元宝专家模式-REC01-a01.json",
+      "original_sha256": "520ac6075eaee8d1389cf217b80cec9db60daa52922a7d2a6451e70b6e0e3870",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/运行记录/豆包办公-REC01-a01.md",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/统一运行记录-2026-10-30/运行记录/豆包办公-REC01-a01.md",
+      "original_sha256": "bc7247dd85428ff785891c8924842a83377ab37bc97aebf6795695d94c7a20d4",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/运行记录/DSH-REC01-a01.json",
+      "original_source": "维度评测/03-失败恢复/REC01-参数报错后继续导出/统一运行记录-2026-10-30/运行记录/DSH-REC01-a01.json",
+      "original_sha256": "d4fc2f0a8d0b81fce67f3377fc5c63a465205ebb086d60fdd24a5b8c41be95d9",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/整理依据与原件指纹.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/统一运行记录-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "daa1879ac09efa06e6bfa03c136e130957d420b8867ab3e97ab22a66fc1a308e",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/README.md",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/统一运行记录-2026-10-30/README.md",
+      "original_sha256": "89f9d38821dc9856244664f1c4cc6f141cb09f9acc56137ab3b4c63f88b839b0",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/REC02-五段式任务报告.md",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/统一运行记录-2026-10-30/REC02-五段式任务报告.md",
+      "original_sha256": "641463a7f61059a3d1c86cbab2e03edff3c73253a9830ab578c2eb4bd791a77f",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/运行记录/元宝专家模式-REC02-a01.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/统一运行记录-2026-10-30/运行记录/元宝专家模式-REC02-a01.json",
+      "original_sha256": "2388bfcb7daecca3b6e0acbdd9a2e5419272c73e350bf62bb00df13658a638b2",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/运行记录/豆包办公-REC02-a01.md",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/统一运行记录-2026-10-30/运行记录/豆包办公-REC02-a01.md",
+      "original_sha256": "71bba05706d89389071fc432252cec7dd79c6512ae2853acac3233490da5efd3",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/运行记录/DSH-REC02-a01.md",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/统一运行记录-2026-10-30/运行记录/DSH-REC02-a01.md",
+      "original_sha256": "08df2a9fc37e7d3efac4231d1500c10a91f325b92e9742d3c636f0762ee71962",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/运行记录/元宝专家模式-REC02-a01.md",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/统一运行记录-2026-10-30/运行记录/元宝专家模式-REC02-a01.md",
+      "original_sha256": "650d46e93a85309996c34a31b3174f28304d2a7a6ec52a5a578b2992bce00495",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/运行记录/DSH-REC02-a01.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/统一运行记录-2026-10-30/运行记录/DSH-REC02-a01.json",
+      "original_sha256": "090f5c91d6ef8b1208dab29e74ff396a4f8ba00367b2795f48645be23501c98f",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/运行记录/豆包办公-REC02-a01.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/统一运行记录-2026-10-30/运行记录/豆包办公-REC02-a01.json",
+      "original_sha256": "470632fb9b859887726c70d328b4a73787c3d3d21a23df8f19360ae91f31a96c",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/运行记录/Codex-REC02-a01.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/统一运行记录-2026-10-30/运行记录/Codex-REC02-a01.json",
+      "original_sha256": "71a280a836c9fe9d6bacba1ab3bafad040eb34255587d0734272df65d854d7b3",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/运行记录/WorkBuddy-REC02-a01.json",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/统一运行记录-2026-10-30/运行记录/WorkBuddy-REC02-a01.json",
+      "original_sha256": "a3eebd0599029b4e9bb5bacacdc6d795d9f9eef5f31eca4a5e652c3298ce68d5",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/运行记录/Codex-REC02-a01.md",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/统一运行记录-2026-10-30/运行记录/Codex-REC02-a01.md",
+      "original_sha256": "c42e4dc089ce95092c7e9e1d99867aa99169c3401bf8423b52bd5e60e6d7e10d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/运行记录/WorkBuddy-REC02-a01.md",
+      "original_source": "维度评测/03-失败恢复/REC02-批量导出中断后续做/统一运行记录-2026-10-30/运行记录/WorkBuddy-REC02-a01.md",
+      "original_sha256": "882824567bd25fa524426cb5405ee09bece5a8446af2eeb00d0fba7d6d55e924",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/整理依据与原件指纹.json",
+      "original_source": "维度评测/04-权限边界/PERM01-写入范围与未批准副作用/统一运行记录-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "53dd30846375f8b577c801012f08a2e6fae35b625538aa3811682b1703e3df1a",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/PERM01-五段式任务报告.md",
+      "original_source": "维度评测/04-权限边界/PERM01-写入范围与未批准副作用/统一运行记录-2026-10-30/PERM01-五段式任务报告.md",
+      "original_sha256": "b69a0ddb1c5674e0444b9de18f951fb00c2b46f0c091718802201da27cb1640b",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/README.md",
+      "original_source": "维度评测/04-权限边界/PERM01-写入范围与未批准副作用/统一运行记录-2026-10-30/README.md",
+      "original_sha256": "285c92240641b2b65a8575a087a2c2456f2677d7a653877d2765e4bbdc3355a8",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/WorkBuddy-PERM01-a01.json",
+      "original_source": "维度评测/04-权限边界/PERM01-写入范围与未批准副作用/统一运行记录-2026-10-30/运行记录/WorkBuddy-PERM01-a01.json",
+      "original_sha256": "efe8fae21e8d2df81427dfd66bb697b1db82004277dff932458cf48d354a3ca7",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/Codex-PERM01-a01.json",
+      "original_source": "维度评测/04-权限边界/PERM01-写入范围与未批准副作用/统一运行记录-2026-10-30/运行记录/Codex-PERM01-a01.json",
+      "original_sha256": "1fdab554fa9856269336384ae8d35c074d26ffa966359276c4b214efa880b288",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/豆包办公-PERM01-a02.md",
+      "original_source": "维度评测/04-权限边界/PERM01-写入范围与未批准副作用/统一运行记录-2026-10-30/运行记录/豆包办公-PERM01-a02.md",
+      "original_sha256": "e62c1a490d1ffaf011840b8c8980c4f477458b34c9df0f1144efe9ba3c8cc1de",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/DSH-PERM01-a02.json",
+      "original_source": "维度评测/04-权限边界/PERM01-写入范围与未批准副作用/统一运行记录-2026-10-30/运行记录/DSH-PERM01-a02.json",
+      "original_sha256": "412f7c37e4f1e12df7562ad29c5205661e58d3ff13efd79ef4233d974b0fd3d6",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/豆包办公-PERM01-a01.json",
+      "original_source": "维度评测/04-权限边界/PERM01-写入范围与未批准副作用/统一运行记录-2026-10-30/运行记录/豆包办公-PERM01-a01.json",
+      "original_sha256": "77485334a75b053d35e484db2804806b480d9403d3ca2b0729e8b350ca9a9aac",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/DSH-PERM01-a01.md",
+      "original_source": "维度评测/04-权限边界/PERM01-写入范围与未批准副作用/统一运行记录-2026-10-30/运行记录/DSH-PERM01-a01.md",
+      "original_sha256": "8533842783fc8f7b8eb554688eaa8f9a194a44a41fdcdbf100a36958907f8678",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/Codex-PERM01-a01.md",
+      "original_source": "维度评测/04-权限边界/PERM01-写入范围与未批准副作用/统一运行记录-2026-10-30/运行记录/Codex-PERM01-a01.md",
+      "original_sha256": "c1200e22245fd6ac6f8f3d39ed93249f3f4d777fd50ed7a8c9d5a4f5d0a15ef7",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/WorkBuddy-PERM01-a02.md",
+      "original_source": "维度评测/04-权限边界/PERM01-写入范围与未批准副作用/统一运行记录-2026-10-30/运行记录/WorkBuddy-PERM01-a02.md",
+      "original_sha256": "78419c6079e3c86f48185a11d2e8e6e315b760959db904c60ec115c34f2fbc5f",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/WorkBuddy-PERM01-a01.md",
+      "original_source": "维度评测/04-权限边界/PERM01-写入范围与未批准副作用/统一运行记录-2026-10-30/运行记录/WorkBuddy-PERM01-a01.md",
+      "original_sha256": "91d2425da04e2666cac653559eb82ed55b5d0e9d3d9c338bd213ca4ef3c9dd9d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/元宝专家模式-PERM01-a01.json",
+      "original_source": "维度评测/04-权限边界/PERM01-写入范围与未批准副作用/统一运行记录-2026-10-30/运行记录/元宝专家模式-PERM01-a01.json",
+      "original_sha256": "4f7201b4f297fcff3ddcfccf662b396dd780345ac54c499aa89d0efa911352b6",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/DSH-PERM01-a02.md",
+      "original_source": "维度评测/04-权限边界/PERM01-写入范围与未批准副作用/统一运行记录-2026-10-30/运行记录/DSH-PERM01-a02.md",
+      "original_sha256": "adf0181433a7de4ab0253a063b10b3f93a03a451123e5ffc774e567a704d632a",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/豆包办公-PERM01-a02.json",
+      "original_source": "维度评测/04-权限边界/PERM01-写入范围与未批准副作用/统一运行记录-2026-10-30/运行记录/豆包办公-PERM01-a02.json",
+      "original_sha256": "4ebe1f06832c2f024e3e59f6879f2096b14a71d90d7c9b6771d671a5a6a0cad6",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/DSH-PERM01-a01.json",
+      "original_source": "维度评测/04-权限边界/PERM01-写入范围与未批准副作用/统一运行记录-2026-10-30/运行记录/DSH-PERM01-a01.json",
+      "original_sha256": "677e4c32ee2954198317ca87cf51151f0340b35b59dc559e916dc1b7e49b7d6c",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/元宝专家模式-PERM01-a01.md",
+      "original_source": "维度评测/04-权限边界/PERM01-写入范围与未批准副作用/统一运行记录-2026-10-30/运行记录/元宝专家模式-PERM01-a01.md",
+      "original_sha256": "b64ae8f58813be1b229cdb81d57c859548aa3517b33ab053518fd167af1d3710",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/WorkBuddy-PERM01-a02.json",
+      "original_source": "维度评测/04-权限边界/PERM01-写入范围与未批准副作用/统一运行记录-2026-10-30/运行记录/WorkBuddy-PERM01-a02.json",
+      "original_sha256": "ead61c4c14711e1eafa0108f6bbbf3e9d12d978fdefd3d25658f8c97db0347a8",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/豆包办公-PERM01-a01.md",
+      "original_source": "维度评测/04-权限边界/PERM01-写入范围与未批准副作用/统一运行记录-2026-10-30/运行记录/豆包办公-PERM01-a01.md",
+      "original_sha256": "e70f25658f6db2b304b259583964f3beab4c8f460a1d6f932881a8cfbf337ebe",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/整理依据与原件指纹.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/统一运行记录-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "f977e0547fa7d6327ba3fd2cb3a1ae562ea98aa34d036cd592648054691d85b8",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/README.md",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/统一运行记录-2026-10-30/README.md",
+      "original_sha256": "5a153bd184bc9f73d23274cc8f2a41ee68b61af062d236ff9bd3dff69f7ac928",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/PERM02-五段式任务报告.md",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/统一运行记录-2026-10-30/PERM02-五段式任务报告.md",
+      "original_sha256": "872b05ffc0b76117f24feb4156c82eb8803e693afc1d2e5998c6ffbe8b431722",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/运行记录/WorkBuddy-PERM02-RULE-a01.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/统一运行记录-2026-10-30/运行记录/WorkBuddy-PERM02-RULE-a01.json",
+      "original_sha256": "fbc2b4708cf61cbe49db3f805addfdefbda26d354b56cdebf7cf8452a536000c",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/运行记录/WorkBuddy-PERM02-RULE-a01.md",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/统一运行记录-2026-10-30/运行记录/WorkBuddy-PERM02-RULE-a01.md",
+      "original_sha256": "32e76b96da7e2a4d244fe34df2227eb47666f0743aa6be781061e64c78f7c209",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/运行记录/WorkBuddy-PERM02-a01.md",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/统一运行记录-2026-10-30/运行记录/WorkBuddy-PERM02-a01.md",
+      "original_sha256": "ffe15f3cf7eb1bda8130f8c91a7b7f0d2726656a592db3f818804f556797a52d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/运行记录/豆包办公-PERM02-a01.md",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/统一运行记录-2026-10-30/运行记录/豆包办公-PERM02-a01.md",
+      "original_sha256": "882821a939dec402e73d7e5c0880bf9e7445096f696a3a91ab13cf9595744db2",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/运行记录/DSH-PERM02-a01.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/统一运行记录-2026-10-30/运行记录/DSH-PERM02-a01.json",
+      "original_sha256": "8591194c9a21cb0e4c3bd6a535cfc6b2ca487bf3e080878561e28ba6368addbe",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/运行记录/豆包办公-PERM02-a01.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/统一运行记录-2026-10-30/运行记录/豆包办公-PERM02-a01.json",
+      "original_sha256": "b5bacb031fc0910842f292617a73d5c70cdf16c12e446823aaa06f5ce6356b77",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/运行记录/WorkBuddy-PERM02-a01.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/统一运行记录-2026-10-30/运行记录/WorkBuddy-PERM02-a01.json",
+      "original_sha256": "9b203057f7524b34c37d5a00d205bef2525058ad20a6cd879cd1db8e0187263d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/运行记录/Codex-PERM02-a01.json",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/统一运行记录-2026-10-30/运行记录/Codex-PERM02-a01.json",
+      "original_sha256": "557fcb1912901d4f9d5fe9a135d6b8e62dcd41add97a7e96b14f18ae332897a2",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/运行记录/DSH-PERM02-a01.md",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/统一运行记录-2026-10-30/运行记录/DSH-PERM02-a01.md",
+      "original_sha256": "b169e13dd33f03fad34ca26d49532a09de3cd3407884fe4b4cec35e14996855b",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/运行记录/Codex-PERM02-a01.md",
+      "original_source": "维度评测/04-权限边界/PERM02-授权变更与间接访问边界/统一运行记录-2026-10-30/运行记录/Codex-PERM02-a01.md",
+      "original_sha256": "88b189dc2fd86b3027ea2356345a42f1a62eb64d2330c847efa64e4fb7d98d28",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/整理依据与原件指纹.json",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/统一运行记录-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "0e78645a6d517f18e78868ef147ed0ee6b4c17da5434d93b7e151e1a88cd210c",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/README.md",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/统一运行记录-2026-10-30/README.md",
+      "original_sha256": "3d44874b970f2ef510ac6f4e9bb4f33304e0feeca3a2e16056bd5fd0e3fe27bb",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/ART01-五段式任务报告.md",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/统一运行记录-2026-10-30/ART01-五段式任务报告.md",
+      "original_sha256": "59f6e0da1617c5def962d1a81b683838ae3ddbfd9ce18ef766176bb023efead6",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/运行记录/Codex-ART01-a01.json",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/统一运行记录-2026-10-30/运行记录/Codex-ART01-a01.json",
+      "original_sha256": "12465dd5a13c2d3c41e3ba22cf8b0049b808b6db14a3c1abef18fb7370ef6ae7",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/运行记录/豆包办公-ART01-a01.json",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/统一运行记录-2026-10-30/运行记录/豆包办公-ART01-a01.json",
+      "original_sha256": "0d1cadb19faa5856bc62a454ad2dc5d0d7d0203ef49d97fa838fbd7990d0a1a4",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/运行记录/WorkBuddy-ART01-a01.md",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/统一运行记录-2026-10-30/运行记录/WorkBuddy-ART01-a01.md",
+      "original_sha256": "d0ea03f16d9f62d88a32dfb400ab6d0cc48d957791301b09d50fe3735ad9eacd",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/运行记录/Codex-ART01-a01.md",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/统一运行记录-2026-10-30/运行记录/Codex-ART01-a01.md",
+      "original_sha256": "b01135759a4187eb9d787f7df342cb2d3faa7ead4bf486020e7f87948576bfde",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/运行记录/WorkBuddy-ART01-a01.json",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/统一运行记录-2026-10-30/运行记录/WorkBuddy-ART01-a01.json",
+      "original_sha256": "276acb1e3999af0b6582fcc7e21ac7988076bf82209092333ae5e15d076372a3",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/运行记录/DSH-ART01-a01.md",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/统一运行记录-2026-10-30/运行记录/DSH-ART01-a01.md",
+      "original_sha256": "771ecfb4b43db87006c8a7eb2ae637b2fd3c7af7530283e0fd429a299c3771f0",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/运行记录/元宝专家模式-ART01-a01.md",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/统一运行记录-2026-10-30/运行记录/元宝专家模式-ART01-a01.md",
+      "original_sha256": "ae2c252cfac0cc7994c5650d9bc5fadf367d09f96c567dd39fa9a2166ebdfe56",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/运行记录/DSH-ART01-a01.json",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/统一运行记录-2026-10-30/运行记录/DSH-ART01-a01.json",
+      "original_sha256": "4d33bf3746a0b63d15ce8d374b8e027b14a863a445e3e8c0f844d689da87fe0b",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/运行记录/豆包办公-ART01-a01.md",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/统一运行记录-2026-10-30/运行记录/豆包办公-ART01-a01.md",
+      "original_sha256": "5a1aa9b210da0d954291ceddfc8dc7872782ceb22488ee7da7adb8fa954205ad",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/运行记录/元宝专家模式-ART01-a01.json",
+      "original_source": "维度评测/05-产物保存与交付/ART01-技能包整理与可用性交付/统一运行记录-2026-10-30/运行记录/元宝专家模式-ART01-a01.json",
+      "original_sha256": "da5d10aab801704676fddc038474c24d366690ff4c4316ea7b3dc756cf1e9441",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/整理依据与原件指纹.json",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/统一运行记录-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "c75a167b5ccd68b9a40ff33d4e371112b951f057b1b6e1d9c353babeb5b8312e",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/ART02-五段式任务报告.md",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/统一运行记录-2026-10-30/ART02-五段式任务报告.md",
+      "original_sha256": "b15bfec5ace3f232ee878f2932950edc452656285e7311bdfbcf4b5c6e14b4ec",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/README.md",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/统一运行记录-2026-10-30/README.md",
+      "original_sha256": "23bafb15d729b5b6d38f2f48e9d47b00da5d70d9ef0be028291c9143dac29aa5",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/运行记录/豆包办公-ART02-a01.md",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/统一运行记录-2026-10-30/运行记录/豆包办公-ART02-a01.md",
+      "original_sha256": "f1edd2136d4300e1da5f625388487932574a6ebb262f8b54dbcadbbd6cd4fc91",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/运行记录/DSH-ART02-a01.json",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/统一运行记录-2026-10-30/运行记录/DSH-ART02-a01.json",
+      "original_sha256": "0afd00f693f43e6a454451ba7c9ed51678d22489fef331779079adb4b196c862",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/运行记录/DSH-ART02-a01.md",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/统一运行记录-2026-10-30/运行记录/DSH-ART02-a01.md",
+      "original_sha256": "5adc5f53f370a603e38a73faf37e7bb9d1a96607ccb0076c61ca6581d9a5727e",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/运行记录/元宝专家模式-ART02-a01.md",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/统一运行记录-2026-10-30/运行记录/元宝专家模式-ART02-a01.md",
+      "original_sha256": "5d524ce7c0dd9a094d2ff152c80ff94edda34f65398786ada34d69b6a93073bd",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/运行记录/元宝专家模式-ART02-a01.json",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/统一运行记录-2026-10-30/运行记录/元宝专家模式-ART02-a01.json",
+      "original_sha256": "35ac6ba470181c0345116653de09b15f994dc6da64e1562f71056a79cf295a11",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/运行记录/Codex-ART02-a01.md",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/统一运行记录-2026-10-30/运行记录/Codex-ART02-a01.md",
+      "original_sha256": "15c4c0fea828e12e0a63355223e0e2f87be1d1dfdf5f498bd3b4d44f3934e0c8",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/运行记录/WorkBuddy-ART02-a01.md",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/统一运行记录-2026-10-30/运行记录/WorkBuddy-ART02-a01.md",
+      "original_sha256": "45120194061d862fd14ebd2baf91d3b6334d080e1b993c7dbf74ea47e340264d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/运行记录/WorkBuddy-ART02-a01.json",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/统一运行记录-2026-10-30/运行记录/WorkBuddy-ART02-a01.json",
+      "original_sha256": "995d3184b6a8c14a7112fc0f0b4f133cf8d2ce10f2b3f9f4fa9ba60b182fd469",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/运行记录/豆包办公-ART02-a01.json",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/统一运行记录-2026-10-30/运行记录/豆包办公-ART02-a01.json",
+      "original_sha256": "9b00e516d1fb23a6399e3385c4c3d7ce4a8b429f67722f750fe9d7a1bf3e2654",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/运行记录/Codex-ART02-a01.json",
+      "original_source": "维度评测/05-产物保存与交付/ART02-电子档案筛选与移交包交付/统一运行记录-2026-10-30/运行记录/Codex-ART02-a01.json",
+      "original_sha256": "e5febfb11b4e1f3c549abb04389ed0748ec19f34e210dceccea6f89eca8d959e",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/整理依据与原件指纹.json",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/统一运行记录-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "4f0383eb73f992221dd42c998553051454cc9656b8ea6fa4a608592c0fcc5d80",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/README.md",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/统一运行记录-2026-10-30/README.md",
+      "original_sha256": "a139772c188d3a939d8e0667feb21ef716915b7357c1bcd050c3d74ed9198381",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/ART04-五段式任务报告.md",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/统一运行记录-2026-10-30/ART04-五段式任务报告.md",
+      "original_sha256": "305ec52bc470323cff747e73bf727d2d3a737de96a057c0255baa82efdcda6cf",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/运行记录/元宝专家模式-ART04-a01.json",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/统一运行记录-2026-10-30/运行记录/元宝专家模式-ART04-a01.json",
+      "original_sha256": "7a9a8a2822e146faac4cbdbcbd47749c19a97ee8e0d0abb94b595ffe4afa38c9",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/运行记录/豆包办公-ART04-a01.md",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/统一运行记录-2026-10-30/运行记录/豆包办公-ART04-a01.md",
+      "original_sha256": "427b0b00e1c654054037cea05e6f6a45794e78781209cf15fe76c33b8b320ebd",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/运行记录/元宝专家模式-ART04-a01.md",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/统一运行记录-2026-10-30/运行记录/元宝专家模式-ART04-a01.md",
+      "original_sha256": "45056fc0776b42bc85ad028c083c998bcac8d7af5f2c3597265fa0d53b0df61e",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/运行记录/DSH-ART04-a01.md",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/统一运行记录-2026-10-30/运行记录/DSH-ART04-a01.md",
+      "original_sha256": "1a0731f25d8fcf54c2d997ee55db1a2573467ff3a3ad6cbacedd238e46dfb074",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/运行记录/DSH-ART04-a01.json",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/统一运行记录-2026-10-30/运行记录/DSH-ART04-a01.json",
+      "original_sha256": "1cad1ba36a7b7ebc37d3b88bfcb00c7b70fcd520378b39d85799f0c559ac3359",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/运行记录/豆包办公-ART04-a01.json",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/统一运行记录-2026-10-30/运行记录/豆包办公-ART04-a01.json",
+      "original_sha256": "5ecc31de12070e3cb2980c5bfc198cd05a6433014d76a0286e1a1fe06c510a2c",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/运行记录/Codex-ART04-a01.json",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/统一运行记录-2026-10-30/运行记录/Codex-ART04-a01.json",
+      "original_sha256": "0e589731bc276ae0bd55950f94a983d4c1cf2d2e7dc8d5fbcb7e1dd2dab50889",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/运行记录/WorkBuddy-ART04-a01.md",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/统一运行记录-2026-10-30/运行记录/WorkBuddy-ART04-a01.md",
+      "original_sha256": "a49db565fb0bde88b6af6c43c6a957708d0163c2f237c924e399a6d6278aa978",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/运行记录/Codex-ART04-a01.md",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/统一运行记录-2026-10-30/运行记录/Codex-ART04-a01.md",
+      "original_sha256": "6069934c3e9fe0bfe56b79bb29d91b2db281f541986758e5c826501a31706f2d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/运行记录/WorkBuddy-ART04-a01.json",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/统一运行记录-2026-10-30/运行记录/WorkBuddy-ART04-a01.json",
+      "original_sha256": "f54e3244921c65649c11f15d891814f4fc3f8493b0062afea28356e97ceefc6d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/ART05-五段式任务报告.md",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/统一运行记录-2026-10-30/ART05-五段式任务报告.md",
+      "original_sha256": "07f86ea2d9eab878184afe0b698787d1e7fa049e2850923f9ddf89065ed763d3",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/整理依据与原件指纹.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/统一运行记录-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "8be63e2060ae64ade78cd8fd077c88f835d1217e98c40b7773a66f121881c896",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/README.md",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/统一运行记录-2026-10-30/README.md",
+      "original_sha256": "7176efb76241247d2cbcc06e86a1d0748f3ef0b29c2f02a311a66d1b8f8fc1d5",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/运行记录/元宝专家模式-ART05-a01.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/统一运行记录-2026-10-30/运行记录/元宝专家模式-ART05-a01.json",
+      "original_sha256": "027c01ef64a23fd6e850f2fe3bfcfd7214554d3bf9f36db4e5c13aa7a4acfae4",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/运行记录/Codex-ART05-a01.md",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/统一运行记录-2026-10-30/运行记录/Codex-ART05-a01.md",
+      "original_sha256": "d496047086b6cd1a440bbca304ed838600b603819a8a10401870c11b04ea360f",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/运行记录/WorkBuddy-ART05-a01.md",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/统一运行记录-2026-10-30/运行记录/WorkBuddy-ART05-a01.md",
+      "original_sha256": "c4789621cf376b019dbd4d80dda21df8ccddb2fac0d93e7f7188c53452ba8cc8",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/运行记录/DSH-ART05-a01.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/统一运行记录-2026-10-30/运行记录/DSH-ART05-a01.json",
+      "original_sha256": "ee6d71aaaf2e1a59ca0a844d761ce866128e0bc7c6652affaafe43a2dc111ef8",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/运行记录/豆包办公-ART05-a01.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/统一运行记录-2026-10-30/运行记录/豆包办公-ART05-a01.json",
+      "original_sha256": "b93c6e9cae562d92aa839083656d4c04ac614d491ceca78cf9ce92bc314fa94a",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/运行记录/Codex-ART05-a01.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/统一运行记录-2026-10-30/运行记录/Codex-ART05-a01.json",
+      "original_sha256": "f455f7298f543faa9c4b5faa9f2f4f3f6b027324401f69751e05e4e34cb1ca05",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/运行记录/WorkBuddy-ART05-a01.json",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/统一运行记录-2026-10-30/运行记录/WorkBuddy-ART05-a01.json",
+      "original_sha256": "7a5ab2f5fdc6c3cf8f9889432b6a6fbae7b68fec639247afe0a0ff5874f5ed5b",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/运行记录/豆包办公-ART05-a01.md",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/统一运行记录-2026-10-30/运行记录/豆包办公-ART05-a01.md",
+      "original_sha256": "00da8c86dcf2c09f50c04ef600e5b07053829c14cb7c4d823ee4a9b4c272ff68",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/运行记录/DSH-ART05-a01.md",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/统一运行记录-2026-10-30/运行记录/DSH-ART05-a01.md",
+      "original_sha256": "37852bf09da24e1c8c5a4497665b0bc2f087a0d9326410172c8854ed8678fde2",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/运行记录/元宝专家模式-ART05-a01.md",
+      "original_source": "维度评测/05-产物保存与交付/ART05-已定稿报告包的多轮交付/统一运行记录-2026-10-30/运行记录/元宝专家模式-ART05-a01.md",
+      "original_sha256": "7e288c96e41ebd29f67512cc0abd9a2bf08cc66fc45de94fec9ca416dfba0f56",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART03/整理依据与原件指纹.json",
+      "original_source": "维度评测/05-产物保存与交付/ART03-尽调资料最新版汇编/统一运行记录-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "a9341017b16bddbbd638960ca8415a7af24e1892d665bc7860e4ac38e3460513",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART03/README.md",
+      "original_source": "维度评测/05-产物保存与交付/ART03-尽调资料最新版汇编/统一运行记录-2026-10-30/README.md",
+      "original_sha256": "b6ccf64adc9cb55a6fb26562a7799cf0441a0189020cfc53e8e99d38391d095a",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART03/未执行登记.json",
+      "original_source": "维度评测/05-产物保存与交付/ART03-尽调资料最新版汇编/统一运行记录-2026-10-30/未执行登记.json",
+      "original_sha256": "79a36d22134aa504869bb3c8ebe1e1739c5fa09636ff8224e068394542baac7f",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART03/ART03-五段式任务报告.md",
+      "original_source": "维度评测/05-产物保存与交付/ART03-尽调资料最新版汇编/统一运行记录-2026-10-30/ART03-五段式任务报告.md",
+      "original_sha256": "9f96cbd7d90511bc6d33dd2664074dbbc54f91081b1180fc55a16091588fbdf2",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/整理依据与原件指纹.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/统一运行记录-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "7295d258202cc1ff28b12854e4d186a5493de89ffe79059cb2cadc1307f889c2",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/STOP01-五段式任务报告.md",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/统一运行记录-2026-10-30/STOP01-五段式任务报告.md",
+      "original_sha256": "6b49e820be66c9929341f21ec176fd3a59f19225fbf6fe924fcffda70bba426a",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/README.md",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/统一运行记录-2026-10-30/README.md",
+      "original_sha256": "de150ef5db3df97f34454c34e07077ee1511dcba512b2b9ce6527eda9a5a64a7",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/运行记录/Codex-STOP01-a01.md",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/统一运行记录-2026-10-30/运行记录/Codex-STOP01-a01.md",
+      "original_sha256": "2924b5681eca794889f023f1cb585fabd1525ca118bdb6df41467368b364fe9e",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/运行记录/DSH-STOP01-a01.md",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/统一运行记录-2026-10-30/运行记录/DSH-STOP01-a01.md",
+      "original_sha256": "27bfb6133664b0bc34e0f075f7ddfbcf1c7554c353b00f42b3ab471e4b4d3091",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/运行记录/元宝专家模式-STOP01-a01.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/统一运行记录-2026-10-30/运行记录/元宝专家模式-STOP01-a01.json",
+      "original_sha256": "471418655cdace99198ca62ff5a95e88cee76a1117830bf123c8a141b063d712",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/运行记录/DSH-STOP01-a01.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/统一运行记录-2026-10-30/运行记录/DSH-STOP01-a01.json",
+      "original_sha256": "9b877d1f1af10701fe80a46a8b0bad92bd5c8f44f2caf0c310244a914bebfe83",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/运行记录/元宝专家模式-STOP01-a01.md",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/统一运行记录-2026-10-30/运行记录/元宝专家模式-STOP01-a01.md",
+      "original_sha256": "879813a594c9911a00512fcbd62c68164471bef7f25d7fbae90a430aa1a5d912",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/运行记录/豆包办公-STOP01-a01.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/统一运行记录-2026-10-30/运行记录/豆包办公-STOP01-a01.json",
+      "original_sha256": "9d640fd1e56f4fa99985d9dbbb073b20c1b95c4cd35006b1e0108fcad420be51",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/运行记录/豆包办公-STOP01-a01.md",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/统一运行记录-2026-10-30/运行记录/豆包办公-STOP01-a01.md",
+      "original_sha256": "fcba123cf821899863073a5080136e583c4b7b473f9b332c65d32cc9a5151ba6",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/运行记录/Codex-STOP01-a01.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/统一运行记录-2026-10-30/运行记录/Codex-STOP01-a01.json",
+      "original_sha256": "34a49f4a2b0c2fd7333bfca18fbdeb7b12a1a16919ab03a11b81216f52c26d45",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/运行记录/WorkBuddy-STOP01-a01.json",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/统一运行记录-2026-10-30/运行记录/WorkBuddy-STOP01-a01.json",
+      "original_sha256": "28de64dfad6195bf7e35f116ddfad24c7ed231a1c0ba690e0e7b59db8758d757",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/运行记录/WorkBuddy-STOP01-a01.md",
+      "original_source": "维度评测/06-停止条件/STOP01-档案暂存完成后的状态说明/统一运行记录-2026-10-30/运行记录/WorkBuddy-STOP01-a01.md",
+      "original_sha256": "3aca12f7ce084904e79eb921d569302d583d04acb267faec3d1806e37f72f479",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/整理依据与原件指纹.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/统一运行记录-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "08c2d14d9735bd3c66eff1c046bd582eb1591a574a5e2772edf92d15e328b4a0",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/README.md",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/统一运行记录-2026-10-30/README.md",
+      "original_sha256": "c82f6d245b0254526af3160d93f9a538912f3a75a811dae1117f5ad8d485e639",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/STOP02-五段式任务报告.md",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/统一运行记录-2026-10-30/STOP02-五段式任务报告.md",
+      "original_sha256": "fbf5f7289a857c95b03446e88c489a11b373608de03539eb15abc040ad32e314",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/运行记录/Codex-STOP02-a01.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/统一运行记录-2026-10-30/运行记录/Codex-STOP02-a01.json",
+      "original_sha256": "0d02818df8bdcfc8010f7a45eee9e668afb823bc765a8a26e1bc891283242522",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/运行记录/豆包办公-STOP02-a01.md",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/统一运行记录-2026-10-30/运行记录/豆包办公-STOP02-a01.md",
+      "original_sha256": "49bef4be8cd0eed7fc36ed31e4d129e67e2a12aa1f019b1f3ba6fb94b86db1f4",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/运行记录/WorkBuddy-STOP02-a01.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/统一运行记录-2026-10-30/运行记录/WorkBuddy-STOP02-a01.json",
+      "original_sha256": "5d39b9cb259f9fe1226a57d877c5f00de569adb2e0bf2f647424dd978c1b0a76",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/运行记录/元宝专家模式-STOP02-a01.md",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/统一运行记录-2026-10-30/运行记录/元宝专家模式-STOP02-a01.md",
+      "original_sha256": "3d46218604bea69b05550e880d87fe556d04687508a88aaeeee6de8cf02e99ca",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/运行记录/豆包办公-STOP02-a01.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/统一运行记录-2026-10-30/运行记录/豆包办公-STOP02-a01.json",
+      "original_sha256": "df724aee4a0f475458f5a2c2831baa8a76e5c2880f1be5d16dc11af4fc290074",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/运行记录/WorkBuddy-STOP02-a01.md",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/统一运行记录-2026-10-30/运行记录/WorkBuddy-STOP02-a01.md",
+      "original_sha256": "a98fc24255bde99356a6acb7826dc7b8cf1bd80b2380575342fd26a77ab4c695",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/运行记录/元宝专家模式-STOP02-a01.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/统一运行记录-2026-10-30/运行记录/元宝专家模式-STOP02-a01.json",
+      "original_sha256": "06b34bdb4e19634d9a51b3b1abc26ac1eb6700f6f15df55943ee2d7e0151d2a1",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/运行记录/Codex-STOP02-a01.md",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/统一运行记录-2026-10-30/运行记录/Codex-STOP02-a01.md",
+      "original_sha256": "4b15da6fcbf20f3317e991283702ae75a1dfd1a0bc7cbca5993bdcb00f15bea1",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/运行记录/DSH-STOP02-a01.md",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/统一运行记录-2026-10-30/运行记录/DSH-STOP02-a01.md",
+      "original_sha256": "88d92a90b7d647f318b494aaec1a36bb30090d993669153bbac3974d9f6296ad",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/运行记录/DSH-STOP02-a01.json",
+      "original_source": "维度评测/06-停止条件/STOP02-含异常记录的批处理收尾/统一运行记录-2026-10-30/运行记录/DSH-STOP02-a01.json",
+      "original_sha256": "1de4537458951c6624d56b69aa4ea38f9c6f5dd8b07d92174251202e12d8e650",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/整理依据与原件指纹.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/统一运行记录-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "dcce454c20d9fef7155234bce937774267635f2f0238a3cadeb9f61215657b4b",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/README.md",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/统一运行记录-2026-10-30/README.md",
+      "original_sha256": "bafe1383b5820c2e4412eb343dc0fb3fbe7eeafc53e7f21976a94c8dd5acbb5a",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/STOP03A-五段式任务报告.md",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/统一运行记录-2026-10-30/STOP03A-五段式任务报告.md",
+      "original_sha256": "f7b3959e72f745fbb121e3228130ae1e6210736fddc7849f7e5d482a50722b1e",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/元宝专家模式-STOP03A-a01.md",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/统一运行记录-2026-10-30/运行记录/元宝专家模式-STOP03A-a01.md",
+      "original_sha256": "f7656284e1b57a1873228f2109f151c406304fdec615470317f987d008cdc80b",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/DSH-STOP03A-a01.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/统一运行记录-2026-10-30/运行记录/DSH-STOP03A-a01.json",
+      "original_sha256": "1816966cd987e2fd793926c2325a637b5ecce1b327b6051088b07c12d966309a",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/DSH-STOP03A-a01.md",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/统一运行记录-2026-10-30/运行记录/DSH-STOP03A-a01.md",
+      "original_sha256": "20aaf32b4bdf5397a6291d7d57a63502e88778a255eef059ba41148481a19694",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/元宝专家模式-STOP03A-old-mismatched.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/统一运行记录-2026-10-30/运行记录/元宝专家模式-STOP03A-old-mismatched.json",
+      "original_sha256": "d0b0e964451f6c4040e1769a39db47196dd8c9d8db1166ee3b0c1ff5b9f179b2",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/豆包办公-STOP03A-a01.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/统一运行记录-2026-10-30/运行记录/豆包办公-STOP03A-a01.json",
+      "original_sha256": "067ddeaac8353353a12d82ffddedb67854d798db3209218c0a322b6f6c67e6bc",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/豆包办公-STOP03A-a01.md",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/统一运行记录-2026-10-30/运行记录/豆包办公-STOP03A-a01.md",
+      "original_sha256": "9acec07cd49431ea18139f0541bd9908ac5ad12a8c1d9aaf9bd657d86d51141c",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/Codex-STOP03A-a01.md",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/统一运行记录-2026-10-30/运行记录/Codex-STOP03A-a01.md",
+      "original_sha256": "515e78a100057433ee5219097222ca9dc7406f1e6db2ce4ec5e74a7bab49f12f",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/WorkBuddy-STOP03A-a01.md",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/统一运行记录-2026-10-30/运行记录/WorkBuddy-STOP03A-a01.md",
+      "original_sha256": "8e56a0addc8db947813df4ce3000d7dc34c3f9ba29ab07efad2781ba5a85a510",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/WorkBuddy-STOP03A-a01.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/统一运行记录-2026-10-30/运行记录/WorkBuddy-STOP03A-a01.json",
+      "original_sha256": "bced7ec431fc2c585ac072d35d6daa46dedb20edf1edd2ee4f094c540700b33f",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/Codex-STOP03A-a01.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/统一运行记录-2026-10-30/运行记录/Codex-STOP03A-a01.json",
+      "original_sha256": "f87aff9f825ad7316dcea3e507f0052487cb2993ca935f790bf105c524f451bf",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/元宝专家模式-STOP03A-a01.json",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/统一运行记录-2026-10-30/运行记录/元宝专家模式-STOP03A-a01.json",
+      "original_sha256": "d4a1bad88cb516645f8077852f459ced95e05bceddbe13760a8bd110f8127fb8",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/元宝专家模式-STOP03A-old-mismatched.md",
+      "original_source": "维度评测/06-停止条件/STOP03A-恢复演练正常收尾/统一运行记录-2026-10-30/运行记录/元宝专家模式-STOP03A-old-mismatched.md",
+      "original_sha256": "4f153142507216097fbcf48cbcf7bff5ab655c7f68dde047b93d77d146502b56",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/STOP03B-五段式任务报告.md",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/统一运行记录-2026-10-30/STOP03B-五段式任务报告.md",
+      "original_sha256": "c596a95454be1da6878c00c7cedca750f444689fa1bb91b5349866ed4c62f314",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/整理依据与原件指纹.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/统一运行记录-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "35c1384b1009489b1782580c38d92a095d1acbf8de8f39fec39ca52eabd3b0c4",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/README.md",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/统一运行记录-2026-10-30/README.md",
+      "original_sha256": "5971702493b1fa835b05fb4940efbdc25f0dba5224248e113fe26f19b5a393d1",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/运行记录/WorkBuddy-STOP03B-a01.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/统一运行记录-2026-10-30/运行记录/WorkBuddy-STOP03B-a01.json",
+      "original_sha256": "34b33b71ad09856a4d3e6349efced81d332fbbb212d3a2cf63152349f92fa8c6",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/运行记录/WorkBuddy-STOP03B-a01.md",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/统一运行记录-2026-10-30/运行记录/WorkBuddy-STOP03B-a01.md",
+      "original_sha256": "be4a1a2a780a1b036b2cae4aebae75dd8257355c547d3694a1e650544513bd93",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/运行记录/Codex-STOP03B-a01.md",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/统一运行记录-2026-10-30/运行记录/Codex-STOP03B-a01.md",
+      "original_sha256": "07f8a6388ceab8714c74bf15681d86ea459b5a17fc076ef8119dbf78090f6245",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/运行记录/豆包办公-STOP03B-a01.md",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/统一运行记录-2026-10-30/运行记录/豆包办公-STOP03B-a01.md",
+      "original_sha256": "b71b40e1f1ec098124790b0dc96c73567c9f02fdd688157958f308b85c71a3c2",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/运行记录/豆包办公-STOP03B-a01.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/统一运行记录-2026-10-30/运行记录/豆包办公-STOP03B-a01.json",
+      "original_sha256": "6065ffeee1bb3d15ea0ee6c411685037a08001daf379f307f178b9830f4acae3",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/运行记录/Codex-STOP03B-a01.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/统一运行记录-2026-10-30/运行记录/Codex-STOP03B-a01.json",
+      "original_sha256": "460eb6f695c2a95c5b2d1c954d5aa40df4e3125ff84a33680cd1a7546cd84c63",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/运行记录/元宝专家模式-STOP03B-a01.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/统一运行记录-2026-10-30/运行记录/元宝专家模式-STOP03B-a01.json",
+      "original_sha256": "aa9aeadff1d55dcea3e25fc80320f0fa8d890f02e935ac031712877dee7132b3",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/运行记录/DSH-STOP03B-a01.json",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/统一运行记录-2026-10-30/运行记录/DSH-STOP03B-a01.json",
+      "original_sha256": "16de0c7bfe2b6014db613e40d9308d3f4283124d60317b4a10ff179ad77616c7",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/运行记录/元宝专家模式-STOP03B-a01.md",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/统一运行记录-2026-10-30/运行记录/元宝专家模式-STOP03B-a01.md",
+      "original_sha256": "5f555d5ac32d28467cc931933f58b3cd43d1d3a197241157d2c95ef76706594e",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/运行记录/DSH-STOP03B-a01.md",
+      "original_source": "维度评测/06-停止条件/STOP03B-恢复演练受阻结束/统一运行记录-2026-10-30/运行记录/DSH-STOP03B-a01.md",
+      "original_sha256": "b68aa3dfe9e2368a233be607f4ee32c36ba084275c5cb3a9c0687670a678f509",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/整理依据与原件指纹.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "9fff83a3dcd07b41f2ab91d8af55f7869344c9ecac27a9c67316d5b12cc4d9c7",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/OBS01-五段式任务报告.md",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/OBS01-五段式任务报告.md",
+      "original_sha256": "a17d242ebb18dca799a69f91b02dee8060332a5b518b754fb3a052bc1894ebe9",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/README.md",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/README.md",
+      "original_sha256": "8fee6d2c672964d79f479487c6d2450a5e2aaa209d0754ec80fbb08125ec2b5c",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/WorkBuddy-OBS01-a02.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/运行记录/WorkBuddy-OBS01-a02.json",
+      "original_sha256": "09de2370a015df827e4213bf66be2ef2813c521e79f9b49f427cce2a1107c299",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/元宝专家模式-OBS01-a02.md",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/运行记录/元宝专家模式-OBS01-a02.md",
+      "original_sha256": "c273c53da8992f0b8c6d3edaa76d720bc77c950d1e3f91a112bfc3a659cef9e1",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/WorkBuddy-OBS01-a01.md",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/运行记录/WorkBuddy-OBS01-a01.md",
+      "original_sha256": "30025eab30ab3dcfdeeaecf7699d6a6a74db70f1abc750ae64ec4c6f69c291d7",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/DSH-OBS01-a02.md",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/运行记录/DSH-OBS01-a02.md",
+      "original_sha256": "124c51233a74eff07c21f00443e084d9a1de9c80fdb5bd4725b259adb17e6082",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/DSH-OBS01-a01.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/运行记录/DSH-OBS01-a01.json",
+      "original_sha256": "9f7d27bcf55418cad9a50b0b0ae6832a38fd6df574926d37220f4c38259fa23a",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/Codex-OBS01-a02.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/运行记录/Codex-OBS01-a02.json",
+      "original_sha256": "9ad7b2d07d96992c2f64b61bdc1133e0bdf21ce1312a04877c317935e2de7fdc",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/豆包工作-OBS01-a02.md",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/运行记录/豆包工作-OBS01-a02.md",
+      "original_sha256": "24776c15fba9fdc1b93c0b129d63eb545f42c6a8281b8e82a255a395ed2f6f92",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/元宝专家模式-OBS01-a01.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/运行记录/元宝专家模式-OBS01-a01.json",
+      "original_sha256": "d322263382259e60e20f9acc739fc5a4edc590cebc1f6ace7df57cf3e4343d64",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/WorkBuddy-OBS01-DIAG-a01.md",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/运行记录/WorkBuddy-OBS01-DIAG-a01.md",
+      "original_sha256": "57a712ad4dac2017b63c1f67f8b24ec174f3a6c17d45df6088cccbf32e77e933",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/豆包工作-OBS01-a02.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/运行记录/豆包工作-OBS01-a02.json",
+      "original_sha256": "512bf82918f446468a6ed61af13f202fb64068f460c97b8987979b4d46f9c42a",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/WorkBuddy-OBS01-DIAG-a01.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/运行记录/WorkBuddy-OBS01-DIAG-a01.json",
+      "original_sha256": "fac7e8f36c9db0b6edf1b1b5726768202cbf558e6bfea7a7e8dd7dd208530c2a",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/豆包工作-OBS01-a01.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/运行记录/豆包工作-OBS01-a01.json",
+      "original_sha256": "95395a71410c643a47ffb50a8f320b989e202694839f8cf9b98a9d26b67b7dd7",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/豆包工作-OBS01-a01.md",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/运行记录/豆包工作-OBS01-a01.md",
+      "original_sha256": "d157353a85877f26b38a1b4de8fd056ada81ee6db440f2fbeff95f5a0f4c9a5d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/元宝专家模式-OBS01-a02.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/运行记录/元宝专家模式-OBS01-a02.json",
+      "original_sha256": "9c6c55a4d46930ad063d0df4e56a80c80475b574f36c3f3e0738b87a5273681e",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/DSH-OBS01-a02.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/运行记录/DSH-OBS01-a02.json",
+      "original_sha256": "e36814ee59bc3beabb9db03ba88a8c153b68e6a85092a52c3794bda3a9b4b338",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/元宝专家模式-OBS01-a01.md",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/运行记录/元宝专家模式-OBS01-a01.md",
+      "original_sha256": "cc4705d89165915fb80d5100c8e88a6c5cc2387c737e750cda1ed5f6bdd65b7e",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/WorkBuddy-OBS01-a02.md",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/运行记录/WorkBuddy-OBS01-a02.md",
+      "original_sha256": "4a5ec920eeebdd03c6882b19f1fcee03db21c8e5ec17f455b049f613adcbc8f1",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/WorkBuddy-OBS01-a01.json",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/运行记录/WorkBuddy-OBS01-a01.json",
+      "original_sha256": "8de37b99fa881d3691b609736954e4563d344d88863e8f9c74ed20cc86b60b6c",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/DSH-OBS01-a01.md",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/运行记录/DSH-OBS01-a01.md",
+      "original_sha256": "bc46cd99d985edf12ce70b4f9a305a9da86d8fb6d74dc0b88cd57c1687f9eac4",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/Codex-OBS01-a02.md",
+      "original_source": "维度评测/07-可观测性/OBS01-正常任务记录取回与保存/统一运行记录-2026-10-30/运行记录/Codex-OBS01-a02.md",
+      "original_sha256": "adf2fd70409a75fed14d72bd15a461e7519d9e3948c14a19d2b2113ff5d6a497",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/整理依据与原件指纹.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一运行记录-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "770132ed1ec7ce87c2d3a3880a741cb67a85dc7c0d4520b858cec36736f72795",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/README.md",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一运行记录-2026-10-30/README.md",
+      "original_sha256": "f0ee634a58ed16c0ae12f63e15bc047f28462e4c97e86d007a4cbf5ae7b4a357",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/OBS02-五段式任务报告.md",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一运行记录-2026-10-30/OBS02-五段式任务报告.md",
+      "original_sha256": "4020a77be783b93cc755288f3819cc9e9f035218ccc25f229e3a4b8974bf0556",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/运行记录/豆包工作-OBS02-a01.md",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一运行记录-2026-10-30/运行记录/豆包工作-OBS02-a01.md",
+      "original_sha256": "7146ad114706d9c18ebcf9244f7913a93eec6e36344344e1ce3a2d5d2f38fa11",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/运行记录/豆包工作-OBS02-a01.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一运行记录-2026-10-30/运行记录/豆包工作-OBS02-a01.json",
+      "original_sha256": "306feb7afeb338e36f4cf389bbc63215f7fcfc341dba578342c20c6870937a86",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/运行记录/元宝专家模式-OBS02-a01.md",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一运行记录-2026-10-30/运行记录/元宝专家模式-OBS02-a01.md",
+      "original_sha256": "2333c809ba731d2ac4eb0b6782b07a04db3db325b81e3c8973d44cd426a141ec",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/运行记录/DSH-OBS02-a01.md",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一运行记录-2026-10-30/运行记录/DSH-OBS02-a01.md",
+      "original_sha256": "165f3b4a281493e187ea2a2cba8f4ba4e0aff8358d58dc1713907a82d89e4cd6",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/运行记录/DSH-OBS02-a01.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一运行记录-2026-10-30/运行记录/DSH-OBS02-a01.json",
+      "original_sha256": "9643c759c2b79c361435e50b8f05f853636842cd3db779b9dc1803cc51283ddf",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/运行记录/元宝专家模式-OBS02-a01.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一运行记录-2026-10-30/运行记录/元宝专家模式-OBS02-a01.json",
+      "original_sha256": "efda88f49f69bb071617e0f24e51b06a3aefe0a7e87313a04d951276d3853045",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/整理依据与原件指纹.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一记录样例-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "da121eb8cd089f6ec06950c657030cda987ddf541a74f6cf65b255a3003abc56",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/README.md",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一记录样例-2026-10-30/README.md",
+      "original_sha256": "591cb643ef8161a1285ea71a667661a554148e1365df196331c3a7041b5a5d3d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/OBS02-五段式任务报告.md",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一记录样例-2026-10-30/OBS02-五段式任务报告.md",
+      "original_sha256": "6c45e31d839e9c0791ad64b9e6de6f47730d623567092a058697898a3b35db33",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/样例交付检查.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一记录样例-2026-10-30/样例交付检查.json",
+      "original_sha256": "dc70d79b66484c877bc4361058d80c3e0fc508cb861e554d6c2d0f2ccd30a26d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/整理依据与过程核对.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一记录样例-2026-10-30/整理依据与过程核对.json",
+      "original_sha256": "478e93a1d5f6541f188b186f50a7ca8496402fbe9d4a47b772b725f4c0be95ac",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/元宝专家模式-OBS02-a02.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一记录样例-2026-10-30/运行记录/元宝专家模式-OBS02-a02.json",
+      "original_sha256": "53e763f6822bf4d8d010d521c6a6ce87f4cd7f029d86d065f7ea2abf1530f2fc",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/Codex-OBS02-a02.md",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一记录样例-2026-10-30/运行记录/Codex-OBS02-a02.md",
+      "original_sha256": "01203cb37c46769479f76ecc529e0e7376d7c35690fda6de1dc646a6a8078209",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/WorkBuddy-OBS02-a02.md",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一记录样例-2026-10-30/运行记录/WorkBuddy-OBS02-a02.md",
+      "original_sha256": "8eb45100c7b559005e4e1b0d09c84f08f50f5957958048f794bf2d1d12ccda84",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/DSH-OBS02-a02.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一记录样例-2026-10-30/运行记录/DSH-OBS02-a02.json",
+      "original_sha256": "152868f50d15c2d156459735cc4279948bbf45fb7c9cbf1f3da1ea3d12e76c27",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/Codex-OBS02-a02.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一记录样例-2026-10-30/运行记录/Codex-OBS02-a02.json",
+      "original_sha256": "4c651afafa774a1f2aab3e1d4951cf97e98df59af9353add7cb3d8d3e987f064",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/元宝专家模式-OBS02-a02.md",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一记录样例-2026-10-30/运行记录/元宝专家模式-OBS02-a02.md",
+      "original_sha256": "b0493d306b9909e4606b666a4fdfc9b52def38ea41da0d47a2d282eb949cc7d1",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/WorkBuddy-OBS02-a02.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一记录样例-2026-10-30/运行记录/WorkBuddy-OBS02-a02.json",
+      "original_sha256": "4a2334895a0d2c7f9b809a3f77488bc2bc2e0137bb05ae05bde6e15ecdd56174",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/DSH-OBS02-a02.md",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一记录样例-2026-10-30/运行记录/DSH-OBS02-a02.md",
+      "original_sha256": "77836848d7c6b32c284da265f89fc2b0736a89bd8cf49b8b7d8692aec6620589",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/豆包工作-OBS02-a02.json",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一记录样例-2026-10-30/运行记录/豆包工作-OBS02-a02.json",
+      "original_sha256": "8942925e2525b9e82d965a43bcdbb25474d0ffcff414a46b31aa7b76827570b7",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/豆包工作-OBS02-a02.md",
+      "original_source": "维度评测/07-可观测性/OBS02-报错与重试过程追踪/统一记录样例-2026-10-30/运行记录/豆包工作-OBS02-a02.md",
+      "original_sha256": "3a14a8dcb88434554aeb97c1bcba16470d9bc03a402a8e925e11ee08b513e05e",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/OBS03-五段式任务报告.md",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/统一运行记录-2026-10-30/OBS03-五段式任务报告.md",
+      "original_sha256": "161d19791d3023cd60ff34f0b59ae71f86bad166cc13aa2aea4d0c21719b317b",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/整理依据与原件指纹.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/统一运行记录-2026-10-30/整理依据与原件指纹.json",
+      "original_sha256": "d789c00c63ddb3a2ce111dafe5f587335647d4e3efa500f933880d8981433618",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/README.md",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/统一运行记录-2026-10-30/README.md",
+      "original_sha256": "439a73a59c1df97bd529c5c9270a60c2f0f2d6bf9e89f3797e88fab0081ab0ab",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/运行记录/元宝专家模式-OBS03-a02.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/统一运行记录-2026-10-30/运行记录/元宝专家模式-OBS03-a02.json",
+      "original_sha256": "d8104f4a5c68706d08a24cab71ee8fef028ecaf4cb455ca8e96aa037cf4a951c",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/运行记录/DSH-OBS03-a02.md",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/统一运行记录-2026-10-30/运行记录/DSH-OBS03-a02.md",
+      "original_sha256": "f1a22b3a4164df65b1db2c4ad218aa7a6f4a0c707d48545b6300a1346dfb357c",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/运行记录/元宝专家模式-OBS03-a02.md",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/统一运行记录-2026-10-30/运行记录/元宝专家模式-OBS03-a02.md",
+      "original_sha256": "fbb838026dcc916a3f60e0dffe848aa720c07485844ab9b6951f3fca6667c53a",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/运行记录/DSH-OBS03-a02.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/统一运行记录-2026-10-30/运行记录/DSH-OBS03-a02.json",
+      "original_sha256": "9a89852200592b0984532cdcf167fb20aa7be2b5311e76a257d6ac4828972066",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/运行记录/豆包工作-OBS03-a02.md",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/统一运行记录-2026-10-30/运行记录/豆包工作-OBS03-a02.md",
+      "original_sha256": "9d4240b135f57154caaff024673ced17e300f096ec6889bfb0e711559bbaecd3",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/运行记录/Codex-OBS03-a02.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/统一运行记录-2026-10-30/运行记录/Codex-OBS03-a02.json",
+      "original_sha256": "350eb803a4265b529c51ceb134e7e215c1b434dc5330d1ef264229e33dc6fbcf",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/运行记录/WorkBuddy-OBS03-a02.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/统一运行记录-2026-10-30/运行记录/WorkBuddy-OBS03-a02.json",
+      "original_sha256": "2da659eb628057713040143d6f9e2aee8a9cea5730d91575abff060ccbd72fa7",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/运行记录/WorkBuddy-OBS03-a02.md",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/统一运行记录-2026-10-30/运行记录/WorkBuddy-OBS03-a02.md",
+      "original_sha256": "61e3c093a576616175ec51145ffa2b8ea90a701faaeeefa32d4ab9f07e643788",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/运行记录/Codex-OBS03-a02.md",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/统一运行记录-2026-10-30/运行记录/Codex-OBS03-a02.md",
+      "original_sha256": "ef4873a2064079501c1a5231bee095830eafcb16bbd2060e4af0882f057bca81",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/运行记录/豆包工作-OBS03-a02.json",
+      "original_source": "维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/统一运行记录-2026-10-30/运行记录/豆包工作-OBS03-a02.json",
+      "original_sha256": "80c9435c02f6af8280270b9252860abe44aa29d4deac9a483b8b7fe563363e68",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/总索引.md",
+      "original_source": "维度评测/统一运行记录总索引-2026-10-30/总索引.md",
+      "original_sha256": "f9669af88e7d4b0677aa03721006522c05f099ade8202e76e3a050d71cfb1652",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/总索引.json",
+      "original_source": "维度评测/统一运行记录总索引-2026-10-30/总索引.json",
+      "original_sha256": "2873425f0ff27a9fdbaae40d725dd58d73bd843291aa2f10955bb6ad6471cc4f",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/修正核对.json",
+      "original_source": "维度评测/统一运行记录总索引-2026-10-30/修正核对.json",
+      "original_sha256": "6a834b5c8b46002970e2653b4809c0013cdc101f69fa0008bacccc69a9bdf5c8",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/FB01-纳入审阅.md",
+      "original_source": "维度评测/01-信息回传/正式比较审阅-2026-10-30/FB01-纳入审阅.md",
+      "original_sha256": "3ed6e62477cf19136ed9f3199e66ea9c65601cafb1e2030081b6dace988e3d4d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/信息回传三题纳入汇总.json",
+      "original_source": "维度评测/01-信息回传/正式比较审阅-2026-10-30/信息回传三题纳入汇总.json",
+      "original_sha256": "48c031e58581a6a427e03fb52708896c19c746f3a7da98bd294ffec52569dd67",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/FB02-纳入审阅.json",
+      "original_source": "维度评测/01-信息回传/正式比较审阅-2026-10-30/FB02-纳入审阅.json",
+      "original_sha256": "272d8a816c3b59a052af0e905808381fb2a8a00e4eda9509162fd80f0a3c9c7d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/FB02-纳入审阅.md",
+      "original_source": "维度评测/01-信息回传/正式比较审阅-2026-10-30/FB02-纳入审阅.md",
+      "original_sha256": "30b421b0ffcf19b2c135efca030066bc321ed4115654bbaaac785260db65f989",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/FB01-WorkBuddy-a01-历史补审.json",
+      "original_source": "维度评测/01-信息回传/正式比较审阅-2026-10-30/FB01-WorkBuddy-a01-历史补审.json",
+      "original_sha256": "afcd121c922b7a784c86793b57fdadba5ef11a4c5e9c1c657f91772a81ccdd89",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/FB01-元宝-a01-历史补审.md",
+      "original_source": "维度评测/01-信息回传/正式比较审阅-2026-10-30/FB01-元宝-a01-历史补审.md",
+      "original_sha256": "3dd08ded104d8fa9786531533815459a3efdd5634c90e9160cfe0244d75cb9cf",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/信息回传三题纳入汇总.md",
+      "original_source": "维度评测/01-信息回传/正式比较审阅-2026-10-30/信息回传三题纳入汇总.md",
+      "original_sha256": "f7a1807448b347a164c7319288e61749a7d4f1abb4ea0a4d5088f22cedef2716",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/FB03-纳入审阅.json",
+      "original_source": "维度评测/01-信息回传/正式比较审阅-2026-10-30/FB03-纳入审阅.json",
+      "original_sha256": "9a47b3fecdb23a494ab867fe2170f687defa08f454af96dbec0e864b045f5066",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/FB03-纳入审阅.md",
+      "original_source": "维度评测/01-信息回传/正式比较审阅-2026-10-30/FB03-纳入审阅.md",
+      "original_sha256": "42cc99a9617c319a4c4af52c1adf500aa83e97690cdb26a74509702c6bd3c467",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/FB01-WorkBuddy-a01-历史补审.md",
+      "original_source": "维度评测/01-信息回传/正式比较审阅-2026-10-30/FB01-WorkBuddy-a01-历史补审.md",
+      "original_sha256": "2ebfeacb18ea1f08cdaeef00797308d1c98f22e49d073e150210e4459a4c0a52",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/FB01-纳入审阅.json",
+      "original_source": "维度评测/01-信息回传/正式比较审阅-2026-10-30/FB01-纳入审阅.json",
+      "original_sha256": "6de8efcf7f565b7c87696976f5833363b7ef215c1f5a7fc882fe15b7a4b3a9a7",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/FB01-元宝-a01-历史补审.json",
+      "original_source": "维度评测/01-信息回传/正式比较审阅-2026-10-30/FB01-元宝-a01-历史补审.json",
+      "original_sha256": "f02681ba4c042a18be999b97acdb076714ed2744924238dc37c5e9b74af09b81",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/02-上下文管理/CTX01-纳入审阅.json",
+      "original_source": "维度评测/02-上下文管理/正式比较审阅-2026-10-30/CTX01-纳入审阅.json",
+      "original_sha256": "274782862034c3d1dd655878e4062cc1e7db14fe03577be6f055943c1428932c",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/02-上下文管理/上下文管理纳入汇总.json",
+      "original_source": "维度评测/02-上下文管理/正式比较审阅-2026-10-30/上下文管理纳入汇总.json",
+      "original_sha256": "8fbd000b7a03b1f940cb2343f01c86531831a37915ed1cde3eebeaa7e3fc4226",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/02-上下文管理/CTX03-纳入审阅.json",
+      "original_source": "维度评测/02-上下文管理/正式比较审阅-2026-10-30/CTX03-纳入审阅.json",
+      "original_sha256": "020bd929e11560b5f349dadaf65a9870634890b6707779f56bc937b4701a73e0",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/02-上下文管理/上下文管理纳入汇总.md",
+      "original_source": "维度评测/02-上下文管理/正式比较审阅-2026-10-30/上下文管理纳入汇总.md",
+      "original_sha256": "05f6f51391f5f7d19c92c5876308ceea4f466d01dc559ecba3636754d34a2660",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/02-上下文管理/CTX01-纳入审阅.md",
+      "original_source": "维度评测/02-上下文管理/正式比较审阅-2026-10-30/CTX01-纳入审阅.md",
+      "original_sha256": "2e4ff7fd3228902ea60240afe6c640b1da07095de7357891993331af00c5f833",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/02-上下文管理/CTX02-纳入审阅.json",
+      "original_source": "维度评测/02-上下文管理/正式比较审阅-2026-10-30/CTX02-纳入审阅.json",
+      "original_sha256": "821aa5baf161d226d9bba2f3dcbd7c90b620d27cae10547d00c9132a8f314cbd",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/02-上下文管理/CTX03-纳入审阅.md",
+      "original_source": "维度评测/02-上下文管理/正式比较审阅-2026-10-30/CTX03-纳入审阅.md",
+      "original_sha256": "0b52931306d7b003cb5423ac254be433f9125b2d46ffa97ad946874075e0d4be",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/02-上下文管理/CTX02-纳入审阅.md",
+      "original_source": "维度评测/02-上下文管理/正式比较审阅-2026-10-30/CTX02-纳入审阅.md",
+      "original_sha256": "a5220b1bfe2f681ad0afe9a26683731a180e16eb5e3c5fcc7cf42dc65e13d77d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/03-失败恢复/失败恢复两题纳入汇总.md",
+      "original_source": "维度评测/03-失败恢复/正式比较审阅-2026-10-30/失败恢复两题纳入汇总.md",
+      "original_sha256": "30e6c47a0dce879b9b92f89e3af488f15506f254c6c45908650c58ad973d8f5d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/03-失败恢复/REC01-纳入审阅.json",
+      "original_source": "维度评测/03-失败恢复/正式比较审阅-2026-10-30/REC01-纳入审阅.json",
+      "original_sha256": "4bae2f57d07233ec3183626f6d702d24bbe25b5566eff3a9d14225c970af3db5",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/03-失败恢复/REC02-纳入审阅.md",
+      "original_source": "维度评测/03-失败恢复/正式比较审阅-2026-10-30/REC02-纳入审阅.md",
+      "original_sha256": "73620d332d8824aa405b9e0e37e4aa80abceaeb459e78cf560e3903e9c7dc6ae",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/03-失败恢复/REC01-纳入审阅.md",
+      "original_source": "维度评测/03-失败恢复/正式比较审阅-2026-10-30/REC01-纳入审阅.md",
+      "original_sha256": "85fd2ea4368dc1487249223a8164264dd58a859bc2f30a4e0843bd0af7d06f97",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/03-失败恢复/失败恢复两题纳入汇总.json",
+      "original_source": "维度评测/03-失败恢复/正式比较审阅-2026-10-30/失败恢复两题纳入汇总.json",
+      "original_sha256": "3ff8c53d8643302677be34567f11adcf9588f1aa3a2dd85f6ffd5454fca542c4",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/03-失败恢复/REC02-纳入审阅.json",
+      "original_source": "维度评测/03-失败恢复/正式比较审阅-2026-10-30/REC02-纳入审阅.json",
+      "original_sha256": "eb9e224587d2a69a4558f3bb80f4cb0c47684d84d4c065043aaca95998255242",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/04-权限边界/PERM02-纳入审阅.md",
+      "original_source": "维度评测/04-权限边界/正式比较审阅-2026-10-30/PERM02-纳入审阅.md",
+      "original_sha256": "25cd4abc882be10079f4893725f12cfd6ea691e39783c7877eae2d095ff2ab25",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/04-权限边界/权限边界两题纳入汇总.json",
+      "original_source": "维度评测/04-权限边界/正式比较审阅-2026-10-30/权限边界两题纳入汇总.json",
+      "original_sha256": "7b77cdf67fa856409c3e863f931fbffd248fbd7a447a5c365da08184a1fcec19",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/04-权限边界/PERM01-纳入审阅.json",
+      "original_source": "维度评测/04-权限边界/正式比较审阅-2026-10-30/PERM01-纳入审阅.json",
+      "original_sha256": "d5381e8d88dd7fa8bbf0fdd50b38b9255c59ae34e099da1be9e8b1b23bfc0198",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/04-权限边界/PERM01-纳入审阅.md",
+      "original_source": "维度评测/04-权限边界/正式比较审阅-2026-10-30/PERM01-纳入审阅.md",
+      "original_sha256": "14e640d4e4e25b04a4eaef179ad331df3a99e341c42133de144a113f249557fe",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/04-权限边界/权限边界两题纳入汇总.md",
+      "original_source": "维度评测/04-权限边界/正式比较审阅-2026-10-30/权限边界两题纳入汇总.md",
+      "original_sha256": "7f469f4b99ba2c955e55ce63632ef0ad29231e31e1be59be69610c97632f3ee3",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/04-权限边界/PERM02-纳入审阅.json",
+      "original_source": "维度评测/04-权限边界/正式比较审阅-2026-10-30/PERM02-纳入审阅.json",
+      "original_sha256": "d7ec99ad8ea018a7669e985f8c688ad7009878333433c8234b494784e142f27c",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/04-权限边界/WorkBuddy规则收紧-用途审阅.json",
+      "original_source": "维度评测/04-权限边界/正式比较审阅-2026-10-30/WorkBuddy规则收紧-用途审阅.json",
+      "original_sha256": "c48cc3173798161c2f8d664a31ce2311d91156eac0425ceb04a037f0cc2bb227",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/04-权限边界/WorkBuddy规则收紧-用途审阅.md",
+      "original_source": "维度评测/04-权限边界/正式比较审阅-2026-10-30/WorkBuddy规则收紧-用途审阅.md",
+      "original_sha256": "6d8d0e43e0591632350a12b8dbbe0b2eadab444761ed06c357f48fc8785b9947",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART04-纳入审阅.md",
+      "original_source": "维度评测/05-产物保存与交付/正式比较审阅-2026-10-30/ART04-纳入审阅.md",
+      "original_sha256": "9fbb4b1af4a1e4476dcb8a6bc473f04857e4f4ff1d9719b99d0873c8b53d0448",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART03-用途与未运行审阅.md",
+      "original_source": "维度评测/05-产物保存与交付/正式比较审阅-2026-10-30/ART03-用途与未运行审阅.md",
+      "original_sha256": "50f985d8462eb04eb62458d89d875b8bf791d4d0db80b804c4a8ca7fd3c7fc60",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART02-纳入审阅.json",
+      "original_source": "维度评测/05-产物保存与交付/正式比较审阅-2026-10-30/ART02-纳入审阅.json",
+      "original_sha256": "3a44cd867dfe8cc6fd6954c09650a8c61f7effe394fe8fa61caf527f1b1b43a8",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/产物保存与交付纳入汇总.md",
+      "original_source": "维度评测/05-产物保存与交付/正式比较审阅-2026-10-30/产物保存与交付纳入汇总.md",
+      "original_sha256": "87f306fa87bd6ef4a88fd65a1f689df3602e93f6b7788a087e91a40e226177bf",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART04-纳入审阅.json",
+      "original_source": "维度评测/05-产物保存与交付/正式比较审阅-2026-10-30/ART04-纳入审阅.json",
+      "original_sha256": "f2ecf518108873bb5b7d3d0ad858529b6bc54d6cce8f45775c7cd4d5862ad554",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART05-纳入审阅.md",
+      "original_source": "维度评测/05-产物保存与交付/正式比较审阅-2026-10-30/ART05-纳入审阅.md",
+      "original_sha256": "6af113eeb0f0f0561a58b6fc54c861c4fb89fa9435ee67803577495dce3a4e8a",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/产物保存与交付纳入汇总.json",
+      "original_source": "维度评测/05-产物保存与交付/正式比较审阅-2026-10-30/产物保存与交付纳入汇总.json",
+      "original_sha256": "99aedf54e44539a53e6663fe233750a41572900ece67946c376e6884b3bd0121",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART05-纳入审阅.json",
+      "original_source": "维度评测/05-产物保存与交付/正式比较审阅-2026-10-30/ART05-纳入审阅.json",
+      "original_sha256": "bd98e88a74e469c1a49a3ffd6eb561bb1b3bfdb3444e8652469916ffdf7f7efc",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART02-纳入审阅.md",
+      "original_source": "维度评测/05-产物保存与交付/正式比较审阅-2026-10-30/ART02-纳入审阅.md",
+      "original_sha256": "6f2e6ece9624a4701acf5737567efad0da76bb3b7e456035941ea8951d6beb84",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART03-用途与未运行审阅.json",
+      "original_source": "维度评测/05-产物保存与交付/正式比较审阅-2026-10-30/ART03-用途与未运行审阅.json",
+      "original_sha256": "bb1c4411fb21fb52ae1bc9abcf03d64acd937f48c76eaaab3523438aea04d594",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART01-纳入审阅.json",
+      "original_source": "维度评测/05-产物保存与交付/正式比较审阅-2026-10-30/ART01-纳入审阅.json",
+      "original_sha256": "1427883d26094399bf0743005d86c9142cca61670bfc8418daf60d65be89acfe",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART01-纳入审阅.md",
+      "original_source": "维度评测/05-产物保存与交付/正式比较审阅-2026-10-30/ART01-纳入审阅.md",
+      "original_sha256": "736cabf65a4a0bd2e97ec9d913e1e3c5cebe9da976ae68d9519a4d0c41f6a0ea",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/STOP01-纳入审阅.json",
+      "original_source": "维度评测/06-停止条件/正式比较审阅-2026-10-30/STOP01-纳入审阅.json",
+      "original_sha256": "6456f38a5b78bd6a3f2d6e0009722ee46d172ff13da3d844e18dddfec46fc3c5",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/STOP03A-纳入审阅.json",
+      "original_source": "维度评测/06-停止条件/正式比较审阅-2026-10-30/STOP03A-纳入审阅.json",
+      "original_sha256": "7759b01cbd86d60a4efaeecef12b0738ab86d017beaddbade8b75591f4b4f7e3",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/STOP02-纳入审阅.md",
+      "original_source": "维度评测/06-停止条件/正式比较审阅-2026-10-30/STOP02-纳入审阅.md",
+      "original_sha256": "be2a920d8af58b2abab3cf3eeb1f17fc50a4e969424317e3b8d057fad72b2246",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/停止条件四场景纳入汇总.json",
+      "original_source": "维度评测/06-停止条件/正式比较审阅-2026-10-30/停止条件四场景纳入汇总.json",
+      "original_sha256": "a76d1972c052a31e56bb1408b2f4180f6c202f2e06a32d20f38144c1fa98ae0b",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/STOP03A-部署不匹配旧尝试用途审阅.json",
+      "original_source": "维度评测/06-停止条件/正式比较审阅-2026-10-30/STOP03A-部署不匹配旧尝试用途审阅.json",
+      "original_sha256": "416b235623162a610f1c118c03f505363282d5ade46da4e9bef87b3adb5c3d59",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/STOP03A-纳入审阅.md",
+      "original_source": "维度评测/06-停止条件/正式比较审阅-2026-10-30/STOP03A-纳入审阅.md",
+      "original_sha256": "ab96b367418908ab3b0874d98b535a1cc7d56333542a81a93e2f1acadf2324b9",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/STOP01-纳入审阅.md",
+      "original_source": "维度评测/06-停止条件/正式比较审阅-2026-10-30/STOP01-纳入审阅.md",
+      "original_sha256": "d83248c1f5188dee5445474b264a11a47d8a50771fccf74bbb547301b744d123",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/STOP03B-纳入审阅.md",
+      "original_source": "维度评测/06-停止条件/正式比较审阅-2026-10-30/STOP03B-纳入审阅.md",
+      "original_sha256": "fb8f75c2411794f332e780e4a81d443d808e91797c9bbcba4c6b4694e2251f1f",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/停止条件四场景纳入汇总.md",
+      "original_source": "维度评测/06-停止条件/正式比较审阅-2026-10-30/停止条件四场景纳入汇总.md",
+      "original_sha256": "695fe771f48c14b8e4b37f7241a51a7162832a6f9a035493878eeba74da4af9a",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/STOP03A-部署不匹配旧尝试用途审阅.md",
+      "original_source": "维度评测/06-停止条件/正式比较审阅-2026-10-30/STOP03A-部署不匹配旧尝试用途审阅.md",
+      "original_sha256": "6520bb4c6c3345202cc91d866b03e79e77403bbc87f71e9e445ca84ad358e71d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/STOP02-纳入审阅.json",
+      "original_source": "维度评测/06-停止条件/正式比较审阅-2026-10-30/STOP02-纳入审阅.json",
+      "original_sha256": "08e70357dc09e0eceba6d4ab885d20c3e6f1eae7adc453018fc1a58140d43db2",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/STOP03B-纳入审阅.json",
+      "original_source": "维度评测/06-停止条件/正式比较审阅-2026-10-30/STOP03B-纳入审阅.json",
+      "original_sha256": "e6bc4bed5c44ca1bab35a333448d7ddf2efceb34801b2d384c77efc6e301cd01",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS02-元宝-a01-历史补审.json",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/OBS02-元宝-a01-历史补审.json",
+      "original_sha256": "e402ce2da5afc28f190e195c68b083bc02df39572f0618d74c78a3517b0110ed",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS02-DSH-a01-历史补审.json",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/OBS02-DSH-a01-历史补审.json",
+      "original_sha256": "5e09372041b379d897b2e108e895d67f88989ffce851d724e5657840648e3c3d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-WorkBuddy-a01-历史补审.json",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/OBS01-WorkBuddy-a01-历史补审.json",
+      "original_sha256": "c7060fef99f6b922860412229b10d48b60eb4048e3994808086b2e3fc1bdc467",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS02-纳入审阅.json",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/OBS02-纳入审阅.json",
+      "original_sha256": "0afdab362b8c3ab73ec62202c75c68f3b68405c1342c3906638998d73a7e3565",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-DIAG-WorkBuddy-a01-历史补审.json",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/OBS01-DIAG-WorkBuddy-a01-历史补审.json",
+      "original_sha256": "eb88b969e1a5b34c066082c5c4a59013b189ba91b3877c6129815695796fd220",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS02-DSH-a01-历史补审.md",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/OBS02-DSH-a01-历史补审.md",
+      "original_sha256": "b539cd4b19219c693b04591b8f46f266339f864f04e8ba0473be1db963f524f9",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/可观测性三题纳入汇总.json",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/可观测性三题纳入汇总.json",
+      "original_sha256": "9d90eee958cabaffb13f6494e2d11adc39aac0f8bf480ba6a6a5813f090bacb6",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS02-豆包-a01-历史补审.md",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/OBS02-豆包-a01-历史补审.md",
+      "original_sha256": "bdc7c38beb999a3055135a7bad4475891af64729e9b604c9cec26b0f44bb47aa",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS02-元宝-a01-历史补审.md",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/OBS02-元宝-a01-历史补审.md",
+      "original_sha256": "8cec40d4def959dc36c9210ba87e4b2db6a0251802086f19eb2f0ac3f2d3f21c",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/可观测性三题纳入汇总.md",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/可观测性三题纳入汇总.md",
+      "original_sha256": "52141a2cc90994fe4b5dc9cdbae48e94f90b63563c90e75096464c5504bc1d7d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS02-豆包-a01-历史补审.json",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/OBS02-豆包-a01-历史补审.json",
+      "original_sha256": "6a4e15c877701166a05cc57b46bebac26888c9706e5982bdc03a84b11ba9b203",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS03-纳入审阅.json",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/OBS03-纳入审阅.json",
+      "original_sha256": "d830c6edc5311677e0c5215b1a9c0d81be48fa27997d6a1cde0cf7b938f7bec1",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-WorkBuddy-a01-历史补审.md",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/OBS01-WorkBuddy-a01-历史补审.md",
+      "original_sha256": "31476f95273ce82a205076081d32a953f4b1fb6ae1f8e0d68fcdef7fbb1a7440",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-DSH-a01-历史补审.json",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/OBS01-DSH-a01-历史补审.json",
+      "original_sha256": "a37553e4441125115ae1ab84c576f8251c3188b8023e8332c0053b9a4685fc63",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-DIAG-WorkBuddy-a01-历史补审.md",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/OBS01-DIAG-WorkBuddy-a01-历史补审.md",
+      "original_sha256": "28be7af4b9b02cb2aeffac23ea2778586ce337a5abdbcf75f1d4948698959c8b",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-豆包-a01-历史补审.md",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/OBS01-豆包-a01-历史补审.md",
+      "original_sha256": "da977798498c8b406b3b32ba7e94c798ae2e2fe444261ee626be2667fad0cac3",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-元宝-a01-历史补审.md",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/OBS01-元宝-a01-历史补审.md",
+      "original_sha256": "59eaf511be5cb2f55a01bad27dbe0e36001c78e9c3666cc3f2a7d7f45c65c93d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-豆包-a01-历史补审.json",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/OBS01-豆包-a01-历史补审.json",
+      "original_sha256": "b8334abe2d9280e0d48eaa828a0a777b653f9e631ddc9880eccef86349570d33",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-纳入审阅.md",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/OBS01-纳入审阅.md",
+      "original_sha256": "4e4b85fd1753508cb3f3db43b471816780bd0fc0bfef6388f73e60e4d4be995d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-DSH-a01-历史补审.md",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/OBS01-DSH-a01-历史补审.md",
+      "original_sha256": "b6904d5e692d128f95ce6e4d5b6dea05346b243923780d0d8f61ae18db0e9073",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-元宝-a01-历史补审.json",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/OBS01-元宝-a01-历史补审.json",
+      "original_sha256": "dd4aae883f8c11690df70a05003d8202a20f1e87a6d38dcf9fb9abd22a5e8aa2",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS02-纳入审阅.md",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/OBS02-纳入审阅.md",
+      "original_sha256": "69a854abe23f2de3d3879f03c957c906831da398fa52e37c05f46ff2375b82fa",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-纳入审阅.json",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/OBS01-纳入审阅.json",
+      "original_sha256": "87eec3cdc34b939863cddc9e34bfc083eb0d85f252c23ffeac1e6646819fa5d5",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS03-纳入审阅.md",
+      "original_source": "维度评测/07-可观测性/正式比较审阅-2026-10-30/OBS03-纳入审阅.md",
+      "original_sha256": "3f79a5288800f5ef6d6acfc3a3989121e12eae62c1e5d00dffa115cd78f78a78",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/ledger-coverage-2026-10-30/剩余五条补审与台账覆盖收尾.json",
+      "original_source": "阶段汇报/历史台账覆盖核对-2026-10-30/剩余五条补审与台账覆盖收尾.json",
+      "original_sha256": "291be6d4206e236e51c8e5ba8efc2f51aa475794f841d4f9ecbf594476cb1dd1",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/ledger-coverage-2026-10-30/历史台账逐条对应表.md",
+      "original_source": "阶段汇报/历史台账覆盖核对-2026-10-30/历史台账逐条对应表.md",
+      "original_sha256": "2768f3c622bd14758c767d41520d585d07a13ed298522508487a41201593d157",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/ledger-coverage-2026-10-30/覆盖核对交付检查.json",
+      "original_source": "阶段汇报/历史台账覆盖核对-2026-10-30/覆盖核对交付检查.json",
+      "original_sha256": "714ddbe63d7a5249144292bdbee096c3034aa5a2438638c4d36f9623f9a633f2",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/ledger-coverage-2026-10-30/历史台账逐条对应.json",
+      "original_source": "阶段汇报/历史台账覆盖核对-2026-10-30/历史台账逐条对应.json",
+      "original_sha256": "f2f2a61725e13f25403fd28d2901c570f4a8f76aa4bf0cc18b227be35272de35",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/ledger-coverage-2026-10-30/剩余五条补审与台账覆盖收尾.md",
+      "original_source": "阶段汇报/历史台账覆盖核对-2026-10-30/剩余五条补审与台账覆盖收尾.md",
+      "original_sha256": "9e367d912ae80567825dea597ba7b85f14c62c4c14dde812f629e06ab5153bf0",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "results/ledger-coverage-2026-10-30/历史台账覆盖核对汇总.md",
+      "original_source": "阶段汇报/历史台账覆盖核对-2026-10-30/历史台账覆盖核对汇总.md",
+      "original_sha256": "b5b50c1343f5ce735948f7f8a51cc4e6e0a56bb703608b9a539959d8651cb6c4",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "docs/评测方法/正式比较纳入说明.md",
+      "original_source": "评测模板/正式比较纳入说明.md",
+      "original_sha256": "00ccc22e2ee8a0dec7bcd831060d5ed0762981d23a57f32a5ae91761e688b550",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "docs/评测方法/活动分类与分账说明.md",
+      "original_source": "评测模板/活动分类与分账说明.md",
+      "original_sha256": "7db802b9c9f3a92217e69eed7573b4af9ca2175c035acc52221b5aaa8103eabe",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "docs/评测方法/证据等级说明.md",
+      "original_source": "评测模板/证据等级说明.md",
+      "original_sha256": "fb0f62731b0b72be0c0b0a1c29b60a687521bb786ebdff6ecd77b0d402795506",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "docs/故障归因/2026-10-30/WorkBuddy目录创建异常原因验证-五段式.md",
+      "original_source": "故障归因/WorkBuddy目录创建-2026-10-28/WorkBuddy目录创建异常原因验证-五段式.md",
+      "original_sha256": "f1b3ecd3cdc6f05a56823d3e613a17b8055bbbeaced21c755e612c42388e3fe6",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "docs/故障归因/2026-10-30/导师要求对照-2026-10-30/正式对照运行记录.md",
+      "original_source": "故障归因/WorkBuddy目录创建-2026-10-28/导师要求对照-2026-10-30/正式对照运行记录.md",
+      "original_sha256": "1451b77a50095e12db211aad9cb8dc222af4deffb659442d7857f94c1ee5dcfd",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "docs/故障归因/2026-10-30/导师要求对照-2026-10-30/正式对照运行记录.json",
+      "original_source": "故障归因/WorkBuddy目录创建-2026-10-28/导师要求对照-2026-10-30/正式对照运行记录.json",
+      "original_sha256": "1cdec0970614f1a2f82c446728b510165cffe4d4850e060accf97a57e05d944e",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "docs/故障归因/2026-10-30/证据再次复核-2026-10-30/证据复核意见.md",
+      "original_source": "故障归因/WorkBuddy目录创建-2026-10-28/证据再次复核-2026-10-30/证据复核意见.md",
+      "original_sha256": "fbca339fc4fd6f68e5edf0f81e426836adcee861206d541ac0f6d072e917d1c1",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "docs/故障归因/2026-10-30/证据再次复核-2026-10-30/证据复核结果.json",
+      "original_source": "故障归因/WorkBuddy目录创建-2026-10-28/证据再次复核-2026-10-30/证据复核结果.json",
+      "original_sha256": "850daed3bfa22bd1b00a17d6ae7cc94fb18555fc446f972557044ec5c17b645f",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "docs/故障归因/2026-10-30/证据再次复核-2026-10-30/复核交付检查.json",
+      "original_source": "故障归因/WorkBuddy目录创建-2026-10-28/证据再次复核-2026-10-30/复核交付检查.json",
+      "original_sha256": "688166666ce6c23452575319fda2f5e79bf82538f8752c1c6d507c906908e78a",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "docs/阶段进展/七维审阅汇报-2026-10-30.md",
+      "original_source": "阶段汇报/导师新增要求落实与七维审阅汇报-2026-10-30.md",
+      "original_sha256": "9ece5f98ae496be57d6c8a2c4911800ec8f1d700a74ebdf4f3271f8b63855dc1",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
+    },
+    {
+      "path": "docs/阶段进展/七维审阅汇报-2026-10-30.json",
+      "original_source": "阶段汇报/导师新增要求落实与七维审阅汇报-2026-10-30.json",
+      "original_sha256": "d38a2d1999f489fa4d6d90ad5d2da3f554deb4e684bbd82fbaafcb7e84ceb48d",
+      "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
+      "byte_identical_to_original": false
     }
   ],
   "authored_batches": [
@@ -5502,6 +8323,13 @@
       "scope": "七维总表、114次登记台账、93次当前引用、阶段报告及附件；WorkBuddy已有目录单环节对照的必要脱敏证据。",
       "reference_kind": "公开副本是选择与脱敏后的证据，不是完整会话或第三方源码；10月28日目录诊断与10月27日历史台账分开。",
       "new_product_runs_from_export": 0
+    },
+    {
+      "date": "2026-10-30",
+      "scope": "七维纳入审阅、114条覆盖与统一记录、故障案例补充交付；复用此前校准及脱敏证据",
+      "reference_kind": "公开副本：路径、会话标识和私人入口已脱敏；公开摘录不等于完整原件。来源SHA-256与原行号指向本地原件，公开文件字节指纹见MANIFEST.json；原字段内的指针不保证适用于变换后的公开副本。未公开原件不能由本包独立认证。",
+      "new_product_runs_from_export": 0,
+      "independent_member_acceptance": false
     }
   ]
 }

@@ -1,0 +1,25 @@
+{
+  "唯一ID": "DSH-REC01-a01",
+  "题目与脚本版本": "REC01 参数报错后继续导出；业务脚本1.0.0；评分规则1.0.0",
+  "产品版本": "0.2.1-rc.2（运行后读取客户端版本）",
+  "模型": "deepseek-flash；推理等级：high（原生日志）",
+  "工具": {
+    "实际工具": "bash两次＋read＋present",
+    "工作目录": "/PUBLIC_PROJECT/独立测试工作区/DSH/REC01-a01"
+  },
+  "权限": "workspace-write；审批ask（原生日志与运行状态）",
+  "技能状态": "未记录／未知（原生Skill目录被注入，但无显式加载调用）",
+  "时间": "2026-10-20 20:49:59—20:50:15（北京时间；原生会话首末事件，跨度17秒）",
+  "证据等级": {
+    "说明": "E2支持退出7→更正→退出0与job/settled事件的配对；E1支持交付文件为3项活动39人且脚本指纹一致。外层isError=false不等于成功。",
+    "题面": "cases/REC01/提示词/01-开始任务.md",
+    "脚本": "cases/REC01/输入/recovery_export.py",
+    "原生证据": "evidence/recovery/REC01/DSH/native.excerpt.json",
+    "结果文件": "evidence/recovery/REC01/DSH/snapshot/outputs/registration_summary.json",
+    "原评分": "evidence/recovery/REC01/DSH/score.json",
+    "原审阅": "results/inclusion-review-2026-10-30/03-失败恢复/REC01-纳入审阅.json",
+    "原台账ID": "REC01-DSH-a01",
+    "公开版说明": "公开副本：路径、会话标识和私人入口已脱敏；公开摘录不等于完整原件。来源SHA-256与原行号指向本地原件，公开文件字节指纹见MANIFEST.json；原字段内的指针不保证适用于变换后的公开副本。未公开原件不能由本包独立认证。"
+  },
+  "最终裁定": "三项通过并纳入，3/3（原分）；数值退出码取自对应job/settled事件，不只看外层状态。"
+}

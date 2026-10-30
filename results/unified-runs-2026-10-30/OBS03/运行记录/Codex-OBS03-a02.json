@@ -1,0 +1,25 @@
+{
+  "唯一ID": "Codex-OBS03-a02",
+  "题目与脚本版本": "OBS03 部分完成与受阻结束追踪；业务脚本0.3.1-portable-pilot；评分规则0.3.0-pilot；判定用r1复核版",
+  "产品版本": "原生运行器0.163.0-alpha.11.2；桌面App版本未知",
+  "模型": "gpt-6.1-sol；思考强度：高",
+  "工具": {
+    "实际工具": "exec／exec_command",
+    "工作目录": "/PUBLIC_PROJECT/独立测试工作区/Codex/OBS03-a02"
+  },
+  "权限": "workspace-write；按需审批on-request，由auto_review审核；网络关闭",
+  "技能状态": "原生配置；未专门选择或添加个人Skill，直接发送提示词（用户说明）",
+  "时间": "2026-10-26 23:12:54—23:14:01（北京时间；原生会话首末事件，跨度68秒）",
+  "证据等级": {
+    "说明": "E2支持A成功、B两次失败与C未开始的调用链可还原；E1支持导出文件与账本终态一致；O10有重开前后材料。",
+    "题面": "cases/OBS03/prompts/Codex.md",
+    "原生证据": "evidence/observability-review/2026-10-27-r1/Codex/all-requests.excerpt.json",
+    "过程记录": "evidence/observability/OBS03/Codex/trace-audit.json",
+    "结果文件": "LOCAL_ONLY: 维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/Codex-a02/阶段01-完成后只读取证/工作目录/outputs",
+    "原评分": "LOCAL_ONLY: 维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/Codex-a02/评分与归因.json",
+    "原审阅": "results/inclusion-review-2026-10-30/07-可观测性/OBS03-纳入审阅.json",
+    "原台账ID": "OBS03-Codex-a02",
+    "公开版说明": "公开副本：路径、会话标识和私人入口已脱敏；公开摘录不等于完整原件。来源SHA-256与原行号指向本地原件，公开文件字节指纹见MANIFEST.json；原字段内的指针不保证适用于变换后的公开副本。未公开原件不能由本包独立认证。"
+  },
+  "最终裁定": "四项通过并纳入，4/4；业务受阻是题设情形，记录忠实即可通过可观测性观察项。"
+}

@@ -1,0 +1,1128 @@
+{
+  "复核日期": "2026-10-30",
+  "复核者": "同一Codex助手再次复核，不是第二位成员独立验收",
+  "活动": "从原始证据重新解析、交叉对照及代码静态阅读",
+  "运行ID": "WB-MKDIR-ABA-20261028-a01",
+  "原生会话": "PRIVATE_SESSION_REDACTED",
+  "工具调用ID": "WB-ABA-CALL-1",
+  "核查": [
+    {
+      "核查项": "准备文件指纹.json全部匹配",
+      "实际": true,
+      "期望": true,
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/准备文件指纹.json"
+    },
+    {
+      "核查项": "归档文件指纹.json全部匹配",
+      "实际": true,
+      "期望": true,
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/归档文件指纹.json"
+    },
+    {
+      "核查项": "原生工具调用数",
+      "实际": 1,
+      "期望": 1,
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl"
+    },
+    {
+      "核查项": "原生工具返回数",
+      "实际": 1,
+      "期望": 1,
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl"
+    },
+    {
+      "核查项": "请求为指定Bash命令",
+      "实际": [
+        "Bash",
+        {
+          "command": "python3 probe_mkdir_aba.py"
+        }
+      ],
+      "期望": [
+        "Bash",
+        {
+          "command": "python3 probe_mkdir_aba.py"
+        }
+      ],
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl:7"
+    },
+    {
+      "核查项": "请求返回callId对应",
+      "实际": "WB-ABA-CALL-1",
+      "期望": "WB-ABA-CALL-1",
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl:7-8"
+    },
+    {
+      "核查项": "请求返回会话对应",
+      "实际": "PRIVATE_SESSION_REDACTED",
+      "期望": "PRIVATE_SESSION_REDACTED",
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl:7-8"
+    },
+    {
+      "核查项": "归档原始返回与原生output.text逐字节一致",
+      "实际": {
+        "bytes": 11796,
+        "sha256": "4423df1b7a3c8f776b47cd0fc7824f3cf2441723fa5f89d4d3ec7b0e95cb7f5c"
+      },
+      "期望": {
+        "bytes": 11796,
+        "sha256": "4423df1b7a3c8f776b47cd0fc7824f3cf2441723fa5f89d4d3ec7b0e95cb7f5c"
+      },
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl:8"
+    },
+    {
+      "核查项": "原生退出码与未中断/未截断元数据",
+      "实际": [
+        0,
+        null,
+        false,
+        false,
+        0,
+        0
+      ],
+      "期望": [
+        0,
+        null,
+        false,
+        false,
+        0,
+        0
+      ],
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl:8"
+    },
+    {
+      "核查项": "实际结构化输出条数",
+      "实际": {
+        "CASE_RESULT": 3,
+        "PRECONDITION_VALID": 1,
+        "RESTORATION_RESULT": 1,
+        "RUN_ENVIRONMENT": 1,
+        "RUN_RESULT": 1,
+        "RUN_STOP": 0
+      },
+      "期望": {
+        "RUN_ENVIRONMENT": 1,
+        "PRECONDITION_VALID": 1,
+        "CASE_RESULT": 3,
+        "RESTORATION_RESULT": 1,
+        "RUN_RESULT": 1,
+        "RUN_STOP": 0
+      },
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl:8"
+    },
+    {
+      "核查项": "运行ID与初态记录对应",
+      "实际": "WB-MKDIR-ABA-20261028-a01",
+      "期望": "WB-MKDIR-ABA-20261028-a01",
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/initial_conditions.json"
+    },
+    {
+      "核查项": "前提检查条数与通过标记",
+      "实际": [
+        23,
+        true,
+        true
+      ],
+      "期望": [
+        23,
+        true,
+        true
+      ],
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl:8 PRECONDITION_VALID"
+    },
+    {
+      "核查项": "三阶段实际顺序",
+      "实际": [
+        "A1_original",
+        "B_normalize",
+        "A2_original"
+      ],
+      "期望": [
+        "A1_original",
+        "B_normalize",
+        "A2_original"
+      ],
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl:8 CASE_RESULT"
+    },
+    {
+      "核查项": "三阶段开关",
+      "实际": [
+        false,
+        true,
+        false
+      ],
+      "期望": [
+        false,
+        true,
+        false
+      ],
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl:8 CASE_RESULT"
+    },
+    {
+      "核查项": "三阶段实际返回模式",
+      "实际": [
+        false,
+        true,
+        false
+      ],
+      "期望": [
+        false,
+        true,
+        false
+      ],
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl:8 CASE_RESULT（不用expected字段代替）"
+    },
+    {
+      "核查项": "实际异常类型",
+      "实际": [
+        "PermissionError",
+        null,
+        "PermissionError"
+      ],
+      "期望": [
+        "PermissionError",
+        null,
+        "PermissionError"
+      ],
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl:8 CASE_RESULT"
+    },
+    {
+      "核查项": "三次调用参数",
+      "实际": [
+        {
+          "exist_ok": true,
+          "mode": 511,
+          "parents": false
+        },
+        {
+          "exist_ok": true,
+          "mode": 511,
+          "parents": false
+        },
+        {
+          "exist_ok": true,
+          "mode": 511,
+          "parents": false
+        }
+      ],
+      "期望": [
+        {
+          "mode": 511,
+          "parents": false,
+          "exist_ok": true
+        },
+        {
+          "mode": 511,
+          "parents": false,
+          "exist_ok": true
+        },
+        {
+          "mode": 511,
+          "parents": false,
+          "exist_ok": true
+        }
+      ],
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl:8 CASE_RESULT"
+    },
+    {
+      "核查项": "每阶段选定目标的响应数",
+      "实际": [
+        1,
+        1,
+        1
+      ],
+      "期望": [
+        1,
+        1,
+        1
+      ],
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl:8"
+    },
+    {
+      "核查项": "三阶段被记录的选定请求响应字段一致",
+      "实际": [
+        {
+          "request_has_exist_ok": false,
+          "request_operation": "mkdir",
+          "request_path": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing",
+          "request_recursive": false,
+          "response_decision": "host-op",
+          "response_error": "EEXIST: file already exists, mkdir '/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing'",
+          "response_ok": false
+        },
+        {
+          "request_has_exist_ok": false,
+          "request_operation": "mkdir",
+          "request_path": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing",
+          "request_recursive": false,
+          "response_decision": "host-op",
+          "response_error": "EEXIST: file already exists, mkdir '/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing'",
+          "response_ok": false
+        },
+        {
+          "request_has_exist_ok": false,
+          "request_operation": "mkdir",
+          "request_path": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing",
+          "request_recursive": false,
+          "response_decision": "host-op",
+          "response_error": "EEXIST: file already exists, mkdir '/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing'",
+          "response_ok": false
+        }
+      ],
+      "期望": [
+        {
+          "request_has_exist_ok": false,
+          "request_operation": "mkdir",
+          "request_path": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing",
+          "request_recursive": false,
+          "response_decision": "host-op",
+          "response_error": "EEXIST: file already exists, mkdir '/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing'",
+          "response_ok": false
+        },
+        {
+          "request_has_exist_ok": false,
+          "request_operation": "mkdir",
+          "request_path": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing",
+          "request_recursive": false,
+          "response_decision": "host-op",
+          "response_error": "EEXIST: file already exists, mkdir '/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing'",
+          "response_ok": false
+        },
+        {
+          "request_has_exist_ok": false,
+          "request_operation": "mkdir",
+          "request_path": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing",
+          "request_recursive": false,
+          "response_decision": "host-op",
+          "response_error": "EEXIST: file already exists, mkdir '/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing'",
+          "response_ok": false
+        }
+      ],
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl:8"
+    },
+    {
+      "核查项": "三次仍发送mkdir且未携带exist_ok",
+      "实际": [
+        [
+          "mkdir",
+          false,
+          false,
+          false,
+          "host-op"
+        ],
+        [
+          "mkdir",
+          false,
+          false,
+          false,
+          "host-op"
+        ],
+        [
+          "mkdir",
+          false,
+          false,
+          false,
+          "host-op"
+        ]
+      ],
+      "期望": [
+        [
+          "mkdir",
+          false,
+          false,
+          false,
+          "host-op"
+        ],
+        [
+          "mkdir",
+          false,
+          false,
+          false,
+          "host-op"
+        ],
+        [
+          "mkdir",
+          false,
+          false,
+          false,
+          "host-op"
+        ]
+      ],
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl:8"
+    },
+    {
+      "核查项": "仅B把合条件异常正常化",
+      "实际": [
+        false,
+        true,
+        false
+      ],
+      "期望": [
+        false,
+        true,
+        false
+      ],
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl:8"
+    },
+    {
+      "核查项": "三次前后目录状态与准备初态逐字段一致",
+      "实际": true,
+      "期望": true,
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl:8；故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/initial_conditions.json"
+    },
+    {
+      "核查项": "恢复检查",
+      "实际": {
+        "Path_mkdir_restored": true,
+        "broker_enabled": true,
+        "os_mkdir_unchanged": true,
+        "sender_restored": true
+      },
+      "期望": {
+        "Path_mkdir_restored": true,
+        "sender_restored": true,
+        "os_mkdir_unchanged": true,
+        "broker_enabled": true
+      },
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl:8 RESTORATION_RESULT"
+    },
+    {
+      "核查项": "脚本汇总与重提取的实际模式对应",
+      "实际": [
+        false,
+        true,
+        false
+      ],
+      "期望": [
+        false,
+        true,
+        false
+      ],
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl:8 RUN_RESULT"
+    },
+    {
+      "核查项": "新解析结果与旧结构化提取一致",
+      "实际": true,
+      "期望": true,
+      "符合": true,
+      "证据": "evidence/workbuddy-mkdir/2026-10-28/ABA/audit.json"
+    },
+    {
+      "核查项": "后端原文件的当时长度前缀指纹匹配",
+      "实际": "db7e30e612d9ae912b69d3464c2102aab3dc84cc46bec512728a42326f123396",
+      "期望": "db7e30e612d9ae912b69d3464c2102aab3dc84cc46bec512728a42326f123396",
+      "符合": true,
+      "证据": "/PUBLIC_HOME/.workbuddy/logs/2026-10-28/MKDIR-ABA-a01__6ade792e9272626a6912ef1b1db0ecb3.log"
+    },
+    {
+      "核查项": "归档18行按原行号与原后端文件逐行对应",
+      "实际": true,
+      "期望": true,
+      "符合": true,
+      "证据": "evidence/workbuddy-mkdir/2026-10-28/ABA/backend-locator.json"
+    },
+    {
+      "核查项": "当时后端记录的同目标mkdir完成数",
+      "实际": 3,
+      "期望": 3,
+      "符合": true,
+      "证据": "evidence/workbuddy-mkdir/2026-10-28/ABA/backend-locator.json"
+    },
+    {
+      "核查项": "三次后端均获准后EEXIST且在同次调用时间内",
+      "实际": true,
+      "期望": true,
+      "符合": true,
+      "证据": "evidence/workbuddy-mkdir/2026-10-28/ABA/backend-locator.json"
+    },
+    {
+      "核查项": "后端文本摘录与定位记录对应",
+      "实际": {
+        "sha256": "eaaa2c4e2fc5b0f747c122ce461fa3c20ac7f046ab57b1d02a62bee89863496a"
+      },
+      "期望": {
+        "sha256": "eaaa2c4e2fc5b0f747c122ce461fa3c20ac7f046ab57b1d02a62bee89863496a"
+      },
+      "符合": true,
+      "证据": "evidence/workbuddy-mkdir/2026-10-28/ABA/backend.txt"
+    },
+    {
+      "核查项": "原代理mkdir的host请求没有exist_ok参数",
+      "实际": [
+        [
+          "path",
+          "recursive",
+          "mode"
+        ]
+      ],
+      "期望": [
+        [
+          "path",
+          "recursive",
+          "mode"
+        ]
+      ],
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/代理请求与错误处理-只读核查/源码/sitecustomize.py:747-760"
+    },
+    {
+      "核查项": "归档代理源码指纹对应当时安装文件记录",
+      "实际": "88759743859626ba51120851b4344bdb9755a96e1b3ebd58fa7d5e0d8676baa2",
+      "期望": "88759743859626ba51120851b4344bdb9755a96e1b3ebd58fa7d5e0d8676baa2",
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/代理请求与错误处理-只读核查/源码/sitecustomize.py"
+    },
+    {
+      "核查项": "探针和组件准备/归档副本指纹对应",
+      "实际": true,
+      "期望": true,
+      "符合": true,
+      "证据": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/initial_conditions.json"
+    },
+    {
+      "核查项": "本次只读观察的原目标状态仍与初态对应",
+      "实际": true,
+      "期望": true,
+      "符合": true,
+      "证据": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing"
+    }
+  ],
+  "核查条数": 34,
+  "不符项": [],
+  "重新提取实际输出": {
+    "RUN_STOP": [],
+    "RESTORATION_RESULT": [
+      {
+        "Path_mkdir_restored": true,
+        "broker_enabled": true,
+        "os_mkdir_unchanged": true,
+        "sender_restored": true
+      }
+    ],
+    "PRECONDITION_VALID": [
+      {
+        "checks": {
+          "broker_enabled": true,
+          "broker_session_present": true,
+          "broker_socket_present": true,
+          "bytecode_writes_disabled": true,
+          "component_sha256_matches": true,
+          "fixtures_entries_match": true,
+          "host_command_matches": true,
+          "installed_app_version_matches": true,
+          "installed_backend_sha256_matches": true,
+          "installed_shim_sha256_matches": true,
+          "installed_shim_source_matches": true,
+          "normal_site_startup": true,
+          "original_Path_mkdir_binding": true,
+          "probe_sha256_matches": true,
+          "python_executable_matches": true,
+          "python_version_matches": true,
+          "run_id_matches": true,
+          "target_has_no_symlink_alias": true,
+          "target_initial_state_matches": true,
+          "target_is_empty_directory": true,
+          "target_matches": true,
+          "version_matches": true,
+          "workspace_entries_match": true
+        },
+        "target_initial_state": {
+          "ctime_ns": 1793171245035285881,
+          "device": "PUBLIC_DEVICE",
+          "entries": [],
+          "gid": "PUBLIC_GROUP",
+          "inode": "PUBLIC_TARGET_INODE",
+          "is_directory": true,
+          "is_symlink": false,
+          "mode": 16877,
+          "mtime_ns": 1793171245035267298,
+          "uid": "PUBLIC_USER"
+        },
+        "valid": true
+      }
+    ],
+    "RUN_ENVIRONMENT": [
+      {
+        "component_sha256": "b211dd6d18a8288071cda1b4d1a80380e0c520f16a2efd4658cbe3b403828ed1",
+        "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01",
+        "installed_app_version_at_start": "5.8.3",
+        "installed_backend_sha256": "9eacdcdaaf3d53877ca4eac53836a446770b9a40f5dc6382b43230c73fdc5448",
+        "probe_sha256": "2d0484b31bc601cbfefdf2169561f9a9f6d9854faf304e2d15b71cb289bd47b4",
+        "probe_version": "mkdir-aba-1.0",
+        "python_executable": "/PUBLIC_HOME/.workbuddy/binaries/python/versions/3.13.12/bin/python3",
+        "python_version": "3.13.12",
+        "run_id": "WB-MKDIR-ABA-20261028-a01",
+        "sitecustomize_source": "/Applications/WorkBuddy.app/Contents/Resources/app.asar.unpacked/cli/vendor/shim/sitecustomize.py",
+        "target": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing"
+      }
+    ],
+    "RUN_RESULT": [
+      {
+        "ABA_pattern_observed": true,
+        "all_backend_response_checks_passed": true,
+        "complete_case_records": 3,
+        "executed_mkdir_calls": 3,
+        "exit_code": 0,
+        "expected_order": [
+          "A1_original",
+          "B_normalize",
+          "A2_original"
+        ],
+        "installed_environment_after": {
+          "installed_app_version_matches": true,
+          "installed_backend_hash_matches": true,
+          "installed_shim_hash_matches": true
+        },
+        "observed_normal_returns": [
+          false,
+          true,
+          false
+        ],
+        "restoration": {
+          "Path_mkdir_restored": true,
+          "broker_enabled": true,
+          "os_mkdir_unchanged": true,
+          "sender_restored": true
+        },
+        "run_id": "WB-MKDIR-ABA-20261028-a01",
+        "scope": "one-process diagnostic compensation contrast; not a deployed product fix or proof of a unique root cause",
+        "stop_reason": null
+      }
+    ],
+    "CASE_RESULT": [
+      {
+        "exception_text": "EEXIST: file already exists, mkdir '/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing'",
+        "exception_type": "PermissionError",
+        "expected_outcome_is_design_not_evidence": false,
+        "intervention_enabled": false,
+        "mkdir_attempts": 1,
+        "observed_event": {
+          "eligible_existing_directory_error": true,
+          "intervention_enabled": false,
+          "matching_responses": [
+            {
+              "request_has_exist_ok": false,
+              "request_operation": "mkdir",
+              "request_path": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing",
+              "request_recursive": false,
+              "response_decision": "host-op",
+              "response_error": "EEXIST: file already exists, mkdir '/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing'",
+              "response_ok": false
+            }
+          ],
+          "normalized": false,
+          "target": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing"
+        },
+        "phase": "A1_original",
+        "requested_parameters": {
+          "exist_ok": true,
+          "mode": 511,
+          "parents": false
+        },
+        "response_and_state_checks": {
+          "backend_decision_host_op": true,
+          "backend_error_EEXIST": true,
+          "backend_response_ok_false": true,
+          "eligible_existing_directory_error": true,
+          "normalization_flag_matches": true,
+          "one_matching_response": true,
+          "one_observed_mkdir": true,
+          "request_operation_mkdir": true,
+          "request_still_omits_exist_ok": true,
+          "same_nonrecursive_request": true,
+          "same_recorded_response_fields_as_A1": true,
+          "same_target": true,
+          "target_state_unchanged": true
+        },
+        "returned_normally": false,
+        "target_after": {
+          "ctime_ns": 1793171245035285881,
+          "device": "PUBLIC_DEVICE",
+          "entries": [],
+          "gid": "PUBLIC_GROUP",
+          "inode": "PUBLIC_TARGET_INODE",
+          "is_directory": true,
+          "is_symlink": false,
+          "mode": 16877,
+          "mtime_ns": 1793171245035267298,
+          "uid": "PUBLIC_USER"
+        },
+        "target_before": {
+          "ctime_ns": 1793171245035285881,
+          "device": "PUBLIC_DEVICE",
+          "entries": [],
+          "gid": "PUBLIC_GROUP",
+          "inode": "PUBLIC_TARGET_INODE",
+          "is_directory": true,
+          "is_symlink": false,
+          "mode": 16877,
+          "mtime_ns": 1793171245035267298,
+          "uid": "PUBLIC_USER"
+        }
+      },
+      {
+        "exception_text": null,
+        "exception_type": null,
+        "expected_outcome_is_design_not_evidence": true,
+        "intervention_enabled": true,
+        "mkdir_attempts": 1,
+        "observed_event": {
+          "eligible_existing_directory_error": true,
+          "intervention_enabled": true,
+          "matching_responses": [
+            {
+              "request_has_exist_ok": false,
+              "request_operation": "mkdir",
+              "request_path": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing",
+              "request_recursive": false,
+              "response_decision": "host-op",
+              "response_error": "EEXIST: file already exists, mkdir '/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing'",
+              "response_ok": false
+            }
+          ],
+          "normalized": true,
+          "target": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing"
+        },
+        "phase": "B_normalize",
+        "requested_parameters": {
+          "exist_ok": true,
+          "mode": 511,
+          "parents": false
+        },
+        "response_and_state_checks": {
+          "backend_decision_host_op": true,
+          "backend_error_EEXIST": true,
+          "backend_response_ok_false": true,
+          "eligible_existing_directory_error": true,
+          "normalization_flag_matches": true,
+          "one_matching_response": true,
+          "one_observed_mkdir": true,
+          "request_operation_mkdir": true,
+          "request_still_omits_exist_ok": true,
+          "same_nonrecursive_request": true,
+          "same_recorded_response_fields_as_A1": true,
+          "same_target": true,
+          "target_state_unchanged": true
+        },
+        "returned_normally": true,
+        "target_after": {
+          "ctime_ns": 1793171245035285881,
+          "device": "PUBLIC_DEVICE",
+          "entries": [],
+          "gid": "PUBLIC_GROUP",
+          "inode": "PUBLIC_TARGET_INODE",
+          "is_directory": true,
+          "is_symlink": false,
+          "mode": 16877,
+          "mtime_ns": 1793171245035267298,
+          "uid": "PUBLIC_USER"
+        },
+        "target_before": {
+          "ctime_ns": 1793171245035285881,
+          "device": "PUBLIC_DEVICE",
+          "entries": [],
+          "gid": "PUBLIC_GROUP",
+          "inode": "PUBLIC_TARGET_INODE",
+          "is_directory": true,
+          "is_symlink": false,
+          "mode": 16877,
+          "mtime_ns": 1793171245035267298,
+          "uid": "PUBLIC_USER"
+        }
+      },
+      {
+        "exception_text": "EEXIST: file already exists, mkdir '/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing'",
+        "exception_type": "PermissionError",
+        "expected_outcome_is_design_not_evidence": false,
+        "intervention_enabled": false,
+        "mkdir_attempts": 1,
+        "observed_event": {
+          "eligible_existing_directory_error": true,
+          "intervention_enabled": false,
+          "matching_responses": [
+            {
+              "request_has_exist_ok": false,
+              "request_operation": "mkdir",
+              "request_path": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing",
+              "request_recursive": false,
+              "response_decision": "host-op",
+              "response_error": "EEXIST: file already exists, mkdir '/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing'",
+              "response_ok": false
+            }
+          ],
+          "normalized": false,
+          "target": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing"
+        },
+        "phase": "A2_original",
+        "requested_parameters": {
+          "exist_ok": true,
+          "mode": 511,
+          "parents": false
+        },
+        "response_and_state_checks": {
+          "backend_decision_host_op": true,
+          "backend_error_EEXIST": true,
+          "backend_response_ok_false": true,
+          "eligible_existing_directory_error": true,
+          "normalization_flag_matches": true,
+          "one_matching_response": true,
+          "one_observed_mkdir": true,
+          "request_operation_mkdir": true,
+          "request_still_omits_exist_ok": true,
+          "same_nonrecursive_request": true,
+          "same_recorded_response_fields_as_A1": true,
+          "same_target": true,
+          "target_state_unchanged": true
+        },
+        "returned_normally": false,
+        "target_after": {
+          "ctime_ns": 1793171245035285881,
+          "device": "PUBLIC_DEVICE",
+          "entries": [],
+          "gid": "PUBLIC_GROUP",
+          "inode": "PUBLIC_TARGET_INODE",
+          "is_directory": true,
+          "is_symlink": false,
+          "mode": 16877,
+          "mtime_ns": 1793171245035267298,
+          "uid": "PUBLIC_USER"
+        },
+        "target_before": {
+          "ctime_ns": 1793171245035285881,
+          "device": "PUBLIC_DEVICE",
+          "entries": [],
+          "gid": "PUBLIC_GROUP",
+          "inode": "PUBLIC_TARGET_INODE",
+          "is_directory": true,
+          "is_symlink": false,
+          "mode": 16877,
+          "mtime_ns": 1793171245035267298,
+          "uid": "PUBLIC_USER"
+        }
+      }
+    ]
+  },
+  "准备指纹核对": [
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/准备核对.json",
+      "exists": true,
+      "recorded_sha256": "74e7a4b7f5b6a919b4c59817a9d97319c33f9ef17e7efba50d027d0a6481c821",
+      "actual_sha256": "74e7a4b7f5b6a919b4c59817a9d97319c33f9ef17e7efba50d027d0a6481c821"
+    },
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/initial_conditions.json",
+      "exists": true,
+      "recorded_sha256": "5e2fbcdd576efa3378361ba735c8f9ad87a2f3e9e77e2d9951a4b0ae4cdb9e01",
+      "actual_sha256": "5e2fbcdd576efa3378361ba735c8f9ad87a2f3e9e77e2d9951a4b0ae4cdb9e01"
+    },
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/给产品的提示词.md",
+      "exists": true,
+      "recorded_sha256": "ddef357f66ce3729635ad22e1189c1d107adfbeee40345aaaad65f1ae407d47f",
+      "actual_sha256": "ddef357f66ce3729635ad22e1189c1d107adfbeee40345aaaad65f1ae407d47f"
+    },
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/既有材料指纹.json",
+      "exists": true,
+      "recorded_sha256": "4a550cc63b223274b830052c7ba5776f641b85c63872c2a33beb182000a67983",
+      "actual_sha256": "4a550cc63b223274b830052c7ba5776f641b85c63872c2a33beb182000a67983"
+    },
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/scoped_mkdir_intervention.py",
+      "exists": true,
+      "recorded_sha256": "b211dd6d18a8288071cda1b4d1a80380e0c520f16a2efd4658cbe3b403828ed1",
+      "actual_sha256": "b211dd6d18a8288071cda1b4d1a80380e0c520f16a2efd4658cbe3b403828ed1"
+    },
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/准备状态.json",
+      "exists": true,
+      "recorded_sha256": "16698e91bacb11aec07a92aefc88f9d549e9c2606781929cb368838cd58c7285",
+      "actual_sha256": "16698e91bacb11aec07a92aefc88f9d549e9c2606781929cb368838cd58c7285"
+    },
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/probe_mkdir_aba.py",
+      "exists": true,
+      "recorded_sha256": "2d0484b31bc601cbfefdf2169561f9a9f6d9854faf304e2d15b71cb289bd47b4",
+      "actual_sha256": "2d0484b31bc601cbfefdf2169561f9a9f6d9854faf304e2d15b71cb289bd47b4"
+    },
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/验证安排.md",
+      "exists": true,
+      "recorded_sha256": "681d0a3447037c613776ed9415c15d3f489e391adfc82f2c0dc4385f8cfe2d09",
+      "actual_sha256": "681d0a3447037c613776ed9415c15d3f489e391adfc82f2c0dc4385f8cfe2d09"
+    },
+    {
+      "path": "LOCAL_ONLY: 独立测试工作区/WorkBuddy/MKDIR-ABA-a01/initial_conditions.json",
+      "exists": true,
+      "recorded_sha256": "5e2fbcdd576efa3378361ba735c8f9ad87a2f3e9e77e2d9951a4b0ae4cdb9e01",
+      "actual_sha256": "5e2fbcdd576efa3378361ba735c8f9ad87a2f3e9e77e2d9951a4b0ae4cdb9e01"
+    },
+    {
+      "path": "LOCAL_ONLY: 独立测试工作区/WorkBuddy/MKDIR-ABA-a01/scoped_mkdir_intervention.py",
+      "exists": true,
+      "recorded_sha256": "b211dd6d18a8288071cda1b4d1a80380e0c520f16a2efd4658cbe3b403828ed1",
+      "actual_sha256": "b211dd6d18a8288071cda1b4d1a80380e0c520f16a2efd4658cbe3b403828ed1"
+    },
+    {
+      "path": "LOCAL_ONLY: 独立测试工作区/WorkBuddy/MKDIR-ABA-a01/probe_mkdir_aba.py",
+      "exists": true,
+      "recorded_sha256": "2d0484b31bc601cbfefdf2169561f9a9f6d9854faf304e2d15b71cb289bd47b4",
+      "actual_sha256": "2d0484b31bc601cbfefdf2169561f9a9f6d9854faf304e2d15b71cb289bd47b4"
+    }
+  ],
+  "归档指纹核对": [
+    {
+      "path": "evidence/workbuddy-mkdir/2026-10-28/ABA/environment.json",
+      "exists": true,
+      "recorded_sha256": "0295ef1b10861a150ee7257a70da3a03ccb1eaf0ac92cda2aad0fd9b66ea33cb",
+      "actual_sha256": "0295ef1b10861a150ee7257a70da3a03ccb1eaf0ac92cda2aad0fd9b66ea33cb"
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-10-28/ABA/state.json",
+      "exists": true,
+      "recorded_sha256": "e6e23b8d8c25a89d1f260b6313fae76ea029db6ace6afb354ca21ca596e0627c",
+      "actual_sha256": "e6e23b8d8c25a89d1f260b6313fae76ea029db6ace6afb354ca21ca596e0627c"
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-10-28/ABA/audit.json",
+      "exists": true,
+      "recorded_sha256": "1b79287e3e974a88d616d183bbc9a67bb5a12fe7044ff2471e6262d9f280c365",
+      "actual_sha256": "1b79287e3e974a88d616d183bbc9a67bb5a12fe7044ff2471e6262d9f280c365"
+    },
+    {
+      "path": "results/workbuddy-mkdir-2026-10-28.md",
+      "exists": true,
+      "recorded_sha256": "91ec47a1d3e2bff23da8e9c51b0c95a96507f5c8b927b6769e3959beda5f44e1",
+      "actual_sha256": "91ec47a1d3e2bff23da8e9c51b0c95a96507f5c8b927b6769e3959beda5f44e1"
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-10-28/ABA/tool-return.txt",
+      "exists": true,
+      "recorded_sha256": "4423df1b7a3c8f776b47cd0fc7824f3cf2441723fa5f89d4d3ec7b0e95cb7f5c",
+      "actual_sha256": "4423df1b7a3c8f776b47cd0fc7824f3cf2441723fa5f89d4d3ec7b0e95cb7f5c"
+    },
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/产品最终回复.md",
+      "exists": true,
+      "recorded_sha256": "e14ea86badb85ea22f6e878d06e63eb1c03c12c89bf86e4fb0e835518317a610",
+      "actual_sha256": "e14ea86badb85ea22f6e878d06e63eb1c03c12c89bf86e4fb0e835518317a610"
+    },
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/复核本次对照.py",
+      "exists": true,
+      "recorded_sha256": "78153700cea9e7796f9a4aabf89e10f314f00acb16109b9cb398e7ccb3041f67",
+      "actual_sha256": "78153700cea9e7796f9a4aabf89e10f314f00acb16109b9cb398e7ccb3041f67"
+    },
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/用户转贴.txt",
+      "exists": true,
+      "recorded_sha256": "e14ea86badb85ea22f6e878d06e63eb1c03c12c89bf86e4fb0e835518317a610",
+      "actual_sha256": "e14ea86badb85ea22f6e878d06e63eb1c03c12c89bf86e4fb0e835518317a610"
+    },
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/转存渲染正文.txt",
+      "exists": true,
+      "recorded_sha256": "8b383219fbfb60bb5509f85fcd8b58bd915f50a6046abe166d89143fece098c8",
+      "actual_sha256": "8b383219fbfb60bb5509f85fcd8b58bd915f50a6046abe166d89143fece098c8"
+    },
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/既有材料指纹.json",
+      "exists": true,
+      "recorded_sha256": "28edbcbceb4fe0733c36dd23a8241d84cb0923192d2438931f5e0f2181385e86",
+      "actual_sha256": "28edbcbceb4fe0733c36dd23a8241d84cb0923192d2438931f5e0f2181385e86"
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-10-28/sequence-ledger.json",
+      "exists": true,
+      "recorded_sha256": "1a6fe1212dc9bf65a3d06147ba86d72e95d3103e3a2cf188a63db9e346974bf6",
+      "actual_sha256": "1a6fe1212dc9bf65a3d06147ba86d72e95d3103e3a2cf188a63db9e346974bf6"
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-10-28/ABA/output-preservation.json",
+      "exists": true,
+      "recorded_sha256": "28053e3b157985faaec191eec3b1829d66ac7a4c28b758c1e6ee8a2c09eda824",
+      "actual_sha256": "28053e3b157985faaec191eec3b1829d66ac7a4c28b758c1e6ee8a2c09eda824"
+    },
+    {
+      "path": "results/workbuddy-mkdir-2026-10-28.json",
+      "exists": true,
+      "recorded_sha256": "9440471e7a897c20ad44a9b7083713bc70cf48554bd5d4f969300defefcc2d20",
+      "actual_sha256": "9440471e7a897c20ad44a9b7083713bc70cf48554bd5d4f969300defefcc2d20"
+    },
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/工作目录/initial_conditions.json",
+      "exists": true,
+      "recorded_sha256": "5e2fbcdd576efa3378361ba735c8f9ad87a2f3e9e77e2d9951a4b0ae4cdb9e01",
+      "actual_sha256": "5e2fbcdd576efa3378361ba735c8f9ad87a2f3e9e77e2d9951a4b0ae4cdb9e01"
+    },
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/工作目录/scoped_mkdir_intervention.py",
+      "exists": true,
+      "recorded_sha256": "b211dd6d18a8288071cda1b4d1a80380e0c520f16a2efd4658cbe3b403828ed1",
+      "actual_sha256": "b211dd6d18a8288071cda1b4d1a80380e0c520f16a2efd4658cbe3b403828ed1"
+    },
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/工作目录/probe_mkdir_aba.py",
+      "exists": true,
+      "recorded_sha256": "2d0484b31bc601cbfefdf2169561f9a9f6d9854faf304e2d15b71cb289bd47b4",
+      "actual_sha256": "2d0484b31bc601cbfefdf2169561f9a9f6d9854faf304e2d15b71cb289bd47b4"
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-10-28/ABA/backend-locator.json",
+      "exists": true,
+      "recorded_sha256": "d61bd8de22467cb0b5c6567746beedd0d96d0f4677395c9dee3e3d5fccfa95de",
+      "actual_sha256": "d61bd8de22467cb0b5c6567746beedd0d96d0f4677395c9dee3e3d5fccfa95de"
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-10-28/ABA/backend.txt",
+      "exists": true,
+      "recorded_sha256": "eaaa2c4e2fc5b0f747c122ce461fa3c20ac7f046ab57b1d02a62bee89863496a",
+      "actual_sha256": "eaaa2c4e2fc5b0f747c122ce461fa3c20ac7f046ab57b1d02a62bee89863496a"
+    },
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.file-rollback.ndjson",
+      "exists": true,
+      "recorded_sha256": "098ca96027234fccb3a56d5b8e6d30720c00e8410ba68f1d92bb0f71c9d419e9",
+      "actual_sha256": "098ca96027234fccb3a56d5b8e6d30720c00e8410ba68f1d92bb0f71c9d419e9"
+    },
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/WB-ABA-CALL-1-render.txt",
+      "exists": true,
+      "recorded_sha256": "a776b6a559069cd7929b4c833c0eedbd77d5361bb36e27956ae1a477a58f2230",
+      "actual_sha256": "a776b6a559069cd7929b4c833c0eedbd77d5361bb36e27956ae1a477a58f2230"
+    },
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/原生记录/PRIVATE_SESSION_REDACTED.jsonl",
+      "exists": true,
+      "recorded_sha256": "e9a564ec96b37078839c9b6ff4b5789c96df50890f891fd639aad74176f36e06",
+      "actual_sha256": "e9a564ec96b37078839c9b6ff4b5789c96df50890f891fd639aad74176f36e06"
+    },
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/当前进展.json",
+      "exists": true,
+      "recorded_sha256": "ef82bd08f69a6562f6e92405934b86c7200ed6a874b376342d49cfc9fd691491",
+      "actual_sha256": "ef82bd08f69a6562f6e92405934b86c7200ed6a874b376342d49cfc9fd691491"
+    }
+  ],
+  "实际代码副本指纹": [
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/probe_mkdir_aba.py",
+      "sha256": "2d0484b31bc601cbfefdf2169561f9a9f6d9854faf304e2d15b71cb289bd47b4",
+      "expected": "2d0484b31bc601cbfefdf2169561f9a9f6d9854faf304e2d15b71cb289bd47b4"
+    },
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/工作目录/probe_mkdir_aba.py",
+      "sha256": "2d0484b31bc601cbfefdf2169561f9a9f6d9854faf304e2d15b71cb289bd47b4",
+      "expected": "2d0484b31bc601cbfefdf2169561f9a9f6d9854faf304e2d15b71cb289bd47b4"
+    },
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/scoped_mkdir_intervention.py",
+      "sha256": "b211dd6d18a8288071cda1b4d1a80380e0c520f16a2efd4658cbe3b403828ed1",
+      "expected": "b211dd6d18a8288071cda1b4d1a80380e0c520f16a2efd4658cbe3b403828ed1"
+    },
+    {
+      "path": "LOCAL_ONLY: 故障归因/WorkBuddy目录创建-2026-10-28/正式单环节对照-准备/阶段01-运行后只读取证/工作目录/scoped_mkdir_intervention.py",
+      "sha256": "b211dd6d18a8288071cda1b4d1a80380e0c520f16a2efd4658cbe3b403828ed1",
+      "expected": "b211dd6d18a8288071cda1b4d1a80380e0c520f16a2efd4658cbe3b403828ed1"
+    }
+  ],
+  "原后端来源核对": {
+    "path": "/PUBLIC_HOME/.workbuddy/logs/2026-10-28/MKDIR-ABA-a01__6ade792e9272626a6912ef1b1db0ecb3.log",
+    "exists": true,
+    "current_bytes": 714586,
+    "captured_bytes": 560521,
+    "captured_prefix_sha256": "db7e30e612d9ae912b69d3464c2102aab3dc84cc46bec512728a42326f123396",
+    "recorded_sha256": "db7e30e612d9ae912b69d3464c2102aab3dc84cc46bec512728a42326f123396"
+  },
+  "三阶段后端对应": [
+    {
+      "phase_by_order": "A1",
+      "host_op_line": 2349,
+      "policy_approved": true,
+      "user_allowlist": true,
+      "ok_false": true,
+      "EEXIST": true,
+      "same_session": true,
+      "same_tool_call": true,
+      "local_time": "2026-10-28T15:54:27.622000+08:00",
+      "within_native_call_interval": true
+    },
+    {
+      "phase_by_order": "B",
+      "host_op_line": 2368,
+      "policy_approved": true,
+      "user_allowlist": true,
+      "ok_false": true,
+      "EEXIST": true,
+      "same_session": true,
+      "same_tool_call": true,
+      "local_time": "2026-10-28T15:54:27.655000+08:00",
+      "within_native_call_interval": true
+    },
+    {
+      "phase_by_order": "A2",
+      "host_op_line": 2375,
+      "policy_approved": true,
+      "user_allowlist": true,
+      "ok_false": true,
+      "EEXIST": true,
+      "same_session": true,
+      "same_tool_call": true,
+      "local_time": "2026-10-28T15:54:27.658000+08:00",
+      "within_native_call_interval": true
+    }
+  ],
+  "本次只读目标状态": {
+    "path": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/MKDIR-ABA-a01/fixtures/target_existing",
+    "exists": true,
+    "state": {
+      "is_directory": true,
+      "is_symlink": false,
+      "device": "PUBLIC_DEVICE",
+      "inode": "PUBLIC_TARGET_INODE",
+      "mode": 16877,
+      "uid": "PUBLIC_USER",
+      "gid": "PUBLIC_GROUP",
+      "mtime_ns": 1793171245035267298,
+      "ctime_ns": 1793171245035285881,
+      "entries": []
+    },
+    "matches_historical_initial": true
+  },
+  "最终回复没有原样列出的CASE_RESULT阶段": [
+    "A1_original",
+    "B_normalize",
+    "A2_original"
+  ],
+  "后端对应限制": "A1/B/A2按同会话同调用下唯一三次同目标事件的顺序关联，不是后端原生阶段标签。",
+  "独立性限制": "代码由助手再次静态阅读；目录运行中状态仍来自探针观测，不是新增独立内核审计。未重复执行业务命令。",
+  "已执行产品探针": false,
+  "导入产品或候选代码": false,
+  "正式产品修复验收": false,
+  "第二位成员独立验收": false,
+  "公开版说明": "公开副本：路径、会话标识和私人入口已脱敏；公开摘录不等于完整原件。来源SHA-256与原行号指向本地原件，公开文件字节指纹见MANIFEST.json；原字段内的指针不保证适用于变换后的公开副本。未公开原件不能由本包独立认证。"
+}

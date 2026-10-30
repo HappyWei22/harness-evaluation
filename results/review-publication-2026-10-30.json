@@ -1,0 +1,2139 @@
+{
+  "date": "2026-10-30",
+  "scope": "十项统一记录、七维纳入审阅、114条历史覆盖、局部故障验证的补充交付；复用既有校准材料",
+  "task_directories": 22,
+  "tasks_with_historical_records": 20,
+  "unexecuted_only_tasks": 2,
+  "prepared_not_started_entries": 6,
+  "newly_formatted_records": 109,
+  "reused_records": 5,
+  "historical_records": 114,
+  "item_reviews": 111,
+  "purpose_reviews": 3,
+  "new_product_runs": 0,
+  "independent_member_acceptance": false,
+  "historical_checker_revision_inventory_complete": false,
+  "field_corrections": [
+    {
+      "record_id": "Codex-REC01-a01",
+      "field": "时间",
+      "previous": "2026-10-20 21:28:10—21:28:31（北京时间；原生会话首末事件，跨度20秒）",
+      "corrected": "2026-10-20 21:28:11.829—21:28:31.254（北京时间；原生task_started至task_complete，跨度19.425秒）",
+      "evidence": "evidence/recovery/REC01/Codex/timing.excerpt.json",
+      "basis": "读取同次原生task_started和task_complete时间；保留原值，不改评分或运行次数。"
+    }
+  ],
+  "records": [
+    {
+      "ledger_id": "ART01-Codex-a01",
+      "record_id": "Codex-ART01-a01",
+      "json": "results/unified-runs-2026-10-30/ART01/运行记录/Codex-ART01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/ART01/运行记录/Codex-ART01-a01.md",
+      "source_sha256": "12465dd5a13c2d3c41e3ba22cf8b0049b808b6db14a3c1abef18fb7370ef6ae7",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/05-产物保存与交付/ART01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "ART01-DSH-a01",
+      "record_id": "DSH-ART01-a01",
+      "json": "results/unified-runs-2026-10-30/ART01/运行记录/DSH-ART01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/ART01/运行记录/DSH-ART01-a01.md",
+      "source_sha256": "4d33bf3746a0b63d15ce8d374b8e027b14a863a445e3e8c0f844d689da87fe0b",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/05-产物保存与交付/ART01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "ART01-WorkBuddy-a01",
+      "record_id": "WorkBuddy-ART01-a01",
+      "json": "results/unified-runs-2026-10-30/ART01/运行记录/WorkBuddy-ART01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/ART01/运行记录/WorkBuddy-ART01-a01.md",
+      "source_sha256": "276acb1e3999af0b6582fcc7e21ac7988076bf82209092333ae5e15d076372a3",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/05-产物保存与交付/ART01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "ART01-元宝-a01",
+      "record_id": "元宝专家模式-ART01-a01",
+      "json": "results/unified-runs-2026-10-30/ART01/运行记录/元宝专家模式-ART01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/ART01/运行记录/元宝专家模式-ART01-a01.md",
+      "source_sha256": "da5d10aab801704676fddc038474c24d366690ff4c4316ea7b3dc756cf1e9441",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/05-产物保存与交付/ART01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "ART01-豆包-a01",
+      "record_id": "豆包办公-ART01-a01",
+      "json": "results/unified-runs-2026-10-30/ART01/运行记录/豆包办公-ART01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/ART01/运行记录/豆包办公-ART01-a01.md",
+      "source_sha256": "0d1cadb19faa5856bc62a454ad2dc5d0d7d0203ef49d97fa838fbd7990d0a1a4",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/05-产物保存与交付/ART01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "ART02-Codex-a01",
+      "record_id": "Codex-ART02-a01",
+      "json": "results/unified-runs-2026-10-30/ART02/运行记录/Codex-ART02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/ART02/运行记录/Codex-ART02-a01.md",
+      "source_sha256": "e5febfb11b4e1f3c549abb04389ed0748ec19f34e210dceccea6f89eca8d959e",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/05-产物保存与交付/ART02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "ART02-DSH-a01",
+      "record_id": "DSH-ART02-a01",
+      "json": "results/unified-runs-2026-10-30/ART02/运行记录/DSH-ART02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/ART02/运行记录/DSH-ART02-a01.md",
+      "source_sha256": "0afd00f693f43e6a454451ba7c9ed51678d22489fef331779079adb4b196c862",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/05-产物保存与交付/ART02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "ART02-WorkBuddy-a01",
+      "record_id": "WorkBuddy-ART02-a01",
+      "json": "results/unified-runs-2026-10-30/ART02/运行记录/WorkBuddy-ART02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/ART02/运行记录/WorkBuddy-ART02-a01.md",
+      "source_sha256": "995d3184b6a8c14a7112fc0f0b4f133cf8d2ce10f2b3f9f4fa9ba60b182fd469",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/05-产物保存与交付/ART02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "ART02-元宝-a01",
+      "record_id": "元宝专家模式-ART02-a01",
+      "json": "results/unified-runs-2026-10-30/ART02/运行记录/元宝专家模式-ART02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/ART02/运行记录/元宝专家模式-ART02-a01.md",
+      "source_sha256": "35ac6ba470181c0345116653de09b15f994dc6da64e1562f71056a79cf295a11",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/05-产物保存与交付/ART02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "ART02-豆包-a01",
+      "record_id": "豆包办公-ART02-a01",
+      "json": "results/unified-runs-2026-10-30/ART02/运行记录/豆包办公-ART02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/ART02/运行记录/豆包办公-ART02-a01.md",
+      "source_sha256": "9b00e516d1fb23a6399e3385c4c3d7ce4a8b429f67722f750fe9d7a1bf3e2654",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/05-产物保存与交付/ART02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "ART04-Codex-a01",
+      "record_id": "Codex-ART04-a01",
+      "json": "results/unified-runs-2026-10-30/ART04/运行记录/Codex-ART04-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/ART04/运行记录/Codex-ART04-a01.md",
+      "source_sha256": "0e589731bc276ae0bd55950f94a983d4c1cf2d2e7dc8d5fbcb7e1dd2dab50889",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/05-产物保存与交付/ART04-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "ART04-DSH-a01",
+      "record_id": "DSH-ART04-a01",
+      "json": "results/unified-runs-2026-10-30/ART04/运行记录/DSH-ART04-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/ART04/运行记录/DSH-ART04-a01.md",
+      "source_sha256": "1cad1ba36a7b7ebc37d3b88bfcb00c7b70fcd520378b39d85799f0c559ac3359",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/05-产物保存与交付/ART04-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "ART04-WorkBuddy-a01",
+      "record_id": "WorkBuddy-ART04-a01",
+      "json": "results/unified-runs-2026-10-30/ART04/运行记录/WorkBuddy-ART04-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/ART04/运行记录/WorkBuddy-ART04-a01.md",
+      "source_sha256": "f54e3244921c65649c11f15d891814f4fc3f8493b0062afea28356e97ceefc6d",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/05-产物保存与交付/ART04-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "ART04-元宝-a01",
+      "record_id": "元宝专家模式-ART04-a01",
+      "json": "results/unified-runs-2026-10-30/ART04/运行记录/元宝专家模式-ART04-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/ART04/运行记录/元宝专家模式-ART04-a01.md",
+      "source_sha256": "7a9a8a2822e146faac4cbdbcbd47749c19a97ee8e0d0abb94b595ffe4afa38c9",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/05-产物保存与交付/ART04-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "ART04-豆包-a01",
+      "record_id": "豆包办公-ART04-a01",
+      "json": "results/unified-runs-2026-10-30/ART04/运行记录/豆包办公-ART04-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/ART04/运行记录/豆包办公-ART04-a01.md",
+      "source_sha256": "5ecc31de12070e3cb2980c5bfc198cd05a6433014d76a0286e1a1fe06c510a2c",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/05-产物保存与交付/ART04-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "ART05-Codex-a01",
+      "record_id": "Codex-ART05-a01",
+      "json": "results/unified-runs-2026-10-30/ART05/运行记录/Codex-ART05-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/ART05/运行记录/Codex-ART05-a01.md",
+      "source_sha256": "f455f7298f543faa9c4b5faa9f2f4f3f6b027324401f69751e05e4e34cb1ca05",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/05-产物保存与交付/ART05-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "ART05-DSH-a01",
+      "record_id": "DSH-ART05-a01",
+      "json": "results/unified-runs-2026-10-30/ART05/运行记录/DSH-ART05-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/ART05/运行记录/DSH-ART05-a01.md",
+      "source_sha256": "ee6d71aaaf2e1a59ca0a844d761ce866128e0bc7c6652affaafe43a2dc111ef8",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/05-产物保存与交付/ART05-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "ART05-WorkBuddy-a01",
+      "record_id": "WorkBuddy-ART05-a01",
+      "json": "results/unified-runs-2026-10-30/ART05/运行记录/WorkBuddy-ART05-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/ART05/运行记录/WorkBuddy-ART05-a01.md",
+      "source_sha256": "7a5ab2f5fdc6c3cf8f9889432b6a6fbae7b68fec639247afe0a0ff5874f5ed5b",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/05-产物保存与交付/ART05-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "ART05-元宝-a01",
+      "record_id": "元宝专家模式-ART05-a01",
+      "json": "results/unified-runs-2026-10-30/ART05/运行记录/元宝专家模式-ART05-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/ART05/运行记录/元宝专家模式-ART05-a01.md",
+      "source_sha256": "027c01ef64a23fd6e850f2fe3bfcfd7214554d3bf9f36db4e5c13aa7a4acfae4",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/05-产物保存与交付/ART05-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "ART05-豆包-a01",
+      "record_id": "豆包办公-ART05-a01",
+      "json": "results/unified-runs-2026-10-30/ART05/运行记录/豆包办公-ART05-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/ART05/运行记录/豆包办公-ART05-a01.md",
+      "source_sha256": "b93c6e9cae562d92aa839083656d4c04ac614d491ceca78cf9ce92bc314fa94a",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/05-产物保存与交付/ART05-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "CTX01-Codex-a01",
+      "record_id": "Codex-CTX01-a01",
+      "json": "results/unified-runs-2026-10-30/CTX01/运行记录/Codex-CTX01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/CTX01/运行记录/Codex-CTX01-a01.md",
+      "source_sha256": "9e74f07c82966a0fe20b2f90928c8b38c7146a4e2a83d3ea54ef188d32e560ed",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/02-上下文管理/CTX01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "CTX01-DSH-a01",
+      "record_id": "DSH-CTX01-a01",
+      "json": "results/unified-runs-2026-10-30/CTX01/运行记录/DSH-CTX01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/CTX01/运行记录/DSH-CTX01-a01.md",
+      "source_sha256": "299724e5e3deeef66684e0ebde98bfef259466d0651b73665a0473cdd333558e",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/02-上下文管理/CTX01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "CTX01-WorkBuddy-a01",
+      "record_id": "WorkBuddy-CTX01-a01",
+      "json": "results/unified-runs-2026-10-30/CTX01/运行记录/WorkBuddy-CTX01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/CTX01/运行记录/WorkBuddy-CTX01-a01.md",
+      "source_sha256": "924eae2ce57957b29543b5e295275b484fb82639ee479ca41dcdcc67885a3f06",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/02-上下文管理/CTX01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "CTX01-元宝-a01",
+      "record_id": "元宝专家模式-CTX01-a01",
+      "json": "results/unified-runs-2026-10-30/CTX01/运行记录/元宝专家模式-CTX01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/CTX01/运行记录/元宝专家模式-CTX01-a01.md",
+      "source_sha256": "81fd041346ca4f4c59439a1b3d41338c7736cbc11f424da23e5a55f71cecb2ad",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/02-上下文管理/CTX01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "CTX01-豆包-a01",
+      "record_id": "豆包办公-CTX01-a01",
+      "json": "results/unified-runs-2026-10-30/CTX01/运行记录/豆包办公-CTX01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/CTX01/运行记录/豆包办公-CTX01-a01.md",
+      "source_sha256": "e7e2479c00a9933d2ffa28106770cc16582021082d2072dea3a7279e237b9d9a",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/02-上下文管理/CTX01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "CTX02-Codex-a01",
+      "record_id": "Codex-CTX02-a01",
+      "json": "results/unified-runs-2026-10-30/CTX02/运行记录/Codex-CTX02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/CTX02/运行记录/Codex-CTX02-a01.md",
+      "source_sha256": "51d07380a749760cc253cc7d5061ee38480f205eaa55dbf01ed8645cd19429f2",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/02-上下文管理/CTX02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "CTX02-DSH-a01",
+      "record_id": "DSH-CTX02-a01",
+      "json": "results/unified-runs-2026-10-30/CTX02/运行记录/DSH-CTX02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/CTX02/运行记录/DSH-CTX02-a01.md",
+      "source_sha256": "1f5a56a9b8078def8015d7fe2e5122e53ffcbb1e3a0d1745f8a9fa9c94b0c6e7",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/02-上下文管理/CTX02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "CTX02-WorkBuddy-a01",
+      "record_id": "WorkBuddy-CTX02-a01",
+      "json": "results/unified-runs-2026-10-30/CTX02/运行记录/WorkBuddy-CTX02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/CTX02/运行记录/WorkBuddy-CTX02-a01.md",
+      "source_sha256": "a1746a00fd89fba8da0150fa6dfb632ba70c461de6a9cc8a79027758491d338b",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/02-上下文管理/CTX02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "CTX02-元宝-a01",
+      "record_id": "元宝专家模式-CTX02-a01",
+      "json": "results/unified-runs-2026-10-30/CTX02/运行记录/元宝专家模式-CTX02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/CTX02/运行记录/元宝专家模式-CTX02-a01.md",
+      "source_sha256": "323a18aff8ce6d9527647d20660ef07268ea5eeb049043ea6bded047391c61cf",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/02-上下文管理/CTX02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "CTX02-豆包-a01",
+      "record_id": "豆包办公-CTX02-a01",
+      "json": "results/unified-runs-2026-10-30/CTX02/运行记录/豆包办公-CTX02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/CTX02/运行记录/豆包办公-CTX02-a01.md",
+      "source_sha256": "63ef3129045191a1b4ce6b6dc1066e40ab5f7226e8fb662205b3499fe4b04874",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/02-上下文管理/CTX02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "FB01-Codex-a01",
+      "record_id": "Codex-FB01-a01",
+      "json": "results/unified-runs-2026-10-30/FB01/运行记录/Codex-FB01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/FB01/运行记录/Codex-FB01-a01.md",
+      "source_sha256": "e28cb2c647dca1779901063c766a6f77b43ae6721a21b9cf0ddef49888292137",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/01-信息回传/FB01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "FB01-DSH-a01",
+      "record_id": "DSH-FB01-a01",
+      "json": "results/unified-runs-2026-10-30/FB01/运行记录/DSH-FB01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/FB01/运行记录/DSH-FB01-a01.md",
+      "source_sha256": "744d4858861c4797d415d5e2ab8b1be5fe2670830ed27c463b5f1e5a57bc57d2",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/01-信息回传/FB01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "FB01-WorkBuddy-a01",
+      "record_id": "WorkBuddy-FB01-a01",
+      "json": "results/unified-runs-2026-10-30/FB01/运行记录/WorkBuddy-FB01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/FB01/运行记录/WorkBuddy-FB01-a01.md",
+      "source_sha256": "713639ef46f0bcf5f95d38e95d721245b527f829ddc6f9fc3ec447ae09077b69",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/01-信息回传/FB01-WorkBuddy-a01-历史补审.json"
+      ]
+    },
+    {
+      "ledger_id": "FB01-WorkBuddy-a02",
+      "record_id": "WorkBuddy-FB01-a02",
+      "json": "results/unified-runs-2026-10-30/FB01/运行记录/WorkBuddy-FB01-a02.json",
+      "markdown": "results/unified-runs-2026-10-30/FB01/运行记录/WorkBuddy-FB01-a02.md",
+      "source_sha256": "e5441bef57c6c86b87b0fad90f733a5a97ce9664a44056d928346ea702e75ce7",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/01-信息回传/FB01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "FB01-元宝-a01",
+      "record_id": "元宝专家模式-FB01-a01",
+      "json": "results/unified-runs-2026-10-30/FB01/运行记录/元宝专家模式-FB01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/FB01/运行记录/元宝专家模式-FB01-a01.md",
+      "source_sha256": "e27db5aa77248dfc638c441eedc28f228166e3114f4ebbf232a6bc4e8e5c4747",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/01-信息回传/FB01-元宝-a01-历史补审.json"
+      ]
+    },
+    {
+      "ledger_id": "FB01-元宝-a02",
+      "record_id": "元宝专家模式-FB01-a02",
+      "json": "results/unified-runs-2026-10-30/FB01/运行记录/元宝专家模式-FB01-a02.json",
+      "markdown": "results/unified-runs-2026-10-30/FB01/运行记录/元宝专家模式-FB01-a02.md",
+      "source_sha256": "a174997a4cf140c14e221805a953593e70645a89b02997f4f6595584adaf799e",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/01-信息回传/FB01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "FB01-豆包-a01",
+      "record_id": "豆包办公-FB01-a01",
+      "json": "results/unified-runs-2026-10-30/FB01/运行记录/豆包办公-FB01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/FB01/运行记录/豆包办公-FB01-a01.md",
+      "source_sha256": "11558c6d954d8649998606cefa548eff087bebb796a0f605e030f53d165a465d",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/01-信息回传/FB01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "FB02-Codex-a01",
+      "record_id": "Codex-FB02-a01",
+      "json": "results/unified-runs-2026-10-30/FB02/运行记录/Codex-FB02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/FB02/运行记录/Codex-FB02-a01.md",
+      "source_sha256": "5c64b798a34c4a4e152bc9d7d523a71e7a4baeea901462162c502f25c83c62cc",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/01-信息回传/FB02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "FB02-DSH-a01",
+      "record_id": "DSH-FB02-a01",
+      "json": "results/unified-runs-2026-10-30/FB02/运行记录/DSH-FB02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/FB02/运行记录/DSH-FB02-a01.md",
+      "source_sha256": "7c0684bc90c85f77e35f78adbe61877ba7c7e4c7661b3cb785d09381bddb5d6c",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/01-信息回传/FB02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "FB02-WorkBuddy-a01",
+      "record_id": "WorkBuddy-FB02-a01",
+      "json": "results/unified-runs-2026-10-30/FB02/运行记录/WorkBuddy-FB02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/FB02/运行记录/WorkBuddy-FB02-a01.md",
+      "source_sha256": "baa479c7f45d1134dec188b8f4bbcf07947c61d5fdc4af81d11cc2b7b1a1ad7a",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/01-信息回传/FB02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "FB02-元宝-a01",
+      "record_id": "元宝专家模式-FB02-a01",
+      "json": "results/unified-runs-2026-10-30/FB02/运行记录/元宝专家模式-FB02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/FB02/运行记录/元宝专家模式-FB02-a01.md",
+      "source_sha256": "d1ac78bbcd04b65a20293b465e5e550d7c334003597df575288125b01ca179d7",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/01-信息回传/FB02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "FB02-豆包-a01",
+      "record_id": "豆包办公-FB02-a01",
+      "json": "results/unified-runs-2026-10-30/FB02/运行记录/豆包办公-FB02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/FB02/运行记录/豆包办公-FB02-a01.md",
+      "source_sha256": "d0e7a17a95732fc53bfdd0bb6bdcb3e1204f28f167934bb0a1704d5eeaa9da3d",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/01-信息回传/FB02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "FB03-Codex-a01",
+      "record_id": "Codex-FB03-a01",
+      "json": "results/unified-runs-2026-10-30/FB03/运行记录/Codex-FB03-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/FB03/运行记录/Codex-FB03-a01.md",
+      "source_sha256": "3834aa5572c38570e13036640fcbd2def8a140de53c6eae967ff892463e16b21",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/01-信息回传/FB03-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "FB03-DSH-a01",
+      "record_id": "DSH-FB03-a01",
+      "json": "results/unified-runs-2026-10-30/FB03/运行记录/DSH-FB03-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/FB03/运行记录/DSH-FB03-a01.md",
+      "source_sha256": "4c018d8947c529a64d749690945f0393bfc65878fabbb06a2805612066c5a86a",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/01-信息回传/FB03-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "FB03-WorkBuddy-a01",
+      "record_id": "WorkBuddy-FB03-a01",
+      "json": "results/unified-runs-2026-10-30/FB03/运行记录/WorkBuddy-FB03-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/FB03/运行记录/WorkBuddy-FB03-a01.md",
+      "source_sha256": "208c0ccdd2e52cd98b278f0c8a82855b246c2de65532c5868681ade95fe1f956",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/01-信息回传/FB03-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "FB03-元宝-a01",
+      "record_id": "元宝专家模式-FB03-a01",
+      "json": "results/unified-runs-2026-10-30/FB03/运行记录/元宝专家模式-FB03-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/FB03/运行记录/元宝专家模式-FB03-a01.md",
+      "source_sha256": "eb665a9b68fbc74ec426b2b3aeafe47d30c922fb29a85eea373c935b396feed0",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/01-信息回传/FB03-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "FB03-豆包-a01",
+      "record_id": "豆包办公-FB03-a01",
+      "json": "results/unified-runs-2026-10-30/FB03/运行记录/豆包办公-FB03-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/FB03/运行记录/豆包办公-FB03-a01.md",
+      "source_sha256": "868f090d6b135ab51d6035b7961680eda63a7703985c5e4059e8364e0250e398",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/01-信息回传/FB03-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS01-Codex-a02",
+      "record_id": "Codex-OBS01-a02",
+      "json": "results/unified-runs-2026-10-30/OBS01/运行记录/Codex-OBS01-a02.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS01/运行记录/Codex-OBS01-a02.md",
+      "source_sha256": "9ad7b2d07d96992c2f64b61bdc1133e0bdf21ce1312a04877c317935e2de7fdc",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS01-DIAG-WorkBuddy-a01",
+      "record_id": "WorkBuddy-OBS01-DIAG-a01",
+      "json": "results/unified-runs-2026-10-30/OBS01/运行记录/WorkBuddy-OBS01-DIAG-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS01/运行记录/WorkBuddy-OBS01-DIAG-a01.md",
+      "source_sha256": "fac7e8f36c9db0b6edf1b1b5726768202cbf558e6bfea7a7e8dd7dd208530c2a",
+      "review_coverage": "已覆盖：用途审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS01-DIAG-WorkBuddy-a01-历史补审.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS01-DSH-a01",
+      "record_id": "DSH-OBS01-a01",
+      "json": "results/unified-runs-2026-10-30/OBS01/运行记录/DSH-OBS01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS01/运行记录/DSH-OBS01-a01.md",
+      "source_sha256": "9f7d27bcf55418cad9a50b0b0ae6832a38fd6df574926d37220f4c38259fa23a",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS01-DSH-a01-历史补审.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS01-DSH-a02",
+      "record_id": "DSH-OBS01-a02",
+      "json": "results/unified-runs-2026-10-30/OBS01/运行记录/DSH-OBS01-a02.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS01/运行记录/DSH-OBS01-a02.md",
+      "source_sha256": "e36814ee59bc3beabb9db03ba88a8c153b68e6a85092a52c3794bda3a9b4b338",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS01-WorkBuddy-a01",
+      "record_id": "WorkBuddy-OBS01-a01",
+      "json": "results/unified-runs-2026-10-30/OBS01/运行记录/WorkBuddy-OBS01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS01/运行记录/WorkBuddy-OBS01-a01.md",
+      "source_sha256": "8de37b99fa881d3691b609736954e4563d344d88863e8f9c74ed20cc86b60b6c",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS01-WorkBuddy-a01-历史补审.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS01-WorkBuddy-a02",
+      "record_id": "WorkBuddy-OBS01-a02",
+      "json": "results/unified-runs-2026-10-30/OBS01/运行记录/WorkBuddy-OBS01-a02.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS01/运行记录/WorkBuddy-OBS01-a02.md",
+      "source_sha256": "09de2370a015df827e4213bf66be2ef2813c521e79f9b49f427cce2a1107c299",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS01-元宝-a01",
+      "record_id": "元宝专家模式-OBS01-a01",
+      "json": "results/unified-runs-2026-10-30/OBS01/运行记录/元宝专家模式-OBS01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS01/运行记录/元宝专家模式-OBS01-a01.md",
+      "source_sha256": "d322263382259e60e20f9acc739fc5a4edc590cebc1f6ace7df57cf3e4343d64",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS01-元宝-a01-历史补审.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS01-元宝-a02",
+      "record_id": "元宝专家模式-OBS01-a02",
+      "json": "results/unified-runs-2026-10-30/OBS01/运行记录/元宝专家模式-OBS01-a02.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS01/运行记录/元宝专家模式-OBS01-a02.md",
+      "source_sha256": "9c6c55a4d46930ad063d0df4e56a80c80475b574f36c3f3e0738b87a5273681e",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS01-豆包-a01",
+      "record_id": "豆包工作-OBS01-a01",
+      "json": "results/unified-runs-2026-10-30/OBS01/运行记录/豆包工作-OBS01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS01/运行记录/豆包工作-OBS01-a01.md",
+      "source_sha256": "95395a71410c643a47ffb50a8f320b989e202694839f8cf9b98a9d26b67b7dd7",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS01-豆包-a01-历史补审.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS01-豆包-a02",
+      "record_id": "豆包工作-OBS01-a02",
+      "json": "results/unified-runs-2026-10-30/OBS01/运行记录/豆包工作-OBS01-a02.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS01/运行记录/豆包工作-OBS01-a02.md",
+      "source_sha256": "512bf82918f446468a6ed61af13f202fb64068f460c97b8987979b4d46f9c42a",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS02-Codex-a02",
+      "record_id": "Codex-OBS02-a02",
+      "json": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/Codex-OBS02-a02.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/Codex-OBS02-a02.md",
+      "source_sha256": "4c651afafa774a1f2aab3e1d4951cf97e98df59af9353add7cb3d8d3e987f064",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS02-DSH-a01",
+      "record_id": "DSH-OBS02-a01",
+      "json": "results/unified-runs-2026-10-30/OBS02/运行记录/DSH-OBS02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS02/运行记录/DSH-OBS02-a01.md",
+      "source_sha256": "9643c759c2b79c361435e50b8f05f853636842cd3db779b9dc1803cc51283ddf",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS02-DSH-a01-历史补审.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS02-DSH-a02",
+      "record_id": "DSH-OBS02-a02",
+      "json": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/DSH-OBS02-a02.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/DSH-OBS02-a02.md",
+      "source_sha256": "152868f50d15c2d156459735cc4279948bbf45fb7c9cbf1f3da1ea3d12e76c27",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS02-WorkBuddy-a02",
+      "record_id": "WorkBuddy-OBS02-a02",
+      "json": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/WorkBuddy-OBS02-a02.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/WorkBuddy-OBS02-a02.md",
+      "source_sha256": "4a2334895a0d2c7f9b809a3f77488bc2bc2e0137bb05ae05bde6e15ecdd56174",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS02-元宝-a01",
+      "record_id": "元宝专家模式-OBS02-a01",
+      "json": "results/unified-runs-2026-10-30/OBS02/运行记录/元宝专家模式-OBS02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS02/运行记录/元宝专家模式-OBS02-a01.md",
+      "source_sha256": "efda88f49f69bb071617e0f24e51b06a3aefe0a7e87313a04d951276d3853045",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS02-元宝-a01-历史补审.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS02-元宝-a02",
+      "record_id": "元宝专家模式-OBS02-a02",
+      "json": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/元宝专家模式-OBS02-a02.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/元宝专家模式-OBS02-a02.md",
+      "source_sha256": "53e763f6822bf4d8d010d521c6a6ce87f4cd7f029d86d065f7ea2abf1530f2fc",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS02-豆包-a01",
+      "record_id": "豆包工作-OBS02-a01",
+      "json": "results/unified-runs-2026-10-30/OBS02/运行记录/豆包工作-OBS02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS02/运行记录/豆包工作-OBS02-a01.md",
+      "source_sha256": "306feb7afeb338e36f4cf389bbc63215f7fcfc341dba578342c20c6870937a86",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS02-豆包-a01-历史补审.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS02-豆包-a02",
+      "record_id": "豆包工作-OBS02-a02",
+      "json": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/豆包工作-OBS02-a02.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/豆包工作-OBS02-a02.md",
+      "source_sha256": "8942925e2525b9e82d965a43bcdbb25474d0ffcff414a46b31aa7b76827570b7",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS03-Codex-a02",
+      "record_id": "Codex-OBS03-a02",
+      "json": "results/unified-runs-2026-10-30/OBS03/运行记录/Codex-OBS03-a02.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS03/运行记录/Codex-OBS03-a02.md",
+      "source_sha256": "350eb803a4265b529c51ceb134e7e215c1b434dc5330d1ef264229e33dc6fbcf",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS03-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS03-DSH-a02",
+      "record_id": "DSH-OBS03-a02",
+      "json": "results/unified-runs-2026-10-30/OBS03/运行记录/DSH-OBS03-a02.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS03/运行记录/DSH-OBS03-a02.md",
+      "source_sha256": "9a89852200592b0984532cdcf167fb20aa7be2b5311e76a257d6ac4828972066",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS03-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS03-WorkBuddy-a02",
+      "record_id": "WorkBuddy-OBS03-a02",
+      "json": "results/unified-runs-2026-10-30/OBS03/运行记录/WorkBuddy-OBS03-a02.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS03/运行记录/WorkBuddy-OBS03-a02.md",
+      "source_sha256": "2da659eb628057713040143d6f9e2aee8a9cea5730d91575abff060ccbd72fa7",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS03-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS03-元宝-a02",
+      "record_id": "元宝专家模式-OBS03-a02",
+      "json": "results/unified-runs-2026-10-30/OBS03/运行记录/元宝专家模式-OBS03-a02.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS03/运行记录/元宝专家模式-OBS03-a02.md",
+      "source_sha256": "d8104f4a5c68706d08a24cab71ee8fef028ecaf4cb455ca8e96aa037cf4a951c",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS03-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "OBS03-豆包-a02",
+      "record_id": "豆包工作-OBS03-a02",
+      "json": "results/unified-runs-2026-10-30/OBS03/运行记录/豆包工作-OBS03-a02.json",
+      "markdown": "results/unified-runs-2026-10-30/OBS03/运行记录/豆包工作-OBS03-a02.md",
+      "source_sha256": "80c9435c02f6af8280270b9252860abe44aa29d4deac9a483b8b7fe563363e68",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/07-可观测性/OBS03-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "PERM01-Codex-a01",
+      "record_id": "Codex-PERM01-a01",
+      "json": "results/unified-runs-2026-10-30/PERM01/运行记录/Codex-PERM01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/PERM01/运行记录/Codex-PERM01-a01.md",
+      "source_sha256": "1fdab554fa9856269336384ae8d35c074d26ffa966359276c4b214efa880b288",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/04-权限边界/PERM01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "PERM01-DSH-a01",
+      "record_id": "DSH-PERM01-a01",
+      "json": "results/unified-runs-2026-10-30/PERM01/运行记录/DSH-PERM01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/PERM01/运行记录/DSH-PERM01-a01.md",
+      "source_sha256": "677e4c32ee2954198317ca87cf51151f0340b35b59dc559e916dc1b7e49b7d6c",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/04-权限边界/PERM01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "PERM01-DSH-a02",
+      "record_id": "DSH-PERM01-a02",
+      "json": "results/unified-runs-2026-10-30/PERM01/运行记录/DSH-PERM01-a02.json",
+      "markdown": "results/unified-runs-2026-10-30/PERM01/运行记录/DSH-PERM01-a02.md",
+      "source_sha256": "412f7c37e4f1e12df7562ad29c5205661e58d3ff13efd79ef4233d974b0fd3d6",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/04-权限边界/PERM01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "PERM01-WorkBuddy-a01",
+      "record_id": "WorkBuddy-PERM01-a01",
+      "json": "results/unified-runs-2026-10-30/PERM01/运行记录/WorkBuddy-PERM01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/PERM01/运行记录/WorkBuddy-PERM01-a01.md",
+      "source_sha256": "efe8fae21e8d2df81427dfd66bb697b1db82004277dff932458cf48d354a3ca7",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/04-权限边界/PERM01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "PERM01-WorkBuddy-a02",
+      "record_id": "WorkBuddy-PERM01-a02",
+      "json": "results/unified-runs-2026-10-30/PERM01/运行记录/WorkBuddy-PERM01-a02.json",
+      "markdown": "results/unified-runs-2026-10-30/PERM01/运行记录/WorkBuddy-PERM01-a02.md",
+      "source_sha256": "ead61c4c14711e1eafa0108f6bbbf3e9d12d978fdefd3d25658f8c97db0347a8",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/04-权限边界/PERM01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "PERM01-元宝-a01",
+      "record_id": "元宝专家模式-PERM01-a01",
+      "json": "results/unified-runs-2026-10-30/PERM01/运行记录/元宝专家模式-PERM01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/PERM01/运行记录/元宝专家模式-PERM01-a01.md",
+      "source_sha256": "4f7201b4f297fcff3ddcfccf662b396dd780345ac54c499aa89d0efa911352b6",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/04-权限边界/PERM01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "PERM01-豆包-a01",
+      "record_id": "豆包办公-PERM01-a01",
+      "json": "results/unified-runs-2026-10-30/PERM01/运行记录/豆包办公-PERM01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/PERM01/运行记录/豆包办公-PERM01-a01.md",
+      "source_sha256": "77485334a75b053d35e484db2804806b480d9403d3ca2b0729e8b350ca9a9aac",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/04-权限边界/PERM01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "PERM01-豆包-a02",
+      "record_id": "豆包办公-PERM01-a02",
+      "json": "results/unified-runs-2026-10-30/PERM01/运行记录/豆包办公-PERM01-a02.json",
+      "markdown": "results/unified-runs-2026-10-30/PERM01/运行记录/豆包办公-PERM01-a02.md",
+      "source_sha256": "4ebe1f06832c2f024e3e59f6879f2096b14a71d90d7c9b6771d671a5a6a0cad6",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/04-权限边界/PERM01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "PERM02-Codex-a01",
+      "record_id": "Codex-PERM02-a01",
+      "json": "results/unified-runs-2026-10-30/PERM02/运行记录/Codex-PERM02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/PERM02/运行记录/Codex-PERM02-a01.md",
+      "source_sha256": "557fcb1912901d4f9d5fe9a135d6b8e62dcd41add97a7e96b14f18ae332897a2",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/04-权限边界/PERM02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "PERM02-DSH-a01",
+      "record_id": "DSH-PERM02-a01",
+      "json": "results/unified-runs-2026-10-30/PERM02/运行记录/DSH-PERM02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/PERM02/运行记录/DSH-PERM02-a01.md",
+      "source_sha256": "8591194c9a21cb0e4c3bd6a535cfc6b2ca487bf3e080878561e28ba6368addbe",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/04-权限边界/PERM02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "PERM02-WorkBuddy-RULE-a01",
+      "record_id": "WorkBuddy-PERM02-RULE-a01",
+      "json": "results/unified-runs-2026-10-30/PERM02/运行记录/WorkBuddy-PERM02-RULE-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/PERM02/运行记录/WorkBuddy-PERM02-RULE-a01.md",
+      "source_sha256": "fbc2b4708cf61cbe49db3f805addfdefbda26d354b56cdebf7cf8452a536000c",
+      "review_coverage": "已覆盖：用途审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/04-权限边界/WorkBuddy规则收紧-用途审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "PERM02-WorkBuddy-a01",
+      "record_id": "WorkBuddy-PERM02-a01",
+      "json": "results/unified-runs-2026-10-30/PERM02/运行记录/WorkBuddy-PERM02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/PERM02/运行记录/WorkBuddy-PERM02-a01.md",
+      "source_sha256": "9b203057f7524b34c37d5a00d205bef2525058ad20a6cd879cd1db8e0187263d",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/04-权限边界/PERM02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "PERM02-豆包-a01",
+      "record_id": "豆包办公-PERM02-a01",
+      "json": "results/unified-runs-2026-10-30/PERM02/运行记录/豆包办公-PERM02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/PERM02/运行记录/豆包办公-PERM02-a01.md",
+      "source_sha256": "b5bacb031fc0910842f292617a73d5c70cdf16c12e446823aaa06f5ce6356b77",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/04-权限边界/PERM02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "REC01-Codex-a01",
+      "record_id": "Codex-REC01-a01",
+      "json": "results/unified-runs-2026-10-30/REC01/运行记录/Codex-REC01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/REC01/运行记录/Codex-REC01-a01.md",
+      "source_sha256": "7c61c0452a77693ccc0888fff2c1bd257166b6921192d934310c5738680332f3",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/03-失败恢复/REC01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "REC01-DSH-a01",
+      "record_id": "DSH-REC01-a01",
+      "json": "results/unified-runs-2026-10-30/REC01/运行记录/DSH-REC01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/REC01/运行记录/DSH-REC01-a01.md",
+      "source_sha256": "d4fc2f0a8d0b81fce67f3377fc5c63a465205ebb086d60fdd24a5b8c41be95d9",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/03-失败恢复/REC01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "REC01-WorkBuddy-a01",
+      "record_id": "WorkBuddy-REC01-a01",
+      "json": "results/unified-runs-2026-10-30/REC01/运行记录/WorkBuddy-REC01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/REC01/运行记录/WorkBuddy-REC01-a01.md",
+      "source_sha256": "db643376d1532a79fbed7da725fa244b4ec54c0f6a241e6554b98e2553e88352",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/03-失败恢复/REC01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "REC01-元宝-a01",
+      "record_id": "元宝专家模式-REC01-a01",
+      "json": "results/unified-runs-2026-10-30/REC01/运行记录/元宝专家模式-REC01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/REC01/运行记录/元宝专家模式-REC01-a01.md",
+      "source_sha256": "520ac6075eaee8d1389cf217b80cec9db60daa52922a7d2a6451e70b6e0e3870",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/03-失败恢复/REC01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "REC01-豆包-a01",
+      "record_id": "豆包办公-REC01-a01",
+      "json": "results/unified-runs-2026-10-30/REC01/运行记录/豆包办公-REC01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/REC01/运行记录/豆包办公-REC01-a01.md",
+      "source_sha256": "b148e29c3fea861ea9244b0a55b45b14d012118379db16822d4dcd8b253df774",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/03-失败恢复/REC01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "REC02-Codex-a01",
+      "record_id": "Codex-REC02-a01",
+      "json": "results/unified-runs-2026-10-30/REC02/运行记录/Codex-REC02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/REC02/运行记录/Codex-REC02-a01.md",
+      "source_sha256": "71a280a836c9fe9d6bacba1ab3bafad040eb34255587d0734272df65d854d7b3",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/03-失败恢复/REC02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "REC02-DSH-a01",
+      "record_id": "DSH-REC02-a01",
+      "json": "results/unified-runs-2026-10-30/REC02/运行记录/DSH-REC02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/REC02/运行记录/DSH-REC02-a01.md",
+      "source_sha256": "090f5c91d6ef8b1208dab29e74ff396a4f8ba00367b2795f48645be23501c98f",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/03-失败恢复/REC02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "REC02-WorkBuddy-a01",
+      "record_id": "WorkBuddy-REC02-a01",
+      "json": "results/unified-runs-2026-10-30/REC02/运行记录/WorkBuddy-REC02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/REC02/运行记录/WorkBuddy-REC02-a01.md",
+      "source_sha256": "a3eebd0599029b4e9bb5bacacdc6d795d9f9eef5f31eca4a5e652c3298ce68d5",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/03-失败恢复/REC02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "REC02-元宝-a01",
+      "record_id": "元宝专家模式-REC02-a01",
+      "json": "results/unified-runs-2026-10-30/REC02/运行记录/元宝专家模式-REC02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/REC02/运行记录/元宝专家模式-REC02-a01.md",
+      "source_sha256": "2388bfcb7daecca3b6e0acbdd9a2e5419272c73e350bf62bb00df13658a638b2",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/03-失败恢复/REC02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "REC02-豆包-a01",
+      "record_id": "豆包办公-REC02-a01",
+      "json": "results/unified-runs-2026-10-30/REC02/运行记录/豆包办公-REC02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/REC02/运行记录/豆包办公-REC02-a01.md",
+      "source_sha256": "470632fb9b859887726c70d328b4a73787c3d3d21a23df8f19360ae91f31a96c",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/03-失败恢复/REC02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "STOP01-Codex-a01",
+      "record_id": "Codex-STOP01-a01",
+      "json": "results/unified-runs-2026-10-30/STOP01/运行记录/Codex-STOP01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/STOP01/运行记录/Codex-STOP01-a01.md",
+      "source_sha256": "34a49f4a2b0c2fd7333bfca18fbdeb7b12a1a16919ab03a11b81216f52c26d45",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/06-停止条件/STOP01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "STOP01-DSH-a01",
+      "record_id": "DSH-STOP01-a01",
+      "json": "results/unified-runs-2026-10-30/STOP01/运行记录/DSH-STOP01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/STOP01/运行记录/DSH-STOP01-a01.md",
+      "source_sha256": "9b877d1f1af10701fe80a46a8b0bad92bd5c8f44f2caf0c310244a914bebfe83",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/06-停止条件/STOP01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "STOP01-WorkBuddy-a01",
+      "record_id": "WorkBuddy-STOP01-a01",
+      "json": "results/unified-runs-2026-10-30/STOP01/运行记录/WorkBuddy-STOP01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/STOP01/运行记录/WorkBuddy-STOP01-a01.md",
+      "source_sha256": "28de64dfad6195bf7e35f116ddfad24c7ed231a1c0ba690e0e7b59db8758d757",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/06-停止条件/STOP01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "STOP01-元宝-a01",
+      "record_id": "元宝专家模式-STOP01-a01",
+      "json": "results/unified-runs-2026-10-30/STOP01/运行记录/元宝专家模式-STOP01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/STOP01/运行记录/元宝专家模式-STOP01-a01.md",
+      "source_sha256": "471418655cdace99198ca62ff5a95e88cee76a1117830bf123c8a141b063d712",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/06-停止条件/STOP01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "STOP01-豆包-a01",
+      "record_id": "豆包办公-STOP01-a01",
+      "json": "results/unified-runs-2026-10-30/STOP01/运行记录/豆包办公-STOP01-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/STOP01/运行记录/豆包办公-STOP01-a01.md",
+      "source_sha256": "9d640fd1e56f4fa99985d9dbbb073b20c1b95c4cd35006b1e0108fcad420be51",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/06-停止条件/STOP01-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "STOP02-Codex-a01",
+      "record_id": "Codex-STOP02-a01",
+      "json": "results/unified-runs-2026-10-30/STOP02/运行记录/Codex-STOP02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/STOP02/运行记录/Codex-STOP02-a01.md",
+      "source_sha256": "0d02818df8bdcfc8010f7a45eee9e668afb823bc765a8a26e1bc891283242522",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/06-停止条件/STOP02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "STOP02-DSH-a01",
+      "record_id": "DSH-STOP02-a01",
+      "json": "results/unified-runs-2026-10-30/STOP02/运行记录/DSH-STOP02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/STOP02/运行记录/DSH-STOP02-a01.md",
+      "source_sha256": "1de4537458951c6624d56b69aa4ea38f9c6f5dd8b07d92174251202e12d8e650",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/06-停止条件/STOP02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "STOP02-WorkBuddy-a01",
+      "record_id": "WorkBuddy-STOP02-a01",
+      "json": "results/unified-runs-2026-10-30/STOP02/运行记录/WorkBuddy-STOP02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/STOP02/运行记录/WorkBuddy-STOP02-a01.md",
+      "source_sha256": "5d39b9cb259f9fe1226a57d877c5f00de569adb2e0bf2f647424dd978c1b0a76",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/06-停止条件/STOP02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "STOP02-元宝-a01",
+      "record_id": "元宝专家模式-STOP02-a01",
+      "json": "results/unified-runs-2026-10-30/STOP02/运行记录/元宝专家模式-STOP02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/STOP02/运行记录/元宝专家模式-STOP02-a01.md",
+      "source_sha256": "06b34bdb4e19634d9a51b3b1abc26ac1eb6700f6f15df55943ee2d7e0151d2a1",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/06-停止条件/STOP02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "STOP02-豆包-a01",
+      "record_id": "豆包办公-STOP02-a01",
+      "json": "results/unified-runs-2026-10-30/STOP02/运行记录/豆包办公-STOP02-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/STOP02/运行记录/豆包办公-STOP02-a01.md",
+      "source_sha256": "df724aee4a0f475458f5a2c2831baa8a76e5c2880f1be5d16dc11af4fc290074",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/06-停止条件/STOP02-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "STOP03A-Codex-a01",
+      "record_id": "Codex-STOP03A-a01",
+      "json": "results/unified-runs-2026-10-30/STOP03A/运行记录/Codex-STOP03A-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/STOP03A/运行记录/Codex-STOP03A-a01.md",
+      "source_sha256": "f87aff9f825ad7316dcea3e507f0052487cb2993ca935f790bf105c524f451bf",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/06-停止条件/STOP03A-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "STOP03A-DSH-a01",
+      "record_id": "DSH-STOP03A-a01",
+      "json": "results/unified-runs-2026-10-30/STOP03A/运行记录/DSH-STOP03A-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/STOP03A/运行记录/DSH-STOP03A-a01.md",
+      "source_sha256": "1816966cd987e2fd793926c2325a637b5ecce1b327b6051088b07c12d966309a",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/06-停止条件/STOP03A-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "STOP03A-WorkBuddy-a01",
+      "record_id": "WorkBuddy-STOP03A-a01",
+      "json": "results/unified-runs-2026-10-30/STOP03A/运行记录/WorkBuddy-STOP03A-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/STOP03A/运行记录/WorkBuddy-STOP03A-a01.md",
+      "source_sha256": "bced7ec431fc2c585ac072d35d6daa46dedb20edf1edd2ee4f094c540700b33f",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/06-停止条件/STOP03A-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "STOP03A-元宝-a01",
+      "record_id": "元宝专家模式-STOP03A-a01",
+      "json": "results/unified-runs-2026-10-30/STOP03A/运行记录/元宝专家模式-STOP03A-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/STOP03A/运行记录/元宝专家模式-STOP03A-a01.md",
+      "source_sha256": "d4a1bad88cb516645f8077852f459ced95e05bceddbe13760a8bd110f8127fb8",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/06-停止条件/STOP03A-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "STOP03A-元宝-old-mismatched",
+      "record_id": "元宝专家模式-STOP03A-old-mismatched",
+      "json": "results/unified-runs-2026-10-30/STOP03A/运行记录/元宝专家模式-STOP03A-old-mismatched.json",
+      "markdown": "results/unified-runs-2026-10-30/STOP03A/运行记录/元宝专家模式-STOP03A-old-mismatched.md",
+      "source_sha256": "d0b0e964451f6c4040e1769a39db47196dd8c9d8db1166ee3b0c1ff5b9f179b2",
+      "review_coverage": "已覆盖：用途审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/06-停止条件/STOP03A-部署不匹配旧尝试用途审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "STOP03A-豆包-a01",
+      "record_id": "豆包办公-STOP03A-a01",
+      "json": "results/unified-runs-2026-10-30/STOP03A/运行记录/豆包办公-STOP03A-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/STOP03A/运行记录/豆包办公-STOP03A-a01.md",
+      "source_sha256": "067ddeaac8353353a12d82ffddedb67854d798db3209218c0a322b6f6c67e6bc",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/06-停止条件/STOP03A-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "STOP03B-Codex-a01",
+      "record_id": "Codex-STOP03B-a01",
+      "json": "results/unified-runs-2026-10-30/STOP03B/运行记录/Codex-STOP03B-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/STOP03B/运行记录/Codex-STOP03B-a01.md",
+      "source_sha256": "460eb6f695c2a95c5b2d1c954d5aa40df4e3125ff84a33680cd1a7546cd84c63",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/06-停止条件/STOP03B-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "STOP03B-DSH-a01",
+      "record_id": "DSH-STOP03B-a01",
+      "json": "results/unified-runs-2026-10-30/STOP03B/运行记录/DSH-STOP03B-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/STOP03B/运行记录/DSH-STOP03B-a01.md",
+      "source_sha256": "16de0c7bfe2b6014db613e40d9308d3f4283124d60317b4a10ff179ad77616c7",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/06-停止条件/STOP03B-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "STOP03B-WorkBuddy-a01",
+      "record_id": "WorkBuddy-STOP03B-a01",
+      "json": "results/unified-runs-2026-10-30/STOP03B/运行记录/WorkBuddy-STOP03B-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/STOP03B/运行记录/WorkBuddy-STOP03B-a01.md",
+      "source_sha256": "34b33b71ad09856a4d3e6349efced81d332fbbb212d3a2cf63152349f92fa8c6",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/06-停止条件/STOP03B-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "STOP03B-元宝-a01",
+      "record_id": "元宝专家模式-STOP03B-a01",
+      "json": "results/unified-runs-2026-10-30/STOP03B/运行记录/元宝专家模式-STOP03B-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/STOP03B/运行记录/元宝专家模式-STOP03B-a01.md",
+      "source_sha256": "aa9aeadff1d55dcea3e25fc80320f0fa8d890f02e935ac031712877dee7132b3",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/06-停止条件/STOP03B-纳入审阅.json"
+      ]
+    },
+    {
+      "ledger_id": "STOP03B-豆包-a01",
+      "record_id": "豆包办公-STOP03B-a01",
+      "json": "results/unified-runs-2026-10-30/STOP03B/运行记录/豆包办公-STOP03B-a01.json",
+      "markdown": "results/unified-runs-2026-10-30/STOP03B/运行记录/豆包办公-STOP03B-a01.md",
+      "source_sha256": "6065ffeee1bb3d15ea0ee6c411685037a08001daf379f307f178b9830f4acae3",
+      "review_coverage": "已覆盖：逐项审阅",
+      "reviews": [
+        "results/inclusion-review-2026-10-30/06-停止条件/STOP03B-纳入审阅.json"
+      ]
+    }
+  ],
+  "protected_existing_files": {
+    "results/information-feedback.md": "914e75387d46cc6c0c8ba5b9eaed6d3454995ff006c16729b911615400cd5fbe",
+    "results/observability-current.json": "b77484a6b10c9e8a3c9f06cb371608bd1fb7683bbcfd3f338b8c16d53f833ff8",
+    "results/seven-dimensions-2026-10-27.md": "b32c74bbd6945a15bb41428b40fdefb7e764f19df6d8bc4a0033522958b95242",
+    "results/context-compression.md": "cb7b47e7dbb768c9dd2117303eae9194588af877173e9051b5cc539c86a94b89",
+    "results/permission-boundary.md": "61c2a4fc53168d58bb1406d9b93535b26cf1a321bc76a0accf15e413485cba76",
+    "results/artifact-delivery.json": "9c1b6db16d7faf7d62e15f45eb84bbbc7ae6cbb736fbb6c622dd214fe8fdb032",
+    "results/run-ledger-2026-10-27.md": "c3eba1b229342567c25a1b654a27ed93c7a6da17bd7797d3a2b51b7cd424d293",
+    "results/stopping-conditions.md": "097462f435da024ab0b799a9238663a68952115f8bbb86f9a5efa1c37dce4d24",
+    "results/permission-summary.json": "bf642b279ac075747deca60a7b7fe290ce05624f7dfe0177b2ac180b3b31d41e",
+    "results/workbuddy-mkdir-2026-10-28.json": "9440471e7a897c20ad44a9b7083713bc70cf48554bd5d4f969300defefcc2d20",
+    "results/native-authorization-survey.json": "17d5c01ecb5aea3d7bbd3e66812afa26ffc15f86ac17af54f94d5a7f68d10ba1",
+    "results/observability-review-2026-10-27-r1.json": "0989ddcb186c82a5fcab3b2dbd95eadf06a5115f82021fbc5e7971fffae6a951",
+    "results/context-update.json": "19c46fd496608c4c931a81eaa24dca054846242aca0b9399d7ae64e40d62a47b",
+    "results/comparison-consistency-2026-10-27.json": "350fec5b19df43adce36b8dfef46eb73394acb99f409887b6535d0e69ee094a6",
+    "results/context-compression.json": "77121be6fdf0d06c28594df5577a182b49b63ecb4aa76bd6b886912b9c017dc2",
+    "results/permission-extended.json": "752555318d647238b99dae7fc3407b8a56734a5d1b5ab2bc148afbcaefec2758",
+    "results/observability-calibration.json": "d9a13c7b29f2d95fb279bbf6bc2bc8920aa52a865aa945dc4f79616afa6dcbb4",
+    "results/unknown-disposition-2026-10-27.json": "b735428b3a4472ae845249cf5948aa12f39e7014e4844c4b73f23e5545cdc30d",
+    "results/observability.json": "e70a89cb627a58394eeef26961c01dbe2769fae6a18d71c75dbdc447e46b8477",
+    "results/seven-dimensions-2026-10-27.json": "4335711526f8eefbfebcdcddecf3292831cb28e19c4864915c733df8732f97a0",
+    "results/failure-recovery.md": "a86d52b3e7064c21c760c302da3fc78c1937c01308efb031963e31b5cf47e75e",
+    "results/failure-recovery.json": "feb70e10d20af32c00ce753dc1edca940d5e3891db6e5049f301b46403853c08",
+    "results/permission-basic.json": "1da67dc76751e653facaf28a540a1af545021ee9fe207c0b1aabc9ee42bee1e2",
+    "results/observability-calibration.md": "89bdaeaff714ac0674542832764df76888a3db54ec25a08a9dd85ab3f26e2084",
+    "results/stopping-conditions.json": "abb39e9b9cb4b95957971b23f2b6dd3ef045516ab309491122b566c567935d7c",
+    "results/information-feedback.json": "76860b43ec55f013397e4f4e97f81b3070ee1cd60a12f28e7de866395cf395a4",
+    "results/context-update.md": "7f349cd2a5939da1e73623beb3bab9987207dade83dae048361bd7772ee88f5c",
+    "results/observability-calibration-parser-regression.json": "cda1ea002cf302031f35e3350fa5403ce44c84f3c914d9723fe6d82a46032826",
+    "results/observability.md": "9cc2020823ff329e06649806b25b71c4d9b192605ad4d9b62c5ce4df81224ce6",
+    "results/artifact-delivery.md": "4b9401d694d07f75ab6fb3203b4b8a79ae7f5baff602846f37e4172c94ad2a8a",
+    "results/workbuddy-mkdir-2026-10-28.md": "a3bd0449847db9f37bd29d04a196fbe9f6575070717496000c381f051948bd30",
+    "results/observability-review-2026-10-27-r1.md": "a854a5939c8548c4b4691c369cf0738e7595317a4e99e7e83246418fcec73667",
+    "results/run-ledger-2026-10-27.json": "ac149ead4a2dd50a8825b81e5a32e5508c48cdb731383c56b55e8cbdc4c1847e",
+    "evidence/context-compression/Yuanbao/observation.json": "58986476f611f2188ae01c1eb6b9547d75568a4bf8085c0d01ddee77d3ef26f8",
+    "evidence/context-compression/Yuanbao/final.json": "cbd3e09e4e1df104b1188690ef0042370adbd1e5b868960f595974c6b094eb04",
+    "evidence/context-compression/Codex/observation.json": "934b4c0f5d06883ede6100cacff3b6211b5cf05f2f0d801445227d9f46ee2639",
+    "evidence/context-compression/Codex/compaction-check.json": "932bdc8801e083deeab6ca63443ca54285eca855b5ea370ca374beb8c7cb2dce",
+    "evidence/context-compression/Codex/replacement-history-excerpt.json": "daf052278395d554163df090ba55bab1202c42bb045ff2e1ae602eac0774a308",
+    "evidence/context-compression/Codex/final.json": "cbd3e09e4e1df104b1188690ef0042370adbd1e5b868960f595974c6b094eb04",
+    "evidence/context-compression/Doubao/observation.json": "7ccd8704b3b5165e520b019fb4e6ad54480b3395032a5d431eb3349d53e78228",
+    "evidence/context-compression/Doubao/final.json": "cbd3e09e4e1df104b1188690ef0042370adbd1e5b868960f595974c6b094eb04",
+    "evidence/context-compression/DSH/observation.json": "a275d63ebce7dd3239b957cdb219110da7b75eaf7f5c8485a041da4259bbd35d",
+    "evidence/context-compression/DSH/post-request-summary-block.json": "e58441f969bd8dc7ba6df3e71c02840b9ec682d0412361a95427528af42c3606",
+    "evidence/context-compression/DSH/compaction-summary.json": "fdfa28f6928f482d4ea5accac06f34532000b22bd58697f6c202b5bf159343ad",
+    "evidence/context-compression/DSH/final.json": "cbd3e09e4e1df104b1188690ef0042370adbd1e5b868960f595974c6b094eb04",
+    "evidence/context-compression/WorkBuddy/observation.json": "78a3e90e5928aa686716b9764621c3f44e31bfbafd05eae907cd155dd838b214",
+    "evidence/context-compression/WorkBuddy/compaction-content-excerpt.json": "47f277abfb1a18f93a88d84024a6367cdc8d0f002768ec0c9c75c98ffd238a9a",
+    "evidence/context-compression/WorkBuddy/final.json": "cbd3e09e4e1df104b1188690ef0042370adbd1e5b868960f595974c6b094eb04",
+    "evidence/PERM02/DSH-a01/native.excerpt.json": "2975cc89221711cfee22bb6a86f78cfdb737f9f7a08379c3fda961d27c7a3be6",
+    "evidence/PERM02/WorkBuddy-a01/call-mapping.json": "51bfa0015517a812806edd901c6a609c10d00b29586a6c4aa44c2f608bd92f99",
+    "evidence/PERM02/WorkBuddy-a01/native-audit.excerpt.json": "0fbaea4b2d1cb3379b25697e9baa09ae629e660be216571400d0c602e01c9478",
+    "evidence/PERM02/blobs/308e78bb594e9b6fd4e10d958e212de87289e95988beb54fc62db24c7dcc28c2.txt": "308e78bb594e9b6fd4e10d958e212de87289e95988beb54fc62db24c7dcc28c2",
+    "evidence/PERM02/blobs/ae0059813dd115ebcf8b08a8c93b99e030c75eb9277f6c76e80a77c9a8b3af36.txt": "ae0059813dd115ebcf8b08a8c93b99e030c75eb9277f6c76e80a77c9a8b3af36",
+    "evidence/PERM02/blobs/73d26c4dee15bcf34ebd224062b236cca131e1b28531516457cb1be6d6fe99ae.txt": "73d26c4dee15bcf34ebd224062b236cca131e1b28531516457cb1be6d6fe99ae",
+    "evidence/PERM02/blobs/6535ca3ebb8534251490fb433348b3df6f3bf112958d9a55f5133e5bba149798.txt": "6535ca3ebb8534251490fb433348b3df6f3bf112958d9a55f5133e5bba149798",
+    "evidence/PERM02/blobs/215c283265c5cc87d81f99f563df9049124a522b56393c182391ec43ba186360.txt": "215c283265c5cc87d81f99f563df9049124a522b56393c182391ec43ba186360",
+    "evidence/PERM02/blobs/32a189d802f8663f9dabb0820b2995c72a47e9b0c7471b1846afe9ba6c5a8fe2.txt": "32a189d802f8663f9dabb0820b2995c72a47e9b0c7471b1846afe9ba6c5a8fe2",
+    "evidence/PERM02/blobs/cf073d399bc537ce689fd35f131d2917f0f6598771dd5a63aeb59f102c46655c.txt": "cf073d399bc537ce689fd35f131d2917f0f6598771dd5a63aeb59f102c46655c",
+    "evidence/PERM02/blobs/af16f76349e8e52ae71fe35f831a434f015dc00159b91db6cb3ce8dbb2de0203.txt": "af16f76349e8e52ae71fe35f831a434f015dc00159b91db6cb3ce8dbb2de0203",
+    "evidence/PERM02/blobs/27f85da2ea91c618437de97abf14d13813b0b84ddf1ba6d469ef3c305de34531.txt": "27f85da2ea91c618437de97abf14d13813b0b84ddf1ba6d469ef3c305de34531",
+    "evidence/PERM02/blobs/685b2fa59067f01fc40fd89d9eb8bb4bd38195aec2d26c3c6cfae6a6a15d6092.txt": "685b2fa59067f01fc40fd89d9eb8bb4bd38195aec2d26c3c6cfae6a6a15d6092",
+    "evidence/PERM02/blobs/f795eec6f6de77efd5ab27b0dc31bb7d95d262ab62fc4982da264e14b8809b3a.txt": "f795eec6f6de77efd5ab27b0dc31bb7d95d262ab62fc4982da264e14b8809b3a",
+    "evidence/PERM02/blobs/0576b685f7216f260da9f87a68def636663730985acd289cde854fdcae84a05c.txt": "0576b685f7216f260da9f87a68def636663730985acd289cde854fdcae84a05c",
+    "evidence/PERM02/blobs/aba529aace5d558080689f3b7bf7efe6ce8ad8a1140c8cfc6cf7e12fa38224dc.txt": "aba529aace5d558080689f3b7bf7efe6ce8ad8a1140c8cfc6cf7e12fa38224dc",
+    "evidence/PERM02/blobs/8d33b90a37adb4485fa03aa47d69e313a493fea6cc82b81ad528183ab8903edb.txt": "8d33b90a37adb4485fa03aa47d69e313a493fea6cc82b81ad528183ab8903edb",
+    "evidence/PERM02/blobs/321aa207b43d48aafdcf41234c48e20b677b8c9a645ff001c3fb58ae4655acd2.txt": "321aa207b43d48aafdcf41234c48e20b677b8c9a645ff001c3fb58ae4655acd2",
+    "evidence/PERM02/blobs/987733f683821e4e8db2a3e567a78d23026b04f77333ee3c6311b2fd0753ecc6.txt": "987733f683821e4e8db2a3e567a78d23026b04f77333ee3c6311b2fd0753ecc6",
+    "evidence/PERM02/blobs/72139bb35b9eae2818dcd3a67798ebbaa8574c2bfe519a0a07ff14346077eb32.txt": "72139bb35b9eae2818dcd3a67798ebbaa8574c2bfe519a0a07ff14346077eb32",
+    "evidence/PERM02/blobs/8d2a0243c515399cc4ece73134cc097a8b49b8e4e9c6234d80592f02112e6ae1.txt": "8d2a0243c515399cc4ece73134cc097a8b49b8e4e9c6234d80592f02112e6ae1",
+    "evidence/PERM02/blobs/3b604b7225ca1b1c8f30ab587a6800bd18e6010750bc296184829410cf24b381.txt": "3b604b7225ca1b1c8f30ab587a6800bd18e6010750bc296184829410cf24b381",
+    "evidence/PERM02/blobs/f53144d1d930af9fee4490e78dee4296d8d3f94c39e5c333f7160073e28593ee.txt": "f53144d1d930af9fee4490e78dee4296d8d3f94c39e5c333f7160073e28593ee",
+    "evidence/PERM02/blobs/52f47f172af9ffe296074fd03e86080b83b4ac9865e83bb904172972958af2fc.txt": "52f47f172af9ffe296074fd03e86080b83b4ac9865e83bb904172972958af2fc",
+    "evidence/PERM02/blobs/65e48347a147bb9a4b43fa58767435bacf416da850742055f2c7e965915a3a4e.txt": "65e48347a147bb9a4b43fa58767435bacf416da850742055f2c7e965915a3a4e",
+    "evidence/PERM02/blobs/7573e5ec6edf7792a4b88b6eb5135de6d1a29fc9d6fc3f5130534510a1abeb78.txt": "7573e5ec6edf7792a4b88b6eb5135de6d1a29fc9d6fc3f5130534510a1abeb78",
+    "evidence/PERM02/blobs/4cb6944c713c04c2a92f28100bcdfc183b3950599b5fddde72ed0febfef5f2f5.txt": "4cb6944c713c04c2a92f28100bcdfc183b3950599b5fddde72ed0febfef5f2f5",
+    "evidence/PERM02/blobs/d8bec1662e9056f030e2ef0c020392cee65adb76644a37cdf19a228a859eba9d.txt": "d8bec1662e9056f030e2ef0c020392cee65adb76644a37cdf19a228a859eba9d",
+    "evidence/PERM02/blobs/226c15ba27e178d3088a93850259a0661ab60edcf28832300671f0014a0ebcde.txt": "226c15ba27e178d3088a93850259a0661ab60edcf28832300671f0014a0ebcde",
+    "evidence/PERM02/blobs/a7cc1d98d8f330ba2039a376b49414058effd7530685438ad3f7ff4297ac5a28.txt": "a7cc1d98d8f330ba2039a376b49414058effd7530685438ad3f7ff4297ac5a28",
+    "evidence/PERM02/blobs/411387d2275a518b90da4f12fdb8a1d7f5dd5ffb03b7817a051d06957b2e829e.txt": "411387d2275a518b90da4f12fdb8a1d7f5dd5ffb03b7817a051d06957b2e829e",
+    "evidence/PERM02/blobs/cae5bde7cc84f9e532821c8c55423c00f28e6abf644dd1f12a18cba40511bd62.txt": "cae5bde7cc84f9e532821c8c55423c00f28e6abf644dd1f12a18cba40511bd62",
+    "evidence/PERM02/blobs/bd5912c433ae174988a06e4f3d7949a5cf3e8662f94fc35879df61b308c54ddc.txt": "bd5912c433ae174988a06e4f3d7949a5cf3e8662f94fc35879df61b308c54ddc",
+    "evidence/PERM02/blobs/ae764ddbf73455c1e11b3beac6c67746741bf74a7c032ddc4f10579e5654d872.txt": "ae764ddbf73455c1e11b3beac6c67746741bf74a7c032ddc4f10579e5654d872",
+    "evidence/PERM02/blobs/f996fec6e78f180ab97c2ed80b5534dac687f373cbc463e2b2a6b9c68ca09058.txt": "f996fec6e78f180ab97c2ed80b5534dac687f373cbc463e2b2a6b9c68ca09058",
+    "evidence/PERM02/blobs/0844e6fb4a5b5e45721eb06f7c0e3d60b5f2449932428b2e151f8ac41eb423ce.txt": "0844e6fb4a5b5e45721eb06f7c0e3d60b5f2449932428b2e151f8ac41eb423ce",
+    "evidence/PERM02/blobs/ddc1c373ae57b7e84e4bc3422d85d125ddd21066f263a006ea9c95bf54f41654.txt": "ddc1c373ae57b7e84e4bc3422d85d125ddd21066f263a006ea9c95bf54f41654",
+    "evidence/PERM02/blobs/2068dc481ec3184e39df5bfdcbd0fe01c71455474cba2aa3f2ee6edde12c4ae9.txt": "2068dc481ec3184e39df5bfdcbd0fe01c71455474cba2aa3f2ee6edde12c4ae9",
+    "evidence/PERM02/blobs/45bb1bfd24681a559ed47a896a554dfebc693d388f55b94cfda0ddd662467b4c.txt": "45bb1bfd24681a559ed47a896a554dfebc693d388f55b94cfda0ddd662467b4c",
+    "evidence/PERM02/Codex-a01/preparation.json": "a3aee82538f0fce89fd0ba4901c899b31ebe6ec6bd25f88ac5798fba91478e79",
+    "evidence/PERM02/Codex-a01/review-command-mapping.json": "5a75bfa14a1e66c8d8044e3b69e988bba7845716eef95c5634ef4af6deb749cc",
+    "evidence/PERM02/Codex-a01/call-comparison.json": "7c02a2019f8c6f3f350515b18b0fb8b2cfa573ec274eccf08020bb20df8f899a",
+    "evidence/PERM02/Codex-a01/bounded-audit.json": "6f74c3649046e2c6b2b2886ff399e8dd1f7c80e7955c0365889eee285a1bebe4",
+    "evidence/PERM02/Codex-a01/review-start.excerpt.json": "e8567101b3c88f99dbf1a6ecccc077940bd8c4b1ddea3870e28d62582bc6f1ca",
+    "evidence/PERM02/Codex-a01/native.excerpt.json": "5032aee52081487c11673ae920d607ed73f366dc51a496451f2ca17b4a0a219b",
+    "evidence/PERM02/Yuanbao-a01/preflight-review.json": "af77bf06f5703a26e0127d2dcf26511a4aec418eeb932ef77e67a19f6f3b8064",
+    "evidence/PERM02/Doubao-a01/preparation.json": "0e20d138f74aa11ce826609a86b5bf5eda391d21be83dcaab189745b7f6467af",
+    "evidence/PERM02/Doubao-a01/approval-runtime.excerpt.json": "6de78906b9040480ab546d4a6c005291b11dd9d4578576f94a48d5acf5fa0439",
+    "evidence/PERM02/Doubao-a01/decision-mapping.json": "bd86b4015a81d7a559f57d35a82b5072bc160fb4bd9fc2777024fb8aa3eadb41",
+    "evidence/PERM02/Doubao-a01/bounded-audit.json": "5e79a685a521372da51a324bf09ec3cedca4b0561ab4c6934540af7262388810",
+    "evidence/PERM02/Doubao-a01/native.excerpt.json": "6108c4970bbae243f900486fe7093f738c6f203cac0f0913e751886436339a63",
+    "evidence/PERM02/WorkBuddy-RULE-a01/transcripts/01.txt": "57c887921d741ca967f025949761aaffa5431aa7810fc423a58b3e27bfde1284",
+    "evidence/PERM02/WorkBuddy-RULE-a01/transcripts/00.txt": "db4c85d4b960f6c1eebd7a81f93e073d03ee49142785e7ae1db05ca5c4d4c2f0",
+    "evidence/PERM02/WorkBuddy-RULE-a01/transcripts/02.txt": "1bf5dc0a75b13ad0b306dcb2d5d01611887bfe522f04e7cf22a954e0317f5ead",
+    "evidence/PERM02/WorkBuddy-RULE-a01/transcripts/03.txt": "1e79b5f077a5a0acfbcd7776d7a1d867d766baa7e39576fc05c2a9907254285e",
+    "evidence/PERM02/WorkBuddy-RULE-a01/snapshots/00.json": "15825b4874173e72e20470724d31b510190f80c6736d96459bab0b75ff67352b",
+    "evidence/PERM02/WorkBuddy-RULE-a01/snapshots/01.json": "98ea734589beecfbadb16903a13cd41880281207c8d2272f9dcc81b58a8401aa",
+    "evidence/PERM02/WorkBuddy-RULE-a01/snapshots/06.json": "f0f25de2ecd5b7e9275910f4f101682f1aa60eb01dd37cfffbbda6ac0c467055",
+    "evidence/PERM02/WorkBuddy-RULE-a01/snapshots/07.json": "edabb24a49b5f1a4bba1f8d48d793ca49345c516af0bafcd451b70453eaccee2",
+    "evidence/PERM02/WorkBuddy-RULE-a01/snapshots/04.json": "1f62ebb63b739375da5bdd52e32d1c8dfd0f824c3eeeebcf6ac8602ca199a1df",
+    "evidence/PERM02/WorkBuddy-RULE-a01/snapshots/05.json": "df6c8f53dd9c76088e127c01244519338d5d0f6f0db00949a304477b4ab9dfc1",
+    "evidence/PERM02/WorkBuddy-RULE-a01/snapshots/02.json": "abc2b0a1ca9e905f2b05fa107911415fbc470109bad028e0176d5ef90b9ad036",
+    "evidence/PERM02/WorkBuddy-RULE-a01/snapshots/03.json": "9d0bde9a5e9a1c5d7ab7bdf7bd3faf124fa8594c715536e53994ff198686e420",
+    "evidence/PERM02/DSH-a01/snapshots/00.json": "293e2d40566d8ad303e0e64c27f2f1e2bf129091e241c98e6fc0fddb15fe511a",
+    "evidence/PERM02/DSH-a01/snapshots/01.json": "ac0dbc2ba56f140ff5b972ea1efbbc8854888ea78a6a0f91ee8984c84f2a999c",
+    "evidence/PERM02/DSH-a01/snapshots/06.json": "6a8fc8c54db4b42884f552968f59b7ffa8ef5aeb6d0e696f201d51a007a4cc6e",
+    "evidence/PERM02/DSH-a01/snapshots/07.json": "433442b95e8617ee0dbdb4ad3ceacd55c3321dc0b2b7323325da17d03cd48819",
+    "evidence/PERM02/DSH-a01/snapshots/04.json": "ed825b35d6b84587fcade260c815160b62d1e1591acdfc7b610995089b86efb1",
+    "evidence/PERM02/DSH-a01/snapshots/05.json": "3865f3c4a1d75139cfcf7f0852b1d0c4a8493e8374a46856003800c4a6c71705",
+    "evidence/PERM02/DSH-a01/snapshots/02.json": "45c9cdbba76b27548305a44061dfe5c622487ec1c4c15b380124c8b77a70d354",
+    "evidence/PERM02/DSH-a01/snapshots/03.json": "1b55c7f4b834d02b0a2910298d75976825cbd84312e5885b98686d549d3c9ba8",
+    "evidence/PERM02/WorkBuddy-a01/transcripts/01.txt": "a28348fb68c5420cd5adbac3d75ccb7248345aef434e63e896f74b450cbd25d0",
+    "evidence/PERM02/WorkBuddy-a01/transcripts/00.txt": "5e60450b5d56316cd4cee7f9f0c34b9ea07e09eb58febf3fb762831744bbca55",
+    "evidence/PERM02/WorkBuddy-a01/transcripts/02.txt": "03ae433ae62fd4695a7f3c208066e61ec4ed68dad5f516d300ceeba1370bfb2e",
+    "evidence/PERM02/WorkBuddy-a01/transcripts/03.txt": "5507f48adaf31cf84663c3120e5d2d52c8a6c142f0c4f2720f0bdb00fdff5a7c",
+    "evidence/PERM02/WorkBuddy-a01/transcripts/04.txt": "b52eee520a51e25d0f080ebd651b95d3759e7045a9a5a6732b587f39377254a4",
+    "evidence/PERM02/WorkBuddy-a01/transcripts/05.txt": "c890bc556626c51108da720a4740974920f0c15c09eed998603d307df646bd7e",
+    "evidence/PERM02/WorkBuddy-a01/snapshots/00.json": "5f3e2c5151717d74bd34503024d13e720f21e715ddbe0ac3dca5c098a9f9cebd",
+    "evidence/PERM02/WorkBuddy-a01/snapshots/01.json": "54b57abbe644a982e215efe3791ccfff4f6b4cc7dbfed35cca7229d7ad36ce32",
+    "evidence/PERM02/WorkBuddy-a01/snapshots/06.json": "f7d16c078473af672bb06ec23042be4fb39be3d7cc27f4033c198a845d49d017",
+    "evidence/PERM02/WorkBuddy-a01/snapshots/07.json": "64eed054631a2e7161e70486157c399b303033ad3834d89f6357c6c99fe5a5f4",
+    "evidence/PERM02/WorkBuddy-a01/snapshots/04.json": "e8ae7682f3ad22082ab6a93706fe9e7672cafcb11aab8f45ea1732ff29b8d8d7",
+    "evidence/PERM02/WorkBuddy-a01/snapshots/08.json": "e6eb8033a8c29ad402239786cf15a04ab241948236c76f95e1dfaba4ac3f6a79",
+    "evidence/PERM02/WorkBuddy-a01/snapshots/05.json": "1eb3acdecdb373f88237e4ee7e2a9385b6c0f0e64a1abc37d1c225754446110e",
+    "evidence/PERM02/WorkBuddy-a01/snapshots/02.json": "83cb8cc3de0296579fabc9403d349140d2efd52524697a6dc7a4899d69916489",
+    "evidence/PERM02/WorkBuddy-a01/snapshots/03.json": "58dfc4ec99b53ecd3e6cb7fd0c130d47543cfb62a6a3d1b4cb32183ce93c2da3",
+    "evidence/PERM02/Codex-a01/snapshots/00.json": "077b77953e92f1b6658d08ee0ba13fa4e9ea74e391753636b0de7319a8a77073",
+    "evidence/PERM02/Codex-a01/snapshots/01.json": "5bac7b974e9c3fdb63fa372ffe875b478dd4812d037ed615e00d32bd268d701d",
+    "evidence/PERM02/Codex-a01/snapshots/06.json": "93a91186dd7fb0a0e2cf02eec906a029a3a4f8ff423b512e0b2292b8584500b7",
+    "evidence/PERM02/Codex-a01/snapshots/07.json": "2dc73906db52671833807cb365ebbb75ebf84890386b437046a15613c132c172",
+    "evidence/PERM02/Codex-a01/snapshots/04.json": "03e1aa66320f8bfc60c21b2fb85c23456bf4c2f965925cdd88f572ba334e760b",
+    "evidence/PERM02/Codex-a01/snapshots/08.json": "e379ca68bfdafccc6cf27dea75e3614908d313919baaf9e338243ea9a399331d",
+    "evidence/PERM02/Codex-a01/snapshots/09.json": "11123a50535484095b1ead38531c0024602eb34f49bbbf52e53bafff96d96f4e",
+    "evidence/PERM02/Codex-a01/snapshots/05.json": "542d16956a25ad9962f650ce34303c54d1b292587b49e0c13507f03cf3cfed09",
+    "evidence/PERM02/Codex-a01/snapshots/02.json": "5239bd1cd43b00b2d37068762cea5ca985ca52d037aae94fd88d17142fae9159",
+    "evidence/PERM02/Codex-a01/snapshots/03.json": "c5f26b5a923e5cb11eb12a04dfd6b8bbdca11ed6dbf08b78c55244e9ce46ce01",
+    "evidence/PERM02/Doubao-a01/snapshots/00.json": "9a0bec41bef020ccbfb912fe1eb4d68603dc8a530a639a7d84ac70e10d886096",
+    "evidence/PERM02/Doubao-a01/snapshots/01.json": "d4bfb59ac70b0caacfa218a480c908be6c97a957b86f52493c96bb30c59c2939",
+    "evidence/PERM02/Doubao-a01/snapshots/10.json": "ed8d389a87be90169ff30f4a8c6d3ac67b06064a0d993214b4710aafe44e9030",
+    "evidence/PERM02/Doubao-a01/snapshots/06.json": "b1e2a27a826a92569722b4aaf69ec0aa2b96204036093dc25b7d627b36dcc2be",
+    "evidence/PERM02/Doubao-a01/snapshots/07.json": "792782cae60aa4f89e0e4af9d89c159360adac64fe324fea0e580ee3d3608d03",
+    "evidence/PERM02/Doubao-a01/snapshots/04.json": "fd1868c4276ea826991b0159a193a66297ed367ab8c248bf516146ceda294218",
+    "evidence/PERM02/Doubao-a01/snapshots/08.json": "ec6d4b909143094d65898b20552807985bede1d7936c380293705d3f8f426e72",
+    "evidence/PERM02/Doubao-a01/snapshots/09.json": "e1c25b8c60adb3b94a058507a31fbd45f37fa425de5dea4f4b773b52453be353",
+    "evidence/PERM02/Doubao-a01/snapshots/05.json": "ab3bd0d358dbfab825db81858aebbef64170f3e55011bbc4cdb3f05cacfc7e26",
+    "evidence/PERM02/Doubao-a01/snapshots/02.json": "50410d71f90d6b25b482264dc069304cfb54bde63cdbe01604a3c289373a4f4e",
+    "evidence/PERM02/Doubao-a01/snapshots/03.json": "b77af70d893a9bba71c942958d165c80adc7c5ee8678c213e8a80dd9edc27582",
+    "evidence/recovery/REC02/Yuanbao/score.json": "6c333471f1125d2e577debe6b30544a37c886fc0916e09fb23dd3634eabf98c8",
+    "evidence/recovery/REC02/Codex/score.json": "2fca1de3eb46a19eabce8af124eee1e4909d953583338f4aeceb845a32fa9250",
+    "evidence/recovery/REC02/Doubao/score.json": "92833b61dc25826e5d7063a29c317297eb86b77140625f317ec78046cedd9157",
+    "evidence/recovery/REC02/DSH/score.json": "9b39cba1aae7bf52b7155077cb1730003efb57a8208bbafcd3224dce6b1229f7",
+    "evidence/recovery/REC02/WorkBuddy/score.json": "7c9a622168c5dff624b78444631d6422d989307856cd121b91c2bfe64f50e644",
+    "evidence/recovery/REC02/Yuanbao/complete/阶段文件核对.json": "07bd1ceefe45f495dff8469b3caffaa7d59c88d4dbe0c73444df70875a54a158",
+    "evidence/recovery/REC02/Yuanbao/complete/客户端过程核对.json": "9eedf95d441835836e166ab7fc0117fba22945b5ec8f41f8dd8da65ce237ae4b",
+    "evidence/recovery/REC02/Yuanbao/complete/快照补证复核.json": "148b2a075f63cb60a68f0274ae1cff76f929c3104dd922a5670969f8b617520e",
+    "evidence/recovery/REC02/Yuanbao/failure/过程核对摘录.md": "29430f9eb52dd58427a2465f70a5fd52e527fddd01f2f12f8dedc368dfe9d0a6",
+    "evidence/recovery/REC02/Yuanbao/failure/阶段文件核对.json": "f98f0d0dcbc9cad4b6de7ce7d370b83bcdaa31132bae0d013dfca38fc40c4716",
+    "evidence/recovery/REC02/Yuanbao/complete/workspace/recovery_batch.py": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+    "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_B.json": "e5d0b86577b49190caf9fa3da5f2c245c001d244cee67d66331c3c8cb788085c",
+    "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_C.json": "3217ce1fb76030f6d2315b9e5643a92fa12567e77dff3a51ea3e10c44ebed08f",
+    "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/batch_A.json": "52292a483d4ccbbb7d4144d76b3f854f757b8a5521c501ff775b4609d67a7360",
+    "evidence/recovery/REC02/Yuanbao/complete/workspace/outputs/manifest.json": "07154d9702e26dd984fd340d76c7cda5bb187cd09de733b731e43f86f39ecbca",
+    "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/state.json": "e808f6a7559933b38272a4b3103c7585622de48222a8436838ba5f6cd6bba9c9",
+    "evidence/recovery/REC02/Yuanbao/complete/workspace/.recovery/events.jsonl": "e332c1b14826ea7b2d123d647ee83174f37e20bee62822f36b5de084d8dfb89c",
+    "evidence/recovery/REC02/Yuanbao/failure/workspace/recovery_batch.py": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+    "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_A.json": "52292a483d4ccbbb7d4144d76b3f854f757b8a5521c501ff775b4609d67a7360",
+    "evidence/recovery/REC02/Yuanbao/failure/workspace/outputs/batch_B.partial.json": "73b23345759d022a70e5f34ebb817ece0410d5b35fea0c3f987fca168dab4021",
+    "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/state.json": "4e9be68c6dfe23dc33d9de2b831f18efb35d358e67df38fd39d9078ccd9b36a5",
+    "evidence/recovery/REC02/Yuanbao/failure/workspace/.recovery/events.jsonl": "99439e3bc4c0be92b9b90cc7ffc39f0346bb814d23548779fbe144135ad9d8cc",
+    "evidence/recovery/REC02/Codex/complete/阶段文件核对.json": "6057a8e2c709ff505c0bac91d64b2b5a5cb737d71a8afd3aa26f6a8dd34ed968",
+    "evidence/recovery/REC02/Codex/complete/native.excerpt.json": "2ecdd572d6ed148237888a157115e09d1a27e60b82c591f55caf3b2bf9f5f5f6",
+    "evidence/recovery/REC02/Codex/failure/阶段文件核对.json": "cd61ce213d35d3127c1280a61e92a483511f5559d093d4f93efd6dfcb8071823",
+    "evidence/recovery/REC02/Codex/failure/原生过程核对.json": "3e42b628ef4d9795123fff37103919ffa96785b409017c9160bfa46989635752",
+    "evidence/recovery/REC02/Codex/failure/native.excerpt.json": "cba0384d3fec226fd2d99fcd02392bdfb07d63cc9bb3314f60b6af95cce50ef4",
+    "evidence/recovery/REC02/Codex/complete/workspace/recovery_batch.py": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+    "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_B.json": "4b37f373f227d718595a8c0a6b53e7f99e91471960e9867c135a87ebd005d40e",
+    "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_C.json": "9ad8a5ff8ad9046997d67ccdafced4d5b2171cc35b63350a68185d8788b3e1e4",
+    "evidence/recovery/REC02/Codex/complete/workspace/outputs/batch_A.json": "b9a214858358f635c7c2b265d22ddfb9e881a438465c08435386c049402503fa",
+    "evidence/recovery/REC02/Codex/complete/workspace/outputs/manifest.json": "9c17928e84777c55f09e067cef202fd853ce77761e76a6dc12c279da3da4a596",
+    "evidence/recovery/REC02/Codex/complete/workspace/.recovery/state.json": "411972ffbe6266bb7b038c6e9dd273a23aa0072e7cccafd6b3e72f662a0a30a6",
+    "evidence/recovery/REC02/Codex/complete/workspace/.recovery/events.jsonl": "3869c0a9bb410749add2646573484b2e2d5c3fbef5e8ff68d51957cf21687776",
+    "evidence/recovery/REC02/Codex/failure/workspace/recovery_batch.py": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+    "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_A.json": "b9a214858358f635c7c2b265d22ddfb9e881a438465c08435386c049402503fa",
+    "evidence/recovery/REC02/Codex/failure/workspace/outputs/batch_B.partial.json": "21138aad05967b69a50a76415a6c21c118b2cc85672478a55059e95d7706920e",
+    "evidence/recovery/REC02/Codex/failure/workspace/.recovery/state.json": "5a47bd74d19c3706bda95b95104802556c580ec6f674aad4e85c9a4544cbdd0d",
+    "evidence/recovery/REC02/Codex/failure/workspace/.recovery/events.jsonl": "109c2aaa9ce1a193d2df8b7e73b37ebb5469b0e9816eaf15745760633cdd196c",
+    "evidence/recovery/REC02/Doubao/complete/阶段文件核对.json": "95b4d9d002088f494ea3f1862e403d469f97158df290137b09e1c79805de0524",
+    "evidence/recovery/REC02/Doubao/complete/客户端过程核对.json": "36642751c8c54799a42efd162bc27b79ef5c94cd8919858d25d670d4d7d37c64",
+    "evidence/recovery/REC02/Doubao/failure/过程核对摘录.md": "3f823e3f75b630a3acd32bd1e9917fe43d3600e3e1dcaa6159174096d1af93b5",
+    "evidence/recovery/REC02/Doubao/failure/阶段文件核对.json": "ccb01ec184d13104aa0e889c39a1d8d2ce5b19ca4a7e0b9c81775a1366b6b19a",
+    "evidence/recovery/REC02/Doubao/complete/workspace/recovery_batch.py": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+    "evidence/recovery/REC02/Doubao/complete/workspace/outputs/batch_B.json": "bd76de2ddc43a2c6917577894b38d2bf1b309564e8a5937ac2066ea9a3e26b3b",
+    "evidence/recovery/REC02/Doubao/complete/workspace/outputs/batch_C.json": "e1b37fa7d316fa2d92cbb3e2706e3f0c0eb5d8d081da0f25aced469a62701f53",
+    "evidence/recovery/REC02/Doubao/complete/workspace/outputs/batch_A.json": "61357c7c595ade72f5c12f294402878853838a1ee9e1a875d3d9eba9bd5c7815",
+    "evidence/recovery/REC02/Doubao/complete/workspace/outputs/manifest.json": "f697093d0dce538145bfc4fe9025c4c683f3e4e701bd87806f1f6aeebe56e201",
+    "evidence/recovery/REC02/Doubao/complete/workspace/.recovery/state.json": "b5f1f909a114a16658cc3a7037bc78a2ccfc308e8402b457dfd604bd28aeabf9",
+    "evidence/recovery/REC02/Doubao/complete/workspace/.recovery/events.jsonl": "6fbd57aa75889105e96dd9f72fbf6d21e253f869650d14fe1522a32d7c0db964",
+    "evidence/recovery/REC02/Doubao/failure/workspace/recovery_batch.py": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+    "evidence/recovery/REC02/Doubao/failure/workspace/outputs/batch_A.json": "61357c7c595ade72f5c12f294402878853838a1ee9e1a875d3d9eba9bd5c7815",
+    "evidence/recovery/REC02/Doubao/failure/workspace/outputs/batch_B.partial.json": "35aebb6e7b8b3530db1177a11cf5498387bac2b4d3158695675c592dce23587f",
+    "evidence/recovery/REC02/Doubao/failure/workspace/.recovery/state.json": "9a96bfa9fc63f6ed55e6a554e9707de762b29cef60268584d79f1910c6f62981",
+    "evidence/recovery/REC02/Doubao/failure/workspace/.recovery/events.jsonl": "8e2366f796094d1eb0e4f07702d4ad1e8751ac5ea362a15adf11cdf45078c8d8",
+    "evidence/recovery/REC02/DSH/complete/阶段文件核对.json": "fcaf8ed6027a7f5c90856b5a8dd3fa64d95364912655a9c9e2f82c48c54f18ee",
+    "evidence/recovery/REC02/DSH/complete/native.excerpt.json": "89510978ac6322393af63dd40d8882f49f6584925470188c37dc54fb2bdc4427",
+    "evidence/recovery/REC02/DSH/failure/阶段文件核对.json": "16261e04b612c3276a360187a4b4e7ea37165dbf0745bb709b1bd35c90179098",
+    "evidence/recovery/REC02/DSH/failure/原生过程核对.json": "ec374a4ef33b73c3e98b9e598f4b96839a537aa27fcfd5ee0df79338f161e9e6",
+    "evidence/recovery/REC02/DSH/failure/native.excerpt.json": "3a5e4ebe72e608c9392bebd817d12d1954787561c3a71573b37cf4c3974eb28f",
+    "evidence/recovery/REC02/DSH/complete/workspace/recovery_batch.py": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+    "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_B.json": "2d47c59042c625fa70d81e315259593aec955a8e86e09307826ccda92fb0d24f",
+    "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_C.json": "d153ac18f623da03ca5ced2a0e599d3338d08aa9c2399b6b4d04711e9047f22b",
+    "evidence/recovery/REC02/DSH/complete/workspace/outputs/batch_A.json": "f2467394b85f50a7d04ee61f4a4813e134cd25a3a7ac32de542ef45d299efa88",
+    "evidence/recovery/REC02/DSH/complete/workspace/outputs/manifest.json": "c756c4415834f856b5a512e11f64b2ae6154d58dc4c2ab0b538642239f50fb19",
+    "evidence/recovery/REC02/DSH/complete/workspace/.recovery/state.json": "62493b2156573da754ec74dfdb9905ef3ca535169b7df5d0f4b96fadeae9eb97",
+    "evidence/recovery/REC02/DSH/complete/workspace/.recovery/events.jsonl": "0570d73cd505f69932091230b826366eced25a4048aa97d76d026d98948950f4",
+    "evidence/recovery/REC02/DSH/failure/workspace/recovery_batch.py": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+    "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_A.json": "f2467394b85f50a7d04ee61f4a4813e134cd25a3a7ac32de542ef45d299efa88",
+    "evidence/recovery/REC02/DSH/failure/workspace/outputs/batch_B.partial.json": "85db91e2a971a22a0b41afc79d6725360811e235e231d13ff5fde90521210b9c",
+    "evidence/recovery/REC02/DSH/failure/workspace/.recovery/state.json": "1b11d4c9f0f2b20d4d98aa9cfbd31da18b3821e82d87dde4e004d2c4cc674971",
+    "evidence/recovery/REC02/DSH/failure/workspace/.recovery/events.jsonl": "4cf3374dfebf1f577e702858eeb810b20b595502c9903f9f4aca7c18e58d59cb",
+    "evidence/recovery/REC02/WorkBuddy/complete/阶段文件核对.json": "b80cdf618182014ac94e7172a0a4cd70028bdaa1dc47a20ad23e4df404d3d209",
+    "evidence/recovery/REC02/WorkBuddy/complete/native.excerpt.json": "b12fcae53a6e8470302c84086755c30b2bcd5e920ff2351d2f1dc84abf43f894",
+    "evidence/recovery/REC02/WorkBuddy/failure/过程核对摘录.md": "6e120b95c6cf4428995a376b1d7dce273a6e1e793d7cbbb52aa4958f54cf3cbf",
+    "evidence/recovery/REC02/WorkBuddy/failure/阶段文件核对.json": "3ffa484f149b407cab227b152b993c631ef52ec414052598931957e9b1ff6dda",
+    "evidence/recovery/REC02/WorkBuddy/failure/native.excerpt.json": "ddfefa980f55284afd2e6ed362d4dbfb18f883ca3dd55d7a7c319ab2e38079e0",
+    "evidence/recovery/REC02/WorkBuddy/complete/workspace/recovery_batch.py": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+    "evidence/recovery/REC02/WorkBuddy/complete/workspace/outputs/batch_B.json": "70e548c424b44d1fbd471cb2425481af3ba168f2ea6ce0f571bfdae16027f8da",
+    "evidence/recovery/REC02/WorkBuddy/complete/workspace/outputs/batch_C.json": "90c656af101a7a835fd9a72ed555228e113f21f0a5b61ee5d93facf84b29d848",
+    "evidence/recovery/REC02/WorkBuddy/complete/workspace/outputs/batch_A.json": "f762ea987ef5810b9d130ac2b021a0bcc14d54f76f526c37cff0f2954b8c14fe",
+    "evidence/recovery/REC02/WorkBuddy/complete/workspace/outputs/manifest.json": "0178155994806a52d18072fcf63a4da78de0f77c0e88f2bb815a59e41b4c7f89",
+    "evidence/recovery/REC02/WorkBuddy/complete/workspace/.recovery/state.json": "9d891fe0d2411f9ce1ce827c6bc9fd533a754bc47386b4ebb283dbd9173f560a",
+    "evidence/recovery/REC02/WorkBuddy/complete/workspace/.recovery/events.jsonl": "82d692659bf34669a8804b751383bc961fde2ecdb7c6d7e89aec850420c99b28",
+    "evidence/recovery/REC02/WorkBuddy/failure/workspace/recovery_batch.py": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+    "evidence/recovery/REC02/WorkBuddy/failure/workspace/outputs/batch_A.json": "f762ea987ef5810b9d130ac2b021a0bcc14d54f76f526c37cff0f2954b8c14fe",
+    "evidence/recovery/REC02/WorkBuddy/failure/workspace/outputs/batch_B.partial.json": "cfd40cead5fc2b6ce9cc382a44aa31ef37039db7e0fefe7d91ab8e07e0d83581",
+    "evidence/recovery/REC02/WorkBuddy/failure/workspace/.recovery/state.json": "3c57f25668a7a273a1a9e56ff0ba87b7e587fa90ac116447ca2a912490a83979",
+    "evidence/recovery/REC02/WorkBuddy/failure/workspace/.recovery/events.jsonl": "7c29886f42919f22c0e98c23b998a742c7aa5378ef21022f3b2944a1e0b0f1fa",
+    "evidence/recovery/REC01/Yuanbao/界面核对摘录.md": "26033eb48110cdfd97e7afc3c112e089a061aff22325f9bd6db50ac295d10ac7",
+    "evidence/recovery/REC01/Yuanbao/补充材料-用户转述的工具返回.md": "b8a25c8a53b177c0e84d8feb706c02d89fa0b737466cbf9de19f72af797a5604",
+    "evidence/recovery/REC01/Yuanbao/score.json": "65dfc26a6fb72c432c79cb5b7d904f8dc3874639daf00d21cdd3d10bb0f282d3",
+    "evidence/recovery/REC01/Yuanbao/交付物核对.json": "fb75d6f613af6cbde36924497ee5b6962ce4e4d334eed4ebd160850a270b102e",
+    "evidence/recovery/REC01/Codex/score.json": "66406d27c0f10bdc8363c776368e9e4ca053c7bd6cfccdc073b29c8c7aa91b23",
+    "evidence/recovery/REC01/Codex/交付物核对.json": "6e455eb160f88265c3da068885d157d58518e309c1e0fe26b13c5fec9e53314f",
+    "evidence/recovery/REC01/Codex/native.excerpt.json": "4a7fbbcef24439aab1bb1930d0c8f1f4a36ac1e933dc3348f33941cd57ca55cb",
+    "evidence/recovery/REC01/Doubao/界面核对摘录.md": "701fc78355e9a56bbf08232eae41b415ddbe83ec3d4b38a0a393dab8271fbae9",
+    "evidence/recovery/REC01/Doubao/score.json": "87e772c0b95e85ff9ccc012e592b96178ea8eb3d0791c062afd35578fe083394",
+    "evidence/recovery/REC01/Doubao/交付物核对.json": "23034d6f3f88cc5419cc3af37f07b9905fd4714fb0aaf14e35c61c40de1d4afc",
+    "evidence/recovery/REC01/DSH/score.json": "6030cb84c023af05809530941162e9edbb1c41554e8b1a3fea5dcc4bf99cd581",
+    "evidence/recovery/REC01/DSH/交付物核对.json": "52a15b6f82e65b527aecab3c573de8a97b080e1de8f03ef8fb5cc8990a8f7c97",
+    "evidence/recovery/REC01/DSH/native.excerpt.json": "4be8a5bf963c9caeb19cffd82beffeacdb5cea2ed14926fc1fd58f26763db7ad",
+    "evidence/recovery/REC01/WorkBuddy/score.json": "2a78515b77e31d577c0b6d73614c14405e58603ce786dd5b80c7be7cb8b67cc6",
+    "evidence/recovery/REC01/WorkBuddy/交付物核对.json": "d8ceda274a1c63d5aa8542b27e26d774abba8d205866888589358cb69d32b7e8",
+    "evidence/recovery/REC01/WorkBuddy/native.excerpt.json": "e868c9121f21b559ba5e7a0d9ef6246c458e5b1ca2decc4548393c1d387e6af4",
+    "evidence/recovery/REC01/Yuanbao/snapshot/outputs/registration_summary.json": "b41dd0070a7b20e1bfc831e6b49f70acf33577e96d9538a3808c26fb5b632705",
+    "evidence/recovery/REC01/Codex/snapshot/recovery_export.py": "0294151d1f04e129f4e07764c2f7028375a56d11525f0efbea4bd9dadb4fdbe3",
+    "evidence/recovery/REC01/Codex/snapshot/outputs/registration_summary.json": "b41dd0070a7b20e1bfc831e6b49f70acf33577e96d9538a3808c26fb5b632705",
+    "evidence/recovery/REC01/Doubao/snapshot/recovery_export.py": "0294151d1f04e129f4e07764c2f7028375a56d11525f0efbea4bd9dadb4fdbe3",
+    "evidence/recovery/REC01/Doubao/snapshot/outputs/registration_summary.json": "b41dd0070a7b20e1bfc831e6b49f70acf33577e96d9538a3808c26fb5b632705",
+    "evidence/recovery/REC01/DSH/snapshot/recovery_export.py": "0294151d1f04e129f4e07764c2f7028375a56d11525f0efbea4bd9dadb4fdbe3",
+    "evidence/recovery/REC01/DSH/snapshot/outputs/registration_summary.json": "b41dd0070a7b20e1bfc831e6b49f70acf33577e96d9538a3808c26fb5b632705",
+    "evidence/recovery/REC01/WorkBuddy/snapshot/recovery_export.py": "0294151d1f04e129f4e07764c2f7028375a56d11525f0efbea4bd9dadb4fdbe3",
+    "evidence/recovery/REC01/WorkBuddy/snapshot/outputs/registration_summary.json": "b41dd0070a7b20e1bfc831e6b49f70acf33577e96d9538a3808c26fb5b632705",
+    "evidence/stopping/STOP02/Yuanbao/用户提供的最终声明.txt": "97715e04b5e7fbf6b12a52aee6225081336554f27bb202343a284653e39b0321",
+    "evidence/stopping/STOP02/Yuanbao/轨迹核对.json": "3126c95288a375fe2630f63a26c6555fee557dc9e6854b4bcd94125594e981d8",
+    "evidence/stopping/STOP02/Yuanbao/文件核对边界.json": "e75acbd76916ebf5709b56e8dbd6d60fe660a9f74f6c29c0587002727e102429",
+    "evidence/stopping/STOP02/Codex/产品最终回复-原生日志提取.md": "00991942cdf00711a220e491c38e567be9fa8b2ec0299be73ad60350f2803428",
+    "evidence/stopping/STOP02/Codex/文件独立核对.json": "3291265694f55e323de6f99579048b5014c5f58ab0ce4e7165898d4fce3dd5d4",
+    "evidence/stopping/STOP02/Codex/交接说明-产品原文.md": "c3acae03cb8788cdfffbac42a11d6dccc43459dea8a1dcf943869e59a627f663",
+    "evidence/stopping/STOP02/Codex/轨迹核对.json": "e9878b8280e850c58697ddcbe539214afcc358b4589ba99c85df9594d25aa981",
+    "evidence/stopping/STOP02/Codex/native.excerpt.json": "8abb54dc50eea4fe9a5fe816746a34726a7b91161ea4199d516a895b518ddd3c",
+    "evidence/stopping/STOP02/Doubao/产品最终回复-原生日志提取.md": "9b1f40e0c8a8867a855637997b4aba2b9acdeade25a39c3c927434220225aa93",
+    "evidence/stopping/STOP02/Doubao/文件独立核对.json": "d606c54bee16e8675e58af2a3dc71c3b1a9166b18c5922ed105a40f6294ad57c",
+    "evidence/stopping/STOP02/Doubao/轨迹核对.json": "da77ad490308ff7966e28cd53a72526b922e242ed53e37bcf7a0715fcdf2d1e9",
+    "evidence/stopping/STOP02/Doubao/native.excerpt.json": "8b715759b4d2b41fa1b1a899070d33fd1d4d9cf699b738afe67ae54cfc4ba94a",
+    "evidence/stopping/STOP02/DSH/产品最终回复-原生日志提取.md": "247c08ddf9a0a761303d79ff47aa3e78619e91defc451d1061ab420d4f50941c",
+    "evidence/stopping/STOP02/DSH/文件独立核对.json": "a49e3834f854894372623dd2bdbbce67e62568765be8ea1a141532226dbc633a",
+    "evidence/stopping/STOP02/DSH/轨迹核对.json": "3b0cb7407cf0601c9f2eafe45e7ad58e90074967bc3f016e1eb539be992af64b",
+    "evidence/stopping/STOP02/DSH/native.excerpt.json": "e828142436b8fe4f9222ed7b3895492e90eaf69228654491fdd71e5391c27f9a",
+    "evidence/stopping/STOP02/WorkBuddy/产品最终回复-原生日志提取.md": "1b68048413fbe177454a9483149fe2e04dc0cec790a652b9c9b62a998c34df99",
+    "evidence/stopping/STOP02/WorkBuddy/文件独立核对.json": "07851c49ce15ccc0eea801ad01b4ef7d4230e9729e71f223eb2a62a6a99505bb",
+    "evidence/stopping/STOP02/WorkBuddy/轨迹核对.json": "f3dba985ac6920ecb02b6bb278c64562a0149c36a89fa4edd38affb7e45b0cf5",
+    "evidence/stopping/STOP02/WorkBuddy/native.excerpt.json": "1580d263d6b884ff4026da60f2c692b3d85c954bc989c35543fc27fb3147090b",
+    "evidence/stopping/STOP03A/Yuanbao/下载文件独立核对.json": "b2ec7f7a9c60a0e20797fd9312d6e6bcb7161ed7ca5dcbca0740abd5f58cad76",
+    "evidence/stopping/STOP03A/Yuanbao/用户提供的最终声明.txt": "52ceb215e5ecced33fdb2b65960cdd955d82f4e1fd02b6a73c409ede2126c7c9",
+    "evidence/stopping/STOP03A/Yuanbao/轨迹核对.json": "ee30b5f8babf027ad0d8566ef93364229fb4e391821e2e96149f769c0d0afc8d",
+    "evidence/stopping/STOP03A/Yuanbao/文件核对边界.json": "dd3be17ed2234c9d8dab0439f96343304396b0c48b03b1c364fc6e6139772741",
+    "evidence/stopping/STOP03A/Codex/产品最终回复-原生日志提取.md": "5dffcca6c6273479b31dbc8b7401ab69dc0cbd40bf1dc35cf605c0089c370775",
+    "evidence/stopping/STOP03A/Codex/文件独立核对.json": "88e28b40220bffb448306aa39254b55299231a2d2da939844ef75b3092c834a9",
+    "evidence/stopping/STOP03A/Codex/交接说明-产品原文.md": "038d3b8c336ba14d6641ce3b657e992b9f56008e71cfa8fbb6ad6f4f41e32c4e",
+    "evidence/stopping/STOP03A/Codex/轨迹核对.json": "a4f47ee8db61420d308e28a5a8a28e2e396f028bde2e7b5bed91fa5700b84389",
+    "evidence/stopping/STOP03A/Codex/native.excerpt.json": "ca6ecd6d0cab367971a767eec504c0d12424c1e96588749ac2bae5e4bac1bca6",
+    "evidence/stopping/STOP03A/Doubao/产品最终回复-原生日志提取.md": "a80276123e6d0f56051f97800aafbb3b7b4c74765fe97b79235d7030364b40cc",
+    "evidence/stopping/STOP03A/Doubao/文件独立核对.json": "b75ecc44952905902a9d3eaf570cad1d3cf6c638d02ec6b8cbff5454f1c36828",
+    "evidence/stopping/STOP03A/Doubao/交接说明-产品原文.md": "26f00691fdcb1ea4bb49674126389b8dcb67129efcdcf0544079e9ff931289e5",
+    "evidence/stopping/STOP03A/Doubao/轨迹核对.json": "681b9917f16ee404023b1027541f855f77c749c18f41da6b23ab006998020ae1",
+    "evidence/stopping/STOP03A/Doubao/native.excerpt.json": "b86e4f0b69662c0c560a9764f3607cfc828d6027dea6ad44b3b578cb9f8ed844",
+    "evidence/stopping/STOP03A/DSH/产品最终回复-原生日志提取.md": "868095b305545b2e05fff1cf2adc6fb1e567ce4c2d6ed1aeeae776915f449417",
+    "evidence/stopping/STOP03A/DSH/文件独立核对.json": "a444fb9fa14b7a44e0d27fc6e875b8d55379d2cf5b5a38b40cf3e15aa2b88fd8",
+    "evidence/stopping/STOP03A/DSH/交接说明-产品原文.md": "f6ee52828cd340f878b46519b918150815da8bc5715df925c308b09a2bb2692c",
+    "evidence/stopping/STOP03A/DSH/轨迹核对.json": "44769126032c38e9f7bbbdce5339f79a6db6288e4eb2ca477db9b4d709793341",
+    "evidence/stopping/STOP03A/DSH/native.excerpt.json": "461577f5c7c6a142592248d272097b0fdfef2ca2e21ebd8c12573f8857beca9c",
+    "evidence/stopping/STOP03A/WorkBuddy/产品最终回复-原生日志提取.md": "c10aba7dc7877800045aa1a1403f4c1f4b4090958a08f4dd07063714b5538e12",
+    "evidence/stopping/STOP03A/WorkBuddy/文件独立核对.json": "6fcc0d247219b0e955c6d2a639aca8a821650e0c2c6929ab24c8c97ac184bbd4",
+    "evidence/stopping/STOP03A/WorkBuddy/交接说明-产品原文.md": "9788f6991f88e8d71f8eee37fb294884995c0b374391b4f27deaa2c97a0914ee",
+    "evidence/stopping/STOP03A/WorkBuddy/轨迹核对.json": "504fbee6c15721f96c1f7a8230f11ae736474f0a090f04b3e03bd61739fe0ff4",
+    "evidence/stopping/STOP03A/WorkBuddy/native.excerpt.json": "4fbce685dba910fc8789deee0096ebc39dea15e435e087734dd1d5f631d5b881",
+    "evidence/stopping/STOP03A/Yuanbao/downloaded/yuanbao-stop03a-20261023-receipt.json": "c60ea0afcdf5e9f3e122b508fd70b3ff016b20bf8bfc89956a9a8722486a95e0",
+    "evidence/stopping/STOP03A/Codex/snapshot/state/recovery_state.json": "c390b9487c3cca80cc47b541400cc9f3c73624159c62e163bee36d797abcc06b",
+    "evidence/stopping/STOP03A/Codex/snapshot/work/recovery_plan.json": "9eb35d837d42f4b3ffbd023662fbe97409db5f8f179558b23a041852ac946f1c",
+    "evidence/stopping/STOP03A/Codex/snapshot/work/recovery_receipt.json": "398c7873f0b9630eefeb9862116ff6c628cae1a06305c04aa0f14bb102f44774",
+    "evidence/stopping/STOP03A/Codex/snapshot/work/probe_report.json": "39b250819b9baf8f43f513863519046f0d6510648a6bdfafabb21c2443077aa6",
+    "evidence/stopping/STOP03A/Doubao/snapshot/state/recovery_state.json": "381439dd3cf885e3daa4968597f5e738f4a967d4fc97467c0abb243170da364b",
+    "evidence/stopping/STOP03A/Doubao/snapshot/work/recovery_plan.json": "412b88ff33ae1fa6434c6eb9b287a9dffc3436be1b433b0f37d622b35c702ee5",
+    "evidence/stopping/STOP03A/Doubao/snapshot/work/recovery_receipt.json": "c91858f1713f46c29dcd9ee11bef8e97d1ce7c445145a5fd67593021ab208849",
+    "evidence/stopping/STOP03A/Doubao/snapshot/work/probe_report.json": "39b250819b9baf8f43f513863519046f0d6510648a6bdfafabb21c2443077aa6",
+    "evidence/stopping/STOP03A/DSH/snapshot/state/recovery_state.json": "3878032f174ce47683004c684b2cb6468de62e52d2c69b9553c8092f9d23a252",
+    "evidence/stopping/STOP03A/DSH/snapshot/work/recovery_plan.json": "60ffe3340b804b9a00b5471e8b65b831a53f0f2b853a48f6515dc92907eb3463",
+    "evidence/stopping/STOP03A/DSH/snapshot/work/recovery_receipt.json": "e6ee9eca078af24336b02c3d8dd4d9cd561fc4d91ee39f7690f252476b4cbf5c",
+    "evidence/stopping/STOP03A/DSH/snapshot/work/probe_report.json": "39b250819b9baf8f43f513863519046f0d6510648a6bdfafabb21c2443077aa6",
+    "evidence/stopping/STOP03A/WorkBuddy/snapshot/state/recovery_state.json": "951156bff9ca0c00c7939619067ecf1500c5965f7c5495a96cd301e669fa844b",
+    "evidence/stopping/STOP03A/WorkBuddy/snapshot/work/recovery_plan.json": "e38cc629ecedc524c3a4b6c0ac8c71f4cdb852d57756b5837f0729187397599b",
+    "evidence/stopping/STOP03A/WorkBuddy/snapshot/work/recovery_receipt.json": "67f1a36b12abdff39174787bac7d0760936067be53f754fe42240e7e1edf85ee",
+    "evidence/stopping/STOP03A/WorkBuddy/snapshot/work/probe_report.json": "39b250819b9baf8f43f513863519046f0d6510648a6bdfafabb21c2443077aa6",
+    "evidence/stopping/STOP01/Yuanbao/可见范围摘录.json": "759fa7d75921cfe12bc7bd8f0374fa08635e73887e5f144908b6957fb1c4214b",
+    "evidence/stopping/STOP01/Codex/产品最终回复-原生日志提取.md": "e0984f547e443ec574910d0341bf6fbe07944f2a06df0bbbfd68ffd45ca8bef4",
+    "evidence/stopping/STOP01/Codex/文件独立核对.json": "02f71fabb1b98b5609bb44023554162fae87f0a57ed2c3525b5b240a2123bd1a",
+    "evidence/stopping/STOP01/Codex/交接说明-产品原文.md": "24ba4be1d00d5930ffa5907a00d8d68158c757a5d8f75948a417b2a109e94cf9",
+    "evidence/stopping/STOP01/Codex/轨迹核对.json": "947bb1d75bd0a01ff53700c2c950fa93710c5c8c7524b7cdbe268698e1cce2d6",
+    "evidence/stopping/STOP01/Codex/native.excerpt.json": "dcf602e1a254797e1ffa966f5bb4c16ff9f6019b04269366ada5f5957c296607",
+    "evidence/stopping/STOP01/Doubao/产品最终回复-原生日志提取.md": "226be1c922e33283feabd2cfabecd8c939562b3c91815cbe82ac858ffb631f8b",
+    "evidence/stopping/STOP01/Doubao/文件独立核对.json": "338699e0ce570f8cfc7f43067c97e1eaf63a4fc509a4bae6ac55222237fa1747",
+    "evidence/stopping/STOP01/Doubao/交接说明-产品原文.md": "1ee9857c158f7f044403305d39c871ac4113f5273023b0ae52834fcc4610dc80",
+    "evidence/stopping/STOP01/Doubao/轨迹核对.json": "b588c56d3b88f70217009660916005c2d75bcb21b31588e5305c3e5b2a0a9208",
+    "evidence/stopping/STOP01/Doubao/native.excerpt.json": "482b79fb6af20bb71d6342409d1c286992027530a6dc6717772cabe36b9e7632",
+    "evidence/stopping/STOP01/DSH/产品最终回复-原生日志提取.md": "ac87139ce920a5bddee3ea237d9f77db0b08c78eb64a6e5a2c37d734cca32d16",
+    "evidence/stopping/STOP01/DSH/文件独立核对.json": "9983d2cc410503c201534f4bd3afd498d687549cc6eb972b0a3c000915628919",
+    "evidence/stopping/STOP01/DSH/交接说明-产品原文.md": "33f5dc544de3c6f5d6a166ecc0ae7393972a4a6a0a364127584b94a645c47ed0",
+    "evidence/stopping/STOP01/DSH/轨迹核对.json": "2225313da9436cf78319dc7a5bdca0aafc5aa2064945f12728041eb9e6f2306a",
+    "evidence/stopping/STOP01/DSH/native.excerpt.json": "aa29ee4fb17d6629f02e136b52303406c605fa7d1eec5442b287e5b3f905b7e2",
+    "evidence/stopping/STOP01/WorkBuddy/产品最终回复-原生日志提取.md": "94898823578b0c2fb55e609e23c0c44301172f4403f293bbe0a5638e1252b042",
+    "evidence/stopping/STOP01/WorkBuddy/文件独立核对.json": "fbac21049c8e8dfc351e89126677c3f21a14f8406805203c06ffbb53d839e140",
+    "evidence/stopping/STOP01/WorkBuddy/交接说明-产品原文.md": "627ca1d26251f784677833706c17086419e980b7849c51cd32194ff474cfa721",
+    "evidence/stopping/STOP01/WorkBuddy/轨迹核对.json": "87ef309dd45ec9be814737106b14ea4914e5c78b563104bf26e624278197d8c1",
+    "evidence/stopping/STOP01/WorkBuddy/native.excerpt.json": "0eb18bb49ed490b2c2e7ac265b1d3264ca8afb665cc30f10af77d1af5312cf2c",
+    "evidence/stopping/STOP03B/Yuanbao/下载文件独立核对.json": "0e8060eea52be6f43d6257609e519631d813f18f3013c2028af19f7b4f6fe469",
+    "evidence/stopping/STOP03B/Yuanbao/轨迹核对.json": "0710beced4f6cb809517743036ffdfcbc7cc138ebbcb00f0fa7a798e36024a3d",
+    "evidence/stopping/STOP03B/Yuanbao/文件核对边界.json": "36a1062f5745fe545fccf09abe4f98970054c1d85bf8d43bfc4e1f8e187f6c15",
+    "evidence/stopping/STOP03B/Codex/产品最终回复-原生日志提取.md": "3f23c3e229c238222d55fdc53d2c9ca5cd2a1328ef80a104a97a9bfc5acf15c8",
+    "evidence/stopping/STOP03B/Codex/文件独立核对.json": "2843fd4ef00a4e6d4c9e6224c6ee17a9b627fae4e1db513492d16410b8b99b4c",
+    "evidence/stopping/STOP03B/Codex/交接说明-产品原文.md": "7196b8cb16e984c92109a107feba1af04e04e40c444e1ca6976e7d30ce1c2fdb",
+    "evidence/stopping/STOP03B/Codex/轨迹核对.json": "7ea77319f18b01dd304b03633de22092095ba45b9dd1db79b9fdaeff8adce2b4",
+    "evidence/stopping/STOP03B/Codex/native.excerpt.json": "8c4973d7c19f7ea82a742cd30139e0650afe849d27cbe9dc98f0c3aa915370b2",
+    "evidence/stopping/STOP03B/Doubao/产品最终回复-原生日志提取.md": "08aeaadf118122d16be4ca602a103d6045a9214d3790b0e9351ba59e9f54d62a",
+    "evidence/stopping/STOP03B/Doubao/文件独立核对.json": "d0f673b22e35a54a464367e90be63b9bd6cfebfdc183d906f7eb5a9ddc298fdc",
+    "evidence/stopping/STOP03B/Doubao/交接说明-产品原文.md": "89cc3e473eb321391cb18adabb623498b411ba05d58e7b0a95c0b1514e91b155",
+    "evidence/stopping/STOP03B/Doubao/轨迹核对.json": "8c5d3d5406e3ecc542f7e83ae4930fa74216b7beb5a1c54212d23bd4af0e4426",
+    "evidence/stopping/STOP03B/Doubao/native.excerpt.json": "b401226ad88a9a2025f73174285400ad5a5331967f1d82f17b8cbe73edef68f7",
+    "evidence/stopping/STOP03B/DSH/产品最终回复-原生日志提取.md": "2dda6b825b7fbd21b6614a8abb4b6f8ec251755b0a8a2e726095dce44e446382",
+    "evidence/stopping/STOP03B/DSH/文件独立核对.json": "dcb66514610401d68dd784334d78232c6f8af67fb2051810dbb9cd160e9b821e",
+    "evidence/stopping/STOP03B/DSH/交接说明-产品原文.md": "446a897b6ce4e3b539012ba7a5aa8d5079cd10f0263d8485ac16fde74d86930f",
+    "evidence/stopping/STOP03B/DSH/轨迹核对.json": "75bc4a7e4e702738f0683e367b97fd5fe667a9164adae2ea264d232abec68ced",
+    "evidence/stopping/STOP03B/DSH/native.excerpt.json": "da594d014896e476aafb2476e57dc0d7643af4eac59157fd572e600470062991",
+    "evidence/stopping/STOP03B/WorkBuddy/产品最终回复-原生日志提取.md": "2cf78cd88d34cde743b9b7d9eff812c5f600eb3f439a1b2d631baf5f81172774",
+    "evidence/stopping/STOP03B/WorkBuddy/文件独立核对.json": "b5c2b7ab4fe202abf8449ffa13e2b70f7ba9b5e1dd4a67315ea613ae38a558de",
+    "evidence/stopping/STOP03B/WorkBuddy/交接说明-产品原文.md": "1e28ecab744d31881d0908d40f54338ba2b2c2f19c948b97b82fda61fa509a7e",
+    "evidence/stopping/STOP03B/WorkBuddy/轨迹核对.json": "48a7e9c7fee5f2045d42c208d6faefd4c9f54440b54d441a2717159bfdbeb561",
+    "evidence/stopping/STOP03B/WorkBuddy/native.excerpt.json": "23bf9e07e5dcd3dc7aff158267cdd69558966e7115d5a144c5956b14f3eb72d0",
+    "evidence/stopping/STOP03B/Yuanbao/downloaded/derivation_blocker.log": "47881253f4dff8435c333af33cfb32847ed6f22fcf31e1513cbd5b8e9a641106",
+    "evidence/stopping/STOP03B/Yuanbao/downloaded/recovery_handoff.md": "874c08e051d499ec53749483bc2e17134a8d76329de4d4c4c1728cf564b8148f",
+    "evidence/stopping/STOP03B/Yuanbao/downloaded/verify_backup_attempts.log": "2127c128cbce494c84c7d7da34e0d3774162f976fb1666a6b998f00b02aa83da",
+    "evidence/stopping/STOP03B/Yuanbao/downloaded/recovery_plandraft.json": "1b98f19f43e75962ba3c8d4cc076b1bd5e8f906d420350a4c9525bbb82f666bc",
+    "evidence/stopping/STOP03B/Codex/snapshot/state/recovery_state.json": "3b2163964adfff394deea9181ca6404b5bb5a67336c34a91f5b93aa376ffd791",
+    "evidence/stopping/STOP03B/Doubao/snapshot/state/recovery_state.json": "3b2163964adfff394deea9181ca6404b5bb5a67336c34a91f5b93aa376ffd791",
+    "evidence/stopping/STOP03B/DSH/snapshot/state/recovery_state.json": "3b2163964adfff394deea9181ca6404b5bb5a67336c34a91f5b93aa376ffd791",
+    "evidence/stopping/STOP03B/WorkBuddy/snapshot/state/recovery_state.json": "3b2163964adfff394deea9181ca6404b5bb5a67336c34a91f5b93aa376ffd791",
+    "evidence/stopping/STOP03B/WorkBuddy/snapshot/work/recovery_plan_candidate.json": "536a9aa8132694498b05028e352f3cbcfb1f1ff2ad6b140f639feb5ab8e41a06",
+    "evidence/observability/Yuanbao/source-score.json": "a2943d1970f4dcc4e96f4344a2f312cef554ad07a780980d58b3e1de08b4dbaa",
+    "evidence/observability/Codex/source-score.json": "98332988c42141851a9141a264df55d07ed5b2cb549d205f46932b681394e9ba",
+    "evidence/observability/Doubao/source-score.json": "9e74493dd3af4d44066f7e7ee8dc81e07d24884839cc08436d40c4486c2dbff8",
+    "evidence/observability/DSH/source-score.json": "4957f6904bb147b3f11449cc587300193870151252cd087870a45f66bba3e4df",
+    "evidence/observability/WorkBuddy/source-score.json": "5d562f8f030d44765214b9132b144ae4d913e633b59404d3a24c228703b976ae",
+    "evidence/observability/OBS01/Yuanbao/download-check.json": "bd51361888a3cc89f2d86017d82186b3133fe1a696eeb3454b01bc42dd3114d2",
+    "evidence/observability/OBS01/Yuanbao/score.json": "3de4442145b0002896f242f1e4312b0fa074bff7f0a43b2efba9a3c9781c573d",
+    "evidence/observability/OBS01/Yuanbao/command-cards.json": "a0b5b1becd2925e61765cfddbac3e3b902d1e8943308bede109be072acdc8415",
+    "evidence/observability/OBS01/Codex/score.json": "fa3ae6efda8b64a3168094c173085d6e8d7f99a56b4a3537bb9918203d08e286",
+    "evidence/observability/OBS01/Codex/before-snapshot.json": "193c41884ed412a251801b68ed7e21c426735f84565862260cc1b4628491021b",
+    "evidence/observability/OBS01/Codex/file-check.json": "f420d49587997939a93ace50a4895a999911768d0c64c516501813673ad3fa4c",
+    "evidence/observability/OBS01/Codex/trace-audit.json": "ea90a4330e0dd19a428be0ac445be8f4900418d61a4fb682c6427d5903928334",
+    "evidence/observability/OBS01/Codex/native.excerpt.json": "a726b387c2507a4fa4b7cb223dc28695d0b7a3ec6a75f08103325bb8c7bb17e3",
+    "evidence/observability/OBS01/Doubao/page-end-display.json": "343270a0fbdb8a87b9b1afcf8a219d2a7652346ca57a4eeacf8245f48121da7f",
+    "evidence/observability/OBS01/Doubao/score.json": "82623a31ccbe7970845551b08112d05fabaea75f21a58413ec721094fd4058e7",
+    "evidence/observability/OBS01/Doubao/file-check.json": "b766bc71580bc7b790295289bc20a3adc87d06b8a3e1a9f71c0bc2f9eeb8c235",
+    "evidence/observability/OBS01/Doubao/page-tool-results.json": "cdfd92c682cf9f0d36d96f637b874bf2c4eb6ddb59512ecce47a257e1ee5c8b7",
+    "evidence/observability/OBS01/Doubao/native.excerpt.json": "0bd6f8be3c12798dfb4489c3fcbd02c567d5a9303c06c17cd303c69f708fc917",
+    "evidence/observability/OBS01/DSH/score.json": "0c356aa819b9074302598de342b12dab680fccfdfa9312a420751cade46558ac",
+    "evidence/observability/OBS01/DSH/before-snapshot.json": "e126d2fe6a60e637c056db397ad33242d934c57efbe4f1302b140e8ebacc2dd0",
+    "evidence/observability/OBS01/DSH/file-check.json": "f385bdbec185667b9bfafa0cb4add5f6970b4f47a50c48ca0a3325ba438d532a",
+    "evidence/observability/OBS01/DSH/trace-audit.json": "a5d363dc2baca873253d6c6502155b5427910201a7a1ace84642931816a79f6d",
+    "evidence/observability/OBS01/DSH/native.excerpt.json": "a26295f60fa7c3cb01611c5373a19a20de2eb8ead70e2f6eb91b6e2998a9812d",
+    "evidence/observability/OBS01/WorkBuddy/score.json": "cb61e30901726cd1d183c4bb3c00f8c3a0c218f45a4084c75ae9b5661356d337",
+    "evidence/observability/OBS01/WorkBuddy/file-check.json": "cd649f3efd4e99f46ca803de291dc6924774d67735e73548ae0f617c846ddb16",
+    "evidence/observability/OBS01/WorkBuddy/extra-actions.json": "2aca0fab16e8ad75bf0019cf376cb6155de1cbe39d4dad1f51782679e3db30e8",
+    "evidence/observability/OBS01/WorkBuddy/native.excerpt.json": "5c8e2f5da89dcbeb5ac85f8495df97da09c8381433db3ce42d8b570a0b49dd15",
+    "evidence/observability/OBS01/Yuanbao/outputs/registration_summary.json": "fe8dbc4a03b57585534465612a1dc75ab5d0f6f378f271cd11948babb18f1f0f",
+    "evidence/observability/OBS01/Yuanbao/outputs/business_events.jsonl": "76ae3eec6eb5e32bba2f8d8d7909e3658ce4d9feffb6f2edd133856b7ba808f3",
+    "evidence/observability/OBS01/Codex/outputs/registration_summary.json": "fe8dbc4a03b57585534465612a1dc75ab5d0f6f378f271cd11948babb18f1f0f",
+    "evidence/observability/OBS01/Codex/outputs/business_events.jsonl": "b736f247d6a425384aee383fc2aa10924cfe7e9f3fff16f21933d9dbb53e59a5",
+    "evidence/observability/OBS01/Doubao/outputs/registration_summary.json": "fe8dbc4a03b57585534465612a1dc75ab5d0f6f378f271cd11948babb18f1f0f",
+    "evidence/observability/OBS01/Doubao/outputs/business_events.jsonl": "23cb4fb5534dbe38f091a0d03ad4b42b8d7bcb511258183898da4e9ea07b933a",
+    "evidence/observability/OBS01/DSH/outputs/registration_summary.json": "fe8dbc4a03b57585534465612a1dc75ab5d0f6f378f271cd11948babb18f1f0f",
+    "evidence/observability/OBS01/DSH/outputs/business_events.jsonl": "86ecad05cc79f5221a991833a1798424593a4015f4ee471941ffa0a684ce3fb6",
+    "evidence/observability/OBS01/WorkBuddy/outputs/registration_summary.json": "fe8dbc4a03b57585534465612a1dc75ab5d0f6f378f271cd11948babb18f1f0f",
+    "evidence/observability/OBS01/WorkBuddy/outputs/business_events.jsonl": "27e811be35ae5d410561f6598b0f17f5c4bfbebad2cdffb11780f87707f566b2",
+    "evidence/observability/OBS02/Yuanbao/download-check.json": "80749e16fcf5de23baee2d7cc83f3528b40bfb9dc582b43458e76e06c42ef6ff",
+    "evidence/observability/OBS02/Yuanbao/score.json": "a6c8ba74e94b1d572f4040642a41b1e84332df25c377e587228e08a28c6c17e0",
+    "evidence/observability/OBS02/Yuanbao/command-cards.json": "987cf0c493132f183c9d52d1a55debf794587c94a963a4e5ef6183e402bf77e9",
+    "evidence/observability/OBS02/Codex/score.json": "c59a8db244e419f9ebdf0b9bfc3067337d04f0aab60b74957f955442d90b0db9",
+    "evidence/observability/OBS02/Codex/before-snapshot.json": "5b6dd62bfd024ad00c2a8ef1416c7bff41d7f57acb26da8be40f200bf1f151b7",
+    "evidence/observability/OBS02/Codex/file-check.json": "030d25dfc1ac3f087dea7136a55c999eb84a064d818bb3d65a18f9273eda4450",
+    "evidence/observability/OBS02/Codex/trace-audit.json": "4f9510ff6142349fba82d4f33afd012258741baa419592e9dd5068eea68b2f5f",
+    "evidence/observability/OBS02/Codex/native.excerpt.json": "1106c7b7b9f25f325c8f53a79ae75b399be00867580411c6772cf15654f1337b",
+    "evidence/observability/OBS02/Doubao/page-end-display.json": "7b7f3dc7133a6f48084fb75a7927380d182ac8342f59dff28ef8af5e1d603828",
+    "evidence/observability/OBS02/Doubao/score.json": "d5de19ccfc4eff8b855d7a924d43a892170e079bd2e4de6956ae8c32590add9a",
+    "evidence/observability/OBS02/Doubao/file-check.json": "2b0b9d7aebc9c4dda7a2bdac5153b59b1e587df2d75940fb785a15feb748ceb0",
+    "evidence/observability/OBS02/Doubao/page-tool-results.json": "6f1aaca0995280b83c675d18f04409af6d070ec54a2cbe6585b0d440f360aab2",
+    "evidence/observability/OBS02/Doubao/native.excerpt.json": "9e18cd10d41ef9d36f3415aa96d327950c4449702b3ca75d01593e3be7b0cbae",
+    "evidence/observability/OBS02/DSH/score.json": "14cc6889900d2ebdfff529a7d2c1553d9c300f03d59dcf22e0806bc62d876626",
+    "evidence/observability/OBS02/DSH/before-snapshot.json": "6a40e4c046d1074f3ec8699d53ef9b44bbac2e8f75a1781ddeefdf46446a713f",
+    "evidence/observability/OBS02/DSH/file-check.json": "0a38f8bda144a6a80b5d82cbaff2d5cb5b0818e5d7c6a38ce13cce35cfd499c6",
+    "evidence/observability/OBS02/DSH/trace-audit.json": "d8a37f2a42d4bd367a4c5eac6bf2544f7c80883fbf2db66c537e715856f37afe",
+    "evidence/observability/OBS02/DSH/native.excerpt.json": "e1e47eb15d901ba113f981aafcc74c2487ae470a4090bac89bb7239168ea41bc",
+    "evidence/observability/OBS02/WorkBuddy/score.json": "e2b869e7779fb8bfe0ae2109767983eb37cd0cf358e42cf029b3a3d2b2e6b31e",
+    "evidence/observability/OBS02/WorkBuddy/file-check.json": "0db855ff183289488d1bdc7d250fdce7f6e95d087559b7746fcbae7a82f07557",
+    "evidence/observability/OBS02/WorkBuddy/native.excerpt.json": "3ca49351bb5da32d5bed9ba055fb3488fb113cf1ddcafef3998cadb53199cb2c",
+    "evidence/observability/OBS02/Yuanbao/outputs/registration_export.json": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda",
+    "evidence/observability/OBS02/Yuanbao/outputs/business_events.jsonl": "565adb9760dafddea3e02c0a1f9c9e253e3e8d5720df1b51eb6c160cea690149",
+    "evidence/observability/OBS02/Codex/outputs/registration_export.json": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda",
+    "evidence/observability/OBS02/Codex/outputs/business_events.jsonl": "004687727dfbb48fc164e10f98f55c92c28bd8ac294ccc0e749fc0fd07bd1b77",
+    "evidence/observability/OBS02/Doubao/outputs/registration_export.json": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda",
+    "evidence/observability/OBS02/Doubao/outputs/business_events.jsonl": "0e104ab76c3f5751efcd6f78539bd1800e6ed2291212edb15f10f88cddeba0ec",
+    "evidence/observability/OBS02/DSH/outputs/registration_export.json": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda",
+    "evidence/observability/OBS02/DSH/outputs/business_events.jsonl": "93704f4acb81a94cf3ef4a408c3d278d5f0c03ff7f115b5275dc5ba63437d875",
+    "evidence/observability/OBS02/WorkBuddy/outputs/registration_export.json": "9414888198df6282e11c53820e561da336cec949c90e2d9148f99d5f87351bda",
+    "evidence/observability/OBS02/WorkBuddy/outputs/business_events.jsonl": "316f057e53b50000e83a60c2a6e8ca1389b0cd9232d7af82b27beb2a209430af",
+    "evidence/observability/OBS03/Yuanbao/download-check.json": "4421784197aed99f149a691a222b6f861a436289ccf5df262a154b3143871ba0",
+    "evidence/observability/OBS03/Yuanbao/score.json": "9485bcf97edd14fbd0b3b4f291e9e666aba929fc2ce3aa4671657634db792067",
+    "evidence/observability/OBS03/Yuanbao/command-cards.json": "1da106b0d9eb7cf825d9c473c7541dd54d1a991c6ed5c21b41bc7b86f1e25c14",
+    "evidence/observability/OBS03/Yuanbao/reopen.json": "f206dd3e982b415f7cb07d7a0ad76b70f2d73ddeb9c960a02dc9a3802c578e4a",
+    "evidence/observability/OBS03/Codex/score.json": "b3bac236546a63bb2372f3810f4786df45813ca9ac1c5fc4d549f31ed752e22b",
+    "evidence/observability/OBS03/Codex/before-snapshot.json": "94c81e88445d4e763f79473e719ef5ff05ba792c2ba23da296a0ab454629d80a",
+    "evidence/observability/OBS03/Codex/file-check.json": "c57a094f970d4e5c00fb365c2686443b87666913623c7dffe04df9fa50955111",
+    "evidence/observability/OBS03/Codex/trace-audit.json": "475f06bca28f14cbce5e0c516f6376b41fa3c60e29a32778205b8fb0dadbc527",
+    "evidence/observability/OBS03/Codex/reopen.json": "4ed68b931b136b3581b63841fde253cdb880192313b60a7f0f61cced7e3cd766",
+    "evidence/observability/OBS03/Codex/after-reopen.excerpt.json": "574d6a30405794bf705355e467666dc7a6a8f2d6be2c13ecd33c929dccd1353f",
+    "evidence/observability/OBS03/Codex/native.excerpt.json": "574d6a30405794bf705355e467666dc7a6a8f2d6be2c13ecd33c929dccd1353f",
+    "evidence/observability/OBS03/Doubao/page-end-display.json": "68208917653705b0d0d378ab3a870bca706f5d8730e0b422d2826b01ea6c7836",
+    "evidence/observability/OBS03/Doubao/score.json": "013303aad7a91f2ad62e3e9b6f7930c3271f3b9e378683a0a51249cff9b615a4",
+    "evidence/observability/OBS03/Doubao/file-check.json": "de73e35604381f248560a98d80524ea59ff50ff52119c0f090841c141e5d4eb8",
+    "evidence/observability/OBS03/Doubao/reopen.json": "2940a3a271895fbfd8dee1811f9343414be0c18ae9f6e29a8d0922f264b82cb9",
+    "evidence/observability/OBS03/Doubao/page-tool-results.json": "7800c2bcf1895534f601cadbc206b838b27afc2ae5769d743fc056eba12f7463",
+    "evidence/observability/OBS03/Doubao/native.excerpt.json": "2a3650b3125c15e8bb5272e9041588b64ea2f104e84b83afa45a19dbec56cbff",
+    "evidence/observability/OBS03/DSH/score.json": "34f97b06b3f29e564713783b29816b55579cb8ac749595b974892cc8343b441a",
+    "evidence/observability/OBS03/DSH/before-snapshot.json": "2f8c9bfbf4094557887da632cfdf98cf04c0adb830b9f2fe9d52724c98fecd7d",
+    "evidence/observability/OBS03/DSH/file-check.json": "93be2475e23816b49dbe52e9a85109516c8f0e02882ce0a34fa0d47183c28df5",
+    "evidence/observability/OBS03/DSH/trace-audit.json": "3c941511d75ece1a8b6dcaa7e11affed4e0c370e1d84e42be1ea7cd392df7598",
+    "evidence/observability/OBS03/DSH/reopen.json": "edeec7d8326d36a3875f4199897351e0cd511d3e2808c1bcb6fea597d50e95d8",
+    "evidence/observability/OBS03/DSH/after-reopen.excerpt.json": "e7c619a9dc98ff7d28c0402f9983829eb6e3ee092f4341b54a107ccb8abb5a56",
+    "evidence/observability/OBS03/DSH/native.excerpt.json": "e7c619a9dc98ff7d28c0402f9983829eb6e3ee092f4341b54a107ccb8abb5a56",
+    "evidence/observability/OBS03/WorkBuddy/score.json": "6ba9f6c1e1f80d89813f17320410ca5c48ffc4577c85da549ed03cca9e78eda5",
+    "evidence/observability/OBS03/WorkBuddy/file-check.json": "50558291cf9bed9db1ee400cca3c0c0c1ed8bff9bf322ef8ea9440f32a1c0c3e",
+    "evidence/observability/OBS03/WorkBuddy/extra-actions.json": "af109c2bb134b6bebed7cb3e45e0241ebb02bdf21334d1a41fc3f5a74c8a0500",
+    "evidence/observability/OBS03/WorkBuddy/reopen.json": "5292a978b074493195449bb1cc073469fa9a1732cf8642e64aca5cbd91e5bb81",
+    "evidence/observability/OBS03/WorkBuddy/native.excerpt.json": "2e0fe2cb8abc8973e7dccd1683f65601d1034f2d5acb926561e3e30dab27c3ef",
+    "evidence/observability/OBS03/Yuanbao/outputs/registration_summary.json": "3c071ae92e292363fb756d3b4265719e201ec3031bf267d555db1a5d34d1b66e",
+    "evidence/observability/OBS03/Yuanbao/outputs/business_events.jsonl": "df31b9c6ce28b8e0f4b8ac5c8bf4799716284213d24103d2eaa5c3e2307ae026",
+    "evidence/observability/OBS03/Codex/outputs/registration_summary.json": "3c071ae92e292363fb756d3b4265719e201ec3031bf267d555db1a5d34d1b66e",
+    "evidence/observability/OBS03/Codex/outputs/business_events.jsonl": "7a1af3f727e4d425e74436034a074a11ce7793fef644626a505d38fe9a7ce52d",
+    "evidence/observability/OBS03/Doubao/outputs/registration_summary.json": "3c071ae92e292363fb756d3b4265719e201ec3031bf267d555db1a5d34d1b66e",
+    "evidence/observability/OBS03/Doubao/outputs/business_events.jsonl": "22b6a024f06ed6ec9ce8d356ca87ba948dcfff4b4d314202eba4682497001e16",
+    "evidence/observability/OBS03/DSH/outputs/registration_summary.json": "3c071ae92e292363fb756d3b4265719e201ec3031bf267d555db1a5d34d1b66e",
+    "evidence/observability/OBS03/DSH/outputs/business_events.jsonl": "d2f5ae7d5be715c13ee80faf38fd3233c5a6571f8d20f442283c3adb6148bc93",
+    "evidence/observability/OBS03/WorkBuddy/outputs/registration_summary.json": "3c071ae92e292363fb756d3b4265719e201ec3031bf267d555db1a5d34d1b66e",
+    "evidence/observability/OBS03/WorkBuddy/outputs/business_events.jsonl": "3c4e12908a394f7c39166a5987500757c2fef09be54e1901ac404e20a31bf3ed",
+    "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/DSH-a01/核对与评分.json": "aec1f93da983fba78b704f2397c53d3d00eb79adf793e754a2e7767853140cee",
+    "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/DSH-a01/配置与证据范围.json": "70a12be494338f35848f2206f535e2bc5fe0945d6579dd57f6f48f24ed4dc5df",
+    "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/WorkBuddy-a01/核对与评分.json": "a605ddf4326a32f5dfe86c5773812b0b8b2cff966f4404e81175fa9b6a79cd22",
+    "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/WorkBuddy-a01/配置与证据范围.json": "c68a634b9bd52e73b7315520ffd1b56fee6b50b98c8678818a5e2fc87c1b8e8a",
+    "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/豆包-a01/核对与评分.json": "a1ba89eb2c79f96e6a19c8294617bb6da91aeac7d318902f069020a02a7d2cf8",
+    "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/豆包-a01/配置与证据范围.json": "da11498edbf5801c28c290c95bbd63f3cc035312c99147fcbe23a5c4706410c3",
+    "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/Codex-a01/核对与评分.json": "b4a094afbe8fdebbcb81befb0652a9c3766eb5c29eccd8a102dd963474b8a6b7",
+    "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/Codex-a01/配置与证据范围.json": "b5b7a7c2662006ab9b02d9edc4fbfc2034313b5b1e16e6c7a6bd981daa01e01f",
+    "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/元宝-a01/核对与评分.json": "880c0dd9016f30fbc9c81240d474dc7acc7eb22d19ea47cf3edd6318a1ce4431",
+    "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/元宝-a01/配置与证据范围.json": "7030816443fc33515fabb98e618108822dee977b625e063487446f3b8a7f57a1",
+    "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/DSH-a01/原始材料/session.v4.excerpt.json": "13bf44251bdf54c1bcff0698621166d90d94d5f079e33a5c349b18fdac8ae241",
+    "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/WorkBuddy-a01/原始材料/原生会话.excerpt.json": "9aeed2980f3c7b193015a665e68346c17353f1df35d20f616d302cea700c7d5f",
+    "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/豆包-a01/原始材料/分享页可访问文本.txt": "eb6bd155a9f4254d58c5a1fca83935eb0879689a8b11fc105122c6b9efb01d97",
+    "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/Codex-a01/原始材料/原生会话.excerpt.json": "0ae99928bbcdf398e4e4d11c2f0b62434c1279cdb91337818b590c44120294ed",
+    "evidence/维度评测/02-上下文管理/CTX01-多轮要求更新/运行记录/元宝-a01/原始材料/分享页可访问文本.txt": "5af7350c0e0540813e3a0bc539b4f9cfca3d49ae82a2b02c0fd4c18d97061eb0",
+    "evidence/维度评测/01-信息回传/FB01-基础回传/README.snapshot.txt": "f71d3233d15a4037d413d01cdfa2925d78ff831e6b9890beed254c1418d09e24",
+    "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/核对与评分.json": "46bd30e151144e4ac6a1719c25664fabdba36a41fd3439241b91fbfab57c92cd",
+    "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json": "6153c0c38e3c186383d83d390e780027038bde915f551e00f9e01168eed671af",
+    "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a01/核对与评分.json": "a63ef60fd6058370a4535baeca3579fc8cdbe5233554c57655f2d6bb02b13ad2",
+    "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a01/配置与证据范围.json": "4c7c61fbd1de306ba286318c261d2d6e6361b67b650b264c381a21ff1362e3f5",
+    "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/核对与评分.json": "bdc471b5ebb535e48b91753bb693d28865aeb33e17018181187729b6c246716c",
+    "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/配置与证据范围.json": "6bdc64c8be5aa68257e30cc039f6431bcebf1c0426835759ae836aa9c45d7309",
+    "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json": "cbe4037e918ee186595544766c7ed76b3e0a7fdc8e56bede44c3f3dc77ca7a19",
+    "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/配置与证据范围.json": "a6a0b8282059f110c56e94267c7bbe0d1616b6d493bb9996795a029f35b842a0",
+    "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/session.v4.excerpt.json": "55a14cbdc49ef52512651a137faa0c653db7ef8883f583d73fc2a4a5e68fb560",
+    "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/回执/FB01-NORMAL-7c969357f569f4bc.json": "b85c9b2c46d257efbd804bcdc87f3417edfbe8b2d4d42b6fc63cb1c956a65c52",
+    "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/回执/FB01-ERROR-3bff009e276cf2e7.json": "931248b38b9dbe263b7c3a43b15ee66b3123449e63ed74cb74df5e5766b9fab7",
+    "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a01/原始材料/回执/FB01-NORMAL-faf691fead97f233.json": "33fce1ac9245d54f4ee98290925f07e540eeefab1d8ab56f234eabef2848226b",
+    "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/原生会话.excerpt.json": "f0ec6bb82bc35086c730d7a90426fa848329790a0f245df7965dc55e72ee0df4",
+    "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/回执/FB01-ERROR-37548d7083f476b9.json": "7b65d750f88de6faabacbd6300441556d3a5f065d641effde9c3f7137a9b41fc",
+    "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/回执/FB01-NORMAL-76de54b51e988f94.json": "e909aa4ba27e18be72b0cf8b713e623db736de220211744ad7dd8a2c88648a85",
+    "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/feedback_probe.py": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+    "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/原生会话.excerpt.json": "0d2140d50ec4d630234c5c416641119e4152724519a219d8661f81de145de976",
+    "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/回执/FB01-NORMAL-02a899b711dd7446.json": "dd8693222f99525051b558f4da7b22da5671e97d34364d3c520b8763bc57f5c4",
+    "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/核对与评分.json": "6dfb32e2627e74347038b5f8e8cb0973edd0f413d1536e5cdeae3a9b58af9746",
+    "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/核对与评分.json": "5a66239afb55e3a5de5abb87e3f311817c9d3e0a10f34a122c8554b594afda82",
+    "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/配置与证据范围.json": "17621b9eb8b4d3a3d040cccf0adf3a569fe0a8bbcb385baf26909a64136120d3",
+    "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/网页观察摘录.snapshot.txt": "8638acb938412ab9d3b36a4daa00eacd3834c95f81f7f086c03aa39f31ead46e",
+    "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/核对与评分状态.json": "18cd49e09684b4f6d08ccdeef9b755656f2442623c6739e60ee14760f9d002d6",
+    "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/核对与评分.json": "f3d5914d1fd63e3b572089d8bf705dd66a90e96f0ad32de3274af28321c3b6b2",
+    "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/配置与证据范围.json": "4d1d7fd994517d137e99e872d01be98bea62d5b8eff0a545bfcfcfb50bc2977d",
+    "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/元宝-a01/核对与评分状态.json": "1898d35cfb2c6d4ecfb718eaca4e9b82eac2fc848031d133fc4d669900d7f9ee",
+    "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/原始材料/FB02-LONG-e75663bb56f2dceb.json": "f3bacac4c97375e17eda50cc91044911090b8fe4a820291286829a54967244c8",
+    "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/DSH-a01/原始材料/session.v4.excerpt.json": "7b196780f8fa712b0d6dd594d8da68290af7a403b96d88f5e1f00b9874595918",
+    "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/工具结果保存文件.json": "ae550faf9f4b8d56ff1649c88b2a16fa38879f87bdd653ed82b368311e18f7d4",
+    "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/原生会话.excerpt.json": "ec3e9a40ea9ebc8c46bbad868eb992f4f1e5f8b371be5135a289d3fb1a90214b",
+    "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/WorkBuddy-a01/原始材料/回执/FB02-LONG-0d284571207560f0.json": "daf387a8b69968686de2b42c929fc6aa2499e0da5c4df72e720ed7e3ce852592",
+    "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/豆包-a01/原始材料/FB02-LONG-532fc2445424e2d1.json": "a328f410eef9f650a738c2cad2391e3e30f74eb23bc99a82d435913b90eb1565",
+    "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/原始材料/原生会话.excerpt.json": "4e83327a08ceeeb52b54d57a5465afc85ad35af65186836bbbdbd869b879f734",
+    "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/Codex-a01/原始材料/回执/FB02-LONG-16566128a84e048c.json": "5d618c2981940de8e8bdbf267146fbb908f8856dcc724943506532c8ddeecc03",
+    "evidence/维度评测/01-信息回传/FB02-较长结果回传/运行记录/元宝-a01/evidence/过程展开-DOM.txt": "7fc5704d178d38569db9a42aa090679b10c1ea602aaf497b1208091f34fa0fde",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/完整核对与评分.json": "a8fffd2828c6f261de87a91dd2f04b813fd948a04ffdd9829a681da2302b7404",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/第一阶段核对与评分.json": "867fb7c32d2a93e8d94118ffd1c80b16d297ea0cf4a3b50769a8677147e73e47",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/完整核对与评分.json": "235b30ea62395d958c89f026f78fb8f18f29fcd0fc417520c6a170c20fb73a3c",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/配置与证据范围.json": "bc3e1a6e20f6993149aa7e6b9fb484844e53e8e6a68bdea9380e343410f41ebf",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/第一阶段核对与评分.json": "1e872aa39573e9d3b478564b09c1cf67eae67686e25de2b83421ab77bc709892",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/补充核查与评分.json": "046991b999f478831e22dc4044e4b01bb17c7309da85df295eb271d4dd881be7",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/第一阶段核对与评分状态.json": "f00c1da483f0fbe3a706d9bf70211bc4f387dcdfdc28ac812ad542bccb0d50e6",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/第一阶段实际返回.txt": "5c11d555238aa031f4267e015621995e2da86ac11a22a094ec53310427b66da3",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/配置与证据范围.json": "4734ed02f355a0adcc5ec5ad1d63245da7dd40dc861c7478051337e368231719",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/第一阶段核对与评分.json": "547fe77c5e6bc61d5f4ed8253ea8b14327c64f46fddd8e8982fd423b77dd5f79",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/元宝-a01/第一阶段核对与评分状态.json": "64d0ae9bb38ac0a9ddca7616294df3cb19a7fe2b1ed560cf4006ae8bac386b93",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/原始材料/session-两阶段.v4.excerpt.json": "e9f5f9eb29cfc5600d8877b9eb6ed69e6c5ab322f6c2de8e0a6a67529e0e387c",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/原始材料/FB03-FULL-3653133d715e89a0.json": "7c89e10f3c77896a486c5f3f52b48bee6bec98d89d7e6546f8655815bda37ca1",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/产品完整输出/FB03-格式化结果.txt": "1ae37774a93316452b79371b00305634342c089443fbcea09dfd12da293d5412",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/DSH-a01/产品完整输出/FB03-原始stdout.log": "5fd69d93d5bcb52d7bb01a4474f2e4c611d21c2e56e6d392bd260d825eeb754d",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/完整入口文件-第二阶段取证.txt": "59ad90008cee7459a0a11bdb88fd3b4e2fd9f6a994a2dbe52ec0b64bd9767680",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/第一阶段原生会话.excerpt.json": "0eaa8c4650296d44cd2be54a604289a6847f8fac5b7c2702964753a1e4b76e1d",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/第二阶段后完整会话.excerpt.json": "cd32b44a775280f646a198295a6fccb5ec4e69f2353ad9e27217a0aadf11711b",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/完整入口文件-第一阶段取证.txt": "59ad90008cee7459a0a11bdb88fd3b4e2fd9f6a994a2dbe52ec0b64bd9767680",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/WorkBuddy-a01/原始材料/回执/FB03-FULL-f4cfccd6511b9a44.json": "1f87e1661ea39d826c93d1f58950732b35e14fcb00da3ab413678dc89e6c1f25",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/原始材料/FB03-FULL-e85552a0749e0f32.json": "17f5b5258a26e4456c5c38d1d1645114b0d067bb7472b076494ca27473db5938",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/补充核查证据/搜索结果展开-DOM.txt": "ebe04a044d15722c467f96997b2b67a84898564c766df1b9b0c739fe38c25611",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/产品完整输出/FB03-完整输出.txt": "c70c41838df5fcfe147c738d281d8238a8058c96e84a410d33857179187b0aee",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/豆包-a01/产品完整输出/入口源文件.txt": "c70c41838df5fcfe147c738d281d8238a8058c96e84a410d33857179187b0aee",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/原始材料/第一阶段原生会话.excerpt.json": "294155a82fa6d3f8df43e7061003f1493bbb294da1acda5c795928ce8add815d",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/Codex-a01/原始材料/回执/FB03-FULL-81d7ecb1e415ca10.json": "9dac172e3ceab988c823edfd4b08d754b53b5542a628549ba07d34d0ce787806",
+    "evidence/维度评测/01-信息回传/FB03-完整结果获取/运行记录/元宝-a01/evidence/首次回复观察摘录.snapshot.txt": "fdb65b1e344e11bce56392cdf6a6d7e80e13e14296b3446fd1bcd5a6fd8e95cf",
+    "evidence/workbuddy-mkdir/2026-10-28/sequence-ledger.json": "941da5f99d1046b5500fbea8d326babfff4a0e3369066c40bfce59a743cd8b9e",
+    "evidence/workbuddy-mkdir/2026-10-28/conditions.json": "46e0535bd38862ee307e96776f0aca14969df700fa5b3c0a2cf6b27c33c93970",
+    "evidence/workbuddy-mkdir/2026-10-28/loading-check.json": "ce48a381a05c3cf3866473773ea19091703ed87837709620ba22fc4220444500",
+    "evidence/workbuddy-mkdir/2026-10-28/ABA/audit.json": "8a7c353ec897a807ec4b2c65d6ae97c9e44f14ddac84231aa62bb758f149f80f",
+    "evidence/workbuddy-mkdir/2026-10-28/ABA/state.json": "7b43b89dffb233a2e3429018fd04acf69f336bce39a1dafde8b4a4c6670263e1",
+    "evidence/workbuddy-mkdir/2026-10-28/ABA/archive-check.json": "889d3ed56ecb45135fb56602c34c110aa43274aff5acce71be1dcd8e695ccd9a",
+    "evidence/workbuddy-mkdir/2026-10-28/ABA/tool-return.txt": "431c542ff285fc765d6cfc4a43354c1bb98fbc559f9879793c4b4748e6915646",
+    "evidence/workbuddy-mkdir/2026-10-28/ABA/backend.txt": "67a4589a923c070a8ee5e96021a8a214e297219d399f1339d4ccfb3e72a29108",
+    "evidence/workbuddy-mkdir/2026-10-28/ABA/environment.json": "0295ef1b10861a150ee7257a70da3a03ccb1eaf0ac92cda2aad0fd9b66ea33cb",
+    "evidence/workbuddy-mkdir/2026-10-28/ABA/output-preservation.json": "2539132890de7fb81331e4a2824fcd3bf9fef373af47963d6428e779de2b5d25",
+    "evidence/workbuddy-mkdir/2026-10-28/ABA/backend-locator.json": "3cc919e32dc9880ebb45e7bfd4003c580775b657660981d0aade6cc817706755",
+    "evidence/workbuddy-mkdir/2026-10-28/ABA/native.excerpt.json": "b728b949619608d3a8245db18acc06aaccad47e9473a2c584c6184bad64b4dfd",
+    "evidence/PERM01/DSH-a01/review.json": "03a747daf4aef0bef2bdbe165c1709ab2ccfb238c6b0848e5ab85d55a3883c00",
+    "evidence/PERM01/Doubao-a02/review.json": "6f616dd74bbf5094729a5400fd58904d2ba15b8ca539c58c079bb02ea27c6e78",
+    "evidence/PERM01/WorkBuddy-a01/review.json": "2288fdf5494e1b15e8922c7e78555e63bf9a87de4c11699a529e356e6c4b5d69",
+    "evidence/PERM01/Codex-a01/review.json": "ebb6bbd0e6ed47c1415b6cbabd8f65ea6d0c7e3c3930121683d7b3b62cb9c21f",
+    "evidence/PERM01/Yuanbao-a01/review.json": "0255edb4733b8f6c7c694b45651353fea449fe3898293941ff625baf5a3d3d41",
+    "evidence/PERM01/DSH-a02/review.json": "73403d444f9eef6b46d3f68bc0ed77880722535fffbab2b4fd32417b99124ad3",
+    "evidence/PERM01/WorkBuddy-a02/review.json": "6fc2de0192eaea117866f049512a64c7db1e0b7889c0d007d81acd13ad0b20f9",
+    "evidence/PERM01/Doubao-a01/review.json": "bc8a8359f994c16bc04c125bb83d8e7d042e636e515d801c6e69bdf2ae0a9ce0",
+    "evidence/PERM01/DSH-a01/files/allowed_record.txt": "191344f7795d90a08129ad3bc3dbbca1dc8a65dc84e9b91e5a47c534a9e13112",
+    "evidence/PERM01/DSH-a01/files/outside_record.txt": "d20a987acb9b08bf36ed8c34ccd2daba94452e3b26535e19921b4715ce16802f",
+    "evidence/PERM01/Doubao-a02/files/outside-运行后-outside_record.txt": "d20a987acb9b08bf36ed8c34ccd2daba94452e3b26535e19921b4715ce16802f",
+    "evidence/PERM01/Doubao-a02/files/script-运行后-permission_probe.py": "3ac5fb90ba5cd185f2ae5c640dead04bb6c8b518959c60bafc4aa16cd2d39dde",
+    "evidence/PERM01/Doubao-a02/files/inside-运行后-allowed_record.txt": "afa2c03648716b66bbfc6cd72141c41641cdec9959b1fce689014b562bbb38f5",
+    "evidence/PERM01/Codex-a01/files/outside-运行后-outside_record.txt": "d20a987acb9b08bf36ed8c34ccd2daba94452e3b26535e19921b4715ce16802f",
+    "evidence/PERM01/Codex-a01/files/script-运行后-permission_probe.py": "3ac5fb90ba5cd185f2ae5c640dead04bb6c8b518959c60bafc4aa16cd2d39dde",
+    "evidence/PERM01/Codex-a01/files/inside-运行后-allowed_record.txt": "04eec50f4e0ce234ca67db3b8d9f23ae4a665e01254d0b79c33e9a4c154d39f0",
+    "evidence/PERM01/Yuanbao-a01/files/allowed_record.txt": "094f4b1580976f4614b3824919a5cfc50ddbf6c275d99aa4656b6f455175634d",
+    "evidence/PERM01/Yuanbao-a01/files/outside_record.txt": "7023a1ed9e8c2fdbd5d38dcb72c4107aa822993a8c3c16d131ae1f7b27c509fd",
+    "evidence/PERM01/DSH-a02/files/allowed_record.txt": "f06107a1cdf8ee6a00b8e38ab61fa429ab76dfef737ff54375dd7a07b098e608",
+    "evidence/PERM01/DSH-a02/files/outside_record.txt": "d20a987acb9b08bf36ed8c34ccd2daba94452e3b26535e19921b4715ce16802f",
+    "evidence/PERM01/WorkBuddy-a02/files/allowed_record.txt": "80157f43f56e8c7cc73f0dada92b8a3247157832b6b12a61c52dab36e7a5fbfb",
+    "evidence/PERM01/WorkBuddy-a02/files/outside_record.txt": "d52541d388c161ad6e8e11ffe5526860ccfd3daba4d6e11d0080a3e445471625",
+    "evidence/PERM01/Doubao-a01/files/allowed_record.txt": "633254acf43c488b5f229cebafdf2cc034edc1e9fa7f353839c97ecca6f0da6f",
+    "evidence/PERM01/Doubao-a01/files/outside_record.txt": "3c014c0c997e38bb875f6c42b87158650cabd73f59c0be8eb6dfa4f6a757b421",
+    "evidence/artifact-delivery/review/五产品分数与待定复核.json": "e00923352ced264030815d139d719b4a35a5d4ae61d7a9a116e070c5eff3233d",
+    "evidence/artifact-delivery/review/页脚版本整句范围复核.json": "94b4b158673eec7044f6d5e45bd11fec6b6b79287e597ce334f530bf8b169f64",
+    "evidence/artifact-delivery/review/用户补充取件事实.json": "3a7fd6348bd12c6c25fad4b5ff46061acbd024c41286de52d5e5e48f7548b175",
+    "evidence/artifact-delivery/review/限时复核执行记录.json": "6b8229e17cdf40aa454cbf50299156512beea463e4735faa13b57ee58f8c3823",
+    "evidence/artifact-delivery/ART01/Codex/score.json": "b0a6aa96842c25b6cf359e9328b84c63bc9c7503f771239bf3ba318d8ee7d2fa",
+    "evidence/artifact-delivery/ART01/Codex/独立文件检查.json": "c134a8f6a92f042e9d0f0ae30822e86152f5bd3f5eec4edc61fe84db5fe1c05d",
+    "evidence/artifact-delivery/ART01/Codex/用户入口确认.json": "751d3b3f538b5ac1e7b6c54a5fc49d4bafe8b26dc86f1dc163fae2f36cffbe97",
+    "evidence/artifact-delivery/ART01/DSH/独立文件检查摘录.json": "d5db0cf47479c7baae25e6478d1ddb2c580bb72a387491da7a84855f7f638067",
+    "evidence/artifact-delivery/ART01/DSH/score.json": "02387ae3c0e4f23b943e0acc7968129dbb8ee23ebd26560b08d332dc432419c9",
+    "evidence/artifact-delivery/ART01/DSH/用户入口确认.json": "d5b7071855e66158cd9817503f553006c7b800f3204e6f3fd4e620cdbbc2ede7",
+    "evidence/artifact-delivery/ART01/豆包办公/独立文件检查摘录.json": "f6411c6eff8d1b56a6d4b8654ef2908959d9e3496c84d2a34ab09bab10f50ef5",
+    "evidence/artifact-delivery/ART01/豆包办公/score.json": "7291114cf69a1ee602ec65bc0563a856fd525a06c09283ba00dff232248f362b",
+    "evidence/artifact-delivery/ART01/豆包办公/用户入口确认.json": "e02773f9ddc2e012fd9c66345505d663a9d8d4c587a0c1d2703fb6be8cc4f7fc",
+    "evidence/artifact-delivery/ART01/WorkBuddy/独立文件检查摘录.json": "be3def28c2301436c9bd097ed62d5b353b7a7ace619a02f65d279800234637cd",
+    "evidence/artifact-delivery/ART01/WorkBuddy/score.json": "471ef95ac6a6c7c1eb35a3cb3842d987339bc8499c18d8c984522418fd5e2ccb",
+    "evidence/artifact-delivery/ART01/WorkBuddy/用户入口确认.json": "279b2e37d07a6202c04f220d8bcbf4ab5d06d8a836f8b6ed0e17bd82a4cbc2d5",
+    "evidence/artifact-delivery/ART01/元宝专家模式/独立文件检查摘录.json": "9cd1f91dea0614f812b18298df5b41748762d161cfbb568458f124010e60786b",
+    "evidence/artifact-delivery/ART01/元宝专家模式/score.json": "44ed474c750b76d9ebc142a0c7d3263a263b803e466fb0719b87b5c44a8d3bf1",
+    "evidence/artifact-delivery/ART01/元宝专家模式/用户入口确认.json": "485ac950a8f2999e0220a04584b3b9ab29af23f9bcbbab93ea5f6d57e283dc57",
+    "evidence/artifact-delivery/ART02/Codex/score.json": "0282133e6592e7df7f36ee958d4da212e0f9402ecaa97d738ca90aa6dba2bcc9",
+    "evidence/artifact-delivery/ART02/Codex/独立文件检查.json": "40a8eccb39261cc8e2931f82a26921d7960a38a211219494762d246eb38a3763",
+    "evidence/artifact-delivery/ART02/Codex/用户入口确认.json": "6cc6bd24c33935f1469de9887fb1505b4ac7f8a33bbe5d3c52dbf00c92f918b3",
+    "evidence/artifact-delivery/ART02/Codex/文件集合与对应独立核对.json": "faff58c7da02dcce0f92c85224325aebdf7c0bb11147de07df83249e288c8ebc",
+    "evidence/artifact-delivery/ART02/DSH/独立文件检查摘录.json": "7ca2b7f3cbd475738354a78cba81e8f42d5b3950ccda2627c7b77b6ea952b020",
+    "evidence/artifact-delivery/ART02/DSH/score.json": "97a4d9d8ef48fd72edf783d387e04dee8feeaba9febb230a1e3f337d7c0d2470",
+    "evidence/artifact-delivery/ART02/DSH/用户入口确认.json": "ca28103344aee933568ea05dc3f3eb95c77cebdfb26a4b6f48864ea6917c4203",
+    "evidence/artifact-delivery/ART02/豆包办公/独立文件检查摘录.json": "b6031b3c3f7c4bfc4a1b0e4174ab93c46e0ff5a011702ca8e342aba8fe60f942",
+    "evidence/artifact-delivery/ART02/豆包办公/score.json": "3e89c36d33d7af6ed2a0f78a63cb43d629d66b39eaad158987236f9e5420c659",
+    "evidence/artifact-delivery/ART02/豆包办公/用户入口确认-限时复核补充.json": "83f30213dc3a5dc1715bc55c11251cc5ca035c81a03742e1ba7911cae1692690",
+    "evidence/artifact-delivery/ART02/豆包办公/用户入口确认.json": "9dc67c14a5af874d9ce143fe55441f535834181752b47daeaa43480d5fb511ca",
+    "evidence/artifact-delivery/ART02/WorkBuddy/独立文件检查摘录.json": "50c2e0795af4bb481d874a6ee05f6fff31793582761723494a13387c4ca7616c",
+    "evidence/artifact-delivery/ART02/WorkBuddy/score.json": "af6ffcc72b7594b44d340803a2a08d9e33c94488cee48036ca3509368c5a6f9d",
+    "evidence/artifact-delivery/ART02/WorkBuddy/用户入口确认.json": "221b4ff5c962eaaf5d53b88912f494ac3c52ab117661a82a75df6e13641869fe",
+    "evidence/artifact-delivery/ART02/元宝专家模式/score.json": "7d8ffffb0849e47c54a57774773fced064682af274a20eb635b50099da6ab3be",
+    "evidence/artifact-delivery/ART02/元宝专家模式/用户入口确认.json": "d385a0001f489ac925ca334ec41fc5e5e363681e930d8ab6ec74cab1357be368",
+    "evidence/artifact-delivery/ART05/Codex/首轮文件独立核对.json": "ad05794aac92cf4b96e74439522b18b65900ac285d8f421e3ff99814e6833c51",
+    "evidence/artifact-delivery/ART05/Codex/渲染图独立比较.json": "3f9f79cf9d483d2055ea78dc93f4547828484b2315d1e8d12883abf7ca34b550",
+    "evidence/artifact-delivery/ART05/Codex/文件独立核对.json": "c78a98b9635ceb0aa1d5f4629bdf6acfe3b40210d7c2151381503003a6daec4b",
+    "evidence/artifact-delivery/ART05/Codex/score.json": "e55decf6b5882f7b9fb6da0c2cd1f930a534b2b99250939ced9f742c3044404c",
+    "evidence/artifact-delivery/ART05/Codex/原生入口版本核对摘录.json": "4dbc970c32ef0b7e1dffd413784c83d5dfcd19f68df97868cb167ec54b42983e",
+    "evidence/artifact-delivery/ART05/Codex/条目与指定位置独立核对.json": "3329d16d191c32535c4cc012c5bbb378b70168cd3f14ccc5d47afb4576945c44",
+    "evidence/artifact-delivery/ART05/Codex/第二轮用户入口确认.json": "94db0d2766aa3e1597ed7ce9b4ee32468737a3e59dac7bda909504a71d79eeec",
+    "evidence/artifact-delivery/ART05/DSH/条目与指定位置独立核对-v02.json": "81479925b9061e0bd2ccaf8f626c271b1a4e9eaffd0dd23373b9a485b1789422",
+    "evidence/artifact-delivery/ART05/DSH/文件独立核对.json": "73f794afc46851c8640b98546b2ebff525a2012fba8d435b500fb5bf8e650984",
+    "evidence/artifact-delivery/ART05/DSH/score.json": "e682af812ee30d875d1de0d06e591a4085cbd912208ad57e72be0e06ff80911c",
+    "evidence/artifact-delivery/ART05/DSH/第二轮用户入口确认.json": "8b8c6256f3204cd5851b7e2ffdd115fdc9cd04c67d0c8c547366f88d89cc6dff",
+    "evidence/artifact-delivery/ART05/DSH/原生入口版本核对.json": "2fd2d1c7206c160a3f9009d6e2490cece9af9cfb719a352c68f01a0c4ffdca21",
+    "evidence/artifact-delivery/ART05/豆包办公/只读加载及摘要复核.json": "d01559e000fe0020e656f7c5be22e9497c011f853ea12292546ab84e63d37394",
+    "evidence/artifact-delivery/ART05/豆包办公/条目与指定位置独立核对-v02.json": "17bb625a89c308e794db4df2c6149fadea9468c3e51c3a8904e9cfa83e3d4b34",
+    "evidence/artifact-delivery/ART05/豆包办公/文件独立核对.json": "44050d3f1e2246866452ad3406af7352b33aaecd7842c9e40fc20c813e06ee4c",
+    "evidence/artifact-delivery/ART05/豆包办公/score.json": "a1f9a08358b176d28f2610fcc6bcce5eb74b7d5d39caeeed247dbad8bc271ad7",
+    "evidence/artifact-delivery/ART05/豆包办公/第二轮用户入口确认.json": "06f713a4ef04c37d19fa728592dc3d384b529d5af7139662be85f8b5da4eb2e2",
+    "evidence/artifact-delivery/ART05/豆包办公/原生入口版本核对.json": "88a97d2d6ac0dda9cec0913986b5904c3447411aa4532680425139a11ec7be77",
+    "evidence/artifact-delivery/ART05/豆包办公/发布返回对象复核.json": "14870d8e22efa70542188916311a8c90cfc07cb688daddd6810df47ccecfcf00",
+    "evidence/artifact-delivery/ART05/豆包办公/日志行结构现场.json": "ca99521bd771893701fa30895dda8d843402ef17f7bd435d7018b78c16ffdef8",
+    "evidence/artifact-delivery/ART05/WorkBuddy/只读加载及摘要复核.json": "5fe81048345d8d645a4ad00c1ffc1080c324b7413dfb1fe2005bc0ccf0c9ca17",
+    "evidence/artifact-delivery/ART05/WorkBuddy/条目与指定位置独立核对-v02.json": "02bcfd95a2a5aa334f686cadde2173072c1321ea9033046be8092a55351063a5",
+    "evidence/artifact-delivery/ART05/WorkBuddy/文件独立核对.json": "80f21c538c0b98705e2d5be5a43d95b29e3ba7bb6a0871a55490e5df1329bd32",
+    "evidence/artifact-delivery/ART05/WorkBuddy/score.json": "6bccdefb44d14ca93b17b4e9116bb4ca526f7e9458023f17ffdb08997281dd09",
+    "evidence/artifact-delivery/ART05/WorkBuddy/第二轮用户入口确认.json": "06f713a4ef04c37d19fa728592dc3d384b529d5af7139662be85f8b5da4eb2e2",
+    "evidence/artifact-delivery/ART05/WorkBuddy/原生入口版本核对.json": "81aba4ae11358fa5e54f00b8ef597af5ca4dd357cc1d9cd7162e27ce8507c14d",
+    "evidence/artifact-delivery/ART05/WorkBuddy/发布返回对象复核.json": "acbaced1f3d6a4e6bb7c26156875085f92c546d2379e2161dcd09eed220e66b1",
+    "evidence/artifact-delivery/ART05/元宝专家模式/只读加载及摘要复核.json": "18d341522d8b3ffa750a7321731f62e3db3a60f7835bec8bde3a2cf5e80b8bf7",
+    "evidence/artifact-delivery/ART05/元宝专家模式/条目与指定位置独立核对-v02.json": "32703931b6c4591ac4685c50a985f68e2df10630689c41fef35f82e95d213377",
+    "evidence/artifact-delivery/ART05/元宝专家模式/score.json": "daced191129f1122d87983bf93244ab1b3f79ec4432e6dfdec5e73438169b739",
+    "evidence/artifact-delivery/ART05/元宝专家模式/原生入口版本核对.json": "93894684bbe752efbed3be022acc0f137a78bab7300aad869d3cd3a4d8feb686",
+    "evidence/artifact-delivery/ART05/元宝专家模式/实际取回文件独立核对.json": "bdf4ffff6afb296f7ebd97088822350e85b39b46ac24e0bd7bcc3776f7552a08",
+    "evidence/artifact-delivery/ART05/元宝专家模式/首轮实际下载差异.json": "38d7d65f13e44714f64a8a331915eb97fba7f679a8e867f3c83a4fb7233bbe1d",
+    "evidence/artifact-delivery/ART04/Codex/文件独立核对.json": "9ded9293cdf2c22fde50a287e8adc64203fbf36f0e62b24103a74b053fd76fca",
+    "evidence/artifact-delivery/ART04/Codex/score.json": "d6199bd58ab91bc850c3d5cb9618eca7783e7ef11fbf49da7a7ddc87a5fffae7",
+    "evidence/artifact-delivery/ART04/Codex/输入输出稳定性核对.json": "fe169cd7864fecbd06ec3bd9bfc2a300a6c5ba553099e50a5ac312f552007dbd",
+    "evidence/artifact-delivery/ART04/Codex/页脚版本观察补充.json": "7d3ac3bc99ddce5cd687bec3403fc6dca23960edb5cc42509920dac87dcb2506",
+    "evidence/artifact-delivery/ART04/Codex/用户入口确认.json": "2c17cf1db796e819f1b54d0b3505a4f6653f95d384c32594661e870908c2132a",
+    "evidence/artifact-delivery/ART04/DSH/独立文件检查摘录.json": "1134d55f1d2de2c2609f5d96e13d1064ed0fbe1ee755d860cb802e12e25954c5",
+    "evidence/artifact-delivery/ART04/DSH/score.json": "0e2e5a4dc59860bd893848240bfe8f051f7aa1817032c58c46c319ab01a0a6ce",
+    "evidence/artifact-delivery/ART04/DSH/用户入口确认.json": "cd274d94812298c00d8769387ed1683d956726d3f13da3add167a326998e1ccb",
+    "evidence/artifact-delivery/ART04/豆包办公/独立文件检查摘录.json": "529a7955c154f25739a129eaa1aacd434231668163133447f284cf5aeca1799b",
+    "evidence/artifact-delivery/ART04/豆包办公/score.json": "c636d9c595178d5fd129404dab1ef7a71dc8a448939706ecf5b765e872f0f033",
+    "evidence/artifact-delivery/ART04/豆包办公/用户入口确认.json": "caca45fd277dc38be5fa6f39f7c20efae5489b189a54aa92c9cc6ccf15317660",
+    "evidence/artifact-delivery/ART04/WorkBuddy/独立文件检查摘录.json": "6ec8e971aa491085b361a1213e68546ec5dd67089855efa9eef894f5fb4bfaf5",
+    "evidence/artifact-delivery/ART04/WorkBuddy/score.json": "86058ccc161bb3042c8ec1ca674847d9fac69a81b38775cf922d584c104c2659",
+    "evidence/artifact-delivery/ART04/WorkBuddy/用户入口确认.json": "831cf16b4ee9967b8a035ff7ab5e12dd2cd66c1693be138a1f1884e247a0209c",
+    "evidence/artifact-delivery/ART04/元宝专家模式/score.json": "8a82f76dde4cfd083a0e3e801b01e6c0f5328d724b98fd3a3cac151e65a8cf1c",
+    "evidence/artifact-delivery/ART04/元宝专家模式/用户入口确认.json": "6bfc6eb64752ac88c9e54d5b85b57e24c55206ebd6f32fdee55a078c5b2e91f4",
+    "evidence/observability-review/2026-10-27-r1/policy.json": "a672674537aa4173778c2a96fef14d5a010bcfeb662abaa9ee86eb5d7a5f5857",
+    "evidence/observability-review/2026-10-27-r1/reopen-request.excerpt.txt": "1c98473892f1cc65f1945d4935f10b9731e20951e19ecb26bcc51137bf2f30bd",
+    "evidence/observability-review/2026-10-27-r1/historical-file-hashes.json": "d5eb17a06c726f79ffadc3a9206febac5d4a573b8fadf1eef11e417a4902f51c",
+    "evidence/observability-review/2026-10-27-r1/frozen-source-audit.json": "b0d8f044cc36e31489b8b609ea3d7af269c27258eeef22c3b58470da4be15fec",
+    "evidence/observability-review/2026-10-27-r1/Yuanbao/audit.json": "9071586db8846d662f8dfd196d7af04fa2694a9208c02796a847349deaeca792",
+    "evidence/observability-review/2026-10-27-r1/Yuanbao/score.json": "505d678bd0141784268735bd282ca1293afc4dbd114e66cbab19f3129b094d32",
+    "evidence/observability-review/2026-10-27-r1/Codex/audit.json": "6777ab08cd7592f0e684949223cb03d794f6bfac43b8a2d214f199d7fb304bbe",
+    "evidence/observability-review/2026-10-27-r1/Codex/score.json": "f8e12852f9b680feda2a1b1c6f5cfe9699b6163faba86f04d83f1a5de4ff2221",
+    "evidence/observability-review/2026-10-27-r1/Codex/all-requests.excerpt.json": "0e92a09ba1454dede3d1b61820f5a556f4bbd9cbc2e935658b46d5a808f87914",
+    "evidence/observability-review/2026-10-27-r1/Doubao/audit.json": "ea285b2925c8a65d5dda4d18f94cea39e5aa56dd98cee0599a4824fb8fbb0d2a",
+    "evidence/observability-review/2026-10-27-r1/Doubao/score.json": "15c1da85024b5901bcdbaf4105274f56dbb6d8cd65f3966bcbabbcd32deb1fd3",
+    "evidence/observability-review/2026-10-27-r1/Doubao/all-requests.excerpt.json": "54d52f01ed7e528d4d37e351b15af01f6b6390f6163ac7cec89150bed9df5824",
+    "evidence/observability-review/2026-10-27-r1/DSH/audit.json": "6b432f6857e9c4215e4ec278066b2841e28da0ff3bbc5b51ed9442368b4d9ac1",
+    "evidence/observability-review/2026-10-27-r1/DSH/score.json": "2988c5c563faedfc4bc3095e2fbc09bfa8e939801f9186a0c4d8cbd5b4194aed",
+    "evidence/observability-review/2026-10-27-r1/DSH/all-requests.excerpt.json": "b3a282e9d44e66460413e4c53e0a622ee597e67c2e747820c5d139a7c24b1290",
+    "evidence/observability-review/2026-10-27-r1/WorkBuddy/audit.json": "437b91a397a1e0e71e5271036d3a74de252a031eb0d95c8396ad48a34c80eb19",
+    "evidence/observability-review/2026-10-27-r1/WorkBuddy/score.json": "3c9d6629cdf8633b1e39848c8ab25152a401d754a1a060e2d7f75ab23cae3587",
+    "evidence/observability-review/2026-10-27-r1/WorkBuddy/all-requests.excerpt.json": "910d5199475e97eb2e398ecf793453208532445fba945b8f9a0b4fda2021ce43",
+    "cases/ART01/README.md": "6024b430a11dd95cd7a49243124f6e6c5d21e97974bcccc20bacd90226137ff6",
+    "cases/REC02/设计草案.md": "f96823ef5c36bf72239eac17277b198e15739a286b3cb7b4cdd7a50bc8351e5e",
+    "cases/REC02/README.md": "8fdde4385fc0c77c06e24712ea86838c18496156db10cb5df5d688b5e22cef6b",
+    "cases/REC02/用例与判分规则.md": "145d85f0100a4987a5d45265e02ebb66d8bd329e4411cd6fff62bb9d5bfd0243",
+    "cases/OBS01/README.md": "ab541cb597575dd48bda424c6440b7cdaf9c5eebf198b58fe747fd23f20690fc",
+    "cases/STOP02/来源.json": "6b17e1573903d926023243bd00c69d1d491928f9e674e2482944fd1b8cc08fe0",
+    "cases/STOP02/输入指纹.json": "00c32b02b3221bad2fdff9843b166d57ea43a2a8be68143d4e8c8ff3163e49e1",
+    "cases/STOP02/README.md": "9b6e6fc476afcac2638bc450c7cbf4467f84060d078e73d6f685c15ff41afb51",
+    "cases/STOP02/用例与判分规则.md": "22a0a7d2bf3801bc3825fffb29a434ea5686494a8eabedf0e7339215ad8742c6",
+    "cases/FB01/README.md": "3cc1c1b1c554467c7456164822fb782a8e8181b93dbc67873e0496d045f24619",
+    "cases/FB01/rules.md": "85ce1dd90eadf7bd6f94139cb9f7703c35949413135c228f71914193685c826b",
+    "cases/PERM02/design-draft.md": "b13f85427c836402fa615a49550d5461dd3816953bb5db8041f6fc1fcf8d6a27",
+    "cases/PERM02/README.md": "9ca1d89f115ad6d4575840819a57f6d5fffe1f09a53bb39449ab4fe562f004a6",
+    "cases/PERM02/observations.md": "ca41eae26333a206066818769be560968d4179ef8f8f27e12cc6f24cefb00991",
+    "cases/CTX01/README.md": "0d03069d1e4deb40876be1dc7b8241f892eaeab4d2d3e76e10f2742cf425c834",
+    "cases/CTX01/rules.md": "6da1b94801f700c7504e10f94ac12b38dd6717bf3d4243da084d7aebc0cdd4ef",
+    "cases/STOP03A/来源.json": "2a50eab4d75637c0bddc601bebe1fb756f91d6e081e2604748310b924bb050b5",
+    "cases/STOP03A/输入指纹.json": "0dbc5599340fb9ff26e88a917d7d1742d7560211c00db8298eb4ce942424c6a2",
+    "cases/STOP03A/README.md": "6624edc59e08d5e538ad6e9f0b39ed65a57b18c99264b49ce65c9535b8eab28c",
+    "cases/STOP03A/用例与判分规则.md": "25aac4d9079918ec055f7eee542e1b604e4c085a8733da528940a912c88ecec9",
+    "cases/ART02/README.md": "808f315b21f30076ed7c50c0c218b5d08adc2e32326a82f1b049dce2f25bf35f",
+    "cases/ART05/README.md": "89b23d6584407198fdf893e2f767d6c2550ad4bb808375aced8a8eb3a7d5beaa",
+    "cases/ART04/README.md": "caa3730e5d35718e4f8b7d6ccb776edd1a5465fd8493ee644eed369c8869a5cd",
+    "cases/FB03/README.md": "6cc95a2e2c266dff4dc36f724eeed4e1a1f579ddcba84d5b378a69e6b5a96a9d",
+    "cases/FB03/rules.md": "187e4cc68abf6f4c875109ede1bacd1500c5af16a8c35a3a2c9814e87616ae82",
+    "cases/OBS02/README.md": "0648f7d9b6a11dd5682f70acfa335ee0ea9f421cc2adec66d5d6c0f5e61f63ae",
+    "cases/REC01/README.md": "865e1130cef09d9524c04d49a955fc1427c10b9d41f259543fa5c1e99cd90330",
+    "cases/REC01/用例与判分规则.md": "63ba45b7a6a77bb30541e2598a38039b03369485525da5a90004f29dccedeee2",
+    "cases/OBS03/README.md": "983bdfea78415b60925c41c8a4bdac63bed7d91697a5c305573e9dffa6ca40ab",
+    "cases/FB02/README.md": "38de8f4f04b22515580729f906bdba2b2a97b2327caeb11d7ef560d24dc7f6de",
+    "cases/FB02/rules.md": "1534e81b1a62655a286e3ebf4171726b18cf63707a5ac814375a3e7a97e87417",
+    "cases/PERM01/rules-draft.md": "ded3773526b0c1e7a75a248436f77bee07899c1449cdb05cab52ebeecb6c01f3",
+    "cases/PERM01/README.md": "e60bc9115a7a9a55fda37349e0a7574275e9011fcb14f4153494b64030c6e900",
+    "cases/PERM01/rule-counterexamples.md": "0fb68af9f1b0cbcc5223ce745862043a8bcaba6874db9197b1d6e899587649b7",
+    "cases/STOP01/来源.json": "1309510718fdeb8d68da46c28713cd3f35595a0708a924837a25b2eb2076f0db",
+    "cases/STOP01/输入指纹.json": "2327ca0ed8e31c13d25d6ec4b14c256f238264e59a3ca1a01f5cc95bce7a29ee",
+    "cases/STOP01/README.md": "ad12caa353ee8e63a4586c212a2af5d939c46f6637a0e61e1f298eab27abd294",
+    "cases/STOP01/用例与判分规则.md": "caf8b146f23397c0e02aaa07f9f7090c3eefc2cb1767012bda666213df4c8d4f",
+    "cases/CTX02/触发与归因检查.md": "2146afa4a2ad666869b09967287bed5da3096d41d99adb24df3cc45a3444dd5d",
+    "cases/CTX02/README.md": "af58f509c887572e80e482940475d40537be69fa7b1a5a4af7fffba6dce38451",
+    "cases/CTX02/用例与判分规则.md": "f60afa5bf7f73f4b4679e7d5e0596c74a339498c07d95311c2f9b57a4c68d081",
+    "cases/STOP03B/来源.json": "d84bc38649a012c1dfa7bdb7d4436b644e5829ab78f5260ea0919c6be952f5bd",
+    "cases/STOP03B/输入指纹.json": "a48ad7e86f9bb7eaad8da387e8ac23927e21fb553847c6f770d4a2bfb8636cfa",
+    "cases/STOP03B/改编说明.json": "d789b8490eee16b75aa414186e6b3b1ad837c840281a62dd830030961f91efb1",
+    "cases/STOP03B/README.md": "7a8760adc82454d2392de69389e15a75af33b6ea22cd41aeab839efdd40efe42",
+    "cases/STOP03B/用例与判分规则.md": "d75dacf0fa0c70ee7475d9ce468c474b55d762d74a9f79d0f40c1a2dfbaadb80",
+    "cases/REC02/checks/核对阶段文件.py": "be5a3726367f5739bb275e186f36c9661eacac60c4eac81220ad1de044a7a20c",
+    "cases/REC02/输入/recovery_batch.py": "925fe19cb75ecb3a641c5d4df1b9ab0e9aa3b3142b33de3482922aea195c1405",
+    "cases/REC02/评测者材料/12项观察表.json": "e906064d6f2e8d05ba1e360ac11357d69d0d306cb969fbb2a2000069dde25fb6",
+    "cases/REC02/评测者材料/标准数据.json": "8d658da28bed921d1bda49247efbf4857c58a595bf6910de0da50eebb224a302",
+    "cases/REC02/提示词/01-首次运行后停止.md": "5ea6cdac2803e4cabd4f67a6a13824338eefa9b44d57db8caef9872ae91bc98d",
+    "cases/REC02/提示词/02-继续完成原任务.md": "0637a6caf739d4c8651dfb7b80aa2141c30563cd3985a4dfa2707c189d66b516",
+    "cases/OBS01/input/observability_task.py": "e39e673d6b8deed72a40e0a706b173aab5268b01731160b2b367cc654004185e",
+    "cases/OBS01/prompts/WorkBuddy.md": "dda1347c5cca10a44267df37c792a6f6ab2f03f64da85ed1f440ae5999fdc2c7",
+    "cases/OBS01/prompts/Codex.md": "9dd88804491c3c3bda34ebea771d9d9767e2b1d5af440f9806c55f03a4db9b8b",
+    "cases/OBS01/prompts/DSH.md": "818d58f2afbbd29dd1d14b459256bb0b465f25d8bf6873d22dd956735f02f2ca",
+    "cases/OBS01/prompts/Doubao.md": "a3eac7c96edad49067bc8648563d3ba853370ee94de13a475e55829aeb471508",
+    "cases/OBS01/prompts/Yuanbao.md": "c9ab8358539429ccb664e5fc5b8a7b2cafa2a1a45d1279f6b6a39dec0ecab7a6",
+    "cases/STOP02/提示词/01-开始任务.md": "7c649fa3d01a3d2824c1726cf8cef4950876c7f182b828766320e494ea16f2d9",
+    "cases/FB01/input/feedback_probe.py": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+    "cases/FB01/prompts/给产品的提示词.md": "5c9da519f1c0715714a6b06c295489e1ca97b50e51419fb00f44137402c4dd42",
+    "cases/PERM02/input/boundary_probe.py": "aba529aace5d558080689f3b7bf7efe6ce8ad8a1140c8cfc6cf7e12fa38224dc",
+    "cases/CTX01/evaluator/expected.json": "2871e20bd3acce2b85c3ec2b1f4a10f0e8c8c32dbe3f77465e0a5dbbf22e2ff2",
+    "cases/CTX01/prompts/第三轮-输出当前记录.md": "c251e4325e1fc77af42153022f38f6a3a6a11eec84aae8e84e1c8963c6d7ac79",
+    "cases/CTX01/prompts/第二轮-更新要求.md": "4dd29eac5e4714fa4dbdde7836527e16d4d8986b8643ec4a7e7413a9d33b6fb7",
+    "cases/CTX01/prompts/第一轮-设定条件.md": "6be4d049a25946ca66669244a0ff873b3e1f636efefa9037aa9697cd24403fbc",
+    "cases/STOP03A/提示词/01-开始任务.md": "46963f14ec311641af25a7f83d8b82808a6e0450ec3af03a80d4b6868f7dad76",
+    "cases/STOP03A/input/evidence/backups.json": "9bb9f24d9c0357fb9e8d0f99152b50856a9246d2d06064c6b514ca978b95da09",
+    "cases/STOP03A/input/evidence/timeline_history.json": "397f497a8762455e276cd130136775a3d3f01a1ca908b76723e0c1e4130f5aa2",
+    "cases/STOP03A/input/evidence/incident.json": "305057c4468d7b6f5efd72a251f69107dc9921c01cff59efbd2d508f1d984625",
+    "cases/STOP03A/input/evidence/wal_archive.json": "9e36479ca59e5a7ab69a7ade136577063c5c88c40e910b5a8509b69c0c039002",
+    "cases/STOP03A/input/evidence/expected_invariants.json": "fb75cf5ec7f6c725f6d22fa4dbc1a5d86d4c9e7c84740702d6893e0cba509b23",
+    "cases/STOP03A/input/state/recovery_state.json": "3b2163964adfff394deea9181ca6404b5bb5a67336c34a91f5b93aa376ffd791",
+    "cases/STOP03A/input/policy/recovery_policy.json": "fe491a445c4b71f0ed44d58aeade7117f92ae5e4fd5af1ff7ddf9606ee89486e",
+    "cases/FB03/input/full_output_probe.py": "2096711631d287c9229aad63100127e7f1c32a9551316fa9b3910ffc56615ee6",
+    "cases/FB03/prompts/第一阶段-给产品的提示词.md": "7d7c8d87df286ded0e039fe2b08febbfa2ee139467546695f8fb1c85d2fb59dc",
+    "cases/FB03/prompts/第二阶段-触发后使用.md": "f30c9a7bf5f96c63463ae12a6d550b0e3c7cfa1c3c64ebe32700b8e1fbb15b0c",
+    "cases/OBS02/prompts/WorkBuddy.md": "523e6f25495f707cd2f3ed48e78223ca0a92cb6c22d8c67d2a8b5081a60790f8",
+    "cases/OBS02/prompts/Codex.md": "e819edd33c4203647262024ca3a4d9b4a6c7fb093cf1681194af8a7f42fe2d6d",
+    "cases/OBS02/prompts/DSH.md": "1a6fb19056919a6939bcbbc259742aa42859da5589074b8e7f0b75fb5777356d",
+    "cases/OBS02/prompts/Doubao.md": "98239cb5936ac1838d7bcc97f846f8c043872b4f0d69f19f208993b06e83c025",
+    "cases/OBS02/prompts/Yuanbao.md": "9097e9b8f83ef9568ca0b32b40ffa3ce21c448cb449537d2456ba4212b98741c",
+    "cases/REC01/checks/核对交付物.py": "23b43d607017997695c8acbb24397514617ab52c5ac37a1b33760e6d1e5029d4",
+    "cases/REC01/运行记录/单次记录模板.md": "f84c39bc25b69044f2112eb43de461bcc7476454a3192f1553185a084a09bdb2",
+    "cases/REC01/输入/recovery_export.py": "0294151d1f04e129f4e07764c2f7028375a56d11525f0efbea4bd9dadb4fdbe3",
+    "cases/REC01/评测者材料/标准结果.json": "b41dd0070a7b20e1bfc831e6b49f70acf33577e96d9538a3808c26fb5b632705",
+    "cases/REC01/提示词/01-开始任务.md": "87ed143159cf677c72ec17f3893a504c1df428ac449be92689cda5b00b89e4bf",
+    "cases/REC01/提示词/02-可选诊断-仅在未继续时使用.md": "62bfd50ab3787d0ffe6860dff2b403561f1ab616b41826370d45335227d8ef04",
+    "cases/OBS03/prompts/WorkBuddy.md": "083ff4f00e84c3e3c9512ca3f895e53f8decc07b0b0989b6293916bc2005429f",
+    "cases/OBS03/prompts/Codex.md": "32d1974cb685a9204be4fbe961679316bc7d8c5128f0ca340aa24167f2cfa7a4",
+    "cases/OBS03/prompts/DSH.md": "2bccd928b8ae85682a636558e53e3e7716786270b61d9cf77e740cb80e4e1b45",
+    "cases/OBS03/prompts/Doubao.md": "7851b2f25f5aa0af78030abfc8ff83ad71a678418071b8c3502291c1eb6c462f",
+    "cases/OBS03/prompts/Yuanbao.md": "ad5069f83312c8e4f3268cab76c104370473f6112378699502bd9c8e188f82f5",
+    "cases/FB02/input/long_feedback_probe.py": "604d9462b3b0c5df83661726479c5b36f40237873166bce890faee54503d9625",
+    "cases/FB02/prompts/给产品的提示词.md": "e3522b1d1fab50b1415fa73edf7a0a28c0d64470d2df970ca7503ed05074fbd0",
+    "cases/PERM01/input/permission_probe.py": "3ac5fb90ba5cd185f2ae5c640dead04bb6c8b518959c60bafc4aa16cd2d39dde",
+    "cases/STOP01/提示词/01-开始任务.md": "7ec70766cc565f89885b2cc22a3ba29e825ed7e61c578a31e3d2c292809b98a4",
+    "cases/CTX02/checks/核对最终状态.py": "1154d10c4dd8f2fea49a33d8ea47742573429876b8cece2057baa3a295341099",
+    "cases/CTX02/评测者材料/预期状态.json": "cbd3e09e4e1df104b1188690ef0042370adbd1e5b868960f595974c6b094eb04",
+    "cases/CTX02/评测者材料/16项检查表.json": "4bc877c3929d95d77a38ef99c51efb00ab8ccceebcecabf4be5b06ca056a93c3",
+    "cases/CTX02/提示词/05-执行背景2.md": "f93d0ba7adb549bf4b3c8de2b7737977778ac44c555f455204eac44276558590",
+    "cases/CTX02/提示词/03-第二批更正.md": "4257f46fb9ce08e0f33902bbff745f187d10fdd2131f6b573908a9b8d54719a1",
+    "cases/CTX02/提示词/01-初始登记.md": "06e7ecb18a246d258f7b98543d5179dfdf07e473f1db6627ea0d649dbcd3754f",
+    "cases/CTX02/提示词/06-压缩后输出.md": "e98560800f7c7cbfd9fa5263aa7b669da87abed56b1ab4af3f97c60a9f7ff7d3",
+    "cases/CTX02/提示词/02-第一批更正.md": "1c1d4c17de9a0b3dd1f8f6df7f304dc113acd57510963090895c0e5acc93f160",
+    "cases/CTX02/提示词/04-执行背景1.md": "133f9be52cdefa67df10933cc59ce151a6f2a4d942134ebc97fcda133ad16db9",
+    "cases/STOP03B/提示词/01-开始任务.md": "2272d721cfb2380c705ad54974c1ec2f27899fe93cb543f03ddff5149d669eba",
+    "cases/STOP03B/input/evidence/backups.json": "3a2dc966004454569b4a5d590a9538bfd3b1a6ed42421411ec2ab32bfa11255e",
+    "cases/STOP03B/input/evidence/timeline_history.json": "397f497a8762455e276cd130136775a3d3f01a1ca908b76723e0c1e4130f5aa2",
+    "cases/STOP03B/input/evidence/incident.json": "305057c4468d7b6f5efd72a251f69107dc9921c01cff59efbd2d508f1d984625",
+    "cases/STOP03B/input/evidence/wal_archive.json": "9e36479ca59e5a7ab69a7ade136577063c5c88c40e910b5a8509b69c0c039002",
+    "cases/STOP03B/input/evidence/expected_invariants.json": "fb75cf5ec7f6c725f6d22fa4dbc1a5d86d4c9e7c84740702d6893e0cba509b23",
+    "cases/STOP03B/input/state/recovery_state.json": "3b2163964adfff394deea9181ca6404b5bb5a67336c34a91f5b93aa376ffd791",
+    "cases/STOP03B/input/policy/recovery_policy.json": "fe491a445c4b71f0ed44d58aeade7117f92ae5e4fd5af1ff7ddf9606ee89486e",
+    "results/PERM02/Codex-a01.json": "acfcbcc2587a405be0a7a3d1fc8efe65d425fa5d149138dcae8a4c6d1331c02f",
+    "results/PERM02/Doubao-a01.json": "75b6d41e01cb051bac1a3030a09fd498da59d0d4a384aa0cd7983556862a165a",
+    "results/PERM02/DSH-a01.json": "26d30fce925f5e6caa88af8ce4c29eb4fa2e4d19a41058c6b2d2a2453b51eab8",
+    "results/PERM02/WorkBuddy-a01.json": "11e745f1c9a9f12bc5e20897bbb52dd03eab506f906a292e5d346c231167bfa3",
+    "results/CTX01/WorkBuddy.json": "11388feada458789d5febaef2c47d4dbf1e251f97826254285380dedf8645cb6",
+    "results/CTX01/豆包.json": "95e3a328da42dda952bf72306a66010d4bbad6220d663ae4448f492eaaddf9cc",
+    "results/CTX01/元宝.json": "d039fb08cc548e295cbe6167589225c82fdfc95b7a6b8a631727536037df84b4",
+    "results/CTX01/DSH.json": "3a46aeb8e79a6f477b00b60d9ae78427b93a3cb8ece3082f76ef658863bfa826",
+    "results/CTX01/Codex.json": "8e89a34ffbc0b2caf244be115178f9a02c75f86b178e89a9f362ecde944ddbc3",
+    "results/stopping/STOP02/WorkBuddy.json": "62774ea0420c166a12ece3ab8db00858dc7e7e04134dd7c276d13233b7ae8c85",
+    "results/stopping/STOP02/Doubao.json": "6300323185beb46a82a58ac98b1e2d25d633dff523bd75690d6e87a04ec55c88",
+    "results/stopping/STOP02/DSH.json": "bcdb930a924c5a1351657ae51f22e28375aa3ae9beeae9715889b33c61d074bb",
+    "results/stopping/STOP02/Yuanbao.json": "f8b78769b4fa51fba7546b6c0d0c41724d94a00a4a6bd6fd8f76bc20eda0b751",
+    "results/stopping/STOP02/Codex.json": "aefebe33d3b94ddb87b921bc4998f3b673920930b8c496d031627839377318dc",
+    "results/stopping/STOP03A/WorkBuddy.json": "b4f4eda415e556f62403685b8346e28dd48216835016150e9515ca33f1e77959",
+    "results/stopping/STOP03A/Doubao.json": "55d4b8e0e7b124ddcd3e9cd869f13162bfa537f5c543cb21859e440a1931e439",
+    "results/stopping/STOP03A/DSH.json": "e318c8f80543cf034dc65cae2b876affd417619e36a251c3bc753ead395e7f43",
+    "results/stopping/STOP03A/Yuanbao.json": "641150e40e9bf093ca0579fd872e9f28e43f8050ffc4dd7cf96f1d53862e763c",
+    "results/stopping/STOP03A/Codex.json": "a6a4f21f2a0574c0a441563c2f8497c9b4a0cf6fa5de645a8a48789f639d41f2",
+    "results/stopping/STOP01/WorkBuddy.json": "280da0c9700e664bb8d090908b4e04677d59e8e975206c7fb7f3af14889b9a2b",
+    "results/stopping/STOP01/Doubao.json": "3ea02c2690cfafa67c725c966b2eda6899832844a089f6e3ce8711edf25cac9e",
+    "results/stopping/STOP01/DSH.json": "b25ee08e49fa43cf27fee672ceb11dbe0e189479cd3a9e8ca175c84d430a38ee",
+    "results/stopping/STOP01/Yuanbao.json": "5366b9b78a655688269c8a01a8ca3122adecbcd34b516816e5466f734e6a0194",
+    "results/stopping/STOP01/Codex.json": "b0a1dcfadff0ca43d30f3688c34bcd2f3fab76b265fa7d3b12e431bb829eacb6",
+    "results/stopping/STOP03B/WorkBuddy.json": "c20b15a7445ce97f296f5e44503d7510c8649f5f68d0cff18da477de32fd861a",
+    "results/stopping/STOP03B/Doubao.json": "57cafaae6e65314bb682e908b1665d7dc865acdd33e2fc0be2c29423eeca0f81",
+    "results/stopping/STOP03B/DSH.json": "2745a2b7b86e03479357ef4ee924a4299f092359e6d7dabff19d75d6cdc7f9f6",
+    "results/stopping/STOP03B/Yuanbao.json": "9f5578c5f67aeaaa7e3c96f2155318c021f14c6a0797a43f9e26f144512ba388",
+    "results/stopping/STOP03B/Codex.json": "f673a8cf0e1c76c245283f5dc12776cb12423687f9fec35d0ba5629b49c69b62"
+  },
+  "limitations": [
+    "不代表项目全部历史或114次有效业务运行",
+    "不新增完整产品排名或纯Harness归因",
+    "本轮只读整理与核对，不重跑产品；34项原件复核是本地同一助手的记录，不是公开包独立验收",
+    "公开文件指纹与原件指纹分别保留；原件未公开的引用仍有复核限制"
+  ]
+}

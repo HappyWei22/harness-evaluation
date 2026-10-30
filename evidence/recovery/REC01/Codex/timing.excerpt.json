@@ -1,0 +1,28 @@
+{
+  "format": "native-event-excerpt-v1",
+  "original_line_count": 33,
+  "original_sha256": "c12c0a7547ba01d319ab2209c830afed3227a5ce08b8682bb3f315e8c39d808f",
+  "scope": "仅选任务起止两条事件的类型及原生时间戳；未包含消息正文、模型上下文或会话标识。",
+  "records": [
+    {
+      "source_line": 2,
+      "event": {
+        "type": "event_msg",
+        "timestamp": "2026-10-20T13:28:11.829Z",
+        "payload": {
+          "type": "task_started"
+        }
+      }
+    },
+    {
+      "source_line": 33,
+      "event": {
+        "type": "event_msg",
+        "timestamp": "2026-10-20T13:28:31.254Z",
+        "payload": {
+          "type": "task_complete"
+        }
+      }
+    }
+  ]
+}

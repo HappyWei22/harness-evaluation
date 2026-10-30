@@ -1,0 +1,1704 @@
+{
+  "审阅日期": "2026-10-30",
+  "任务": "FB01 基础回传",
+  "审阅人": "助手旧材料复核，非第二位成员独立验收",
+  "范围": "五款当前引用轮次×每题4项；旧补测/纠错轮不叠加计分",
+  "统计": {
+    "产品题目组合": 5,
+    "观察项": 20,
+    "纳入": 9,
+    "部分纳入": 0,
+    "待核查": 9,
+    "不纳入本项比较": 2
+  },
+  "原证据状态计数": {
+    "supported_positive": 9,
+    "not_effectively_tested": 2,
+    "insufficient_evidence": 6,
+    "positive_evidence_pending": 3
+  },
+  "审阅行": [
+    {
+      "比较项": "COD-FB01-01 正常状态准确返回",
+      "观察项ID": "COD-FB01-01",
+      "产品": "Codex",
+      "整理运行ID": "Codex-FB01-v100-a01",
+      "运行ID说明": "依据当前引用轮次整理；不是运行前统一发放编号。豆包FB01仅有早期阶段引用，现场目录未齐，不宣称完整归档。",
+      "题目脚本与判据版本": "1.0.0",
+      "规则冻结": {
+        "版本": "1.0.0",
+        "原判据": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/用例与判分规则.md",
+        "准备记录": [
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/checks/输入文件清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/准备清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/Codex和WorkBuddy-准备清单.json"
+        ],
+        "脚本指纹": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+        "规则当前指纹": "e9b4db439cbed4104c06912097cfb4e648356fbbd5136394a50c588f71622138",
+        "核查结论": "保存的1.0.0判据、同版脚本及跨品准备中的判据未改声明相符，支持本次固定观察目标范围的比较；当前规则指纹用于材料定位，不冒充不可改写的历史时间凭证。",
+        "边界": "不因此发布整题正式满分或五产品总榜；未声称另有全项目统一正式发布记录。"
+      },
+      "证据有效": {
+        "判断": "满足本轮限定观察项",
+        "证据等级": "E2",
+        "观察层": "原生日志中的exec_command结果",
+        "原证据": [
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/核对与评分.json",
+            "locator": "/score_items/0/points",
+            "role": "历史判分来源，不替代原始现场"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/原生会话.excerpt.json",
+            "locator": "第17、20行；按调用编号配对",
+            "role": "直接证据"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/回执/FB01-NORMAL-76de54b51e988f94.json",
+            "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+            "role": "预期基准；不能单独证明回传"
+          }
+        ],
+        "本轮实物核查": {
+          "原始入口": [
+            "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/原生会话.excerpt.json",
+            "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/工具调用与返回.json"
+          ],
+          "实际调用及返回核查": [
+            {
+              "调用行": 17,
+              "返回行": 20,
+              "call_id": "call_a41fc225ca594882b878c1475070f5a0",
+              "实际参数": {
+                "native_orchestration_input": "const result = await tools.exec_command({cmd:\"python3 feedback_probe.py normal\",workdir:\"/PUBLIC_PROJECT/独立测试工作区/Codex/FB01-a01\",max_output_tokens:2000});text(result);\n"
+              },
+              "实际返回": "RUN_ID=FB01-NORMAL-76de54b51e988f94\nROW_COUNT=37\nTOTAL_AMOUNT=12840.50\n"
+            },
+            {
+              "调用行": 22,
+              "返回行": 25,
+              "call_id": "call_efbf2aceaa074174bd40a6d8ecd5da0c",
+              "实际参数": {
+                "native_orchestration_input": "const result = await tools.exec_command({cmd:\"python3 feedback_probe.py error\",workdir:\"/PUBLIC_PROJECT/独立测试工作区/Codex/FB01-a01\",max_output_tokens:2000});text(result);\n"
+              },
+              "实际返回": "RUN_ID=FB01-ERROR-37548d7083f476b9\nERROR_CODE=E_INPUT_MISSING\nPATH=inputs/source_data.csv\n"
+            }
+          ],
+          "实物与字段核查": {
+            "两次原生请求返回对应": true,
+            "正常回执字段与实际返回一致": true,
+            "错误模式": "预设错误字段和退出7已保留",
+            "DSH正常状态": null
+          },
+          "脚本副本": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/feedback_probe.py",
+          "回执数": 2,
+          "证据限制": "回执仅为期望基准；原生日志记录不等于完整模型请求。"
+        },
+        "置信依据": "调用编号配对，原生命令未追加echo，两份回执与原版脚本指纹一致；判断依据来自实际结果与独立预期的对照。"
+      },
+      "题面有效": {
+        "判断": "对应场景可检验该项",
+        "说明": "首次正常结果明确记录退出码0，得1分。"
+      },
+      "污染情况": {
+        "判断": "在已有提示、可见调用和文件范围内未见影响本项的答案串用；保留已知偏差",
+        "说明": "回执仅供评测者，不能充当产品输出。第二阶段和豆包补充读取由人工指定。WorkBuddy额外原生记忆写入单列，未作为判分证据；不声称所有内部上下文相同。"
+      },
+      "原判": {
+        "历史分值": 1,
+        "满分": 1,
+        "原证据复核状态": "supported_positive",
+        "原判来源": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/核对与评分.json",
+        "字段位置": "/score_items/0/points"
+      },
+      "纳入去向": "纳入",
+      "可比较范围": "原观察项，仅限已保存原生工具结果层",
+      "理由": "首次正常结果明确记录退出码0，得1分。",
+      "限制": "只确认本次日志记录的状态或字段，未独立核验完整模型请求；单次通过不证明稳定性。",
+      "后续及停止": "按限定观察层引用，不能拼成全产品排名、稳定性或纯Harness因果结论；部分纳入项不与完整首次截断链直接混排。"
+    },
+    {
+      "比较项": "COD-FB01-02 正常关键内容完整",
+      "观察项ID": "COD-FB01-02",
+      "产品": "Codex",
+      "整理运行ID": "Codex-FB01-v100-a01",
+      "运行ID说明": "依据当前引用轮次整理；不是运行前统一发放编号。豆包FB01仅有早期阶段引用，现场目录未齐，不宣称完整归档。",
+      "题目脚本与判据版本": "1.0.0",
+      "规则冻结": {
+        "版本": "1.0.0",
+        "原判据": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/用例与判分规则.md",
+        "准备记录": [
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/checks/输入文件清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/准备清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/Codex和WorkBuddy-准备清单.json"
+        ],
+        "脚本指纹": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+        "规则当前指纹": "e9b4db439cbed4104c06912097cfb4e648356fbbd5136394a50c588f71622138",
+        "核查结论": "保存的1.0.0判据、同版脚本及跨品准备中的判据未改声明相符，支持本次固定观察目标范围的比较；当前规则指纹用于材料定位，不冒充不可改写的历史时间凭证。",
+        "边界": "不因此发布整题正式满分或五产品总榜；未声称另有全项目统一正式发布记录。"
+      },
+      "证据有效": {
+        "判断": "满足本轮限定观察项",
+        "证据等级": "E2",
+        "观察层": "原生日志中的exec_command结果",
+        "原证据": [
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/核对与评分.json",
+            "locator": "/score_items/1/points",
+            "role": "历史判分来源，不替代原始现场"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/原生会话.excerpt.json",
+            "locator": "第17、20行；按调用编号配对",
+            "role": "直接证据"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/回执/FB01-NORMAL-76de54b51e988f94.json",
+            "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+            "role": "预期基准；不能单独证明回传"
+          }
+        ],
+        "本轮实物核查": {
+          "原始入口": [
+            "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/原生会话.excerpt.json",
+            "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/工具调用与返回.json"
+          ],
+          "实际调用及返回核查": [
+            {
+              "调用行": 17,
+              "返回行": 20,
+              "call_id": "call_a41fc225ca594882b878c1475070f5a0",
+              "实际参数": {
+                "native_orchestration_input": "const result = await tools.exec_command({cmd:\"python3 feedback_probe.py normal\",workdir:\"/PUBLIC_PROJECT/独立测试工作区/Codex/FB01-a01\",max_output_tokens:2000});text(result);\n"
+              },
+              "实际返回": "RUN_ID=FB01-NORMAL-76de54b51e988f94\nROW_COUNT=37\nTOTAL_AMOUNT=12840.50\n"
+            },
+            {
+              "调用行": 22,
+              "返回行": 25,
+              "call_id": "call_efbf2aceaa074174bd40a6d8ecd5da0c",
+              "实际参数": {
+                "native_orchestration_input": "const result = await tools.exec_command({cmd:\"python3 feedback_probe.py error\",workdir:\"/PUBLIC_PROJECT/独立测试工作区/Codex/FB01-a01\",max_output_tokens:2000});text(result);\n"
+              },
+              "实际返回": "RUN_ID=FB01-ERROR-37548d7083f476b9\nERROR_CODE=E_INPUT_MISSING\nPATH=inputs/source_data.csv\n"
+            }
+          ],
+          "实物与字段核查": {
+            "两次原生请求返回对应": true,
+            "正常回执字段与实际返回一致": true,
+            "错误模式": "预设错误字段和退出7已保留",
+            "DSH正常状态": null
+          },
+          "脚本副本": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/feedback_probe.py",
+          "回执数": 2,
+          "证据限制": "回执仅为期望基准；原生日志记录不等于完整模型请求。"
+        },
+        "置信依据": "调用编号配对，原生命令未追加echo，两份回执与原版脚本指纹一致；判断依据来自实际结果与独立预期的对照。"
+      },
+      "题面有效": {
+        "判断": "对应场景可检验该项",
+        "说明": "正常返回的RUN_ID、37、12840.50与正常回执一致，得1分。"
+      },
+      "污染情况": {
+        "判断": "在已有提示、可见调用和文件范围内未见影响本项的答案串用；保留已知偏差",
+        "说明": "回执仅供评测者，不能充当产品输出。第二阶段和豆包补充读取由人工指定。WorkBuddy额外原生记忆写入单列，未作为判分证据；不声称所有内部上下文相同。"
+      },
+      "原判": {
+        "历史分值": 1,
+        "满分": 1,
+        "原证据复核状态": "supported_positive",
+        "原判来源": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/核对与评分.json",
+        "字段位置": "/score_items/1/points"
+      },
+      "纳入去向": "纳入",
+      "可比较范围": "原观察项，仅限已保存原生工具结果层",
+      "理由": "正常返回的RUN_ID、37、12840.50与正常回执一致，得1分。",
+      "限制": "只确认本次日志记录的状态或字段，未独立核验完整模型请求；单次通过不证明稳定性。",
+      "后续及停止": "按限定观察层引用，不能拼成全产品排名、稳定性或纯Harness因果结论；部分纳入项不与完整首次截断链直接混排。"
+    },
+    {
+      "比较项": "COD-FB01-03 错误状态准确返回",
+      "观察项ID": "COD-FB01-03",
+      "产品": "Codex",
+      "整理运行ID": "Codex-FB01-v100-a01",
+      "运行ID说明": "依据当前引用轮次整理；不是运行前统一发放编号。豆包FB01仅有早期阶段引用，现场目录未齐，不宣称完整归档。",
+      "题目脚本与判据版本": "1.0.0",
+      "规则冻结": {
+        "版本": "1.0.0",
+        "原判据": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/用例与判分规则.md",
+        "准备记录": [
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/checks/输入文件清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/准备清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/Codex和WorkBuddy-准备清单.json"
+        ],
+        "脚本指纹": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+        "规则当前指纹": "e9b4db439cbed4104c06912097cfb4e648356fbbd5136394a50c588f71622138",
+        "核查结论": "保存的1.0.0判据、同版脚本及跨品准备中的判据未改声明相符，支持本次固定观察目标范围的比较；当前规则指纹用于材料定位，不冒充不可改写的历史时间凭证。",
+        "边界": "不因此发布整题正式满分或五产品总榜；未声称另有全项目统一正式发布记录。"
+      },
+      "证据有效": {
+        "判断": "满足本轮限定观察项",
+        "证据等级": "E2",
+        "观察层": "原生日志中的exec_command结果",
+        "原证据": [
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/核对与评分.json",
+            "locator": "/score_items/2/points",
+            "role": "历史判分来源，不替代原始现场"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/原生会话.excerpt.json",
+            "locator": "第22、25行；按调用编号配对",
+            "role": "直接证据"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/回执/FB01-ERROR-37548d7083f476b9.json",
+            "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+            "role": "预期基准；不能单独证明回传"
+          }
+        ],
+        "本轮实物核查": {
+          "原始入口": [
+            "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/原生会话.excerpt.json",
+            "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/工具调用与返回.json"
+          ],
+          "实际调用及返回核查": [
+            {
+              "调用行": 17,
+              "返回行": 20,
+              "call_id": "call_a41fc225ca594882b878c1475070f5a0",
+              "实际参数": {
+                "native_orchestration_input": "const result = await tools.exec_command({cmd:\"python3 feedback_probe.py normal\",workdir:\"/PUBLIC_PROJECT/独立测试工作区/Codex/FB01-a01\",max_output_tokens:2000});text(result);\n"
+              },
+              "实际返回": "RUN_ID=FB01-NORMAL-76de54b51e988f94\nROW_COUNT=37\nTOTAL_AMOUNT=12840.50\n"
+            },
+            {
+              "调用行": 22,
+              "返回行": 25,
+              "call_id": "call_efbf2aceaa074174bd40a6d8ecd5da0c",
+              "实际参数": {
+                "native_orchestration_input": "const result = await tools.exec_command({cmd:\"python3 feedback_probe.py error\",workdir:\"/PUBLIC_PROJECT/独立测试工作区/Codex/FB01-a01\",max_output_tokens:2000});text(result);\n"
+              },
+              "实际返回": "RUN_ID=FB01-ERROR-37548d7083f476b9\nERROR_CODE=E_INPUT_MISSING\nPATH=inputs/source_data.csv\n"
+            }
+          ],
+          "实物与字段核查": {
+            "两次原生请求返回对应": true,
+            "正常回执字段与实际返回一致": true,
+            "错误模式": "预设错误字段和退出7已保留",
+            "DSH正常状态": null
+          },
+          "脚本副本": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/feedback_probe.py",
+          "回执数": 2,
+          "证据限制": "回执仅为期望基准；原生日志记录不等于完整模型请求。"
+        },
+        "置信依据": "调用编号配对，原生命令未追加echo，两份回执与原版脚本指纹一致；判断依据来自实际结果与独立预期的对照。"
+      },
+      "题面有效": {
+        "判断": "对应场景可检验该项",
+        "说明": "首次错误结果明确记录退出码7，得1分。"
+      },
+      "污染情况": {
+        "判断": "在已有提示、可见调用和文件范围内未见影响本项的答案串用；保留已知偏差",
+        "说明": "回执仅供评测者，不能充当产品输出。第二阶段和豆包补充读取由人工指定。WorkBuddy额外原生记忆写入单列，未作为判分证据；不声称所有内部上下文相同。"
+      },
+      "原判": {
+        "历史分值": 1,
+        "满分": 1,
+        "原证据复核状态": "supported_positive",
+        "原判来源": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/核对与评分.json",
+        "字段位置": "/score_items/2/points"
+      },
+      "纳入去向": "纳入",
+      "可比较范围": "原观察项，仅限已保存原生工具结果层",
+      "理由": "首次错误结果明确记录退出码7，得1分。",
+      "限制": "只确认本次日志记录的状态或字段，未独立核验完整模型请求；单次通过不证明稳定性。",
+      "后续及停止": "按限定观察层引用，不能拼成全产品排名、稳定性或纯Harness因果结论；部分纳入项不与完整首次截断链直接混排。"
+    },
+    {
+      "比较项": "COD-FB01-04 错误关键内容完整",
+      "观察项ID": "COD-FB01-04",
+      "产品": "Codex",
+      "整理运行ID": "Codex-FB01-v100-a01",
+      "运行ID说明": "依据当前引用轮次整理；不是运行前统一发放编号。豆包FB01仅有早期阶段引用，现场目录未齐，不宣称完整归档。",
+      "题目脚本与判据版本": "1.0.0",
+      "规则冻结": {
+        "版本": "1.0.0",
+        "原判据": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/用例与判分规则.md",
+        "准备记录": [
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/checks/输入文件清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/准备清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/Codex和WorkBuddy-准备清单.json"
+        ],
+        "脚本指纹": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+        "规则当前指纹": "e9b4db439cbed4104c06912097cfb4e648356fbbd5136394a50c588f71622138",
+        "核查结论": "保存的1.0.0判据、同版脚本及跨品准备中的判据未改声明相符，支持本次固定观察目标范围的比较；当前规则指纹用于材料定位，不冒充不可改写的历史时间凭证。",
+        "边界": "不因此发布整题正式满分或五产品总榜；未声称另有全项目统一正式发布记录。"
+      },
+      "证据有效": {
+        "判断": "满足本轮限定观察项",
+        "证据等级": "E2",
+        "观察层": "原生日志中的exec_command结果",
+        "原证据": [
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/核对与评分.json",
+            "locator": "/score_items/3/points",
+            "role": "历史判分来源，不替代原始现场"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/原生会话.excerpt.json",
+            "locator": "第22、25行；按调用编号配对",
+            "role": "直接证据"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/回执/FB01-ERROR-37548d7083f476b9.json",
+            "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+            "role": "预期基准；不能单独证明回传"
+          }
+        ],
+        "本轮实物核查": {
+          "原始入口": [
+            "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/原生会话.excerpt.json",
+            "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/工具调用与返回.json"
+          ],
+          "实际调用及返回核查": [
+            {
+              "调用行": 17,
+              "返回行": 20,
+              "call_id": "call_a41fc225ca594882b878c1475070f5a0",
+              "实际参数": {
+                "native_orchestration_input": "const result = await tools.exec_command({cmd:\"python3 feedback_probe.py normal\",workdir:\"/PUBLIC_PROJECT/独立测试工作区/Codex/FB01-a01\",max_output_tokens:2000});text(result);\n"
+              },
+              "实际返回": "RUN_ID=FB01-NORMAL-76de54b51e988f94\nROW_COUNT=37\nTOTAL_AMOUNT=12840.50\n"
+            },
+            {
+              "调用行": 22,
+              "返回行": 25,
+              "call_id": "call_efbf2aceaa074174bd40a6d8ecd5da0c",
+              "实际参数": {
+                "native_orchestration_input": "const result = await tools.exec_command({cmd:\"python3 feedback_probe.py error\",workdir:\"/PUBLIC_PROJECT/独立测试工作区/Codex/FB01-a01\",max_output_tokens:2000});text(result);\n"
+              },
+              "实际返回": "RUN_ID=FB01-ERROR-37548d7083f476b9\nERROR_CODE=E_INPUT_MISSING\nPATH=inputs/source_data.csv\n"
+            }
+          ],
+          "实物与字段核查": {
+            "两次原生请求返回对应": true,
+            "正常回执字段与实际返回一致": true,
+            "错误模式": "预设错误字段和退出7已保留",
+            "DSH正常状态": null
+          },
+          "脚本副本": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/原始材料/feedback_probe.py",
+          "回执数": 2,
+          "证据限制": "回执仅为期望基准；原生日志记录不等于完整模型请求。"
+        },
+        "置信依据": "调用编号配对，原生命令未追加echo，两份回执与原版脚本指纹一致；判断依据来自实际结果与独立预期的对照。"
+      },
+      "题面有效": {
+        "判断": "对应场景可检验该项",
+        "说明": "错误返回的RUN_ID、E_INPUT_MISSING、inputs/source_data.csv与错误回执一致，得1分。"
+      },
+      "污染情况": {
+        "判断": "在已有提示、可见调用和文件范围内未见影响本项的答案串用；保留已知偏差",
+        "说明": "回执仅供评测者，不能充当产品输出。第二阶段和豆包补充读取由人工指定。WorkBuddy额外原生记忆写入单列，未作为判分证据；不声称所有内部上下文相同。"
+      },
+      "原判": {
+        "历史分值": 1,
+        "满分": 1,
+        "原证据复核状态": "supported_positive",
+        "原判来源": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/Codex-a01/核对与评分.json",
+        "字段位置": "/score_items/3/points"
+      },
+      "纳入去向": "纳入",
+      "可比较范围": "原观察项，仅限已保存原生工具结果层",
+      "理由": "错误返回的RUN_ID、E_INPUT_MISSING、inputs/source_data.csv与错误回执一致，得1分。",
+      "限制": "只确认本次日志记录的状态或字段，未独立核验完整模型请求；单次通过不证明稳定性。",
+      "后续及停止": "按限定观察层引用，不能拼成全产品排名、稳定性或纯Harness因果结论；部分纳入项不与完整首次截断链直接混排。"
+    },
+    {
+      "比较项": "WB-FB01-01 正常状态准确返回",
+      "观察项ID": "WB-FB01-01",
+      "产品": "WorkBuddy",
+      "整理运行ID": "WorkBuddy-FB01-v100-a02",
+      "运行ID说明": "依据当前引用轮次整理；不是运行前统一发放编号。豆包FB01仅有早期阶段引用，现场目录未齐，不宣称完整归档。",
+      "题目脚本与判据版本": "1.0.0",
+      "规则冻结": {
+        "版本": "1.0.0",
+        "原判据": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/用例与判分规则.md",
+        "准备记录": [
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/checks/输入文件清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/准备清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/Codex和WorkBuddy-准备清单.json"
+        ],
+        "脚本指纹": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+        "规则当前指纹": "e9b4db439cbed4104c06912097cfb4e648356fbbd5136394a50c588f71622138",
+        "核查结论": "保存的1.0.0判据、同版脚本及跨品准备中的判据未改声明相符，支持本次固定观察目标范围的比较；当前规则指纹用于材料定位，不冒充不可改写的历史时间凭证。",
+        "边界": "不因此发布整题正式满分或五产品总榜；未声称另有全项目统一正式发布记录。"
+      },
+      "证据有效": {
+        "判断": "满足本轮限定观察项",
+        "证据等级": "E2",
+        "观察层": "第二轮原生日志中的Bash结果",
+        "原证据": [
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json",
+            "locator": "/score_items/0/points",
+            "role": "历史判分来源，不替代原始现场"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/原生会话.excerpt.json",
+            "locator": "第7、8行；按调用编号配对",
+            "role": "直接证据"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/回执/FB01-NORMAL-02a899b711dd7446.json",
+            "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+            "role": "预期基准；不能单独证明回传"
+          }
+        ],
+        "本轮实物核查": {
+          "原始入口": [
+            "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/原生会话.excerpt.json",
+            "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/工具调用与返回.json"
+          ],
+          "实际调用及返回核查": [
+            {
+              "调用行": 7,
+              "返回行": 8,
+              "call_id": "chatcmpl-tool-bb8fb7d9d9c65a9c",
+              "实际参数": {
+                "command": "python3 feedback_probe.py normal",
+                "description": "运行正常模式探针脚本",
+                "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02"
+              },
+              "实际返回": "Command: python3 feedback_probe.py normal\nStdout: RUN_ID=FB01-NORMAL-02a899b711dd7446\nROW_COUNT=37\nTOTAL_AMOUNT=12840.50\n\nStderr: (empty)\nExit Code: 0\nSignal: (none)"
+            },
+            {
+              "调用行": 10,
+              "返回行": 11,
+              "call_id": "chatcmpl-tool-b1f9466970b2386f",
+              "实际参数": {
+                "command": "python3 feedback_probe.py error",
+                "description": "运行错误模式探针脚本",
+                "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02"
+              },
+              "实际返回": "Command: python3 feedback_probe.py error\nStdout: FIXTURE_SETUP_ERROR: cannot save fixture receipt\n\nStderr: (empty)\nExit Code: 20\nSignal: (none)"
+            }
+          ],
+          "实物与字段核查": {
+            "两次原生请求返回对应": true,
+            "正常回执字段与实际返回一致": true,
+            "错误模式": "提前退出20，预设错误场景未触发",
+            "DSH正常状态": null
+          },
+          "脚本副本": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/feedback_probe.py",
+          "回执数": 1,
+          "证据限制": "回执仅为期望基准；原生日志记录不等于完整模型请求。"
+        },
+        "置信依据": "原始记录确认没有追加echo；正常回执存在。错误结果明确报保存失败，脚本对应分支返回20并跳过后续字段输出。"
+      },
+      "题面有效": {
+        "判断": "对应场景可检验该项",
+        "说明": "原样执行正常模式，工具元数据及正文均明确退出0，得1分。"
+      },
+      "污染情况": {
+        "判断": "在已有提示、可见调用和文件范围内未见影响本项的答案串用；保留已知偏差",
+        "说明": "回执仅供评测者，不能充当产品输出。第二阶段和豆包补充读取由人工指定。WorkBuddy额外原生记忆写入单列，未作为判分证据；不声称所有内部上下文相同。"
+      },
+      "原判": {
+        "历史分值": 1,
+        "满分": 1,
+        "原证据复核状态": "supported_positive",
+        "原判来源": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json",
+        "字段位置": "/score_items/0/points"
+      },
+      "纳入去向": "纳入",
+      "可比较范围": "原观察项，仅限已保存原生工具结果层",
+      "理由": "原样执行正常模式，工具元数据及正文均明确退出0，得1分。",
+      "限制": "错误模式无回执，具体文件异常没有保存；只能定位到保存阶段，不能确定为何失败。",
+      "后续及停止": "按限定观察层引用，不能拼成全产品排名、稳定性或纯Harness因果结论；部分纳入项不与完整首次截断链直接混排。"
+    },
+    {
+      "比较项": "WB-FB01-02 正常关键内容完整",
+      "观察项ID": "WB-FB01-02",
+      "产品": "WorkBuddy",
+      "整理运行ID": "WorkBuddy-FB01-v100-a02",
+      "运行ID说明": "依据当前引用轮次整理；不是运行前统一发放编号。豆包FB01仅有早期阶段引用，现场目录未齐，不宣称完整归档。",
+      "题目脚本与判据版本": "1.0.0",
+      "规则冻结": {
+        "版本": "1.0.0",
+        "原判据": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/用例与判分规则.md",
+        "准备记录": [
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/checks/输入文件清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/准备清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/Codex和WorkBuddy-准备清单.json"
+        ],
+        "脚本指纹": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+        "规则当前指纹": "e9b4db439cbed4104c06912097cfb4e648356fbbd5136394a50c588f71622138",
+        "核查结论": "保存的1.0.0判据、同版脚本及跨品准备中的判据未改声明相符，支持本次固定观察目标范围的比较；当前规则指纹用于材料定位，不冒充不可改写的历史时间凭证。",
+        "边界": "不因此发布整题正式满分或五产品总榜；未声称另有全项目统一正式发布记录。"
+      },
+      "证据有效": {
+        "判断": "满足本轮限定观察项",
+        "证据等级": "E2",
+        "观察层": "第二轮原生日志中的Bash结果",
+        "原证据": [
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json",
+            "locator": "/score_items/1/points",
+            "role": "历史判分来源，不替代原始现场"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/原生会话.excerpt.json",
+            "locator": "第7、8行；按调用编号配对",
+            "role": "直接证据"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/回执/FB01-NORMAL-02a899b711dd7446.json",
+            "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+            "role": "预期基准；不能单独证明回传"
+          }
+        ],
+        "本轮实物核查": {
+          "原始入口": [
+            "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/原生会话.excerpt.json",
+            "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/工具调用与返回.json"
+          ],
+          "实际调用及返回核查": [
+            {
+              "调用行": 7,
+              "返回行": 8,
+              "call_id": "chatcmpl-tool-bb8fb7d9d9c65a9c",
+              "实际参数": {
+                "command": "python3 feedback_probe.py normal",
+                "description": "运行正常模式探针脚本",
+                "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02"
+              },
+              "实际返回": "Command: python3 feedback_probe.py normal\nStdout: RUN_ID=FB01-NORMAL-02a899b711dd7446\nROW_COUNT=37\nTOTAL_AMOUNT=12840.50\n\nStderr: (empty)\nExit Code: 0\nSignal: (none)"
+            },
+            {
+              "调用行": 10,
+              "返回行": 11,
+              "call_id": "chatcmpl-tool-b1f9466970b2386f",
+              "实际参数": {
+                "command": "python3 feedback_probe.py error",
+                "description": "运行错误模式探针脚本",
+                "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02"
+              },
+              "实际返回": "Command: python3 feedback_probe.py error\nStdout: FIXTURE_SETUP_ERROR: cannot save fixture receipt\n\nStderr: (empty)\nExit Code: 20\nSignal: (none)"
+            }
+          ],
+          "实物与字段核查": {
+            "两次原生请求返回对应": true,
+            "正常回执字段与实际返回一致": true,
+            "错误模式": "提前退出20，预设错误场景未触发",
+            "DSH正常状态": null
+          },
+          "脚本副本": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/feedback_probe.py",
+          "回执数": 1,
+          "证据限制": "回执仅为期望基准；原生日志记录不等于完整模型请求。"
+        },
+        "置信依据": "原始记录确认没有追加echo；正常回执存在。错误结果明确报保存失败，脚本对应分支返回20并跳过后续字段输出。"
+      },
+      "题面有效": {
+        "判断": "对应场景可检验该项",
+        "说明": "正常返回三个字段与本轮正常回执一致，得1分。"
+      },
+      "污染情况": {
+        "判断": "在已有提示、可见调用和文件范围内未见影响本项的答案串用；保留已知偏差",
+        "说明": "回执仅供评测者，不能充当产品输出。第二阶段和豆包补充读取由人工指定。WorkBuddy额外原生记忆写入单列，未作为判分证据；不声称所有内部上下文相同。"
+      },
+      "原判": {
+        "历史分值": 1,
+        "满分": 1,
+        "原证据复核状态": "supported_positive",
+        "原判来源": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json",
+        "字段位置": "/score_items/1/points"
+      },
+      "纳入去向": "纳入",
+      "可比较范围": "原观察项，仅限已保存原生工具结果层",
+      "理由": "正常返回三个字段与本轮正常回执一致，得1分。",
+      "限制": "错误模式无回执，具体文件异常没有保存；只能定位到保存阶段，不能确定为何失败。",
+      "后续及停止": "按限定观察层引用，不能拼成全产品排名、稳定性或纯Harness因果结论；部分纳入项不与完整首次截断链直接混排。"
+    },
+    {
+      "比较项": "WB-FB01-03 错误状态准确返回",
+      "观察项ID": "WB-FB01-03",
+      "产品": "WorkBuddy",
+      "整理运行ID": "WorkBuddy-FB01-v100-a02",
+      "运行ID说明": "依据当前引用轮次整理；不是运行前统一发放编号。豆包FB01仅有早期阶段引用，现场目录未齐，不宣称完整归档。",
+      "题目脚本与判据版本": "1.0.0",
+      "规则冻结": {
+        "版本": "1.0.0",
+        "原判据": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/用例与判分规则.md",
+        "准备记录": [
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/checks/输入文件清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/准备清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/Codex和WorkBuddy-准备清单.json"
+        ],
+        "脚本指纹": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+        "规则当前指纹": "e9b4db439cbed4104c06912097cfb4e648356fbbd5136394a50c588f71622138",
+        "核查结论": "保存的1.0.0判据、同版脚本及跨品准备中的判据未改声明相符，支持本次固定观察目标范围的比较；当前规则指纹用于材料定位，不冒充不可改写的历史时间凭证。",
+        "边界": "不因此发布整题正式满分或五产品总榜；未声称另有全项目统一正式发布记录。"
+      },
+      "证据有效": {
+        "判断": "原有缺口保留",
+        "证据等级": null,
+        "观察层": "第二轮原生日志中的Bash结果",
+        "原证据": [
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json",
+            "locator": "/score_items/2/points",
+            "role": "历史判分来源，不替代原始现场"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/原生会话.excerpt.json",
+            "locator": "第10、11行；按调用编号配对",
+            "role": "直接证据"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/feedback_probe.py",
+            "locator": "第43—57行：保存回执失败分支早于预设字段输出",
+            "role": "直接证据"
+          }
+        ],
+        "本轮实物核查": {
+          "原始入口": [
+            "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/原生会话.excerpt.json",
+            "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/工具调用与返回.json"
+          ],
+          "实际调用及返回核查": [
+            {
+              "调用行": 7,
+              "返回行": 8,
+              "call_id": "chatcmpl-tool-bb8fb7d9d9c65a9c",
+              "实际参数": {
+                "command": "python3 feedback_probe.py normal",
+                "description": "运行正常模式探针脚本",
+                "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02"
+              },
+              "实际返回": "Command: python3 feedback_probe.py normal\nStdout: RUN_ID=FB01-NORMAL-02a899b711dd7446\nROW_COUNT=37\nTOTAL_AMOUNT=12840.50\n\nStderr: (empty)\nExit Code: 0\nSignal: (none)"
+            },
+            {
+              "调用行": 10,
+              "返回行": 11,
+              "call_id": "chatcmpl-tool-b1f9466970b2386f",
+              "实际参数": {
+                "command": "python3 feedback_probe.py error",
+                "description": "运行错误模式探针脚本",
+                "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02"
+              },
+              "实际返回": "Command: python3 feedback_probe.py error\nStdout: FIXTURE_SETUP_ERROR: cannot save fixture receipt\n\nStderr: (empty)\nExit Code: 20\nSignal: (none)"
+            }
+          ],
+          "实物与字段核查": {
+            "两次原生请求返回对应": true,
+            "正常回执字段与实际返回一致": true,
+            "错误模式": "提前退出20，预设错误场景未触发",
+            "DSH正常状态": null
+          },
+          "脚本副本": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/feedback_probe.py",
+          "回执数": 1,
+          "证据限制": "回执仅为期望基准；原生日志记录不等于完整模型请求。"
+        },
+        "置信依据": "原始记录确认没有追加echo；正常回执存在。错误结果明确报保存失败，脚本对应分支返回20并跳过后续字段输出。"
+      },
+      "题面有效": {
+        "判断": "预设错误场景未成立",
+        "说明": "实际退出20，未到预设退出7的场景；本项未有效测试，留空。"
+      },
+      "污染情况": {
+        "判断": "在已有提示、可见调用和文件范围内未见影响本项的答案串用；保留已知偏差",
+        "说明": "回执仅供评测者，不能充当产品输出。第二阶段和豆包补充读取由人工指定。WorkBuddy额外原生记忆写入单列，未作为判分证据；不声称所有内部上下文相同。"
+      },
+      "原判": {
+        "历史分值": null,
+        "满分": 1,
+        "原证据复核状态": "not_effectively_tested",
+        "原判来源": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json",
+        "字段位置": "/score_items/2/points"
+      },
+      "纳入去向": "不纳入本项比较",
+      "可比较范围": "预设错误模式未有效触发；保留退出20的实际回传事实作补充观察",
+      "理由": "实际退出20，未到预设退出7的场景；本项未有效测试，留空。",
+      "限制": "错误模式无回执，具体文件异常没有保存；只能定位到保存阶段，不能确定为何失败。",
+      "后续及停止": "现有已查范围到此结束，不重跑、不要求模型重述、不给新运行回填旧场景。仅自然出现同次原始现场时另存复核。待补核验并不表示本轮继续控制浏览器取证。"
+    },
+    {
+      "比较项": "WB-FB01-04 错误关键内容完整",
+      "观察项ID": "WB-FB01-04",
+      "产品": "WorkBuddy",
+      "整理运行ID": "WorkBuddy-FB01-v100-a02",
+      "运行ID说明": "依据当前引用轮次整理；不是运行前统一发放编号。豆包FB01仅有早期阶段引用，现场目录未齐，不宣称完整归档。",
+      "题目脚本与判据版本": "1.0.0",
+      "规则冻结": {
+        "版本": "1.0.0",
+        "原判据": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/用例与判分规则.md",
+        "准备记录": [
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/checks/输入文件清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/准备清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/Codex和WorkBuddy-准备清单.json"
+        ],
+        "脚本指纹": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+        "规则当前指纹": "e9b4db439cbed4104c06912097cfb4e648356fbbd5136394a50c588f71622138",
+        "核查结论": "保存的1.0.0判据、同版脚本及跨品准备中的判据未改声明相符，支持本次固定观察目标范围的比较；当前规则指纹用于材料定位，不冒充不可改写的历史时间凭证。",
+        "边界": "不因此发布整题正式满分或五产品总榜；未声称另有全项目统一正式发布记录。"
+      },
+      "证据有效": {
+        "判断": "原有缺口保留",
+        "证据等级": null,
+        "观察层": "第二轮原生日志中的Bash结果",
+        "原证据": [
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json",
+            "locator": "/score_items/3/points",
+            "role": "历史判分来源，不替代原始现场"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/原生会话.excerpt.json",
+            "locator": "第10、11行；按调用编号配对",
+            "role": "直接证据"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/feedback_probe.py",
+            "locator": "第43—57行：保存回执失败分支早于预设字段输出",
+            "role": "直接证据"
+          }
+        ],
+        "本轮实物核查": {
+          "原始入口": [
+            "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/原生会话.excerpt.json",
+            "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/工具调用与返回.json"
+          ],
+          "实际调用及返回核查": [
+            {
+              "调用行": 7,
+              "返回行": 8,
+              "call_id": "chatcmpl-tool-bb8fb7d9d9c65a9c",
+              "实际参数": {
+                "command": "python3 feedback_probe.py normal",
+                "description": "运行正常模式探针脚本",
+                "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02"
+              },
+              "实际返回": "Command: python3 feedback_probe.py normal\nStdout: RUN_ID=FB01-NORMAL-02a899b711dd7446\nROW_COUNT=37\nTOTAL_AMOUNT=12840.50\n\nStderr: (empty)\nExit Code: 0\nSignal: (none)"
+            },
+            {
+              "调用行": 10,
+              "返回行": 11,
+              "call_id": "chatcmpl-tool-b1f9466970b2386f",
+              "实际参数": {
+                "command": "python3 feedback_probe.py error",
+                "description": "运行错误模式探针脚本",
+                "cwd": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/FB01-a02"
+              },
+              "实际返回": "Command: python3 feedback_probe.py error\nStdout: FIXTURE_SETUP_ERROR: cannot save fixture receipt\n\nStderr: (empty)\nExit Code: 20\nSignal: (none)"
+            }
+          ],
+          "实物与字段核查": {
+            "两次原生请求返回对应": true,
+            "正常回执字段与实际返回一致": true,
+            "错误模式": "提前退出20，预设错误场景未触发",
+            "DSH正常状态": null
+          },
+          "脚本副本": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/原始材料/feedback_probe.py",
+          "回执数": 1,
+          "证据限制": "回执仅为期望基准；原生日志记录不等于完整模型请求。"
+        },
+        "置信依据": "原始记录确认没有追加echo；正常回执存在。错误结果明确报保存失败，脚本对应分支返回20并跳过后续字段输出。"
+      },
+      "题面有效": {
+        "判断": "预设错误场景未成立",
+        "说明": "保存回执失败后，预设错误字段尚未输出；本项未有效测试，留空。"
+      },
+      "污染情况": {
+        "判断": "在已有提示、可见调用和文件范围内未见影响本项的答案串用；保留已知偏差",
+        "说明": "回执仅供评测者，不能充当产品输出。第二阶段和豆包补充读取由人工指定。WorkBuddy额外原生记忆写入单列，未作为判分证据；不声称所有内部上下文相同。"
+      },
+      "原判": {
+        "历史分值": null,
+        "满分": 1,
+        "原证据复核状态": "not_effectively_tested",
+        "原判来源": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/WorkBuddy-a02/核对与评分.json",
+        "字段位置": "/score_items/3/points"
+      },
+      "纳入去向": "不纳入本项比较",
+      "可比较范围": "预设错误模式未有效触发；保留退出20的实际回传事实作补充观察",
+      "理由": "保存回执失败后，预设错误字段尚未输出；本项未有效测试，留空。",
+      "限制": "错误模式无回执，具体文件异常没有保存；只能定位到保存阶段，不能确定为何失败。",
+      "后续及停止": "现有已查范围到此结束，不重跑、不要求模型重述、不给新运行回填旧场景。仅自然出现同次原始现场时另存复核。待补核验并不表示本轮继续控制浏览器取证。"
+    },
+    {
+      "比较项": "DSH-FB01-01 正常状态准确返回",
+      "观察项ID": "DSH-FB01-01",
+      "产品": "DSH",
+      "整理运行ID": "DSH-FB01-v100-a01",
+      "运行ID说明": "依据当前引用轮次整理；不是运行前统一发放编号。豆包FB01仅有早期阶段引用，现场目录未齐，不宣称完整归档。",
+      "题目脚本与判据版本": "1.0.0",
+      "规则冻结": {
+        "版本": "1.0.0",
+        "原判据": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/用例与判分规则.md",
+        "准备记录": [
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/checks/输入文件清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/准备清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/Codex和WorkBuddy-准备清单.json"
+        ],
+        "脚本指纹": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+        "规则当前指纹": "e9b4db439cbed4104c06912097cfb4e648356fbbd5136394a50c588f71622138",
+        "核查结论": "保存的1.0.0判据、同版脚本及跨品准备中的判据未改声明相符，支持本次固定观察目标范围的比较；当前规则指纹用于材料定位，不冒充不可改写的历史时间凭证。",
+        "边界": "不因此发布整题正式满分或五产品总榜；未声称另有全项目统一正式发布记录。"
+      },
+      "证据有效": {
+        "判断": "原有缺口保留",
+        "证据等级": null,
+        "观察层": "DSH原生日志tool/result",
+        "原证据": [
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/核对与评分.json",
+            "locator": "/items/0/score",
+            "role": "历史判分来源，不替代原始现场"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/session.v4.excerpt.json",
+            "locator": "第21、22、28行；按调用编号配对",
+            "role": "直接证据"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/回执/FB01-NORMAL-7c969357f569f4bc.json",
+            "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+            "role": "预期基准；不能单独证明回传"
+          }
+        ],
+        "本轮实物核查": {
+          "原始入口": [
+            "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/session.v4.excerpt.json",
+            "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/工具调用与返回.json"
+          ],
+          "实际调用及返回核查": [
+            {
+              "调用行": 21,
+              "返回行": 22,
+              "call_id": "call_00_MmLU4XyJGeFHnGRwYVha0487",
+              "实际参数": {
+                "command": "python3 feedback_probe.py normal",
+                "description": "Run feedback probe in normal mode",
+                "workdir": "/PUBLIC_PROJECT/独立测试工作区/DSH/FB01-a01"
+              },
+              "实际返回": "RUN_ID=FB01-NORMAL-7c969357f569f4bc\nROW_COUNT=37\nTOTAL_AMOUNT=12840.50\n"
+            },
+            {
+              "调用行": 27,
+              "返回行": 28,
+              "call_id": "call_00_twNt5AgabBpjVCkl1qbC3777",
+              "实际参数": {
+                "command": "python3 feedback_probe.py error",
+                "description": "Run feedback probe in error mode",
+                "workdir": "/PUBLIC_PROJECT/独立测试工作区/DSH/FB01-a01"
+              },
+              "实际返回": "[stderr]\nRUN_ID=FB01-ERROR-3bff009e276cf2e7\nERROR_CODE=E_INPUT_MISSING\nPATH=inputs/source_data.csv\n[exit code: 7]"
+            }
+          ],
+          "实物与字段核查": {
+            "两次原生请求返回对应": true,
+            "正常回执字段与实际返回一致": true,
+            "错误模式": "预设错误字段和退出7已保留",
+            "DSH正常状态": "原日志无独立数值退出0或已证明等价成功约定；不以isError=false推断"
+          },
+          "脚本副本": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/feedback_probe.py",
+          "回执数": 2,
+          "证据限制": "回执仅为期望基准；原生日志记录不等于完整模型请求。"
+        },
+        "置信依据": "正常与错误工具正文均可直接读取，错误正文显式包含7；正常正文缺明确状态且isError不能区分两次程序状态。"
+      },
+      "题面有效": {
+        "判断": "存在条件或原始记录缺口",
+        "说明": "正常结果未明确给出退出0，正常和错误结果均为isError=false；成功约定未核实，留空。"
+      },
+      "污染情况": {
+        "判断": "在已有提示、可见调用和文件范围内未见影响本项的答案串用；保留已知偏差",
+        "说明": "回执仅供评测者，不能充当产品输出。第二阶段和豆包补充读取由人工指定。WorkBuddy额外原生记忆写入单列，未作为判分证据；不声称所有内部上下文相同。"
+      },
+      "原判": {
+        "历史分值": null,
+        "满分": 1,
+        "原证据复核状态": "insufficient_evidence",
+        "原判来源": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/核对与评分.json",
+        "字段位置": "/items/0/score"
+      },
+      "纳入去向": "待核查",
+      "可比较范围": "原观察项，仅限已保存原生工具结果层",
+      "理由": "正常结果未明确给出退出0，正常和错误结果均为isError=false；成功约定未核实，留空。",
+      "限制": "正常成功状态可能存在隐式约定，但当前未验证；不把缺状态依据当作执行失败。",
+      "后续及停止": "现有已查范围到此结束，不重跑、不要求模型重述、不给新运行回填旧场景。仅自然出现同次原始现场时另存复核。待补核验并不表示本轮继续控制浏览器取证。"
+    },
+    {
+      "比较项": "DSH-FB01-02 正常关键内容完整",
+      "观察项ID": "DSH-FB01-02",
+      "产品": "DSH",
+      "整理运行ID": "DSH-FB01-v100-a01",
+      "运行ID说明": "依据当前引用轮次整理；不是运行前统一发放编号。豆包FB01仅有早期阶段引用，现场目录未齐，不宣称完整归档。",
+      "题目脚本与判据版本": "1.0.0",
+      "规则冻结": {
+        "版本": "1.0.0",
+        "原判据": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/用例与判分规则.md",
+        "准备记录": [
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/checks/输入文件清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/准备清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/Codex和WorkBuddy-准备清单.json"
+        ],
+        "脚本指纹": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+        "规则当前指纹": "e9b4db439cbed4104c06912097cfb4e648356fbbd5136394a50c588f71622138",
+        "核查结论": "保存的1.0.0判据、同版脚本及跨品准备中的判据未改声明相符，支持本次固定观察目标范围的比较；当前规则指纹用于材料定位，不冒充不可改写的历史时间凭证。",
+        "边界": "不因此发布整题正式满分或五产品总榜；未声称另有全项目统一正式发布记录。"
+      },
+      "证据有效": {
+        "判断": "满足本轮限定观察项",
+        "证据等级": "E2",
+        "观察层": "DSH原生日志tool/result",
+        "原证据": [
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/核对与评分.json",
+            "locator": "/items/1/score",
+            "role": "历史判分来源，不替代原始现场"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/session.v4.excerpt.json",
+            "locator": "第21、22行；按调用编号配对",
+            "role": "直接证据"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/回执/FB01-NORMAL-7c969357f569f4bc.json",
+            "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+            "role": "预期基准；不能单独证明回传"
+          }
+        ],
+        "本轮实物核查": {
+          "原始入口": [
+            "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/session.v4.excerpt.json",
+            "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/工具调用与返回.json"
+          ],
+          "实际调用及返回核查": [
+            {
+              "调用行": 21,
+              "返回行": 22,
+              "call_id": "call_00_MmLU4XyJGeFHnGRwYVha0487",
+              "实际参数": {
+                "command": "python3 feedback_probe.py normal",
+                "description": "Run feedback probe in normal mode",
+                "workdir": "/PUBLIC_PROJECT/独立测试工作区/DSH/FB01-a01"
+              },
+              "实际返回": "RUN_ID=FB01-NORMAL-7c969357f569f4bc\nROW_COUNT=37\nTOTAL_AMOUNT=12840.50\n"
+            },
+            {
+              "调用行": 27,
+              "返回行": 28,
+              "call_id": "call_00_twNt5AgabBpjVCkl1qbC3777",
+              "实际参数": {
+                "command": "python3 feedback_probe.py error",
+                "description": "Run feedback probe in error mode",
+                "workdir": "/PUBLIC_PROJECT/独立测试工作区/DSH/FB01-a01"
+              },
+              "实际返回": "[stderr]\nRUN_ID=FB01-ERROR-3bff009e276cf2e7\nERROR_CODE=E_INPUT_MISSING\nPATH=inputs/source_data.csv\n[exit code: 7]"
+            }
+          ],
+          "实物与字段核查": {
+            "两次原生请求返回对应": true,
+            "正常回执字段与实际返回一致": true,
+            "错误模式": "预设错误字段和退出7已保留",
+            "DSH正常状态": "原日志无独立数值退出0或已证明等价成功约定；不以isError=false推断"
+          },
+          "脚本副本": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/feedback_probe.py",
+          "回执数": 2,
+          "证据限制": "回执仅为期望基准；原生日志记录不等于完整模型请求。"
+        },
+        "置信依据": "正常与错误工具正文均可直接读取，错误正文显式包含7；正常正文缺明确状态且isError不能区分两次程序状态。"
+      },
+      "题面有效": {
+        "判断": "对应场景可检验该项",
+        "说明": "正常RUN_ID、37、12840.50与回执一致，得1分。"
+      },
+      "污染情况": {
+        "判断": "在已有提示、可见调用和文件范围内未见影响本项的答案串用；保留已知偏差",
+        "说明": "回执仅供评测者，不能充当产品输出。第二阶段和豆包补充读取由人工指定。WorkBuddy额外原生记忆写入单列，未作为判分证据；不声称所有内部上下文相同。"
+      },
+      "原判": {
+        "历史分值": 1,
+        "满分": 1,
+        "原证据复核状态": "supported_positive",
+        "原判来源": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/核对与评分.json",
+        "字段位置": "/items/1/score"
+      },
+      "纳入去向": "纳入",
+      "可比较范围": "原观察项，仅限已保存原生工具结果层",
+      "理由": "正常RUN_ID、37、12840.50与回执一致，得1分。",
+      "限制": "正常成功状态可能存在隐式约定，但当前未验证；不把缺状态依据当作执行失败。",
+      "后续及停止": "按限定观察层引用，不能拼成全产品排名、稳定性或纯Harness因果结论；部分纳入项不与完整首次截断链直接混排。"
+    },
+    {
+      "比较项": "DSH-FB01-03 错误状态准确返回",
+      "观察项ID": "DSH-FB01-03",
+      "产品": "DSH",
+      "整理运行ID": "DSH-FB01-v100-a01",
+      "运行ID说明": "依据当前引用轮次整理；不是运行前统一发放编号。豆包FB01仅有早期阶段引用，现场目录未齐，不宣称完整归档。",
+      "题目脚本与判据版本": "1.0.0",
+      "规则冻结": {
+        "版本": "1.0.0",
+        "原判据": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/用例与判分规则.md",
+        "准备记录": [
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/checks/输入文件清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/准备清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/Codex和WorkBuddy-准备清单.json"
+        ],
+        "脚本指纹": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+        "规则当前指纹": "e9b4db439cbed4104c06912097cfb4e648356fbbd5136394a50c588f71622138",
+        "核查结论": "保存的1.0.0判据、同版脚本及跨品准备中的判据未改声明相符，支持本次固定观察目标范围的比较；当前规则指纹用于材料定位，不冒充不可改写的历史时间凭证。",
+        "边界": "不因此发布整题正式满分或五产品总榜；未声称另有全项目统一正式发布记录。"
+      },
+      "证据有效": {
+        "判断": "满足本轮限定观察项",
+        "证据等级": "E2",
+        "观察层": "DSH原生日志tool/result",
+        "原证据": [
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/核对与评分.json",
+            "locator": "/items/2/score",
+            "role": "历史判分来源，不替代原始现场"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/session.v4.excerpt.json",
+            "locator": "第27、28行；按调用编号配对",
+            "role": "直接证据"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/回执/FB01-ERROR-3bff009e276cf2e7.json",
+            "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+            "role": "预期基准；不能单独证明回传"
+          }
+        ],
+        "本轮实物核查": {
+          "原始入口": [
+            "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/session.v4.excerpt.json",
+            "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/工具调用与返回.json"
+          ],
+          "实际调用及返回核查": [
+            {
+              "调用行": 21,
+              "返回行": 22,
+              "call_id": "call_00_MmLU4XyJGeFHnGRwYVha0487",
+              "实际参数": {
+                "command": "python3 feedback_probe.py normal",
+                "description": "Run feedback probe in normal mode",
+                "workdir": "/PUBLIC_PROJECT/独立测试工作区/DSH/FB01-a01"
+              },
+              "实际返回": "RUN_ID=FB01-NORMAL-7c969357f569f4bc\nROW_COUNT=37\nTOTAL_AMOUNT=12840.50\n"
+            },
+            {
+              "调用行": 27,
+              "返回行": 28,
+              "call_id": "call_00_twNt5AgabBpjVCkl1qbC3777",
+              "实际参数": {
+                "command": "python3 feedback_probe.py error",
+                "description": "Run feedback probe in error mode",
+                "workdir": "/PUBLIC_PROJECT/独立测试工作区/DSH/FB01-a01"
+              },
+              "实际返回": "[stderr]\nRUN_ID=FB01-ERROR-3bff009e276cf2e7\nERROR_CODE=E_INPUT_MISSING\nPATH=inputs/source_data.csv\n[exit code: 7]"
+            }
+          ],
+          "实物与字段核查": {
+            "两次原生请求返回对应": true,
+            "正常回执字段与实际返回一致": true,
+            "错误模式": "预设错误字段和退出7已保留",
+            "DSH正常状态": "原日志无独立数值退出0或已证明等价成功约定；不以isError=false推断"
+          },
+          "脚本副本": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/feedback_probe.py",
+          "回执数": 2,
+          "证据限制": "回执仅为期望基准；原生日志记录不等于完整模型请求。"
+        },
+        "置信依据": "正常与错误工具正文均可直接读取，错误正文显式包含7；正常正文缺明确状态且isError不能区分两次程序状态。"
+      },
+      "题面有效": {
+        "判断": "对应场景可检验该项",
+        "说明": "错误结果正文明确保留[exit code: 7]，得1分。"
+      },
+      "污染情况": {
+        "判断": "在已有提示、可见调用和文件范围内未见影响本项的答案串用；保留已知偏差",
+        "说明": "回执仅供评测者，不能充当产品输出。第二阶段和豆包补充读取由人工指定。WorkBuddy额外原生记忆写入单列，未作为判分证据；不声称所有内部上下文相同。"
+      },
+      "原判": {
+        "历史分值": 1,
+        "满分": 1,
+        "原证据复核状态": "supported_positive",
+        "原判来源": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/核对与评分.json",
+        "字段位置": "/items/2/score"
+      },
+      "纳入去向": "纳入",
+      "可比较范围": "原观察项，仅限已保存原生工具结果层",
+      "理由": "错误结果正文明确保留[exit code: 7]，得1分。",
+      "限制": "正常成功状态可能存在隐式约定，但当前未验证；不把缺状态依据当作执行失败。",
+      "后续及停止": "按限定观察层引用，不能拼成全产品排名、稳定性或纯Harness因果结论；部分纳入项不与完整首次截断链直接混排。"
+    },
+    {
+      "比较项": "DSH-FB01-04 错误关键内容完整",
+      "观察项ID": "DSH-FB01-04",
+      "产品": "DSH",
+      "整理运行ID": "DSH-FB01-v100-a01",
+      "运行ID说明": "依据当前引用轮次整理；不是运行前统一发放编号。豆包FB01仅有早期阶段引用，现场目录未齐，不宣称完整归档。",
+      "题目脚本与判据版本": "1.0.0",
+      "规则冻结": {
+        "版本": "1.0.0",
+        "原判据": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/用例与判分规则.md",
+        "准备记录": [
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/checks/输入文件清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/准备清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/Codex和WorkBuddy-准备清单.json"
+        ],
+        "脚本指纹": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+        "规则当前指纹": "e9b4db439cbed4104c06912097cfb4e648356fbbd5136394a50c588f71622138",
+        "核查结论": "保存的1.0.0判据、同版脚本及跨品准备中的判据未改声明相符，支持本次固定观察目标范围的比较；当前规则指纹用于材料定位，不冒充不可改写的历史时间凭证。",
+        "边界": "不因此发布整题正式满分或五产品总榜；未声称另有全项目统一正式发布记录。"
+      },
+      "证据有效": {
+        "判断": "满足本轮限定观察项",
+        "证据等级": "E2",
+        "观察层": "DSH原生日志tool/result",
+        "原证据": [
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/核对与评分.json",
+            "locator": "/items/3/score",
+            "role": "历史判分来源，不替代原始现场"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/session.v4.excerpt.json",
+            "locator": "第27、28行；按调用编号配对",
+            "role": "直接证据"
+          },
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/回执/FB01-ERROR-3bff009e276cf2e7.json",
+            "locator": "run_id、expected_stdout/expected_stderr、expected_exit_code及script_sha256",
+            "role": "预期基准；不能单独证明回传"
+          }
+        ],
+        "本轮实物核查": {
+          "原始入口": [
+            "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/session.v4.excerpt.json",
+            "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/工具调用与返回.json"
+          ],
+          "实际调用及返回核查": [
+            {
+              "调用行": 21,
+              "返回行": 22,
+              "call_id": "call_00_MmLU4XyJGeFHnGRwYVha0487",
+              "实际参数": {
+                "command": "python3 feedback_probe.py normal",
+                "description": "Run feedback probe in normal mode",
+                "workdir": "/PUBLIC_PROJECT/独立测试工作区/DSH/FB01-a01"
+              },
+              "实际返回": "RUN_ID=FB01-NORMAL-7c969357f569f4bc\nROW_COUNT=37\nTOTAL_AMOUNT=12840.50\n"
+            },
+            {
+              "调用行": 27,
+              "返回行": 28,
+              "call_id": "call_00_twNt5AgabBpjVCkl1qbC3777",
+              "实际参数": {
+                "command": "python3 feedback_probe.py error",
+                "description": "Run feedback probe in error mode",
+                "workdir": "/PUBLIC_PROJECT/独立测试工作区/DSH/FB01-a01"
+              },
+              "实际返回": "[stderr]\nRUN_ID=FB01-ERROR-3bff009e276cf2e7\nERROR_CODE=E_INPUT_MISSING\nPATH=inputs/source_data.csv\n[exit code: 7]"
+            }
+          ],
+          "实物与字段核查": {
+            "两次原生请求返回对应": true,
+            "正常回执字段与实际返回一致": true,
+            "错误模式": "预设错误字段和退出7已保留",
+            "DSH正常状态": "原日志无独立数值退出0或已证明等价成功约定；不以isError=false推断"
+          },
+          "脚本副本": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/原始材料/feedback_probe.py",
+          "回执数": 2,
+          "证据限制": "回执仅为期望基准；原生日志记录不等于完整模型请求。"
+        },
+        "置信依据": "正常与错误工具正文均可直接读取，错误正文显式包含7；正常正文缺明确状态且isError不能区分两次程序状态。"
+      },
+      "题面有效": {
+        "判断": "对应场景可检验该项",
+        "说明": "错误RUN_ID、E_INPUT_MISSING及路径与回执一致，得1分。"
+      },
+      "污染情况": {
+        "判断": "在已有提示、可见调用和文件范围内未见影响本项的答案串用；保留已知偏差",
+        "说明": "回执仅供评测者，不能充当产品输出。第二阶段和豆包补充读取由人工指定。WorkBuddy额外原生记忆写入单列，未作为判分证据；不声称所有内部上下文相同。"
+      },
+      "原判": {
+        "历史分值": 1,
+        "满分": 1,
+        "原证据复核状态": "supported_positive",
+        "原判来源": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/DSH-a01/核对与评分.json",
+        "字段位置": "/items/3/score"
+      },
+      "纳入去向": "纳入",
+      "可比较范围": "原观察项，仅限已保存原生工具结果层",
+      "理由": "错误RUN_ID、E_INPUT_MISSING及路径与回执一致，得1分。",
+      "限制": "正常成功状态可能存在隐式约定，但当前未验证；不把缺状态依据当作执行失败。",
+      "后续及停止": "按限定观察层引用，不能拼成全产品排名、稳定性或纯Harness因果结论；部分纳入项不与完整首次截断链直接混排。"
+    },
+    {
+      "比较项": "YB-FB01-01 正常状态准确返回",
+      "观察项ID": "YB-FB01-01",
+      "产品": "元宝专家模式",
+      "整理运行ID": "元宝专家模式-FB01-v100-a02",
+      "运行ID说明": "依据当前引用轮次整理；不是运行前统一发放编号。豆包FB01仅有早期阶段引用，现场目录未齐，不宣称完整归档。",
+      "题目脚本与判据版本": "1.0.0",
+      "规则冻结": {
+        "版本": "1.0.0",
+        "原判据": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/用例与判分规则.md",
+        "准备记录": [
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/checks/输入文件清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/准备清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/Codex和WorkBuddy-准备清单.json"
+        ],
+        "脚本指纹": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+        "规则当前指纹": "e9b4db439cbed4104c06912097cfb4e648356fbbd5136394a50c588f71622138",
+        "核查结论": "保存的1.0.0判据、同版脚本及跨品准备中的判据未改声明相符，支持本次固定观察目标范围的比较；当前规则指纹用于材料定位，不冒充不可改写的历史时间凭证。",
+        "边界": "不因此发布整题正式满分或五产品总榜；未声称另有全项目统一正式发布记录。"
+      },
+      "证据有效": {
+        "判断": "原有缺口保留",
+        "证据等级": null,
+        "观察层": "已保存截图/分享页观察及模型最终回复，缺少独立工具结果正文",
+        "原证据": [
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json",
+            "locator": "/scores/0/score",
+            "role": "历史判分来源，不替代原始现场"
+          },
+          {
+            "path": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/evidence/用户提供-网页展开截图.png",
+            "locator": "三条bash卡片：一条准备、两条执行；没有独立返回正文",
+            "role": "仅证明部分执行过程"
+          }
+        ],
+        "本轮实物核查": null,
+        "置信依据": "当前归档能支持命令或回复声明，但不能对实际状态、关键字段、首次入口或全文作独立核对。"
+      },
+      "题面有效": {
+        "判断": "存在条件或原始记录缺口",
+        "说明": "本项1分无法判断，保持留空；不是0分或满分。"
+      },
+      "污染情况": {
+        "判断": "在已有提示、可见调用和文件范围内未见影响本项的答案串用；保留已知偏差",
+        "说明": "回执仅供评测者，不能充当产品输出。第二阶段和豆包补充读取由人工指定。WorkBuddy额外原生记忆写入单列，未作为判分证据；不声称所有内部上下文相同。"
+      },
+      "原判": {
+        "历史分值": null,
+        "满分": 1,
+        "原证据复核状态": "insufficient_evidence",
+        "原判来源": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json",
+        "字段位置": "/scores/0/score"
+      },
+      "纳入去向": "待核查",
+      "可比较范围": "原观察项，仅限已保存原生工具结果层",
+      "理由": "本项1分无法判断，保持留空；不是0分或满分。",
+      "限制": "无法判断针对当前证据范围，不证明产品不具备相应能力，也不证明所有位置都没有日志。",
+      "后续及停止": "现有已查范围到此结束，不重跑、不要求模型重述、不给新运行回填旧场景。仅自然出现同次原始现场时另存复核。待补核验并不表示本轮继续控制浏览器取证。"
+    },
+    {
+      "比较项": "YB-FB01-02 正常关键内容完整",
+      "观察项ID": "YB-FB01-02",
+      "产品": "元宝专家模式",
+      "整理运行ID": "元宝专家模式-FB01-v100-a02",
+      "运行ID说明": "依据当前引用轮次整理；不是运行前统一发放编号。豆包FB01仅有早期阶段引用，现场目录未齐，不宣称完整归档。",
+      "题目脚本与判据版本": "1.0.0",
+      "规则冻结": {
+        "版本": "1.0.0",
+        "原判据": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/用例与判分规则.md",
+        "准备记录": [
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/checks/输入文件清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/准备清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/Codex和WorkBuddy-准备清单.json"
+        ],
+        "脚本指纹": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+        "规则当前指纹": "e9b4db439cbed4104c06912097cfb4e648356fbbd5136394a50c588f71622138",
+        "核查结论": "保存的1.0.0判据、同版脚本及跨品准备中的判据未改声明相符，支持本次固定观察目标范围的比较；当前规则指纹用于材料定位，不冒充不可改写的历史时间凭证。",
+        "边界": "不因此发布整题正式满分或五产品总榜；未声称另有全项目统一正式发布记录。"
+      },
+      "证据有效": {
+        "判断": "原有缺口保留",
+        "证据等级": null,
+        "观察层": "已保存截图/分享页观察及模型最终回复，缺少独立工具结果正文",
+        "原证据": [
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json",
+            "locator": "/scores/1/score",
+            "role": "历史判分来源，不替代原始现场"
+          },
+          {
+            "path": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/evidence/用户提供-网页展开截图.png",
+            "locator": "三条bash卡片：一条准备、两条执行；没有独立返回正文",
+            "role": "仅证明部分执行过程"
+          }
+        ],
+        "本轮实物核查": null,
+        "置信依据": "当前归档能支持命令或回复声明，但不能对实际状态、关键字段、首次入口或全文作独立核对。"
+      },
+      "题面有效": {
+        "判断": "存在条件或原始记录缺口",
+        "说明": "本项1分无法判断，保持留空；不是0分或满分。"
+      },
+      "污染情况": {
+        "判断": "在已有提示、可见调用和文件范围内未见影响本项的答案串用；保留已知偏差",
+        "说明": "回执仅供评测者，不能充当产品输出。第二阶段和豆包补充读取由人工指定。WorkBuddy额外原生记忆写入单列，未作为判分证据；不声称所有内部上下文相同。"
+      },
+      "原判": {
+        "历史分值": null,
+        "满分": 1,
+        "原证据复核状态": "insufficient_evidence",
+        "原判来源": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json",
+        "字段位置": "/scores/1/score"
+      },
+      "纳入去向": "待核查",
+      "可比较范围": "原观察项，仅限已保存原生工具结果层",
+      "理由": "本项1分无法判断，保持留空；不是0分或满分。",
+      "限制": "无法判断针对当前证据范围，不证明产品不具备相应能力，也不证明所有位置都没有日志。",
+      "后续及停止": "现有已查范围到此结束，不重跑、不要求模型重述、不给新运行回填旧场景。仅自然出现同次原始现场时另存复核。待补核验并不表示本轮继续控制浏览器取证。"
+    },
+    {
+      "比较项": "YB-FB01-03 错误状态准确返回",
+      "观察项ID": "YB-FB01-03",
+      "产品": "元宝专家模式",
+      "整理运行ID": "元宝专家模式-FB01-v100-a02",
+      "运行ID说明": "依据当前引用轮次整理；不是运行前统一发放编号。豆包FB01仅有早期阶段引用，现场目录未齐，不宣称完整归档。",
+      "题目脚本与判据版本": "1.0.0",
+      "规则冻结": {
+        "版本": "1.0.0",
+        "原判据": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/用例与判分规则.md",
+        "准备记录": [
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/checks/输入文件清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/准备清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/Codex和WorkBuddy-准备清单.json"
+        ],
+        "脚本指纹": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+        "规则当前指纹": "e9b4db439cbed4104c06912097cfb4e648356fbbd5136394a50c588f71622138",
+        "核查结论": "保存的1.0.0判据、同版脚本及跨品准备中的判据未改声明相符，支持本次固定观察目标范围的比较；当前规则指纹用于材料定位，不冒充不可改写的历史时间凭证。",
+        "边界": "不因此发布整题正式满分或五产品总榜；未声称另有全项目统一正式发布记录。"
+      },
+      "证据有效": {
+        "判断": "原有缺口保留",
+        "证据等级": null,
+        "观察层": "已保存截图/分享页观察及模型最终回复，缺少独立工具结果正文",
+        "原证据": [
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json",
+            "locator": "/scores/2/score",
+            "role": "历史判分来源，不替代原始现场"
+          },
+          {
+            "path": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/evidence/用户提供-网页展开截图.png",
+            "locator": "三条bash卡片：一条准备、两条执行；没有独立返回正文",
+            "role": "仅证明部分执行过程"
+          }
+        ],
+        "本轮实物核查": null,
+        "置信依据": "当前归档能支持命令或回复声明，但不能对实际状态、关键字段、首次入口或全文作独立核对。"
+      },
+      "题面有效": {
+        "判断": "存在条件或原始记录缺口",
+        "说明": "本项1分无法判断，保持留空；不是0分或满分。"
+      },
+      "污染情况": {
+        "判断": "在已有提示、可见调用和文件范围内未见影响本项的答案串用；保留已知偏差",
+        "说明": "回执仅供评测者，不能充当产品输出。第二阶段和豆包补充读取由人工指定。WorkBuddy额外原生记忆写入单列，未作为判分证据；不声称所有内部上下文相同。"
+      },
+      "原判": {
+        "历史分值": null,
+        "满分": 1,
+        "原证据复核状态": "insufficient_evidence",
+        "原判来源": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json",
+        "字段位置": "/scores/2/score"
+      },
+      "纳入去向": "待核查",
+      "可比较范围": "原观察项，仅限已保存原生工具结果层",
+      "理由": "本项1分无法判断，保持留空；不是0分或满分。",
+      "限制": "无法判断针对当前证据范围，不证明产品不具备相应能力，也不证明所有位置都没有日志。",
+      "后续及停止": "现有已查范围到此结束，不重跑、不要求模型重述、不给新运行回填旧场景。仅自然出现同次原始现场时另存复核。待补核验并不表示本轮继续控制浏览器取证。"
+    },
+    {
+      "比较项": "YB-FB01-04 错误关键内容完整",
+      "观察项ID": "YB-FB01-04",
+      "产品": "元宝专家模式",
+      "整理运行ID": "元宝专家模式-FB01-v100-a02",
+      "运行ID说明": "依据当前引用轮次整理；不是运行前统一发放编号。豆包FB01仅有早期阶段引用，现场目录未齐，不宣称完整归档。",
+      "题目脚本与判据版本": "1.0.0",
+      "规则冻结": {
+        "版本": "1.0.0",
+        "原判据": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/用例与判分规则.md",
+        "准备记录": [
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/checks/输入文件清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/准备清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/Codex和WorkBuddy-准备清单.json"
+        ],
+        "脚本指纹": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+        "规则当前指纹": "e9b4db439cbed4104c06912097cfb4e648356fbbd5136394a50c588f71622138",
+        "核查结论": "保存的1.0.0判据、同版脚本及跨品准备中的判据未改声明相符，支持本次固定观察目标范围的比较；当前规则指纹用于材料定位，不冒充不可改写的历史时间凭证。",
+        "边界": "不因此发布整题正式满分或五产品总榜；未声称另有全项目统一正式发布记录。"
+      },
+      "证据有效": {
+        "判断": "原有缺口保留",
+        "证据等级": null,
+        "观察层": "已保存截图/分享页观察及模型最终回复，缺少独立工具结果正文",
+        "原证据": [
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json",
+            "locator": "/scores/3/score",
+            "role": "历史判分来源，不替代原始现场"
+          },
+          {
+            "path": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/evidence/用户提供-网页展开截图.png",
+            "locator": "三条bash卡片：一条准备、两条执行；没有独立返回正文",
+            "role": "仅证明部分执行过程"
+          }
+        ],
+        "本轮实物核查": null,
+        "置信依据": "当前归档能支持命令或回复声明，但不能对实际状态、关键字段、首次入口或全文作独立核对。"
+      },
+      "题面有效": {
+        "判断": "存在条件或原始记录缺口",
+        "说明": "本项1分无法判断，保持留空；不是0分或满分。"
+      },
+      "污染情况": {
+        "判断": "在已有提示、可见调用和文件范围内未见影响本项的答案串用；保留已知偏差",
+        "说明": "回执仅供评测者，不能充当产品输出。第二阶段和豆包补充读取由人工指定。WorkBuddy额外原生记忆写入单列，未作为判分证据；不声称所有内部上下文相同。"
+      },
+      "原判": {
+        "历史分值": null,
+        "满分": 1,
+        "原证据复核状态": "insufficient_evidence",
+        "原判来源": "evidence/维度评测/01-信息回传/FB01-基础回传/运行记录/元宝-a02/命令核对与评分状态.json",
+        "字段位置": "/scores/3/score"
+      },
+      "纳入去向": "待核查",
+      "可比较范围": "原观察项，仅限已保存原生工具结果层",
+      "理由": "本项1分无法判断，保持留空；不是0分或满分。",
+      "限制": "无法判断针对当前证据范围，不证明产品不具备相应能力，也不证明所有位置都没有日志。",
+      "后续及停止": "现有已查范围到此结束，不重跑、不要求模型重述、不给新运行回填旧场景。仅自然出现同次原始现场时另存复核。待补核验并不表示本轮继续控制浏览器取证。"
+    },
+    {
+      "比较项": "DB-FB01-01 正常状态准确返回",
+      "观察项ID": "DB-FB01-01",
+      "产品": "豆包办公",
+      "整理运行ID": "豆包办公-FB01-v100-a01",
+      "运行ID说明": "依据当前引用轮次整理；不是运行前统一发放编号。豆包FB01仅有早期阶段引用，现场目录未齐，不宣称完整归档。",
+      "题目脚本与判据版本": "1.0.0",
+      "规则冻结": {
+        "版本": "1.0.0",
+        "原判据": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/用例与判分规则.md",
+        "准备记录": [
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/checks/输入文件清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/准备清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/Codex和WorkBuddy-准备清单.json"
+        ],
+        "脚本指纹": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+        "规则当前指纹": "e9b4db439cbed4104c06912097cfb4e648356fbbd5136394a50c588f71622138",
+        "核查结论": "保存的1.0.0判据、同版脚本及跨品准备中的判据未改声明相符，支持本次固定观察目标范围的比较；当前规则指纹用于材料定位，不冒充不可改写的历史时间凭证。",
+        "边界": "不因此发布整题正式满分或五产品总榜；未声称另有全项目统一正式发布记录。"
+      },
+      "证据有效": {
+        "判断": "原有缺口保留",
+        "证据等级": null,
+        "观察层": "早先界面现场的阶段说明；本轮无完整归档现场",
+        "原证据": [
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/README.snapshot.txt",
+            "locator": "段落“豆包目前确认3分、正常状态1分待核实”",
+            "role": "历史判分来源，不替代原始现场"
+          }
+        ],
+        "本轮实物核查": null,
+        "置信依据": "保留的是早先现场观察的汇总说明，没有本轮可独立检查的原始工具返回；所以不能给这三条正向判断写“证据充分”。"
+      },
+      "题面有效": {
+        "判断": "存在条件或原始记录缺口",
+        "说明": "正常状态1分原先留空，继续无法判断。"
+      },
+      "污染情况": {
+        "判断": "在已有提示、可见调用和文件范围内未见影响本项的答案串用；保留已知偏差",
+        "说明": "回执仅供评测者，不能充当产品输出。第二阶段和豆包补充读取由人工指定。WorkBuddy额外原生记忆写入单列，未作为判分证据；不声称所有内部上下文相同。"
+      },
+      "原判": {
+        "历史分值": null,
+        "满分": 1,
+        "原证据复核状态": "insufficient_evidence",
+        "原判来源": "evidence/维度评测/01-信息回传/FB01-基础回传/README.snapshot.txt",
+        "字段位置": null
+      },
+      "纳入去向": "待核查",
+      "可比较范围": "原观察项，仅限已保存原生工具结果层",
+      "理由": "正常状态1分原先留空，继续无法判断。",
+      "限制": "不新开浏览器、不重跑来补齐数字；历史3分保留，但正向结论的证据归档未完成。",
+      "后续及停止": "现有已查范围到此结束，不重跑、不要求模型重述、不给新运行回填旧场景。仅自然出现同次原始现场时另存复核。待补核验并不表示本轮继续控制浏览器取证。"
+    },
+    {
+      "比较项": "DB-FB01-02 正常关键内容完整",
+      "观察项ID": "DB-FB01-02",
+      "产品": "豆包办公",
+      "整理运行ID": "豆包办公-FB01-v100-a01",
+      "运行ID说明": "依据当前引用轮次整理；不是运行前统一发放编号。豆包FB01仅有早期阶段引用，现场目录未齐，不宣称完整归档。",
+      "题目脚本与判据版本": "1.0.0",
+      "规则冻结": {
+        "版本": "1.0.0",
+        "原判据": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/用例与判分规则.md",
+        "准备记录": [
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/checks/输入文件清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/准备清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/Codex和WorkBuddy-准备清单.json"
+        ],
+        "脚本指纹": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+        "规则当前指纹": "e9b4db439cbed4104c06912097cfb4e648356fbbd5136394a50c588f71622138",
+        "核查结论": "保存的1.0.0判据、同版脚本及跨品准备中的判据未改声明相符，支持本次固定观察目标范围的比较；当前规则指纹用于材料定位，不冒充不可改写的历史时间凭证。",
+        "边界": "不因此发布整题正式满分或五产品总榜；未声称另有全项目统一正式发布记录。"
+      },
+      "证据有效": {
+        "判断": "原有缺口保留",
+        "证据等级": null,
+        "观察层": "早先界面现场的阶段说明；本轮无完整归档现场",
+        "原证据": [
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/README.snapshot.txt",
+            "locator": "段落“豆包目前确认3分、正常状态1分待核实”",
+            "role": "历史判分来源，不替代原始现场"
+          }
+        ],
+        "本轮实物核查": null,
+        "置信依据": "保留的是早先现场观察的汇总说明，没有本轮可独立检查的原始工具返回；所以不能给这三条正向判断写“证据充分”。"
+      },
+      "题面有效": {
+        "判断": "存在条件或原始记录缺口",
+        "说明": "历史阶段记录将正常字段项记为1分，原始工具正文待补，暂不能独立复核这项正向结论。"
+      },
+      "污染情况": {
+        "判断": "在已有提示、可见调用和文件范围内未见影响本项的答案串用；保留已知偏差",
+        "说明": "回执仅供评测者，不能充当产品输出。第二阶段和豆包补充读取由人工指定。WorkBuddy额外原生记忆写入单列，未作为判分证据；不声称所有内部上下文相同。"
+      },
+      "原判": {
+        "历史分值": 1,
+        "满分": 1,
+        "原证据复核状态": "positive_evidence_pending",
+        "原判来源": "evidence/维度评测/01-信息回传/FB01-基础回传/README.snapshot.txt",
+        "字段位置": null
+      },
+      "纳入去向": "待核查",
+      "可比较范围": "原观察项，仅限已保存原生工具结果层",
+      "理由": "历史阶段记录将正常字段项记为1分，原始工具正文待补，暂不能独立复核这项正向结论。",
+      "限制": "不新开浏览器、不重跑来补齐数字；历史3分保留，但正向结论的证据归档未完成。",
+      "后续及停止": "现有已查范围到此结束，不重跑、不要求模型重述、不给新运行回填旧场景。仅自然出现同次原始现场时另存复核。待补核验并不表示本轮继续控制浏览器取证。"
+    },
+    {
+      "比较项": "DB-FB01-03 错误状态准确返回",
+      "观察项ID": "DB-FB01-03",
+      "产品": "豆包办公",
+      "整理运行ID": "豆包办公-FB01-v100-a01",
+      "运行ID说明": "依据当前引用轮次整理；不是运行前统一发放编号。豆包FB01仅有早期阶段引用，现场目录未齐，不宣称完整归档。",
+      "题目脚本与判据版本": "1.0.0",
+      "规则冻结": {
+        "版本": "1.0.0",
+        "原判据": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/用例与判分规则.md",
+        "准备记录": [
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/checks/输入文件清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/准备清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/Codex和WorkBuddy-准备清单.json"
+        ],
+        "脚本指纹": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+        "规则当前指纹": "e9b4db439cbed4104c06912097cfb4e648356fbbd5136394a50c588f71622138",
+        "核查结论": "保存的1.0.0判据、同版脚本及跨品准备中的判据未改声明相符，支持本次固定观察目标范围的比较；当前规则指纹用于材料定位，不冒充不可改写的历史时间凭证。",
+        "边界": "不因此发布整题正式满分或五产品总榜；未声称另有全项目统一正式发布记录。"
+      },
+      "证据有效": {
+        "判断": "原有缺口保留",
+        "证据等级": null,
+        "观察层": "早先界面现场的阶段说明；本轮无完整归档现场",
+        "原证据": [
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/README.snapshot.txt",
+            "locator": "段落“豆包目前确认3分、正常状态1分待核实”",
+            "role": "历史判分来源，不替代原始现场"
+          }
+        ],
+        "本轮实物核查": null,
+        "置信依据": "保留的是早先现场观察的汇总说明，没有本轮可独立检查的原始工具返回；所以不能给这三条正向判断写“证据充分”。"
+      },
+      "题面有效": {
+        "判断": "存在条件或原始记录缺口",
+        "说明": "历史阶段记录将错误状态项记为1分，原始工具正文待补，暂不能独立复核这项正向结论。"
+      },
+      "污染情况": {
+        "判断": "在已有提示、可见调用和文件范围内未见影响本项的答案串用；保留已知偏差",
+        "说明": "回执仅供评测者，不能充当产品输出。第二阶段和豆包补充读取由人工指定。WorkBuddy额外原生记忆写入单列，未作为判分证据；不声称所有内部上下文相同。"
+      },
+      "原判": {
+        "历史分值": 1,
+        "满分": 1,
+        "原证据复核状态": "positive_evidence_pending",
+        "原判来源": "evidence/维度评测/01-信息回传/FB01-基础回传/README.snapshot.txt",
+        "字段位置": null
+      },
+      "纳入去向": "待核查",
+      "可比较范围": "原观察项，仅限已保存原生工具结果层",
+      "理由": "历史阶段记录将错误状态项记为1分，原始工具正文待补，暂不能独立复核这项正向结论。",
+      "限制": "不新开浏览器、不重跑来补齐数字；历史3分保留，但正向结论的证据归档未完成。",
+      "后续及停止": "现有已查范围到此结束，不重跑、不要求模型重述、不给新运行回填旧场景。仅自然出现同次原始现场时另存复核。待补核验并不表示本轮继续控制浏览器取证。"
+    },
+    {
+      "比较项": "DB-FB01-04 错误关键内容完整",
+      "观察项ID": "DB-FB01-04",
+      "产品": "豆包办公",
+      "整理运行ID": "豆包办公-FB01-v100-a01",
+      "运行ID说明": "依据当前引用轮次整理；不是运行前统一发放编号。豆包FB01仅有早期阶段引用，现场目录未齐，不宣称完整归档。",
+      "题目脚本与判据版本": "1.0.0",
+      "规则冻结": {
+        "版本": "1.0.0",
+        "原判据": "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/用例与判分规则.md",
+        "准备记录": [
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/checks/输入文件清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/准备清单.json",
+          "LOCAL_ONLY: 维度评测/01-信息回传/FB01-基础回传/跨产品试测/Codex和WorkBuddy-准备清单.json"
+        ],
+        "脚本指纹": "7c4cfe27067458fe113b0725322e51e91993ea7b0634d8af3973aec873f4b47a",
+        "规则当前指纹": "e9b4db439cbed4104c06912097cfb4e648356fbbd5136394a50c588f71622138",
+        "核查结论": "保存的1.0.0判据、同版脚本及跨品准备中的判据未改声明相符，支持本次固定观察目标范围的比较；当前规则指纹用于材料定位，不冒充不可改写的历史时间凭证。",
+        "边界": "不因此发布整题正式满分或五产品总榜；未声称另有全项目统一正式发布记录。"
+      },
+      "证据有效": {
+        "判断": "原有缺口保留",
+        "证据等级": null,
+        "观察层": "早先界面现场的阶段说明；本轮无完整归档现场",
+        "原证据": [
+          {
+            "path": "evidence/维度评测/01-信息回传/FB01-基础回传/README.snapshot.txt",
+            "locator": "段落“豆包目前确认3分、正常状态1分待核实”",
+            "role": "历史判分来源，不替代原始现场"
+          }
+        ],
+        "本轮实物核查": null,
+        "置信依据": "保留的是早先现场观察的汇总说明，没有本轮可独立检查的原始工具返回；所以不能给这三条正向判断写“证据充分”。"
+      },
+      "题面有效": {
+        "判断": "存在条件或原始记录缺口",
+        "说明": "历史阶段记录将错误字段项记为1分，原始工具正文待补，暂不能独立复核这项正向结论。"
+      },
+      "污染情况": {
+        "判断": "在已有提示、可见调用和文件范围内未见影响本项的答案串用；保留已知偏差",
+        "说明": "回执仅供评测者，不能充当产品输出。第二阶段和豆包补充读取由人工指定。WorkBuddy额外原生记忆写入单列，未作为判分证据；不声称所有内部上下文相同。"
+      },
+      "原判": {
+        "历史分值": 1,
+        "满分": 1,
+        "原证据复核状态": "positive_evidence_pending",
+        "原判来源": "evidence/维度评测/01-信息回传/FB01-基础回传/README.snapshot.txt",
+        "字段位置": null
+      },
+      "纳入去向": "待核查",
+      "可比较范围": "原观察项，仅限已保存原生工具结果层",
+      "理由": "历史阶段记录将错误字段项记为1分，原始工具正文待补，暂不能独立复核这项正向结论。",
+      "限制": "不新开浏览器、不重跑来补齐数字；历史3分保留，但正向结论的证据归档未完成。",
+      "后续及停止": "现有已查范围到此结束，不重跑、不要求模型重述、不给新运行回填旧场景。仅自然出现同次原始现场时另存复核。待补核验并不表示本轮继续控制浏览器取证。"
+    }
+  ],
+  "变更说明": "仅新增纳入资格，不改变原分数或历史证据状态。部分纳入是比较范围收窄，不扣原分。未新增产品调用。",
+  "公开版说明": "公开副本：路径、会话标识和私人入口已脱敏；公开摘录不等于完整原件。来源SHA-256与原行号指向本地原件，公开文件字节指纹见MANIFEST.json；原字段内的指针不保证适用于变换后的公开副本。未公开原件不能由本包独立认证。"
+}

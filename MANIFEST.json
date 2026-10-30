@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-28",
+  "date": "2026-10-30",
   "scope": "本公开包实际文件指纹，排除本清单自身。",
   "files": [
     {
@@ -14,18 +14,18 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 11367,
-      "sha256": "1a93ea021c23fd55c1d069da208c35abb1c8ba5137bbcf0fae3bb6be56328b8c"
+      "bytes": 12390,
+      "sha256": "3edc839643a6991c98978a5c90165f511718d36b90ddaf0f90bdc3939e3a9b6b"
     },
     {
       "path": "PROVENANCE.json",
-      "bytes": 411236,
-      "sha256": "9060836882a21d32a4a20de9ad4ce65582c1f2052b4d5ec197f5de623c66b315"
+      "bytes": 642261,
+      "sha256": "5391ffab11d2ecd805b61db027501509683c6c44d9338a585b79d4c95e272b6a"
     },
     {
       "path": "README.md",
-      "bytes": 16834,
-      "sha256": "d79ba1ba541b5f4226a893e7f509f18d0e6919982df8cdf00c043a10380f76a8"
+      "bytes": 18549,
+      "sha256": "ff5d7751108ec282501cc5c8fa503482605cd38119671ca0e755fc20c2609236"
     },
     {
       "path": "cases/ART01/README.md",
@@ -664,8 +664,8 @@
     },
     {
       "path": "checks/verify.py",
-      "bytes": 21676,
-      "sha256": "3fb83339a0ca923e284cc42cfd9385a326558a6cb660bb4051442840966a4b7d"
+      "bytes": 21945,
+      "sha256": "db02903c1567f83d5bd40b2ed190b7cedf44cfeebff720e4d5ffb45200191d37"
     },
     {
       "path": "checks/verify_artifacts.py",
@@ -693,6 +693,11 @@
       "sha256": "2d9e251bab2c61ae199f701e1262f0c3c288f6fa06a71073132c63560e704c6b"
     },
     {
+      "path": "checks/verify_review_publication.py",
+      "bytes": 6264,
+      "sha256": "47a4174999a22f0c78bee5f625326d5cac990ba39111dc58df177e84bf408ccc"
+    },
+    {
       "path": "checks/verify_stage_progress.py",
       "bytes": 6935,
       "sha256": "e242ba9b774f097932912bab231ebda2b81bd661abdabacb8bb7c3eb71ed54fd"
@@ -711,6 +716,11 @@
       "path": "checks/可观测性整理检查-2026-10-26.md",
       "bytes": 1420,
       "sha256": "c144bc7d6ad066114940b7b524ace0cb52255fda1a005083f6c7a7d10ac2e168"
+    },
+    {
+      "path": "checks/审阅与统一记录公开检查-2026-10-30.md",
+      "bytes": 1579,
+      "sha256": "014a9bd8c66a3e86f4e1eea876f474114304384e45e0fefb73796b70de22c095"
     },
     {
       "path": "checks/整理检查结果-2026-10-21.md",
@@ -784,8 +794,8 @@
     },
     {
       "path": "docs/公开材料与来源说明.md",
-      "bytes": 12443,
-      "sha256": "ae8de2ee006b6553d6672a4579c04252ed8b15f47e38c817391dac069b10e1af"
+      "bytes": 14061,
+      "sha256": "4e22bf2fbe198c98bf8b8ec080f9da4b99af8a5976f0eb3490a3d5468acdd071"
     },
     {
       "path": "docs/单次评测记录模板.md",
@@ -814,13 +824,13 @@
     },
     {
       "path": "docs/复核说明.md",
-      "bytes": 12604,
-      "sha256": "ba4bcd91ebcfc19ee40533a4a9916c45f94786b1ac9b46d1ae4acb0c19b75f13"
+      "bytes": 13562,
+      "sha256": "0cb183de263983166eadf5a7d958e5106f27d0add35ee411371c7785273cd83d"
     },
     {
       "path": "docs/待完成事项.md",
-      "bytes": 2762,
-      "sha256": "8d79973c0695204b45c0c79e83beea0d61a4e4af17978b7d2d71ad2e5f5a1516"
+      "bytes": 3720,
+      "sha256": "8dc0144b984dfcd834e1ca521ba58eb2ec4fdb0a455900c397981ab497655233"
     },
     {
       "path": "docs/打分与证据规则.md",
@@ -831,6 +841,36 @@
       "path": "docs/探索过程与方法调整.md",
       "bytes": 4326,
       "sha256": "537f1cef00dbaed68072b98d4357c6baeaf72554ad695e0cd42447ebb09f330c"
+    },
+    {
+      "path": "docs/故障归因/2026-10-30/WorkBuddy目录创建异常原因验证-五段式.md",
+      "bytes": 13254,
+      "sha256": "80e2dda74d42a30ce168139453c8304f0b8d36ce297a6e7325ed81f5b8faa956"
+    },
+    {
+      "path": "docs/故障归因/2026-10-30/导师要求对照-2026-10-30/正式对照运行记录.json",
+      "bytes": 15102,
+      "sha256": "7512ce38d35368d62a7366aa412dfb2b2a997c351ed59737a81d7ceea2589cb2"
+    },
+    {
+      "path": "docs/故障归因/2026-10-30/导师要求对照-2026-10-30/正式对照运行记录.md",
+      "bytes": 8805,
+      "sha256": "c02b39533e636b5abf583d3e71f35c615c0a429a71d0f0ed47e39441a5d78465"
+    },
+    {
+      "path": "docs/故障归因/2026-10-30/证据再次复核-2026-10-30/复核交付检查.json",
+      "bytes": 640,
+      "sha256": "da1a7bba7cee658078d6f65a0ac82b0c44a4ee4d1c12075b48980f35216fd3b1"
+    },
+    {
+      "path": "docs/故障归因/2026-10-30/证据再次复核-2026-10-30/证据复核意见.md",
+      "bytes": 9705,
+      "sha256": "390a5d572d9de8aae72c32e3c74b9f4d9696679ef9e6a391011fc97d712606d2"
+    },
+    {
+      "path": "docs/故障归因/2026-10-30/证据再次复核-2026-10-30/证据复核结果.json",
+      "bytes": 44738,
+      "sha256": "ddc984e23b2c6b6afcd1b133e1becbfa00fd013372e24f2fc8908ead4fc07382"
     },
     {
       "path": "docs/故障归因/WorkBuddy目录创建异常原因验证总结.md",
@@ -856,6 +896,26 @@
       "path": "docs/评测方案.md",
       "bytes": 4584,
       "sha256": "eb7b53aa57e25e324c5c58453739e5f056dfb6248f3d062765df9fc4e78daad4"
+    },
+    {
+      "path": "docs/评测方法/单次运行记录十项模板.md",
+      "bytes": 1097,
+      "sha256": "940fd49b6a8b412ebfe9d5a29474266e1a5843ef41f84a5c463188a6cc6e5cb4"
+    },
+    {
+      "path": "docs/评测方法/正式比较纳入说明.md",
+      "bytes": 8023,
+      "sha256": "90e355d2944e6ca72fda770fc0ffe43905fc686e990619b219d5323db51f9eb1"
+    },
+    {
+      "path": "docs/评测方法/活动分类与分账说明.md",
+      "bytes": 4600,
+      "sha256": "be35143ed8fc006c037c93bf28c1f64ec0af1e6badd3a241897b68d7040dc9b6"
+    },
+    {
+      "path": "docs/评测方法/证据等级说明.md",
+      "bytes": 3477,
+      "sha256": "5c94b7aff23eed06a584f5992e1811d092f6dd6ec73135b01933b994869c593d"
     },
     {
       "path": "docs/阶段进展/2026-10-19至20日.md",
@@ -886,6 +946,21 @@
       "path": "docs/阶段进展/2026-10-28.md",
       "bytes": 4696,
       "sha256": "0f94049cbcff04d76472f96f9680fba3aa5f607a26a8ea106c17115e89147166"
+    },
+    {
+      "path": "docs/阶段进展/2026-10-30.md",
+      "bytes": 4288,
+      "sha256": "2c9cfb7e66c6f5b21108e55ea418fefe3c5c5a2d3664332e531a1b75fe28e248"
+    },
+    {
+      "path": "docs/阶段进展/七维审阅汇报-2026-10-30.json",
+      "bytes": 20989,
+      "sha256": "801fd290f54edc3cd536c279e2463f1e8e98cd497a385097559e169f99bf6183"
+    },
+    {
+      "path": "docs/阶段进展/七维审阅汇报-2026-10-30.md",
+      "bytes": 16166,
+      "sha256": "81a46a4a5be610773abe02b1f6c2b5c260142a8dd36b540fb1fb78aff86a0034"
     },
     {
       "path": "evidence/PERM01/Codex-a01/files/inside-运行后-allowed_record.txt",
@@ -2683,6 +2758,11 @@
       "sha256": "0294151d1f04e129f4e07764c2f7028375a56d11525f0efbea4bd9dadb4fdbe3"
     },
     {
+      "path": "evidence/recovery/REC01/Codex/timing.excerpt.json",
+      "bytes": 721,
+      "sha256": "5814ae5e1f12de9b4baa9a19d987f4527b189c7a392882b94b2636488518b27d"
+    },
+    {
       "path": "evidence/recovery/REC01/Codex/交付物核对.json",
       "bytes": 770,
       "sha256": "6e455eb160f88265c3da068885d157d58518e309c1e0fe26b13c5fec9e53314f"
@@ -4343,6 +4423,416 @@
       "sha256": "a86d52b3e7064c21c760c302da3fc78c1937c01308efb031963e31b5cf47e75e"
     },
     {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/FB01-WorkBuddy-a01-历史补审.json",
+      "bytes": 9276,
+      "sha256": "fdb50e59860b00e2aabca657427dc82df8f82e0e3bb2173c8bb41aef13b504ea"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/FB01-WorkBuddy-a01-历史补审.md",
+      "bytes": 6304,
+      "sha256": "cd7e86f2bfd7fcda4ead5c7913aeb7b3d0d2e95005e8aa39b77514d7b27a28ee"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/FB01-元宝-a01-历史补审.json",
+      "bytes": 7220,
+      "sha256": "433d152bdd34d37523b4fe20676a4961e88a59b72104be3f20579aa3a8a65e6a"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/FB01-元宝-a01-历史补审.md",
+      "bytes": 5607,
+      "sha256": "d707c0bf7b4e0934b14b27ff8f2a8f12e120cedd38c09062c6b3d0ac87d9a6c7"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/FB01-纳入审阅.json",
+      "bytes": 106869,
+      "sha256": "c00b718f70aed2f0445cfbb5df91596bd55c529a1df675c7694c81070bedba28"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/FB01-纳入审阅.md",
+      "bytes": 6340,
+      "sha256": "989ce52d009013eebfddca377fa7cde96e441c495f4bb1ac3024646f33d8d804"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/FB02-纳入审阅.json",
+      "bytes": 324863,
+      "sha256": "a5cb46186d9d4900111e5211aee5b6ceb4b12d32a34b2cb995a1d9b3eafc33b1"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/FB02-纳入审阅.md",
+      "bytes": 6532,
+      "sha256": "0cae3d4215aa3fd6f18978980df4b679cac524f47d16c2be0f980ca8446dd69a"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/FB03-纳入审阅.json",
+      "bytes": 461793,
+      "sha256": "ab43a5aa4501540d4acded681366f5cc299c82ed619020a3db99e85bb1b6ce09"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/FB03-纳入审阅.md",
+      "bytes": 7335,
+      "sha256": "d1b719c904d6123c6e362867b2cfaa369f55ea4108f996b23afaa8958eba17e9"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/信息回传三题纳入汇总.json",
+      "bytes": 2002,
+      "sha256": "4a40c250942e28aff0f063bfcc7a504602d896c9b6b6bd9c7f44454d07dce1a9"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/01-信息回传/信息回传三题纳入汇总.md",
+      "bytes": 3781,
+      "sha256": "5b928a3e7bc5fe7e960ffcc905b6fa0f7faa0a6682b6949456fba551cc8c7553"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/02-上下文管理/CTX01-纳入审阅.json",
+      "bytes": 119838,
+      "sha256": "49fbfa5892c78cf56212981da4ebd47f99f0c497f2e7427f90f38adcbe0fbde8"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/02-上下文管理/CTX01-纳入审阅.md",
+      "bytes": 5906,
+      "sha256": "2a32c368699f47c919cdcc32a52bd08b675a37873e113b64c991ef3b97aa7d25"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/02-上下文管理/CTX02-纳入审阅.json",
+      "bytes": 350663,
+      "sha256": "6e16080343fd042711fc6e9a51e650d7ae46263405bd2f24cbe0c3fb7f31e43f"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/02-上下文管理/CTX02-纳入审阅.md",
+      "bytes": 9764,
+      "sha256": "fd0848718a112499406ef9df45bda3d928b4fe03f7148d5218ca0c4fa192add5"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/02-上下文管理/CTX03-纳入审阅.json",
+      "bytes": 4438,
+      "sha256": "867232e5dbb85b7aa009361ca0b957063c35916264a024ebecb9112ecd561115"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/02-上下文管理/CTX03-纳入审阅.md",
+      "bytes": 1894,
+      "sha256": "45569806ae46337eeb68d275137cb01cf5d5bdec50c1969082e7b66d83645bf0"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/02-上下文管理/上下文管理纳入汇总.json",
+      "bytes": 2113,
+      "sha256": "5fc36a4e288f5f80cc31854d2a191ad1eca5d580eb4e300a7c8a6590799ffe6f"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/02-上下文管理/上下文管理纳入汇总.md",
+      "bytes": 2955,
+      "sha256": "ebb5c52c9eec7a7994c3844c9aa983b9832ede3cb14a90cb108819af59351427"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/03-失败恢复/REC01-纳入审阅.json",
+      "bytes": 48022,
+      "sha256": "f7834fd6170ae86541c4f60f83465dae3bed209154d9dbfaaf75a2e6884080e3"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/03-失败恢复/REC01-纳入审阅.md",
+      "bytes": 9375,
+      "sha256": "91d0ecab42b292380858d555e0a32ea949b4e08b5a62c32f90ed085a2234c526"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/03-失败恢复/REC02-纳入审阅.json",
+      "bytes": 203973,
+      "sha256": "b7ca2719b8b3310033009741032e9911ae4820337e8fa68dbdd10bec1f115fb9"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/03-失败恢复/REC02-纳入审阅.md",
+      "bytes": 11485,
+      "sha256": "78b2960efcd873f641562890db52abe47c6d4bdfad9f6cd3d303503e61305483"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/03-失败恢复/失败恢复两题纳入汇总.json",
+      "bytes": 2415,
+      "sha256": "cc0e7c014747d9e3eede964800be71c40cab7945697c3d3f2ff1639197835927"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/03-失败恢复/失败恢复两题纳入汇总.md",
+      "bytes": 3425,
+      "sha256": "b0ce4f0abfb6c48360f9d7af8fc909fa1f6fbb1f784c5d3077bc2743f1584604"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/04-权限边界/PERM01-纳入审阅.json",
+      "bytes": 122434,
+      "sha256": "4a34b22e11b1fd990edb3221cdfa5e852cbc4ca988c990cda3baa398da8a4a35"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/04-权限边界/PERM01-纳入审阅.md",
+      "bytes": 12134,
+      "sha256": "d87d3987282afc5e96c082c1ad6ae4bb2906cb2210556176bebfd466034b0337"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/04-权限边界/PERM02-纳入审阅.json",
+      "bytes": 130192,
+      "sha256": "8d6019194141d60e9605f9902c386dbba99ae9a32413964840948f3f0cdfe499"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/04-权限边界/PERM02-纳入审阅.md",
+      "bytes": 11037,
+      "sha256": "848d3df5f296748d8ec2c60248f15faa5d4a22ede3d73ff0e9040730786bc28f"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/04-权限边界/WorkBuddy规则收紧-用途审阅.json",
+      "bytes": 4248,
+      "sha256": "d2b6f0e44198f5e599ea6cb73c3677646040ea058397d2db055c9ef84f090af2"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/04-权限边界/WorkBuddy规则收紧-用途审阅.md",
+      "bytes": 2318,
+      "sha256": "f2ba01ece9f6d67daa2343f2b8aac1cc6f8391f1f86441bc7752a716cf23143a"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/04-权限边界/权限边界两题纳入汇总.json",
+      "bytes": 2414,
+      "sha256": "e64212260f3135ea407fefdb45b6f98057e9e03b7023e93cc138c27124494dd0"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/04-权限边界/权限边界两题纳入汇总.md",
+      "bytes": 3342,
+      "sha256": "23bdc65f99d31f937da67cc9b535c5150fe560f7d115299ef58a090c42f9a077"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART01-纳入审阅.json",
+      "bytes": 29327,
+      "sha256": "c6667b38db754f90cafb30d3046620028ef782f36df74c430bdd249b80c1438c"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART01-纳入审阅.md",
+      "bytes": 6343,
+      "sha256": "4b415fea61d39ce1e10a170b631bcf73b81319d21dcdd56d8f9912b547ce36ff"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART02-纳入审阅.json",
+      "bytes": 30912,
+      "sha256": "3cd7972006cdf8f09e9acd335f91e98eb5ed8da6bced805419e50d0709d8cd3c"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART02-纳入审阅.md",
+      "bytes": 6408,
+      "sha256": "da6832f5bc87bbb14500d80d643b9b77b72ffe556d506fcfb1a4689c0c77e3b3"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART03-用途与未运行审阅.json",
+      "bytes": 1344,
+      "sha256": "fbd47391d65973ed03c68d87d5e00b8507263d47c54822256df010fe6b1c436f"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART03-用途与未运行审阅.md",
+      "bytes": 741,
+      "sha256": "aabfe6570a43082bdc6fea21f9ee65ace1febc33852416fdc0a9ad808f153a9d"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART04-纳入审阅.json",
+      "bytes": 52323,
+      "sha256": "4ac2d3a0afa406a9e166c1db5fd9b4e77ce5948a26508bbeb79e63301d3cd303"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART04-纳入审阅.md",
+      "bytes": 12729,
+      "sha256": "8e8f15bc0e1f6514f3ed5ca6c41dbc7a6ecf3c2c05471da2455bf29a478f4db6"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART05-纳入审阅.json",
+      "bytes": 32303,
+      "sha256": "f6e8103e7a8dd144eb536b30a0acae81cae42f3822645c0321c38795fb785355"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART05-纳入审阅.md",
+      "bytes": 6973,
+      "sha256": "2b4c1f2a9078bbfb83a7144d46fc5e4ab20d391e2d0250d2fdd5565338e3b023"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/产物保存与交付纳入汇总.json",
+      "bytes": 2325,
+      "sha256": "91ba3c58134f382f726884fa81a56a059703adb7a584190f8c69d6f7f255bc04"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/05-产物保存与交付/产物保存与交付纳入汇总.md",
+      "bytes": 4694,
+      "sha256": "31a40450e580b179d95314de2ca77ed4a938f49605f0deb11eb700909ab60389"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/STOP01-纳入审阅.json",
+      "bytes": 51227,
+      "sha256": "d9f8d42ee5ea8d4bf4aa0d240ab68cbdd2c249094a49a53c3ad6356a0535254b"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/STOP01-纳入审阅.md",
+      "bytes": 7395,
+      "sha256": "c70a2a3230f680f626f7f8422949cfd85be405d8fbefb812e5b0e6e52c0e9060"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/STOP02-纳入审阅.json",
+      "bytes": 106627,
+      "sha256": "f71cd3f31b92b9a8a34ec4a52e3e648b153ea999f6ea64496ae68d57790c7b5d"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/STOP02-纳入审阅.md",
+      "bytes": 11429,
+      "sha256": "745190998fb92acc991403f1db9fcad5c33cd7f4b2162e9e59a84689d5e1ca3b"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/STOP03A-纳入审阅.json",
+      "bytes": 71307,
+      "sha256": "335c535610ca39cab7d7ad0b88d3c900515441bcfee0281a24fb052e1155dd5f"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/STOP03A-纳入审阅.md",
+      "bytes": 7920,
+      "sha256": "e32ff0e46c0957800f18752fce0e41f483a97b3e50469961e36908a9c6976af0"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/STOP03A-部署不匹配旧尝试用途审阅.json",
+      "bytes": 1048,
+      "sha256": "713d9b54a550a676530fb0d7334df245c7d4d1865579272f443aa527e65f5cb2"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/STOP03A-部署不匹配旧尝试用途审阅.md",
+      "bytes": 715,
+      "sha256": "7fa8b01aa7cf7740271115d608502540772879de23b3ab47647e8c6ed5286cce"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/STOP03B-纳入审阅.json",
+      "bytes": 81325,
+      "sha256": "a92fd5b07dd37e8335bf721037e8d659b8590cb077c0d427355b0dc5f4abcbf5"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/STOP03B-纳入审阅.md",
+      "bytes": 8157,
+      "sha256": "03bce5f7b2dd034002d901cc4b34840fccd5275005616bb0826990cb15873354"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/停止条件四场景纳入汇总.json",
+      "bytes": 2608,
+      "sha256": "4486fece1eb32b52ac2c2cc487e423f50d5733afe60c7d16171dbb745547ce0c"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/06-停止条件/停止条件四场景纳入汇总.md",
+      "bytes": 5004,
+      "sha256": "bfb2624c27a1b8fb57b6f248160b764644514abc58213db42ec76c1294eeaae0"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-DIAG-WorkBuddy-a01-历史补审.json",
+      "bytes": 3201,
+      "sha256": "dc7fbf12c7008a1c1014d3c28b27cf851f7f0539a973e735662ea29bb81a6baa"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-DIAG-WorkBuddy-a01-历史补审.md",
+      "bytes": 3740,
+      "sha256": "77bf1fe4765a4d6dac009d24dff5c6ea59e6fa9d465c6884b27d69f863f764aa"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-DSH-a01-历史补审.json",
+      "bytes": 6294,
+      "sha256": "3c53aa865f31421109c177c22481161ba57e11e0864aab62a7afab7ed1d922a4"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-DSH-a01-历史补审.md",
+      "bytes": 6014,
+      "sha256": "60485603dc57511a86e623e13b1c8c7ec050b9f0383fb5e540907ea23f647fc0"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-WorkBuddy-a01-历史补审.json",
+      "bytes": 6893,
+      "sha256": "813b5132e3add62810f0c02a4e68a51c4691d6cd4409ab5c5eceaea593a9c518"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-WorkBuddy-a01-历史补审.md",
+      "bytes": 6668,
+      "sha256": "034dd6a30dc4ee8c301dc4834a3e6336b20d6e4cb7cd0481c6fecc7410846290"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-元宝-a01-历史补审.json",
+      "bytes": 5682,
+      "sha256": "a72daf9ea549c89b4a8c24ba58d0df17a705556f4019306249cead44cc0aa785"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-元宝-a01-历史补审.md",
+      "bytes": 3684,
+      "sha256": "d7eddbd41d6a5509b307f47463fd85a5a216052d438e7226c2ffcc7f9a583277"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-纳入审阅.json",
+      "bytes": 29657,
+      "sha256": "cbc66b53a66d631927f4516f84bd9352173cb529a239842b7d5bdef5e6f38e80"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-纳入审阅.md",
+      "bytes": 10694,
+      "sha256": "530dc0f7b508bedc6c53bfc6c45623a14555624e02c6dd76159c11b5a8888e69"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-豆包-a01-历史补审.json",
+      "bytes": 5960,
+      "sha256": "36728d22c01d062fb1f004b24385f1e4caae41db2819f2f8653c208db59a1d5c"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-豆包-a01-历史补审.md",
+      "bytes": 3813,
+      "sha256": "beedfc6471aac1afe323e750d3ef614eb49e5528f59b66bccd9a5a83cf0c5526"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS02-DSH-a01-历史补审.json",
+      "bytes": 10416,
+      "sha256": "5556a9c01c024b3cc036ee2ad826a92348b11c3cf17f6d807adabe05c51ec6c2"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS02-DSH-a01-历史补审.md",
+      "bytes": 5690,
+      "sha256": "45785e237d0f63c674afd4c18fce33ad659cdc29f6ef5f262dacefef3b5b1b45"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS02-元宝-a01-历史补审.json",
+      "bytes": 10556,
+      "sha256": "62db181afc46fcb02656cea930dfb311359edc8eea4cd92c75ba3ed277e1a853"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS02-元宝-a01-历史补审.md",
+      "bytes": 4545,
+      "sha256": "927233f4634e08940cba0d33b828d2b9910fe9f4596320dc706120c0af456f9f"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS02-纳入审阅.json",
+      "bytes": 47089,
+      "sha256": "899a9ea4b8b85cdf397f7589f10bdfb1dfc64162e6c11831e85fd4ff5dfc6120"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS02-纳入审阅.md",
+      "bytes": 13055,
+      "sha256": "b96ec18c3839e560c44668210d9f0f73d15b9d479b8e59f8f08ff4861dbf1b94"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS02-豆包-a01-历史补审.json",
+      "bytes": 9148,
+      "sha256": "e988969006d4ba6df2ddf47324618ea751c1d99b82acd6aea8945fb53d92c79c"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS02-豆包-a01-历史补审.md",
+      "bytes": 4109,
+      "sha256": "b8e323c0dc5dd6cc3a88d159d9901bb2683340b3cef2c6c49a2364a03c59b265"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS03-纳入审阅.json",
+      "bytes": 73821,
+      "sha256": "eb4792c431f9ff115e9d209ef8e0c982dcc6b114542cfa9b68dcd0c8a4ea85f3"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/OBS03-纳入审阅.md",
+      "bytes": 14111,
+      "sha256": "11cb8f9f8a095606c9a021827c73cd60a51646a593978dd8c02cf7df10d19bb0"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/可观测性三题纳入汇总.json",
+      "bytes": 1748,
+      "sha256": "bf4dc823d8880877e6ab6fa4645148a82c5b6c939a1de3f7857b47c907758db3"
+    },
+    {
+      "path": "results/inclusion-review-2026-10-30/07-可观测性/可观测性三题纳入汇总.md",
+      "bytes": 3790,
+      "sha256": "422951144eade231e27d39697c835be7cf0d74c7530ce656922d7cc5e19c4ffb"
+    },
+    {
       "path": "results/information-feedback.json",
       "bytes": 200913,
       "sha256": "76860b43ec55f013397e4f4e97f81b3070ee1cd60a12f28e7de866395cf395a4"
@@ -4351,6 +4841,36 @@
       "path": "results/information-feedback.md",
       "bytes": 95627,
       "sha256": "914e75387d46cc6c0c8ba5b9eaed6d3454995ff006c16729b911615400cd5fbe"
+    },
+    {
+      "path": "results/ledger-coverage-2026-10-30/剩余五条补审与台账覆盖收尾.json",
+      "bytes": 3937,
+      "sha256": "a6dc0e446c1c01ed50ccd49017d9a06a858bb2c6ae1585a2a81c0c0e32c8243b"
+    },
+    {
+      "path": "results/ledger-coverage-2026-10-30/剩余五条补审与台账覆盖收尾.md",
+      "bytes": 4109,
+      "sha256": "e3cb72801c8d5c8f48a847b3df2f13ce66b3bdd986a652ab58e4fcfe903f1e53"
+    },
+    {
+      "path": "results/ledger-coverage-2026-10-30/历史台账覆盖核对汇总.md",
+      "bytes": 4934,
+      "sha256": "5356b2ed34a7dbeee157b082ede31879250234956dc98a6c05dd00149222976e"
+    },
+    {
+      "path": "results/ledger-coverage-2026-10-30/历史台账逐条对应.json",
+      "bytes": 1172995,
+      "sha256": "6d771609a338c375f533a54fcebfe9a1c2385f717129e5eb254e8172d2c8e483"
+    },
+    {
+      "path": "results/ledger-coverage-2026-10-30/历史台账逐条对应表.md",
+      "bytes": 26841,
+      "sha256": "fa7ce012a87625e89a564349e6a422ebb2c22c3a1391eb4fb3dcb451123f7e35"
+    },
+    {
+      "path": "results/ledger-coverage-2026-10-30/覆盖核对交付检查.json",
+      "bytes": 1396,
+      "sha256": "d680d0c231db03a2f415bcc1778b8b8c3d59aaf57cd7b36a05f3c03c834e41b0"
     },
     {
       "path": "results/native-authorization-survey.json",
@@ -4416,6 +4936,11 @@
       "path": "results/permission-summary.json",
       "bytes": 6364,
       "sha256": "bf642b279ac075747deca60a7b7fe290ce05624f7dfe0177b2ac180b3b31d41e"
+    },
+    {
+      "path": "results/review-publication-2026-10-30.json",
+      "bytes": 179903,
+      "sha256": "7f20c96ce90b828a2c4ee49e6cf6162884647c6802088531a99486cc5213540d"
     },
     {
       "path": "results/run-ledger-2026-10-27.json",
@@ -4546,6 +5071,1526 @@
       "path": "results/stopping-conditions.md",
       "bytes": 4922,
       "sha256": "097462f435da024ab0b799a9238663a68952115f8bbb86f9a5efa1c37dce4d24"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/ART01-五段式任务报告.md",
+      "bytes": 4907,
+      "sha256": "69688b51df8fc6d84f84031c839743c6f8cde919d1b99ab95b948339448d132a"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/README.md",
+      "bytes": 2640,
+      "sha256": "4d8fc8f0e4099b66985648a53a0074a5d61e321d6c94661361aaa67c2f048f28"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/整理依据与原件指纹.json",
+      "bytes": 4344,
+      "sha256": "ee8d81fe89622a4b8cf0420371d924dcab8bd8101c08b59b47d037730e1dc794"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/运行记录/Codex-ART01-a01.json",
+      "bytes": 1981,
+      "sha256": "4e7c76452fd572be256df68585fc2eb9381a6f252212e345e4a824fba16c3be5"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/运行记录/Codex-ART01-a01.md",
+      "bytes": 1483,
+      "sha256": "fa2e40916a339dafa743dab7ec9a55b26b80c3bff11c9bc756b883a027d7a389"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/运行记录/DSH-ART01-a01.json",
+      "bytes": 1862,
+      "sha256": "f3225d562a7fe57c0df4f2f9bd700c8c5383b6f37a2d1fff208f7ed9d5677346"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/运行记录/DSH-ART01-a01.md",
+      "bytes": 1369,
+      "sha256": "a28dbf283147ae89bb9097c379fedc6ac0b0224d0ea27459b17ca9e1e0cdc0c0"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/运行记录/WorkBuddy-ART01-a01.json",
+      "bytes": 2136,
+      "sha256": "668e567ae15129c250826815ee2e3890192bacebcd9d1efac01af767757aa41e"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/运行记录/WorkBuddy-ART01-a01.md",
+      "bytes": 1634,
+      "sha256": "3d45740b154ead09e66e06cc49f008e6b72ab7eacafb64eb726006512625bc35"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/运行记录/元宝专家模式-ART01-a01.json",
+      "bytes": 2052,
+      "sha256": "99e2566a7802cc865912d2efa89660ca05d738064081d7c8123ca2a3bfbc51ba"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/运行记录/元宝专家模式-ART01-a01.md",
+      "bytes": 1547,
+      "sha256": "151a658ad0309218fcc1787b319046f924e47e8bae5cb85f35af97fc5908fae8"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/运行记录/豆包办公-ART01-a01.json",
+      "bytes": 1978,
+      "sha256": "5bf9cbccfbf28698e46255bf7af06129fb867fb3821da69249bb18f6886b9c7f"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART01/运行记录/豆包办公-ART01-a01.md",
+      "bytes": 1479,
+      "sha256": "b6f355603d26a8353508de93299a101ebffcd33e3f718f6f16c6f94c1f1dfc93"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/ART02-五段式任务报告.md",
+      "bytes": 4732,
+      "sha256": "cd406e4e28b440493ac7b747219c7daf501c9df17996cc59e92744272eb80e19"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/README.md",
+      "bytes": 2681,
+      "sha256": "05fed5455f29e234ef9d2df728acdbdb7dbda3b30ee1247dea31679005c03d43"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/整理依据与原件指纹.json",
+      "bytes": 4397,
+      "sha256": "45de3f9bdfba1086e7ae447d94c35a961c116a936bcbf7c0425a40a664c51696"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/运行记录/Codex-ART02-a01.json",
+      "bytes": 1975,
+      "sha256": "4c008b9572515e39b42ed6eb69a90f3177fc6af42f57a9fef08ef0128efbbeb8"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/运行记录/Codex-ART02-a01.md",
+      "bytes": 1468,
+      "sha256": "800eefc0196728b99a9c2fb9a2bfbc5c377bcc10dae3c149cc4f208378694bdc"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/运行记录/DSH-ART02-a01.json",
+      "bytes": 1946,
+      "sha256": "168b60047b02da9c16ac15a748a6d5a226c37e95c08cf8bce481f5fa14d51874"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/运行记录/DSH-ART02-a01.md",
+      "bytes": 1444,
+      "sha256": "aeb88fe6f5e193adee7addc70fd3764331d207a6173479466bbf1be7e0d22353"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/运行记录/WorkBuddy-ART02-a01.json",
+      "bytes": 2202,
+      "sha256": "d944bcf05d8764f3e4bc15427bf55c7e7880b89a8da33b12b9743a00442cea27"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/运行记录/WorkBuddy-ART02-a01.md",
+      "bytes": 1691,
+      "sha256": "1f14c9d260727f0d714b5908b66f156165d989d82ee16d9cfe71631f52fe4962"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/运行记录/元宝专家模式-ART02-a01.json",
+      "bytes": 1933,
+      "sha256": "e967fc9f4a394808485bc26f4bdf55cf33683c14545b1e026e50a0f7d72069f7"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/运行记录/元宝专家模式-ART02-a01.md",
+      "bytes": 1419,
+      "sha256": "2b6049f8aab58095425bbf4a6c51e7a595fac3a56d6b60fb24989a184e4d905a"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/运行记录/豆包办公-ART02-a01.json",
+      "bytes": 2031,
+      "sha256": "ca9db0732f5f9564bed50297d162dd9cf0a35ea70dd86fe4a41d84787f94e9de"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART02/运行记录/豆包办公-ART02-a01.md",
+      "bytes": 1523,
+      "sha256": "45eb1218992b9059b6692858e518126e7c2206a552190c79d0216d10e07e7734"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART03/ART03-五段式任务报告.md",
+      "bytes": 2831,
+      "sha256": "c4bf79a1a0df949338a13ce2a04ed27c883e3bfd48105f69bd26371bfcd3894f"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART03/README.md",
+      "bytes": 1822,
+      "sha256": "2846d3fa0875d77f7f19a8e50a899f2d3bd3ae1565677271441ba2a00136909f"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART03/整理依据与原件指纹.json",
+      "bytes": 1009,
+      "sha256": "16f4f63882ba25d9c4cd5448e403926849a749ca4086514a61fac71eeec6c85e"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART03/未执行登记.json",
+      "bytes": 799,
+      "sha256": "1a6c389d95f79d94c19ab110f16e0f06ebbedd8a39721a640229d468ce1fb4bc"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/ART04-五段式任务报告.md",
+      "bytes": 4878,
+      "sha256": "c8a9d34a68bedb16cccb9cdd839613e6517efbef4fd9b5c3f30a794a28fc7efa"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/README.md",
+      "bytes": 2681,
+      "sha256": "17a6d78abefa538ed433160f1b9baa1770f069b4fd9ce89760f337a0bd210f11"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/整理依据与原件指纹.json",
+      "bytes": 4112,
+      "sha256": "16cf002411fddc143e2138b698aec62b9ab49563419550c32e3215ac1c1bb6a9"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/运行记录/Codex-ART04-a01.json",
+      "bytes": 2051,
+      "sha256": "a6cecc58640bbfd37b8316b2106e9e6312981087186f5730c111bdfec127055f"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/运行记录/Codex-ART04-a01.md",
+      "bytes": 1556,
+      "sha256": "367c13b358a9f56baaded519bd90036a1646910829c15fc2ecef931c3fb008c9"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/运行记录/DSH-ART04-a01.json",
+      "bytes": 2020,
+      "sha256": "3d10623dc668254bd62858c8bcc9c9ff0db134d9463230febc01394479a535dd"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/运行记录/DSH-ART04-a01.md",
+      "bytes": 1527,
+      "sha256": "bacf4a0b1fb6a76ebd78a4ff07b40dc4d2fc1154bab46b092f1e3141c3725d86"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/运行记录/WorkBuddy-ART04-a01.json",
+      "bytes": 2004,
+      "sha256": "08fb19d86d5b45dc7be771fc2f7d3eb971322519ab1c05fdc61cc3fc48b3a14e"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/运行记录/WorkBuddy-ART04-a01.md",
+      "bytes": 1505,
+      "sha256": "629650e7d52dcb7f9bf81b0a6b29ce77b746e1b48464fd56ca9287e23a4f2710"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/运行记录/元宝专家模式-ART04-a01.json",
+      "bytes": 1797,
+      "sha256": "42216edd3810baec853f57d52f136084c9bc929983082e6a118985d1804359aa"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/运行记录/元宝专家模式-ART04-a01.md",
+      "bytes": 1412,
+      "sha256": "a2364946d69580a7c8f0008b413b9f83ebe4fd90f01ec3908cf56f76e977eeb1"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/运行记录/豆包办公-ART04-a01.json",
+      "bytes": 2004,
+      "sha256": "c713f2f041ccc3c5760c998974a3842aa2eadfaea2947aee9f716bfbd73bf3f0"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART04/运行记录/豆包办公-ART04-a01.md",
+      "bytes": 1508,
+      "sha256": "8239189cc04d42e2c80a8274423e8e4eb38bd313b67f456533f39514030d75c8"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/ART05-五段式任务报告.md",
+      "bytes": 4609,
+      "sha256": "a8432a5f7c99ce15aeaa87480d710a805d2320778613650424861b0b7243a9df"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/README.md",
+      "bytes": 2472,
+      "sha256": "016f14b72b655849d4513fd9532e009e00962930ac4b83aaea1f48d99027b44c"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/整理依据与原件指纹.json",
+      "bytes": 4370,
+      "sha256": "dba62665e10c11436ce605a73a201b180c3f0babba07869f52123188f24765dc"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/运行记录/Codex-ART05-a01.json",
+      "bytes": 2006,
+      "sha256": "ba26f2d94f2dced9c0f26e9d157fd48ab45228f7590e3d068b90758d448caa89"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/运行记录/Codex-ART05-a01.md",
+      "bytes": 1499,
+      "sha256": "83e41dbe3d89bdf2a2c3d48f5bf18d197515c01808f6d13205e25f725a6ce838"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/运行记录/DSH-ART05-a01.json",
+      "bytes": 1998,
+      "sha256": "3843f325e9c66e787cb184f981f8eb07c081764f9109261d5b7d3e62a0417f18"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/运行记录/DSH-ART05-a01.md",
+      "bytes": 1493,
+      "sha256": "2bd2bcc0d21f1e57b84f837de436d26ec071861fd6920cf74adb242ca5a9252a"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/运行记录/WorkBuddy-ART05-a01.json",
+      "bytes": 2042,
+      "sha256": "81f6b95c2b65a3143f2c7019e59a905c71f92fe49fbdc38ba847c0f9739989d8"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/运行记录/WorkBuddy-ART05-a01.md",
+      "bytes": 1531,
+      "sha256": "b00fe19d2b8ca6efc3443a71a616c7829b0c97abd57856c551f1806a851d7544"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/运行记录/元宝专家模式-ART05-a01.json",
+      "bytes": 1927,
+      "sha256": "25ce7e6897931b05d521be89ee280fdefc3f4f48be8862fe451fe7e585403a95"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/运行记录/元宝专家模式-ART05-a01.md",
+      "bytes": 1416,
+      "sha256": "8e8dbee956f6fce3587f72e66041b08871231ddd95b588ec128253503dc719f7"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/运行记录/豆包办公-ART05-a01.json",
+      "bytes": 2112,
+      "sha256": "38714a4dd042612904a6813d27719ed764985a1e9cd565f76da55cc4005d2eca"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/ART05/运行记录/豆包办公-ART05-a01.md",
+      "bytes": 1604,
+      "sha256": "a75ce6e565da109669c9d098bb3b5e2fb9a091fb3a7cde575a22e39fa27125aa"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/CTX01-五段式任务报告.md",
+      "bytes": 4037,
+      "sha256": "22169c5b7de5cc702bc3f2cf5608deab18a8a0e50e8e88c5bc0718acf2277e77"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/README.md",
+      "bytes": 2864,
+      "sha256": "a4a220aede60f9b15b84e151c6c44559126beafeebda17171b9866a22af28f55"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/整理依据与原件指纹.json",
+      "bytes": 3644,
+      "sha256": "28d6ff94da4d8208635f15f178d1a4c75e7a354754ff33b2807a96bf2f267cd7"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/运行记录/Codex-CTX01-a01.json",
+      "bytes": 2173,
+      "sha256": "4d28d2ab532a504508a87335c52c87556c95118750b8cb424b4312119d66dcea"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/运行记录/Codex-CTX01-a01.md",
+      "bytes": 1794,
+      "sha256": "0ba0a37054b69ed59aaeb276999d31cd28c61f6e9ebd7f694bc7cc8b3fd890c4"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/运行记录/DSH-CTX01-a01.json",
+      "bytes": 1822,
+      "sha256": "5caf0dc44cf5d0ef526b3448e3c30d6b872412042bbce2be46dcc7bb363e7050"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/运行记录/DSH-CTX01-a01.md",
+      "bytes": 1521,
+      "sha256": "935abc6d5a78971fab01aede58183ea34c7a83409d4319b936ece8aee107c7b0"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/运行记录/WorkBuddy-CTX01-a01.json",
+      "bytes": 1944,
+      "sha256": "522cdf69db686f4479f5d4014801e1d4598f5961cbb3594a36d188eff7740b2f"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/运行记录/WorkBuddy-CTX01-a01.md",
+      "bytes": 1645,
+      "sha256": "d7e66cbf06507f681b90038eb90174d0097d2dcc75948a07eba2ff3dc94e6940"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/运行记录/元宝专家模式-CTX01-a01.json",
+      "bytes": 2011,
+      "sha256": "76a81db5494418ab7e861ecedd12b1ff56b00613a26de3dc740344c6897bc6eb"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/运行记录/元宝专家模式-CTX01-a01.md",
+      "bytes": 1545,
+      "sha256": "7a874bd7589a142b828bad8e42097b6b8e978f252ed33448e393adede764cdbe"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/运行记录/豆包办公-CTX01-a01.json",
+      "bytes": 1924,
+      "sha256": "8913729d8d6323bab2f75c1e91845372800b169e58ecd3e2bdcc229b82826abd"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX01/运行记录/豆包办公-CTX01-a01.md",
+      "bytes": 1446,
+      "sha256": "31c1371fa3cb631ab6af6fa4ab6b05d7b52191e1c10668df600d42d4277f3c4a"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/CTX02-五段式任务报告.md",
+      "bytes": 4632,
+      "sha256": "73c96db94bae25d4d1711226b95559bea6ca93c1fdd30b422a9c46fd5c7f41e0"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/README.md",
+      "bytes": 2957,
+      "sha256": "f5cfedd504858d96fd30e756832d7efbfcc7e218c88ebaeef953a3ca9a5554ba"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/整理依据与原件指纹.json",
+      "bytes": 2794,
+      "sha256": "ea85f0dfbe4c9875d182b07484f294a57bb5dcfe0627ce78b4bb345ed006fbca"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/运行记录/Codex-CTX02-a01.json",
+      "bytes": 2064,
+      "sha256": "b7244cd330f2916139b1ab65cf5eba5f23595f97920fbaa2ba34deacf61bc73e"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/运行记录/Codex-CTX02-a01.md",
+      "bytes": 1638,
+      "sha256": "abf54ea314f8f264bd8d76b427abc51160a4d7a0d9d40d8e3e4d6f8109265a8a"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/运行记录/DSH-CTX02-a01.json",
+      "bytes": 1920,
+      "sha256": "f505f6747e8f2fcbe8b9d4731ede494518876954814ea1cb44d7c5f698ed197b"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/运行记录/DSH-CTX02-a01.md",
+      "bytes": 1499,
+      "sha256": "4c26b80f58f997e2d27e711af016578fb46975519b63887e4611cfd9005ec818"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/运行记录/WorkBuddy-CTX02-a01.json",
+      "bytes": 1834,
+      "sha256": "9a01af268a22ebcfddebcf250a22c27594399eda9b67cf279735940a4c4e2e60"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/运行记录/WorkBuddy-CTX02-a01.md",
+      "bytes": 1400,
+      "sha256": "8d0c466b2bb2b43482fab16d5529f077e898b5b28335551ba04ad3145e8f62c7"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/运行记录/元宝专家模式-CTX02-a01.json",
+      "bytes": 1934,
+      "sha256": "b171613c19ba0490b1cc19bad25e8cc1931e22cf7747fe74895d1acf99e8b54e"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/运行记录/元宝专家模式-CTX02-a01.md",
+      "bytes": 1626,
+      "sha256": "bfd2b658bc2e9b0d4bfa65ef60de6039d4ddbdd5b9cb4be6579b882f9734f82d"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/运行记录/豆包办公-CTX02-a01.json",
+      "bytes": 1764,
+      "sha256": "b3c9932e809b76da685c5d8a634a01f1c630e57d6c4b0c6ec5e92ad45ea3b2cb"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX02/运行记录/豆包办公-CTX02-a01.md",
+      "bytes": 1497,
+      "sha256": "89e5c50475432f44972010c0f772c9592f488eed1dd36167f57741982dffc891"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX03/CTX03-五段式任务报告.md",
+      "bytes": 2521,
+      "sha256": "2212fb6530cad2681fce56c2bd96137dde09b9c85bb082e8d620c8b81adb77d9"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX03/README.md",
+      "bytes": 2235,
+      "sha256": "40c7eeaedeb1f01dfec024c089a721aa67114a80b77dfcb52a1b308b1a194005"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX03/整理依据与原件指纹.json",
+      "bytes": 1001,
+      "sha256": "8e84f7fcc30121c9501790594a3d07dbbf1b7c7d7d1e1f4b4da623244845f0b3"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/CTX03/未执行登记.json",
+      "bytes": 1697,
+      "sha256": "a13c55a4f5d92e66541dd64ff533a9100c73daef5ce42cd75117b84285cce3d3"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/FB01-五段式任务报告.md",
+      "bytes": 5943,
+      "sha256": "f97983302cdd5405ce40402130c441fa314bf7fc8f91e59053f837d819618420"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/README.md",
+      "bytes": 3449,
+      "sha256": "2856a6ea8ffd807fb34898e30d063ae20f2d1372aeaf0ccd878f3aae79e4d1ad"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/整理依据与原件指纹.json",
+      "bytes": 4020,
+      "sha256": "359add31b899b56a0836a5865b03a78504838a12d48bcf246ac6b44a28d63f74"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/Codex-FB01-a01.json",
+      "bytes": 2005,
+      "sha256": "76a8ebe7ee8e08b26f866d43399ac41e5e98575aba89ba1089cd3f7396f75e59"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/Codex-FB01-a01.md",
+      "bytes": 1722,
+      "sha256": "27bc53c7283b8e37f51a1c5b452140875451897b42e2221af7b42f6b0f9caf66"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/DSH-FB01-a01.json",
+      "bytes": 2018,
+      "sha256": "7e4ce3de3729f39a54ce5df89ae193257f26f4d36e90d98ff1c8210dfa5aad5a"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/DSH-FB01-a01.md",
+      "bytes": 1761,
+      "sha256": "1d925ecf880dff6dfbe45f9b7998185bff2eceb6eea4a7fd7b018e341c8abf9b"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/WorkBuddy-FB01-a01.json",
+      "bytes": 2196,
+      "sha256": "0ad7ab467bdad8139fc30b4e29ca5c32212d6801bb0291dca4b4082410531cb6"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/WorkBuddy-FB01-a01.md",
+      "bytes": 1773,
+      "sha256": "27c4f4cff65f90f5bd5cf79644234024b2a635850f555683468c5e506f9c329f"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/WorkBuddy-FB01-a02.json",
+      "bytes": 2095,
+      "sha256": "c30a7c174319be61f0de64d14e80e8336228382da5ee568e416e7b6d4f12c3b5"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/WorkBuddy-FB01-a02.md",
+      "bytes": 1817,
+      "sha256": "cfa03d99961ef11c24a0c3434909b352d5bb586eac2a170a79b8a34637a2c269"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/元宝专家模式-FB01-a01.json",
+      "bytes": 1546,
+      "sha256": "adf0693888006a0be7c44e338b7bf16a33c66af76792481f35d749a582dae8c1"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/元宝专家模式-FB01-a01.md",
+      "bytes": 1141,
+      "sha256": "1c98fa00a2d5a2359e726641fab006c18d54f3ac53c931260316d6434407a9f1"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/元宝专家模式-FB01-a02.json",
+      "bytes": 2063,
+      "sha256": "e2c60d0d2aea2f2af1308e26a150909a12942a3ba3f8f153588e147ba2ad9c6a"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/元宝专家模式-FB01-a02.md",
+      "bytes": 1648,
+      "sha256": "cc5cbba86aedc86cd369ad2c56b6a7e5e8854c58596ff98883d1951f5ab49ed8"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/豆包办公-FB01-a01.json",
+      "bytes": 1591,
+      "sha256": "f4aa7a957eeac90e130b95d2c93ad82f5893383257db10064d5b95c379c84f39"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB01/运行记录/豆包办公-FB01-a01.md",
+      "bytes": 1284,
+      "sha256": "b975cbdd80a2a028f33db909a900869b770b11a5b5c9bd3ed049334fa264cb60"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/FB02-五段式任务报告.md",
+      "bytes": 4586,
+      "sha256": "8654caea8245cfe7108c6b634bcc2548f801a0c662f90b4a83dbc1ce2bd0c8d4"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/README.md",
+      "bytes": 2769,
+      "sha256": "b4f2bf080235d807c470836ada7faab2af6f0487cccf4c52ffc59ef57f45c164"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/整理依据与原件指纹.json",
+      "bytes": 4354,
+      "sha256": "79e937e3cdd797be4e82782b5309e71d951880f6ac8c5b5e54c4ff176eeda1c6"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/运行记录/Codex-FB02-a01.json",
+      "bytes": 2018,
+      "sha256": "8404e4d5c716addaeadfc56a00eaae6fd51a210b8f70b41ccc073684f9c28663"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/运行记录/Codex-FB02-a01.md",
+      "bytes": 1712,
+      "sha256": "76e395e39529e28c063972db6f0e10a5238d66814eef410576ce0efad2b17f11"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/运行记录/DSH-FB02-a01.json",
+      "bytes": 1823,
+      "sha256": "aeaff4c0ecd2b16d2f73349339ec42c4ffaef95e76d367fea9d9e333b8adc2a2"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/运行记录/DSH-FB02-a01.md",
+      "bytes": 1550,
+      "sha256": "69c7f709659f437f75627cd9f5c3a9d7d39af81fd8d7e64ab0e3a1397806e131"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/运行记录/WorkBuddy-FB02-a01.json",
+      "bytes": 2063,
+      "sha256": "36286b61b8206beff36614043a8449cd4be5e225b194ec3f1499ae53933258fc"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/运行记录/WorkBuddy-FB02-a01.md",
+      "bytes": 1757,
+      "sha256": "16d74fb75a2e4f5bc8a9d52ade51e511dd461a6045a6697a8e5cddc3d14b61b4"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/运行记录/元宝专家模式-FB02-a01.json",
+      "bytes": 2010,
+      "sha256": "52b4432dd3913bd09e98cbeab09b2da5c23eaf7485e9a873b013bf84f9f7b40c"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/运行记录/元宝专家模式-FB02-a01.md",
+      "bytes": 1677,
+      "sha256": "ca82459bc3e7c4fae29f66a494b2bd0e8f8aebb3f17cbc5d6679ff64b30c624f"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/运行记录/豆包办公-FB02-a01.json",
+      "bytes": 1989,
+      "sha256": "e6f83e4d35e03f061ce67d29538bce4f9dace0c6f0a7362d1a6026ba51bc878a"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB02/运行记录/豆包办公-FB02-a01.md",
+      "bytes": 1775,
+      "sha256": "76d9b5ddce6db8425ea27b817017a87dc107493f4940d6d9c69cbbec9e703fcd"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/FB03-五段式任务报告.md",
+      "bytes": 4532,
+      "sha256": "8d32f10a9ff8a8684ce6ad46bde9b5d1255ce695d85b600ab2d893faa0043789"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/README.md",
+      "bytes": 3100,
+      "sha256": "6f1316182dec461213c1c1f0112b6c7f345dea7716c940c76865d858646b805a"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/整理依据与原件指纹.json",
+      "bytes": 4114,
+      "sha256": "025449de6221e9bcd95c39d04e090550b171dc67d97b5b636e6837c2b933b192"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/运行记录/Codex-FB03-a01.json",
+      "bytes": 2083,
+      "sha256": "94fa464550eb027d82efa78bc07f472a752fd0e02191d4992045eeb1b8344647"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/运行记录/Codex-FB03-a01.md",
+      "bytes": 1909,
+      "sha256": "af0b1e5e55fa679a7c7530b3ddc0f8e4299c9c04a05a4c624861fba917d2a44f"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/运行记录/DSH-FB03-a01.json",
+      "bytes": 1972,
+      "sha256": "465280354abedc7b8de98aad9900f7fea14775c81ceefed1c5889e2a79598fb9"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/运行记录/DSH-FB03-a01.md",
+      "bytes": 1714,
+      "sha256": "1563ae58545c229c2c1d888b6fdbdc4e8292ff4a7219a600b745ba145a90bb9d"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/运行记录/WorkBuddy-FB03-a01.json",
+      "bytes": 2118,
+      "sha256": "2f61ede26baaf1f6200e816b60e21e0f3304e5f2052e259449c7e763c167e4e4"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/运行记录/WorkBuddy-FB03-a01.md",
+      "bytes": 1812,
+      "sha256": "e2974be1fe7bc72379cfcf30532becdfc3656f1cf8f5b7f2687f9ca1139a1718"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/运行记录/元宝专家模式-FB03-a01.json",
+      "bytes": 1879,
+      "sha256": "73aae8cde4f19718c3b63c823ba44628086e612538fe39e4acffe21d40b9f57f"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/运行记录/元宝专家模式-FB03-a01.md",
+      "bytes": 1503,
+      "sha256": "6fae43e2dbcbb8648845a2a22978060f22bb2fad581e620832e9b4d1b3e0bef3"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/运行记录/豆包办公-FB03-a01.json",
+      "bytes": 2282,
+      "sha256": "b6c099c864dea13bcb4c37f168b0f9378c5fbb7d7b5cad6970c5164b5ee3ef7e"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/FB03/运行记录/豆包办公-FB03-a01.md",
+      "bytes": 1845,
+      "sha256": "fcda21062a7bac0c713e3c1b0c54ae8dea5862bdd9b718c475021047b6be3260"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/OBS01-五段式任务报告.md",
+      "bytes": 5756,
+      "sha256": "5e0c43337c0e8dd5b7996d678b009903887ac5d93a6227aa540aeb4c540e29df"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/README.md",
+      "bytes": 3724,
+      "sha256": "154bc2314e6a4e4c5e62f36c94b78b133443b4ee1481e3004641fb2000f5119a"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/整理依据与原件指纹.json",
+      "bytes": 7661,
+      "sha256": "6b3502a71671a836a7b817d4a12b34602803eaf18e68bb114f174a96297ed6c3"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/Codex-OBS01-a02.json",
+      "bytes": 2027,
+      "sha256": "c513d5e44385c57c5505416220d0041d44c5a880de69103d6875272d4152a677"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/Codex-OBS01-a02.md",
+      "bytes": 1714,
+      "sha256": "66b600c1ec3741223d10f8f41960816b2c5b50c6b77c70888830223d807b76a3"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/DSH-OBS01-a01.json",
+      "bytes": 2023,
+      "sha256": "9c9c90936d84c48cc0799e1dc8a578c32c07c89318d091566f86deb114bbff5c"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/DSH-OBS01-a01.md",
+      "bytes": 1515,
+      "sha256": "c563f543bdff0e379d57d40a1dfad36f1680444b795e0a8a94cff83e50e9824e"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/DSH-OBS01-a02.json",
+      "bytes": 1871,
+      "sha256": "5a9f98c5ed157dbad6619d41391d85a3d04a9097b63346399b0bf46a2a554581"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/DSH-OBS01-a02.md",
+      "bytes": 1563,
+      "sha256": "b0aaf7585d2bbd6f0c4cd89dc2dd96e2091b0f8d2a2b9686d625bc97cab5b162"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/WorkBuddy-OBS01-DIAG-a01.json",
+      "bytes": 2156,
+      "sha256": "b770bd90a0db316da83f3609f6ef0b51be464f744a52edf6bfef7acf4b6819e0"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/WorkBuddy-OBS01-DIAG-a01.md",
+      "bytes": 1816,
+      "sha256": "22a53c83ec78c720ee7e5f8214a2efec2fed44762e944d4c0c406b35651bac2d"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/WorkBuddy-OBS01-a01.json",
+      "bytes": 1960,
+      "sha256": "85996f95269b6de17e126562278386890185fb634cd2515f508d64df7d7c2262"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/WorkBuddy-OBS01-a01.md",
+      "bytes": 1551,
+      "sha256": "478d39d715262aff519ea9796bab0ed1e312c70621b4134954cf4ae7d7180343"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/WorkBuddy-OBS01-a02.json",
+      "bytes": 2087,
+      "sha256": "098a8fd47cbc320766fb13c2c87f19e7fbd93cd5afd16e74bbad17b38f00c9cc"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/WorkBuddy-OBS01-a02.md",
+      "bytes": 1613,
+      "sha256": "4857849f6d06f7d8a6f8542649bad5fe3fb8bb12a8c5aaf5de0d9c1f752dfbcf"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/元宝专家模式-OBS01-a01.json",
+      "bytes": 1708,
+      "sha256": "c32982b30b883e926b19a3eed3d49d92c92473127d425d4d5ee7f854b0e93feb"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/元宝专家模式-OBS01-a01.md",
+      "bytes": 1416,
+      "sha256": "624b1dd31ff47ff2a1f4f60a090414c77899a461429994539f9b5f1ffc670c21"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/元宝专家模式-OBS01-a02.json",
+      "bytes": 1955,
+      "sha256": "b9cfe86414c071cf065bffa43a40ae2f38f0b23d9e17f11902f4b4cbba080898"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/元宝专家模式-OBS01-a02.md",
+      "bytes": 1581,
+      "sha256": "ee00bbdce7989efea5117cfdd344fc0d9eb32f83669663845f53e6238bd6017f"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/豆包工作-OBS01-a01.json",
+      "bytes": 1876,
+      "sha256": "a01b817752115b99c4b5b1770eb8e86626a7dc8643c98f5f7887597ca6238c7e"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/豆包工作-OBS01-a01.md",
+      "bytes": 1470,
+      "sha256": "ce5810f5304c9f29dd2694a7938a66f2885b3aeed46b84c0abe97798bc296e75"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/豆包工作-OBS01-a02.json",
+      "bytes": 2071,
+      "sha256": "640704ec77f47710d5cd018036ec3da918bdbb08fba3cd896374259966b8b4f8"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS01/运行记录/豆包工作-OBS01-a02.md",
+      "bytes": 1583,
+      "sha256": "e2fa9802dbd2da71ef0f6ca6e04872b4e08e9dab207ec7b5bb2a0f3fc874b6a0"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/OBS02-五段式任务报告.md",
+      "bytes": 3826,
+      "sha256": "0d0360ddf8bd4621087c79a32948450e42dbd8123aeed0760f38a8bc11a7d5bf"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/README.md",
+      "bytes": 2450,
+      "sha256": "704f8f39b21b7afd34234f60f7256e529e03207ecc690e6fd1fc4bd8a85c5618"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/OBS02-五段式任务报告.md",
+      "bytes": 6266,
+      "sha256": "4c4184b8562ff8b4c4b2bf02ebcc1a9f2d3c17c5a14ce7529dc29fcd3f5b28f3"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/README.md",
+      "bytes": 2576,
+      "sha256": "30306fe03e19e4d84848fcca3cceb64d11060ff83470cde64515f18f68496d64"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/整理依据与原件指纹.json",
+      "bytes": 20528,
+      "sha256": "0071a8486e1120b22eae83f2385712252977e50890f0279a9720441093c8ff26"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/整理依据与过程核对.json",
+      "bytes": 29779,
+      "sha256": "fadf169daffc80a5785b947f4e529c44bed7fbd69eb464636f78b030178f556b"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/样例交付检查.json",
+      "bytes": 1429,
+      "sha256": "a6a689ac5c950bd93667be701f166bb35f36520b7ef2e4f0c8c46fedd177de3d"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/Codex-OBS02-a02.json",
+      "bytes": 1934,
+      "sha256": "959eb74400f4cb8db58b22eeb1cef578d4b5d51538f62fa040a602e8965b1cd1"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/Codex-OBS02-a02.md",
+      "bytes": 1716,
+      "sha256": "64b96053b38d52b552ba5518373d3a3076350d3f58d81052b687bf13f11f37a9"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/DSH-OBS02-a02.json",
+      "bytes": 1863,
+      "sha256": "7b1148ed839c80b86253a97a9a2cd1364d2661f8a5d059a7f6d64d37f65b7486"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/DSH-OBS02-a02.md",
+      "bytes": 1645,
+      "sha256": "83e288e2e7345ade96105a1175ad04b1edcbddd489cb33c6201fdc2e23457dee"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/WorkBuddy-OBS02-a02.json",
+      "bytes": 1923,
+      "sha256": "d8e6629a57d74d0e803102bfc566e9dcd397cc106a5033e12191d1880ffbc0df"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/WorkBuddy-OBS02-a02.md",
+      "bytes": 1705,
+      "sha256": "31ca73cd77f118bcfcd1e61eb8adc9a28870d66f1f6f799254385d4deed78c23"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/元宝专家模式-OBS02-a02.json",
+      "bytes": 1927,
+      "sha256": "7119edcaf1b595ca1bdf5082c17cf76aeb2e0af382fce03f4a4fe490a53db276"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/元宝专家模式-OBS02-a02.md",
+      "bytes": 1828,
+      "sha256": "f0aa1d31e16a2ef26055e4b36e291901f048daafc077ee72df47ae9109084c5e"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/豆包工作-OBS02-a02.json",
+      "bytes": 1953,
+      "sha256": "876b34210560c00e911864436b1ea77662390dc589540d31ce54eecace411057"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/reused-a02/运行记录/豆包工作-OBS02-a02.md",
+      "bytes": 1735,
+      "sha256": "e52180f8e3f8230b28427dbab1d526ebc14840192df5e8aa439004ccb8640960"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/整理依据与原件指纹.json",
+      "bytes": 2243,
+      "sha256": "18bc21d917560a85e7c81b3e13c83ce50bac90ebaf58699f20a8e3e4fd81f139"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/运行记录/DSH-OBS02-a01.json",
+      "bytes": 1993,
+      "sha256": "d8ba6a1bfe8c0bd3e3c4f10a168f523e4f078350850b64c089a4ce5923c8000f"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/运行记录/DSH-OBS02-a01.md",
+      "bytes": 1513,
+      "sha256": "54dac49324933dbbee4033c414d8fb8889f3bc01bf2e00adc24b7f4f42017d22"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/运行记录/元宝专家模式-OBS02-a01.json",
+      "bytes": 1717,
+      "sha256": "94acefc7e5d48358e32edc41e14ccb747014873bc9d7a8a2911f31751906da16"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/运行记录/元宝专家模式-OBS02-a01.md",
+      "bytes": 1431,
+      "sha256": "89d0feeed0b08d5520057fa12141944ef89d04c1395c4ef0715c90a7865e6a14"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/运行记录/豆包工作-OBS02-a01.json",
+      "bytes": 1646,
+      "sha256": "388408094e96159518c8e132f9c4017bb72bfda785f39b35efd953b31f4abb04"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS02/运行记录/豆包工作-OBS02-a01.md",
+      "bytes": 1395,
+      "sha256": "8055f272dc6a3aa3c1ada2e7f98da349ca9334a0b21cdc50f16ca8c5946bc518"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/OBS03-五段式任务报告.md",
+      "bytes": 4392,
+      "sha256": "0a7af93d5c33ad4bc5feb64e3f36e7ab6a28f68063fc7db42f64840fc9de7355"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/README.md",
+      "bytes": 2609,
+      "sha256": "36c8679574a398973f5fffa4ec43d0b20376f814c36273e9af820f320a40d72a"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/整理依据与原件指纹.json",
+      "bytes": 4244,
+      "sha256": "fbce283c19dd776f0896b6fa3d86a8a5b84e5758d56f88219f0f20af404c1c5f"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/运行记录/Codex-OBS03-a02.json",
+      "bytes": 2083,
+      "sha256": "e9c3c28f348cbbd72c0096545b8d71d13c58662ccd32967b576403c984175cba"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/运行记录/Codex-OBS03-a02.md",
+      "bytes": 1770,
+      "sha256": "4c20264b0b4ee60e9c4364c11ce58d5a7a274ee359ad4ec0f084e7dc803623c4"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/运行记录/DSH-OBS03-a02.json",
+      "bytes": 2040,
+      "sha256": "7202ed13ebda0b3c4df1e071f447e502479b6f6491d972b45709bf2bf7a7e7ab"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/运行记录/DSH-OBS03-a02.md",
+      "bytes": 1564,
+      "sha256": "66997118fc06bbf424a8336d298cfc77e42672aa4d00d08d3a15d62aeb9868ab"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/运行记录/WorkBuddy-OBS03-a02.json",
+      "bytes": 2132,
+      "sha256": "7c9d53ba9826d8475278c041642b0e35e87763c4a68c0ae1c20cc15602b38da3"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/运行记录/WorkBuddy-OBS03-a02.md",
+      "bytes": 1662,
+      "sha256": "3a212bc75c047332e78a9ce50a3111b6784661ee4a8573d412391444a1270d5a"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/运行记录/元宝专家模式-OBS03-a02.json",
+      "bytes": 1792,
+      "sha256": "728f26c578a3ce611969481514d7f2280ac2cfc31568c431d1eb0cf51ec51540"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/运行记录/元宝专家模式-OBS03-a02.md",
+      "bytes": 1396,
+      "sha256": "cf89fe6b97ec167d4372cdbed3b091e232d07df8a716b4c70e6d229b6b1e4f4f"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/运行记录/豆包工作-OBS03-a02.json",
+      "bytes": 2128,
+      "sha256": "1e8c0e3ecd61e9271e82f649d12288eece633eacc0f7ce055ede01d7bdc7a26a"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/OBS03/运行记录/豆包工作-OBS03-a02.md",
+      "bytes": 1644,
+      "sha256": "8a74e393633b4d520b876f9f5d9d29e4e49eda6f4e7039bf9ba0a55af8b99db1"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/PERM01-五段式任务报告.md",
+      "bytes": 7119,
+      "sha256": "1fe4e66c10cda8b1883db0c637ab798b9266ef3eb68dce86de89f10d9025288a"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/README.md",
+      "bytes": 3629,
+      "sha256": "f16fbd58a7f9d4c79868940ac7e522371f375d3275fea369b4e0306bbff7ac24"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/整理依据与原件指纹.json",
+      "bytes": 6015,
+      "sha256": "05134ba86c4df61a1814df7d403d890eafdc201ada734516e77dbd8a675245ad"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/Codex-PERM01-a01.json",
+      "bytes": 2230,
+      "sha256": "b120675acd83c378c1378d886356575538251115a431b86b0cd8d86b95f44fe2"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/Codex-PERM01-a01.md",
+      "bytes": 1926,
+      "sha256": "be7256d6b22ca1795e947120e1207c14b0d2a1af38e7bebaccdc642fe41f2983"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/DSH-PERM01-a01.json",
+      "bytes": 2067,
+      "sha256": "4420400ac38639937fff17484db7e1466e6a0237b6a21ac8316854890b76cb05"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/DSH-PERM01-a01.md",
+      "bytes": 1735,
+      "sha256": "c4d4ce618477e87a301ff38e7364e3a9ffcb348e3f61b795cf4cbf87beff8882"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/DSH-PERM01-a02.json",
+      "bytes": 1917,
+      "sha256": "4a76da92c0dff1ed3a398e6b5d5fee467f2cc942b7c930850142363f254ca58b"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/DSH-PERM01-a02.md",
+      "bytes": 1594,
+      "sha256": "4d24db4f7f8b6acfc727ce6bb56a9bc1425f03afe112e9be4c8818b69af8c331"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/WorkBuddy-PERM01-a01.json",
+      "bytes": 2233,
+      "sha256": "2cabdb5f7c5a8d5985055922a32283246f47f79cf04c7c6312180c26eed063eb"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/WorkBuddy-PERM01-a01.md",
+      "bytes": 1727,
+      "sha256": "8e6697dd5d14a23aad3c1144275d7f229bcb1b2301e16a8bebeea286929069af"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/WorkBuddy-PERM01-a02.json",
+      "bytes": 2128,
+      "sha256": "54c09362224c70f38d3eadc3245807f689722d6221f9a7cdcf2fad4595d0eada"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/WorkBuddy-PERM01-a02.md",
+      "bytes": 1805,
+      "sha256": "8480f33b1afe2abfba298739acd9a83f949148e3e4e2dae95f59a5066d6607ca"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/元宝专家模式-PERM01-a01.json",
+      "bytes": 2075,
+      "sha256": "6f50a4d5db06bc8f539791abe8b63c54e80484e5a7f2c61372024fa48cf1e025"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/元宝专家模式-PERM01-a01.md",
+      "bytes": 1807,
+      "sha256": "ec3bfad2289160673cd5d94d4ec6cba03489d887a20fdbca05ad89691ff7e7e7"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/豆包办公-PERM01-a01.json",
+      "bytes": 1978,
+      "sha256": "fb6c8f0f70f22aa77dea41fda425f2dd77542459b3ee380648856d3405c421bd"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/豆包办公-PERM01-a01.md",
+      "bytes": 1702,
+      "sha256": "df20ec35f6d7a94c9cdbfe28af6bf7e5548b0604fb646f885c6c0a022da34f7b"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/豆包办公-PERM01-a02.json",
+      "bytes": 1918,
+      "sha256": "1260b0959c34d281b03fef6ca91ac52fe14eed66bda355b71c72ef0b17819bde"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM01/运行记录/豆包办公-PERM01-a02.md",
+      "bytes": 1757,
+      "sha256": "946c13e24a5b861656560a325da268194fed846b424da2c59ebc430849778ba8"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/PERM02-五段式任务报告.md",
+      "bytes": 7339,
+      "sha256": "973e653a80584696048a185b44e00e5c015041d9f244b625722cb8db73fe8562"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/README.md",
+      "bytes": 2986,
+      "sha256": "3c92bda577162632504564956a870200466c740f353aff4d7263d0850834078b"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/整理依据与原件指纹.json",
+      "bytes": 3903,
+      "sha256": "886f53a0345e8890ff3daa66d7522fd0450bc59e605604c9d16c80d3d7436695"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/运行记录/Codex-PERM02-a01.json",
+      "bytes": 2029,
+      "sha256": "a8474e02177ba429271dc961910ca2eed914e8699391eaef77af20d000f5e6bc"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/运行记录/Codex-PERM02-a01.md",
+      "bytes": 1736,
+      "sha256": "d1042260670a8a942b9d6ff7af0526cc43c4145bf3068a6160e8218395adb8ad"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/运行记录/DSH-PERM02-a01.json",
+      "bytes": 2284,
+      "sha256": "fe419c71a50d5822f56c13279c655c3465824eb0ccc4a7d7c1a32b32209d61e3"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/运行记录/DSH-PERM02-a01.md",
+      "bytes": 1765,
+      "sha256": "70096754d82cdbdc9ac58dc749cb418ece5c8c75c44382dae2dd055df68d1eba"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/运行记录/WorkBuddy-PERM02-RULE-a01.json",
+      "bytes": 2337,
+      "sha256": "5f774dbacee365fcf989fd3d24dacec5063d035e2fe6e5e025f6857bca1f1d50"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/运行记录/WorkBuddy-PERM02-RULE-a01.md",
+      "bytes": 1751,
+      "sha256": "28f6febdec905147c50852508c28e7ee69bcbc756bd299755876839118d375ac"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/运行记录/WorkBuddy-PERM02-a01.json",
+      "bytes": 2257,
+      "sha256": "f1dc8a9126637f7cd485fb38fab7f1ae716de9283d7378722605dd1f2105ad3c"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/运行记录/WorkBuddy-PERM02-a01.md",
+      "bytes": 1839,
+      "sha256": "1304c7b935df8c0997cbb0784f9bb706bb957fc29090fdd2e1cb7c2f00863491"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/运行记录/豆包办公-PERM02-a01.json",
+      "bytes": 2170,
+      "sha256": "a701bea4b0cb5a881308335a739e0d8095204258bed8bb546ae2ecb19d2d1ed6"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/PERM02/运行记录/豆包办公-PERM02-a01.md",
+      "bytes": 1749,
+      "sha256": "508d8a66eb33295e08ecd56337709cc96fa2e739f01d18ba1796f216475c90a2"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/README.md",
+      "bytes": 2838,
+      "sha256": "efb67e21963e18c8cd83da9a6c6600ee33b35e76ba55ea51c65093aa8f45dc8c"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/REC01-五段式任务报告.md",
+      "bytes": 6738,
+      "sha256": "c8372ce38114856f09ee36f8728b95f77096624355791236a360642cd445f691"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/整理依据与原件指纹.json",
+      "bytes": 4524,
+      "sha256": "2d040b9e304431f4d447a28f0bc5d5d5b3781d4e0594a63a40e069f43da0d61a"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/运行记录/Codex-REC01-a01.json",
+      "bytes": 2130,
+      "sha256": "aa95aaf785ceda44f0d22a64dfb031c7e61b85c08c60d5b32f8ddca296231875"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/运行记录/Codex-REC01-a01.md",
+      "bytes": 2095,
+      "sha256": "8c88649cf9843ba06ecf2eecbb8392f772c768cc1d283730ba0d85ea90c8111b"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/运行记录/DSH-REC01-a01.json",
+      "bytes": 1837,
+      "sha256": "93dbb15c303644b1707aaca44c569c97f8852a6328252b8a8b7088a304895d20"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/运行记录/DSH-REC01-a01.md",
+      "bytes": 1813,
+      "sha256": "50ed1c585fa0d501d3d72403281c9c632b588fc8308f312734f8f9e421313580"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/运行记录/WorkBuddy-REC01-a01.json",
+      "bytes": 1947,
+      "sha256": "26969eb5c7764fae22f94c68baafb161c55beac458b77b51ee7d7c639a5cb763"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/运行记录/WorkBuddy-REC01-a01.md",
+      "bytes": 1933,
+      "sha256": "e13e4f35abbaaf6ae3da1ead3cacec4a576cb3abd461661c5d94ef90f18b4ff5"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/运行记录/元宝专家模式-REC01-a01.json",
+      "bytes": 2196,
+      "sha256": "aefb749070bcac20ff6b9cc93815d3e9ce374303eefccc3329178a08c9f82bac"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/运行记录/元宝专家模式-REC01-a01.md",
+      "bytes": 2130,
+      "sha256": "243bef9cd5824b3fe90685ed87093fdb4e6ac8dd4bb6b96adf8010b1833c484f"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/运行记录/豆包办公-REC01-a01.json",
+      "bytes": 1950,
+      "sha256": "ab45b739ae8864988c3f57ac811af49530ccf71e2a5fc310407ef56e89132e61"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC01/运行记录/豆包办公-REC01-a01.md",
+      "bytes": 1841,
+      "sha256": "74eb023238d7a940f38614b7e25cca5c3a9c62de7b3b561c070d7f4e1c487ed3"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/README.md",
+      "bytes": 2836,
+      "sha256": "880d140da276546997925db36140acebf19c69087d00f896f15dfef6c24b9208"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/REC02-五段式任务报告.md",
+      "bytes": 7110,
+      "sha256": "d0f973938ea6cb55b87c88b904ea7e173f462c92a88e99b17814c25307336bb9"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/整理依据与原件指纹.json",
+      "bytes": 5447,
+      "sha256": "8b06f0e0f5c65aeabf2a08d5a4785177e44ade0fe66a76e7a3d9798e5a6187e0"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/运行记录/Codex-REC02-a01.json",
+      "bytes": 2154,
+      "sha256": "8c9e2ea278630606d572fd1b5f739aa0a7144dd177d842ca3c3bc69306f70f14"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/运行记录/Codex-REC02-a01.md",
+      "bytes": 2022,
+      "sha256": "d3aff20d29629add176990d85cb047a2ff4fd094dd72021f45c65a5561f7d035"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/运行记录/DSH-REC02-a01.json",
+      "bytes": 2114,
+      "sha256": "7be4d5f52a1ca6e001d05ad162b6ce007653d92166d112b2e768b8a3ecdb26c8"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/运行记录/DSH-REC02-a01.md",
+      "bytes": 1978,
+      "sha256": "244df367954751f45a091fe2d8d3588d1086d79e34ea653ef3c802f72ebaee25"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/运行记录/WorkBuddy-REC02-a01.json",
+      "bytes": 2132,
+      "sha256": "a23c9eb55c9862671620b68142415e3f5bf9f2cf9dd473263ad68110abddde71"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/运行记录/WorkBuddy-REC02-a01.md",
+      "bytes": 2000,
+      "sha256": "996054a1995a33fa7129ab70089fe04a7746586767381f768c3d192a3f49a8ac"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/运行记录/元宝专家模式-REC02-a01.json",
+      "bytes": 2108,
+      "sha256": "6d6fd07a4c5a454bd51e66db764e3f5fda62124493b8e1968b86d07cf6e4b080"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/运行记录/元宝专家模式-REC02-a01.md",
+      "bytes": 1974,
+      "sha256": "baceaa5c7655009a0ec7a9f9ebb1b31df422d99a9d8471d0e84b59f6f5be8943"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/运行记录/豆包办公-REC02-a01.json",
+      "bytes": 1882,
+      "sha256": "f45c1fb2d4e094564513982c901538cc5bfad055464c718903c219b555ed58a0"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/REC02/运行记录/豆包办公-REC02-a01.md",
+      "bytes": 1883,
+      "sha256": "004013aaf27a1a683c900062be97271009c9cfcee23bda4e18f23b0b47ca720a"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/README.md",
+      "bytes": 2624,
+      "sha256": "fb927c7066872de86c55d9810b2850a6dc7a507a42c3a5f963071d36ff5d814a"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/STOP01-五段式任务报告.md",
+      "bytes": 5089,
+      "sha256": "1cdfb36ca0a95c2d704448277c8279f50e3a6f90c4bc4a4f817f7b931e37db0b"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/整理依据与原件指纹.json",
+      "bytes": 4253,
+      "sha256": "1fb3abfa2a58c5391e1d1f438372887f73b032ed5e4b20f19adeb8ed508fd08f"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/运行记录/Codex-STOP01-a01.json",
+      "bytes": 1730,
+      "sha256": "19a5d14bcf2a83df751a122d06fa581df680e221d9972aa58a7a6e3e40a79976"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/运行记录/Codex-STOP01-a01.md",
+      "bytes": 1533,
+      "sha256": "3b429448ee4fa8e9bfb1d6d6a658f96ad7a6b4d78b157561444864ccb43dfa91"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/运行记录/DSH-STOP01-a01.json",
+      "bytes": 1670,
+      "sha256": "df8c42b5ba53960c1b063c75d6cba347388e611efaf1b1ebfdb2ef9e803e2ace"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/运行记录/DSH-STOP01-a01.md",
+      "bytes": 1476,
+      "sha256": "250b50e439419e72bef9aed44b2590d9475dbeb52d324aab19ba7f8e75cf5aa5"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/运行记录/WorkBuddy-STOP01-a01.json",
+      "bytes": 1841,
+      "sha256": "c23da6ad4fb5bc5ad75506a54d9a977e94dfeaf4bed0a02c56996b9024a3a5a9"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/运行记录/WorkBuddy-STOP01-a01.md",
+      "bytes": 1661,
+      "sha256": "9e6266d6c7afac5482761e45eb51d58c0ac2bce934cc19f4551f87a310e8258e"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/运行记录/元宝专家模式-STOP01-a01.json",
+      "bytes": 1789,
+      "sha256": "e8d9f5d69cf0e73284ba7dab5596a0222e9664b623fbe446716e1efe1f83e756"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/运行记录/元宝专家模式-STOP01-a01.md",
+      "bytes": 1573,
+      "sha256": "a56126578a700018c0d8ef94ba4e4dd2a880b19b8e9f0e250c55777731efc0b2"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/运行记录/豆包办公-STOP01-a01.json",
+      "bytes": 1849,
+      "sha256": "5822f497a2add1b3e7db2811850eb6e23aa97d12cd0c86d31b22f4f8bd507ee9"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP01/运行记录/豆包办公-STOP01-a01.md",
+      "bytes": 1661,
+      "sha256": "7794a9e5aeb567fab18d88768f0ba95cac56e1d46a12b5276fe9245094627faa"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/README.md",
+      "bytes": 2508,
+      "sha256": "ea8f69fd905202881a14d32cb9428c02a1c09fcaf2eca217a95c3279f478a106"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/STOP02-五段式任务报告.md",
+      "bytes": 3933,
+      "sha256": "c3feda0385cde285f3abf89bd1491de1664e352e4231133f3125b410f4bd0ec2"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/整理依据与原件指纹.json",
+      "bytes": 4205,
+      "sha256": "b05927846044e9f8db1118682df4b8b5a0a58f892a1393fc6ea9f5d16e27e748"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/运行记录/Codex-STOP02-a01.json",
+      "bytes": 1637,
+      "sha256": "9ab1253440cb457303d16da1d7b90ec4d650508f6284b66aa39c4105f557b5c7"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/运行记录/Codex-STOP02-a01.md",
+      "bytes": 1443,
+      "sha256": "43ace0ad2b603fcf705944151a75ffdd6940b7b6df9c26248e588229d2716006"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/运行记录/DSH-STOP02-a01.json",
+      "bytes": 1591,
+      "sha256": "f0a905b7b2860f73615ba2423d23b7c4981ffdc845504504f9ecaaf60954fe24"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/运行记录/DSH-STOP02-a01.md",
+      "bytes": 1400,
+      "sha256": "2b7a527ef47721dbeaf64b0f7bd759081d5d1b8724234f8fa6e078f1c48ea1b5"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/运行记录/WorkBuddy-STOP02-a01.json",
+      "bytes": 1681,
+      "sha256": "c6ca7e13df7b2f1a516d321ec6e164d3835c7de2f0f394453ab945692acfcd14"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/运行记录/WorkBuddy-STOP02-a01.md",
+      "bytes": 1504,
+      "sha256": "f782d1794893e61e6bf9d5fa4fd7e5b4535a12cea14763a090c89182ed0e933b"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/运行记录/元宝专家模式-STOP02-a01.json",
+      "bytes": 1736,
+      "sha256": "10a49fa484225c4213f038f59134658df3c6b938261a675fe848b3eb26d8a3bf"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/运行记录/元宝专家模式-STOP02-a01.md",
+      "bytes": 1526,
+      "sha256": "803f803a335c4558d8369b14ca939671ce8615132b64dd3f95ab29968277abd5"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/运行记录/豆包办公-STOP02-a01.json",
+      "bytes": 1733,
+      "sha256": "e3c11f9033271bf9b34d255cbf7def8a8b89beeded006ab54cbd230a53671635"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP02/运行记录/豆包办公-STOP02-a01.md",
+      "bytes": 1548,
+      "sha256": "5bb5016628bbe9671acf857dfcb06ce51fb0e6720540badcc41cc0c637cdd620"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/README.md",
+      "bytes": 2923,
+      "sha256": "66ce97d88c3f593a7028905e7844033f5d4cf7a3a4e2e57f884461b87d807fa2"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/STOP03A-五段式任务报告.md",
+      "bytes": 4697,
+      "sha256": "14c7d62800a861cffb052a0ba354ea01ee07321baca31a199cf988673c16d94e"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/整理依据与原件指纹.json",
+      "bytes": 4321,
+      "sha256": "ee8b5ba24fafb2f681ba2d1e517b5f5374e2c594775afc6be9c4f68d4dc1f233"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/Codex-STOP03A-a01.json",
+      "bytes": 1728,
+      "sha256": "ea2e48d8ffcf1d567839a9341ef9d444974fe7f07818ca8ae1f9655c822261a7"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/Codex-STOP03A-a01.md",
+      "bytes": 1543,
+      "sha256": "e7a852f74f42b043ed4e95a52faa1007699094713d66c6c2e0c908c4c0954c22"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/DSH-STOP03A-a01.json",
+      "bytes": 1616,
+      "sha256": "95e76c4aab68def023cccc4f3deceabad6f11652f772873ae8fbc8a17da34bae"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/DSH-STOP03A-a01.md",
+      "bytes": 1434,
+      "sha256": "32e0601377d1060db7091fd5ececb88d2f6f4d70ed579c7eae35c9f914d6a254"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/WorkBuddy-STOP03A-a01.json",
+      "bytes": 1700,
+      "sha256": "05768e04eaa3e98865cedf890d743f56c477e68c686ffc9729fe95c7a10af955"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/WorkBuddy-STOP03A-a01.md",
+      "bytes": 1532,
+      "sha256": "307080d909bdfedccc0c10db4655c1f4d0fb1e5a9e2ae8c82b843d9c469e2980"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/元宝专家模式-STOP03A-a01.json",
+      "bytes": 1764,
+      "sha256": "140c25c88cdeae15ee894d94037a1cb3b044b56680f6bd2a7e20c429e77d9046"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/元宝专家模式-STOP03A-a01.md",
+      "bytes": 1563,
+      "sha256": "59451e823a44cb0be2f1bc90f79e59459524c921c4d0bf672614e65c1c2706bb"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/元宝专家模式-STOP03A-old-mismatched.json",
+      "bytes": 1771,
+      "sha256": "306b262e8ea34bf39e066a4413e805b8464704d198271be34dacb6d6efc7d889"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/元宝专家模式-STOP03A-old-mismatched.md",
+      "bytes": 1415,
+      "sha256": "5788185644460a5275113b8361035c5b908f0f8b5266ecee88fd554d19afbe17"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/豆包办公-STOP03A-a01.json",
+      "bytes": 1753,
+      "sha256": "438cff6c1aa23749ea09604c25112d21e09fa5adaaea6d24134cbdab6332b81b"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03A/运行记录/豆包办公-STOP03A-a01.md",
+      "bytes": 1577,
+      "sha256": "674bdca3582b09aa0ed96bf85033b9505701cb289a94b71f5c2d555c54878346"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/README.md",
+      "bytes": 2544,
+      "sha256": "746e2beac146c964ff1f7cc7a82fe3725440a49ef195ba0303e6117a22ffa5c9"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/STOP03B-五段式任务报告.md",
+      "bytes": 3839,
+      "sha256": "778ab04c8a141f26b8fbe312bc9981c137e78c26b9659c5dd6ae996e80f2a396"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/整理依据与原件指纹.json",
+      "bytes": 4070,
+      "sha256": "7ee13932b4c000ecce2bc47ad956a5bb70d157a8d9a69aa338a3d3cbca1183d9"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/运行记录/Codex-STOP03B-a01.json",
+      "bytes": 1666,
+      "sha256": "d7302a77c78b0f64f2a9123bad2ecd6b3524a0324940e4406d24328e882ea1e5"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/运行记录/Codex-STOP03B-a01.md",
+      "bytes": 1481,
+      "sha256": "6561f49c1a7e66f1f1d45ab092a2eb08f246a4ae8df232072fb7e14e3661cf5e"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/运行记录/DSH-STOP03B-a01.json",
+      "bytes": 1616,
+      "sha256": "1125db37e30733cf7e8d79ca7a50895f3334b5108370f8c8377b11fe3c80e2c5"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/运行记录/DSH-STOP03B-a01.md",
+      "bytes": 1434,
+      "sha256": "5ebb9fe4002fe8d04ba760ce40e8a4fc5e311c5c83691744fe325627682fe5aa"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/运行记录/WorkBuddy-STOP03B-a01.json",
+      "bytes": 1696,
+      "sha256": "30f989b79ab2db94fb3387046b619ac9872b6c32ed6df87844fcd692c1e7b4d4"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/运行记录/WorkBuddy-STOP03B-a01.md",
+      "bytes": 1528,
+      "sha256": "93be7135a40b1c214da013624791e2530ec4db249de2868b9b803df0c34c1c9d"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/运行记录/元宝专家模式-STOP03B-a01.json",
+      "bytes": 1743,
+      "sha256": "afb99469006b4b58d22635610e914c03e6d97c1408497a6e296086a0f8c0bd91"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/运行记录/元宝专家模式-STOP03B-a01.md",
+      "bytes": 1542,
+      "sha256": "564c4560ca29570d2acf4fbb33f49ba2136fd710315b963db8907a216eb6122f"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/运行记录/豆包办公-STOP03B-a01.json",
+      "bytes": 1752,
+      "sha256": "e2cb6fb4fe9c154fda335f59d6d451e529eb2d80dcff40a38ba42fe0de176f8d"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/STOP03B/运行记录/豆包办公-STOP03B-a01.md",
+      "bytes": 1576,
+      "sha256": "3a1184c655c6f43ac6bf5901040fc2acf5a65c27e1337fb1228d17ab7dd99b70"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/修正核对.json",
+      "bytes": 2624,
+      "sha256": "3336c67e5803f01c8ddb96e31c1cf9e01fd50ef12fe8947497fbd5cd89d3c3e2"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/总索引.json",
+      "bytes": 10853,
+      "sha256": "d8d716c9e01082314adf200bb31dabc2e1cd4cc5e708fb98aad082c76a6059a9"
+    },
+    {
+      "path": "results/unified-runs-2026-10-30/总索引.md",
+      "bytes": 9567,
+      "sha256": "5a6bb565c5f142aa89f39090a3303c06d7c13d5f235792f8cd20238e06d60347"
     },
     {
       "path": "results/unknown-disposition-2026-10-27.json",

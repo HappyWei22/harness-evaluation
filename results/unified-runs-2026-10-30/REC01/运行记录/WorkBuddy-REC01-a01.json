@@ -1,0 +1,25 @@
+{
+  "唯一ID": "WorkBuddy-REC01-a01",
+  "题目与脚本版本": "REC01 参数报错后继续导出；业务脚本1.0.0；评分规则1.0.0",
+  "产品版本": "未记录／未知",
+  "模型": "hy4-preview（原生日志）；思考档位未记录",
+  "工具": {
+    "实际工具": "Bash两次＋读取产物＋present_files；另有成功后一次记忆目录写入（非第三次运行）",
+    "工作目录": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/REC01-a01"
+  },
+  "权限": "未记录／未知",
+  "技能状态": "原生配置；未专门选择或添加个人Skill（用户说明）；日志附带“写入当天记忆”指令，来源未进一步定位",
+  "时间": "2026-10-20 21:06:25—21:07:12（北京时间；原生会话首末事件，跨度47秒）",
+  "证据等级": {
+    "说明": "E2支持两次调用与Exit Code: 0及五个成功字段；E1支持交付文件内容与脚本指纹。首次错误文字被放在Stdout栏，属呈现差异。",
+    "题面": "cases/REC01/提示词/01-开始任务.md",
+    "脚本": "cases/REC01/输入/recovery_export.py",
+    "原生证据": "evidence/recovery/REC01/WorkBuddy/native.excerpt.json",
+    "结果文件": "evidence/recovery/REC01/WorkBuddy/snapshot/outputs/registration_summary.json",
+    "原评分": "evidence/recovery/REC01/WorkBuddy/score.json",
+    "原审阅": "results/inclusion-review-2026-10-30/03-失败恢复/REC01-纳入审阅.json",
+    "原台账ID": "REC01-WorkBuddy-a01",
+    "公开版说明": "公开副本：路径、会话标识和私人入口已脱敏；公开摘录不等于完整原件。来源SHA-256与原行号指向本地原件，公开文件字节指纹见MANIFEST.json；原字段内的指针不保证适用于变换后的公开副本。未公开原件不能由本包独立认证。"
+  },
+  "最终裁定": "三项通过并纳入，3/3（原分）；额外记忆写入记为配置差异与指令遵循现象，不追加扣分。"
+}

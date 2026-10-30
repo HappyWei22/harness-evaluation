@@ -1,0 +1,24 @@
+{
+  "唯一ID": "WorkBuddy-OBS02-a02",
+  "题目与脚本版本": "OBS02 报错与重试过程追踪；业务脚本0.3.1-portable-pilot；评分规则0.3.0-pilot",
+  "产品版本": "未记录／未知",
+  "模型": "Hy4 preview；本次思考档位未记录",
+  "工具": {
+    "实际工具": "Bash（执行命令）、present_files（交付文件）",
+    "工作目录": "/PUBLIC_PROJECT/独立测试工作区/WorkBuddy/OBS02-a02"
+  },
+  "权限": "沿用原有设置；具体权限档位未记录",
+  "技能状态": "原生配置；未专门选择或添加个人Skill，直接发送提示词（用户说明）",
+  "时间": "2026-10-26 22:21:17.771—22:22:07.558（北京时间；消息间隔49.787秒）",
+  "证据等级": {
+    "说明": "E2支持本次调用、错误与返回配对；E1支持导出文件正确",
+    "题面": "cases/OBS02/prompts/WorkBuddy.md",
+    "输入脚本": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/WorkBuddy-a02/阶段01-完成后只读取证/工作目录/observability_task.py",
+    "输入说明": "本次归档脚本",
+    "原生证据": "evidence/observability/OBS02/WorkBuddy/native.excerpt.json",
+    "结果文件": "evidence/observability/OBS02/WorkBuddy/outputs/registration_export.json",
+    "原评分": "LOCAL_ONLY: 维度评测/07-可观测性/OBS02-报错与重试过程追踪/运行记录/WorkBuddy-a02/评分与归因.json",
+    "公开版说明": "公开副本：路径、会话标识和私人入口已脱敏；公开摘录不等于完整原件。来源SHA-256与原行号指向本地原件，公开文件字节指纹见MANIFEST.json；原字段内的指针不保证适用于变换后的公开副本。未公开原件不能由本包独立认证。"
+  },
+  "最终裁定": "失败输入可查、原始错误可查、尝试可区分、调用与返回可配对：4项通过并纳入本题比较；导出文件正确。"
+}

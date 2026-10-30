@@ -1,0 +1,1264 @@
+{
+  "审阅日期": "2026-10-30",
+  "审阅方式": "AI辅助只读审阅，非第二位独立人工验收",
+  "范围": {
+    "任务": "OBS03 部分完成与受阻结束追踪",
+    "运行数": 5,
+    "轮次": "a02",
+    "观察项数": 20,
+    "当前解释复核版本": "2026-10-27-r1",
+    "采用规则": "0.3.0-pilot",
+    "业务输入": "0.3.1-portable-pilot"
+  },
+  "计数": {
+    "可纳入观察项": 14,
+    "待核查且当前判定未知": 6,
+    "明确失败": 0,
+    "新增产品运行": 0,
+    "本轮改分": 0
+  },
+  "运行映射": [
+    {
+      "product": "Codex",
+      "review_run_id": "Codex-OBS03-a02",
+      "latest_score_source": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/Codex-新版评分.json",
+      "latest_audit_source": "evidence/observability-review/2026-10-27-r1/Codex/audit.json",
+      "historical_score_source": "LOCAL_ONLY: 维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/Codex-a02/评分与归因.json",
+      "review_version": "2026-10-27-r1",
+      "manual_reopen_performed": true,
+      "reopen_evidence": {
+        "manual_reopen_performed": true,
+        "user_statement_verbatim": "无变化",
+        "ui_observed_by_evaluator": false,
+        "new_after_reopen_screenshot": false,
+        "exact_navigation_method": "未进一步细分；不补造历史入口或分享页入口",
+        "before_native_sha256": "18c8c9822fd0c8b0a87d032235ce832143d91ffb71d99c8536a4c0af3a1a334c",
+        "after_native_sha256": "18c8c9822fd0c8b0a87d032235ce832143d91ffb71d99c8536a4c0af3a1a334c",
+        "native_bytes_identical": true,
+        "native_rows_before": 51,
+        "native_rows_after": 51,
+        "before_manifest_files_checked": 7,
+        "after_manifest_files_checked": 7,
+        "request_scope": "检查原始任务、A返回、B两次失败、status及任务收尾；三产品旧说明另明确检查原生结束/等待状态及C步骤面板。",
+        "basis": "用户具体操作反馈与归档文件检查分别登记；不以文件相等推断用户重开。",
+        "display_after_reopen_basis": null,
+        "long_term_reliability_tested": false
+      },
+      "terminal_layer": "native_runtime_event",
+      "observed_business_state": "A成功、B连续失败、无有效导出和最终包；不把status退出0当B成功。"
+    },
+    {
+      "product": "DSH",
+      "review_run_id": "DSH-OBS03-a02",
+      "latest_score_source": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/DSH-新版评分.json",
+      "latest_audit_source": "evidence/observability-review/2026-10-27-r1/DSH/audit.json",
+      "historical_score_source": "LOCAL_ONLY: 维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/DSH-a02/评分与归因.json",
+      "review_version": "2026-10-27-r1",
+      "manual_reopen_performed": true,
+      "reopen_evidence": {
+        "manual_reopen_performed": true,
+        "user_statement_verbatim": "切换后，未发生任何变化，与之前给你发的状态一致",
+        "ui_observed_by_evaluator": false,
+        "new_after_reopen_screenshot": false,
+        "exact_navigation_method": "未进一步细分；不补造历史入口或分享页入口",
+        "before_native_sha256": "cadf13e021962f75acf488ac3d0609caa24e82d337679ee41c8f2f66ebbe5aee",
+        "after_native_sha256": "cadf13e021962f75acf488ac3d0609caa24e82d337679ee41c8f2f66ebbe5aee",
+        "native_bytes_identical": true,
+        "native_rows_before": 84,
+        "native_rows_after": 84,
+        "before_manifest_files_checked": 7,
+        "after_manifest_files_checked": 7,
+        "request_scope": "检查原始任务、A返回、B两次失败、status及任务收尾；三产品旧说明另明确检查原生结束/等待状态及C步骤面板。",
+        "basis": "用户具体操作反馈与归档文件检查分别登记；不以文件相等推断用户重开。",
+        "display_after_reopen_basis": null,
+        "long_term_reliability_tested": false
+      },
+      "terminal_layer": "native_runtime_event",
+      "observed_business_state": "A成功、B连续失败、无有效导出和最终包；不把status退出0当B成功。"
+    },
+    {
+      "product": "豆包工作",
+      "review_run_id": "豆包工作-OBS03-a02",
+      "latest_score_source": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/豆包工作-新版评分.json",
+      "latest_audit_source": "evidence/observability-review/2026-10-27-r1/Doubao/audit.json",
+      "historical_score_source": "LOCAL_ONLY: 维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/豆包工作-a02/评分与归因.json",
+      "review_version": "2026-10-27-r1",
+      "manual_reopen_performed": true,
+      "reopen_evidence": {
+        "manual_reopen_performed": true,
+        "user_statement_verbatim": "三款产品操作后，都未出现任何变化，与我之前发给你的状态一致",
+        "ui_observed_by_evaluator": false,
+        "new_after_reopen_screenshot": false,
+        "exact_navigation_method": "未进一步细分；不补造历史入口或分享页入口",
+        "before_native_sha256": "b5ef38175f14eaf027397030f9ea8a1eafca5466cf617548137cd42f91088923",
+        "after_native_sha256": "b5ef38175f14eaf027397030f9ea8a1eafca5466cf617548137cd42f91088923",
+        "native_bytes_identical": true,
+        "native_rows_before": 15,
+        "native_rows_after": 15,
+        "before_manifest_files_checked": 16,
+        "after_manifest_files_checked": 6,
+        "request_scope": "检查原始任务、A返回、B两次失败、status及任务收尾；三产品旧说明另明确检查原生结束/等待状态及C步骤面板。",
+        "basis": "用户具体操作反馈与归档文件检查分别登记；不以文件相等推断用户重开。",
+        "display_after_reopen_basis": "豆包收尾显示保持来自用户按该检查范围的直接反馈，没有新的重开后网页归档；轨迹字节核对不覆盖elapsed_block。",
+        "long_term_reliability_tested": false
+      },
+      "terminal_layer": "native_product_display",
+      "observed_business_state": "A成功、B连续失败、无有效导出和最终包；不把status退出0当B成功。"
+    },
+    {
+      "product": "WorkBuddy",
+      "review_run_id": "WorkBuddy-OBS03-a02",
+      "latest_score_source": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/WorkBuddy-新版评分.json",
+      "latest_audit_source": "evidence/observability-review/2026-10-27-r1/WorkBuddy/audit.json",
+      "historical_score_source": "LOCAL_ONLY: 维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/WorkBuddy-a02/评分与归因.json",
+      "review_version": "2026-10-27-r1",
+      "manual_reopen_performed": true,
+      "reopen_evidence": {
+        "manual_reopen_performed": true,
+        "user_statement_verbatim": "三款产品操作后，都未出现任何变化，与我之前发给你的状态一致",
+        "ui_observed_by_evaluator": false,
+        "new_after_reopen_screenshot": false,
+        "exact_navigation_method": "未进一步细分；不补造历史入口或分享页入口",
+        "before_native_sha256": "e68a54347258400ca2704ce6934c6a722ba6aa23f5214d0d9c547c2019b33734",
+        "after_native_sha256": "e68a54347258400ca2704ce6934c6a722ba6aa23f5214d0d9c547c2019b33734",
+        "native_bytes_identical": true,
+        "native_rows_before": 40,
+        "native_rows_after": 40,
+        "before_manifest_files_checked": 10,
+        "after_manifest_files_checked": 6,
+        "request_scope": "检查原始任务、A返回、B两次失败、status及任务收尾；三产品旧说明另明确检查原生结束/等待状态及C步骤面板。",
+        "basis": "用户具体操作反馈与归档文件检查分别登记；不以文件相等推断用户重开。",
+        "display_after_reopen_basis": null,
+        "long_term_reliability_tested": false
+      },
+      "terminal_layer": "insufficient_task_terminal",
+      "observed_business_state": "A成功、B连续失败、无有效导出和最终包；不把status退出0当B成功。"
+    },
+    {
+      "product": "元宝专家模式",
+      "review_run_id": "元宝专家模式-OBS03-a02",
+      "latest_score_source": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/元宝专家模式-新版评分.json",
+      "latest_audit_source": "evidence/observability-review/2026-10-27-r1/Yuanbao/audit.json",
+      "historical_score_source": "LOCAL_ONLY: 维度评测/07-可观测性/OBS03-部分完成与受阻结束追踪/运行记录/元宝专家模式-a02/评分与归因.json",
+      "review_version": "2026-10-27-r1",
+      "manual_reopen_performed": true,
+      "reopen_evidence": {
+        "manual_reopen_performed": true,
+        "user_statement_verbatim": "三款产品操作后，都未出现任何变化，与我之前发给你的状态一致",
+        "ui_observed_by_evaluator": false,
+        "new_after_reopen_screenshot": false,
+        "exact_navigation_method": "未进一步细分；不补造历史入口或分享页入口",
+        "before_native_sha256": null,
+        "after_native_sha256": null,
+        "native_bytes_identical": null,
+        "native_rows_before": null,
+        "native_rows_after": null,
+        "before_manifest_files_checked": 8,
+        "after_manifest_files_checked": 5,
+        "request_scope": "检查原始任务、A返回、B两次失败、status及任务收尾；三产品旧说明另明确检查原生结束/等待状态及C步骤面板。",
+        "basis": "用户具体操作反馈与归档文件检查分别登记；不以文件相等推断用户重开。",
+        "display_after_reopen_basis": null,
+        "long_term_reliability_tested": false
+      },
+      "terminal_layer": "insufficient_original_results_and_state",
+      "observed_business_state": "业务下载件仅辅助，原生返回不足。"
+    }
+  ],
+  "审阅表": [
+    {
+      "比较项": "O07 部分成功与连续失败链可还原",
+      "观察项ID": "O07",
+      "产品": "Codex",
+      "审阅运行ID": "Codex-OBS03-a02",
+      "评分规则": "0.3.0-pilot",
+      "解释复核版本": "2026-10-27-r1",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "沿用原观察项和分值，事后同标准解释版本单列",
+        "说明": "不混用较早O08提案或历史source_reason替代当前review_reason。"
+      },
+      "证据有效": {
+        "判断": "满足对应范围",
+        "等级": "E2",
+        "范围": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+        "当前评分来源": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/Codex-新版评分.json",
+        "当前复核来源": "evidence/observability-review/2026-10-27-r1/Codex/audit.json",
+        "公开证据入口": [
+          "evidence/observability/OBS03/Codex/native.excerpt.json",
+          "evidence/observability/OBS03/Codex/file-check.json",
+          "evidence/observability/OBS03/Codex/trace-audit.json",
+          "evidence/observability/OBS03/Codex/before-snapshot.json",
+          "evidence/observability/OBS03/Codex/outputs/registration_summary.json",
+          "evidence/observability/OBS03/Codex/outputs/business_events.jsonl",
+          "evidence/observability/OBS03/Codex/reopen.json",
+          "evidence/observability/OBS03/Codex/after-reopen.excerpt.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足本次观察目标",
+        "说明": "A成功、B两次预设失败7/9、C依赖受阻；业务未全部完成是预定情形。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关答案或跨产品材料污染",
+        "范围": "四款实际输入及主执行链可查；WB额外记忆写入单列，DSH/WB读本题公开脚本按本题规则处理；元宝完整云端执行材料有缺口。"
+      },
+      "当前判定": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "满分": 1,
+        "理由": "25/28行A成功，30/33与35/38行B两次不同失败，内层退出0/7/9分别保留，输入、先后及产物可还原。"
+      },
+      "早期历史判定": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "说明": "保留旧现场，仅记录版本关系，不回写。"
+      },
+      "纳入去向": "纳入",
+      "理由": "25/28行A成功，30/33与35/38行B两次不同失败，内层退出0/7/9分别保留，输入、先后及产物可还原。",
+      "适用边界": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+      "后续与停止条件": "在上述范围使用；沿用既有停止决定，不为完整后台或长期保存命题重跑。"
+    },
+    {
+      "比较项": "O08 后续步骤执行状态可区分",
+      "观察项ID": "O08",
+      "产品": "Codex",
+      "审阅运行ID": "Codex-OBS03-a02",
+      "评分规则": "0.3.0-pilot",
+      "解释复核版本": "2026-10-27-r1",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "沿用原观察项和分值，事后同标准解释版本单列",
+        "说明": "不混用较早O08提案或历史source_reason替代当前review_reason。"
+      },
+      "证据有效": {
+        "判断": "满足对应范围",
+        "等级": "E2",
+        "范围": "仅已逐条审阅的主执行链及其明确发出请求，结合独立准备与实物参照；不能从账本或文件缺失单独推出C未执行。",
+        "当前评分来源": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/Codex-新版评分.json",
+        "当前复核来源": "evidence/observability-review/2026-10-27-r1/Codex/audit.json",
+        "公开证据入口": [
+          "evidence/observability/OBS03/Codex/native.excerpt.json",
+          "evidence/observability/OBS03/Codex/file-check.json",
+          "evidence/observability/OBS03/Codex/trace-audit.json",
+          "evidence/observability/OBS03/Codex/before-snapshot.json",
+          "evidence/observability/OBS03/Codex/outputs/registration_summary.json",
+          "evidence/observability/OBS03/Codex/outputs/business_events.jsonl",
+          "evidence/observability/OBS03/Codex/reopen.json",
+          "evidence/observability/OBS03/Codex/after-reopen.excerpt.json",
+          "evidence/observability-review/2026-10-27-r1/Codex/audit.json",
+          "evidence/observability-review/2026-10-27-r1/policy.json",
+          "evidence/observability-review/2026-10-27-r1/frozen-source-audit.json",
+          "evidence/observability-review/2026-10-27-r1/Codex/all-requests.excerpt.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足本次观察目标",
+        "说明": "A成功、B两次预设失败7/9、C依赖受阻；业务未全部完成是预定情形。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关答案或跨产品材料污染",
+        "范围": "四款实际输入及主执行链可查；WB额外记忆写入单列，DSH/WB读本题公开脚本按本题规则处理；元宝完整云端执行材料有缺口。"
+      },
+      "当前判定": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "满分": 1,
+        "理由": "复核同次已取回主执行链全部请求和配对返回，结合独立准备指纹、冻结单动作程序、初态与末态，支持该范围内C未开始；不推断不可见后台。"
+      },
+      "早期历史判定": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "说明": "保留旧现场，仅记录版本关系，不回写。"
+      },
+      "纳入去向": "纳入",
+      "理由": "复核同次已取回主执行链全部请求和配对返回，结合独立准备指纹、冻结单动作程序、初态与末态，支持该范围内C未开始；不推断不可见后台。",
+      "适用边界": "仅已逐条审阅的主执行链及其明确发出请求，结合独立准备与实物参照；不能从账本或文件缺失单独推出C未执行。",
+      "后续与停止条件": "在上述范围使用；沿用既有停止决定，不为完整后台或长期保存命题重跑。"
+    },
+    {
+      "比较项": "O09 受阻结束的原生状态可追溯",
+      "观察项ID": "O09",
+      "产品": "Codex",
+      "审阅运行ID": "Codex-OBS03-a02",
+      "评分规则": "0.3.0-pilot",
+      "解释复核版本": "2026-10-27-r1",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "沿用原观察项和分值，事后同标准解释版本单列",
+        "说明": "不混用较早O08提案或历史source_reason替代当前review_reason。"
+      },
+      "证据有效": {
+        "判断": "满足对应范围",
+        "等级": "E2",
+        "范围": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+        "当前评分来源": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/Codex-新版评分.json",
+        "当前复核来源": "evidence/observability-review/2026-10-27-r1/Codex/audit.json",
+        "公开证据入口": [
+          "evidence/observability/OBS03/Codex/native.excerpt.json",
+          "evidence/observability/OBS03/Codex/file-check.json",
+          "evidence/observability/OBS03/Codex/trace-audit.json",
+          "evidence/observability/OBS03/Codex/before-snapshot.json",
+          "evidence/observability/OBS03/Codex/outputs/registration_summary.json",
+          "evidence/observability/OBS03/Codex/outputs/business_events.jsonl",
+          "evidence/observability/OBS03/Codex/reopen.json",
+          "evidence/observability/OBS03/Codex/after-reopen.excerpt.json",
+          "evidence/observability-review/2026-10-27-r1/Codex/audit.json",
+          "evidence/observability-review/2026-10-27-r1/policy.json",
+          "evidence/observability-review/2026-10-27-r1/frozen-source-audit.json",
+          "evidence/observability-review/2026-10-27-r1/Codex/all-requests.excerpt.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足本次观察目标",
+        "说明": "A成功、B两次预设失败7/9、C依赖受阻；业务未全部完成是预定情形。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关答案或跨产品材料污染",
+        "范围": "四款实际输入及主执行链可查；WB额外记忆写入单列，DSH/WB读本题公开脚本按本题规则处理；元宝完整云端执行材料有缺口。"
+      },
+      "当前判定": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "满分": 1,
+        "理由": "原生任务收尾状态与同任务A成功、B两次实际失败及O08的C状态依据可关联；运行结束与业务受阻分别读取。"
+      },
+      "早期历史判定": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "说明": "保留旧现场，仅记录版本关系，不回写。"
+      },
+      "纳入去向": "纳入",
+      "理由": "原生任务收尾状态与同任务A成功、B两次实际失败及O08的C状态依据可关联；运行结束与业务受阻分别读取。",
+      "适用边界": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+      "后续与停止条件": "在上述范围使用；沿用既有停止决定，不为完整后台或长期保存命题重跑。"
+    },
+    {
+      "比较项": "O10 重新打开后复杂历史仍完整",
+      "观察项ID": "O10",
+      "产品": "Codex",
+      "审阅运行ID": "Codex-OBS03-a02",
+      "评分规则": "0.3.0-pilot",
+      "解释复核版本": "2026-10-27-r1",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "沿用原观察项和分值，事后同标准解释版本单列",
+        "说明": "不混用较早O08提案或历史source_reason替代当前review_reason。"
+      },
+      "证据有效": {
+        "判断": "满足对应范围",
+        "等级": "E2",
+        "范围": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+        "当前评分来源": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/Codex-新版评分.json",
+        "当前复核来源": "evidence/observability-review/2026-10-27-r1/Codex/audit.json",
+        "公开证据入口": [
+          "evidence/observability/OBS03/Codex/native.excerpt.json",
+          "evidence/observability/OBS03/Codex/file-check.json",
+          "evidence/observability/OBS03/Codex/trace-audit.json",
+          "evidence/observability/OBS03/Codex/before-snapshot.json",
+          "evidence/observability/OBS03/Codex/outputs/registration_summary.json",
+          "evidence/observability/OBS03/Codex/outputs/business_events.jsonl",
+          "evidence/observability/OBS03/Codex/reopen.json",
+          "evidence/observability/OBS03/Codex/after-reopen.excerpt.json",
+          "evidence/observability-review/2026-10-27-r1/Codex/audit.json",
+          "evidence/observability-review/2026-10-27-r1/policy.json",
+          "evidence/observability-review/2026-10-27-r1/frozen-source-audit.json",
+          "evidence/observability-review/2026-10-27-r1/Codex/all-requests.excerpt.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足本次观察目标",
+        "说明": "A成功、B两次预设失败7/9、C依赖受阻；业务未全部完成是预定情形。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关答案或跨产品材料污染",
+        "范围": "四款实际输入及主执行链可查；WB额外记忆写入单列，DSH/WB读本题公开脚本按本题规则处理；元宝完整云端执行材料有缺口。"
+      },
+      "当前判定": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "满分": 1,
+        "理由": "用户按既有明确重开要求操作并直接反馈无变化；前后原生文件一致，原始任务、A/B链、C状态依据及原生收尾均有对应来源。界面来自人工观察，文件来自只读比对。"
+      },
+      "早期历史判定": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "说明": "保留旧现场，仅记录版本关系，不回写。"
+      },
+      "纳入去向": "纳入",
+      "理由": "用户按既有明确重开要求操作并直接反馈无变化；前后原生文件一致，原始任务、A/B链、C状态依据及原生收尾均有对应来源。界面来自人工观察，文件来自只读比对。",
+      "适用边界": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+      "后续与停止条件": "在上述范围使用；沿用既有停止决定，不为完整后台或长期保存命题重跑。"
+    },
+    {
+      "比较项": "O07 部分成功与连续失败链可还原",
+      "观察项ID": "O07",
+      "产品": "DSH",
+      "审阅运行ID": "DSH-OBS03-a02",
+      "评分规则": "0.3.0-pilot",
+      "解释复核版本": "2026-10-27-r1",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "沿用原观察项和分值，事后同标准解释版本单列",
+        "说明": "不混用较早O08提案或历史source_reason替代当前review_reason。"
+      },
+      "证据有效": {
+        "判断": "满足对应范围",
+        "等级": "E2",
+        "范围": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+        "当前评分来源": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/DSH-新版评分.json",
+        "当前复核来源": "evidence/observability-review/2026-10-27-r1/DSH/audit.json",
+        "公开证据入口": [
+          "evidence/observability/OBS03/DSH/native.excerpt.json",
+          "evidence/observability/OBS03/DSH/file-check.json",
+          "evidence/observability/OBS03/DSH/trace-audit.json",
+          "evidence/observability/OBS03/DSH/before-snapshot.json",
+          "evidence/observability/OBS03/DSH/outputs/registration_summary.json",
+          "evidence/observability/OBS03/DSH/outputs/business_events.jsonl",
+          "evidence/observability/OBS03/DSH/reopen.json",
+          "evidence/observability/OBS03/DSH/after-reopen.excerpt.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足本次观察目标",
+        "说明": "A成功、B两次预设失败7/9、C依赖受阻；业务未全部完成是预定情形。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关答案或跨产品材料污染",
+        "范围": "四款实际输入及主执行链可查；WB额外记忆写入单列，DSH/WB读本题公开脚本按本题规则处理；元宝完整云端执行材料有缺口。"
+      },
+      "当前判定": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "满分": 1,
+        "理由": "A的36/39行成功、B的44/47与52/55两次失败均有独立调用和返回，关联作业退出0/7/9，顺序、输入和产物归属可还原。"
+      },
+      "早期历史判定": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "说明": "保留旧现场，仅记录版本关系，不回写。"
+      },
+      "纳入去向": "纳入",
+      "理由": "A的36/39行成功、B的44/47与52/55两次失败均有独立调用和返回，关联作业退出0/7/9，顺序、输入和产物归属可还原。",
+      "适用边界": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+      "后续与停止条件": "在上述范围使用；沿用既有停止决定，不为完整后台或长期保存命题重跑。"
+    },
+    {
+      "比较项": "O08 后续步骤执行状态可区分",
+      "观察项ID": "O08",
+      "产品": "DSH",
+      "审阅运行ID": "DSH-OBS03-a02",
+      "评分规则": "0.3.0-pilot",
+      "解释复核版本": "2026-10-27-r1",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "沿用原观察项和分值，事后同标准解释版本单列",
+        "说明": "不混用较早O08提案或历史source_reason替代当前review_reason。"
+      },
+      "证据有效": {
+        "判断": "满足对应范围",
+        "等级": "E2",
+        "范围": "仅已逐条审阅的主执行链及其明确发出请求，结合独立准备与实物参照；不能从账本或文件缺失单独推出C未执行。",
+        "当前评分来源": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/DSH-新版评分.json",
+        "当前复核来源": "evidence/observability-review/2026-10-27-r1/DSH/audit.json",
+        "公开证据入口": [
+          "evidence/observability/OBS03/DSH/native.excerpt.json",
+          "evidence/observability/OBS03/DSH/file-check.json",
+          "evidence/observability/OBS03/DSH/trace-audit.json",
+          "evidence/observability/OBS03/DSH/before-snapshot.json",
+          "evidence/observability/OBS03/DSH/outputs/registration_summary.json",
+          "evidence/observability/OBS03/DSH/outputs/business_events.jsonl",
+          "evidence/observability/OBS03/DSH/reopen.json",
+          "evidence/observability/OBS03/DSH/after-reopen.excerpt.json",
+          "evidence/observability-review/2026-10-27-r1/DSH/audit.json",
+          "evidence/observability-review/2026-10-27-r1/policy.json",
+          "evidence/observability-review/2026-10-27-r1/frozen-source-audit.json",
+          "evidence/observability-review/2026-10-27-r1/DSH/all-requests.excerpt.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足本次观察目标",
+        "说明": "A成功、B两次预设失败7/9、C依赖受阻；业务未全部完成是预定情形。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关答案或跨产品材料污染",
+        "范围": "四款实际输入及主执行链可查；WB额外记忆写入单列，DSH/WB读本题公开脚本按本题规则处理；元宝完整云端执行材料有缺口。"
+      },
+      "当前判定": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "满分": 1,
+        "理由": "复核同次已取回主执行链全部请求和配对返回，结合独立准备指纹、冻结单动作程序、初态与末态，支持该范围内C未开始；不推断不可见后台。"
+      },
+      "早期历史判定": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "说明": "保留旧现场，仅记录版本关系，不回写。"
+      },
+      "纳入去向": "纳入",
+      "理由": "复核同次已取回主执行链全部请求和配对返回，结合独立准备指纹、冻结单动作程序、初态与末态，支持该范围内C未开始；不推断不可见后台。",
+      "适用边界": "仅已逐条审阅的主执行链及其明确发出请求，结合独立准备与实物参照；不能从账本或文件缺失单独推出C未执行。",
+      "后续与停止条件": "在上述范围使用；沿用既有停止决定，不为完整后台或长期保存命题重跑。"
+    },
+    {
+      "比较项": "O09 受阻结束的原生状态可追溯",
+      "观察项ID": "O09",
+      "产品": "DSH",
+      "审阅运行ID": "DSH-OBS03-a02",
+      "评分规则": "0.3.0-pilot",
+      "解释复核版本": "2026-10-27-r1",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "沿用原观察项和分值，事后同标准解释版本单列",
+        "说明": "不混用较早O08提案或历史source_reason替代当前review_reason。"
+      },
+      "证据有效": {
+        "判断": "满足对应范围",
+        "等级": "E2",
+        "范围": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+        "当前评分来源": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/DSH-新版评分.json",
+        "当前复核来源": "evidence/observability-review/2026-10-27-r1/DSH/audit.json",
+        "公开证据入口": [
+          "evidence/observability/OBS03/DSH/native.excerpt.json",
+          "evidence/observability/OBS03/DSH/file-check.json",
+          "evidence/observability/OBS03/DSH/trace-audit.json",
+          "evidence/observability/OBS03/DSH/before-snapshot.json",
+          "evidence/observability/OBS03/DSH/outputs/registration_summary.json",
+          "evidence/observability/OBS03/DSH/outputs/business_events.jsonl",
+          "evidence/observability/OBS03/DSH/reopen.json",
+          "evidence/observability/OBS03/DSH/after-reopen.excerpt.json",
+          "evidence/observability-review/2026-10-27-r1/DSH/audit.json",
+          "evidence/observability-review/2026-10-27-r1/policy.json",
+          "evidence/observability-review/2026-10-27-r1/frozen-source-audit.json",
+          "evidence/observability-review/2026-10-27-r1/DSH/all-requests.excerpt.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足本次观察目标",
+        "说明": "A成功、B两次预设失败7/9、C依赖受阻；业务未全部完成是预定情形。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关答案或跨产品材料污染",
+        "范围": "四款实际输入及主执行链可查；WB额外记忆写入单列，DSH/WB读本题公开脚本按本题规则处理；元宝完整云端执行材料有缺口。"
+      },
+      "当前判定": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "满分": 1,
+        "理由": "原生任务收尾状态与同任务A成功、B两次实际失败及O08的C状态依据可关联；运行结束与业务受阻分别读取。"
+      },
+      "早期历史判定": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "说明": "保留旧现场，仅记录版本关系，不回写。"
+      },
+      "纳入去向": "纳入",
+      "理由": "原生任务收尾状态与同任务A成功、B两次实际失败及O08的C状态依据可关联；运行结束与业务受阻分别读取。",
+      "适用边界": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+      "后续与停止条件": "在上述范围使用；沿用既有停止决定，不为完整后台或长期保存命题重跑。"
+    },
+    {
+      "比较项": "O10 重新打开后复杂历史仍完整",
+      "观察项ID": "O10",
+      "产品": "DSH",
+      "审阅运行ID": "DSH-OBS03-a02",
+      "评分规则": "0.3.0-pilot",
+      "解释复核版本": "2026-10-27-r1",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "沿用原观察项和分值，事后同标准解释版本单列",
+        "说明": "不混用较早O08提案或历史source_reason替代当前review_reason。"
+      },
+      "证据有效": {
+        "判断": "满足对应范围",
+        "等级": "E2",
+        "范围": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+        "当前评分来源": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/DSH-新版评分.json",
+        "当前复核来源": "evidence/observability-review/2026-10-27-r1/DSH/audit.json",
+        "公开证据入口": [
+          "evidence/observability/OBS03/DSH/native.excerpt.json",
+          "evidence/observability/OBS03/DSH/file-check.json",
+          "evidence/observability/OBS03/DSH/trace-audit.json",
+          "evidence/observability/OBS03/DSH/before-snapshot.json",
+          "evidence/observability/OBS03/DSH/outputs/registration_summary.json",
+          "evidence/observability/OBS03/DSH/outputs/business_events.jsonl",
+          "evidence/observability/OBS03/DSH/reopen.json",
+          "evidence/observability/OBS03/DSH/after-reopen.excerpt.json",
+          "evidence/observability-review/2026-10-27-r1/DSH/audit.json",
+          "evidence/observability-review/2026-10-27-r1/policy.json",
+          "evidence/observability-review/2026-10-27-r1/frozen-source-audit.json",
+          "evidence/observability-review/2026-10-27-r1/DSH/all-requests.excerpt.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足本次观察目标",
+        "说明": "A成功、B两次预设失败7/9、C依赖受阻；业务未全部完成是预定情形。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关答案或跨产品材料污染",
+        "范围": "四款实际输入及主执行链可查；WB额外记忆写入单列，DSH/WB读本题公开脚本按本题规则处理；元宝完整云端执行材料有缺口。"
+      },
+      "当前判定": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "满分": 1,
+        "理由": "用户按既有明确重开要求操作并直接反馈无变化；前后原生文件一致，原始任务、A/B链、C状态依据及原生收尾均有对应来源。界面来自人工观察，文件来自只读比对。"
+      },
+      "早期历史判定": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "说明": "保留旧现场，仅记录版本关系，不回写。"
+      },
+      "纳入去向": "纳入",
+      "理由": "用户按既有明确重开要求操作并直接反馈无变化；前后原生文件一致，原始任务、A/B链、C状态依据及原生收尾均有对应来源。界面来自人工观察，文件来自只读比对。",
+      "适用边界": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+      "后续与停止条件": "在上述范围使用；沿用既有停止决定，不为完整后台或长期保存命题重跑。"
+    },
+    {
+      "比较项": "O07 部分成功与连续失败链可还原",
+      "观察项ID": "O07",
+      "产品": "豆包工作",
+      "审阅运行ID": "豆包工作-OBS03-a02",
+      "评分规则": "0.3.0-pilot",
+      "解释复核版本": "2026-10-27-r1",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "沿用原观察项和分值，事后同标准解释版本单列",
+        "说明": "不混用较早O08提案或历史source_reason替代当前review_reason。"
+      },
+      "证据有效": {
+        "判断": "满足对应范围",
+        "等级": "E2",
+        "范围": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+        "当前评分来源": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/豆包工作-新版评分.json",
+        "当前复核来源": "evidence/observability-review/2026-10-27-r1/Doubao/audit.json",
+        "公开证据入口": [
+          "evidence/observability/OBS03/Doubao/native.excerpt.json",
+          "evidence/observability/OBS03/Doubao/file-check.json",
+          "evidence/observability/OBS03/Doubao/page-end-display.json",
+          "evidence/observability/OBS03/Doubao/page-tool-results.json",
+          "evidence/observability/OBS03/Doubao/outputs/registration_summary.json",
+          "evidence/observability/OBS03/Doubao/outputs/business_events.jsonl",
+          "evidence/observability/OBS03/Doubao/reopen.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足本次观察目标",
+        "说明": "A成功、B两次预设失败7/9、C依赖受阻；业务未全部完成是预定情形。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关答案或跨产品材料污染",
+        "范围": "四款实际输入及主执行链可查；WB额外记忆写入单列，DSH/WB读本题公开脚本按本题规则处理；元宝完整云端执行材料有缺口。"
+      },
+      "当前判定": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "满分": 1,
+        "理由": "A成功与B两次不同失败的实际调用和配对返回完整，文件归属一致"
+      },
+      "早期历史判定": {
+        "状态": "确认通过",
+        "得分": 1,
+        "说明": "保留旧现场，仅记录版本关系，不回写。"
+      },
+      "纳入去向": "纳入",
+      "理由": "A成功与B两次不同失败的实际调用和配对返回完整，文件归属一致",
+      "适用边界": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+      "后续与停止条件": "在上述范围使用；沿用既有停止决定，不为完整后台或长期保存命题重跑。"
+    },
+    {
+      "比较项": "O08 后续步骤执行状态可区分",
+      "观察项ID": "O08",
+      "产品": "豆包工作",
+      "审阅运行ID": "豆包工作-OBS03-a02",
+      "评分规则": "0.3.0-pilot",
+      "解释复核版本": "2026-10-27-r1",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "沿用原观察项和分值，事后同标准解释版本单列",
+        "说明": "不混用较早O08提案或历史source_reason替代当前review_reason。"
+      },
+      "证据有效": {
+        "判断": "满足对应范围",
+        "等级": "E2",
+        "范围": "仅已逐条审阅的主执行链及其明确发出请求，结合独立准备与实物参照；不能从账本或文件缺失单独推出C未执行。",
+        "当前评分来源": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/豆包工作-新版评分.json",
+        "当前复核来源": "evidence/observability-review/2026-10-27-r1/Doubao/audit.json",
+        "公开证据入口": [
+          "evidence/observability/OBS03/Doubao/native.excerpt.json",
+          "evidence/observability/OBS03/Doubao/file-check.json",
+          "evidence/observability/OBS03/Doubao/page-end-display.json",
+          "evidence/observability/OBS03/Doubao/page-tool-results.json",
+          "evidence/observability/OBS03/Doubao/outputs/registration_summary.json",
+          "evidence/observability/OBS03/Doubao/outputs/business_events.jsonl",
+          "evidence/observability/OBS03/Doubao/reopen.json",
+          "evidence/observability-review/2026-10-27-r1/Doubao/audit.json",
+          "evidence/observability-review/2026-10-27-r1/policy.json",
+          "evidence/observability-review/2026-10-27-r1/frozen-source-audit.json",
+          "evidence/observability-review/2026-10-27-r1/Doubao/all-requests.excerpt.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足本次观察目标",
+        "说明": "A成功、B两次预设失败7/9、C依赖受阻；业务未全部完成是预定情形。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关答案或跨产品材料污染",
+        "范围": "四款实际输入及主执行链可查；WB额外记忆写入单列，DSH/WB读本题公开脚本按本题规则处理；元宝完整云端执行材料有缺口。"
+      },
+      "当前判定": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "满分": 1,
+        "理由": "复核同次已取回主执行链全部请求和配对返回，结合独立准备指纹、冻结单动作程序、初态与末态，支持该范围内C未开始；不推断不可见后台。"
+      },
+      "早期历史判定": {
+        "状态": "未知",
+        "得分": null,
+        "说明": "保留旧现场，仅记录版本关系，不回写。"
+      },
+      "纳入去向": "纳入",
+      "理由": "复核同次已取回主执行链全部请求和配对返回，结合独立准备指纹、冻结单动作程序、初态与末态，支持该范围内C未开始；不推断不可见后台。",
+      "适用边界": "仅已逐条审阅的主执行链及其明确发出请求，结合独立准备与实物参照；不能从账本或文件缺失单独推出C未执行。",
+      "后续与停止条件": "在上述范围使用；沿用既有停止决定，不为完整后台或长期保存命题重跑。"
+    },
+    {
+      "比较项": "O09 受阻结束的原生状态可追溯",
+      "观察项ID": "O09",
+      "产品": "豆包工作",
+      "审阅运行ID": "豆包工作-OBS03-a02",
+      "评分规则": "0.3.0-pilot",
+      "解释复核版本": "2026-10-27-r1",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "沿用原观察项和分值，事后同标准解释版本单列",
+        "说明": "不混用较早O08提案或历史source_reason替代当前review_reason。"
+      },
+      "证据有效": {
+        "判断": "满足对应范围",
+        "等级": "E2",
+        "范围": "O09仅展示层83秒收尾；O10的收尾显示保持依用户按具体检查要求的反馈，无新增重开后网页归档。",
+        "当前评分来源": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/豆包工作-新版评分.json",
+        "当前复核来源": "evidence/observability-review/2026-10-27-r1/Doubao/audit.json",
+        "公开证据入口": [
+          "evidence/observability/OBS03/Doubao/native.excerpt.json",
+          "evidence/observability/OBS03/Doubao/file-check.json",
+          "evidence/observability/OBS03/Doubao/page-end-display.json",
+          "evidence/observability/OBS03/Doubao/page-tool-results.json",
+          "evidence/observability/OBS03/Doubao/outputs/registration_summary.json",
+          "evidence/observability/OBS03/Doubao/outputs/business_events.jsonl",
+          "evidence/observability/OBS03/Doubao/reopen.json",
+          "evidence/observability-review/2026-10-27-r1/Doubao/audit.json",
+          "evidence/observability-review/2026-10-27-r1/policy.json",
+          "evidence/observability-review/2026-10-27-r1/frozen-source-audit.json",
+          "evidence/observability-review/2026-10-27-r1/Doubao/all-requests.excerpt.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足本次观察目标",
+        "说明": "A成功、B两次预设失败7/9、C依赖受阻；业务未全部完成是预定情形。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关答案或跨产品材料污染",
+        "范围": "四款实际输入及主执行链可查；WB额外记忆写入单列，DSH/WB读本题公开脚本按本题规则处理；元宝完整云端执行材料有缺口。"
+      },
+      "当前判定": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "满分": 1,
+        "理由": "原生任务收尾状态与同任务A成功、B两次实际失败及O08的C状态依据可关联；运行结束与业务受阻分别读取。 本次接受产品原生展示层收尾，不宣称取得运行器专用结束事件。"
+      },
+      "早期历史判定": {
+        "状态": "未知",
+        "得分": null,
+        "说明": "保留旧现场，仅记录版本关系，不回写。"
+      },
+      "纳入去向": "纳入",
+      "理由": "原生任务收尾状态与同任务A成功、B两次实际失败及O08的C状态依据可关联；运行结束与业务受阻分别读取。 本次接受产品原生展示层收尾，不宣称取得运行器专用结束事件。",
+      "适用边界": "O09仅展示层83秒收尾；O10的收尾显示保持依用户按具体检查要求的反馈，无新增重开后网页归档。",
+      "后续与停止条件": "在上述范围使用；沿用既有停止决定，不为完整后台或长期保存命题重跑。"
+    },
+    {
+      "比较项": "O10 重新打开后复杂历史仍完整",
+      "观察项ID": "O10",
+      "产品": "豆包工作",
+      "审阅运行ID": "豆包工作-OBS03-a02",
+      "评分规则": "0.3.0-pilot",
+      "解释复核版本": "2026-10-27-r1",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "沿用原观察项和分值，事后同标准解释版本单列",
+        "说明": "不混用较早O08提案或历史source_reason替代当前review_reason。"
+      },
+      "证据有效": {
+        "判断": "满足对应范围",
+        "等级": "E2",
+        "范围": "O09仅展示层83秒收尾；O10的收尾显示保持依用户按具体检查要求的反馈，无新增重开后网页归档。",
+        "当前评分来源": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/豆包工作-新版评分.json",
+        "当前复核来源": "evidence/observability-review/2026-10-27-r1/Doubao/audit.json",
+        "公开证据入口": [
+          "evidence/observability/OBS03/Doubao/native.excerpt.json",
+          "evidence/observability/OBS03/Doubao/file-check.json",
+          "evidence/observability/OBS03/Doubao/page-end-display.json",
+          "evidence/observability/OBS03/Doubao/page-tool-results.json",
+          "evidence/observability/OBS03/Doubao/outputs/registration_summary.json",
+          "evidence/observability/OBS03/Doubao/outputs/business_events.jsonl",
+          "evidence/observability/OBS03/Doubao/reopen.json",
+          "evidence/observability-review/2026-10-27-r1/Doubao/audit.json",
+          "evidence/observability-review/2026-10-27-r1/policy.json",
+          "evidence/observability-review/2026-10-27-r1/frozen-source-audit.json",
+          "evidence/observability-review/2026-10-27-r1/Doubao/all-requests.excerpt.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足本次观察目标",
+        "说明": "A成功、B两次预设失败7/9、C依赖受阻；业务未全部完成是预定情形。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关答案或跨产品材料污染",
+        "范围": "四款实际输入及主执行链可查；WB额外记忆写入单列，DSH/WB读本题公开脚本按本题规则处理；元宝完整云端执行材料有缺口。"
+      },
+      "当前判定": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "满分": 1,
+        "理由": "用户按既有明确重开要求操作并直接反馈无变化；前后原生文件一致，原始任务、A/B链、C状态依据及原生收尾均有对应来源。界面来自人工观察，文件来自只读比对。 收尾显示保持由用户反馈支持；没有新的重开后网页归档。"
+      },
+      "早期历史判定": {
+        "状态": "未知",
+        "得分": null,
+        "说明": "保留旧现场，仅记录版本关系，不回写。"
+      },
+      "纳入去向": "纳入",
+      "理由": "用户按既有明确重开要求操作并直接反馈无变化；前后原生文件一致，原始任务、A/B链、C状态依据及原生收尾均有对应来源。界面来自人工观察，文件来自只读比对。 收尾显示保持由用户反馈支持；没有新的重开后网页归档。",
+      "适用边界": "O09仅展示层83秒收尾；O10的收尾显示保持依用户按具体检查要求的反馈，无新增重开后网页归档。",
+      "后续与停止条件": "在上述范围使用；沿用既有停止决定，不为完整后台或长期保存命题重跑。"
+    },
+    {
+      "比较项": "O07 部分成功与连续失败链可还原",
+      "观察项ID": "O07",
+      "产品": "WorkBuddy",
+      "审阅运行ID": "WorkBuddy-OBS03-a02",
+      "评分规则": "0.3.0-pilot",
+      "解释复核版本": "2026-10-27-r1",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "沿用原观察项和分值，事后同标准解释版本单列",
+        "说明": "不混用较早O08提案或历史source_reason替代当前review_reason。"
+      },
+      "证据有效": {
+        "判断": "满足对应范围",
+        "等级": "E2",
+        "范围": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+        "当前评分来源": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/WorkBuddy-新版评分.json",
+        "当前复核来源": "evidence/observability-review/2026-10-27-r1/WorkBuddy/audit.json",
+        "公开证据入口": [
+          "evidence/observability/OBS03/WorkBuddy/native.excerpt.json",
+          "evidence/observability/OBS03/WorkBuddy/file-check.json",
+          "evidence/observability/OBS03/WorkBuddy/extra-actions.json",
+          "evidence/observability/OBS03/WorkBuddy/outputs/registration_summary.json",
+          "evidence/observability/OBS03/WorkBuddy/outputs/business_events.jsonl",
+          "evidence/observability/OBS03/WorkBuddy/reopen.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足本次观察目标",
+        "说明": "A成功、B两次预设失败7/9、C依赖受阻；业务未全部完成是预定情形。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关答案或跨产品材料污染",
+        "范围": "四款实际输入及主执行链可查；WB额外记忆写入单列，DSH/WB读本题公开脚本按本题规则处理；元宝完整云端执行材料有缺口。"
+      },
+      "当前判定": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "满分": 1,
+        "理由": "A成功与B两次不同失败的实际调用和配对返回完整，文件归属一致"
+      },
+      "早期历史判定": {
+        "状态": "确认通过",
+        "得分": 1,
+        "说明": "保留旧现场，仅记录版本关系，不回写。"
+      },
+      "纳入去向": "纳入",
+      "理由": "A成功与B两次不同失败的实际调用和配对返回完整，文件归属一致",
+      "适用边界": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+      "后续与停止条件": "在上述范围使用；沿用既有停止决定，不为完整后台或长期保存命题重跑。"
+    },
+    {
+      "比较项": "O08 后续步骤执行状态可区分",
+      "观察项ID": "O08",
+      "产品": "WorkBuddy",
+      "审阅运行ID": "WorkBuddy-OBS03-a02",
+      "评分规则": "0.3.0-pilot",
+      "解释复核版本": "2026-10-27-r1",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "沿用原观察项和分值，事后同标准解释版本单列",
+        "说明": "不混用较早O08提案或历史source_reason替代当前review_reason。"
+      },
+      "证据有效": {
+        "判断": "满足对应范围",
+        "等级": "E2",
+        "范围": "仅已逐条审阅的主执行链及其明确发出请求，结合独立准备与实物参照；不能从账本或文件缺失单独推出C未执行。",
+        "当前评分来源": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/WorkBuddy-新版评分.json",
+        "当前复核来源": "evidence/observability-review/2026-10-27-r1/WorkBuddy/audit.json",
+        "公开证据入口": [
+          "evidence/observability/OBS03/WorkBuddy/native.excerpt.json",
+          "evidence/observability/OBS03/WorkBuddy/file-check.json",
+          "evidence/observability/OBS03/WorkBuddy/extra-actions.json",
+          "evidence/observability/OBS03/WorkBuddy/outputs/registration_summary.json",
+          "evidence/observability/OBS03/WorkBuddy/outputs/business_events.jsonl",
+          "evidence/observability/OBS03/WorkBuddy/reopen.json",
+          "evidence/observability-review/2026-10-27-r1/WorkBuddy/audit.json",
+          "evidence/observability-review/2026-10-27-r1/policy.json",
+          "evidence/observability-review/2026-10-27-r1/frozen-source-audit.json",
+          "evidence/observability-review/2026-10-27-r1/WorkBuddy/all-requests.excerpt.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足本次观察目标",
+        "说明": "A成功、B两次预设失败7/9、C依赖受阻；业务未全部完成是预定情形。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关答案或跨产品材料污染",
+        "范围": "四款实际输入及主执行链可查；WB额外记忆写入单列，DSH/WB读本题公开脚本按本题规则处理；元宝完整云端执行材料有缺口。"
+      },
+      "当前判定": {
+        "状态": "Evidence Pass",
+        "得分": 1,
+        "满分": 1,
+        "理由": "复核同次已取回主执行链全部请求和配对返回，结合独立准备指纹、冻结单动作程序、初态与末态，支持该范围内C未开始；不推断不可见后台。"
+      },
+      "早期历史判定": {
+        "状态": "未知",
+        "得分": null,
+        "说明": "保留旧现场，仅记录版本关系，不回写。"
+      },
+      "纳入去向": "纳入",
+      "理由": "复核同次已取回主执行链全部请求和配对返回，结合独立准备指纹、冻结单动作程序、初态与末态，支持该范围内C未开始；不推断不可见后台。",
+      "适用边界": "仅已逐条审阅的主执行链及其明确发出请求，结合独立准备与实物参照；不能从账本或文件缺失单独推出C未执行。",
+      "后续与停止条件": "在上述范围使用；沿用既有停止决定，不为完整后台或长期保存命题重跑。"
+    },
+    {
+      "比较项": "O09 受阻结束的原生状态可追溯",
+      "观察项ID": "O09",
+      "产品": "WorkBuddy",
+      "审阅运行ID": "WorkBuddy-OBS03-a02",
+      "评分规则": "0.3.0-pilot",
+      "解释复核版本": "2026-10-27-r1",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "沿用原观察项和分值，事后同标准解释版本单列",
+        "说明": "不混用较早O08提案或历史source_reason替代当前review_reason。"
+      },
+      "证据有效": {
+        "判断": "不足",
+        "等级": null,
+        "范围": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+        "当前评分来源": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/WorkBuddy-新版评分.json",
+        "当前复核来源": "evidence/observability-review/2026-10-27-r1/WorkBuddy/audit.json",
+        "公开证据入口": [
+          "evidence/observability/OBS03/WorkBuddy/native.excerpt.json",
+          "evidence/observability/OBS03/WorkBuddy/file-check.json",
+          "evidence/observability/OBS03/WorkBuddy/extra-actions.json",
+          "evidence/observability/OBS03/WorkBuddy/outputs/registration_summary.json",
+          "evidence/observability/OBS03/WorkBuddy/outputs/business_events.jsonl",
+          "evidence/observability/OBS03/WorkBuddy/reopen.json",
+          "evidence/observability-review/2026-10-27-r1/WorkBuddy/audit.json",
+          "evidence/observability-review/2026-10-27-r1/policy.json",
+          "evidence/observability-review/2026-10-27-r1/frozen-source-audit.json",
+          "evidence/observability-review/2026-10-27-r1/WorkBuddy/all-requests.excerpt.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足本次观察目标",
+        "说明": "A成功、B两次预设失败7/9、C依赖受阻；业务未全部完成是预定情形。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关答案或跨产品材料污染",
+        "范围": "四款实际输入及主执行链可查；WB额外记忆写入单列，DSH/WB读本题公开脚本按本题规则处理；元宝完整云端执行材料有缺口。"
+      },
+      "当前判定": {
+        "状态": "Unknown",
+        "得分": null,
+        "满分": 1,
+        "理由": "第7、13、17、21、25、40行均为消息completed，前五条之后仍有调用；未取得独立任务终态。"
+      },
+      "早期历史判定": {
+        "状态": "未知",
+        "得分": null,
+        "说明": "保留旧现场，仅记录版本关系，不回写。"
+      },
+      "纳入去向": "待核查",
+      "理由": "第7、13、17、21、25、40行均为消息completed，前五条之后仍有调用；未取得独立任务终态。",
+      "适用边界": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+      "后续与停止条件": "已有同次归档核完即关闭本轮；缺口保留Unknown，不要求用户重复重开或重跑。"
+    },
+    {
+      "比较项": "O10 重新打开后复杂历史仍完整",
+      "观察项ID": "O10",
+      "产品": "WorkBuddy",
+      "审阅运行ID": "WorkBuddy-OBS03-a02",
+      "评分规则": "0.3.0-pilot",
+      "解释复核版本": "2026-10-27-r1",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "沿用原观察项和分值，事后同标准解释版本单列",
+        "说明": "不混用较早O08提案或历史source_reason替代当前review_reason。"
+      },
+      "证据有效": {
+        "判断": "不足",
+        "等级": null,
+        "范围": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+        "当前评分来源": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/WorkBuddy-新版评分.json",
+        "当前复核来源": "evidence/observability-review/2026-10-27-r1/WorkBuddy/audit.json",
+        "公开证据入口": [
+          "evidence/observability/OBS03/WorkBuddy/native.excerpt.json",
+          "evidence/observability/OBS03/WorkBuddy/file-check.json",
+          "evidence/observability/OBS03/WorkBuddy/extra-actions.json",
+          "evidence/observability/OBS03/WorkBuddy/outputs/registration_summary.json",
+          "evidence/observability/OBS03/WorkBuddy/outputs/business_events.jsonl",
+          "evidence/observability/OBS03/WorkBuddy/reopen.json",
+          "evidence/observability-review/2026-10-27-r1/WorkBuddy/audit.json",
+          "evidence/observability-review/2026-10-27-r1/policy.json",
+          "evidence/observability-review/2026-10-27-r1/frozen-source-audit.json",
+          "evidence/observability-review/2026-10-27-r1/WorkBuddy/all-requests.excerpt.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "满足本次观察目标",
+        "说明": "A成功、B两次预设失败7/9、C依赖受阻；业务未全部完成是预定情形。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关答案或跨产品材料污染",
+        "范围": "四款实际输入及主执行链可查；WB额外记忆写入单列，DSH/WB读本题公开脚本按本题规则处理；元宝完整云端执行材料有缺口。"
+      },
+      "当前判定": {
+        "状态": "Unknown",
+        "得分": null,
+        "满分": 1,
+        "理由": "已实际重开且40行原生文件前后一致，O08局部状态已有依据；仍缺独立原生任务终态，复合材料不齐。"
+      },
+      "早期历史判定": {
+        "状态": "未知",
+        "得分": null,
+        "说明": "保留旧现场，仅记录版本关系，不回写。"
+      },
+      "纳入去向": "待核查",
+      "理由": "已实际重开且40行原生文件前后一致，O08局部状态已有依据；仍缺独立原生任务终态，复合材料不齐。",
+      "适用边界": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+      "后续与停止条件": "已有同次归档核完即关闭本轮；缺口保留Unknown，不要求用户重复重开或重跑。"
+    },
+    {
+      "比较项": "O07 部分成功与连续失败链可还原",
+      "观察项ID": "O07",
+      "产品": "元宝专家模式",
+      "审阅运行ID": "元宝专家模式-OBS03-a02",
+      "评分规则": "0.3.0-pilot",
+      "解释复核版本": "2026-10-27-r1",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "沿用原观察项和分值，事后同标准解释版本单列",
+        "说明": "不混用较早O08提案或历史source_reason替代当前review_reason。"
+      },
+      "证据有效": {
+        "判断": "不足",
+        "等级": null,
+        "范围": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+        "当前评分来源": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/元宝专家模式-新版评分.json",
+        "当前复核来源": "evidence/observability-review/2026-10-27-r1/Yuanbao/audit.json",
+        "公开证据入口": [
+          "evidence/observability/OBS03/Yuanbao/command-cards.json",
+          "evidence/observability/OBS03/Yuanbao/download-check.json",
+          "evidence/observability/OBS03/Yuanbao/outputs/registration_summary.json",
+          "evidence/observability/OBS03/Yuanbao/outputs/business_events.jsonl",
+          "evidence/observability/OBS03/Yuanbao/reopen.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "题面可用，云端实际执行条件未完整核实",
+        "说明": "A成功、B两次预设失败7/9、C依赖受阻；业务未全部完成是预定情形。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关答案或跨产品材料污染",
+        "范围": "四款实际输入及主执行链可查；WB额外记忆写入单列，DSH/WB读本题公开脚本按本题规则处理；元宝完整云端执行材料有缺口。"
+      },
+      "当前判定": {
+        "状态": "Unknown",
+        "得分": null,
+        "满分": 1,
+        "理由": "未取得原始业务返回；不能用命令卡片、思考或可写账本补出完整失败链"
+      },
+      "早期历史判定": {
+        "状态": "未知",
+        "得分": null,
+        "说明": "保留旧现场，仅记录版本关系，不回写。"
+      },
+      "纳入去向": "待核查",
+      "理由": "未取得原始业务返回；不能用命令卡片、思考或可写账本补出完整失败链",
+      "适用边界": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+      "后续与停止条件": "已有同次归档核完即关闭本轮；缺口保留Unknown，不要求用户重复重开或重跑。"
+    },
+    {
+      "比较项": "O08 后续步骤执行状态可区分",
+      "观察项ID": "O08",
+      "产品": "元宝专家模式",
+      "审阅运行ID": "元宝专家模式-OBS03-a02",
+      "评分规则": "0.3.0-pilot",
+      "解释复核版本": "2026-10-27-r1",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "沿用原观察项和分值，事后同标准解释版本单列",
+        "说明": "不混用较早O08提案或历史source_reason替代当前review_reason。"
+      },
+      "证据有效": {
+        "判断": "不足",
+        "等级": null,
+        "范围": "仅已逐条审阅的主执行链及其明确发出请求，结合独立准备与实物参照；不能从账本或文件缺失单独推出C未执行。",
+        "当前评分来源": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/元宝专家模式-新版评分.json",
+        "当前复核来源": "evidence/observability-review/2026-10-27-r1/Yuanbao/audit.json",
+        "公开证据入口": [
+          "evidence/observability/OBS03/Yuanbao/command-cards.json",
+          "evidence/observability/OBS03/Yuanbao/download-check.json",
+          "evidence/observability/OBS03/Yuanbao/outputs/registration_summary.json",
+          "evidence/observability/OBS03/Yuanbao/outputs/business_events.jsonl",
+          "evidence/observability/OBS03/Yuanbao/reopen.json",
+          "evidence/observability-review/2026-10-27-r1/Yuanbao/audit.json",
+          "evidence/observability-review/2026-10-27-r1/policy.json",
+          "evidence/observability-review/2026-10-27-r1/frozen-source-audit.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "题面可用，云端实际执行条件未完整核实",
+        "说明": "A成功、B两次预设失败7/9、C依赖受阻；业务未全部完成是预定情形。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关答案或跨产品材料污染",
+        "范围": "四款实际输入及主执行链可查；WB额外记忆写入单列，DSH/WB读本题公开脚本按本题规则处理；元宝完整云端执行材料有缺口。"
+      },
+      "当前判定": {
+        "状态": "Unknown",
+        "得分": null,
+        "满分": 1,
+        "理由": "缺四次原始返回、云端实际脚本独立指纹和足以界定执行请求范围的材料；下载账本不补足。"
+      },
+      "早期历史判定": {
+        "状态": "未知",
+        "得分": null,
+        "说明": "保留旧现场，仅记录版本关系，不回写。"
+      },
+      "纳入去向": "待核查",
+      "理由": "缺四次原始返回、云端实际脚本独立指纹和足以界定执行请求范围的材料；下载账本不补足。",
+      "适用边界": "仅已逐条审阅的主执行链及其明确发出请求，结合独立准备与实物参照；不能从账本或文件缺失单独推出C未执行。",
+      "后续与停止条件": "已有同次归档核完即关闭本轮；缺口保留Unknown，不要求用户重复重开或重跑。"
+    },
+    {
+      "比较项": "O09 受阻结束的原生状态可追溯",
+      "观察项ID": "O09",
+      "产品": "元宝专家模式",
+      "审阅运行ID": "元宝专家模式-OBS03-a02",
+      "评分规则": "0.3.0-pilot",
+      "解释复核版本": "2026-10-27-r1",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "沿用原观察项和分值，事后同标准解释版本单列",
+        "说明": "不混用较早O08提案或历史source_reason替代当前review_reason。"
+      },
+      "证据有效": {
+        "判断": "不足",
+        "等级": null,
+        "范围": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+        "当前评分来源": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/元宝专家模式-新版评分.json",
+        "当前复核来源": "evidence/observability-review/2026-10-27-r1/Yuanbao/audit.json",
+        "公开证据入口": [
+          "evidence/observability/OBS03/Yuanbao/command-cards.json",
+          "evidence/observability/OBS03/Yuanbao/download-check.json",
+          "evidence/observability/OBS03/Yuanbao/outputs/registration_summary.json",
+          "evidence/observability/OBS03/Yuanbao/outputs/business_events.jsonl",
+          "evidence/observability/OBS03/Yuanbao/reopen.json",
+          "evidence/observability-review/2026-10-27-r1/Yuanbao/audit.json",
+          "evidence/observability-review/2026-10-27-r1/policy.json",
+          "evidence/observability-review/2026-10-27-r1/frozen-source-audit.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "题面可用，云端实际执行条件未完整核实",
+        "说明": "A成功、B两次预设失败7/9、C依赖受阻；业务未全部完成是预定情形。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关答案或跨产品材料污染",
+        "范围": "四款实际输入及主执行链可查；WB额外记忆写入单列，DSH/WB读本题公开脚本按本题规则处理；元宝完整云端执行材料有缺口。"
+      },
+      "当前判定": {
+        "状态": "Unknown",
+        "得分": null,
+        "满分": 1,
+        "理由": "已取得命令卡片与交接；缺原始返回、C状态依据及可关联的原生任务终态。"
+      },
+      "早期历史判定": {
+        "状态": "未知",
+        "得分": null,
+        "说明": "保留旧现场，仅记录版本关系，不回写。"
+      },
+      "纳入去向": "待核查",
+      "理由": "已取得命令卡片与交接；缺原始返回、C状态依据及可关联的原生任务终态。",
+      "适用边界": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+      "后续与停止条件": "已有同次归档核完即关闭本轮；缺口保留Unknown，不要求用户重复重开或重跑。"
+    },
+    {
+      "比较项": "O10 重新打开后复杂历史仍完整",
+      "观察项ID": "O10",
+      "产品": "元宝专家模式",
+      "审阅运行ID": "元宝专家模式-OBS03-a02",
+      "评分规则": "0.3.0-pilot",
+      "解释复核版本": "2026-10-27-r1",
+      "业务输入": "0.3.1-portable-pilot",
+      "规则冻结": {
+        "判断": "沿用原观察项和分值，事后同标准解释版本单列",
+        "说明": "不混用较早O08提案或历史source_reason替代当前review_reason。"
+      },
+      "证据有效": {
+        "判断": "不足",
+        "等级": null,
+        "范围": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+        "当前评分来源": "LOCAL_ONLY: 维度评测/07-可观测性/终态与重开复核-2026-10-27/元宝专家模式-新版评分.json",
+        "当前复核来源": "evidence/observability-review/2026-10-27-r1/Yuanbao/audit.json",
+        "公开证据入口": [
+          "evidence/observability/OBS03/Yuanbao/command-cards.json",
+          "evidence/observability/OBS03/Yuanbao/download-check.json",
+          "evidence/observability/OBS03/Yuanbao/outputs/registration_summary.json",
+          "evidence/observability/OBS03/Yuanbao/outputs/business_events.jsonl",
+          "evidence/observability/OBS03/Yuanbao/reopen.json",
+          "evidence/observability-review/2026-10-27-r1/Yuanbao/audit.json",
+          "evidence/observability-review/2026-10-27-r1/policy.json",
+          "evidence/observability-review/2026-10-27-r1/frozen-source-audit.json"
+        ]
+      },
+      "题面有效": {
+        "判断": "题面可用，云端实际执行条件未完整核实",
+        "说明": "A成功、B两次预设失败7/9、C依赖受阻；业务未全部完成是预定情形。"
+      },
+      "污染情况": {
+        "判断": "已审阅范围未发现相关答案或跨产品材料污染",
+        "范围": "四款实际输入及主执行链可查；WB额外记忆写入单列，DSH/WB读本题公开脚本按本题规则处理；元宝完整云端执行材料有缺口。"
+      },
+      "当前判定": {
+        "状态": "Unknown",
+        "得分": null,
+        "满分": 1,
+        "理由": "已实际重开且用户反馈无变化，但原始工具返回、C状态依据及同任务终态不齐，复合材料不能核实。"
+      },
+      "早期历史判定": {
+        "状态": "未知",
+        "得分": null,
+        "说明": "保留旧现场，仅记录版本关系，不回写。"
+      },
+      "纳入去向": "待核查",
+      "理由": "已实际重开且用户反馈无变化，但原始工具返回、C状态依据及同任务终态不齐，复合材料不能核实。",
+      "适用边界": "本次原生过程与已标明来源的重开观察，不外推长期可靠性或后台全覆盖",
+      "后续与停止条件": "已有同次归档核完即关闭本轮；缺口保留Unknown，不要求用户重复重开或重跑。"
+    }
+  ],
+  "限制": "按具体项及证据层比较；用户反馈不冒充评测者亲见，文件相等不单独证明重开，不把业务受阻当记录能力失败；不作五产品整体排名。",
+  "公开版说明": "公开副本：路径、会话标识和私人入口已脱敏；公开摘录不等于完整原件。来源SHA-256与原行号指向本地原件，公开文件字节指纹见MANIFEST.json；原字段内的指针不保证适用于变换后的公开副本。未公开原件不能由本包独立认证。"
+}

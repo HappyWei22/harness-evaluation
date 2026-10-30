@@ -1,0 +1,344 @@
+{
+  "整理日期": "2026-10-30",
+  "范围": "维度评测七维度22个题目目录：20题有历史运行或尝试记录，2题仅作未执行登记；不代表22题均已执行。",
+  "题目数": 22,
+  "运行记录数": 114,
+  "未执行登记项": 6,
+  "分维度": {
+    "01-信息回传": {
+      "cases": 3,
+      "n": 17,
+      "u": 0,
+      "本次新生成": 17,
+      "复用已有": 0
+    },
+    "02-上下文管理": {
+      "cases": 3,
+      "n": 10,
+      "u": 5,
+      "本次新生成": 10,
+      "复用已有": 0
+    },
+    "03-失败恢复": {
+      "cases": 2,
+      "n": 10,
+      "u": 0,
+      "本次新生成": 10,
+      "复用已有": 0
+    },
+    "04-权限边界": {
+      "cases": 2,
+      "n": 13,
+      "u": 0,
+      "本次新生成": 13,
+      "复用已有": 0
+    },
+    "05-产物保存与交付": {
+      "cases": 5,
+      "n": 20,
+      "u": 1,
+      "本次新生成": 20,
+      "复用已有": 0
+    },
+    "06-停止条件": {
+      "cases": 4,
+      "n": 21,
+      "u": 0,
+      "本次新生成": 21,
+      "复用已有": 0
+    },
+    "07-可观测性": {
+      "cases": 3,
+      "n": 23,
+      "u": 0,
+      "本次新生成": 18,
+      "复用已有": 5
+    }
+  },
+  "逐题": [
+    {
+      "case": "FB01",
+      "name": "基础回传",
+      "dim": "01-信息回传",
+      "n": 7,
+      "u": 0,
+      "state": "已整理",
+      "outdir": "results/unified-runs-2026-10-30/FB01",
+      "review": "results/inclusion-review-2026-10-30/01-信息回传/FB01-纳入审阅.md",
+      "本次新生成": 7,
+      "复用已有": 0
+    },
+    {
+      "case": "FB02",
+      "name": "较长结果回传",
+      "dim": "01-信息回传",
+      "n": 5,
+      "u": 0,
+      "state": "已整理",
+      "outdir": "results/unified-runs-2026-10-30/FB02",
+      "review": "results/inclusion-review-2026-10-30/01-信息回传/FB02-纳入审阅.md",
+      "本次新生成": 5,
+      "复用已有": 0
+    },
+    {
+      "case": "FB03",
+      "name": "完整结果获取",
+      "dim": "01-信息回传",
+      "n": 5,
+      "u": 0,
+      "state": "已整理",
+      "outdir": "results/unified-runs-2026-10-30/FB03",
+      "review": "results/inclusion-review-2026-10-30/01-信息回传/FB03-纳入审阅.md",
+      "本次新生成": 5,
+      "复用已有": 0
+    },
+    {
+      "case": "CTX01",
+      "name": "多轮要求更新",
+      "dim": "02-上下文管理",
+      "n": 5,
+      "u": 0,
+      "state": "已整理",
+      "outdir": "results/unified-runs-2026-10-30/CTX01",
+      "review": "results/inclusion-review-2026-10-30/02-上下文管理/CTX01-纳入审阅.md",
+      "本次新生成": 5,
+      "复用已有": 0
+    },
+    {
+      "case": "CTX02",
+      "name": "压缩后状态保持",
+      "dim": "02-上下文管理",
+      "n": 5,
+      "u": 0,
+      "state": "已整理",
+      "outdir": "results/unified-runs-2026-10-30/CTX02",
+      "review": "results/inclusion-review-2026-10-30/02-上下文管理/CTX02-纳入审阅.md",
+      "本次新生成": 5,
+      "复用已有": 0
+    },
+    {
+      "case": "CTX03",
+      "name": "公开题型改编-分批记录查询",
+      "dim": "02-上下文管理",
+      "n": 0,
+      "u": 5,
+      "state": "未执行（只登记）",
+      "outdir": "results/unified-runs-2026-10-30/CTX03",
+      "review": "results/inclusion-review-2026-10-30/02-上下文管理/CTX03-纳入审阅.md",
+      "本次新生成": 0,
+      "复用已有": 0
+    },
+    {
+      "case": "REC01",
+      "name": "参数报错后继续导出",
+      "dim": "03-失败恢复",
+      "n": 5,
+      "u": 0,
+      "state": "已整理",
+      "outdir": "results/unified-runs-2026-10-30/REC01",
+      "review": "results/inclusion-review-2026-10-30/03-失败恢复/REC01-纳入审阅.md",
+      "本次新生成": 5,
+      "复用已有": 0
+    },
+    {
+      "case": "REC02",
+      "name": "批量导出中断后续做",
+      "dim": "03-失败恢复",
+      "n": 5,
+      "u": 0,
+      "state": "已整理",
+      "outdir": "results/unified-runs-2026-10-30/REC02",
+      "review": "results/inclusion-review-2026-10-30/03-失败恢复/REC02-纳入审阅.md",
+      "本次新生成": 5,
+      "复用已有": 0
+    },
+    {
+      "case": "PERM01",
+      "name": "写入范围与未批准副作用",
+      "dim": "04-权限边界",
+      "n": 8,
+      "u": 0,
+      "state": "已整理",
+      "outdir": "results/unified-runs-2026-10-30/PERM01",
+      "review": "results/inclusion-review-2026-10-30/04-权限边界/PERM01-纳入审阅.md",
+      "本次新生成": 8,
+      "复用已有": 0
+    },
+    {
+      "case": "PERM02",
+      "name": "授权变更与间接访问边界",
+      "dim": "04-权限边界",
+      "n": 5,
+      "u": 0,
+      "state": "已整理",
+      "outdir": "results/unified-runs-2026-10-30/PERM02",
+      "review": "results/inclusion-review-2026-10-30/04-权限边界/PERM02-纳入审阅.md",
+      "本次新生成": 5,
+      "复用已有": 0
+    },
+    {
+      "case": "ART01",
+      "name": "技能包整理与可用性交付",
+      "dim": "05-产物保存与交付",
+      "n": 5,
+      "u": 0,
+      "state": "已整理",
+      "outdir": "results/unified-runs-2026-10-30/ART01",
+      "review": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART01-纳入审阅.md",
+      "本次新生成": 5,
+      "复用已有": 0
+    },
+    {
+      "case": "ART02",
+      "name": "电子档案筛选与移交包交付",
+      "dim": "05-产物保存与交付",
+      "n": 5,
+      "u": 0,
+      "state": "已整理",
+      "outdir": "results/unified-runs-2026-10-30/ART02",
+      "review": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART02-纳入审阅.md",
+      "本次新生成": 5,
+      "复用已有": 0
+    },
+    {
+      "case": "ART04",
+      "name": "三文件修订与多轮交付（首轮）",
+      "dim": "05-产物保存与交付",
+      "n": 5,
+      "u": 0,
+      "state": "已整理",
+      "outdir": "results/unified-runs-2026-10-30/ART04",
+      "review": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART04-纳入审阅.md",
+      "本次新生成": 5,
+      "复用已有": 0
+    },
+    {
+      "case": "ART05",
+      "name": "已定稿报告包的多轮交付",
+      "dim": "05-产物保存与交付",
+      "n": 5,
+      "u": 0,
+      "state": "已整理",
+      "outdir": "results/unified-runs-2026-10-30/ART05",
+      "review": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART05-纳入审阅.md",
+      "本次新生成": 5,
+      "复用已有": 0
+    },
+    {
+      "case": "ART03",
+      "name": "尽调资料最新版汇编",
+      "dim": "05-产物保存与交付",
+      "n": 0,
+      "u": 1,
+      "state": "未执行（只登记）",
+      "outdir": "results/unified-runs-2026-10-30/ART03",
+      "review": "results/inclusion-review-2026-10-30/05-产物保存与交付/ART03-用途与未运行审阅.md",
+      "本次新生成": 0,
+      "复用已有": 0
+    },
+    {
+      "case": "STOP01",
+      "name": "档案暂存完成后的状态说明",
+      "dim": "06-停止条件",
+      "n": 5,
+      "u": 0,
+      "state": "已整理",
+      "outdir": "results/unified-runs-2026-10-30/STOP01",
+      "review": "results/inclusion-review-2026-10-30/06-停止条件/STOP01-纳入审阅.md",
+      "本次新生成": 5,
+      "复用已有": 0
+    },
+    {
+      "case": "STOP02",
+      "name": "含异常记录的批处理收尾",
+      "dim": "06-停止条件",
+      "n": 5,
+      "u": 0,
+      "state": "已整理",
+      "outdir": "results/unified-runs-2026-10-30/STOP02",
+      "review": "results/inclusion-review-2026-10-30/06-停止条件/STOP02-纳入审阅.md",
+      "本次新生成": 5,
+      "复用已有": 0
+    },
+    {
+      "case": "STOP03A",
+      "name": "恢复演练正常收尾",
+      "dim": "06-停止条件",
+      "n": 6,
+      "u": 0,
+      "state": "已整理",
+      "outdir": "results/unified-runs-2026-10-30/STOP03A",
+      "review": "results/inclusion-review-2026-10-30/06-停止条件/STOP03A-纳入审阅.md",
+      "本次新生成": 6,
+      "复用已有": 0
+    },
+    {
+      "case": "STOP03B",
+      "name": "恢复演练受阻结束",
+      "dim": "06-停止条件",
+      "n": 5,
+      "u": 0,
+      "state": "已整理",
+      "outdir": "results/unified-runs-2026-10-30/STOP03B",
+      "review": "results/inclusion-review-2026-10-30/06-停止条件/STOP03B-纳入审阅.md",
+      "本次新生成": 5,
+      "复用已有": 0
+    },
+    {
+      "case": "OBS01",
+      "name": "正常任务记录取回与保存",
+      "dim": "07-可观测性",
+      "n": 10,
+      "u": 0,
+      "state": "已整理",
+      "outdir": "results/unified-runs-2026-10-30/OBS01",
+      "review": "results/inclusion-review-2026-10-30/07-可观测性/OBS01-纳入审阅.md",
+      "本次新生成": 10,
+      "复用已有": 0
+    },
+    {
+      "case": "OBS02",
+      "name": "报错与重试过程追踪",
+      "dim": "07-可观测性",
+      "n": 8,
+      "u": 0,
+      "state": "已整理",
+      "outdir": "results/unified-runs-2026-10-30/OBS02",
+      "review": "results/inclusion-review-2026-10-30/07-可观测性/OBS02-纳入审阅.md",
+      "本次新生成": 3,
+      "复用已有": 5,
+      "复用记录目录": "results/unified-runs-2026-10-30/OBS02/reused-a02"
+    },
+    {
+      "case": "OBS03",
+      "name": "部分完成与受阻结束追踪",
+      "dim": "07-可观测性",
+      "n": 5,
+      "u": 0,
+      "state": "已整理",
+      "outdir": "results/unified-runs-2026-10-30/OBS03",
+      "review": "results/inclusion-review-2026-10-30/07-可观测性/OBS03-纳入审阅.md",
+      "本次新生成": 5,
+      "复用已有": 0
+    }
+  ],
+  "检查": {
+    "运行ID唯一": true,
+    "十项字段": "114份markdown与json一致",
+    "链接": "全部相对链接指向存在文件",
+    "原评分与未知": "未修改、未折算",
+    "原件指纹": "362份复核一致",
+    "题目数量口径": "22个目录中20题有历史记录、2题仅未执行；114条=109条新生成+5条复用"
+  },
+  "边界": [
+    "不新增运行、不重跑、不重评、不改分",
+    "助手只读整理，非第二位成员独立验收",
+    "原件只引用不复制",
+    "114条为历史运行或尝试记录，含1次原生环境诊断和旧部署不匹配尝试；它们继续计入历史台账，但不并入常规业务比较或有效运行成绩。"
+  ],
+  "有历史记录题目数": 20,
+  "仅未执行登记题目数": 2,
+  "本次新生成记录数": 109,
+  "复用已有记录数": 5,
+  "公开版说明": "公开副本：路径、会话标识和私人入口已脱敏；公开摘录不等于完整原件。来源SHA-256与原行号指向本地原件，公开文件字节指纹见MANIFEST.json；原字段内的指针不保证适用于变换后的公开副本。未公开原件不能由本包独立认证。"
+}
