@@ -823,6 +823,11 @@
       "sha256": "f47ac4a7bd147e72b98b0a0a3ab82e9721c9a46a7b20a75e9af8cf919b3a42b4"
     },
     {
+      "path": "docs/周报/第3周周报.md",
+      "bytes": 13348,
+      "sha256": "ce722ca77c9d304b389c2222a91ae50318cfb2ca6212131f52ebcb743e8e3085"
+    },
+    {
       "path": "docs/复核说明.md",
       "bytes": 13562,
       "sha256": "0cb183de263983166eadf5a7d958e5106f27d0add35ee411371c7785273cd83d"
