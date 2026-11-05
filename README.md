@@ -27,6 +27,7 @@ Harness是负责组织模型调用、工具执行、结果回传和任务状态�
 | 七维统一成果 | [五款七维总表](results/seven-dimensions-2026-10-27.md)、[七维阶段报告](docs/七维评测阶段报告-2026-10-27.md) | 35个单元保留原计分单位，不合成100分排名；历史报告保留时点说明 |
 | 运行与未知去向 | [114次登记台账](results/run-ledger-2026-10-27.md)、[一致性检查](docs/比较项一致性检查-2026-10-27.md)、[未知处理清单](docs/未知项与覆盖缺口处理清单-2026-10-27.md) | 93次当前评分引用；18项排查；74条混合单位记录不是分数或运行次数 |
 | 真实异常原因验证 | [WorkBuddy通俗总结](docs/故障归因/WorkBuddy目录创建异常原因验证总结.md)、[A→B→A结果](results/workbuddy-mkdir-2026-10-28.md) | 同一已有目录失败→成功→失败；只验证本例处理环节影响，不宣称产品修复 |
+| WorkBuddy 目录创建边界 | [四个本地样例及复跑方法](evidence/workbuddy-mkdir/2026-11-05/README.md) | 对照目录缺失、已有目录、普通文件冲突与本地权限拒绝，四组通过 |
 | 判分方法验证 | [首批样例及解析修正](results/observability-calibration.md)、[9项实测](results/observability-calibration.json) | 4类主样例和5个边界对照；修复重复编号覆盖及package漏读，新增产品运行0次 |
 | 可观测性 | [新版复核及理由](results/observability-review-2026-10-27-r1.md)、[当前评分](results/observability-current.json)、[三题设计](docs/可观测性评测设计.md) | 15次运行、50项观察；Codex、DSH、豆包各10项确认，WorkBuddy6确认/4未知，元宝2确认/8未知；旧版34确认/16未知保留，不排名 |
 | 停止条件 | [结果与证据](results/stopping-conditions.md)、[20个场景记录](results/stopping-conditions.json) | 完成声明、双次验证、人工边界和受阻交接；四款各确认10项、元宝3项确认及7项未知 |

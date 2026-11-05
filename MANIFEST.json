@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-30",
+  "date": "2026-11-05",
   "scope": "本公开包实际文件指纹，排除本清单自身。",
   "files": [
     {
@@ -14,8 +14,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 12390,
-      "sha256": "3edc839643a6991c98978a5c90165f511718d36b90ddaf0f90bdc3939e3a9b6b"
+      "bytes": 12877,
+      "sha256": "544e825b96ae36f2bbf4b35add8614dbd6b068ddd8efca4f0a8ae74587fc54e5"
     },
     {
       "path": "PROVENANCE.json",
@@ -24,8 +24,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 18549,
-      "sha256": "ff5d7751108ec282501cc5c8fa503482605cd38119671ca0e755fc20c2609236"
+      "bytes": 18760,
+      "sha256": "15664919d5579f3411c17e4fee8a2b5078daa6dfbbaa89518ecc691ba716160e"
     },
     {
       "path": "cases/ART01/README.md",
@@ -3946,6 +3946,36 @@
       "path": "evidence/workbuddy-mkdir/2026-10-28/sequence-ledger.json",
       "bytes": 5544,
       "sha256": "941da5f99d1046b5500fbea8d326babfff4a0e3369066c40bfce59a743cd8b9e"
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-11-05/README.md",
+      "bytes": 5391,
+      "sha256": "4fb08dd532d2f0ea0159436a6169a1456a9aab5a41e40d11a7fabbfac75cf577"
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-11-05/fixtures.json",
+      "bytes": 1165,
+      "sha256": "bfec6c6201092e7ff560031909c7abe3ac32b1520e74b13d64759702735b2b4f"
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-11-05/local-original.redacted.json",
+      "bytes": 20415,
+      "sha256": "214b7862c223d208bfa293e45bc7cc6c9ac5cf39066035ed1e59ea49198606c5"
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-11-05/public-replay.json",
+      "bytes": 20427,
+      "sha256": "d64a121a52276f02b945f73d3c9b18e0a1c0ea66b78220e9047a72c1a4b98ca5"
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-11-05/reproduce.py",
+      "bytes": 9565,
+      "sha256": "77e97ee7f9180e08d5f475f7555dae3f71ee9a54b082f9bc04f9e1dd9920e948"
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-11-05/scoped_mkdir_intervention.py",
+      "bytes": 4434,
+      "sha256": "b211dd6d18a8288071cda1b4d1a80380e0c520f16a2efd4658cbe3b403828ed1"
     },
     {
       "path": "evidence/维度评测/01-信息回传/FB01-基础回传/README.snapshot.txt",

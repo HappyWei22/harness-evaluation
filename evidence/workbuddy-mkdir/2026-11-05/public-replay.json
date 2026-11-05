@@ -1,0 +1,622 @@
+{
+  "run_id": "WB-MKDIR-BOUNDARY-PUBLIC-20261105-9016706a45fb4f6ba69a813ac1a66cf1",
+  "related_product_run_id": "WB-MKDIR-ABA-20261028-a01",
+  "activity": "自测",
+  "execution_path": "公开代理替身，调用原候选处理与本机文件系统",
+  "fixture_version": "wb-mkdir-boundary-v1",
+  "product_version": "不适用，本地执行。原归档来源为 WorkBuddy 5.8.3",
+  "model": "不适用，脚本执行未调用模型",
+  "tool": {
+    "command": "python3 -I -S -B reproduce.py",
+    "python": "3.12.6",
+    "os": "Darwin",
+    "os_release": "27.0.0",
+    "architecture": "arm64"
+  },
+  "permissions": {
+    "effective_uid": 501,
+    "parent_modes": [
+      "0700",
+      "0500"
+    ],
+    "product_permissions": "不适用"
+  },
+  "skills": "不适用，脚本执行未加载产品技能",
+  "started_at": "2026-11-05T23:10:47.815059+08:00",
+  "ended_at": "2026-11-05T23:10:47.822121+08:00",
+  "fingerprints_sha256": {
+    "fixtures": "bfec6c6201092e7ff560031909c7abe3ac32b1520e74b13d64759702735b2b4f",
+    "script": "77e97ee7f9180e08d5f475f7555dae3f71ee9a54b082f9bc04f9e1dd9920e948",
+    "archived_candidate": "b211dd6d18a8288071cda1b4d1a80380e0c520f16a2efd4658cbe3b403828ed1"
+  },
+  "call": {
+    "mode": 511,
+    "parents": false,
+    "exist_ok": true
+  },
+  "evidence": {
+    "E2": "本地请求、响应、异常及前后路径状态",
+    "E3": "同一样例两种开关状态的本地对照"
+  },
+  "verdict": "四项本地对照通过",
+  "product_runs": 0,
+  "cases": [
+    {
+      "fixture": {
+        "id": "missing",
+        "name": "目录不存在",
+        "initial": "missing",
+        "parent_mode": "0700",
+        "host_error": null,
+        "final": "empty-directory",
+        "off": "returned",
+        "on": "returned"
+      },
+      "same_request_except_id_and_same_response": true,
+      "phases": [
+        {
+          "phase": "off",
+          "before": "missing",
+          "parent_mode_before": "0700",
+          "traffic": [
+            {
+              "request": {
+                "id": "python-1",
+                "command": "HostFileOperation",
+                "runtime": "python",
+                "operation": "mkdir",
+                "sessionId": "public-fixture",
+                "path": "<TEMP_DIR>/fixture/target",
+                "recursive": false,
+                "mode": 511
+              },
+              "original_response": {
+                "ok": true,
+                "decision": "host-op"
+              },
+              "response": {
+                "ok": true,
+                "decision": "host-op"
+              },
+              "host_errno": null
+            }
+          ],
+          "candidate_events": [
+            {
+              "target": "<TEMP_DIR>/fixture/target",
+              "intervention_enabled": false,
+              "matching_responses": [
+                {
+                  "request_operation": "mkdir",
+                  "request_path": "<TEMP_DIR>/fixture/target",
+                  "request_recursive": false,
+                  "request_has_exist_ok": false,
+                  "response_ok": true,
+                  "response_decision": "host-op",
+                  "response_error": null
+                }
+              ],
+              "normalized": false
+            }
+          ],
+          "caller": {
+            "type": "returned",
+            "value": null
+          },
+          "after": "empty-directory",
+          "checks": {
+            "initial_state": true,
+            "single_unchanged_exchange": true,
+            "host_result": true,
+            "caller_result": true,
+            "candidate_branch": true,
+            "final_state": true,
+            "bindings_restored": true
+          }
+        },
+        {
+          "phase": "on",
+          "before": "missing",
+          "parent_mode_before": "0700",
+          "traffic": [
+            {
+              "request": {
+                "id": "python-2",
+                "command": "HostFileOperation",
+                "runtime": "python",
+                "operation": "mkdir",
+                "sessionId": "public-fixture",
+                "path": "<TEMP_DIR>/fixture/target",
+                "recursive": false,
+                "mode": 511
+              },
+              "original_response": {
+                "ok": true,
+                "decision": "host-op"
+              },
+              "response": {
+                "ok": true,
+                "decision": "host-op"
+              },
+              "host_errno": null
+            }
+          ],
+          "candidate_events": [
+            {
+              "target": "<TEMP_DIR>/fixture/target",
+              "intervention_enabled": true,
+              "matching_responses": [
+                {
+                  "request_operation": "mkdir",
+                  "request_path": "<TEMP_DIR>/fixture/target",
+                  "request_recursive": false,
+                  "request_has_exist_ok": false,
+                  "response_ok": true,
+                  "response_decision": "host-op",
+                  "response_error": null
+                }
+              ],
+              "normalized": false
+            }
+          ],
+          "caller": {
+            "type": "returned",
+            "value": null
+          },
+          "after": "empty-directory",
+          "checks": {
+            "initial_state": true,
+            "single_unchanged_exchange": true,
+            "host_result": true,
+            "caller_result": true,
+            "candidate_branch": true,
+            "final_state": true,
+            "bindings_restored": true
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "fixture": {
+        "id": "existing-directory",
+        "name": "目录已经存在",
+        "initial": "directory-with-marker",
+        "parent_mode": "0700",
+        "host_error": "EEXIST",
+        "final": "directory-with-marker",
+        "off": "PermissionError",
+        "on": "returned"
+      },
+      "same_request_except_id_and_same_response": true,
+      "phases": [
+        {
+          "phase": "off",
+          "before": "directory-with-marker",
+          "parent_mode_before": "0700",
+          "traffic": [
+            {
+              "request": {
+                "id": "python-3",
+                "command": "HostFileOperation",
+                "runtime": "python",
+                "operation": "mkdir",
+                "sessionId": "public-fixture",
+                "path": "<TEMP_DIR>/fixture/target",
+                "recursive": false,
+                "mode": 511
+              },
+              "original_response": {
+                "ok": false,
+                "decision": "host-op",
+                "error": "EEXIST: File exists, mkdir '<TEMP_DIR>/fixture/target'"
+              },
+              "response": {
+                "ok": false,
+                "decision": "host-op",
+                "error": "EEXIST: File exists, mkdir '<TEMP_DIR>/fixture/target'"
+              },
+              "host_errno": "EEXIST"
+            }
+          ],
+          "candidate_events": [
+            {
+              "target": "<TEMP_DIR>/fixture/target",
+              "intervention_enabled": false,
+              "matching_responses": [
+                {
+                  "request_operation": "mkdir",
+                  "request_path": "<TEMP_DIR>/fixture/target",
+                  "request_recursive": false,
+                  "request_has_exist_ok": false,
+                  "response_ok": false,
+                  "response_decision": "host-op",
+                  "response_error": "EEXIST: File exists, mkdir '<TEMP_DIR>/fixture/target'"
+                }
+              ],
+              "normalized": false,
+              "eligible_existing_directory_error": true
+            }
+          ],
+          "caller": {
+            "type": "PermissionError",
+            "args": [
+              "EEXIST: File exists, mkdir '<TEMP_DIR>/fixture/target'"
+            ],
+            "errno": null
+          },
+          "after": "directory-with-marker",
+          "checks": {
+            "initial_state": true,
+            "single_unchanged_exchange": true,
+            "host_result": true,
+            "caller_result": true,
+            "candidate_branch": true,
+            "final_state": true,
+            "bindings_restored": true
+          }
+        },
+        {
+          "phase": "on",
+          "before": "directory-with-marker",
+          "parent_mode_before": "0700",
+          "traffic": [
+            {
+              "request": {
+                "id": "python-4",
+                "command": "HostFileOperation",
+                "runtime": "python",
+                "operation": "mkdir",
+                "sessionId": "public-fixture",
+                "path": "<TEMP_DIR>/fixture/target",
+                "recursive": false,
+                "mode": 511
+              },
+              "original_response": {
+                "ok": false,
+                "decision": "host-op",
+                "error": "EEXIST: File exists, mkdir '<TEMP_DIR>/fixture/target'"
+              },
+              "response": {
+                "ok": false,
+                "decision": "host-op",
+                "error": "EEXIST: File exists, mkdir '<TEMP_DIR>/fixture/target'"
+              },
+              "host_errno": "EEXIST"
+            }
+          ],
+          "candidate_events": [
+            {
+              "target": "<TEMP_DIR>/fixture/target",
+              "intervention_enabled": true,
+              "matching_responses": [
+                {
+                  "request_operation": "mkdir",
+                  "request_path": "<TEMP_DIR>/fixture/target",
+                  "request_recursive": false,
+                  "request_has_exist_ok": false,
+                  "response_ok": false,
+                  "response_decision": "host-op",
+                  "response_error": "EEXIST: File exists, mkdir '<TEMP_DIR>/fixture/target'"
+                }
+              ],
+              "normalized": true,
+              "eligible_existing_directory_error": true
+            }
+          ],
+          "caller": {
+            "type": "returned",
+            "value": null
+          },
+          "after": "directory-with-marker",
+          "checks": {
+            "initial_state": true,
+            "single_unchanged_exchange": true,
+            "host_result": true,
+            "caller_result": true,
+            "candidate_branch": true,
+            "final_state": true,
+            "bindings_restored": true
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "fixture": {
+        "id": "existing-file",
+        "name": "目标是普通文件",
+        "initial": "file-with-marker",
+        "parent_mode": "0700",
+        "host_error": "EEXIST",
+        "final": "file-with-marker",
+        "off": "PermissionError",
+        "on": "PermissionError"
+      },
+      "same_request_except_id_and_same_response": true,
+      "phases": [
+        {
+          "phase": "off",
+          "before": "file-with-marker",
+          "parent_mode_before": "0700",
+          "traffic": [
+            {
+              "request": {
+                "id": "python-5",
+                "command": "HostFileOperation",
+                "runtime": "python",
+                "operation": "mkdir",
+                "sessionId": "public-fixture",
+                "path": "<TEMP_DIR>/fixture/target",
+                "recursive": false,
+                "mode": 511
+              },
+              "original_response": {
+                "ok": false,
+                "decision": "host-op",
+                "error": "EEXIST: File exists, mkdir '<TEMP_DIR>/fixture/target'"
+              },
+              "response": {
+                "ok": false,
+                "decision": "host-op",
+                "error": "EEXIST: File exists, mkdir '<TEMP_DIR>/fixture/target'"
+              },
+              "host_errno": "EEXIST"
+            }
+          ],
+          "candidate_events": [
+            {
+              "target": "<TEMP_DIR>/fixture/target",
+              "intervention_enabled": false,
+              "matching_responses": [
+                {
+                  "request_operation": "mkdir",
+                  "request_path": "<TEMP_DIR>/fixture/target",
+                  "request_recursive": false,
+                  "request_has_exist_ok": false,
+                  "response_ok": false,
+                  "response_decision": "host-op",
+                  "response_error": "EEXIST: File exists, mkdir '<TEMP_DIR>/fixture/target'"
+                }
+              ],
+              "normalized": false,
+              "eligible_existing_directory_error": false
+            }
+          ],
+          "caller": {
+            "type": "PermissionError",
+            "args": [
+              "EEXIST: File exists, mkdir '<TEMP_DIR>/fixture/target'"
+            ],
+            "errno": null
+          },
+          "after": "file-with-marker",
+          "checks": {
+            "initial_state": true,
+            "single_unchanged_exchange": true,
+            "host_result": true,
+            "caller_result": true,
+            "candidate_branch": true,
+            "final_state": true,
+            "bindings_restored": true
+          }
+        },
+        {
+          "phase": "on",
+          "before": "file-with-marker",
+          "parent_mode_before": "0700",
+          "traffic": [
+            {
+              "request": {
+                "id": "python-6",
+                "command": "HostFileOperation",
+                "runtime": "python",
+                "operation": "mkdir",
+                "sessionId": "public-fixture",
+                "path": "<TEMP_DIR>/fixture/target",
+                "recursive": false,
+                "mode": 511
+              },
+              "original_response": {
+                "ok": false,
+                "decision": "host-op",
+                "error": "EEXIST: File exists, mkdir '<TEMP_DIR>/fixture/target'"
+              },
+              "response": {
+                "ok": false,
+                "decision": "host-op",
+                "error": "EEXIST: File exists, mkdir '<TEMP_DIR>/fixture/target'"
+              },
+              "host_errno": "EEXIST"
+            }
+          ],
+          "candidate_events": [
+            {
+              "target": "<TEMP_DIR>/fixture/target",
+              "intervention_enabled": true,
+              "matching_responses": [
+                {
+                  "request_operation": "mkdir",
+                  "request_path": "<TEMP_DIR>/fixture/target",
+                  "request_recursive": false,
+                  "request_has_exist_ok": false,
+                  "response_ok": false,
+                  "response_decision": "host-op",
+                  "response_error": "EEXIST: File exists, mkdir '<TEMP_DIR>/fixture/target'"
+                }
+              ],
+              "normalized": false,
+              "eligible_existing_directory_error": false
+            }
+          ],
+          "caller": {
+            "type": "PermissionError",
+            "args": [
+              "EEXIST: File exists, mkdir '<TEMP_DIR>/fixture/target'"
+            ],
+            "errno": null
+          },
+          "after": "file-with-marker",
+          "checks": {
+            "initial_state": true,
+            "single_unchanged_exchange": true,
+            "host_result": true,
+            "caller_result": true,
+            "candidate_branch": true,
+            "final_state": true,
+            "bindings_restored": true
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "fixture": {
+        "id": "permission-denied",
+        "name": "父目录拒绝写入",
+        "initial": "missing",
+        "parent_mode": "0500",
+        "host_error": "EACCES",
+        "final": "missing",
+        "off": "PermissionError",
+        "on": "PermissionError"
+      },
+      "same_request_except_id_and_same_response": true,
+      "phases": [
+        {
+          "phase": "off",
+          "before": "missing",
+          "parent_mode_before": "0500",
+          "traffic": [
+            {
+              "request": {
+                "id": "python-7",
+                "command": "HostFileOperation",
+                "runtime": "python",
+                "operation": "mkdir",
+                "sessionId": "public-fixture",
+                "path": "<TEMP_DIR>/fixture/target",
+                "recursive": false,
+                "mode": 511
+              },
+              "original_response": {
+                "ok": false,
+                "decision": "host-op",
+                "error": "EACCES: Permission denied, mkdir '<TEMP_DIR>/fixture/target'"
+              },
+              "response": {
+                "ok": false,
+                "decision": "host-op",
+                "error": "EACCES: Permission denied, mkdir '<TEMP_DIR>/fixture/target'"
+              },
+              "host_errno": "EACCES"
+            }
+          ],
+          "candidate_events": [
+            {
+              "target": "<TEMP_DIR>/fixture/target",
+              "intervention_enabled": false,
+              "matching_responses": [
+                {
+                  "request_operation": "mkdir",
+                  "request_path": "<TEMP_DIR>/fixture/target",
+                  "request_recursive": false,
+                  "request_has_exist_ok": false,
+                  "response_ok": false,
+                  "response_decision": "host-op",
+                  "response_error": "EACCES: Permission denied, mkdir '<TEMP_DIR>/fixture/target'"
+                }
+              ],
+              "normalized": false,
+              "eligible_existing_directory_error": false
+            }
+          ],
+          "caller": {
+            "type": "PermissionError",
+            "args": [
+              "EACCES: Permission denied, mkdir '<TEMP_DIR>/fixture/target'"
+            ],
+            "errno": null
+          },
+          "after": "missing",
+          "checks": {
+            "initial_state": true,
+            "single_unchanged_exchange": true,
+            "host_result": true,
+            "caller_result": true,
+            "candidate_branch": true,
+            "final_state": true,
+            "bindings_restored": true
+          }
+        },
+        {
+          "phase": "on",
+          "before": "missing",
+          "parent_mode_before": "0500",
+          "traffic": [
+            {
+              "request": {
+                "id": "python-8",
+                "command": "HostFileOperation",
+                "runtime": "python",
+                "operation": "mkdir",
+                "sessionId": "public-fixture",
+                "path": "<TEMP_DIR>/fixture/target",
+                "recursive": false,
+                "mode": 511
+              },
+              "original_response": {
+                "ok": false,
+                "decision": "host-op",
+                "error": "EACCES: Permission denied, mkdir '<TEMP_DIR>/fixture/target'"
+              },
+              "response": {
+                "ok": false,
+                "decision": "host-op",
+                "error": "EACCES: Permission denied, mkdir '<TEMP_DIR>/fixture/target'"
+              },
+              "host_errno": "EACCES"
+            }
+          ],
+          "candidate_events": [
+            {
+              "target": "<TEMP_DIR>/fixture/target",
+              "intervention_enabled": true,
+              "matching_responses": [
+                {
+                  "request_operation": "mkdir",
+                  "request_path": "<TEMP_DIR>/fixture/target",
+                  "request_recursive": false,
+                  "request_has_exist_ok": false,
+                  "response_ok": false,
+                  "response_decision": "host-op",
+                  "response_error": "EACCES: Permission denied, mkdir '<TEMP_DIR>/fixture/target'"
+                }
+              ],
+              "normalized": false,
+              "eligible_existing_directory_error": false
+            }
+          ],
+          "caller": {
+            "type": "PermissionError",
+            "args": [
+              "EACCES: Permission denied, mkdir '<TEMP_DIR>/fixture/target'"
+            ],
+            "errno": null
+          },
+          "after": "missing",
+          "checks": {
+            "initial_state": true,
+            "single_unchanged_exchange": true,
+            "host_result": true,
+            "caller_result": true,
+            "candidate_branch": true,
+            "final_state": true,
+            "bindings_restored": true
+          }
+        }
+      ],
+      "passed": true
+    }
+  ]
+}

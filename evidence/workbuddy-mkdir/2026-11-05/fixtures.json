@@ -1,0 +1,46 @@
+{
+  "version": "wb-mkdir-boundary-v1",
+  "call": {"mode": 511, "parents": false, "exist_ok": true},
+  "cases": [
+    {
+      "id": "missing",
+      "name": "目录不存在",
+      "initial": "missing",
+      "parent_mode": "0700",
+      "host_error": null,
+      "final": "empty-directory",
+      "off": "returned",
+      "on": "returned"
+    },
+    {
+      "id": "existing-directory",
+      "name": "目录已经存在",
+      "initial": "directory-with-marker",
+      "parent_mode": "0700",
+      "host_error": "EEXIST",
+      "final": "directory-with-marker",
+      "off": "PermissionError",
+      "on": "returned"
+    },
+    {
+      "id": "existing-file",
+      "name": "目标是普通文件",
+      "initial": "file-with-marker",
+      "parent_mode": "0700",
+      "host_error": "EEXIST",
+      "final": "file-with-marker",
+      "off": "PermissionError",
+      "on": "PermissionError"
+    },
+    {
+      "id": "permission-denied",
+      "name": "父目录拒绝写入",
+      "initial": "missing",
+      "parent_mode": "0500",
+      "host_error": "EACCES",
+      "final": "missing",
+      "off": "PermissionError",
+      "on": "PermissionError"
+    }
+  ]
+}
