@@ -1,0 +1,3185 @@
+{
+  "checker_sha256": "7f8b6cd2af4cb4098e035133986105af6c7853856b1abc5086d173f3b758332b",
+  "runs": [
+    {
+      "run_id": "AUTH-FOOTER-A01",
+      "activity_type": "离线复算",
+      "activity_id": "AUTH-FOOTER-A01-OFFLINE-01",
+      "source_result_sha256": "1da468761256d5cb3948e62e0190bb71421346b13f9033fcabaf4ca73b117b29",
+      "product_pptx_sha256": "82d708689743f2495332f3dc220ee21702d43bb33e28dea62e4a47a3167059d1",
+      "checker_version": "art04-footer-observation-1.0.0",
+      "slide_scope_ok": true,
+      "slides": [
+        {
+          "slide": 1,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 2,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 3,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 4,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 5,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 6,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 7,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 8,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 9,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 10,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 11,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 12,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 13,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 14,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 15,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 16,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 17,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 18,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 19,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 20,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 21,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 22,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 23,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 24,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 25,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 26,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 27,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 28,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 29,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 30,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 31,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 32,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 33,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 34,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 35,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 36,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 37,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 38,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 39,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 40,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 41,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 42,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 43,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 44,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 45,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 46,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 47,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 48,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 49,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 50,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 51,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 52,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 53,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 54,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 55,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 56,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 57,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 58,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 59,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 60,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 61,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 62,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 63,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 64,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 65,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 66,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 67,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 68,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 69,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 70,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 71,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 72,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 73,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 74,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 75,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 76,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 77,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 78,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 79,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 80,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 81,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 82,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 83,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 84,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 85,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 86,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 87,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 88,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 89,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 90,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 91,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 92,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 93,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 94,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 95,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 96,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 97,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 98,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 99,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 100,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 101,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 102,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 103,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 104,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 105,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 106,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 107,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 108,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 109,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 110,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 111,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 112,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        }
+      ]
+    },
+    {
+      "run_id": "AUTH-FOOTER-B01",
+      "activity_type": "离线复算",
+      "activity_id": "AUTH-FOOTER-B01-OFFLINE-01",
+      "source_result_sha256": "7f86c637e7226362d10a3e9fa627cadc4607ac4f7a778185ea3edbf0439d594e",
+      "product_pptx_sha256": "4436dbcbc647ffc43e11d99693cf132031e1ddc74eff50c38c14b3efc1e63f54",
+      "checker_version": "art04-footer-observation-1.0.0",
+      "slide_scope_ok": true,
+      "slides": [
+        {
+          "slide": 1,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 2,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 3,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 4,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 5,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 6,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 7,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 8,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 9,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 10,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 11,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 12,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 13,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 14,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 15,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 16,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 17,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 18,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 19,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 20,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 21,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 22,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 23,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 24,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 25,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 26,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 27,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 28,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 29,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 30,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 31,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 32,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 33,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 34,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 35,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 36,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 37,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 38,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 39,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 40,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 41,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 42,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 43,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 44,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 45,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 46,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 47,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 48,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 49,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 50,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 51,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 52,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 53,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 54,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 55,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 56,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 57,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 58,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 59,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 60,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 61,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 62,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 63,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 64,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 65,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 66,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 67,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 68,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 69,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 70,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 71,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 72,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 73,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 74,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 75,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 76,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 77,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 78,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 79,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 80,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 81,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 82,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 83,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 84,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 85,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 86,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 87,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 88,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 89,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 90,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 91,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 92,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 93,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 94,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 95,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 96,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 97,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 98,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 99,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 100,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 101,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 102,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 103,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 104,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 105,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 106,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 107,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 108,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 109,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 110,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 111,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 112,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        }
+      ]
+    },
+    {
+      "run_id": "AUTH-FOOTER-B02",
+      "activity_type": "离线复算",
+      "activity_id": "AUTH-FOOTER-B02-OFFLINE-01",
+      "source_result_sha256": "29bf24776b9d1f398960fe99e03d5ea360892a69ce5b547337ca5abdf32c7fd4",
+      "product_pptx_sha256": "c38da97b6db7ecb003874fbc6c1d8542c3979d13b45622257b1a300707f7825f",
+      "checker_version": "art04-footer-observation-1.0.0",
+      "slide_scope_ok": true,
+      "slides": [
+        {
+          "slide": 1,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 2,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 3,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 4,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 5,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 6,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 7,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 8,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 9,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 10,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 11,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 12,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 13,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 14,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 15,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 16,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 17,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 18,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 19,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 20,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 21,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 22,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 23,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 24,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 25,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 26,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 27,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 28,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 29,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 30,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 31,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 32,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 33,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 34,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 35,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 36,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 37,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 38,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 39,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 40,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 41,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 42,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 43,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 44,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 45,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 46,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 47,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 48,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 49,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 50,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 51,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 52,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 53,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 54,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 55,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 56,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 57,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 58,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 59,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 60,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 61,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 62,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 63,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 64,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 65,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 66,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 67,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 68,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 69,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 70,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 71,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 72,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 73,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 74,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 75,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 76,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 77,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 78,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 79,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 80,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 81,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 82,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 83,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 84,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 85,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 86,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 87,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 88,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 89,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 90,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 91,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 92,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 93,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 94,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 95,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 96,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 97,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 98,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 99,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 100,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 101,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 102,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 103,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 104,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 105,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 106,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 107,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 108,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 109,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 110,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 111,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        },
+        {
+          "slide": 112,
+          "texts": [
+            "Working draft | management review | 2026-11 | 2026.11-R3A4"
+          ],
+          "version_ok": true
+        }
+      ]
+    },
+    {
+      "run_id": "AUTH-FOOTER-A02",
+      "activity_type": "离线复算",
+      "activity_id": "AUTH-FOOTER-A02-OFFLINE-01",
+      "source_result_sha256": "796b220f1d0dba7aed80d5f4813febb9ab5b076523e912d193271d8a01eb146b",
+      "product_pptx_sha256": "00837a5cbc5b444153876030f957b97824fd1be987379368b0a34739a1e1589f",
+      "checker_version": "art04-footer-observation-1.0.0",
+      "slide_scope_ok": true,
+      "slides": [
+        {
+          "slide": 1,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 2,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 3,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 4,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 5,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 6,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 7,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 8,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 9,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 10,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 11,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 12,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 13,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 14,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 15,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 16,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 17,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 18,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 19,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 20,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 21,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 22,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 23,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 24,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 25,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 26,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 27,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 28,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 29,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 30,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 31,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 32,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 33,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 34,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 35,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 36,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 37,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 38,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 39,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 40,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 41,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 42,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 43,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 44,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 45,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 46,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 47,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 48,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 49,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 50,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 51,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 52,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 53,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 54,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 55,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 56,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 57,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 58,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 59,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 60,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 61,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 62,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 63,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 64,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 65,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 66,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 67,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 68,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 69,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 70,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 71,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 72,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 73,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 74,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 75,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 76,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 77,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 78,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 79,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 80,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 81,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 82,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 83,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 84,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 85,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 86,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 87,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 88,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 89,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 90,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 91,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 92,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 93,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 94,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 95,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 96,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 97,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 98,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 99,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 100,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 101,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 102,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 103,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 104,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 105,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 106,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 107,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 108,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 109,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 110,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 111,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        },
+        {
+          "slide": 112,
+          "texts": [
+            "Working draft | management review | September 2026"
+          ],
+          "version_ok": false
+        }
+      ]
+    }
+  ]
+}

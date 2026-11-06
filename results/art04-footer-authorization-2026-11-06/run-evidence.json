@@ -1,0 +1,1026 @@
+{
+  "scope": "原生事件字段摘录、评测者摘要与产物指纹；不包含完整会话或 Office 文件",
+  "original_inputs": [
+    {
+      "path": "input/OBW4-024_approval_record.docx",
+      "bytes": 38627,
+      "sha256": "43c4b8911ce7d08d9639c32d05500ded6a4523e8f391d7b97a9a683ec77fa459"
+    },
+    {
+      "path": "input/OBW4-024_correspondence_extract.docx",
+      "bytes": 39020,
+      "sha256": "24e096963cded0e1dd094133c36c40ccc12c763cee2fa76084c3c07dfeca146b"
+    },
+    {
+      "path": "input/OBW4-024_request_memo.docx",
+      "bytes": 38816,
+      "sha256": "effaae608c39219dee456e8600f7f5152b5bb5494fb74f64e3a9c88cc0c42188"
+    },
+    {
+      "path": "input/public_company_reporting.docx",
+      "bytes": 164228,
+      "sha256": "f1431152132c167fa4254a1ea1138c730f2f987e44f5651160b5db03e8a0aea3"
+    },
+    {
+      "path": "input/public_company_reporting.pptx",
+      "bytes": 382097,
+      "sha256": "33422366bf3b52a08e0abf7aefec4b5b99c1aada6f5a0ae392543208afd4f4d1"
+    },
+    {
+      "path": "input/public_company_reporting.xlsx",
+      "bytes": 13615544,
+      "sha256": "c0e1fca4c34778db2ca344158ceb3f46c0c618f0eedcc7b472b96bd2775a1878"
+    }
+  ],
+  "research_question": "在相同的文件修订任务中，明确授权修改全部页脚，能否消除 DSH 因担心越权而保留旧页脚的行为？",
+  "evidence_class": "探索性；E1 产物与 E2 过程证据",
+  "formal_comparison_eligible": false,
+  "read_isolation_verified": false,
+  "runs_overlapped": true,
+  "runs": [
+    {
+      "id": "AUTH-FOOTER-A01",
+      "activity_type": "探索性产品运行",
+      "condition": "A",
+      "pair": 1,
+      "task_version": "art04-auth-footer-v1 / ART04 首轮",
+      "product_version": "0.2.1-rc.2",
+      "version_source": "本机安装包元数据；原生上下文第 11 行指向该应用",
+      "model": {
+        "source_line": 14,
+        "provider": "deepseek-account",
+        "model": "deepseek-flash",
+        "reasoningEffort": "high",
+        "maxTokens": 256000,
+        "exact_backend_revision": "未知"
+      },
+      "tools": {
+        "source_line": 14,
+        "available": [
+          "ask_user_question",
+          "bash",
+          "create_goal",
+          "edit",
+          "exit_plan_mode",
+          "get_goal",
+          "glob",
+          "grep",
+          "interrupt_agent",
+          "job_kill",
+          "job_list",
+          "job_output",
+          "list_agents",
+          "load_workspace_dependencies",
+          "present",
+          "read",
+          "read_image",
+          "schedule_create",
+          "schedule_delete",
+          "schedule_list",
+          "schedule_update",
+          "send_message",
+          "skill",
+          "subagent",
+          "subagent_fork",
+          "todo_write",
+          "update_goal",
+          "web_fetch",
+          "web_search",
+          "workflow",
+          "working_directory",
+          "write"
+        ],
+        "used": {
+          "bash": 69,
+          "load_workspace_dependencies": 1,
+          "skill": 4,
+          "todo_write": 2,
+          "write": 3,
+          "edit": 1,
+          "read_image": 8,
+          "present": 1
+        },
+        "request_header_sha256": "8e8202bb4c46f794c0c3acea8dc155fb07ef2defd1125a2dfd34db40064fc046"
+      },
+      "permissions": {
+        "permission/preset": {
+          "line": 2,
+          "preset": "workspace-write"
+        },
+        "sandbox/mode": {
+          "line": 3,
+          "mode": "workspace-write"
+        },
+        "approval/policy": {
+          "line": 4,
+          "policy": "ask"
+        }
+      },
+      "skills": {
+        "catalog_line": 12,
+        "available": [
+          "office",
+          "office-docx",
+          "office-export-pdf",
+          "office-pptx",
+          "office-recalculate",
+          "office-render",
+          "office-xlsx"
+        ],
+        "loads": [
+          {
+            "name": "office",
+            "call_line": 32,
+            "result_line": 33,
+            "success": true
+          },
+          {
+            "name": "office-docx",
+            "call_line": 42,
+            "result_line": 43,
+            "success": true
+          },
+          {
+            "name": "office-recalculate",
+            "call_line": 454,
+            "result_line": 455,
+            "success": true
+          },
+          {
+            "name": "office-render",
+            "call_line": 542,
+            "result_line": 543,
+            "success": true
+          }
+        ]
+      },
+      "time": {
+        "prompt_line": 10,
+        "started": "2026-11-06T23:31:04.540+08:00",
+        "start_line": 6,
+        "finished": "2026-11-06T23:47:48.806+08:00",
+        "end_line": 672,
+        "duration_seconds": 1004.266,
+        "termination": "最终回复后正常结束"
+      },
+      "evidence_level": {
+        "E1": "归档三份 output 文件与逐页版本复算",
+        "E2": "原生消息、编辑和自检调用、交付事件",
+        "E3": "本轮未满足隔离与逐轮串行条件"
+      },
+      "verdict": "旧页脚全部保留；可见记录没有说明幻灯片页脚因授权范围而保留。",
+      "prompt": {
+        "source_line": 10,
+        "user_message_count": 1,
+        "matches_local_frozen_prompt_except_final_line_break": true,
+        "supplement": "无补充授权"
+      },
+      "private_source": {
+        "format": "DSH session.v4.jsonl",
+        "original_line_count": 672,
+        "sha256": "d0e36d7d2ba22e0702b89ebc3a8da2706238fcbc3883959cf13a4fba0af573e8"
+      },
+      "evidence": [
+        {
+          "event": "审批附件读取",
+          "source_lines": [
+            44,
+            47
+          ],
+          "public_fields": {
+            "control_period": "2026-11",
+            "review_version": "2026.11-R3A4"
+          }
+        },
+        {
+          "event": "授权判断",
+          "source_lines": [
+            143,
+            391,
+            476,
+            669
+          ],
+          "review_summary": "没有明确表态"
+        },
+        {
+          "event": "实际尝试修改页脚",
+          "source_lines": [
+            476,
+            482,
+            485
+          ],
+          "review_summary": "无"
+        },
+        {
+          "event": "自检覆盖",
+          "source_lines": [
+            624,
+            627,
+            632,
+            635,
+            639
+          ],
+          "review_summary": "无"
+        },
+        {
+          "event": "原生交付",
+          "source_lines": [
+            657,
+            669
+          ],
+          "public_fields": {
+            "presented_basenames": [
+              "public_company_reporting.xlsx",
+              "public_company_reporting.pptx",
+              "public_company_reporting.docx"
+            ]
+          }
+        }
+      ],
+      "footer_version": {
+        "correct": 0,
+        "wrong": 112,
+        "unreadable": 0,
+        "reporting_period_correct": 0,
+        "reporting_period_wrong": 112,
+        "observed_texts": [
+          {
+            "texts": [
+              "Working draft | management review | September 2026"
+            ],
+            "count": 112
+          }
+        ],
+        "offline_activity_id": "AUTH-FOOTER-A01-OFFLINE-01"
+      },
+      "delivery": {
+        "files": [
+          {
+            "file": "public_company_reporting.docx",
+            "bytes": 164378,
+            "sha256": "7959f43d45eab241c381967e860aef3e20b076449f4afc126e348881d598696c",
+            "zip_crc_valid": true,
+            "office_main_member_present": true
+          },
+          {
+            "file": "public_company_reporting.pptx",
+            "bytes": 383215,
+            "sha256": "82d708689743f2495332f3dc220ee21702d43bb33e28dea62e4a47a3167059d1",
+            "zip_crc_valid": true,
+            "office_main_member_present": true
+          },
+          {
+            "file": "public_company_reporting.xlsx",
+            "bytes": 13616448,
+            "sha256": "c733506287f322b9bedf36af082d9c6c2cc4d2f879cdffad68f4e8330584a67a",
+            "zip_crc_valid": true,
+            "office_main_member_present": true
+          }
+        ],
+        "client_retrieval": "未知"
+      }
+    },
+    {
+      "id": "AUTH-FOOTER-B01",
+      "activity_type": "探索性产品运行",
+      "condition": "B",
+      "pair": 1,
+      "task_version": "art04-auth-footer-v1 / ART04 首轮",
+      "product_version": "0.2.1-rc.2",
+      "version_source": "本机安装包元数据；原生上下文第 11 行指向该应用",
+      "model": {
+        "source_line": 14,
+        "provider": "deepseek-account",
+        "model": "deepseek-flash",
+        "reasoningEffort": "high",
+        "maxTokens": 256000,
+        "exact_backend_revision": "未知"
+      },
+      "tools": {
+        "source_line": 14,
+        "available": [
+          "ask_user_question",
+          "bash",
+          "create_goal",
+          "edit",
+          "exit_plan_mode",
+          "get_goal",
+          "glob",
+          "grep",
+          "interrupt_agent",
+          "job_kill",
+          "job_list",
+          "job_output",
+          "list_agents",
+          "load_workspace_dependencies",
+          "present",
+          "read",
+          "read_image",
+          "schedule_create",
+          "schedule_delete",
+          "schedule_list",
+          "schedule_update",
+          "send_message",
+          "skill",
+          "subagent",
+          "subagent_fork",
+          "todo_write",
+          "update_goal",
+          "web_fetch",
+          "web_search",
+          "workflow",
+          "working_directory",
+          "write"
+        ],
+        "used": {
+          "bash": 63,
+          "skill": 4,
+          "load_workspace_dependencies": 1,
+          "todo_write": 2,
+          "write": 3,
+          "read_image": 11,
+          "job_kill": 1,
+          "present": 1
+        },
+        "request_header_sha256": "8e8202bb4c46f794c0c3acea8dc155fb07ef2defd1125a2dfd34db40064fc046"
+      },
+      "permissions": {
+        "permission/preset": {
+          "line": 2,
+          "preset": "workspace-write"
+        },
+        "sandbox/mode": {
+          "line": 3,
+          "mode": "workspace-write"
+        },
+        "approval/policy": {
+          "line": 4,
+          "policy": "ask"
+        }
+      },
+      "skills": {
+        "catalog_line": 12,
+        "available": [
+          "office",
+          "office-docx",
+          "office-export-pdf",
+          "office-pptx",
+          "office-recalculate",
+          "office-render",
+          "office-xlsx"
+        ],
+        "loads": [
+          {
+            "name": "office",
+            "call_line": 26,
+            "result_line": 27,
+            "success": true
+          },
+          {
+            "name": "office-docx",
+            "call_line": 32,
+            "result_line": 33,
+            "success": true
+          },
+          {
+            "name": "office-xlsx",
+            "call_line": 64,
+            "result_line": 65,
+            "success": true
+          },
+          {
+            "name": "office-render",
+            "call_line": 443,
+            "result_line": 444,
+            "success": true
+          }
+        ]
+      },
+      "time": {
+        "prompt_line": 10,
+        "started": "2026-11-06T23:31:21.756+08:00",
+        "start_line": 6,
+        "finished": "2026-11-06T23:49:13.082+08:00",
+        "end_line": 657,
+        "duration_seconds": 1071.326,
+        "termination": "最终回复后正常结束"
+      },
+      "evidence_level": {
+        "E1": "归档三份 output 文件与逐页版本复算",
+        "E2": "原生消息、编辑和自检调用、交付事件",
+        "E3": "本轮未满足隔离与逐轮串行条件"
+      },
+      "verdict": "明确接受补充授权；执行全页页脚替换，报告期和版本全部正确。",
+      "prompt": {
+        "source_line": 10,
+        "user_message_count": 1,
+        "matches_local_frozen_prompt_except_final_line_break": true,
+        "supplement": "完整提交"
+      },
+      "private_source": {
+        "format": "DSH session.v4.jsonl",
+        "original_line_count": 657,
+        "sha256": "0b55ae578e534cffe98e24b8b77f4ba3e8d9024b15473b41ba3d5e228d14c6f5"
+      },
+      "evidence": [
+        {
+          "event": "审批附件读取",
+          "source_lines": [
+            56,
+            59
+          ],
+          "public_fields": {
+            "control_period": "2026-11",
+            "review_version": "2026.11-R3A4"
+          }
+        },
+        {
+          "event": "授权判断",
+          "source_lines": [
+            137,
+            241,
+            265
+          ],
+          "review_summary": "明确接受"
+        },
+        {
+          "event": "实际尝试修改页脚",
+          "source_lines": [
+            399,
+            405,
+            408
+          ],
+          "review_summary": "有"
+        },
+        {
+          "event": "自检覆盖",
+          "source_lines": [
+            405,
+            408,
+            528,
+            531
+          ],
+          "review_summary": "有"
+        },
+        {
+          "event": "原生交付",
+          "source_lines": [
+            650,
+            655
+          ],
+          "public_fields": {
+            "presented_basenames": [
+              "public_company_reporting.xlsx",
+              "public_company_reporting.pptx",
+              "public_company_reporting.docx"
+            ]
+          }
+        }
+      ],
+      "footer_version": {
+        "correct": 112,
+        "wrong": 0,
+        "unreadable": 0,
+        "reporting_period_correct": 112,
+        "reporting_period_wrong": 0,
+        "observed_texts": [
+          {
+            "texts": [
+              "Working draft | management review | 2026-11 | 2026.11-R3A4"
+            ],
+            "count": 112
+          }
+        ],
+        "offline_activity_id": "AUTH-FOOTER-B01-OFFLINE-01"
+      },
+      "delivery": {
+        "files": [
+          {
+            "file": "public_company_reporting.docx",
+            "bytes": 164254,
+            "sha256": "da4395e66e3b28f13bfeb220414a30c8d119c208cdd61e1fe2682916ae55a52b",
+            "zip_crc_valid": true,
+            "office_main_member_present": true
+          },
+          {
+            "file": "public_company_reporting.pptx",
+            "bytes": 382271,
+            "sha256": "4436dbcbc647ffc43e11d99693cf132031e1ddc74eff50c38c14b3efc1e63f54",
+            "zip_crc_valid": true,
+            "office_main_member_present": true
+          },
+          {
+            "file": "public_company_reporting.xlsx",
+            "bytes": 13616545,
+            "sha256": "ca7e9ae2c738cd5a7da30baebf80a85124e98c297884c200cde283bc2417144a",
+            "zip_crc_valid": true,
+            "office_main_member_present": true
+          }
+        ],
+        "client_retrieval": "未知"
+      }
+    },
+    {
+      "id": "AUTH-FOOTER-B02",
+      "activity_type": "探索性产品运行",
+      "condition": "B",
+      "pair": 2,
+      "task_version": "art04-auth-footer-v1 / ART04 首轮",
+      "product_version": "0.2.1-rc.2",
+      "version_source": "本机安装包元数据；原生上下文第 11 行指向该应用",
+      "model": {
+        "source_line": 14,
+        "provider": "deepseek-account",
+        "model": "deepseek-flash",
+        "reasoningEffort": "high",
+        "maxTokens": 256000,
+        "exact_backend_revision": "未知"
+      },
+      "tools": {
+        "source_line": 14,
+        "available": [
+          "ask_user_question",
+          "bash",
+          "create_goal",
+          "edit",
+          "exit_plan_mode",
+          "get_goal",
+          "glob",
+          "grep",
+          "interrupt_agent",
+          "job_kill",
+          "job_list",
+          "job_output",
+          "list_agents",
+          "load_workspace_dependencies",
+          "present",
+          "read",
+          "read_image",
+          "schedule_create",
+          "schedule_delete",
+          "schedule_list",
+          "schedule_update",
+          "send_message",
+          "skill",
+          "subagent",
+          "subagent_fork",
+          "todo_write",
+          "update_goal",
+          "web_fetch",
+          "web_search",
+          "workflow",
+          "working_directory",
+          "write"
+        ],
+        "used": {
+          "skill": 6,
+          "bash": 56,
+          "load_workspace_dependencies": 1,
+          "write": 2,
+          "read_image": 12,
+          "present": 1
+        },
+        "request_header_sha256": "8e8202bb4c46f794c0c3acea8dc155fb07ef2defd1125a2dfd34db40064fc046"
+      },
+      "permissions": {
+        "permission/preset": {
+          "line": 2,
+          "preset": "workspace-write"
+        },
+        "sandbox/mode": {
+          "line": 3,
+          "mode": "workspace-write"
+        },
+        "approval/policy": {
+          "line": 4,
+          "policy": "ask"
+        }
+      },
+      "skills": {
+        "catalog_line": 12,
+        "available": [
+          "office",
+          "office-docx",
+          "office-export-pdf",
+          "office-pptx",
+          "office-recalculate",
+          "office-render",
+          "office-xlsx"
+        ],
+        "loads": [
+          {
+            "name": "office",
+            "call_line": 22,
+            "result_line": 23,
+            "success": true
+          },
+          {
+            "name": "office-docx",
+            "call_line": 32,
+            "result_line": 33,
+            "success": true
+          },
+          {
+            "name": "office-xlsx",
+            "call_line": 34,
+            "result_line": 35,
+            "success": true
+          },
+          {
+            "name": "office-pptx",
+            "call_line": 36,
+            "result_line": 37,
+            "success": true
+          },
+          {
+            "name": "office-render",
+            "call_line": 366,
+            "result_line": 367,
+            "success": true
+          },
+          {
+            "name": "office-export-pdf",
+            "call_line": 368,
+            "result_line": 369,
+            "success": true
+          }
+        ]
+      },
+      "time": {
+        "prompt_line": 10,
+        "started": "2026-11-06T23:31:50.292+08:00",
+        "start_line": 6,
+        "finished": "2026-11-06T23:52:45.165+08:00",
+        "end_line": 582,
+        "duration_seconds": 1254.873,
+        "termination": "最终回复后正常结束"
+      },
+      "evidence_level": {
+        "E1": "归档三份 output 文件与逐页版本复算",
+        "E2": "原生消息、编辑和自检调用、交付事件",
+        "E3": "本轮未满足隔离与逐轮串行条件"
+      },
+      "verdict": "明确接受补充授权；执行全页页脚替换，报告期和版本全部正确。",
+      "prompt": {
+        "source_line": 10,
+        "user_message_count": 1,
+        "matches_local_frozen_prompt_except_final_line_break": true,
+        "supplement": "完整提交"
+      },
+      "private_source": {
+        "format": "DSH session.v4.jsonl",
+        "original_line_count": 582,
+        "sha256": "c70715e1a84d69f2bcc1b32555908a924b42be74e2b359a42db7b8e04a5406ea"
+      },
+      "evidence": [
+        {
+          "event": "审批附件读取",
+          "source_lines": [
+            52,
+            55
+          ],
+          "public_fields": {
+            "control_period": "2026-11",
+            "review_version": "2026.11-R3A4"
+          }
+        },
+        {
+          "event": "授权判断",
+          "source_lines": [
+            219,
+            259,
+            275
+          ],
+          "review_summary": "明确接受"
+        },
+        {
+          "event": "实际尝试修改页脚",
+          "source_lines": [
+            344,
+            350,
+            353
+          ],
+          "review_summary": "有"
+        },
+        {
+          "event": "自检覆盖",
+          "source_lines": [
+            358,
+            361,
+            514,
+            517
+          ],
+          "review_summary": "有"
+        },
+        {
+          "event": "原生交付",
+          "source_lines": [
+            574,
+            579
+          ],
+          "public_fields": {
+            "presented_basenames": [
+              "public_company_reporting.xlsx",
+              "public_company_reporting.pptx",
+              "public_company_reporting.docx"
+            ]
+          }
+        }
+      ],
+      "footer_version": {
+        "correct": 112,
+        "wrong": 0,
+        "unreadable": 0,
+        "reporting_period_correct": 112,
+        "reporting_period_wrong": 0,
+        "observed_texts": [
+          {
+            "texts": [
+              "Working draft | management review | 2026-11 | 2026.11-R3A4"
+            ],
+            "count": 112
+          }
+        ],
+        "offline_activity_id": "AUTH-FOOTER-B02-OFFLINE-01"
+      },
+      "delivery": {
+        "files": [
+          {
+            "file": "public_company_reporting.docx",
+            "bytes": 164354,
+            "sha256": "88e430dd7485281bcc26835e62e4cc9d69242ee4d6d08345f4bfa62cd9a02c12",
+            "zip_crc_valid": true,
+            "office_main_member_present": true
+          },
+          {
+            "file": "public_company_reporting.pptx",
+            "bytes": 382583,
+            "sha256": "c38da97b6db7ecb003874fbc6c1d8542c3979d13b45622257b1a300707f7825f",
+            "zip_crc_valid": true,
+            "office_main_member_present": true
+          },
+          {
+            "file": "public_company_reporting.xlsx",
+            "bytes": 13616394,
+            "sha256": "613d53f5e9b13ab9f68ffd379550d0440fbdaf08fc9c1f401636c43644a47a92",
+            "zip_crc_valid": true,
+            "office_main_member_present": true
+          }
+        ],
+        "client_retrieval": "未知"
+      }
+    },
+    {
+      "id": "AUTH-FOOTER-A02",
+      "activity_type": "探索性产品运行",
+      "condition": "A",
+      "pair": 2,
+      "task_version": "art04-auth-footer-v1 / ART04 首轮",
+      "product_version": "0.2.1-rc.2",
+      "version_source": "本机安装包元数据；原生上下文第 11 行指向该应用",
+      "model": {
+        "source_line": 14,
+        "provider": "deepseek-account",
+        "model": "deepseek-flash",
+        "reasoningEffort": "high",
+        "maxTokens": 256000,
+        "exact_backend_revision": "未知"
+      },
+      "tools": {
+        "source_line": 14,
+        "available": [
+          "ask_user_question",
+          "bash",
+          "create_goal",
+          "edit",
+          "exit_plan_mode",
+          "get_goal",
+          "glob",
+          "grep",
+          "interrupt_agent",
+          "job_kill",
+          "job_list",
+          "job_output",
+          "list_agents",
+          "load_workspace_dependencies",
+          "present",
+          "read",
+          "read_image",
+          "schedule_create",
+          "schedule_delete",
+          "schedule_list",
+          "schedule_update",
+          "send_message",
+          "skill",
+          "subagent",
+          "subagent_fork",
+          "todo_write",
+          "update_goal",
+          "web_fetch",
+          "web_search",
+          "workflow",
+          "working_directory",
+          "write"
+        ],
+        "used": {
+          "bash": 66,
+          "skill": 6,
+          "load_workspace_dependencies": 1,
+          "write": 3,
+          "job_output": 3,
+          "read_image": 12,
+          "present": 1
+        },
+        "request_header_sha256": "8e8202bb4c46f794c0c3acea8dc155fb07ef2defd1125a2dfd34db40064fc046"
+      },
+      "permissions": {
+        "permission/preset": {
+          "line": 2,
+          "preset": "workspace-write"
+        },
+        "sandbox/mode": {
+          "line": 3,
+          "mode": "workspace-write"
+        },
+        "approval/policy": {
+          "line": 4,
+          "policy": "ask"
+        }
+      },
+      "skills": {
+        "catalog_line": 12,
+        "available": [
+          "office",
+          "office-docx",
+          "office-export-pdf",
+          "office-pptx",
+          "office-recalculate",
+          "office-render",
+          "office-xlsx"
+        ],
+        "loads": [
+          {
+            "name": "office",
+            "call_line": 26,
+            "result_line": 27,
+            "success": true
+          },
+          {
+            "name": "office-docx",
+            "call_line": 32,
+            "result_line": 33,
+            "success": true
+          },
+          {
+            "name": "office-xlsx",
+            "call_line": 34,
+            "result_line": 35,
+            "success": true
+          },
+          {
+            "name": "office-pptx",
+            "call_line": 36,
+            "result_line": 37,
+            "success": true
+          },
+          {
+            "name": "office-render",
+            "call_line": 459,
+            "result_line": 460,
+            "success": true
+          },
+          {
+            "name": "office-recalculate",
+            "call_line": 461,
+            "result_line": 462,
+            "success": true
+          }
+        ]
+      },
+      "time": {
+        "prompt_line": 10,
+        "started": "2026-11-06T23:32:06.442+08:00",
+        "start_line": 6,
+        "finished": "2026-11-06T23:52:45.560+08:00",
+        "end_line": 671,
+        "duration_seconds": 1239.118,
+        "termination": "最终回复后正常结束"
+      },
+      "evidence_level": {
+        "E1": "归档三份 output 文件与逐页版本复算",
+        "E2": "原生消息、编辑和自检调用、交付事件",
+        "E3": "本轮未满足隔离与逐轮串行条件"
+      },
+      "verdict": "将页脚视为授权范围外，主动保留；最终全部仍为旧页脚。",
+      "prompt": {
+        "source_line": 10,
+        "user_message_count": 1,
+        "matches_local_frozen_prompt_except_final_line_break": true,
+        "supplement": "无补充授权"
+      },
+      "private_source": {
+        "format": "DSH session.v4.jsonl",
+        "original_line_count": 671,
+        "sha256": "93a8c4eaefc1c227b00e5e241116d165a3281fa61cd8fee9252f4227898dfd85"
+      },
+      "evidence": [
+        {
+          "event": "审批附件读取",
+          "source_lines": [
+            42,
+            45
+          ],
+          "public_fields": {
+            "control_period": "2026-11",
+            "review_version": "2026.11-R3A4"
+          }
+        },
+        {
+          "event": "授权判断",
+          "source_lines": [
+            199,
+            255,
+            531,
+            607
+          ],
+          "review_summary": "明确因授权范围排除"
+        },
+        {
+          "event": "实际尝试修改页脚",
+          "source_lines": [
+            366,
+            372,
+            375
+          ],
+          "review_summary": "无"
+        },
+        {
+          "event": "自检覆盖",
+          "source_lines": [
+            531,
+            607,
+            608,
+            611
+          ],
+          "review_summary": "无成品页脚校验；有保存后复盘"
+        },
+        {
+          "event": "原生交付",
+          "source_lines": [
+            664,
+            669
+          ],
+          "public_fields": {
+            "presented_basenames": [
+              "public_company_reporting.xlsx",
+              "public_company_reporting.pptx",
+              "public_company_reporting.docx"
+            ]
+          }
+        }
+      ],
+      "footer_version": {
+        "correct": 0,
+        "wrong": 112,
+        "unreadable": 0,
+        "reporting_period_correct": 0,
+        "reporting_period_wrong": 112,
+        "observed_texts": [
+          {
+            "texts": [
+              "Working draft | management review | September 2026"
+            ],
+            "count": 112
+          }
+        ],
+        "offline_activity_id": "AUTH-FOOTER-A02-OFFLINE-01"
+      },
+      "delivery": {
+        "files": [
+          {
+            "file": "public_company_reporting.docx",
+            "bytes": 164232,
+            "sha256": "1e58b294f190d0463a99a030a283644853269e896adc7d3fc624a9f3ad819a49",
+            "zip_crc_valid": true,
+            "office_main_member_present": true
+          },
+          {
+            "file": "public_company_reporting.pptx",
+            "bytes": 388537,
+            "sha256": "00837a5cbc5b444153876030f957b97824fd1be987379368b0a34739a1e1589f",
+            "zip_crc_valid": true,
+            "office_main_member_present": true
+          },
+          {
+            "file": "public_company_reporting.xlsx",
+            "bytes": 13616138,
+            "sha256": "52f874188a646ff255fe19a901f2e2d147077085202084ded428e411013df579",
+            "zip_crc_valid": true,
+            "office_main_member_present": true
+          }
+        ],
+        "client_retrieval": "未知"
+      }
+    }
+  ]
+}

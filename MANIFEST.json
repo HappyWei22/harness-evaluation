@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-05",
+  "date": "2026-11-07",
   "scope": "本公开包实际文件指纹，排除本清单自身。",
   "files": [
     {
@@ -14,13 +14,13 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 12877,
-      "sha256": "544e825b96ae36f2bbf4b35add8614dbd6b068ddd8efca4f0a8ae74587fc54e5"
+      "bytes": 13349,
+      "sha256": "56a914c71d30a7bb56df1681910e1a45ea482829e287cbd7eb984f988a6ae37e"
     },
     {
       "path": "PROVENANCE.json",
-      "bytes": 642261,
-      "sha256": "5391ffab11d2ecd805b61db027501509683c6c44d9338a585b79d4c95e272b6a"
+      "bytes": 647340,
+      "sha256": "5f182cb400188d4541c8ed4e71c38d69d04b58c1611eced652abc42f72574a12"
     },
     {
       "path": "README.md",
@@ -794,8 +794,8 @@
     },
     {
       "path": "docs/公开材料与来源说明.md",
-      "bytes": 14061,
-      "sha256": "4e22bf2fbe198c98bf8b8ec080f9da4b99af8a5976f0eb3490a3d5468acdd071"
+      "bytes": 14524,
+      "sha256": "f9e63fbeb2b6c46acd4916642467e4614e7a85a0f0c0c2e4de74ca43b8013b80"
     },
     {
       "path": "docs/单次评测记录模板.md",
@@ -8486,6 +8486,31 @@
       "path": "tools/dsh-context-export/vitest.config.ts",
       "bytes": 2003,
       "sha256": "5cfe1655822034d5dc4d8f4787a258898a9c0b292af8f27f64b74cd501ed0f0b"
+    },
+    {
+      "path": "cases/ART04/footer_version_check.py",
+      "bytes": 5631,
+      "sha256": "7f8b6cd2af4cb4098e035133986105af6c7853856b1abc5086d173f3b758332b"
+    },
+    {
+      "path": "docs/阶段进展/2026-11-07.md",
+      "bytes": 978,
+      "sha256": "67fee190acb4001b17ef80c452b0cc44fb6207c067727f46b01edf77c9c47802"
+    },
+    {
+      "path": "results/art04-footer-authorization-2026-11-06/README.md",
+      "bytes": 4722,
+      "sha256": "855ceb20b196598095620da7b5d5a8e3ca264a4b99a87b9c20d65622f029cebd"
+    },
+    {
+      "path": "results/art04-footer-authorization-2026-11-06/page-footers.json",
+      "bytes": 80983,
+      "sha256": "4e8d448c919569edfa67c919b586110269c2479b4ade763de18dceadadb2ffe0"
+    },
+    {
+      "path": "results/art04-footer-authorization-2026-11-06/run-evidence.json",
+      "bytes": 28585,
+      "sha256": "971ba3b5e32ee5c0730d8047452323d2afa88455785e59bd2da6cc9a7aec68ad"
     }
   ]
 }

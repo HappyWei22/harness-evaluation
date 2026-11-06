@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-30",
+  "date": "2026-11-07",
   "description": "原始来源哈希用于记录来源关系，不代表完整原文件已公开或外部可认证。public文件的实际字节指纹另见MANIFEST.json。",
   "exports": [
     {
@@ -8303,6 +8303,75 @@
       "original_sha256": "d38a2d1999f489fa4d6d90ad5d2da3f554deb4e684bbd82fbaafcb7e84ceb48d",
       "transformation": "公开副本：转换链接、脱敏路径与会话标识；补充公开范围说明，不更改原评分和未知；原件引用不等于完整原件公开",
       "byte_identical_to_original": false
+    },
+    {
+      "path": "results/art04-footer-authorization-2026-11-06/run-evidence.json",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/明确授权对照-2026-11-06/运行记录/AUTH-FOOTER-A01/原生日志/session.v4.jsonl",
+      "original_sha256": "d0e36d7d2ba22e0702b89ebc3a8da2706238fcbc3883959cf13a4fba0af573e8",
+      "transformation": "抽取必要事件字段、原行号、原件指纹与评测者摘要；省略本机路径、会话标识、推理原文和完整请求",
+      "byte_identical_to_original": false,
+      "additional_sources": [
+        {
+          "path": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/明确授权对照-2026-11-06/运行记录/AUTH-FOOTER-A01/逐项记录.json",
+          "sha256": "ee7a90d2cf9035f1b43eba433f65461f7f89815bb5761495611aa2acbb2710d4"
+        },
+        {
+          "path": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/明确授权对照-2026-11-06/运行记录/AUTH-FOOTER-B01/原生日志/session.v4.jsonl",
+          "sha256": "0b55ae578e534cffe98e24b8b77f4ba3e8d9024b15473b41ba3d5e228d14c6f5"
+        },
+        {
+          "path": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/明确授权对照-2026-11-06/运行记录/AUTH-FOOTER-B01/逐项记录.json",
+          "sha256": "fa3befc90e79009ee171e0fc208dbe922827d4d1c92ab71a8a60611c2f784da8"
+        },
+        {
+          "path": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/明确授权对照-2026-11-06/运行记录/AUTH-FOOTER-B02/原生日志/session.v4.jsonl",
+          "sha256": "c70715e1a84d69f2bcc1b32555908a924b42be74e2b359a42db7b8e04a5406ea"
+        },
+        {
+          "path": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/明确授权对照-2026-11-06/运行记录/AUTH-FOOTER-B02/逐项记录.json",
+          "sha256": "e4cc169c99677cbd5d9abf586c711c8e06ecdc952582232c59667388e2585020"
+        },
+        {
+          "path": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/明确授权对照-2026-11-06/运行记录/AUTH-FOOTER-A02/原生日志/session.v4.jsonl",
+          "sha256": "93a8c4eaefc1c227b00e5e241116d165a3281fa61cd8fee9252f4227898dfd85"
+        },
+        {
+          "path": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/明确授权对照-2026-11-06/运行记录/AUTH-FOOTER-A02/逐项记录.json",
+          "sha256": "9fbe5c6edcee8b48b5b0d47e623ecded3d45a3ea71efe8e0f9dde00e1a12c96e"
+        },
+        {
+          "path": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/明确授权对照-2026-11-06/材料指纹.json",
+          "sha256": "d17f659e00be74e9d13f1768133bd5147a6a571d5d9a848b65ef40bb565fd50f"
+        }
+      ]
+    },
+    {
+      "path": "results/art04-footer-authorization-2026-11-06/page-footers.json",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/明确授权对照-2026-11-06/离线复算/AUTH-FOOTER-A01-逐页版本.json",
+      "original_sha256": "1da468761256d5cb3948e62e0190bb71421346b13f9033fcabaf4ca73b117b29",
+      "transformation": "抽取页码、页脚文字、版本检查结果和产物指纹；省略本机路径",
+      "byte_identical_to_original": false,
+      "additional_sources": [
+        {
+          "path": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/明确授权对照-2026-11-06/离线复算/AUTH-FOOTER-B01-逐页版本.json",
+          "sha256": "7f86c637e7226362d10a3e9fa627cadc4607ac4f7a778185ea3edbf0439d594e"
+        },
+        {
+          "path": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/明确授权对照-2026-11-06/离线复算/AUTH-FOOTER-B02-逐页版本.json",
+          "sha256": "29bf24776b9d1f398960fe99e03d5ea360892a69ce5b547337ca5abdf32c7fd4"
+        },
+        {
+          "path": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/明确授权对照-2026-11-06/离线复算/AUTH-FOOTER-A02-逐页版本.json",
+          "sha256": "796b220f1d0dba7aed80d5f4813febb9ab5b076523e912d193271d8a01eb146b"
+        }
+      ]
+    },
+    {
+      "path": "cases/ART04/footer_version_check.py",
+      "original_source": "维度评测/05-产物保存与交付/ART04-三文件修订与多轮交付/评测者材料/版本边界检查-2026-11-02/检查页脚版本.py",
+      "original_sha256": "7f8b6cd2af4cb4098e035133986105af6c7853856b1abc5086d173f3b758332b",
+      "transformation": "原样保存既有离线页脚版本观察程序",
+      "byte_identical_to_original": true
     }
   ],
   "authored_batches": [
@@ -8330,6 +8399,14 @@
       "reference_kind": "公开副本：路径、会话标识和私人入口已脱敏；公开摘录不等于完整原件。来源SHA-256与原行号指向本地原件，公开文件字节指纹见MANIFEST.json；原字段内的指针不保证适用于变换后的公开副本。未公开原件不能由本包独立认证。",
       "new_product_runs_from_export": 0,
       "independent_member_acceptance": false
+    },
+    {
+      "date": "2026-11-07",
+      "scope_id": "art04-footer-authorization-2026-11-06",
+      "scope": "实验问题、A/B 设计、结论、四次观察与逐页复算。完整会话和 Office 文件本地留存。",
+      "new_product_runs_from_export": 0,
+      "exploratory_runs_documented": 4,
+      "formal_comparison_eligible": false
     }
   ]
 }
