@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-07",
+  "date": "2026-11-08",
   "scope": "本公开包实际文件指纹，排除本清单自身。",
   "files": [
     {
@@ -14,8 +14,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 13349,
-      "sha256": "56a914c71d30a7bb56df1681910e1a45ea482829e287cbd7eb984f988a6ae37e"
+      "bytes": 13734,
+      "sha256": "c85b336657069711e604d108b6d28f86d4ff94f86d7ad703dd4c67b1b2cd6264"
     },
     {
       "path": "PROVENANCE.json",
@@ -24,8 +24,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 18760,
-      "sha256": "15664919d5579f3411c17e4fee8a2b5078daa6dfbbaa89518ecc691ba716160e"
+      "bytes": 18788,
+      "sha256": "fd250052cbf72cc888f1f82f71ccec957382327305bd9fa3654d576c1d3d8656"
     },
     {
       "path": "cases/ART01/README.md",
@@ -8511,6 +8511,11 @@
       "path": "results/art04-footer-authorization-2026-11-06/run-evidence.json",
       "bytes": 28585,
       "sha256": "971ba3b5e32ee5c0730d8047452323d2afa88455785e59bd2da6cc9a7aec68ad"
+    },
+    {
+      "path": "docs/周报/第4周周报.md",
+      "bytes": 11811,
+      "sha256": "14290cd50cfe344d1587d74f638345cf07651c3dd1611f08b832f56ff738667d"
     }
   ]
 }
