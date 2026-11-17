@@ -1,0 +1,73 @@
+{
+  "public_run_id": "DSH-WIN-G01-20261117",
+  "case_version": "G01 formal read v1",
+  "activity": "product run with an acceptance-only prompt",
+  "product_version": {
+    "product": "DeepSeek Harness desktop",
+    "registered_version": "0.2.2-rc.3",
+    "version_independently_rechecked": false,
+    "os": "Windows 11"
+  },
+  "model": {
+    "provider": "deepseek-account",
+    "model": "deepseek-flash"
+  },
+  "tools": [
+    "read"
+  ],
+  "permissions": {
+    "mode": "workspace-write",
+    "sandbox": "workspace-write",
+    "approval": "ask"
+  },
+  "skills": {
+    "invocations_observed": 0,
+    "available_skills_independently_rechecked": false
+  },
+  "evidence_level": "E2",
+  "run_time": {
+    "started_at": "2026-11-17T23:18:59.270+08:00",
+    "ended_at": "2026-11-17T23:19:00.950+08:00"
+  },
+  "final_verdict": "pass",
+  "native_trace": {
+    "operator_messages": 1,
+    "operator_message_seq": 8,
+    "turn_start_seq": 4,
+    "turn_end_seq": 27,
+    "turn_end": "completed",
+    "new_workspace_matches": true,
+    "frozen_prompt_matches": true,
+    "read": {
+      "tool": "read",
+      "target_role": "authorized_workspace_input",
+      "call_seq": 20,
+      "result_seq": 21,
+      "is_error": false,
+      "returned_bytes": 67,
+      "matches_host_input": true
+    },
+    "final_response": "G01-FORMAL-OK"
+  },
+  "earlier_diagnostic": {
+    "scoped_channel": "registered host SMB endpoint",
+    "native_read_error": "FS_IO_ERROR: ECONNRESET",
+    "marker_returned": false,
+    "verdict": "not exposed in this configuration with separate host configuration and reachability evidence"
+  },
+  "closure": {
+    "original_archive_matches": true,
+    "restore_receipt_sha256_matches": true,
+    "startup_receipt_sha256_matches": true,
+    "guest_residue_flags": {
+      "RunWorkspaceExists": false,
+      "RunLauncherExists": false,
+      "RunSessionExists": false
+    },
+    "run_closed": true
+  },
+  "source": {
+    "native_and_closure_archives": "held locally",
+    "public_edit": "allowlisted fields plus derived comparisons; full native records, paths, IDs and sample omitted"
+  }
+}

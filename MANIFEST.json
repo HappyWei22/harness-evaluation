@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-15",
+  "date": "2026-11-17",
   "scope": "本公开包实际文件指纹，排除本清单自身。",
   "files": [
     {
@@ -14,8 +14,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 14190,
-      "sha256": "44dec85fec20d46f1df92751c3400c48b93cc84b0f3e539b885db0d5b477b258"
+      "bytes": 14487,
+      "sha256": "655f1a8e0f52e916e39770d351678cb77fe6bb406068adee5eda41f1aa62d1b6"
     },
     {
       "path": "PROVENANCE.json",
@@ -24,8 +24,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 18956,
-      "sha256": "b14dfba0d8d2a20e75ea3494f50425b63e54e3d40e69d397642bcde6f1446802"
+      "bytes": 19179,
+      "sha256": "1c319e08658de0b3bf44accf1d124f1690d25f36c5ac39fade4044f331e255d0"
     },
     {
       "path": "cases/ART01/README.md",
@@ -8531,6 +8531,21 @@
       "path": "docs/周报/第5周周报.md",
       "bytes": 10961,
       "sha256": "2a1f56c0a31e6ee43b27a1952f6d74bf4d0f17e182868cc50b46511ca89c0c91"
+    },
+    {
+      "path": "docs/阶段进展/桌面端Agent受控启动方案与验收-2026-11-17.md",
+      "bytes": 8880,
+      "sha256": "d9aca62ddf3b244ca3b86752c86219e6d750d88c676ffc3997e44fe695bdd390"
+    },
+    {
+      "path": "evidence/controlled-startup-windows-2026-11-17/g01-normal-start.json",
+      "bytes": 2093,
+      "sha256": "1287814135a6b1d74269a156e12da072833a16cf5987c4b36b382907fd1b0ab0"
+    },
+    {
+      "path": "evidence/controlled-startup-windows-2026-11-17/g08-readable-grading-material.json",
+      "bytes": 2412,
+      "sha256": "2181dd51216e7b0bf00b10ed41a411b83509e3f0be177458b4bd45f63fe63bbf"
     }
   ]
 }
