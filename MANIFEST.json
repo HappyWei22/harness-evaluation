@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-17",
+  "date": "2026-11-19",
   "scope": "本公开包实际文件指纹，排除本清单自身。",
   "files": [
     {
@@ -8514,8 +8514,8 @@
     },
     {
       "path": "docs/周报/第4周周报.md",
-      "bytes": 11811,
-      "sha256": "14290cd50cfe344d1587d74f638345cf07651c3dd1611f08b832f56ff738667d"
+      "bytes": 11875,
+      "sha256": "77523614b910c34ffc07176f95f1f205a22ba1a86f280612120b22490d145219"
     },
     {
       "path": "evidence/workbuddy-mkdir/2026-11-09/README.md",
@@ -8546,6 +8546,16 @@
       "path": "evidence/controlled-startup-windows-2026-11-17/g08-readable-grading-material.json",
       "bytes": 2412,
       "sha256": "2181dd51216e7b0bf00b10ed41a411b83509e3f0be177458b4bd45f63fe63bbf"
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/model-judge-2026-11-04/README.md",
+      "bytes": 11079,
+      "sha256": "bdac3fc499fa3baa784882f2721d80e33545b6d6dbc17ba1677ff8dfa6baed89"
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/model-judge-2026-11-04/cases.json",
+      "bytes": 50040,
+      "sha256": "1f9e56ff5cdfcf779de335cbc8ffcee64ef357b3e91ee0e562819c87b0493d20"
     }
   ]
 }
