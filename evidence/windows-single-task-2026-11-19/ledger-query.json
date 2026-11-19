@@ -1,0 +1,69 @@
+{
+  "attempts": [
+    {
+      "attempt_id": "ISO-2c46b1662009465f",
+      "kind": "diagnostic",
+      "registered_at": "2026-11-19T04:41:14.973752+00:00",
+      "closed_at": "2026-11-19T04:41:55.057878+00:00"
+    },
+    {
+      "attempt_id": "TASK-cl-v1-formal-20261119T1445-bf1774c3",
+      "kind": "formal",
+      "registered_at": "2026-11-19T06:47:11.238212+00:00",
+      "closed_at": "2026-11-19T06:53:17.816961+00:00"
+    },
+    {
+      "attempt_id": "TASK-cl-v1-postfix-20261119T0044-8528528d",
+      "kind": "diagnostic",
+      "registered_at": "2026-11-18T16:45:53.430397+00:00",
+      "closed_at": "2026-11-18T16:46:09.474040+00:00"
+    }
+  ],
+  "submission_permits": [
+    {
+      "attempt_id": "ISO-2c46b1662009465f",
+      "expires_at": 1795064174.977313,
+      "consumed_at": 1795063274.981318
+    },
+    {
+      "attempt_id": "TASK-cl-v1-formal-20261119T1445-bf1774c3",
+      "expires_at": 1795071731.241309,
+      "consumed_at": 1795070831.244308
+    },
+    {
+      "attempt_id": "TASK-cl-v1-postfix-20261119T0044-8528528d",
+      "expires_at": 1795021253.433395,
+      "consumed_at": 1795020353.438396
+    }
+  ],
+  "submissions": [
+    {
+      "attempt_id": "ISO-2c46b1662009465f",
+      "state": "submitting",
+      "started_at": 1795063274.981318
+    },
+    {
+      "attempt_id": "TASK-cl-v1-formal-20261119T1445-bf1774c3",
+      "state": "submitting",
+      "started_at": 1795070831.244308
+    },
+    {
+      "attempt_id": "TASK-cl-v1-postfix-20261119T0044-8528528d",
+      "state": "submitting",
+      "started_at": 1795020353.438396
+    }
+  ],
+  "queries_with_zero_matches": {
+    "cl-v1-zero-preflight-20261119T1430": {
+      "attempts": 0,
+      "submission_permits": 0,
+      "submissions": 0
+    },
+    "cl-v1-zero-preflight-20261119T1432": {
+      "attempts": 0,
+      "submission_permits": 0,
+      "submissions": 0
+    }
+  },
+  "source": "Control/attempts.sqlite3 (read-only SELECT; limited to the listed request/attempt IDs)"
+}

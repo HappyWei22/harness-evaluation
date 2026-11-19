@@ -1,0 +1,46 @@
+{
+  "request_id": "cl-v1-formal-20261119T1445",
+  "attempt_id": "TASK-cl-v1-formal-20261119T1445-bf1774c3",
+  "verdict": "pass",
+  "basis": "distinct startup time and verified residue on the recorded v2 restore",
+  "original_error": "The restored guest reports the startup event that preceded the restore.",
+  "initial_boot": {
+    "RecordId": 1060,
+    "CreatedUtc": "2026-11-19T06:45:33.6514576Z"
+  },
+  "restored_boot": {
+    "RecordId": 1060,
+    "CreatedUtc": "2026-11-19T06:47:56.6700500Z"
+  },
+  "restored_os_boot": "2026-11-19T06:47:59.3313000Z",
+  "sources": {
+    "request": {
+      "path": "<host-lab>\\Control\\requests\\cl-v1-formal-20261119T1445\\stage\\request.json",
+      "sha256": "085e12182b8dca2424275b5e0a0218abcbf2e551611d7a776f12b26ed54fd2a7"
+    },
+    "stage": {
+      "path": "<host-lab>\\Control\\requests\\cl-v1-formal-20261119T1445\\stage\\report.json",
+      "sha256": "3f52b35adedbae4e3ced7b12398f71b4659467681f16e65e544b7df276a7567b"
+    },
+    "first_restore": {
+      "path": "<host-lab>\\Control\\requests\\cl-v1-formal-20261119T1445\\stage\\restore\\first.json",
+      "sha256": "2be5046babb7d4c2560c11b74532b810e3e4c90c737caba3a00bb0210cab2d19"
+    },
+    "final_restore": {
+      "path": "<host-lab>\\Control\\requests\\cl-v1-formal-20261119T1445\\stage\\restore\\final.json",
+      "sha256": "aff9fc1abfd86c24f996600c1dd206f5e9022f142d1edb368e659929e0e9631b"
+    },
+    "authorisation": {
+      "path": "<host-lab>\\Control\\requests\\cl-v1-formal-20261119T1445\\stage\\go.json",
+      "sha256": "274f07ed7a60fc1639fd3abdf22590de3b85cca9c4ef4a19dea05141ba614e7c"
+    },
+    "ready": {
+      "path": "<host-lab>\\Control\\requests\\cl-v1-formal-20261119T1445\\stage\\ready.json",
+      "sha256": "c74e9cc55bccc58e5e288ffd14572c41d729242aac6c2384b8a4afa9bb763d8b"
+    },
+    "isolation": {
+      "path": "<host-lab>\\Control\\requests\\cl-v1-formal-20261119T1445\\stage\\isolation-preflight.json",
+      "sha256": "e7d13677090867a692113cb88823424f42898d99936e40bea3c5e8a160e775cc"
+    }
+  }
+}

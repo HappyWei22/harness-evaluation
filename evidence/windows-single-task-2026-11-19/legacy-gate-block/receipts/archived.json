@@ -1,0 +1,13 @@
+{
+  "attempt_id": "ISO-2c46b1662009465f",
+  "at": "2026-11-19T04:41:55.039682+00:00",
+  "event": "archived",
+  "detail": {
+    "verdict": "blocked",
+    "files": [],
+    "host_root": "<host-lab>\\Control\\requests\\cl-v1-formal-20261119T1239\\stage\\isolation\\ISO-2c46b1662009465f",
+    "native_trace": "session.v4.jsonl.zstd",
+    "native_trace_sha256": "172a06262787a085656eb1076f90e0380b9f0d4061a1a95a1defdc70b029aa76",
+    "isolation_context_sha256": "6d1d831c1ee11ba5977de8d0b38141e22b6994893d375f6ef95c0c247624cf2b"
+  }
+}

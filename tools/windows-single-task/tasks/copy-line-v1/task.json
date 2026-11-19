@@ -1,0 +1,10 @@
+{
+  "task_id": "copy-line",
+  "version": "1",
+  "prompt": "读取 input/sample.txt，把这一行原样写入 output/result.txt，然后回复“已完成”。",
+  "inputs": ["input/sample.txt"],
+  "outputs": ["output/result.txt"],
+  "expect": {
+    "output/result.txt": "第一行样本"
+  }
+}

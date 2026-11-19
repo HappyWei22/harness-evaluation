@@ -1,0 +1,24 @@
+{
+  "request_id": "cl-v1-zero-preflight-20261119T1432",
+  "activity": "formal",
+  "task_id": "copy-line",
+  "task_version": "1",
+  "attempt_id": null,
+  "stage": "accepted",
+  "started_at": "2026-11-19T06:32:41.356590+00:00",
+  "updated_at": "2026-11-19T06:33:34.071740+00:00",
+  "failure": "The stage stopped before the prompt was ready: A guest network mapping or connection to the protected host share was found.",
+  "stages": [
+    {
+      "stage": "accepted",
+      "at": "2026-11-19T06:32:41.356590+00:00",
+      "detail": null
+    }
+  ],
+  "result": {
+    "submissions": {
+      "formal": 0,
+      "diagnostic": 0
+    }
+  }
+}

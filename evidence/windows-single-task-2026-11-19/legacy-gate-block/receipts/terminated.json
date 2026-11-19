@@ -1,0 +1,23 @@
+{
+  "attempt_id": "ISO-2c46b1662009465f",
+  "at": "2026-11-19T04:41:55.039682+00:00",
+  "event": "terminated",
+  "detail": {
+    "basis": "native_turn_end",
+    "session_id": "session-fd266417-110e-4584-8f3c-2a3475645982",
+    "turn": 1,
+    "native_turn_end": {
+      "type": "turn/end",
+      "seq": 29,
+      "time": 1795063302970,
+      "data": {
+        "turn": 1,
+        "reason": {
+          "kind": "completed"
+        }
+      }
+    },
+    "turn_status": "completed",
+    "trace_sha256": "172a06262787a085656eb1076f90e0380b9f0d4061a1a95a1defdc70b029aa76"
+  }
+}

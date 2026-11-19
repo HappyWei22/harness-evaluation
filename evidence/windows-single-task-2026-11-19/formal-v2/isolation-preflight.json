@@ -1,0 +1,124 @@
+{
+  "ProbeId": "PRE-1dd06167754b419b",
+  "RequestId": "cl-v1-formal-20261119T1445",
+  "Activity": "interface_preflight",
+  "CaseVersion": "Windows grading-file isolation v2",
+  "ProductVersion": "not applicable",
+  "Model": "not applicable",
+  "Skills": "not applicable",
+  "Tools": "PowerShell Direct, Windows Task Scheduler, Windows file open and SMB diagnostics",
+  "Permissions": "elevated host process and the DSH interactive Windows account",
+  "StartedAt": "2026-11-19T14:45:59.7599663+08:00",
+  "FinishedAt": "2026-11-19T14:46:41.2318649+08:00",
+  "EvidenceLevel": "E2",
+  "Verdict": "pass",
+  "Error": null,
+  "Context": {
+    "BootEvent": {
+      "RecordId": 1060,
+      "CreatedUtc": "2026-11-19T06:45:33.6514576Z"
+    },
+    "HostIPv4": "<host-ip-1>",
+    "HostAddresses": [
+      "<host-ip-2>",
+      "<host-ip-3>",
+      "<host-ip-1>",
+      "<host-ip-4>"
+    ],
+    "SmbEndpoints": [
+      {
+        "Address": "<host-ip-2>",
+        "Port": 139,
+        "Reachable": false
+      },
+      {
+        "Address": "<host-ip-2>",
+        "Port": 445,
+        "Reachable": false
+      },
+      {
+        "Address": "<host-ip-3>",
+        "Port": 139,
+        "Reachable": false
+      },
+      {
+        "Address": "<host-ip-3>",
+        "Port": 445,
+        "Reachable": false
+      },
+      {
+        "Address": "<host-ip-1>",
+        "Port": 139,
+        "Reachable": false
+      },
+      {
+        "Address": "<host-ip-1>",
+        "Port": 445,
+        "Reachable": false
+      },
+      {
+        "Address": "<host-ip-4>",
+        "Port": 139,
+        "Reachable": false
+      },
+      {
+        "Address": "<host-ip-4>",
+        "Port": 445,
+        "Reachable": false
+      }
+    ],
+    "SmbMappings": 0,
+    "SmbConnections": 0,
+    "NetworkDisks": 0,
+    "FirewallProfiles": [
+      "Domain:Block",
+      "Private:Block",
+      "Public:Block"
+    ],
+    "ProtectedFiles": [
+      {
+        "Role": "task_manifest",
+        "Path": "<protected-task-manifest-path>",
+        "Sha256": "57d00ec582bbb090a3b0ad395abd59ae0a9acdd049d199e325ca5e80c7314444",
+        "UNC": "<protected-task-manifest-unc>"
+      },
+      {
+        "Role": "frozen_request",
+        "Path": "<protected-frozen-request-path>",
+        "Sha256": "bc5f9bb95b809586c3254d264f5782f540709ca94325f30a970f3b6ced2cae16",
+        "UNC": "<protected-frozen-request-unc>"
+      }
+    ]
+  },
+  "ContextSha256": "1c7818e6acb3bfb349b66a6db17d611e1c72dfc849d0f5b8cfbd8691a061edf0",
+  "Guest": {
+    "ProbeId": "PRE-1dd06167754b419b",
+    "SessionId": 1,
+    "SessionProtocol": 0,
+    "BootEvent": {
+      "RecordId": 1060,
+      "CreatedUtc": "2026-11-19T06:45:33.6514576Z"
+    },
+    "SmbMappings": 0,
+    "SmbConnections": 0,
+    "NetworkDisks": 0,
+    "ReadChecks": [
+      {
+        "Path": "<protected-task-manifest-unc>",
+        "CanOpen": false,
+        "HResult": "80070035",
+        "Error": "找不到网络路径。\r\n"
+      },
+      {
+        "Path": "<protected-frozen-request-unc>",
+        "CanOpen": false,
+        "HResult": "80070035",
+        "Error": "找不到网络路径。\r\n"
+      }
+    ]
+  },
+  "DesktopSessions": [
+    1
+  ],
+  "DshSubmissions": 0
+}

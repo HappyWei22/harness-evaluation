@@ -1,0 +1,24 @@
+{
+  "request_id": "cl-v1-zero-preflight-20261119T1430",
+  "activity": "formal",
+  "task_id": "copy-line",
+  "task_version": "1",
+  "attempt_id": null,
+  "stage": "accepted",
+  "started_at": "2026-11-19T06:30:57.019284+00:00",
+  "updated_at": "2026-11-19T06:31:30.530667+00:00",
+  "failure": "The stage stopped before the prompt was ready: The virtual machine is running with unknown activity (dsh=5, task=0); the scene is kept.",
+  "stages": [
+    {
+      "stage": "accepted",
+      "at": "2026-11-19T06:30:57.019284+00:00",
+      "detail": null
+    }
+  ],
+  "result": {
+    "submissions": {
+      "formal": 0,
+      "diagnostic": 0
+    }
+  }
+}

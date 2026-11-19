@@ -14,8 +14,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 14487,
-      "sha256": "655f1a8e0f52e916e39770d351678cb77fe6bb406068adee5eda41f1aa62d1b6"
+      "bytes": 14809,
+      "sha256": "196f7290096396ac8c332ba83e12386565942456ce03b023800862c61d32fa7f"
     },
     {
       "path": "PROVENANCE.json",
@@ -24,8 +24,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 19179,
-      "sha256": "1c319e08658de0b3bf44accf1d124f1690d25f36c5ac39fade4044f331e255d0"
+      "bytes": 19418,
+      "sha256": "920bac7bdd6045b51b0f57d44f3d8dac551956f6c7f146a58ce3755bf5001778"
     },
     {
       "path": "cases/ART01/README.md",
@@ -8556,6 +8556,446 @@
       "path": "evidence/workbuddy-mkdir/model-judge-2026-11-04/cases.json",
       "bytes": 50040,
       "sha256": "1f9e56ff5cdfcf779de335cbc8ffcee64ef357b3e91ee0e562819c87b0493d20"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/.gitattributes",
+      "bytes": 51,
+      "sha256": "880194f81773b49756bdf52b60acea010d94c29c088833484fb60a4b9c353294"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/README.md",
+      "bytes": 6453,
+      "sha256": "7dc0d80f8dfe7f7d3b0394c38a9a00da537a5c51cfe203a989e066d07c235a7e"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/desktop-v3/preflight-report.json",
+      "bytes": 2582,
+      "sha256": "9130f51c9226cbb407df5783998feb9e5ea58ed3f04ba18253bc1f3614057705"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/desktop-v3/restore-first.json",
+      "bytes": 1288,
+      "sha256": "d6e360a47949ce0be00975199ad2da89b7f2aa3c6cf372b5817cb6b53a19e321"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/diagnostic-v2/final-reply.txt",
+      "bytes": 158,
+      "sha256": "e4aca9a27643f0908e5152f18b3cd08b667f6634d72dda6079f83a405c5856ba"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/diagnostic-v2/host-report.json",
+      "bytes": 3545,
+      "sha256": "ccfca073cdf45a01d6006384e16557d3ec8d5e24bf716e70462ef92aed248841"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/diagnostic-v2/input.txt",
+      "bytes": 16,
+      "sha256": "f43e45bdbdfb122598953e76c387da1df0c3d526e3594175fd7849ba128f3127"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/diagnostic-v2/native-events.jsonl",
+      "bytes": 3366,
+      "sha256": "a38b8708ee4e2b1f1b7020e65472737b4ee03950d5c31538c86563653e1b3ce0"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/diagnostic-v2/prompt.txt",
+      "bytes": 101,
+      "sha256": "7a12281feb46534adb6848f16496d0509bb92f35e750f9919182a9a55a681053"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/diagnostic-v2/receipts/accepted.json",
+      "bytes": 780,
+      "sha256": "1e3079d20e0f2e6addf72514ce040bfd68ae5b998a99a089650b4679f2c75755"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/diagnostic-v2/receipts/archived.json",
+      "bytes": 532,
+      "sha256": "1b48eddf2cf900be4d895404bcdf936169b9ca54d664133353b01d9b679fe646"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/diagnostic-v2/receipts/cleaned.json",
+      "bytes": 258,
+      "sha256": "7de40a7f1331e0d5ba17fdd333c0ed965262304bd38f33b821c8ecd66984b1f6"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/diagnostic-v2/receipts/terminated.json",
+      "bytes": 591,
+      "sha256": "dc1ee9886c4e79b4efe4b8bf942fcfea1a13e259b7cf3889a90d4918f63c8adb"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/diagnostic-v2/request-state.json",
+      "bytes": 5844,
+      "sha256": "b3db55f20006d7763e0eb771f2f5d8e51ed65d907a9671d2e9cfdfe7ab24d406"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/diagnostic-v2/result.txt",
+      "bytes": 16,
+      "sha256": "f43e45bdbdfb122598953e76c387da1df0c3d526e3594175fd7849ba128f3127"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/formal-v2/final-reply.txt",
+      "bytes": 160,
+      "sha256": "16cd377a223a65edda7fc43682bcb65cf790f3f77f12a39309c122742b5280b3"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/formal-v2/host-report.json",
+      "bytes": 3737,
+      "sha256": "f89d66940f26f8f411c4477766a14eb8897180393bbfc08db8960c20c8ff20bf"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/formal-v2/input.txt",
+      "bytes": 16,
+      "sha256": "f43e45bdbdfb122598953e76c387da1df0c3d526e3594175fd7849ba128f3127"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/formal-v2/isolation-preflight.json",
+      "bytes": 3156,
+      "sha256": "6f8b66c5772804350c681990722f07c6ad13b6b4519e1fe0dd4bbdb084559630"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/formal-v2/native-events.jsonl",
+      "bytes": 3062,
+      "sha256": "94e072ac4decbb376fbd7b835aa8a1953b7c0c41948e40d3168ab5fe26dc6781"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/formal-v2/prompt.txt",
+      "bytes": 101,
+      "sha256": "7a12281feb46534adb6848f16496d0509bb92f35e750f9919182a9a55a681053"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/formal-v2/receipts/accepted.json",
+      "bytes": 779,
+      "sha256": "7fbf0cba3c54f245c0ce7cc8181db8594e21b5fbc216b1a7db6ec3f544b91b69"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/formal-v2/receipts/archived.json",
+      "bytes": 868,
+      "sha256": "7a40c4c99c7d3e85a921322ae617d87c41e83b7805522261482ad1c501642362"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/formal-v2/receipts/cleaned.json",
+      "bytes": 675,
+      "sha256": "400e53a5bbdd60f750db1277f241c843f19e55f8050c6f2cd07a6753c941389c"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/formal-v2/receipts/terminated.json",
+      "bytes": 590,
+      "sha256": "871908ce8c0dfe5a0357502f2e0e2eeb0edf828796c58f6991967bc555693295"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/formal-v2/request-state.json",
+      "bytes": 6170,
+      "sha256": "51e440a8029580f4ec073f6c62646a52cf8b10beb6af5833b4c31f7e0c4eecbb"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/formal-v2/restore-final.json",
+      "bytes": 1574,
+      "sha256": "6ee8fb7e01f67100b225eb594cb45292b1e6027be3fb8378d83288accee8a216"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/formal-v2/restore-first.json",
+      "bytes": 1287,
+      "sha256": "2a259f5cb638fdd11db29684652c47ea87d1d18492b979bffa9e01a3a0c46466"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/formal-v2/restore-recheck.json",
+      "bytes": 2030,
+      "sha256": "5352d5f9b855ade3e1ad6146f98d142fbdd1f2ac20b3bfeea708bd3f655d4361"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/formal-v2/result.txt",
+      "bytes": 16,
+      "sha256": "f43e45bdbdfb122598953e76c387da1df0c3d526e3594175fd7849ba128f3127"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/ledger-query.json",
+      "bytes": 1957,
+      "sha256": "b0148b34d4515bfb3f46cc9f4d29c69ce65dc11c5bc555a7b895b114883d5428"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/legacy-gate-block/host-report.json",
+      "bytes": 1107,
+      "sha256": "96b504cdc75246813a52b59d55eaef19614201318174b0704125806f068d6156"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/legacy-gate-block/isolation-decision.json",
+      "bytes": 446,
+      "sha256": "a89a52dfe66d79879b527ca524290f033c339b64bb357fe62ea987b0f8cabd32"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/legacy-gate-block/native-events.jsonl",
+      "bytes": 3154,
+      "sha256": "aabe272731fa12fd277741017e42dd63d42c9f8216a0e35d4a5962596cd9dd9b"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/legacy-gate-block/receipts/accepted.json",
+      "bytes": 759,
+      "sha256": "f201107b8c8df632394eeb72b9ff7888a0237a347ae333acbdee216a1f56171b"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/legacy-gate-block/receipts/archived.json",
+      "bytes": 529,
+      "sha256": "7c4ff6523826f8c28aeb439a9e4d6431cf7d194943d1eb35eff192cd3f458f25"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/legacy-gate-block/receipts/cleaned.json",
+      "bytes": 277,
+      "sha256": "1befa1a7eb37f97ef19d812e19242bb2bdea96ebc9cfd6748a2ded4b0bd41ac3"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/legacy-gate-block/receipts/terminated.json",
+      "bytes": 570,
+      "sha256": "a5e2879a0b620b675f45b839725c3a3ca3351a94b8bce2da1c3c89a353cd3f76"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/legacy-gate-block/request-state.json",
+      "bytes": 1118,
+      "sha256": "97eb2e461e014c7739a9b882a029b3dddeec8077a155cc80e59cd48840ba5afe"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/legacy-gate-block/restore-first.json",
+      "bytes": 1287,
+      "sha256": "44a44d8c12bff7dc3070f591316eda1b7d24bf26edd96235b1d4588d19daa64e"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/port-block/host-report.json",
+      "bytes": 1135,
+      "sha256": "f00a3b3be523b98f60c89c20d7600df3a153fa16c2b64ddf0c8039008348d615"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/port-block/isolation-preflight.json",
+      "bytes": 821,
+      "sha256": "18f141a1a4b1103865cda960463768f99c51c974d686d74ea7e6b31d37f720be"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/port-block/request-state.json",
+      "bytes": 633,
+      "sha256": "1e2e0520091dad253e16b712fca914a8af53feed5100acbeca3c5f4de39999d1"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/port-block/restore-first.json",
+      "bytes": 1287,
+      "sha256": "a7f3a3c8f788eb3901d17d96a4c2fc6d0871776c9da5e8d9223ea67ad84df4ad"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/port-block/share-recheck.json",
+      "bytes": 2692,
+      "sha256": "3ddb9b14f17cfd1d63dced7909aae9b9fa425620640070d8f9f5d5dd9bc070ff"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/source-index.json",
+      "bytes": 17775,
+      "sha256": "2a39ab9213ae1c92208302fca445f3f44982e006f0e95fd9194663e2af53eb4b"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/startup-guard-before-fix/host-report.json",
+      "bytes": 1189,
+      "sha256": "9a4b446bce3de8e66b278d13610809f92b7754ecbc28b215a89a32606f810c0d"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/startup-guard-before-fix/request-state.json",
+      "bytes": 645,
+      "sha256": "58157c6a3b250218cda0389dff5b090b78b51c414d4b0d60fb8eb39837f6c253"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/startup-guard-before-fix/restore-final.json",
+      "bytes": 989,
+      "sha256": "f4db09cea19d425012ac209e8957e3ce84d2bd9d4ef0af09aef1dc11b698d01d"
+    },
+    {
+      "path": "evidence/windows-single-task-2026-11-19/verify.py",
+      "bytes": 6724,
+      "sha256": "84a57bd68c203edc274f291a83514a9c604f59bdb517d1bc002146b3d553c088"
+    },
+    {
+      "path": "tools/windows-single-task/.gitattributes",
+      "bytes": 99,
+      "sha256": "f0d794a26a9cabe5993faf4e0e2d80d445719ac565dc7e7f4b6cbe0e1fdba660"
+    },
+    {
+      "path": "tools/windows-single-task/README.md",
+      "bytes": 2617,
+      "sha256": "29588e50f0480ffbea72b63cda2dd2de4f07d2a0380c09f67880e8e7c0187ecf"
+    },
+    {
+      "path": "tools/windows-single-task/attempt_completion.py",
+      "bytes": 2473,
+      "sha256": "3930fb3d739a498992e30cda31fbff630d7506383a2e15ecf8d7e0ace527c368"
+    },
+    {
+      "path": "tools/windows-single-task/attempt_ledger.py",
+      "bytes": 2672,
+      "sha256": "85f7c9092459f0f4653556b04232808aa20a907c0d29a33ec80eb8d293d82441"
+    },
+    {
+      "path": "tools/windows-single-task/dsh_checkpoints.py",
+      "bytes": 287,
+      "sha256": "2ffc7063087887fc8f3268d654cda71b2abe86d14073e90bbd72a009f4c7306b"
+    },
+    {
+      "path": "tools/windows-single-task/guest_desktop_probe.ps1",
+      "bytes": 60371,
+      "sha256": "38a29d5d0930650864b3d648b453e436e1e0db1dc1734d9cafbee5ebfc999606"
+    },
+    {
+      "path": "tools/windows-single-task/harness_guest_credential.ps1",
+      "bytes": 1521,
+      "sha256": "d7a555c8a410d4ee33a57a90893c500b5a06912cc11f02930194b18767805467"
+    },
+    {
+      "path": "tools/windows-single-task/host_powershell.py",
+      "bytes": 456,
+      "sha256": "3a1bda11a7e0a36cfd7bce1cd3ee7599f17a490d128bfeead236f97979ceff50"
+    },
+    {
+      "path": "tools/windows-single-task/inspect_dsh_submission.py",
+      "bytes": 3754,
+      "sha256": "b6c00aa05573a5c2f3a2487e46fb14552abb3f492dd87317562d10122ed25b36"
+    },
+    {
+      "path": "tools/windows-single-task/inspect_task_native.py",
+      "bytes": 4132,
+      "sha256": "547e23908f71e62d0c1b736dfdc6eaac3a94466adc3a56526e3ce1264fca578a"
+    },
+    {
+      "path": "tools/windows-single-task/preflight_desktop.ps1",
+      "bytes": 29261,
+      "sha256": "b60004eab479f9a2151063f0a9b531f294527fdd45a3802ad7218c9b67e93e83"
+    },
+    {
+      "path": "tools/windows-single-task/preflight_desktop.py",
+      "bytes": 10371,
+      "sha256": "b125eafca0213f976b32dd78df052c17559504f9333e948c7ac7768e5dd360fc"
+    },
+    {
+      "path": "tools/windows-single-task/read_dsh_boot_event.ps1",
+      "bytes": 582,
+      "sha256": "7446fe6682047ca80f3d18c8d217b2c31cefed3821d7c43d4cc06b3fe225d863"
+    },
+    {
+      "path": "tools/windows-single-task/register_guest_credential.ps1",
+      "bytes": 1738,
+      "sha256": "e2e63fc98fb09e961303bad898ad1b33ed87c4ca12fda38dd332eafbb7eb52ae"
+    },
+    {
+      "path": "tools/windows-single-task/register_guest_credential.py",
+      "bytes": 1187,
+      "sha256": "fb4f61a912c617d72328fec6e59706d091c886a8b597f04ecf421db40df955d0"
+    },
+    {
+      "path": "tools/windows-single-task/restore_dsh_baseline.ps1",
+      "bytes": 9044,
+      "sha256": "e2b68a163f6a06f7057805ae40c6639b36396b6ad692f86171a4fe8c2244c78b"
+    },
+    {
+      "path": "tools/windows-single-task/run_dsh_task.py",
+      "bytes": 46406,
+      "sha256": "17041ecea18251f9ec41e2d4328d87dade911c0b2b5ea97ca6261c5b918b5778"
+    },
+    {
+      "path": "tools/windows-single-task/run_dsh_task_stage.ps1",
+      "bytes": 42411,
+      "sha256": "b8454853141f205404ab862792be205a62fe3a7ee9af3ca23dfdd101cd599e07"
+    },
+    {
+      "path": "tools/windows-single-task/selftest_task_run.py",
+      "bytes": 18876,
+      "sha256": "75cdb3352005f7635d8bd4833770a5cf44c7c52699267c856a29277c69a6fcef"
+    },
+    {
+      "path": "tools/windows-single-task/startup_lock.py",
+      "bytes": 1119,
+      "sha256": "a190724c66d1cfeec7553bdadd0698c8508af8711b05565aaf88c7b92098960a"
+    },
+    {
+      "path": "tools/windows-single-task/submission_permit.py",
+      "bytes": 3258,
+      "sha256": "12f407fd778040b207dc06a0f38859977bf71051b005350b06ccf285a91ccca9"
+    },
+    {
+      "path": "tools/windows-single-task/task_isolation.py",
+      "bytes": 3813,
+      "sha256": "f0ad0b2926a9fbf64a5d0cc45816506b2cb4d3bef9a6fc9767271411c47cd9bd"
+    },
+    {
+      "path": "tools/windows-single-task/task_isolation_environment.ps1",
+      "bytes": 7359,
+      "sha256": "ffc7d940dff01efc389ae66f16c520496590ceaf6e69f451da4aede4b26499f8"
+    },
+    {
+      "path": "tools/windows-single-task/task_isolation_probe.ps1",
+      "bytes": 3834,
+      "sha256": "2cd5d0da78a23a44577cde84864133dcfe4ce099552a515c53810d7d384f0d3c"
+    },
+    {
+      "path": "tools/windows-single-task/task_request.py",
+      "bytes": 12273,
+      "sha256": "4304b00ec7d0ec51c5ac20d898f96f119144a7330b0cf54bb62ded45bb213f4e"
+    },
+    {
+      "path": "tools/windows-single-task/task_restore_evidence.py",
+      "bytes": 2929,
+      "sha256": "25d5b8bb5cadae7ace931f30d69d5179dd93244d53b6e373aa4358333828b2d7"
+    },
+    {
+      "path": "tools/windows-single-task/tasks/copy-line-v1/input/sample.txt",
+      "bytes": 16,
+      "sha256": "f43e45bdbdfb122598953e76c387da1df0c3d526e3594175fd7849ba128f3127"
+    },
+    {
+      "path": "tools/windows-single-task/tasks/copy-line-v1/task.json",
+      "bytes": 296,
+      "sha256": "57d00ec582bbb090a3b0ad395abd59ae0a9acdd049d199e325ca5e80c7314444"
+    },
+    {
+      "path": "tools/windows-single-task/versions/README.md",
+      "bytes": 2878,
+      "sha256": "ab47081ef4502b04e68898c5900926345c15be11ad03dd538acc19140231843a"
+    },
+    {
+      "path": "tools/windows-single-task/versions/single-task-isolation.after.zip",
+      "bytes": 31393,
+      "sha256": "d0a61d689a255b9c253fda122e3b49ab86d91a5c331f331bdd978f75e78f15b5"
+    },
+    {
+      "path": "tools/windows-single-task/versions/single-task-isolation.before.zip",
+      "bytes": 21669,
+      "sha256": "91861c85fd83526ef2ee084cd45697ef1a5ceccd2ee55c27815f8a6415fd47d3"
+    },
+    {
+      "path": "tools/windows-single-task/versions/single-task-lifecycle.native-turn.zip",
+      "bytes": 37506,
+      "sha256": "6d8ee4d04c59e9da7ec97f470a1ce2900dcce42370594b269e0d0028a97b7249"
+    },
+    {
+      "path": "tools/windows-single-task/versions/single-task-lifecycle.pre-native.zip",
+      "bytes": 36656,
+      "sha256": "d9753ad0335bcf14c00ff34376fa5e559652dc69142780df81be31c823237fae"
+    },
+    {
+      "path": "tools/windows-single-task/versions/single-task-restore-recheck.after.zip",
+      "bytes": 38782,
+      "sha256": "429b9f1843df59e09b1e93a079b6e07df087771e324aab535c5d3ab7caec9b8f"
+    },
+    {
+      "path": "tools/windows-single-task/versions/single-task-restore-recheck.before.zip",
+      "bytes": 35197,
+      "sha256": "123df5dc6c9503cebf5c20169a922e26b8748aa0775fae5f50e4053eda4cef91"
+    },
+    {
+      "path": "tools/windows-single-task/versions/single-task-zero-submit.live-guard.zip",
+      "bytes": 12838,
+      "sha256": "ef8b2defad9943ea716a49424806c4d68543b7a3b7580429a6893489ff4f5437"
+    },
+    {
+      "path": "tools/windows-single-task/versions/single-task-zero-submit.post-change.zip",
+      "bytes": 45219,
+      "sha256": "d88d1549ff06a9f192a828c34ab7f05589d81253174ceb1063a29739646006ad"
+    },
+    {
+      "path": "tools/windows-single-task/versions/single-task-zero-submit.pre-change.zip",
+      "bytes": 45522,
+      "sha256": "84163b70f38870524a93fbbd758bcd9c3d679e3f1c2b791507011af65410aeaf"
     }
   ]
 }

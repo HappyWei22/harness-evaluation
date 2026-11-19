@@ -1,0 +1,47 @@
+{
+  "RunId": "TASK-cl-v1-formal-20261119T1445-bf1774c3",
+  "Activity": "product_run",
+  "CaseVersion": "restore DSH-Win11-Base-v2 after TASK-cl-v1-formal-20261119T1445-bf1774c3",
+  "ProductVersion": "not queried",
+  "Model": "not applicable",
+  "Skills": "not applicable",
+  "Tools": "Hyper-V PowerShell and PowerShell Direct",
+  "Permissions": "elevated host with saved VM credential",
+  "StartedAt": "2026-11-19T14:47:57.1721639+08:00",
+  "FinishedAt": "2026-11-19T14:48:10.2393708+08:00",
+  "EvidenceLevel": "E2",
+  "Verdict": "fail",
+  "Stage": "verify_guest",
+  "Error": "The restored guest reports the startup event that preceded the restore.",
+  "VmName": "Harness-DSH-Win11",
+  "InitialVmState": "Off",
+  "CheckpointName": "DSH-Win11-Base-v2",
+  "CheckpointId": "cdc3f478-1b98-44f0-8948-5e843d1fb0c7",
+  "RestoreAppliedAt": "2026-11-19T14:47:57.3557543+08:00",
+  "StartReturnedAt": "2026-11-19T14:47:57.9433594+08:00",
+  "Heartbeat": "OkApplicationsUnknown",
+  "Guest": {
+    "ProfileMatches": true,
+    "Caption": "Microsoft Windows 11 专业版",
+    "BuildNumber": "26300",
+    "BootTime": "2026-11-19T06:47:59.3313000Z",
+    "BootEvent": {
+      "RecordId": 1060,
+      "CreatedUtc": "2026-11-19T06:47:56.6700500Z"
+    },
+    "AutoAdminLogon": "",
+    "ExplorerSessions": [],
+    "LogonUiSessions": [
+      1
+    ],
+    "DshProcesses": [],
+    "HarnessTasks": [],
+    "RunResidue": {
+      "RunWorkspaceExists": false,
+      "RunLauncherExists": false,
+      "RunSessionExists": false,
+      "PreflightTaskRemains": 0
+    },
+    "PSShowComputerName": true
+  }
+}

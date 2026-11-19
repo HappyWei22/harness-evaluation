@@ -1,0 +1,80 @@
+{
+  "RunId": "PRE-DESKTOP-20261119T075258-f1d4582b",
+  "Activity": "interface_preflight",
+  "CaseVersion": "desktop automation reachability v1",
+  "Mode": "fresh",
+  "KeepRunning": true,
+  "ProductVersion": "0.2.2.0 installed (not queried by the probe)",
+  "Model": "not applicable",
+  "Skills": "not applicable",
+  "Tools": "Hyper-V PowerShell, PowerShell Direct, Task Scheduler, UI Automation",
+  "Permissions": "elevated host with saved VM credential",
+  "StartedAt": "2026-11-19T15:53:02.5545870+08:00",
+  "FinishedAt": "2026-11-19T15:53:57.3328785+08:00",
+  "EvidenceLevel": "E2",
+  "Verdict": "pass",
+  "Stage": "complete",
+  "Error": null,
+  "HostAdminConfirmed": true,
+  "CheckpointId": "428d1863-c79d-4f13-8223-0f786b7bb558",
+  "InitialVmState": "Off",
+  "ShutdownRequired": false,
+  "BootStage": {
+    "Verdict": "pass",
+    "BootEvent": {
+      "RecordId": 1344,
+      "CreatedUtc": "2026-11-19T07:53:01.6531820Z"
+    },
+    "BootTime": "2026-11-19T07:53:05.0240850Z",
+    "AutoAdminLogon": "1",
+    "Heartbeat": "OkApplicationsUnknown"
+  },
+  "SessionStage": {
+    "ExplorerDesktopCount": 1,
+    "ExplorerSessions": [
+      1
+    ],
+    "LogonUiSessions": [],
+    "AutoAdminLogon": "1"
+  },
+  "StaleResidue": [],
+  "LaunchStage": {
+    "TaskRegistered": "Harness-Preflight-PRE-DESKTOP-20261119T075258-f1d4582b",
+    "StateAtStart": "Running",
+    "RunLevel": "Highest",
+    "ShortcutSha256": "87B548B2E9425AC3DBED744B9B797A392A20B9D46749ED1A5D646FEA58A38FA9",
+    "Workspace": "C:\\Users\\guest\\AppData\\Local\\Temp\\PRE-DESKTOP-20261119T075258-f1d4582b\\WS-f1d4582b",
+    "SelfTest": {
+      "Ok": true,
+      "Error": null,
+      "Policy": "MachinePolicy=Undefined; UserPolicy=Undefined; Process=Undefined; CurrentUser=Undefined; LocalMachine=Undefined",
+      "PSShowComputerName": true
+    }
+  },
+  "ProbeVerdict": "identified",
+  "WorkspaceMethod": "ui_add_workspace_dialog",
+  "ComposerStage": {
+    "SetFocusError": null,
+    "FocusedAutomationId": "",
+    "FocusedName": "描述你想要构建的内容, / 调用指令, @ 文件或对话",
+    "FocusedIsComposer": true
+  },
+  "ProbeReportSha256": "8A2B0547772F020DE083D28AC92FBCFF5B1A0848E0D5E8787BBFE3DFD2570574",
+  "ProbeDiagnostics": null,
+  "Cleanup": {
+    "TaskRemains": 0,
+    "WorkingRootExists": false,
+    "DshRemains": 0,
+    "PSShowComputerName": true
+  },
+  "CleanupError": null,
+  "FormalSubmissions": 0,
+  "DiagnosticSubmissions": 0,
+  "ManualSteps": [],
+  "LastSuccessfulStep": "cleanup",
+  "BlockingStep": null,
+  "FinalRestore": {
+    "Verdict": "skipped_by_request",
+    "Error": null
+  }
+}

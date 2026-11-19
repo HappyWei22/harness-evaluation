@@ -1,0 +1,23 @@
+{
+  "ProbeId": "PRE-14065b2c46494cba",
+  "RequestId": "cl-v1-zero-preflight-20261119T1432",
+  "Activity": "interface_preflight",
+  "CaseVersion": "Windows grading-file isolation v2",
+  "ProductVersion": "not applicable",
+  "Model": "not applicable",
+  "Skills": "not applicable",
+  "Tools": "PowerShell Direct, Windows Task Scheduler, Windows file open and SMB diagnostics",
+  "Permissions": "elevated host process and the DSH interactive Windows account",
+  "StartedAt": "2026-11-19T14:33:19.1273255+08:00",
+  "FinishedAt": "2026-11-19T14:33:33.6236536+08:00",
+  "EvidenceLevel": "E2",
+  "Verdict": "blocked",
+  "Error": "A guest network mapping or connection to the protected host share was found.",
+  "Context": null,
+  "ContextSha256": null,
+  "Guest": null,
+  "DesktopSessions": [
+    1
+  ],
+  "DshSubmissions": 0
+}

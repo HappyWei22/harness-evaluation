@@ -1,0 +1,190 @@
+{
+  "request_id": "cl-v1-postfix-20261119T0044",
+  "activity": "diagnostic",
+  "task_id": "copy-line",
+  "task_version": "1",
+  "attempt_id": "TASK-cl-v1-postfix-20261119T0044-8528528d",
+  "stage": "closed",
+  "started_at": "2026-11-18T16:45:10.453991+00:00",
+  "updated_at": "2026-11-18T16:46:09.477199+00:00",
+  "failure": null,
+  "stages": [
+    {
+      "stage": "accepted",
+      "at": "2026-11-18T16:45:10.453991+00:00",
+      "detail": null
+    },
+    {
+      "stage": "restored",
+      "at": "2026-11-18T16:45:53.428391+00:00",
+      "detail": {
+        "boot_event": {
+          "RecordId": null,
+          "CreatedUtc": null,
+          "Source": "attached_session"
+        },
+        "baseline_restored": false
+      }
+    },
+    {
+      "stage": "prepared",
+      "at": "2026-11-18T16:45:53.440567+00:00",
+      "detail": {
+        "attempt_id": "TASK-cl-v1-postfix-20261119T0044-8528528d",
+        "workspace": "C:\\Users\\guest\\AppData\\Local\\Temp\\cl-v1-postfix-20261119T0044\\WS-119T0044"
+      }
+    },
+    {
+      "stage": "dispatched",
+      "at": "2026-11-18T16:45:53.440567+00:00",
+      "detail": {
+        "permit_id": "6b438e91e0db4144a486e2eec2fe19f8",
+        "meaning": "send authorised"
+      }
+    },
+    {
+      "stage": "completed",
+      "at": "2026-11-18T16:46:09.448766+00:00",
+      "detail": {
+        "completion": {
+          "Acceptance": {
+            "SessionId": "session-b536ced4-2bd2-464c-9f38-3071558c8aa5",
+            "WorkspaceMatches": true,
+            "FreshSession": true,
+            "OperatorSubmissions": 1,
+            "ExactPromptMatches": 1,
+            "UnknownUserSources": 0,
+            "AcceptanceVerified": true
+          },
+          "Turn": 1,
+          "UserMessageSequence": 8,
+          "Basis": "native_turn_end",
+          "NativeTurnEnd": {
+            "type": "turn/end",
+            "seq": 40,
+            "time": 1795020357978,
+            "data": {
+              "turn": 1,
+              "reason": {
+                "kind": "completed"
+              }
+            }
+          },
+          "TurnStatus": "completed",
+          "ReplyText": "已完成\n\n`input/sample.txt` 中只有一行：`第一行样本`，我已原样将它写入 [output/result.txt](output/result.txt)，并确认内容一致。",
+          "TraceName": "session.v4.jsonl.zstd",
+          "TraceSha256": "577f8ef52255c0b62ea8a243adfe260a6e496bc5e3ba06054cc9c8e580adf9c5"
+        }
+      }
+    },
+    {
+      "stage": "retrieved",
+      "at": "2026-11-18T16:46:09.451132+00:00",
+      "detail": {
+        "files": [
+          {
+            "path": "output/result.txt",
+            "exists": true,
+            "status": "present",
+            "size": 16,
+            "sha256": "f43e45bdbdfb122598953e76c387da1df0c3d526e3594175fd7849ba128f3127",
+            "matches_expect": true
+          }
+        ],
+        "verdict": "pass",
+        "missing": [],
+        "unreadable": [],
+        "mismatched": []
+      }
+    },
+    {
+      "stage": "closed",
+      "at": "2026-11-18T16:46:09.477199+00:00",
+      "detail": {
+        "attempt_id": "TASK-cl-v1-postfix-20261119T0044-8528528d"
+      }
+    }
+  ],
+  "result": {
+    "completion": {
+      "Acceptance": {
+        "SessionId": "session-b536ced4-2bd2-464c-9f38-3071558c8aa5",
+        "WorkspaceMatches": true,
+        "FreshSession": true,
+        "OperatorSubmissions": 1,
+        "ExactPromptMatches": 1,
+        "UnknownUserSources": 0,
+        "AcceptanceVerified": true
+      },
+      "Turn": 1,
+      "UserMessageSequence": 8,
+      "Basis": "native_turn_end",
+      "NativeTurnEnd": {
+        "type": "turn/end",
+        "seq": 40,
+        "time": 1795020357978,
+        "data": {
+          "turn": 1,
+          "reason": {
+            "kind": "completed"
+          }
+        }
+      },
+      "TurnStatus": "completed",
+      "ReplyText": "已完成\n\n`input/sample.txt` 中只有一行：`第一行样本`，我已原样将它写入 [output/result.txt](output/result.txt)，并确认内容一致。",
+      "TraceName": "session.v4.jsonl.zstd",
+      "TraceSha256": "577f8ef52255c0b62ea8a243adfe260a6e496bc5e3ba06054cc9c8e580adf9c5"
+    },
+    "dispatch": {
+      "PromptSha256": "7a12281feb46534adb6848f16496d0509bb92f35e750f9919182a9a55a681053",
+      "PromptLength": 57,
+      "PromptMatches": true,
+      "ReadbackSha256": "7a12281feb46534adb6848f16496d0509bb92f35e750f9919182a9a55a681053",
+      "ReadbackLength": 57,
+      "ComposerLeftoverLength": 0,
+      "ComposerRawLeftoverLength": 0,
+      "ComposerCleared": true,
+      "ComposerClearRoute": "already-empty",
+      "ComposerClearSteps": [],
+      "ComposerLengthAfterClear": 0,
+      "ComposerRawLengthAfterClear": 0,
+      "Workspace": "C:\\Users\\guest\\AppData\\Local\\Temp\\cl-v1-postfix-20261119T0044\\WS-119T0044",
+      "ReadyAt": "2026-11-19T00:45:50.6637527+08:00",
+      "GoReceivedAt": "2026-11-19T00:45:54.2481610+08:00",
+      "SendControlName": "发送消息",
+      "InvokeStartedAt": "2026-11-19T00:45:54.3066549+08:00",
+      "InvokeReturnedAt": "2026-11-19T00:45:54.3206396+08:00",
+      "Error": null
+    },
+    "restore": {
+      "Verdict": "skipped_by_attach",
+      "BootEvent": null,
+      "Residue": null,
+      "Error": null
+    },
+    "submissions": {
+      "formal": 0,
+      "diagnostic": 1
+    },
+    "manual_steps": [
+      "Attached to a desktop started by hand; no baseline restore was performed."
+    ],
+    "task_result": "pass",
+    "verification": {
+      "files": [
+        {
+          "path": "output/result.txt",
+          "exists": true,
+          "status": "present",
+          "size": 16,
+          "sha256": "f43e45bdbdfb122598953e76c387da1df0c3d526e3594175fd7849ba128f3127",
+          "matches_expect": true
+        }
+      ],
+      "verdict": "pass",
+      "missing": [],
+      "unreadable": [],
+      "mismatched": []
+    }
+  }
+}
