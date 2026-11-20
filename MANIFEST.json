@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "本公开包实际文件指纹，排除本清单自身。",
   "files": [
     {
@@ -24,8 +24,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 19418,
-      "sha256": "920bac7bdd6045b51b0f57d44f3d8dac551956f6c7f146a58ce3755bf5001778"
+      "bytes": 19636,
+      "sha256": "532c1d8c9ec7c9d0ca660860384b6eab66ca3f10fae75865522d8a61065edcdb"
     },
     {
       "path": "cases/ART01/README.md",
@@ -8529,8 +8529,8 @@
     },
     {
       "path": "docs/周报/第5周周报.md",
-      "bytes": 10961,
-      "sha256": "2a1f56c0a31e6ee43b27a1952f6d74bf4d0f17e182868cc50b46511ca89c0c91"
+      "bytes": 11205,
+      "sha256": "69cf0626fe45ba4dc62ad2bc09e9f87ba1d87fbcaf57be79bc6b6b687bfef1e1"
     },
     {
       "path": "docs/阶段进展/桌面端Agent受控启动方案与验收-2026-11-17.md",
@@ -8996,6 +8996,16 @@
       "path": "tools/windows-single-task/versions/single-task-zero-submit.pre-change.zip",
       "bytes": 45522,
       "sha256": "84163b70f38870524a93fbbd758bcd9c3d679e3f1c2b791507011af65410aeaf"
+    },
+    {
+      "path": "evidence/controlled-startup-macos-2026-11-13/README.md",
+      "bytes": 1873,
+      "sha256": "fec138a84618af5d7a58446ac4a511655bdf4c75883fef44243e6fa3228ec9ed"
+    },
+    {
+      "path": "evidence/controlled-startup-macos-2026-11-13/macos-dsh-verification-v2.zip",
+      "bytes": 238721,
+      "sha256": "821d62b362452df4b814eefe431b8bf384e533abbd6f18a2a949dcc3681a46c0"
     }
   ]
 }
