@@ -1,0 +1,11 @@
+{
+  "diagnostic_attempt_id": "ISO-2c46b1662009465f",
+  "context_sha256": "6d1d831c1ee11ba5977de8d0b38141e22b6994893d375f6ef95c0c247624cf2b",
+  "boot_event": {
+    "RecordId": 1060,
+    "CreatedUtc": "2026-11-19T04:39:50.6671829Z"
+  },
+  "trace_sha256": "172a06262787a085656eb1076f90e0380b9f0d4061a1a95a1defdc70b029aa76",
+  "verdict": "blocked",
+  "reason": "The protected marker failure does not establish access denial or connection failure."
+}

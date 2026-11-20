@@ -1,0 +1,317 @@
+[
+  {
+    "published": "formal-v2/host-report.json",
+    "source": "Control/requests/cl-v1-formal-20261119T1445/stage/report.json",
+    "source_sha256": "3f52b35adedbae4e3ced7b12398f71b4659467681f16e65e544b7df276a7567b",
+    "published_sha256": "f89d66940f26f8f411c4477766a14eb8897180393bbfc08db8960c20c8ff20bf",
+    "transformation": "JSON selected fields and environment redaction"
+  },
+  {
+    "published": "formal-v2/request-state.json",
+    "source": "Control/requests/cl-v1-formal-20261119T1445/state.json",
+    "source_sha256": "09790694a5d54da014075c64b9e7bc001c9eefc1656bb91b74970bd5491f960b",
+    "published_sha256": "51e440a8029580f4ec073f6c62646a52cf8b10beb6af5833b4c31f7e0c4eecbb",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "formal-v2/restore-first.json",
+    "source": "Control/requests/cl-v1-formal-20261119T1445/stage/restore/first.json",
+    "source_sha256": "2be5046babb7d4c2560c11b74532b810e3e4c90c737caba3a00bb0210cab2d19",
+    "published_sha256": "2a259f5cb638fdd11db29684652c47ea87d1d18492b979bffa9e01a3a0c46466",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "formal-v2/restore-final.json",
+    "source": "Control/requests/cl-v1-formal-20261119T1445/stage/restore/final.json",
+    "source_sha256": "aff9fc1abfd86c24f996600c1dd206f5e9022f142d1edb368e659929e0e9631b",
+    "published_sha256": "6ee8fb7e01f67100b225eb594cb45292b1e6027be3fb8378d83288accee8a216",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "formal-v2/isolation-preflight.json",
+    "source": "Control/requests/cl-v1-formal-20261119T1445/stage/isolation-preflight.json",
+    "source_sha256": "e7d13677090867a692113cb88823424f42898d99936e40bea3c5e8a160e775cc",
+    "published_sha256": "6f8b66c5772804350c681990722f07c6ad13b6b4519e1fe0dd4bbdb084559630",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "formal-v2/restore-recheck.json",
+    "source": "Control/requests/cl-v1-formal-20261119T1445/restore-verification.json",
+    "source_sha256": "543308901ae88a38e4d597d3aecef6d6b3da8c5415b14985c205eb32235f2997",
+    "published_sha256": "5352d5f9b855ade3e1ad6146f98d142fbdd1f2ac20b3bfeea708bd3f655d4361",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "formal-v2/native-events.jsonl",
+    "source": "Control/requests/cl-v1-formal-20261119T1445/stage/session.v4.jsonl.zstd",
+    "source_sha256": "2e0cec2f7a325f2a5b9cb227a375ddfda2d04f3961d547485121699396774be5",
+    "published_sha256": "94e072ac4decbb376fbd7b835aa8a1953b7c0c41948e40d3168ab5fe26dc6781",
+    "transformation": "Zstandard decoded; allowlist of native events/fields; environment redaction"
+  },
+  {
+    "published": "formal-v2/prompt.txt",
+    "source": "Control/requests/cl-v1-formal-20261119T1445/stage/prompt.txt",
+    "source_sha256": "7a12281feb46534adb6848f16496d0509bb92f35e750f9919182a9a55a681053",
+    "published_sha256": "7a12281feb46534adb6848f16496d0509bb92f35e750f9919182a9a55a681053",
+    "transformation": "byte-for-byte copy"
+  },
+  {
+    "published": "formal-v2/final-reply.txt",
+    "source": "Control/requests/cl-v1-formal-20261119T1445/stage/final-reply.txt",
+    "source_sha256": "16cd377a223a65edda7fc43682bcb65cf790f3f77f12a39309c122742b5280b3",
+    "published_sha256": "16cd377a223a65edda7fc43682bcb65cf790f3f77f12a39309c122742b5280b3",
+    "transformation": "byte-for-byte copy"
+  },
+  {
+    "published": "formal-v2/input.txt",
+    "source": "Control/requests/cl-v1-formal-20261119T1445/stage/inputs/input/sample.txt",
+    "source_sha256": "f43e45bdbdfb122598953e76c387da1df0c3d526e3594175fd7849ba128f3127",
+    "published_sha256": "f43e45bdbdfb122598953e76c387da1df0c3d526e3594175fd7849ba128f3127",
+    "transformation": "byte-for-byte copy"
+  },
+  {
+    "published": "formal-v2/result.txt",
+    "source": "Control/requests/cl-v1-formal-20261119T1445/stage/results/output/result.txt",
+    "source_sha256": "f43e45bdbdfb122598953e76c387da1df0c3d526e3594175fd7849ba128f3127",
+    "published_sha256": "f43e45bdbdfb122598953e76c387da1df0c3d526e3594175fd7849ba128f3127",
+    "transformation": "byte-for-byte copy"
+  },
+  {
+    "published": "formal-v2/receipts/accepted.json",
+    "source": "Control/requests/cl-v1-formal-20261119T1445/receipts/TASK-cl-v1-formal-20261119T1445-bf1774c3/accepted.json",
+    "source_sha256": "7a46ba5e2ec5dff72553a766eae4c036f56f786ac6c7f82665c74c8bab701b33",
+    "published_sha256": "7fbf0cba3c54f245c0ce7cc8181db8594e21b5fbc216b1a7db6ec3f544b91b69",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "formal-v2/receipts/archived.json",
+    "source": "Control/requests/cl-v1-formal-20261119T1445/receipts/TASK-cl-v1-formal-20261119T1445-bf1774c3/archived.json",
+    "source_sha256": "6f11b8a95c81bf0e5ec9dcb342273bddcbd5a86e57f0ef609d470244dac1a6eb",
+    "published_sha256": "7a40c4c99c7d3e85a921322ae617d87c41e83b7805522261482ad1c501642362",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "formal-v2/receipts/cleaned.json",
+    "source": "Control/requests/cl-v1-formal-20261119T1445/receipts/TASK-cl-v1-formal-20261119T1445-bf1774c3/cleaned.json",
+    "source_sha256": "f905acf9a89353af6975e668b2a4308fa26af2e29703d674d42b958f59d2073a",
+    "published_sha256": "400e53a5bbdd60f750db1277f241c843f19e55f8050c6f2cd07a6753c941389c",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "formal-v2/receipts/terminated.json",
+    "source": "Control/requests/cl-v1-formal-20261119T1445/receipts/TASK-cl-v1-formal-20261119T1445-bf1774c3/terminated.json",
+    "source_sha256": "498cadc4e320ae59f14b66ed95f09ceaf650ec75216324d287c24cc03124d6fb",
+    "published_sha256": "871908ce8c0dfe5a0357502f2e0e2eeb0edf828796c58f6991967bc555693295",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "diagnostic-v2/host-report.json",
+    "source": "Control/requests/cl-v1-postfix-20261119T0044/stage/report.json",
+    "source_sha256": "537984dfed13674c960c992f53ddeaf808af108df127350c4cc28a7002e7034b",
+    "published_sha256": "ccfca073cdf45a01d6006384e16557d3ec8d5e24bf716e70462ef92aed248841",
+    "transformation": "JSON selected fields and environment redaction"
+  },
+  {
+    "published": "diagnostic-v2/request-state.json",
+    "source": "Control/requests/cl-v1-postfix-20261119T0044/state.json",
+    "source_sha256": "874163196c52f0735a7422740fb9fe3e48c359edcfe39f009c9dada235b74ec4",
+    "published_sha256": "b3db55f20006d7763e0eb771f2f5d8e51ed65d907a9671d2e9cfdfe7ab24d406",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "diagnostic-v2/native-events.jsonl",
+    "source": "Control/requests/cl-v1-postfix-20261119T0044/stage/session.v4.jsonl.zstd",
+    "source_sha256": "577f8ef52255c0b62ea8a243adfe260a6e496bc5e3ba06054cc9c8e580adf9c5",
+    "published_sha256": "a38b8708ee4e2b1f1b7020e65472737b4ee03950d5c31538c86563653e1b3ce0",
+    "transformation": "Zstandard decoded; allowlist of native events/fields; environment redaction"
+  },
+  {
+    "published": "diagnostic-v2/prompt.txt",
+    "source": "Control/requests/cl-v1-postfix-20261119T0044/stage/prompt.txt",
+    "source_sha256": "7a12281feb46534adb6848f16496d0509bb92f35e750f9919182a9a55a681053",
+    "published_sha256": "7a12281feb46534adb6848f16496d0509bb92f35e750f9919182a9a55a681053",
+    "transformation": "byte-for-byte copy"
+  },
+  {
+    "published": "diagnostic-v2/final-reply.txt",
+    "source": "Control/requests/cl-v1-postfix-20261119T0044/stage/final-reply.txt",
+    "source_sha256": "e4aca9a27643f0908e5152f18b3cd08b667f6634d72dda6079f83a405c5856ba",
+    "published_sha256": "e4aca9a27643f0908e5152f18b3cd08b667f6634d72dda6079f83a405c5856ba",
+    "transformation": "byte-for-byte copy"
+  },
+  {
+    "published": "diagnostic-v2/input.txt",
+    "source": "Control/requests/cl-v1-postfix-20261119T0044/stage/inputs/input/sample.txt",
+    "source_sha256": "f43e45bdbdfb122598953e76c387da1df0c3d526e3594175fd7849ba128f3127",
+    "published_sha256": "f43e45bdbdfb122598953e76c387da1df0c3d526e3594175fd7849ba128f3127",
+    "transformation": "byte-for-byte copy"
+  },
+  {
+    "published": "diagnostic-v2/result.txt",
+    "source": "Control/requests/cl-v1-postfix-20261119T0044/stage/results/output/result.txt",
+    "source_sha256": "f43e45bdbdfb122598953e76c387da1df0c3d526e3594175fd7849ba128f3127",
+    "published_sha256": "f43e45bdbdfb122598953e76c387da1df0c3d526e3594175fd7849ba128f3127",
+    "transformation": "byte-for-byte copy"
+  },
+  {
+    "published": "diagnostic-v2/receipts/accepted.json",
+    "source": "Control/requests/cl-v1-postfix-20261119T0044/receipts/TASK-cl-v1-postfix-20261119T0044-8528528d/accepted.json",
+    "source_sha256": "f62223a978a48981f68c23522d31147306ee26d5544bc02b09673a3d5990b4f2",
+    "published_sha256": "1e3079d20e0f2e6addf72514ce040bfd68ae5b998a99a089650b4679f2c75755",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "diagnostic-v2/receipts/archived.json",
+    "source": "Control/requests/cl-v1-postfix-20261119T0044/receipts/TASK-cl-v1-postfix-20261119T0044-8528528d/archived.json",
+    "source_sha256": "dc11b798a447f8359e3d84f8cdd2f42952937d169a60b5646460023698cb3d62",
+    "published_sha256": "1b48eddf2cf900be4d895404bcdf936169b9ca54d664133353b01d9b679fe646",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "diagnostic-v2/receipts/cleaned.json",
+    "source": "Control/requests/cl-v1-postfix-20261119T0044/receipts/TASK-cl-v1-postfix-20261119T0044-8528528d/cleaned.json",
+    "source_sha256": "0c6af62a834d3bb7c7280f0e3232c3583d6b1debe68b0422fb50a7be51100d50",
+    "published_sha256": "7de40a7f1331e0d5ba17fdd333c0ed965262304bd38f33b821c8ecd66984b1f6",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "diagnostic-v2/receipts/terminated.json",
+    "source": "Control/requests/cl-v1-postfix-20261119T0044/receipts/TASK-cl-v1-postfix-20261119T0044-8528528d/terminated.json",
+    "source_sha256": "7c2164f8b2d12a3347374f3fb7b2b3e91a6ccb8427e1fde966cfdee310c190cf",
+    "published_sha256": "dc1ee9886c4e79b4efe4b8bf942fcfea1a13e259b7cf3889a90d4918f63c8adb",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "legacy-gate-block/host-report.json",
+    "source": "Control/requests/cl-v1-formal-20261119T1239/stage/report.json",
+    "source_sha256": "eb4cb3fb32e142e173d813bd26a4465eb80e8d0a481d7cc21c78a267991100ba",
+    "published_sha256": "96b504cdc75246813a52b59d55eaef19614201318174b0704125806f068d6156",
+    "transformation": "JSON selected fields and environment redaction"
+  },
+  {
+    "published": "legacy-gate-block/request-state.json",
+    "source": "Control/requests/cl-v1-formal-20261119T1239/state.json",
+    "source_sha256": "4a71834490440b76beb62d3f84f639ef5dd385d8ca3431a846c28f17e76f75cd",
+    "published_sha256": "97eb2e461e014c7739a9b882a029b3dddeec8077a155cc80e59cd48840ba5afe",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "legacy-gate-block/restore-first.json",
+    "source": "Control/requests/cl-v1-formal-20261119T1239/stage/restore/first.json",
+    "source_sha256": "5c27a9a998132ebd7eddccc7f5fcd6cf03c2fc0f12096b84483ad0fdffb5d803",
+    "published_sha256": "44a44d8c12bff7dc3070f591316eda1b7d24bf26edd96235b1d4588d19daa64e",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "legacy-gate-block/native-events.jsonl",
+    "source": "Control/requests/cl-v1-formal-20261119T1239/stage/isolation/ISO-2c46b1662009465f/session.v4.jsonl.zstd",
+    "source_sha256": "172a06262787a085656eb1076f90e0380b9f0d4061a1a95a1defdc70b029aa76",
+    "published_sha256": "aabe272731fa12fd277741017e42dd63d42c9f8216a0e35d4a5962596cd9dd9b",
+    "transformation": "Zstandard decoded; allowlist of native events/fields; environment redaction"
+  },
+  {
+    "published": "legacy-gate-block/isolation-decision.json",
+    "source": "Control/requests/cl-v1-formal-20261119T1239/stage/isolation/ISO-2c46b1662009465f/decision.json",
+    "source_sha256": "4f6b40792e61e9eead342d55607bd0b9a340268ded42418a0c96a4f8db928556",
+    "published_sha256": "a89a52dfe66d79879b527ca524290f033c339b64bb357fe62ea987b0f8cabd32",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "legacy-gate-block/receipts/accepted.json",
+    "source": "Control/requests/cl-v1-formal-20261119T1239/stage/isolation/ISO-2c46b1662009465f/receipts/accepted.json",
+    "source_sha256": "e89a96f7bcad3f131116dc3c3a7c10ba6b8dfdbd3abc0eb4f8ba0810a6c3ee2f",
+    "published_sha256": "f201107b8c8df632394eeb72b9ff7888a0237a347ae333acbdee216a1f56171b",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "legacy-gate-block/receipts/archived.json",
+    "source": "Control/requests/cl-v1-formal-20261119T1239/stage/isolation/ISO-2c46b1662009465f/receipts/archived.json",
+    "source_sha256": "d5834d1ae8fcb23e336021da3f21edc99fbad16593ec27131f887a2c54a98230",
+    "published_sha256": "7c4ff6523826f8c28aeb439a9e4d6431cf7d194943d1eb35eff192cd3f458f25",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "legacy-gate-block/receipts/cleaned.json",
+    "source": "Control/requests/cl-v1-formal-20261119T1239/stage/isolation/ISO-2c46b1662009465f/receipts/cleaned.json",
+    "source_sha256": "227a80f568ab56fce024f9f8c107c0fe7a70ce29f2285c2e3e3745c5c5e8d8a5",
+    "published_sha256": "1befa1a7eb37f97ef19d812e19242bb2bdea96ebc9cfd6748a2ded4b0bd41ac3",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "legacy-gate-block/receipts/terminated.json",
+    "source": "Control/requests/cl-v1-formal-20261119T1239/stage/isolation/ISO-2c46b1662009465f/receipts/terminated.json",
+    "source_sha256": "d5c064eba4245c5fd30ececfab2603abed894413b27c918af3a4b5b2406014af",
+    "published_sha256": "a5e2879a0b620b675f45b839725c3a3ca3351a94b8bce2da1c3c89a353cd3f76",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "port-block/host-report.json",
+    "source": "Control/requests/cl-v1-zero-preflight-20261119T1432/stage/report.json",
+    "source_sha256": "ee9d0b046c899d5083919bac91e15c76a1c6f6fe65fb2c1b3a9f91fe847bd48b",
+    "published_sha256": "f00a3b3be523b98f60c89c20d7600df3a153fa16c2b64ddf0c8039008348d615",
+    "transformation": "JSON selected fields and environment redaction"
+  },
+  {
+    "published": "port-block/request-state.json",
+    "source": "Control/requests/cl-v1-zero-preflight-20261119T1432/state.json",
+    "source_sha256": "c75c5e949540041e9872612b6f762f02c6194ccea155f019d23a0ee4da96226a",
+    "published_sha256": "1e2e0520091dad253e16b712fca914a8af53feed5100acbeca3c5f4de39999d1",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "port-block/restore-first.json",
+    "source": "Control/requests/cl-v1-zero-preflight-20261119T1432/stage/restore/first.json",
+    "source_sha256": "6dbec3c5b4363f6f646bc78d020713a1bbd8fbe9afe1fac2555bd9b17b98aeed",
+    "published_sha256": "a7f3a3c8f788eb3901d17d96a4c2fc6d0871776c9da5e8d9223ea67ad84df4ad",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "port-block/isolation-preflight.json",
+    "source": "Control/requests/cl-v1-zero-preflight-20261119T1432/stage/isolation-preflight.json",
+    "source_sha256": "f144994a8afd3028d9ae77d041665bc01997e91cf55da671eeb20f03f2f70a08",
+    "published_sha256": "18f141a1a4b1103865cda960463768f99c51c974d686d74ea7e6b31d37f720be",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "startup-guard-before-fix/host-report.json",
+    "source": "Control/requests/cl-v1-zero-preflight-20261119T1430/stage/report.json",
+    "source_sha256": "e96fa300d697c53f6beed40c68be898fcbcb9e402874e1927071611c549d4a51",
+    "published_sha256": "9a4b446bce3de8e66b278d13610809f92b7754ecbc28b215a89a32606f810c0d",
+    "transformation": "JSON selected fields and environment redaction"
+  },
+  {
+    "published": "startup-guard-before-fix/request-state.json",
+    "source": "Control/requests/cl-v1-zero-preflight-20261119T1430/state.json",
+    "source_sha256": "aca085a8993c0e618aabcab27d528f71fc0840bbd321921ebdd64b6050dfff67",
+    "published_sha256": "58157c6a3b250218cda0389dff5b090b78b51c414d4b0d60fb8eb39837f6c253",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "startup-guard-before-fix/restore-final.json",
+    "source": "Control/requests/cl-v1-zero-preflight-20261119T1430/stage/restore/final.json",
+    "source_sha256": "e56ecf2c49c3bb2c46f1bdeff13a761d5f2206978f10b2ad2f0ec132f67f52af",
+    "published_sha256": "f4db09cea19d425012ac209e8957e3ce84d2bd9d4ef0af09aef1dc11b698d01d",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "port-block/share-recheck.json",
+    "source": "受控启动/证据/单题自动运行-零提交实测-共享通道复核.json",
+    "source_sha256": "b00ea7818cdddfb1443aa3cdd179e3d95b91aac6802b952c9d338743f56c558d",
+    "published_sha256": "3ddb9b14f17cfd1d63dced7909aae9b9fa425620640070d8f9f5d5dd9bc070ff",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "desktop-v3/preflight-report.json",
+    "source": "Control/preflights/v3-20261119T075258/preflight-report.json",
+    "source_sha256": "83da1ae4f607d835be843bc032a6efbe945756d2abef15cbf07bc544dfc569cb",
+    "published_sha256": "9130f51c9226cbb407df5783998feb9e5ea58ed3f04ba18253bc1f3614057705",
+    "transformation": "JSON environment redaction"
+  },
+  {
+    "published": "desktop-v3/restore-first.json",
+    "source": "Control/preflights/v3-20261119T075258/restore/first.json",
+    "source_sha256": "389fc93a221f94f8ade2a7e6b17fa3c1b37e91597235b8c361c412f2b29f364e",
+    "published_sha256": "d6e360a47949ce0be00975199ad2da89b7f2aa3c6cf372b5817cb6b53a19e321",
+    "transformation": "JSON environment redaction"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "attempt_id": "TASK-cl-v1-postfix-20261119T0044-8528528d",
+  "at": "2026-11-18T16:46:09.450130+00:00",
+  "event": "archived",
+  "detail": {
+    "verdict": "pass",
+    "files": [
+      {
+        "path": "output/result.txt",
+        "exists": true,
+        "status": "present",
+        "size": 16,
+        "sha256": "f43e45bdbdfb122598953e76c387da1df0c3d526e3594175fd7849ba128f3127",
+        "matches_expect": true
+      }
+    ],
+    "host_root": "<host-lab>\\Control\\requests\\cl-v1-postfix-20261119T0044\\stage\\results"
+  }
+}

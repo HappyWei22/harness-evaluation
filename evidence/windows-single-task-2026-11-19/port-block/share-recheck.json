@@ -1,0 +1,106 @@
+{
+  "ProbeId": "PRE-SMB-20261119T143506",
+  "RequestId": "cl-v1-zero-preflight-20261119T1432",
+  "Activity": "interface_preflight",
+  "CaseVersion": "Windows SMB read-only recheck v1",
+  "ProductVersion": "not applicable",
+  "Model": "not applicable",
+  "Skills": "not applicable",
+  "Tools": "Hyper-V, PowerShell Direct, Windows SMB and TCP queries",
+  "Permissions": "elevated host process, registered guest account",
+  "StartedAt": "2026-11-19T14:35:06.6052524+08:00",
+  "FinishedAt": "2026-11-19T14:35:16.2136763+08:00",
+  "EvidenceLevel": "E2",
+  "Verdict": "blocked",
+  "Error": "Windows file-sharing ports are reachable from the guest: <host-ip-5>:139, <host-ip-5>:445.",
+  "SameBoot": true,
+  "Context": {
+    "BootEvent": {
+      "RecordId": 1060,
+      "CreatedUtc": "2026-11-19T06:32:58.6532991Z"
+    },
+    "HostIPv4": "<host-ip-1>",
+    "HostAddresses": [
+      "<host-ip-2>",
+      "<host-ip-3>",
+      "<host-ip-1>",
+      "<host-ip-4>",
+      "<host-ip-5>"
+    ],
+    "SmbEndpoints": [
+      {
+        "Address": "<host-ip-2>",
+        "Port": 139,
+        "Reachable": false
+      },
+      {
+        "Address": "<host-ip-2>",
+        "Port": 445,
+        "Reachable": false
+      },
+      {
+        "Address": "<host-ip-3>",
+        "Port": 139,
+        "Reachable": false
+      },
+      {
+        "Address": "<host-ip-3>",
+        "Port": 445,
+        "Reachable": false
+      },
+      {
+        "Address": "<host-ip-1>",
+        "Port": 139,
+        "Reachable": false
+      },
+      {
+        "Address": "<host-ip-1>",
+        "Port": 445,
+        "Reachable": false
+      },
+      {
+        "Address": "<host-ip-4>",
+        "Port": 139,
+        "Reachable": false
+      },
+      {
+        "Address": "<host-ip-4>",
+        "Port": 445,
+        "Reachable": false
+      },
+      {
+        "Address": "<host-ip-5>",
+        "Port": 139,
+        "Reachable": true
+      },
+      {
+        "Address": "<host-ip-5>",
+        "Port": 445,
+        "Reachable": true
+      }
+    ],
+    "SmbMappings": 0,
+    "SmbConnections": 0,
+    "NetworkDisks": 0,
+    "FirewallProfiles": [
+      "Domain:Block",
+      "Private:Block",
+      "Public:Block"
+    ],
+    "ProtectedFiles": [
+      {
+        "Role": "task_manifest",
+        "Path": "<protected-task-manifest-path>",
+        "Sha256": "57d00ec582bbb090a3b0ad395abd59ae0a9acdd049d199e325ca5e80c7314444",
+        "UNC": "<protected-task-manifest-unc>"
+      },
+      {
+        "Role": "frozen_request",
+        "Path": "<protected-frozen-request-path>",
+        "Sha256": "c05e8215a2f1a26e7a853c4af2f91ef1e2d0a277b4c852084885a5ec54bf9690",
+        "UNC": "<protected-frozen-request-unc>"
+      }
+    ]
+  },
+  "DshSubmissions": 0
+}

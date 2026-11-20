@@ -1,0 +1,23 @@
+{
+  "attempt_id": "TASK-cl-v1-formal-20261119T1445-bf1774c3",
+  "at": "2026-11-19T06:53:17.796962+00:00",
+  "event": "cleaned",
+  "detail": {
+    "verdict": "pass",
+    "boot_event": {
+      "RecordId": 1060,
+      "CreatedUtc": "2026-11-19T06:47:56.6700500Z"
+    },
+    "residue": {
+      "RunWorkspaceExists": false,
+      "RunLauncherExists": false,
+      "RunSessionExists": false,
+      "PreflightTaskRemains": 0
+    },
+    "guest_task_remains": 0,
+    "restore_review": {
+      "path": "<host-lab>\\Control\\requests\\cl-v1-formal-20261119T1445\\restore-verification.json",
+      "sha256": "543308901ae88a38e4d597d3aecef6d6b3da8c5415b14985c205eb32235f2997"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "attempt_id": "TASK-cl-v1-formal-20261119T1445-bf1774c3",
+  "at": "2026-11-19T06:53:17.795963+00:00",
+  "event": "archived",
+  "detail": {
+    "verdict": "pass",
+    "files": [
+      {
+        "path": "output/result.txt",
+        "exists": true,
+        "status": "present",
+        "size": 16,
+        "sha256": "f43e45bdbdfb122598953e76c387da1df0c3d526e3594175fd7849ba128f3127",
+        "matches_expect": true
+      }
+    ],
+    "host_root": "<host-lab>\\Control\\requests\\cl-v1-formal-20261119T1445\\stage\\results",
+    "native_trace": "session.v4.jsonl.zstd",
+    "native_trace_sha256": "2e0cec2f7a325f2a5b9cb227a375ddfda2d04f3961d547485121699396774be5",
+    "isolation_context_sha256": "1c7818e6acb3bfb349b66a6db17d611e1c72dfc849d0f5b8cfbd8691a061edf0",
+    "isolation_proof_sha256": "e7d13677090867a692113cb88823424f42898d99936e40bea3c5e8a160e775cc"
+  }
+}

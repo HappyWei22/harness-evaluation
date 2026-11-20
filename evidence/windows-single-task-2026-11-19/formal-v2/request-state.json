@@ -1,0 +1,199 @@
+{
+  "request_id": "cl-v1-formal-20261119T1445",
+  "activity": "formal",
+  "task_id": "copy-line",
+  "task_version": "1",
+  "attempt_id": "TASK-cl-v1-formal-20261119T1445-bf1774c3",
+  "stage": "closed",
+  "started_at": "2026-11-19T06:45:18.900433+00:00",
+  "updated_at": "2026-11-19T06:53:17.819492+00:00",
+  "failure": null,
+  "stages": [
+    {
+      "stage": "accepted",
+      "at": "2026-11-19T06:45:18.900433+00:00",
+      "detail": null
+    },
+    {
+      "stage": "restored",
+      "at": "2026-11-19T06:47:11.236700+00:00",
+      "detail": {
+        "boot_event": {
+          "RecordId": 1060,
+          "CreatedUtc": "2026-11-19T06:45:33.6514576Z"
+        },
+        "baseline_restored": true
+      }
+    },
+    {
+      "stage": "prepared",
+      "at": "2026-11-19T06:47:11.246309+00:00",
+      "detail": {
+        "attempt_id": "TASK-cl-v1-formal-20261119T1445-bf1774c3",
+        "workspace": "C:\\Users\\guest\\AppData\\Local\\Temp\\cl-v1-formal-20261119T1445\\WS-119T1445"
+      }
+    },
+    {
+      "stage": "dispatched",
+      "at": "2026-11-19T06:47:11.246309+00:00",
+      "detail": {
+        "permit_id": "55a074f87c5a42ca9132f81fe8ed7368",
+        "meaning": "send authorised"
+      }
+    },
+    {
+      "stage": "completed",
+      "at": "2026-11-19T06:53:17.793962+00:00",
+      "detail": {
+        "completion": {
+          "Acceptance": {
+            "SessionId": "session-93421cc9-9f5e-4679-8488-50a29777383f",
+            "WorkspaceMatches": true,
+            "FreshSession": true,
+            "OperatorSubmissions": 1,
+            "ExactPromptMatches": 1,
+            "UnknownUserSources": 0,
+            "AcceptanceVerified": true
+          },
+          "Turn": 1,
+          "UserMessageSequence": 8,
+          "Basis": "native_turn_end",
+          "NativeTurnEnd": {
+            "type": "turn/end",
+            "seq": 40,
+            "time": 1795070859676,
+            "data": {
+              "turn": 1,
+              "reason": {
+                "kind": "completed"
+              }
+            }
+          },
+          "TurnStatus": "completed",
+          "ReplyText": "已完成\n\n`input/sample.txt` 中的这一行 `第一行样本` 已原样写入 [output/result.txt](output/result.txt)，并重新读取该文件验证一致。",
+          "TraceName": "session.v4.jsonl.zstd",
+          "TraceSha256": "2e0cec2f7a325f2a5b9cb227a375ddfda2d04f3961d547485121699396774be5"
+        }
+      }
+    },
+    {
+      "stage": "retrieved",
+      "at": "2026-11-19T06:53:17.793962+00:00",
+      "detail": {
+        "files": [
+          {
+            "path": "output/result.txt",
+            "exists": true,
+            "status": "present",
+            "size": 16,
+            "sha256": "f43e45bdbdfb122598953e76c387da1df0c3d526e3594175fd7849ba128f3127",
+            "matches_expect": true
+          }
+        ],
+        "verdict": "pass",
+        "missing": [],
+        "unreadable": [],
+        "mismatched": []
+      }
+    },
+    {
+      "stage": "closed",
+      "at": "2026-11-19T06:53:17.819492+00:00",
+      "detail": {
+        "attempt_id": "TASK-cl-v1-formal-20261119T1445-bf1774c3"
+      }
+    }
+  ],
+  "result": {
+    "completion": {
+      "Acceptance": {
+        "SessionId": "session-93421cc9-9f5e-4679-8488-50a29777383f",
+        "WorkspaceMatches": true,
+        "FreshSession": true,
+        "OperatorSubmissions": 1,
+        "ExactPromptMatches": 1,
+        "UnknownUserSources": 0,
+        "AcceptanceVerified": true
+      },
+      "Turn": 1,
+      "UserMessageSequence": 8,
+      "Basis": "native_turn_end",
+      "NativeTurnEnd": {
+        "type": "turn/end",
+        "seq": 40,
+        "time": 1795070859676,
+        "data": {
+          "turn": 1,
+          "reason": {
+            "kind": "completed"
+          }
+        }
+      },
+      "TurnStatus": "completed",
+      "ReplyText": "已完成\n\n`input/sample.txt` 中的这一行 `第一行样本` 已原样写入 [output/result.txt](output/result.txt)，并重新读取该文件验证一致。",
+      "TraceName": "session.v4.jsonl.zstd",
+      "TraceSha256": "2e0cec2f7a325f2a5b9cb227a375ddfda2d04f3961d547485121699396774be5"
+    },
+    "dispatch": {
+      "PromptSha256": "7a12281feb46534adb6848f16496d0509bb92f35e750f9919182a9a55a681053",
+      "PromptLength": 57,
+      "PromptMatches": true,
+      "ReadbackSha256": "7a12281feb46534adb6848f16496d0509bb92f35e750f9919182a9a55a681053",
+      "ReadbackLength": 57,
+      "ComposerLeftoverLength": 0,
+      "ComposerRawLeftoverLength": 0,
+      "ComposerCleared": true,
+      "ComposerClearRoute": "already-empty",
+      "ComposerClearSteps": [],
+      "ComposerLengthAfterClear": 0,
+      "ComposerRawLengthAfterClear": 0,
+      "Workspace": "C:\\Users\\guest\\AppData\\Local\\Temp\\cl-v1-formal-20261119T1445\\WS-119T1445",
+      "ReadyAt": "2026-11-19T14:47:06.3350918+08:00",
+      "GoReceivedAt": "2026-11-19T14:47:14.0044911+08:00",
+      "SendControlName": "发送消息",
+      "InvokeStartedAt": "2026-11-19T14:47:35.1760831+08:00",
+      "InvokeReturnedAt": "2026-11-19T14:47:35.1900202+08:00",
+      "Error": null
+    },
+    "restore": {
+      "Verdict": "pass",
+      "BootEvent": {
+        "RecordId": 1060,
+        "CreatedUtc": "2026-11-19T06:47:56.6700500Z"
+      },
+      "Residue": {
+        "RunWorkspaceExists": false,
+        "RunLauncherExists": false,
+        "RunSessionExists": false,
+        "PreflightTaskRemains": 0
+      },
+      "Error": null,
+      "Review": {
+        "path": "<host-lab>\\Control\\requests\\cl-v1-formal-20261119T1445\\restore-verification.json",
+        "sha256": "543308901ae88a38e4d597d3aecef6d6b3da8c5415b14985c205eb32235f2997"
+      }
+    },
+    "submissions": {
+      "formal": 1,
+      "diagnostic": 0
+    },
+    "manual_steps": [],
+    "task_result": "pass",
+    "verification": {
+      "files": [
+        {
+          "path": "output/result.txt",
+          "exists": true,
+          "status": "present",
+          "size": 16,
+          "sha256": "f43e45bdbdfb122598953e76c387da1df0c3d526e3594175fd7849ba128f3127",
+          "matches_expect": true
+        }
+      ],
+      "verdict": "pass",
+      "missing": [],
+      "unreadable": [],
+      "mismatched": []
+    }
+  }
+}

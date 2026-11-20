@@ -1,0 +1,23 @@
+{
+  "attempt_id": "TASK-cl-v1-formal-20261119T1445-bf1774c3",
+  "at": "2026-11-19T06:53:17.795963+00:00",
+  "event": "terminated",
+  "detail": {
+    "basis": "native_turn_end",
+    "session_id": "session-93421cc9-9f5e-4679-8488-50a29777383f",
+    "turn": 1,
+    "native_turn_end": {
+      "type": "turn/end",
+      "seq": 40,
+      "time": 1795070859676,
+      "data": {
+        "turn": 1,
+        "reason": {
+          "kind": "completed"
+        }
+      }
+    },
+    "turn_status": "completed",
+    "trace_sha256": "2e0cec2f7a325f2a5b9cb227a375ddfda2d04f3961d547485121699396774be5"
+  }
+}

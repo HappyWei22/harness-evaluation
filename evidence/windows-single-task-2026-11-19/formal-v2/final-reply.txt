@@ -1,0 +1,3 @@
+已完成
+
+`input/sample.txt` 中的这一行 `第一行样本` 已原样写入 [output/result.txt](output/result.txt)，并重新读取该文件验证一致。

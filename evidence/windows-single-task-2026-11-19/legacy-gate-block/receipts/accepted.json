@@ -1,0 +1,21 @@
+{
+  "attempt_id": "ISO-2c46b1662009465f",
+  "at": "2026-11-19T04:41:55.038683+00:00",
+  "event": "accepted",
+  "detail": {
+    "native_acceptance": {
+      "SessionId": "session-fd266417-110e-4584-8f3c-2a3475645982",
+      "WorkspaceMatches": true,
+      "FreshSession": true,
+      "OperatorSubmissions": 1,
+      "ExactPromptMatches": 1,
+      "UnknownUserSources": 0,
+      "AcceptanceVerified": true
+    },
+    "user_message_sequence": 8,
+    "trace_sha256": "172a06262787a085656eb1076f90e0380b9f0d4061a1a95a1defdc70b029aa76",
+    "invoke_started_at": "2026-11-19T12:41:19.1832280+08:00",
+    "invoke_returned_at": "2026-11-19T12:41:19.2262049+08:00",
+    "prompt_readback_sha256": "7287d081e03fe052fc5806ab5c9ac1c8f9d5f5324d0437694088ccd6e780aa56"
+  }
+}

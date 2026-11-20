@@ -1,0 +1,115 @@
+{
+  "RequestId": "cl-v1-formal-20261119T1445",
+  "Activity": "formal",
+  "CaseVersion": "single task copy-line v1",
+  "ProductVersion": "0.2.2.0 installed (not queried by the stage)",
+  "Model": "not applicable",
+  "Skills": "not applicable",
+  "Tools": "Windows Task Scheduler, UI Automation, PowerShell Direct",
+  "Permissions": "elevated host process, interactive guest user session",
+  "StartedAt": "2026-11-19T14:45:21.6495800+08:00",
+  "FinishedAt": "2026-11-19T14:48:10.2408751+08:00",
+  "EvidenceLevel": "E2",
+  "BaselineRestored": true,
+  "Verdict": "pass",
+  "Stage": "final_restore",
+  "Error": null,
+  "BootEvent": {
+    "RecordId": 1060,
+    "CreatedUtc": "2026-11-19T06:45:33.6514576Z"
+  },
+  "Dispatch": {
+    "PromptSha256": "7a12281feb46534adb6848f16496d0509bb92f35e750f9919182a9a55a681053",
+    "PromptLength": 57,
+    "PromptMatches": true,
+    "ReadbackSha256": "7a12281feb46534adb6848f16496d0509bb92f35e750f9919182a9a55a681053",
+    "ReadbackLength": 57,
+    "ComposerLeftoverLength": 0,
+    "ComposerRawLeftoverLength": 0,
+    "ComposerCleared": true,
+    "ComposerClearRoute": "already-empty",
+    "ComposerClearSteps": [],
+    "ComposerLengthAfterClear": 0,
+    "ComposerRawLengthAfterClear": 0,
+    "Workspace": "C:\\Users\\guest\\AppData\\Local\\Temp\\cl-v1-formal-20261119T1445\\WS-119T1445",
+    "ReadyAt": "2026-11-19T14:47:06.3350918+08:00",
+    "GoReceivedAt": "2026-11-19T14:47:14.0044911+08:00",
+    "SendControlName": "发送消息",
+    "InvokeStartedAt": "2026-11-19T14:47:35.1760831+08:00",
+    "InvokeReturnedAt": "2026-11-19T14:47:35.1900202+08:00",
+    "Error": null
+  },
+  "Completion": {
+    "Acceptance": {
+      "SessionId": "session-93421cc9-9f5e-4679-8488-50a29777383f",
+      "WorkspaceMatches": true,
+      "FreshSession": true,
+      "OperatorSubmissions": 1,
+      "ExactPromptMatches": 1,
+      "UnknownUserSources": 0,
+      "AcceptanceVerified": true
+    },
+    "Turn": 1,
+    "UserMessageSequence": 8,
+    "Basis": "native_turn_end",
+    "NativeTurnEnd": {
+      "type": "turn/end",
+      "seq": 40,
+      "time": 1795070859676,
+      "data": {
+        "turn": 1,
+        "reason": {
+          "kind": "completed"
+        }
+      }
+    },
+    "TurnStatus": "completed",
+    "ReplyText": "已完成\n\n`input/sample.txt` 中的这一行 `第一行样本` 已原样写入 [output/result.txt](output/result.txt)，并重新读取该文件验证一致。",
+    "TraceName": "session.v4.jsonl.zstd",
+    "TraceSha256": "2e0cec2f7a325f2a5b9cb227a375ddfda2d04f3961d547485121699396774be5"
+  },
+  "NativeAcceptance": {
+    "SessionId": "session-93421cc9-9f5e-4679-8488-50a29777383f",
+    "WorkspaceMatches": true,
+    "FreshSession": true,
+    "OperatorSubmissions": 1,
+    "ExactPromptMatches": 1,
+    "UnknownUserSources": 0,
+    "AcceptanceVerified": true
+  },
+  "NativeEvidenceError": null,
+  "ScenePreserved": false,
+  "Outputs": [
+    {
+      "Path": "output/result.txt",
+      "Size": 16,
+      "Sha256": "f43e45bdbdfb122598953e76c387da1df0c3d526e3594175fd7849ba128f3127",
+      "HostMatches": true
+    }
+  ],
+  "SubmissionPermitted": true,
+  "FormalSubmissions": 1,
+  "DiagnosticSubmissions": 0,
+  "ManualSteps": [],
+  "Cleanup": {
+    "TaskRemains": 0,
+    "WorkingRootExists": false,
+    "DshRemains": 0,
+    "PSShowComputerName": true
+  },
+  "FinalRestore": {
+    "Verdict": "fail",
+    "BootEvent": {
+      "RecordId": 1060,
+      "CreatedUtc": "2026-11-19T06:47:56.6700500Z"
+    },
+    "Residue": {
+      "RunWorkspaceExists": false,
+      "RunLauncherExists": false,
+      "RunSessionExists": false,
+      "PreflightTaskRemains": 0
+    },
+    "Error": "The restored guest reports the startup event that preceded the restore."
+  },
+  "BootTime": "2026-11-19T06:45:36.5904580Z"
+}

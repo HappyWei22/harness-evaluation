@@ -1,0 +1,2 @@
+tasks/copy-line-v1/input/sample.txt -text
+attempt_completion.py whitespace=cr-at-eol,-blank-at-eof

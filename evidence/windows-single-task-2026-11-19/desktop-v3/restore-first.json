@@ -1,0 +1,42 @@
+{
+  "RunId": null,
+  "Activity": "interface_preflight",
+  "CaseVersion": "restore DSH-Win11-Base-v3",
+  "ProductVersion": "not queried",
+  "Model": "not applicable",
+  "Skills": "not applicable",
+  "Tools": "Hyper-V PowerShell and PowerShell Direct",
+  "Permissions": "elevated host with saved VM credential",
+  "StartedAt": "2026-11-19T15:53:02.9187139+08:00",
+  "FinishedAt": "2026-11-19T15:53:15.1337112+08:00",
+  "EvidenceLevel": "E2",
+  "Verdict": "pass",
+  "Stage": "complete",
+  "Error": null,
+  "VmName": "Harness-DSH-Win11",
+  "InitialVmState": "Off",
+  "CheckpointName": "DSH-Win11-Base-v3",
+  "CheckpointId": "428d1863-c79d-4f13-8223-0f786b7bb558",
+  "RestoreAppliedAt": "2026-11-19T15:53:03.0673533+08:00",
+  "StartReturnedAt": "2026-11-19T15:53:03.5725571+08:00",
+  "Heartbeat": "OkApplicationsUnknown",
+  "Guest": {
+    "ProfileMatches": true,
+    "Caption": "Microsoft Windows 11 专业版",
+    "BuildNumber": "26300",
+    "BootTime": "2026-11-19T07:53:05.0240850Z",
+    "BootEvent": {
+      "RecordId": 1344,
+      "CreatedUtc": "2026-11-19T07:53:01.6531820Z"
+    },
+    "AutoAdminLogon": "1",
+    "ExplorerSessions": [
+      1
+    ],
+    "LogonUiSessions": [],
+    "DshProcesses": [],
+    "HarnessTasks": [],
+    "RunResidue": null,
+    "PSShowComputerName": true
+  }
+}

@@ -1,0 +1,3 @@
+已完成
+
+`input/sample.txt` 中只有一行：`第一行样本`，我已原样将它写入 [output/result.txt](output/result.txt)，并确认内容一致。

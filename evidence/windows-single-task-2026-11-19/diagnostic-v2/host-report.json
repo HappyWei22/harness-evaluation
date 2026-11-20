@@ -1,0 +1,110 @@
+{
+  "RequestId": "cl-v1-postfix-20261119T0044",
+  "Activity": "diagnostic",
+  "CaseVersion": "single task copy-line v1",
+  "ProductVersion": "0.2.2.0 installed (not queried by the stage)",
+  "Model": "not applicable",
+  "Skills": "not applicable",
+  "Tools": "Windows Task Scheduler, UI Automation, PowerShell Direct",
+  "Permissions": "elevated host process, interactive guest user session",
+  "StartedAt": "2026-11-19T00:45:15.9835940+08:00",
+  "FinishedAt": "2026-11-19T00:46:08.4003517+08:00",
+  "EvidenceLevel": "E2-attached",
+  "BaselineRestored": false,
+  "Verdict": "pass",
+  "Stage": "final_restore",
+  "Error": null,
+  "BootEvent": {
+    "RecordId": null,
+    "CreatedUtc": null,
+    "Source": "attached_session"
+  },
+  "Dispatch": {
+    "PromptSha256": "7a12281feb46534adb6848f16496d0509bb92f35e750f9919182a9a55a681053",
+    "PromptLength": 57,
+    "PromptMatches": true,
+    "ReadbackSha256": "7a12281feb46534adb6848f16496d0509bb92f35e750f9919182a9a55a681053",
+    "ReadbackLength": 57,
+    "ComposerLeftoverLength": 0,
+    "ComposerRawLeftoverLength": 0,
+    "ComposerCleared": true,
+    "ComposerClearRoute": "already-empty",
+    "ComposerClearSteps": [],
+    "ComposerLengthAfterClear": 0,
+    "ComposerRawLengthAfterClear": 0,
+    "Workspace": "C:\\Users\\guest\\AppData\\Local\\Temp\\cl-v1-postfix-20261119T0044\\WS-119T0044",
+    "ReadyAt": "2026-11-19T00:45:50.6637527+08:00",
+    "GoReceivedAt": "2026-11-19T00:45:54.2481610+08:00",
+    "SendControlName": "发送消息",
+    "InvokeStartedAt": "2026-11-19T00:45:54.3066549+08:00",
+    "InvokeReturnedAt": "2026-11-19T00:45:54.3206396+08:00",
+    "Error": null
+  },
+  "Completion": {
+    "Acceptance": {
+      "SessionId": "session-b536ced4-2bd2-464c-9f38-3071558c8aa5",
+      "WorkspaceMatches": true,
+      "FreshSession": true,
+      "OperatorSubmissions": 1,
+      "ExactPromptMatches": 1,
+      "UnknownUserSources": 0,
+      "AcceptanceVerified": true
+    },
+    "Turn": 1,
+    "UserMessageSequence": 8,
+    "Basis": "native_turn_end",
+    "NativeTurnEnd": {
+      "type": "turn/end",
+      "seq": 40,
+      "time": 1795020357978,
+      "data": {
+        "turn": 1,
+        "reason": {
+          "kind": "completed"
+        }
+      }
+    },
+    "TurnStatus": "completed",
+    "ReplyText": "已完成\n\n`input/sample.txt` 中只有一行：`第一行样本`，我已原样将它写入 [output/result.txt](output/result.txt)，并确认内容一致。",
+    "TraceName": "session.v4.jsonl.zstd",
+    "TraceSha256": "577f8ef52255c0b62ea8a243adfe260a6e496bc5e3ba06054cc9c8e580adf9c5"
+  },
+  "NativeAcceptance": {
+    "SessionId": "session-b536ced4-2bd2-464c-9f38-3071558c8aa5",
+    "WorkspaceMatches": true,
+    "FreshSession": true,
+    "OperatorSubmissions": 1,
+    "ExactPromptMatches": 1,
+    "UnknownUserSources": 0,
+    "AcceptanceVerified": true
+  },
+  "NativeEvidenceError": null,
+  "ScenePreserved": false,
+  "Outputs": [
+    {
+      "Path": "output/result.txt",
+      "Size": 16,
+      "Sha256": "f43e45bdbdfb122598953e76c387da1df0c3d526e3594175fd7849ba128f3127",
+      "HostMatches": true
+    }
+  ],
+  "SubmissionPermitted": true,
+  "FormalSubmissions": 0,
+  "DiagnosticSubmissions": 1,
+  "ManualSteps": [
+    "Attached to a desktop started by hand; no baseline restore was performed."
+  ],
+  "Cleanup": {
+    "TaskRemains": 0,
+    "WorkingRootExists": false,
+    "Leftover": {},
+    "DshRemains": 0,
+    "PSShowComputerName": true
+  },
+  "FinalRestore": {
+    "Verdict": "skipped_by_attach",
+    "BootEvent": null,
+    "Residue": null,
+    "Error": null
+  }
+}

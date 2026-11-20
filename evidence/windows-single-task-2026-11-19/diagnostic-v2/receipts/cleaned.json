@@ -1,0 +1,11 @@
+{
+  "attempt_id": "TASK-cl-v1-postfix-20261119T0044-8528528d",
+  "at": "2026-11-18T16:46:09.451132+00:00",
+  "event": "cleaned",
+  "detail": {
+    "verdict": "skipped_by_attach",
+    "boot_event": null,
+    "residue": null,
+    "guest_task_remains": 0
+  }
+}

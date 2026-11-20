@@ -1,0 +1,21 @@
+{
+  "attempt_id": "TASK-cl-v1-formal-20261119T1445-bf1774c3",
+  "at": "2026-11-19T06:53:17.794961+00:00",
+  "event": "accepted",
+  "detail": {
+    "native_acceptance": {
+      "SessionId": "session-93421cc9-9f5e-4679-8488-50a29777383f",
+      "WorkspaceMatches": true,
+      "FreshSession": true,
+      "OperatorSubmissions": 1,
+      "ExactPromptMatches": 1,
+      "UnknownUserSources": 0,
+      "AcceptanceVerified": true
+    },
+    "user_message_sequence": 8,
+    "trace_sha256": "2e0cec2f7a325f2a5b9cb227a375ddfda2d04f3961d547485121699396774be5",
+    "invoke_started_at": "2026-11-19T14:47:35.1760831+08:00",
+    "invoke_returned_at": "2026-11-19T14:47:35.1900202+08:00",
+    "prompt_readback_sha256": "7a12281feb46534adb6848f16496d0509bb92f35e750f9919182a9a55a681053"
+  }
+}
