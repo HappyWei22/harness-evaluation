@@ -14,8 +14,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 14809,
-      "sha256": "196f7290096396ac8c332ba83e12386565942456ce03b023800862c61d32fa7f"
+      "bytes": 15060,
+      "sha256": "bf82ea59be38bea5f0a4491fedf5fc2eadc7c5bed68a2df7308b5f66de05a18c"
     },
     {
       "path": "PROVENANCE.json",
@@ -24,8 +24,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 19636,
-      "sha256": "532c1d8c9ec7c9d0ca660860384b6eab66ca3f10fae75865522d8a61065edcdb"
+      "bytes": 19839,
+      "sha256": "4453af0e49af1679e5ea2604745d7a045f3633b14bbf6c589074fb6d744882d9"
     },
     {
       "path": "cases/ART01/README.md",
@@ -8529,8 +8529,8 @@
     },
     {
       "path": "docs/周报/第5周周报.md",
-      "bytes": 11205,
-      "sha256": "69cf0626fe45ba4dc62ad2bc09e9f87ba1d87fbcaf57be79bc6b6b687bfef1e1"
+      "bytes": 11519,
+      "sha256": "49983924a5617b7dace881235e53fa8832b4f38ede4ba04ab9a23f0a5fbee270"
     },
     {
       "path": "docs/阶段进展/桌面端Agent受控启动方案与验收-2026-11-17.md",
@@ -8549,8 +8549,8 @@
     },
     {
       "path": "evidence/workbuddy-mkdir/model-judge-2026-11-04/README.md",
-      "bytes": 11079,
-      "sha256": "bdac3fc499fa3baa784882f2721d80e33545b6d6dbc17ba1677ff8dfa6baed89"
+      "bytes": 11641,
+      "sha256": "4c6ffc99b3e0e71d069faf0bc1539f5d3c83818ee25db1fc40b891daf7b723f7"
     },
     {
       "path": "evidence/workbuddy-mkdir/model-judge-2026-11-04/cases.json",
@@ -9006,6 +9006,16 @@
       "path": "evidence/controlled-startup-macos-2026-11-13/macos-dsh-verification-v2.zip",
       "bytes": 238721,
       "sha256": "821d62b362452df4b814eefe431b8bf384e533abbd6f18a2a949dcc3681a46c0"
+    },
+    {
+      "path": "docs/阶段进展/Issue-3历史评分与依赖核验-2026-11-20.md",
+      "bytes": 4811,
+      "sha256": "281b58a2fe0867cab313b78d24e08c0f9c8834ea229f3aed8510f33921f2583b"
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/model-judge-2026-11-04/model-judge-verification.zip",
+      "bytes": 73227,
+      "sha256": "6787dbbca673f18233814580316f35226c71f785c53879398a260cd048fc5e92"
     }
   ]
 }

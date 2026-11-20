@@ -20,6 +20,7 @@ Harness是负责组织模型调用、工具执行、结果回传和任务状态�
 
 | 内容 | 入口 | 可以查看什么 |
 |---|---|---|
+| 历史评分与试测依赖 | [Issue #3 第 3 条](./docs/阶段进展/Issue-3历史评分与依赖核验-2026-11-20.md) | 20 项历史模型评分可离线复算，四项缺依赖检查逐项封存 |
 | 桌面端受控启动（P0） | [方案与 Windows 验收](docs/阶段进展/桌面端Agent受控启动方案与验收-2026-11-17.md) | DSH 正常放行与评分资料可读拦截已实测，双请求并发实机待验 |
 | Windows 单题自动运行 | [运行工具](tools/windows-single-task/README.md) · [实机证据](evidence/windows-single-task-2026-11-19/README.md) | 「复制一行」正式通过、隔离拦截、恢复补核验和 v3 桌面预检 |
 | macOS DSH 受控启动核验 | [11 月 13 日脱敏核验包](evidence/controlled-startup-macos-2026-11-13/README.md) | 七个模拟场景离线复算与一次真实诊断，保留命令工具阻塞和证据缺口 |
