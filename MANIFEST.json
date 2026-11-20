@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "scope": "本公开包实际文件指纹，排除本清单自身。",
   "files": [
     {
@@ -24,8 +24,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 19179,
-      "sha256": "1c319e08658de0b3bf44accf1d124f1690d25f36c5ac39fade4044f331e255d0"
+      "bytes": 19397,
+      "sha256": "9449a3a2af6d9132e9f963fc68f0ecb32bf7de65d6eb54df0abe030f16fd9f27"
     },
     {
       "path": "cases/ART01/README.md",
@@ -8529,8 +8529,8 @@
     },
     {
       "path": "docs/周报/第5周周报.md",
-      "bytes": 10961,
-      "sha256": "2a1f56c0a31e6ee43b27a1952f6d74bf4d0f17e182868cc50b46511ca89c0c91"
+      "bytes": 11205,
+      "sha256": "69cf0626fe45ba4dc62ad2bc09e9f87ba1d87fbcaf57be79bc6b6b687bfef1e1"
     },
     {
       "path": "docs/阶段进展/桌面端Agent受控启动方案与验收-2026-11-17.md",
@@ -8556,6 +8556,16 @@
       "path": "evidence/workbuddy-mkdir/model-judge-2026-11-04/cases.json",
       "bytes": 50040,
       "sha256": "1f9e56ff5cdfcf779de335cbc8ffcee64ef357b3e91ee0e562819c87b0493d20"
+    },
+    {
+      "path": "evidence/controlled-startup-macos-2026-11-13/README.md",
+      "bytes": 1873,
+      "sha256": "fec138a84618af5d7a58446ac4a511655bdf4c75883fef44243e6fa3228ec9ed"
+    },
+    {
+      "path": "evidence/controlled-startup-macos-2026-11-13/macos-dsh-verification-v2.zip",
+      "bytes": 238721,
+      "sha256": "821d62b362452df4b814eefe431b8bf384e533abbd6f18a2a949dcc3681a46c0"
     }
   ]
 }
