@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "scope": "本公开包实际文件指纹，排除本清单自身。",
   "files": [
     {
@@ -14,8 +14,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 15060,
-      "sha256": "bf82ea59be38bea5f0a4491fedf5fc2eadc7c5bed68a2df7308b5f66de05a18c"
+      "bytes": 15303,
+      "sha256": "e06639a2bc47c3f5a25adc813a716ddb309b9f9a98c0f202f11a1cb5f08feb4c"
     },
     {
       "path": "PROVENANCE.json",
@@ -24,8 +24,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 20116,
-      "sha256": "d2757816f95928ad9def6453b3bebd674439b3c3db27760ba8f54dfc66920765"
+      "bytes": 20203,
+      "sha256": "cc6ca9105eb163747602f967a6e51f5769525a533593c4270fa5ce53a6a5d42a"
     },
     {
       "path": "cases/ART01/README.md",
@@ -9211,6 +9211,16 @@
       "path": "tools/windows-workbench/示例题库/C/task.json",
       "bytes": 362,
       "sha256": "b7672295387e26d35ed4f0a0d98606bfb78dcac551d0e5f85a728deb97ab8e07"
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-11-22/README.md",
+      "bytes": 2219,
+      "sha256": "9c47896be61990b1311d061318520c7a6b5770383bc4433185821a4fc91bb87a"
+    },
+    {
+      "path": "evidence/workbuddy-mkdir/2026-11-22/review-draft.md",
+      "bytes": 2388,
+      "sha256": "aaed6b7d264ceacaa4a885f839bd168c0c85540926c935966b5a12b7842f49f3"
     }
   ]
 }
