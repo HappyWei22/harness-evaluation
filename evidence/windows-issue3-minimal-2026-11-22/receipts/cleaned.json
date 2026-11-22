@@ -1,0 +1,21 @@
+{
+  "attempt_id": "TASK-wb-6755c71271cc4d458f516ffb-ffdabbc3",
+  "at": "2026-11-22T07:53:10.196370+00:00",
+  "event": "cleaned",
+  "detail": {
+    "verdict": "pass",
+    "boot_event": {
+      "RecordId": 1344,
+      "CreatedUtc": "2026-11-22T07:52:54.6709083Z"
+    },
+    "residue": {
+      "RunWorkspaceExists": false,
+      "WorkingRootExists": false,
+      "DeliveryTaskRemains": 0,
+      "RunLauncherExists": false,
+      "RunSessionExists": false,
+      "PreflightTaskRemains": 0
+    },
+    "guest_task_remains": 0
+  }
+}

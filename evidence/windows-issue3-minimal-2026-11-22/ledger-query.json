@@ -1,0 +1,15 @@
+{
+  "attempt_id": "TASK-wb-6755c71271cc4d458f516ffb-ffdabbc3",
+  "kind": "formal",
+  "registered_at": "2026-11-22T07:52:08.158112+00:00",
+  "closed_at": "2026-11-22T07:53:10.219174+00:00",
+  "consumed_at": 1795333928.166932,
+  "submission_started_at": 1795333928.166932,
+  "request_submission_count": 1,
+  "receipt_original_sha256": {
+    "accepted": "3dc255cd019b3043ae7a0d1a74ce1551c60fd001b3136046950095280e3ba9b3",
+    "terminated": "a93b7a7dba3040dd074215ce789f2bcc738ab9e9237cfb13ea78bacc03285c93",
+    "archived": "97e8cfe37a57e70a67fb886ccd26c5a3fe424fd7af3bd922f3a2fab3231115b0",
+    "cleaned": "2647c24ff91e3325e7861a93bea14b79fa985f735915d5fb03f089bf21a9a5e9"
+  }
+}

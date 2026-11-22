@@ -1,0 +1,20 @@
+{
+  "attempt_id": "TASK-wb-6755c71271cc4d458f516ffb-ffdabbc3",
+  "at": "2026-11-22T07:53:10.193088+00:00",
+  "event": "accepted",
+  "detail": {
+    "user_message_sequence": 8,
+    "trace_sha256": "4df6829cb62636c8b21b709a3b984313284eaca0368de2c1627dadc112e0e603",
+    "invoke_started_at": "2026-11-22T15:52:32.2303090+08:00",
+    "invoke_returned_at": "2026-11-22T15:52:32.2556787+08:00",
+    "prompt_readback_sha256": "25438320df4cf6ac41981f40195b9fffe0d8ac0d7f66e4f860f4ba4ba0917bf4",
+    "native_acceptance": {
+      "WorkspaceMatches": true,
+      "FreshSession": true,
+      "OperatorSubmissions": 1,
+      "ExactPromptMatches": 1,
+      "UnknownUserSources": 0,
+      "AcceptanceVerified": true
+    }
+  }
+}

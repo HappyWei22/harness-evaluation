@@ -1,0 +1,118 @@
+{
+  "ProbeId": "PRE-8e11f2aaa51242f3",
+  "RequestId": "wb-6755c71271cc4d458f516ffb",
+  "Activity": "interface_preflight",
+  "CaseVersion": "Windows grading-file isolation v2",
+  "ProductVersion": "not applicable",
+  "Model": "not applicable",
+  "Skills": "not applicable",
+  "Tools": "PowerShell Direct, Windows Task Scheduler, Windows file open and SMB diagnostics",
+  "Permissions": "elevated host process and the DSH interactive Windows account",
+  "StartedAt": "2026-11-22T15:50:56.6739190+08:00",
+  "FinishedAt": "2026-11-22T15:51:38.3369341+08:00",
+  "EvidenceLevel": "E2",
+  "Verdict": "pass",
+  "ContextSha256": "0150b31f10ec3bd96af659a8cee888d7696161b6734774b59615b2adf87c485b",
+  "DesktopSessions": [
+    1
+  ],
+  "DshSubmissions": 0,
+  "Context": {
+    "BootEvent": {
+      "RecordId": 1344,
+      "CreatedUtc": "2026-11-22T07:50:41.6763737Z"
+    },
+    "Rule": "Harness-Eval-G01-DefaultSwitch-SMB-Block",
+    "Interface": "vEthernet (Default Switch)",
+    "SmbMappings": 0,
+    "SmbConnections": 0,
+    "NetworkDisks": 0,
+    "HostIPv4": "PUBLIC_HOST",
+    "HostAddresses": [
+      "PUBLIC_HOST_2",
+      "PUBLIC_HOST_3",
+      "PUBLIC_HOST",
+      "PUBLIC_HOST_4"
+    ],
+    "SmbEndpoints": [
+      {
+        "Address": "PUBLIC_HOST_2",
+        "Port": 139,
+        "Reachable": false
+      },
+      {
+        "Address": "PUBLIC_HOST_2",
+        "Port": 445,
+        "Reachable": false
+      },
+      {
+        "Address": "PUBLIC_HOST_3",
+        "Port": 139,
+        "Reachable": false
+      },
+      {
+        "Address": "PUBLIC_HOST_3",
+        "Port": 445,
+        "Reachable": false
+      },
+      {
+        "Address": "PUBLIC_HOST",
+        "Port": 139,
+        "Reachable": false
+      },
+      {
+        "Address": "PUBLIC_HOST",
+        "Port": 445,
+        "Reachable": false
+      },
+      {
+        "Address": "PUBLIC_HOST_4",
+        "Port": 139,
+        "Reachable": false
+      },
+      {
+        "Address": "PUBLIC_HOST_4",
+        "Port": 445,
+        "Reachable": false
+      }
+    ],
+    "ProtectedFiles": [
+      {
+        "Role": "task_manifest",
+        "Sha256": "70acaecdccc2e7173f727735753e6220fcd9f21193edd508269e6e5e5e99d87c",
+        "UNC": "\\\\PUBLIC_HOST\\E$\\PUBLIC_TASK\\task.json"
+      },
+      {
+        "Role": "frozen_request",
+        "Sha256": "94ab433bd3731a8544a9d70eca3d929f76ad7cd5558219434b80fd5d61e4b309",
+        "UNC": "\\\\PUBLIC_HOST\\E$\\PUBLIC_CONTROL\\request.json"
+      }
+    ]
+  },
+  "Guest": {
+    "ProbeId": "PRE-8e11f2aaa51242f3",
+    "BootEvent": {
+      "RecordId": 1344,
+      "CreatedUtc": "2026-11-22T07:50:41.6763737Z"
+    },
+    "SessionId": 1,
+    "SessionProtocol": 0,
+    "SmbMappings": 0,
+    "SmbConnections": 0,
+    "NetworkDisks": 0,
+    "ReadChecks": [
+      {
+        "Path": "\\\\PUBLIC_HOST\\E$\\PUBLIC_TASK\\task.json",
+        "CanOpen": false,
+        "HResult": "80070040",
+        "Error": "指定的网络名不再可用。\r\n"
+      },
+      {
+        "Path": "\\\\PUBLIC_HOST\\E$\\PUBLIC_CONTROL\\request.json",
+        "CanOpen": false,
+        "HResult": "80070035",
+        "Error": "找不到网络路径。\r\n"
+      }
+    ]
+  }
+}

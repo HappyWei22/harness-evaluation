@@ -1,0 +1,17 @@
+{
+  "Verdict": "pass",
+  "CheckpointName": "DSH-Win11-Base-v3",
+  "StartedAt": "2026-11-22T15:50:38.3810252+08:00",
+  "FinishedAt": "2026-11-22T15:50:56.2567711+08:00",
+  "RestoreAppliedAt": "2026-11-22T15:50:38.6536122+08:00",
+  "StartReturnedAt": "2026-11-22T15:50:43.4076532+08:00",
+  "Guest": {
+    "ProfileMatches": true,
+    "BootTime": "2026-11-22T07:50:44.9330370Z",
+    "BootEvent": {
+      "RecordId": 1344,
+      "CreatedUtc": "2026-11-22T07:50:41.6763737Z"
+    },
+    "RunResidue": null
+  }
+}

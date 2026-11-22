@@ -1,11 +1,11 @@
 {
-  "date": "2026-11-20",
+  "date": "2026-11-22",
   "scope": "本公开包实际文件指纹，排除本清单自身。",
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 437,
-      "sha256": "ee0c40aa25e92e4191ffce700bc6bd13e4d51378c439e54c4ab26d0131c71019"
+      "bytes": 547,
+      "sha256": "e36e63c8e111b3f9fbaae4308d96951d16a1e6d11ad8ebc2bf806ae1b434e402"
     },
     {
       "path": ".gitignore",
@@ -24,8 +24,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 19839,
-      "sha256": "4453af0e49af1679e5ea2604745d7a045f3633b14bbf6c589074fb6d744882d9"
+      "bytes": 19950,
+      "sha256": "1d5dab7150c454577effd9c0213d6ff831c0dd00f92c9b855a57a6b3cfee3f61"
     },
     {
       "path": "cases/ART01/README.md",
@@ -8814,8 +8814,8 @@
     },
     {
       "path": "tools/windows-single-task/README.md",
-      "bytes": 2617,
-      "sha256": "29588e50f0480ffbea72b63cda2dd2de4f07d2a0380c09f67880e8e7c0187ecf"
+      "bytes": 2764,
+      "sha256": "06a64263c5f448cc69ecda766323e63054d3a228f69864ddb291aafee338f2f2"
     },
     {
       "path": "tools/windows-single-task/attempt_completion.py",
@@ -9016,6 +9016,81 @@
       "path": "evidence/workbuddy-mkdir/model-judge-2026-11-04/model-judge-verification.zip",
       "bytes": 73227,
       "sha256": "6787dbbca673f18233814580316f35226c71f785c53879398a260cd048fc5e92"
+    },
+    {
+      "path": "evidence/windows-issue3-minimal-2026-11-22/README.md",
+      "bytes": 4934,
+      "sha256": "6192239285fe4af2957aa81e170ba61dee6bfbed94f2a3fe512dcae0ad9e92d4"
+    },
+    {
+      "path": "evidence/windows-issue3-minimal-2026-11-22/input/counts.txt",
+      "bytes": 7,
+      "sha256": "48bb31ef2e4ff5365712f391c7c4dd5939923b9497093ef55f0fe1d6a8425bb9"
+    },
+    {
+      "path": "evidence/windows-issue3-minimal-2026-11-22/isolation-preflight.json",
+      "bytes": 3136,
+      "sha256": "4434b5330700cec5c3a55ce103ae1a7b37323663bee68da6ccf25574e2d26af1"
+    },
+    {
+      "path": "evidence/windows-issue3-minimal-2026-11-22/ledger-query.json",
+      "bytes": 677,
+      "sha256": "9279a3b79d960a12e00abed93852796437953e5ad06ab3af7759307963bbdf05"
+    },
+    {
+      "path": "evidence/windows-issue3-minimal-2026-11-22/native-events.jsonl",
+      "bytes": 3811,
+      "sha256": "71d831af99c785845774d054d1b9c66dc72c703996725847045b93d8dc7aa999"
+    },
+    {
+      "path": "evidence/windows-issue3-minimal-2026-11-22/output/result.txt",
+      "bytes": 16,
+      "sha256": "571cdc02088beca5e1ed55f01014a90990ecdd2034291b3475736a3589a1ba63"
+    },
+    {
+      "path": "evidence/windows-issue3-minimal-2026-11-22/prompt.txt",
+      "bytes": 706,
+      "sha256": "4193a6219641e10a06f91d7357f60f0c20751698b5079da125360bfbf933ae25"
+    },
+    {
+      "path": "evidence/windows-issue3-minimal-2026-11-22/receipts/accepted.json",
+      "bytes": 713,
+      "sha256": "3c1ac735a5a736f6f2df6a21397f3249c34b89d7cddb2c6e16407262f7878414"
+    },
+    {
+      "path": "evidence/windows-issue3-minimal-2026-11-22/receipts/archived.json",
+      "bytes": 710,
+      "sha256": "865b8d771cbb9e038430b866b9715035236700966628c62c2384a48783bdc2c6"
+    },
+    {
+      "path": "evidence/windows-issue3-minimal-2026-11-22/receipts/cleaned.json",
+      "bytes": 526,
+      "sha256": "480a4cafbb21566f3d8868412b1b3b14c179d19107a8e44cec47eeab54e72c4a"
+    },
+    {
+      "path": "evidence/windows-issue3-minimal-2026-11-22/receipts/terminated.json",
+      "bytes": 525,
+      "sha256": "87be8818214ed09e6ca5b12112ce56c2b7e94efdb3c3d660d4c05e4478d89145"
+    },
+    {
+      "path": "evidence/windows-issue3-minimal-2026-11-22/restore-final.json",
+      "bytes": 761,
+      "sha256": "f64530bc27b5084950ba0109604928b1afa085e10de6d3c4ec25dbc5f3814d5f"
+    },
+    {
+      "path": "evidence/windows-issue3-minimal-2026-11-22/restore-first.json",
+      "bytes": 505,
+      "sha256": "9e179cbd3754953d9921492199b889c5a7c1c1e6cd3eefafc1f0bb08c68a1198"
+    },
+    {
+      "path": "evidence/windows-issue3-minimal-2026-11-22/send-authorization.json",
+      "bytes": 706,
+      "sha256": "84303f22b7e234a8b7bc40992b0e3675a3a90bbe0180024ce9d855677bad95e5"
+    },
+    {
+      "path": "evidence/windows-issue3-minimal-2026-11-22/source-index.json",
+      "bytes": 5148,
+      "sha256": "8144c848fe0a2cc6f626d39f84adad88b373d8fc4a1290d01f18d65674a00652"
     }
   ]
 }
