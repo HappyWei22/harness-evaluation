@@ -4,15 +4,25 @@
 
 ## 2026-11-23
 
+- 发布[第 6 周周报](docs/周报/第6周周报.md)，记录从虚拟机选型到 Windows 单题运行器和评测队列的实现，补记最小真实任务与 WorkBuddy 独立盲审。
+- 调整[仓库首页](README.md)，把 Windows DSH 工作台、真实任务验收及 WorkBuddy 复核提到前面，按用途整理历史结果、评测方法和材料核验入口。
 - 发布 [WorkBuddy 目录创建异常的独立盲审](evidence/workbuddy-mkdir/2026-11-22/README.md)，保留 11 月 22 日收回的初判及收稿后的证据核对。覆盖原对照三次调用，新增产品运行 0 次。
+
+## 2026-11-22
+
+- 合入 [Windows DSH 评测工作台](tools/windows-workbench/README.md)，提供题库预览、批量排序入队、关账后串行接续和场次证据查看。队列交互附模拟自测入口及截图。 [PR #6](https://github.com/HappyWei22/harness-evaluation/pull/6)
+- 发布 [Windows DSH 最小真实任务验收](evidence/windows-issue3-minimal-2026-11-22/README.md)。工作台一次投递「库存汇总与外部评分文件拒读」，原生文件与命令工具可用，指定评分侧共享文件读取受阻，产物回收、基线恢复和关账通过。 [PR #5](https://github.com/HappyWei22/harness-evaluation/pull/5)
 
 ## 2026-11-20
 
 - 补充 [Issue #3 第 3 条核验](docs/阶段进展/Issue-3历史评分与依赖核验-2026-11-20.md)。发布 20 项目录创建历史评分的完整脱敏 ZIP，登记四项首轮办公试测自测的封存结果及重开条件。
+- 合入 Windows 单题运行器和 11 月 19 日的脱敏实机记录，保留恢复核验初次报错及补关账的证据。 [PR #4](https://github.com/HappyWei22/harness-evaluation/pull/4)
+- 发布 [macOS DSH 受控启动脱敏核验包](evidence/controlled-startup-macos-2026-11-13/README.md)。七个模拟场景可离线核对，真实诊断保留文件工具可用、指定探针被拒读和 Bash 执行受阻的部分通过裁定。
 
 ## 2026-11-19
 
 - 收录 [Windows 单题自动运行工具](tools/windows-single-task/README.md)和[「复制一行」实机证据](evidence/windows-single-task-2026-11-19/README.md)。包含一次 v2 正式通过及补关账、受阻和诊断记录、v3 桌面预检。公开副本附文件指纹和离线核对入口。
+- 发布 [WorkBuddy 目录创建模型评分脱敏材料](evidence/workbuddy-mkdir/model-judge-2026-11-04/README.md)首版，公开 4 项真实观察、16 项合成样例和 3 项分歧，并为第 4 周周报补充材料入口。
 
 ## 2026-11-17
 
@@ -42,6 +52,10 @@
 
 - 按[导师评语](https://github.com/HappyWei22/harness-evaluation/issues/1)补充四组[本地边界样例](evidence/workbuddy-mkdir/2026-11-05/README.md)。已有目录与普通文件均产生 EEXIST，开启候选处理后只有已有目录正常返回。缺失目录仍能创建，本地权限拒绝仍保留错误。
 - 单列原本地对照的脱敏输出与公开代理替身的核验输出。新增产品运行数为 0。
+
+## 2026-10-31
+
+- 发布[第 3 周周报](docs/周报/第3周周报.md)，汇总五款产品可观测性试测、WorkBuddy 目录创建异常对照、九项解析校准和历史运行记录审阅。
 
 ## 2026-10-30
 

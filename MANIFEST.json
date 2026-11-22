@@ -14,8 +14,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 15303,
-      "sha256": "e06639a2bc47c3f5a25adc813a716ddb309b9f9a98c0f202f11a1cb5f08feb4c"
+      "bytes": 17201,
+      "sha256": "c8b5dab9920d178a91788701f5b66e9d2060ae1da7427686e7a2ea34a2ed4dd1"
     },
     {
       "path": "PROVENANCE.json",
@@ -24,8 +24,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 20203,
-      "sha256": "cc6ca9105eb163747602f967a6e51f5769525a533593c4270fa5ce53a6a5d42a"
+      "bytes": 6214,
+      "sha256": "17345f8671d8fffc8325e0f2b4606e76056bba26b66020988da1f156c17c646f"
     },
     {
       "path": "cases/ART01/README.md",
@@ -8531,6 +8531,11 @@
       "path": "docs/周报/第5周周报.md",
       "bytes": 11519,
       "sha256": "49983924a5617b7dace881235e53fa8832b4f38ede4ba04ab9a23f0a5fbee270"
+    },
+    {
+      "path": "docs/周报/第6周周报.md",
+      "bytes": 12448,
+      "sha256": "1a8c8bc892e726d6c6cdf69e1b7303d163cc00eedd386193e3f8aa3ddf022959"
     },
     {
       "path": "docs/阶段进展/桌面端Agent受控启动方案与验收-2026-11-17.md",
