@@ -1,0 +1,26 @@
+{
+  "Verdict": "pass",
+  "CheckpointName": "DSH-Win11-Base-v3",
+  "StartedAt": "2026-11-22T15:52:54.4965612+08:00",
+  "FinishedAt": "2026-11-22T15:53:09.2702189+08:00",
+  "RestoreAppliedAt": "2026-11-22T15:52:54.7043193+08:00",
+  "StartReturnedAt": "2026-11-22T15:52:55.7846814+08:00",
+  "Guest": {
+    "ProfileMatches": true,
+    "BootTime": "2026-11-22T07:52:57.3290790Z",
+    "BootEvent": {
+      "RecordId": 1344,
+      "CreatedUtc": "2026-11-22T07:52:54.6709083Z"
+    },
+    "RunResidue": {
+      "RunWorkspaceExists": false,
+      "WorkingRootExists": false,
+      "DeliveryTaskRemains": 0,
+      "RunLauncherExists": false,
+      "RunSessionExists": false,
+      "PreflightTaskRemains": 0
+    },
+    "DshProcessCount": 0,
+    "HarnessTaskCount": 0
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "request_id": "wb-6755c71271cc4d458f516ffb",
+  "attempt_id": "TASK-wb-6755c71271cc4d458f516ffb-ffdabbc3",
+  "prompt_sha256": "25438320df4cf6ac41981f40195b9fffe0d8ac0d7f66e4f860f4ba4ba0917bf4",
+  "boot_event": {
+    "RecordId": 1344,
+    "CreatedUtc": "2026-11-22T07:50:41.6763737Z"
+  },
+  "inputs": [
+    {
+      "path": "input/counts.txt",
+      "sha256": "48bb31ef2e4ff5365712f391c7c4dd5939923b9497093ef55f0fe1d6a8425bb9",
+      "size": 7
+    }
+  ],
+  "isolation_context_sha256": "0150b31f10ec3bd96af659a8cee888d7696161b6734774b59615b2adf87c485b",
+  "isolation_proof_sha256": "5a9ce23a713db5a4e6169554b65829f240dcf0e139a89d586085e4b24060f20f",
+  "authorized_at": "2026-11-22T07:52:08.170609+00:00"
+}

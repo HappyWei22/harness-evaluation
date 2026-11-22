@@ -1,0 +1,20 @@
+{
+  "attempt_id": "TASK-wb-6755c71271cc4d458f516ffb-ffdabbc3",
+  "at": "2026-11-22T07:53:10.196370+00:00",
+  "event": "archived",
+  "detail": {
+    "verdict": "pass",
+    "native_trace_sha256": "4df6829cb62636c8b21b709a3b984313284eaca0368de2c1627dadc112e0e603",
+    "isolation_context_sha256": "0150b31f10ec3bd96af659a8cee888d7696161b6734774b59615b2adf87c485b",
+    "isolation_proof_sha256": "5a9ce23a713db5a4e6169554b65829f240dcf0e139a89d586085e4b24060f20f",
+    "files": [
+      {
+        "path": "output/result.txt",
+        "status": "present",
+        "exists": true,
+        "sha256": "571cdc02088beca5e1ed55f01014a90990ecdd2034291b3475736a3589a1ba63",
+        "matches_expect": true
+      }
+    ]
+  }
+}

@@ -22,7 +22,7 @@ Harness是负责组织模型调用、工具执行、结果回传和任务状态�
 |---|---|---|
 | 历史评分与试测依赖 | [Issue #3 第 3 条](./docs/阶段进展/Issue-3历史评分与依赖核验-2026-11-20.md) | 20 项历史模型评分可离线复算，四项缺依赖检查逐项封存 |
 | 桌面端受控启动（P0） | [方案与 Windows 验收](docs/阶段进展/桌面端Agent受控启动方案与验收-2026-11-17.md) | DSH 正常放行与评分资料可读拦截已实测，双请求并发实机待验 |
-| Windows 单题自动运行 | [运行工具](tools/windows-single-task/README.md) · [实机证据](evidence/windows-single-task-2026-11-19/README.md) | 「复制一行」正式通过、隔离拦截、恢复补核验和 v3 桌面预检 |
+| Windows 单题自动运行 | [运行工具](tools/windows-single-task/README.md) · [最小真实任务验收](evidence/windows-issue3-minimal-2026-11-22/README.md) · [11 月 19 日实机证据](evidence/windows-single-task-2026-11-19/README.md) | v3 工作台实跑通过，覆盖原生文件、命令、外部评分材料拒读和恢复关账 |
 | macOS DSH 受控启动核验 | [11 月 13 日脱敏核验包](evidence/controlled-startup-macos-2026-11-13/README.md) | 七个模拟场景离线复算与一次真实诊断，保留命令工具阻塞和证据缺口 |
 | 最新阶段进度 | [10月30日审阅与统一记录](docs/阶段进展/2026-10-30.md)、[10月28日原因验证](docs/阶段进展/2026-10-28.md) | 六类已有成果、当前缺口及可复核入口 |
 | 统一运行记录 | [总索引](results/unified-runs-2026-10-30/总索引.md)、[十项模板](docs/评测方法/单次运行记录十项模板.md) | 22个题目目录：20题有历史记录、2题仅未执行；114条＝109条新整理＋5条复用，另有6项准备未执行登记 |

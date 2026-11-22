@@ -1,0 +1,93 @@
+[
+  {
+    "published": "isolation-preflight.json",
+    "source": "Control/requests/wb-6755c71271cc4d458f516ffb/stage/isolation-preflight.json",
+    "source_sha256": "5a9ce23a713db5a4e6169554b65829f240dcf0e139a89d586085e4b24060f20f",
+    "published_sha256": "4434b5330700cec5c3a55ce103ae1a7b37323663bee68da6ccf25574e2d26af1",
+    "transformation": "selected fields and environment redaction"
+  },
+  {
+    "published": "send-authorization.json",
+    "source": "Control/requests/wb-6755c71271cc4d458f516ffb/stage/go.json",
+    "source_sha256": "9b76de936b88bfb2ae9ed83713bcb9dd2e0ab23c8b40aabcc978388d01180e98",
+    "published_sha256": "84303f22b7e234a8b7bc40992b0e3675a3a90bbe0180024ce9d855677bad95e5",
+    "transformation": "selected fields and environment redaction"
+  },
+  {
+    "published": "prompt.txt",
+    "source": "Control/requests/wb-6755c71271cc4d458f516ffb/stage/prompt.txt",
+    "source_sha256": "25438320df4cf6ac41981f40195b9fffe0d8ac0d7f66e4f860f4ba4ba0917bf4",
+    "published_sha256": "4193a6219641e10a06f91d7357f60f0c20751698b5079da125360bfbf933ae25",
+    "transformation": "protected share path replaced consistently"
+  },
+  {
+    "published": "input/counts.txt",
+    "source": "Control/requests/wb-6755c71271cc4d458f516ffb/stage/inputs/input/counts.txt",
+    "source_sha256": "48bb31ef2e4ff5365712f391c7c4dd5939923b9497093ef55f0fe1d6a8425bb9",
+    "published_sha256": "48bb31ef2e4ff5365712f391c7c4dd5939923b9497093ef55f0fe1d6a8425bb9",
+    "transformation": "unchanged bytes"
+  },
+  {
+    "published": "output/result.txt",
+    "source": "Control/requests/wb-6755c71271cc4d458f516ffb/stage/results/output/result.txt",
+    "source_sha256": "571cdc02088beca5e1ed55f01014a90990ecdd2034291b3475736a3589a1ba63",
+    "published_sha256": "571cdc02088beca5e1ed55f01014a90990ecdd2034291b3475736a3589a1ba63",
+    "transformation": "unchanged bytes"
+  },
+  {
+    "published": "native-events.jsonl",
+    "source": "Control/requests/wb-6755c71271cc4d458f516ffb/stage/session.v4.jsonl.zstd",
+    "source_sha256": "4df6829cb62636c8b21b709a3b984313284eaca0368de2c1627dadc112e0e603",
+    "published_sha256": "71d831af99c785845774d054d1b9c66dc72c703996725847045b93d8dc7aa999",
+    "transformation": "selected native events and fields, original line numbers and sequences, stable redaction of environment and call identifiers"
+  },
+  {
+    "published": "restore-first.json",
+    "source": "Control/requests/wb-6755c71271cc4d458f516ffb/stage/restore/first.json",
+    "source_sha256": "bae0e690b47fb57597d1d8f3a8746a0ab9e552861a7137c9f7709b039cd32bb3",
+    "published_sha256": "9e179cbd3754953d9921492199b889c5a7c1c1e6cd3eefafc1f0bb08c68a1198",
+    "transformation": "selected fields and environment redaction"
+  },
+  {
+    "published": "restore-final.json",
+    "source": "Control/requests/wb-6755c71271cc4d458f516ffb/stage/restore/final.json",
+    "source_sha256": "0e73fd997aa6794c1107895f2f4548acbffe844661f1cfd04558be356f2c56a2",
+    "published_sha256": "f64530bc27b5084950ba0109604928b1afa085e10de6d3c4ec25dbc5f3814d5f",
+    "transformation": "selected fields and environment redaction"
+  },
+  {
+    "published": "receipts/accepted.json",
+    "source": "Control/requests/wb-6755c71271cc4d458f516ffb/receipts/TASK-wb-6755c71271cc4d458f516ffb-ffdabbc3/accepted.json",
+    "source_sha256": "3dc255cd019b3043ae7a0d1a74ce1551c60fd001b3136046950095280e3ba9b3",
+    "published_sha256": "3c1ac735a5a736f6f2df6a21397f3249c34b89d7cddb2c6e16407262f7878414",
+    "transformation": "selected fields and environment redaction"
+  },
+  {
+    "published": "receipts/terminated.json",
+    "source": "Control/requests/wb-6755c71271cc4d458f516ffb/receipts/TASK-wb-6755c71271cc4d458f516ffb-ffdabbc3/terminated.json",
+    "source_sha256": "a93b7a7dba3040dd074215ce789f2bcc738ab9e9237cfb13ea78bacc03285c93",
+    "published_sha256": "87be8818214ed09e6ca5b12112ce56c2b7e94efdb3c3d660d4c05e4478d89145",
+    "transformation": "selected fields and environment redaction"
+  },
+  {
+    "published": "receipts/archived.json",
+    "source": "Control/requests/wb-6755c71271cc4d458f516ffb/receipts/TASK-wb-6755c71271cc4d458f516ffb-ffdabbc3/archived.json",
+    "source_sha256": "97e8cfe37a57e70a67fb886ccd26c5a3fe424fd7af3bd922f3a2fab3231115b0",
+    "published_sha256": "865b8d771cbb9e038430b866b9715035236700966628c62c2384a48783bdc2c6",
+    "transformation": "selected fields and environment redaction"
+  },
+  {
+    "published": "receipts/cleaned.json",
+    "source": "Control/requests/wb-6755c71271cc4d458f516ffb/receipts/TASK-wb-6755c71271cc4d458f516ffb-ffdabbc3/cleaned.json",
+    "source_sha256": "2647c24ff91e3325e7861a93bea14b79fa985f735915d5fb03f089bf21a9a5e9",
+    "published_sha256": "480a4cafbb21566f3d8868412b1b3b14c179d19107a8e44cec47eeab54e72c4a",
+    "transformation": "selected fields and environment redaction"
+  },
+  {
+    "published": "ledger-query.json",
+    "source": "Control/attempts.sqlite3",
+    "source_sha256": "ea2fa667738bc2c0042289852ea294a56e56ab0256544512f27ffa242bce5792",
+    "published_sha256": "9279a3b79d960a12e00abed93852796437953e5ad06ab3af7759307963bbdf05",
+    "transformation": "read-only SQLite query scoped to this product attempt"
+  }
+]

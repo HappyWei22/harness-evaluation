@@ -1,0 +1,22 @@
+{
+  "attempt_id": "TASK-wb-6755c71271cc4d458f516ffb-ffdabbc3",
+  "at": "2026-11-22T07:53:10.196370+00:00",
+  "event": "terminated",
+  "detail": {
+    "basis": "native_turn_end",
+    "turn": 1,
+    "native_turn_end": {
+      "type": "turn/end",
+      "seq": 44,
+      "time": 1795333957882,
+      "data": {
+        "turn": 1,
+        "reason": {
+          "kind": "completed"
+        }
+      }
+    },
+    "turn_status": "completed",
+    "trace_sha256": "4df6829cb62636c8b21b709a3b984313284eaca0368de2c1627dadc112e0e603"
+  }
+}
