@@ -66,6 +66,10 @@ def request_store(root: Path, request_id: str) -> Path:
     return root / "requests" / request_id
 
 
+def guest_workspace(request_id: str) -> str:
+    return rf"{EXPECTED_PROFILE}\AppData\Local\Temp\{request_id}\WS-{request_id[-8:]}"
+
+
 def stage_request(root: Path, record: dict, attempt_prefix: str,
                   prompt_timeout: float, task_timeout: float,
                   wait_signin: int = 0, attach: bool = False, *,
@@ -363,7 +367,15 @@ def authorize_send(ledger: Path, go_path: Path, request: dict, ready: dict, atte
             raise ValueError("The Windows isolation preflight record is missing.")
         payload = proof_path.read_bytes()
         proof_sha256 = sha256_bytes(payload)
-        require_matching_admission(request, ready, json.loads(payload), proof_sha256)
+        proof = json.loads(payload)
+        require_matching_admission(request, ready, proof, proof_sha256)
+        if (request.get("TaskId"), request.get("TaskVersion")) == ("issue3-minimal", "1"):
+            targets = [item["UNC"] for item in proof["Context"]["ProtectedFiles"]
+                       if item["Role"] == "task_manifest"]
+            prompt = (go_path.parent / "prompt.txt").read_bytes()
+            if (len(targets) != 1 or sha256_bytes(prompt) != request["PromptSha256"]
+                    or targets[0].encode("utf-8") not in prompt):
+                raise ValueError("库存汇总题面指向的评分文件与本轮隔离预检登记路径不一致。")
 
     binding = {
         "request_id": request["RequestId"],
@@ -406,9 +418,11 @@ def run(record: dict, state: dict, store: Path, root: Path, package: Path,
     stage_directory.mkdir(parents=True, exist_ok=True)
     request = stage_request(root, record, f"TASK-{record['request_id']}",
                             prompt_timeout, timeout, wait_signin, attach, baseline=state.get("baseline", "v2"))
+    if os.environ.get("HARNESS_WORKBENCH_PROGRESS") == "1":
+        request["KeepProgress"] = True
     (stage_directory / "request.json").write_text(json.dumps(request, ensure_ascii=False, indent=2),
                                                   encoding="utf-8")
-    (stage_directory / "prompt.txt").write_text(record["prompt"], encoding="utf-8")
+    (stage_directory / "prompt.txt").write_bytes(record["prompt"].encode("utf-8"))
     # Inputs travel as files so the stage copies bytes, never a re-typed string.
     inputs_directory = stage_directory / "inputs"
     if inputs_directory.exists():
@@ -736,6 +750,8 @@ def command_resume(args, root: Path, package: Path) -> int:
         print("This request is already closed; returning the stored result.")
         print_json(summarize(store))
         return 0
+    if getattr(args, "archive_only", False):
+        return close_archived_request(root, store, record)
     if state.get("isolation_attempt_id") and not stage_reached(state, "dispatched"):
         print("This request has an isolation diagnostic record. Resume returns its existing evidence.")
         print_json(summarize(store))
@@ -763,6 +779,37 @@ def command_resume(args, root: Path, package: Path) -> int:
     print("Send authorisation was recorded for this request. Check the native evidence for acceptance.")
     print_json(summarize(store))
     return 4
+
+
+def close_archived_request(root: Path, store: Path, record: dict) -> int:
+    """Finish a formal request from already archived evidence. Never start a stage."""
+    try:
+        with acquire_startup_lock(root / "startup-lock.sqlite3"):
+            state = load_state(store)
+            if stage_reached(state, "closed"):
+                return 0
+            stage = store / "stage"
+            report = read_json(stage / "report.json") or {}
+            ready = read_json(stage / "ready.json") or {}
+            grant = read_json(stage / "go.json") or {}
+            if (not stage_reached(state, "dispatched") or state.get("activity") != "formal"
+                    or report.get("RequestId") != record["request_id"]
+                    or not report.get("FinishedAt") or not report.get("ArchivedAt")
+                    or report.get("Verdict") != "pass" or report.get("FormalSubmissions") != 1
+                    or report.get("DiagnosticSubmissions") != 0
+                    or (report.get("FinalRestore") or {}).get("Verdict") != "pass"
+                    or report.get("CleanupError") or not ready.get("PromptMatches")
+                    or ready.get("PromptReadbackSha256") != record["prompt_sha256"]
+                    or grant.get("request_id") != record["request_id"]
+                    or grant.get("attempt_id") != state.get("attempt_id")
+                    or grant.get("prompt_sha256") != record["prompt_sha256"]):
+                print("The archived request lacks verified submission, collection or restoration.", file=sys.stderr)
+                return 4
+            return finish_run(record, state, store, ledger_path(root), report, ready, "formal")
+    except (StartupLockBusy, CompletionNotVerified, OSError, ValueError, RuntimeError,
+            KeyError, TypeError, sqlite3.Error) as error:
+        print(f"Archived closure stopped: {error}", file=sys.stderr)
+        return 4
 
 
 def void_attempt(ledger: Path, attempt_id: str, store: Path, reason: str) -> Path | None:
@@ -878,6 +925,8 @@ def main() -> int:
     resume_parser.add_argument("--request-id", required=True)
     resume_parser.add_argument("--task", help="Unused when the request is already frozen")
     resume_parser.add_argument("--wait-signin", type=int, default=0, metavar="SECONDS")
+    resume_parser.add_argument("--archive-only", action="store_true",
+                               help="Only close a fully archived run; never launch or send")
     recover_parser = commands.add_parser(
         "recover", help="Close an attempt that stopped before any permit was issued")
     recover_parser.add_argument("--request-id", required=True)

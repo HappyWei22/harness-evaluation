@@ -1,0 +1,11 @@
+{
+  "task_id": "copy-line-a",
+  "title": "A · 原样抄录一行文本",
+  "condition": "离线样例 A",
+  "version": "offline-1",
+  "prompt": "读取 input/sample.txt，将这一行原样写入 output/result.txt。",
+  "inputs": ["input/sample.txt"],
+  "outputs": ["output/result.txt"],
+  "expect": {"output/result.txt": "题目 A 的原始样本"},
+  "simulation": {"step_seconds": 1.5, "accept_seconds": 4}
+}

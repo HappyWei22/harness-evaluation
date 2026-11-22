@@ -1,0 +1,11 @@
+{
+  "task_id": "queue-pending-orders",
+  "title": "队列演示 · 提取待发货订单",
+  "version": "1",
+  "prompt": "读取 input/orders.txt。每行有一个订单编号和一个状态，两者用空格分隔。筛选状态恰好为 pending（待发货）的订单，按输入顺序把订单编号写到 output/pending.txt。结果只写一行，编号之间用英文逗号隔开，逗号两侧不加空格。完成后回复产物路径。",
+  "inputs": ["input/orders.txt"],
+  "outputs": ["output/pending.txt"],
+  "expect": {
+    "output/pending.txt": "A101,A103"
+  }
+}

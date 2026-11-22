@@ -55,11 +55,37 @@ $report = [ordered]@{
     FinalRestore = $null
 }
 
+$script:workbenchSequence = 0
+$script:workbenchLast = $null
+$script:workbenchGeneration = [Guid]::NewGuid().ToString('N')
 function Save-StageReport {
     $temporary = "$reportPath.tmp"
     [IO.File]::WriteAllText($temporary, ($report | ConvertTo-Json -Depth 12), [Text.UTF8Encoding]::new($false))
     if (Test-Path -LiteralPath $reportPath) { [IO.File]::Delete($reportPath) }
     [IO.File]::Move($temporary, $reportPath)
+    if ($request.KeepProgress) {
+        # Keep first observations even while the webpage and its host process are closed.
+        # Exclude repeated polling writes that did not change an observed result.
+        $signature = @($report.Stage; $report.Dispatch.InvokeStartedAt; $report.Dispatch.InvokeReturnedAt;
+            $report.NativeAcceptance.AcceptanceVerified; $report.TurnObservedAt; $report.ObservationLimitAt;
+            $report.CancelRequestedAt; $report.Outputs.Count; $report.ArchivedAt; $report.PoweredOffAt;
+            $report.FinalRestore.Verdict; $report.CleanupError; $report.Error; $report.FinishedAt) -join '|'
+        if ($signature -cne $script:workbenchLast) {
+            try {
+                $directory = Join-Path $StageDirectory "progress\$script:workbenchGeneration"
+                $null = [IO.Directory]::CreateDirectory($directory)
+                $script:workbenchSequence++
+                $path = Join-Path $directory ('{0:D6}.json' -f $script:workbenchSequence)
+                $payload = [ordered]@{ ObservedAt = (Get-Date).ToString('o'); Report = $report }
+                [IO.File]::WriteAllText("$path.tmp", ($payload | ConvertTo-Json -Depth 14),
+                    [Text.UTF8Encoding]::new($false))
+                [IO.File]::Move("$path.tmp", $path)
+                $script:workbenchLast = $signature
+            } catch {
+                Write-Warning "Could not retain workbench progress: $($_.Exception.Message)"
+            }
+        }
+    }
 }
 
 function Wait-StageJson([string]$path) {
@@ -501,6 +527,9 @@ try {
         ComposerLengthAfterClear = $ready.ComposerLengthAfterClear
     }
 
+    $report.Configuration = $ready.Configuration
+    $report.PreparedInputs = $prepared.Inputs
+
     # ------------------------------------------------------- 6. wait for the send authorisation
     $report.Stage = 'await_authorisation'
     Save-StageReport
@@ -561,6 +590,7 @@ try {
                     $native | Add-Member -NotePropertyName TraceName -NotePropertyValue $sample.Name
                     $native | Add-Member -NotePropertyName TraceSha256 -NotePropertyValue (Get-FileHash -LiteralPath $snapshotPath -Algorithm SHA256).Hash.ToLowerInvariant()
                     $report.Completion = $native
+                    $report.TurnObservedAt = (Get-Date).ToString('o')
                     break
                 }
             }
@@ -645,6 +675,7 @@ try {
     if (@($collected | Where-Object { $_.Reparse -or (-not $_.Missing -and -not $_.HostMatches) }).Count) {
         throw 'An output was unsafe or changed during collection. The guest is preserved.'
     }
+    $report.ArchivedAt = (Get-Date).ToString('o')
     $archiveReady = $true
     $report.Verdict = 'pass'
     Save-StageReport

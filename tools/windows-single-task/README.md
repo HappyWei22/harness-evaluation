@@ -14,6 +14,8 @@
 | [inspect_task_native.py](inspect_task_native.py) | 根据完整题面、工作区和原生轮次事件，核对一次接收和同轮结束。 |
 | [selftest_task_run.py](selftest_task_run.py) | 用临时账本和构造样本检查题包冻结、许可、轮次、产物和恢复判断。 |
 
+[DSH 桌面评测工作台](../windows-workbench/README.md)可以从网页调用本入口，查看队列、进度和交付。工作台使用 `resume --archive-only` 依据已有归档回执补齐关账。
+
 脚本保留测试机的虚拟机名称、快照 ID、来宾测试账号名和控制目录默认值。新设备需先核对这些值及脚本中的来宾路径。宿主需要 Hyper-V 管理权限、Windows PowerShell、Python 3.10 或更新版本，以及能解压 Zstandard（原生日志采用的压缩格式）的 Node.js。来宾需要安装 DSH，并准备带 Windows 无障碍界面读取能力的桌面入口。
 
 在仓库根目录可以先执行这两条离线核对命令。它们只读公开材料或使用临时自测目录。

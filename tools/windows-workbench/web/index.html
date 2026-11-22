@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="在 Windows 宿主机上安排、跟踪和查阅桌面 Agent 评测。">
+  <title>桌面 Agent 评测工作台</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到主要内容</a>
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <div><strong>评测工作台</strong><span>桌面 Agent</span></div></div>
+    <nav aria-label="主导航">
+      <a href="#queue" data-page="queue"><span class="nav-icon queue-icon" aria-hidden="true"></span>运行队列</a>
+      <a href="#library" data-page="library"><span class="nav-icon library-icon" aria-hidden="true"></span>题目库</a>
+      <a href="#records" data-page="records"><span class="nav-icon record-icon" aria-hidden="true"></span>运行记录</a>
+    </nav>
+    <div class="machine"><span id="connection"><i></i>正在连接后台</span><small id="machine-mode">Windows 宿主机</small></div>
+  </aside>
+  <main id="main" tabindex="-1">
+    <div id="view"><h1>运行队列</h1><p>正在读取本机队列…</p></div>
+    <footer class="page-footer"><span>桌面 Agent 评测工作台</span><span id="last-sync">北京时间</span></footer>
+  </main>
+  <div id="notice" role="status" aria-live="polite"></div>
+  <dialog id="task-dialog" class="drawer" aria-labelledby="task-heading">
+    <header class="drawer-header"><div><h2 id="task-heading">添加本机题目</h2><p>保存到题库后，可预览并选择是否运行。</p></div>
+      <form method="dialog"><button class="icon-button" aria-label="关闭添加题目">×</button></form></header>
+    <form id="task-form" class="drawer-body task-form">
+      <label>题目目录完整路径<input name="directory" required placeholder="例如 D:\我的题目\月报整理"></label>
+      <label>题目来源<select name="methodPicker"><option value="import">导入题目清单或模板</option><option value="write">填写题面和交付要求</option></select></label>
+      <fieldset id="task-fields" hidden disabled>
+        <label>题目名称<input name="title" required></label>
+        <label>题目版本<input name="version" value="1" required></label>
+        <label>发给 DSH 的题面<textarea name="prompt" rows="5" required placeholder="请写明要读取的文件和结果保存位置"></textarea></label>
+        <label>输入文件（每行一个相对路径，可留空）<textarea name="inputs" rows="2" placeholder="input/原始月报.xlsx"></textarea></label>
+        <label>预期输出文件（每行一个相对路径）<textarea name="outputs" rows="2" required placeholder="output/月报摘要.docx"></textarea></label>
+      </fieldset>
+      <p id="task-error" role="alert"></p>
+      <button type="submit" class="btn primary">保存到题库</button>
+    </form>
+  </dialog>
+  <dialog id="log-dialog" class="drawer" aria-labelledby="log-heading">
+    <header class="drawer-header">
+      <div><div class="overline">场次日志</div><h2 id="log-heading">场次日志</h2><p id="log-meta"></p></div>
+      <form method="dialog"><button class="icon-button" aria-label="关闭日志" autofocus>×</button></form>
+    </header>
+    <label class="stage-picker">按阶段查看<select id="log-stage"></select></label>
+    <div id="log-content" class="drawer-body"></div>
+  </dialog>
+  <dialog id="detail-dialog" class="drawer" aria-labelledby="detail-heading">
+    <header class="drawer-header">
+      <div><div class="overline">运行记录</div><h2 id="detail-heading">运行记录</h2><p id="detail-meta"></p></div>
+      <form method="dialog"><button class="icon-button" aria-label="关闭运行记录" autofocus>×</button></form>
+    </header>
+    <div id="detail-content" class="drawer-body"></div>
+  </dialog>
+</body>
+</html>

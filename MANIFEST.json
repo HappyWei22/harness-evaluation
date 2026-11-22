@@ -24,8 +24,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 19950,
-      "sha256": "1d5dab7150c454577effd9c0213d6ff831c0dd00f92c9b855a57a6b3cfee3f61"
+      "bytes": 20116,
+      "sha256": "d2757816f95928ad9def6453b3bebd674439b3c3db27760ba8f54dfc66920765"
     },
     {
       "path": "cases/ART01/README.md",
@@ -8814,8 +8814,8 @@
     },
     {
       "path": "tools/windows-single-task/README.md",
-      "bytes": 2764,
-      "sha256": "06a64263c5f448cc69ecda766323e63054d3a228f69864ddb291aafee338f2f2"
+      "bytes": 2970,
+      "sha256": "4ac87c1c69f6718ed1b77ca397d5b72b7e266aac2a94ca75376bb9e80d447238"
     },
     {
       "path": "tools/windows-single-task/attempt_completion.py",
@@ -8889,13 +8889,13 @@
     },
     {
       "path": "tools/windows-single-task/run_dsh_task.py",
-      "bytes": 46406,
-      "sha256": "17041ecea18251f9ec41e2d4328d87dade911c0b2b5ea97ca6261c5b918b5778"
+      "bytes": 49453,
+      "sha256": "8912028991ce1cf640b0d6ac85c5c9a1785db9ae23dffc41f684eb1e5db71be1"
     },
     {
       "path": "tools/windows-single-task/run_dsh_task_stage.ps1",
-      "bytes": 42411,
-      "sha256": "b8454853141f205404ab862792be205a62fe3a7ee9af3ca23dfdd101cd599e07"
+      "bytes": 44272,
+      "sha256": "4db078d310bb16f0ab37be8604c368bf965c227206c3324cc52b7c3f565b0f49"
     },
     {
       "path": "tools/windows-single-task/selftest_task_run.py",
@@ -9091,6 +9091,126 @@
       "path": "evidence/windows-issue3-minimal-2026-11-22/source-index.json",
       "bytes": 5148,
       "sha256": "8144c848fe0a2cc6f626d39f84adad88b373d8fc4a1290d01f18d65674a00652"
+    },
+    {
+      "path": "tools/windows-workbench/.gitignore",
+      "bytes": 20,
+      "sha256": "f9fa9bc92985431a305564e1b21c775af12b4c698840f586f2ba5eff540119ce"
+    },
+    {
+      "path": "tools/windows-workbench/README.md",
+      "bytes": 3396,
+      "sha256": "8ab1477529ba3e5ca818b4701434aa9815335ad890d7c7dac877008416e52224"
+    },
+    {
+      "path": "tools/windows-workbench/acceptance.mjs",
+      "bytes": 18340,
+      "sha256": "4349de7caeb1c30378c100ded8acc0476c810184fea61d8de9f38c36091ddc7c"
+    },
+    {
+      "path": "tools/windows-workbench/history.py",
+      "bytes": 3121,
+      "sha256": "84ce3c8ea0ed06a23a3b4e1d145d8fb6c8fe8c93b9c0599a696e61caec2913db"
+    },
+    {
+      "path": "tools/windows-workbench/runner.py",
+      "bytes": 22326,
+      "sha256": "3eb9a5be34bd7c726fd5324e97cce8b52eaf273237fef3c49c1afc05d51b8326"
+    },
+    {
+      "path": "tools/windows-workbench/screenshots/library.png",
+      "bytes": 79059,
+      "sha256": "3b7cb1a0ebfbc132999ec2bcc6af70891de8db89c48a22d0a1528d24b98b9e10"
+    },
+    {
+      "path": "tools/windows-workbench/screenshots/queue.png",
+      "bytes": 90555,
+      "sha256": "b8b5f93a61b5da79540ea37a67a27a94a30ba03cded9fd33660b4b84db5be0a7"
+    },
+    {
+      "path": "tools/windows-workbench/screenshots/records.png",
+      "bytes": 82965,
+      "sha256": "94f9d556b4e2446416df4c3f4e29cf67e88611ecb190784de2d26b197fa134ab"
+    },
+    {
+      "path": "tools/windows-workbench/store.py",
+      "bytes": 20475,
+      "sha256": "32f235bafba685103cfaf1338e7d71a6c17702c92caf0e2f13a8ba0ec8fce35d"
+    },
+    {
+      "path": "tools/windows-workbench/web/app.js",
+      "bytes": 30357,
+      "sha256": "850dbfad9bf6653518632e1526406ff491a214bc1f281606189f222a01d2cbc4"
+    },
+    {
+      "path": "tools/windows-workbench/web/index.html",
+      "bytes": 4019,
+      "sha256": "222276841980e69a800e1e15b914a56672570497963f5fbe7a190d6c28a49f2a"
+    },
+    {
+      "path": "tools/windows-workbench/web/style.css",
+      "bytes": 16102,
+      "sha256": "998335d3358be90b1e99ada15ca8328babd0770343bea1f4b0db26722c342386"
+    },
+    {
+      "path": "tools/windows-workbench/workbench.py",
+      "bytes": 18172,
+      "sha256": "e024b818de47a60ace942bd86727db0e552a4e2ec9cd3731bac88abb4c00148f"
+    },
+    {
+      "path": "tools/windows-workbench/启动真实工作台.cmd",
+      "bytes": 144,
+      "sha256": "00e42d8f7cb5eb36aa6fe297ea06d4500fb9360a11c3e4fa971bb2e3d4ac4470"
+    },
+    {
+      "path": "tools/windows-workbench/真实示例题库/issue3-minimal-v1/input/counts.txt",
+      "bytes": 7,
+      "sha256": "48bb31ef2e4ff5365712f391c7c4dd5939923b9497093ef55f0fe1d6a8425bb9"
+    },
+    {
+      "path": "tools/windows-workbench/真实示例题库/issue3-minimal-v1/task.json",
+      "bytes": 970,
+      "sha256": "10b0ab94319c65fe1872876c7ccb14d402bb7060e821ccaaeb148d4e118a175a"
+    },
+    {
+      "path": "tools/windows-workbench/真实示例题库/queue-pending-orders-v1/input/orders.txt",
+      "bytes": 54,
+      "sha256": "7fe7ddbdf2c08769590c53bff4f47829844d98c24b90d5a601fecf0c184bea5c"
+    },
+    {
+      "path": "tools/windows-workbench/真实示例题库/queue-pending-orders-v1/task.json",
+      "bytes": 577,
+      "sha256": "00e50ae17a1f1a2c416739ee4744922d1fd045d83bdfbe16c90d3dc2835ba716"
+    },
+    {
+      "path": "tools/windows-workbench/示例题库/A/input/sample.txt",
+      "bytes": 25,
+      "sha256": "9d61ee49b19e7eee61ddc51e8601aff7efb2f6cfb3f9cca41b872a268ea9a7cd"
+    },
+    {
+      "path": "tools/windows-workbench/示例题库/A/task.json",
+      "bytes": 414,
+      "sha256": "ee6737afd47f2eeb612f1fcca698869f1d5b6d9277baeca2295314fe852028fe"
+    },
+    {
+      "path": "tools/windows-workbench/示例题库/B/input/sample.txt",
+      "bytes": 28,
+      "sha256": "2d15b61803a160c169fdadd8f62a5a7ad96e39b822eae3e8bd440b164d0d6719"
+    },
+    {
+      "path": "tools/windows-workbench/示例题库/B/task.json",
+      "bytes": 376,
+      "sha256": "1aa030fb09c8bbe04834c2f6837be3cf83dcdc250c8ef3e6d626e323d6a83737"
+    },
+    {
+      "path": "tools/windows-workbench/示例题库/C/input/sample.txt",
+      "bytes": 32,
+      "sha256": "ddb4cec0482f8631042a34e7609f04587c8e0b3460dba935c9955ccb58c886df"
+    },
+    {
+      "path": "tools/windows-workbench/示例题库/C/task.json",
+      "bytes": 362,
+      "sha256": "b7672295387e26d35ed4f0a0d98606bfb78dcac551d0e5f85a728deb97ab8e07"
     }
   ]
 }
