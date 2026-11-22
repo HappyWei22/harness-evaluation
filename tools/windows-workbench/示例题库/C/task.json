@@ -1,0 +1,10 @@
+{
+  "task_id": "copy-line-c",
+  "title": "C · 整理两行输入",
+  "condition": "离线样例 C",
+  "version": "offline-1",
+  "prompt": "读取 input/sample.txt，把两行按原有顺序写入 output/result.txt。",
+  "inputs": ["input/sample.txt"],
+  "outputs": ["output/result.txt"],
+  "expect": {"output/result.txt": "先检查输入\n再保存结果"}
+}

@@ -1,0 +1,10 @@
+{
+  "task_id": "copy-line-b",
+  "title": "B · 保留输入中的标点",
+  "condition": "离线样例 B",
+  "version": "offline-1",
+  "prompt": "从 input/sample.txt 读取原文，保留所有中文标点，写入 output/result.txt。",
+  "inputs": ["input/sample.txt"],
+  "outputs": ["output/result.txt"],
+  "expect": {"output/result.txt": "第二题，保留标点。"}
+}
